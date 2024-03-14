@@ -1,0 +1,1612 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: OAK_LOG
+        buy: 2
+        sell: 1
+      '2':
+        material: OAK_WOOD
+        buy: 2
+        sell: 1
+      '3':
+        material: OAK_PLANKS
+        buy: 1
+        sell: 0
+      '4':
+        material: SPRUCE_LOG
+        buy: 3
+        sell: 1
+      '5':
+        material: SPRUCE_WOOD
+        buy: 3
+        sell: 1
+      '6':
+        material: SPRUCE_PLANKS
+        buy: 2
+        sell: 1
+      '7':
+        material: BIRCH_LOG
+        buy: 2
+        sell: 1
+      '8':
+        material: BIRCH_WOOD
+        buy: 2
+        sell: 1
+      '9':
+        material: BIRCH_PLANKS
+        buy: 1
+        sell: 0
+      '10':
+        material: JUNGLE_LOG
+        buy: 5
+        sell: 3
+      '11':
+        material: JUNGLE_WOOD
+        buy: 5
+        sell: 3
+      '12':
+        material: JUNGLE_PLANKS
+        buy: 3
+        sell: 2
+      '13':
+        material: ACACIA_LOG
+        buy: 5
+        sell: 3
+      '14':
+        material: ACACIA_WOOD
+        buy: 5
+        sell: 3
+      '15':
+        material: ACACIA_PLANKS
+        buy: 3
+        sell: 2
+      '16':
+        material: DARK_OAK_LOG
+        buy: 5
+        sell: 3
+      '17':
+        material: DARK_OAK_WOOD
+        buy: 5
+        sell: 3
+      '18':
+        material: DARK_OAK_PLANKS
+        buy: 3
+        sell: 2
+      '19':
+        material: MANGROVE_LOG
+        buy: 10
+        sell: 5
+      '20':
+        material: MANGROVE_WOOD
+        buy: 10
+        sell: 5
+      '21':
+        material: MANGROVE_PLANKS
+        buy: 5
+        sell: 3
+      '22':
+        material: BAMBOO_BLOCK
+        buy: 8
+        sell: 5
+      '23':
+        material: BAMBOO_PLANKS
+        buy: 5
+        sell: 3
+      '24':
+        material: BAMBOO_MOSAIC
+        buy: 6
+        sell: 3
+      '25':
+        material: STONE
+        buy: 1
+        sell: 0
+      '26':
+        material: SMOOTH_STONE
+        buy: 3
+        sell: 1
+      '27':
+        material: COBBLESTONE
+        buy: 2
+        sell: 1
+      '28':
+        material: MOSSY_COBBLESTONE
+        buy: 2
+        sell: 1
+      '29':
+        material: STONE_BRICKS
+        buy: 4
+        sell: 1
+      '30':
+        material: MOSSY_STONE_BRICKS
+        buy: 5
+        sell: 3
+      '31':
+        material: GRANITE
+        buy: 2
+        sell: 1
+      '32':
+        material: DIORITE
+        buy: 2
+        sell: 1
+      '33':
+        material: ANDESITE
+        buy: 2
+        sell: 1
+      '34':
+        material: DEEPSLATE
+        buy: 2
+        sell: 1
+      '35':
+        material: COBBLED_DEEPSLATE
+        buy: 3
+        sell: 1
+      '36':
+        material: NETHERRACK
+        buy: 5
+        sell: 2
+      '37':
+        material: SANDSTONE
+        buy: 2
+        sell: 1
+      '38':
+        material: RED_SANDSTONE
+        buy: 3
+        sell: 2
+      '39':
+        material: SEA_LANTERN
+        buy: 10
+        sell: 8
+      '40':
+        material: PRISMARINE
+        buy: 8
+        sell: 6
+      '41':
+        material: PRISMARINE_BRICKS
+        buy: 10
+        sell: 9
+      '42':
+        material: DARK_PRISMARINE
+        buy: 15
+        sell: 15
+      '43':
+        material: IRON_BLOCK
+        buy: 20
+        sell: 18
+      '44':
+        material: GOLD_BLOCK
+        buy: 22
+        sell: 20
+      '45':
+        material: REDSTONE_BLOCK
+        buy: 18
+        sell: 14
+  page2:
+    gui-rows: 6
+    items:
+      '46':
+        material: CHERRY_LOG
+        buy: 10
+        sell: 10
+      '47':
+        material: CHERRY_WOOD
+        buy: 10
+        sell: 10
+      '48':
+        material: CHERRY_PLANKS
+        buy: 4
+        sell: 2
+      '49':
+        material: LAPIS_BLOCK
+        buy: 26
+        sell: 22
+      '50':
+        material: DIAMOND_BLOCK
+        buy: 960
+        sell: 480
+      '51':
+        material: NETHERITE_BLOCK
+        buy: 7600
+        sell: 2300
+      '52':
+        material: QUARTZ_BLOCK
+        buy: 20
+        sell: 20
+      '53':
+        material: AMETHYST_BLOCK
+        buy: 20
+        sell: 10
+      '54':
+        material: EMERALD_BLOCK
+        buy: 320
+        sell: 160
+      '55':
+        material: WHITE_WOOL
+        buy: 4
+        sell: 2
+      '56':
+        material: WHITE_CARPET
+        buy: 4
+        sell: 2
+      '57':
+        material: TERRACOTTA
+        buy: 8
+        sell: 6
+      '58':
+        material: WHITE_CONCRETE_POWDER
+        buy: 8
+        sell: 6
+      '59':
+        material: GLASS
+        buy: 2
+        sell: 2
+      '60':
+        material: GLASS_PANE
+        buy: 1
+        sell: 1
+      '61':
+        material: SHULKER_BOX
+        buy: 120
+        sell: 120
+      '62':
+        material: GRASS_BLOCK
+        buy: 2
+        sell: 2
+      '63':
+        material: PODZOL
+        buy: 3
+        sell: 3
+      '64':
+        material: MYCELIUM
+        buy: 4
+        sell: 4
+      '65':
+        material: DIRT
+        buy: 0
+        sell: 0
+      '66':
+        material: MUD
+        buy: 2
+        sell: 2
+      '67':
+        material: CLAY
+        buy: 3
+        sell: 3
+      '68':
+        material: GRAVEL
+        buy: 2
+        sell: 1
+      '69':
+        material: SAND
+        buy: 1
+        sell: 1
+      '70':
+        material: RED_SAND
+        buy: 2
+        sell: 2
+      '71':
+        material: ICE
+        buy: 2
+        sell: 2
+      '72':
+        material: CALCITE
+        buy: 5
+        sell: 5
+      '73':
+        material: TUFF
+        buy: 5
+        sell: 5
+      '74':
+        material: DRIPSTONE_BLOCK
+        buy: 5
+        sell: 5
+      '75':
+        material: MAGMA_BLOCK
+        buy: 12
+        sell: 10
+      '76':
+        material: OBSIDIAN
+        buy: 22
+        sell: 20
+      '77':
+        material: CRYING_OBSIDIAN
+        buy: 32
+        sell: 30
+      '78':
+        material: BONE_BLOCK
+        buy: 12
+        sell: 10
+      '79':
+        material: SPONGE
+        buy: 100
+        sell: 0
+      '80':
+        material: BEE_NEST
+        buy: 20
+        sell: 20
+      '81':
+        material: HONEYCOMB_BLOCK
+        buy: 20
+        sell: 20
+      '82':
+        material: SLIME_BLOCK
+        buy: 20
+        sell: 20
+      '83':
+        material: HONEY_BLOCK
+        buy: 20
+        sell: 20
+      '84':
+        material: COBWEB
+        buy: 5
+        sell: 5
+      '85':
+        material: PISTON
+        buy: 6
+        sell: 6
+      '86':
+        material: STICKY_PISTON
+        buy: 12
+        sell: 12
+      '87':
+        material: COAL_BLOCK
+        buy: 9
+        sell: 5
+      '87':
+        material: COAL_BLOCK
+        buy: 9
+        sell: 5
+      '88':
+        material: MOSS_BLOCK
+        buy: 4
+        sell: 2
+      '89':
+        material: SMOOTH_STONE_SLAB
+        buy: 2
+        sell: 1
+      '90':
+        material: BUDDING_AMETHYST
+        buy: 15
+        sell: 15
+
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: CANDLE
+        buy: 1
+        sell: 1
+      '2':
+        material: FLOWER_POT
+        buy: 5
+        sell: 5
+      '3':
+        material: CARVED_PUMPKIN
+        buy: 5
+        sell: 5
+      '4':
+        material: JACK_O_LANTERN
+        buy: 6
+        sell: 6
+      '5':
+        material: POINTED_DRIPSTONE
+        buy: 1
+        sell: 1
+      '6':
+        material: SOUL_TORCH
+        buy: 3
+        sell: 2
+      '7':
+        material: REDSTONE_TORCH
+        buy: 4
+        sell: 2
+      '8':
+        material: LANTERN
+        buy: 4
+        sell: 3
+      '9':
+        material: SOUL_LANTERN
+        buy: 6
+        sell: 4
+      '10':
+        material: OAK_LEAVES
+        buy: 2
+        sell: 2
+      '11':
+        material: SPRUCE_LEAVES
+        buy: 2
+        sell: 2
+      '12':
+        material: BIRCH_LEAVES
+        buy: 2
+        sell: 2
+      '13':
+        material: JUNGLE_LEAVES
+        buy: 2
+        sell: 2
+      '14':
+        material: ACACIA_LEAVES
+        buy: 2
+        sell: 2
+      '15':
+        material: DARK_OAK_LEAVES
+        buy: 2
+        sell: 2
+      '16':
+        material: MANGROVE_LEAVES
+        buy: 2
+        sell: 2
+      '17':
+        material: CHERRY_LEAVES
+        buy: 2
+        sell: 2
+      '18':
+        material: AZALEA_LEAVES
+        buy: 2
+        sell: 2
+      '19':
+        material: FLOWERING_AZALEA_LEAVES
+        buy: 2
+        sell: 2
+      '20':
+        material: IRON_BARS
+        buy: 4
+        sell: 4
+      '21':
+        material: CHAIN
+        buy: 2
+        sell: 2
+      '22':
+        material: WHITE_BANNER
+        buy: 5
+        sell: 2
+      '23':
+        material: OAK_SAPLING
+        buy: 1
+        sell: 1
+      '24':
+        material: SPRUCE_SAPLING
+        buy: 1
+        sell: 1
+      '25':
+        material: BIRCH_SAPLING
+        buy: 1
+        sell: 1
+      '26':
+        material: JUNGLE_SAPLING
+        buy: 1
+        sell: 1
+      '27':
+        material: ACACIA_SAPLING
+        buy: 1
+        sell: 1
+      '28':
+        material: DARK_OAK_SAPLING
+        buy: 1
+        sell: 1
+      '29':
+        material: MANGROVE_PROPAGULE
+        buy: 1
+        sell: 1
+      '30':
+        material: CHERRY_SAPLING
+        buy: 1
+        sell: 1
+      '31':
+        material: AZALEA
+        buy: 1
+        sell: 1
+      '32':
+        material: FLOWERING_AZALEA
+        buy: 1
+        sell: 1
+      '33':
+        material: BROWN_MUSHROOM
+        buy: 1
+        sell: 1
+      '34':
+        material: RED_MUSHROOM
+        buy: 1
+        sell: 1
+      '35':
+        material: GRASS_BLOCK
+        buy: 2
+        sell: 1
+      '36':
+        material: FERN
+        buy: 2
+        sell: 1
+      '37':
+        material: DEAD_BUSH
+        buy: 2
+        sell: 1
+      '38':
+        material: GLOW_BERRIES
+        buy: 4
+        sell: 3
+      '39':
+        material: VINE
+        buy: 2
+        sell: 1
+      '40':
+        material: TALL_GRASS
+        buy: 3
+        sell: 1
+      '41':
+        material: LARGE_FERN
+        buy: 3
+        sell: 1
+      '42':
+        material: SUNFLOWER
+        buy: 3
+        sell: 1
+      '43':
+        material: TUBE_CORAL
+        buy: 3
+        sell: 1
+      '44':
+        material: BRAIN_CORAL
+        buy: 3
+        sell: 1
+      '45':
+        material: FIRE_CORAL
+        buy: 5
+        sell: 1
+  page2:
+    gui-rows: 6
+    items:
+      '46':
+        material: BUBBLE_CORAL
+        buy: 5
+        sell: 1
+      '47':
+        material: HORN_CORAL
+        buy: 5
+        sell: 1
+      '48':
+        material: DRIED_KELP_BLOCK
+        buy: 5
+        sell: 1
+      '49':
+        material: TUBE_CORAL_BLOCK
+        buy: 5
+        sell: 5
+      '50':
+        material: BRAIN_CORAL_BLOCK
+        buy: 5
+        sell: 5
+      '51':
+        material: BUBBLE_CORAL_BLOCK
+        buy: 5
+        sell: 5
+      '52':
+        material: FIRE_CORAL_BLOCK
+        buy: 5
+        sell: 5
+      '53':
+        material: HORN_CORAL_BLOCK
+        buy: 5
+        sell: 5
+      '54':
+        material: BOOKSHELF
+        buy: 8
+        sell: 4
+      '55':
+        material: CHISELED_BOOKSHELF
+        buy: 12
+        sell: 8
+      '56':
+        material: OAK_SIGN
+        buy: 2
+        sell: 1
+      '57':
+        material: OAK_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '58':
+        material: SPRUCE_SIGN
+        buy: 2
+        sell: 1
+      '59':
+        material: SPRUCE_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '60':
+        material: BIRCH_SIGN
+        buy: 2
+        sell: 1
+      '61':
+        material: BIRCH_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '62':
+        material: JUNGLE_SIGN
+        buy: 2
+        sell: 1
+      '63':
+        material: JUNGLE_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '64':
+        material: ACACIA_SIGN
+        buy: 2
+        sell: 1
+      '65':
+        material: ACACIA_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '66':
+        material: DARK_OAK_SIGN
+        buy: 2
+        sell: 1
+      '67':
+        material: DARK_OAK_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '68':
+        material: MANGROVE_SIGN
+        buy: 2
+        sell: 1
+      '69':
+        material: MANGROVE_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '70':
+        material: CHERRY_SIGN
+        buy: 2
+        sell: 1
+      '71':
+        material: CHERRY_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '72':
+        material: BAMBOO_SIGN
+        buy: 2
+        sell: 1
+      '73':
+        material: BAMBOO_HANGING_SIGN
+        buy: 2
+        sell: 1
+      '74':
+        material: BARREL
+        buy: 5
+        sell: 2
+      '75':
+        material: ENDER_CHEST
+        buy: 240
+        sell: 120
+      '77':
+        material: TARGET
+        buy: 4
+        sell: 2
+      '78':
+        material: GLOWSTONE_DUST
+        buy: 3
+        sell: 2
+      '79':
+        material: EXPERIENCE_BOTTLE
+        buy: 30
+        sell: 5
+      '80':
+        material: SNOW_BLOCK
+        buy: 1
+        sell: 1
+      '81':
+        material: BARREL
+        buy: 5
+        sell: 2
+      '82':
+        material: ENDER_CHEST
+        buy: 240
+        sell: 120
+      '83':
+        material: BRICKS
+        buy: 4
+        sell: 2
+      '84':
+        material: TERRACOTTA
+        buy: 4
+        sell: 2
+      '85':
+        material: WHITE_TERRACOTTA
+        buy: 4
+        sell: 2
+      '86':
+        material: LIGHT_GRAY_TERRACOTTA
+        buy: 4
+        sell: 2
+      '87':
+        material: GRAY_TERRACOTTA
+        buy: 4
+        sell: 2
+      '88':
+        material: BLACK_TERRACOTTA
+        buy: 4
+        sell: 2
+      '89':
+        material: BROWN_TERRACOTTA
+        buy: 4
+        sell: 2
+      '90':
+        material: RED_TERRACOTTA
+        buy: 4
+        sell: 2
+      '91':
+        material: ORANGE_TERRACOTTA
+        buy: 4
+        sell: 2
+  page3:
+    gui-rows: 6
+    items:
+      '92':
+        material: YELLOW_TERRACOTTA
+        buy: 4
+        sell: 2
+      '93':
+        material: LIME_TERRACOTTA
+        buy: 4
+        sell: 2
+      '94':
+        material: GREEN_TERRACOTTA
+        buy: 4
+        sell: 2
+      '95':
+        material: CYAN_TERRACOTTA
+        buy: 4
+        sell: 2
+      '96':
+        material: LIGHT_BLUE_TERRACOTTA
+        buy: 4
+        sell: 2
+      '97':
+        material: BLUE_TERRACOTTA
+        buy: 4
+        sell: 2
+      '98':
+        material: PURPLE_TERRACOTTA
+        buy: 4
+        sell: 2
+      '99':
+        material: MAGENTA_TERRACOTTA
+        buy: 4
+        sell: 2
+      '100':
+        material: PINK_TERRACOTTA
+        buy: 4
+      '101':
+        material: CONCRETE
+        buy: 6
+        sell: 3
+      '102':
+        material: WHITE_CONCRETE
+        buy: 6
+        sell: 3
+      '103':
+        material: LIGHT_GRAY_CONCRETE
+        buy: 6
+        sell: 3
+      '104':
+        material: GRAY_CONCRETE
+        buy: 6
+        sell: 3
+      '105':
+        material: BLACK_CONCRETE
+        buy: 6
+        sell: 3
+      '106':
+        material: BROWN_CONCRETE
+        buy: 6
+        sell: 3
+      '107':
+        material: RED_CONCRETE
+        buy: 6
+        sell: 3
+      '108':
+        material: ORANGE_CONCRETE
+        buy: 6
+        sell: 3
+      '109':
+        material: YELLOW_CONCRETE
+        buy: 6
+        sell: 3
+      '110':
+        material: LIME_CONCRETE
+        buy: 6
+        sell: 3
+      '111':
+        material: GREEN_CONCRETE
+        buy: 6
+        sell: 3
+      '112':
+        material: CYAN_CONCRETE
+        buy: 6
+        sell: 3
+      '113':
+        material: LIGHT_BLUE_CONCRETE
+        buy: 6
+        sell: 3
+      '114':
+        material: BLUE_CONCRETE
+        buy: 6
+        sell: 3
+      '115':
+        material: PURPLE_CONCRETE
+        buy: 6
+        sell: 3
+      '116':
+        material: MAGENTA_CONCRETE
+        buy: 6
+        sell: 3
+      '117':
+        material: PINK_CONCRETE
+        buy: 6
+        sell: 3
+      '118':
+        material: WOOL
+        buy: 4
+        sell: 2
+      '119':
+        material: WHITE_WOOL
+        buy: 4
+        sell: 2
+      '120':
+        material: LIGHT_GRAY_WOOL
+        buy: 4
+        sell: 2
+      '121':
+        material: GRAY_WOOL
+        buy: 4
+        sell: 2
+      '122':
+        material: BLACK_WOOL
+        buy: 4
+        sell: 2
+      '123':
+        material: BROWN_WOOL
+        buy: 4
+        sell: 2
+      '124':
+        material: RED_WOOL
+        buy: 4
+        sell: 2
+      '125':
+        material: ORANGE_WOOL
+        buy: 4
+        sell: 2
+      '126':
+        material: YELLOW_WOOL
+        buy: 4
+        sell: 2
+      '127':
+        material: LIME_WOOL
+        buy: 4
+        sell: 2
+      '128':
+        material: GREEN_WOOL
+        buy: 4
+        sell: 2
+      '129':
+        material: CYAN_WOOL
+        buy: 4
+        sell: 2
+      '130':
+        material: LIGHT_BLUE_WOOL
+        buy: 4
+        sell: 2
+      '131':
+        material: BLUE_WOOL
+        buy: 4
+        sell: 2
+      '132':
+        material: PURPLE_WOOL
+        buy: 4
+        sell: 2
+      '133':
+        material: MAGENTA_WOOL
+        buy: 4
+        sell: 2
+      '134':
+        material: PINK_WOOL
+        buy: 4
+        sell: 2
+      '135':
+        material: TINTED_GLASS
+        buy: 5
+        sell: 5
+      '136':
+        material: WHITE_STAINED_GLASS
+        buy: 4
+        sell: 4
+  page4:
+    gui-rows: 6
+    items:
+      '137':
+        material: LIGHT_GRAY_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '138':
+        material: GRAY_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '139':
+        material: BLACK_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '140':
+        material: BROWN_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '141':
+        material: RED_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '142':
+        material: ORANGE_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '143':
+        material: YELLOW_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '144':
+        material: LIME_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '145':
+        material: GREEN_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '146':
+        material: CYAN_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '147':
+        material: LIGHT_BLUE_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '148':
+        material: BLUE_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '149':
+        material: PURPLE_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '150':
+        material: MAGENTA_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '151':
+        material: PINK_STAINED_GLASS
+        buy: 4
+        sell: 4
+      '152':
+        material: WHITE_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '153':
+        material: LIGHT_GRAY_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '154':
+        material: GRAY_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '155':
+        material: BLACK_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '156':
+        material: BROWN_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '157':
+        material: RED_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '158':
+        material: ORANGE_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '159':
+        material: YELLOW_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '160':
+        material: LIME_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '161':
+        material: GREEN_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '162':
+        material: CYAN_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '163':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '164':
+        material: BLUE_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '165':
+        material: PURPLE_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '166':
+        material: MAGENTA_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+      '167':
+        material: PINK_STAINED_GLASS_PANE
+        buy: 2
+        sell: 2
+
+pages:
+  page1:
+    gui-rows: 5
+    items:
+      '1':
+        material: BLACK_DYE
+        buy: 5
+        sell: 3
+      '2':
+        material: BLUE_DYE
+        buy: 2
+        sell: 1
+      '3':
+        material: BROWN_DYE
+        buy: 2
+        sell: 1
+      '4':
+        material: CYAN_DYE
+        buy: 3
+        sell: 2
+      '5':
+        material: GRAY_DYE
+        buy: 4
+        sell: 3
+      '6':
+        material: GREEN_DYE
+        buy: 1
+        sell: 1
+      '7':
+        material: LIGHT_BLUE_DYE
+        buy: 2
+        sell: 1
+      '8':
+        material: LIGHT_GRAY_DYE
+        buy: 2
+        sell: 1
+      '9':
+        material: LIME_DYE
+        buy: 4
+        sell: 3
+      '10':
+        material: MAGENTA_DYE
+        buy: 2
+        sell: 1
+      '11':
+        material: ORANGE_DYE
+        buy: 2
+        sell: 1
+      '12':
+        material: PINK_DYE
+        buy: 2
+        sell: 1
+      '13':
+        material: PURPLE_DYE
+        buy: 2
+        sell: 1
+      '14':
+        material: RED_DYE
+        buy: 2
+        sell: 1
+      '15':
+        material: WHITE_DYE
+        buy: 2
+        sell: 1
+      '16':
+        material: YELLOW_DYE
+        buy: 2
+        sell: 1
+      '17':
+        material: AZURE_BLUET
+        buy: 2
+        sell: 1
+      '18':
+        material: BLUE_ORCHID
+        buy: 2
+        sell: 1
+      '19':
+        material: CORNFLOWER
+        buy: 2
+        sell: 1
+      '20':
+        material: LILAC
+        buy: 2
+        sell: 1
+      '21':
+        material: LILY_OF_THE_VALLEY
+        buy: 2
+        sell: 1
+      '22':
+        material: ORANGE_TULIP
+        buy: 2
+        sell: 1
+      '23':
+        material: OXEYE_DAISY
+        buy: 2
+        sell: 1
+      '24':
+        material: PEONY
+        buy: 2
+        sell: 1
+      '25':
+        material: PINK_PETALS
+        buy: 2
+        sell: 1
+      '26':
+        material: PINK_TULIP
+        buy: 2
+        sell: 1
+      '27':
+        material: PITCHER_PLANT
+        buy: 20
+        sell: 18
+      '28':
+        material: POPPY
+        buy: 2
+        sell: 1
+      '29':
+        material: RED_TULIP
+        buy: 2
+        sell: 1
+      '30':
+        material: SUNFLOWER
+        buy: 3
+        sell: 1
+      '31':
+        material: TORCHFLOWER
+        buy: 20
+        sell: 18
+      '32':
+        material: INK_SAC
+        buy: 5
+        sell: 4
+      '32':
+        material: FEATHER
+        buy: 3
+        sell: 1
+
+pages:
+  page1:
+    gui-rows: 5
+    items:
+      '1':
+        material: BAMBOO
+        buy: 7
+        sell: 5
+      '2':
+        material: BEE_NEST
+        buy: 20
+        sell: 20
+      '3':
+        material: BEEHIVE
+        buy: 15
+        sell: 5
+      '4':
+        material: BEETROOT
+        buy: 10
+        sell: 5
+      '5':
+        material: BEETROOT_SEEDS
+        buy: 1
+        sell: 0
+      '6':
+        material: BROWN_MUSHROOM
+        buy: 1
+        sell: 1
+      '7':
+        material: CACTUS
+        buy: 2
+        sell: 1
+      '8':
+        material: CARROT
+        buy: 5
+        sell: 1
+      '9':
+        material: WHEAT
+        buy: 7
+        sell: 3
+      '10':
+        material: WHEAT_SEEDS
+        buy: 1
+        sell: 0
+      '11':
+        material: COCOA_BEANS
+        buy: 6
+        sell: 5
+      '12':
+        material: CRIMSON_FUNGUS
+        buy: 25
+        sell: 5
+      '13':
+        material: EGG
+        buy: 5
+        sell: 1
+      '14':
+        material: KELP
+        buy: 2
+        sell: 1
+      '15':
+        material: LEATHER
+        buy: 28
+        sell: 6
+      '16':
+        material: MELON
+        buy: 20
+        sell: 10
+      '17':
+        material: MELON_SEEDS
+        buy: 3
+        sell: 0
+      '18':
+        material: MELON_SLICE
+        buy: 3
+        sell: 3
+      '19':
+        material: NETHER_WART
+        buy: 15
+        sell: 0
+      '20':
+        material: PITCHER_POD
+        buy: 20
+        sell: 5
+      '21':
+        material: POTATO
+        buy: 5
+        sell: 1
+      '22':
+        material: PUMPKIN
+        buy: 5
+        sell: 1
+      '23':
+        material: PUMPKIN_SEEDS
+        buy: 2
+        sell: 0
+      '24':
+        material: RED_MUSHROOM
+        buy: 1
+        sell: 1
+      '25':
+        material: SUGAR_CANE
+        buy: 4
+        sell: 1
+      '26':
+        material: TORCHFLOWER_SEEDS
+        buy: 25
+        sell: 15
+      '27':
+        material: WARPED_FUNGUS
+        buy: 10
+        sell: 1
+      '28':
+        material: RAW_BEEF
+        buy: 5
+        sell: 3
+      '29':
+        material: PORKCHOP
+        buy: 5
+        sell: 3
+      '30':
+        material: MUTTON
+        buy: 5
+        sell: 3
+      '31':
+        material: RAW_CHICKEN
+        buy: 5
+        sell: 3
+      '32':
+        material: COD
+        buy: 5
+        sell: 3
+      '33':
+        material: SALMON
+        buy: 5
+        sell: 3
+      '34':
+        material: TROPICAL_FISH
+        buy: 5
+        sell: 3
+      '35':
+        material: PUFFERFISH
+        buy: 10
+        sell: 6
+      '36':
+        material: ROTTEN_FLESH
+        buy: 2
+        sell: 1
+
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: CRAFTING_TABLE
+        buy: 4
+        sell: 1
+      '2':
+        material: STONECUTTER
+        buy: 8
+        sell: 2
+      '3':
+        material: GRINDSTONE
+        buy: 10
+        sell: 5
+      '4':
+        material: FURNACE
+        buy: 8
+        sell: 6
+      '5':
+        material: SMOKER
+        buy: 12
+        sell: 10
+      '6':
+        material: BLAST_FURNACE
+        buy: 40
+        sell: 10
+      '7':
+        material: CARTOGRAPHY_TABLE
+        buy: 50
+        sell: 20
+      '8':
+        material: FLETCHING_TABLE
+        buy: 50
+        sell: 20
+      '9':
+        material: SMITHING_TABLE
+        buy: 50
+        sell: 20
+      '10':
+        material: LOOM
+        buy: 40
+        sell: 10
+      '11':
+        material: ANVIL
+        buy: 90
+        sell: 50
+      '999':
+        material: FIREWORK
+        buy: 300
+        sell: 70
+        duration: 2
+        colors:
+        - cyan
+        - purple
+        fade-colors:
+        - black
+        - gray
+        flicker: true
+        trail: true
+        shape: BURST
+      '12':
+        material: COMPOSTER
+        buy: 5
+        sell: 1
+      '13':
+        material: NOTE_BLOCK
+        buy: 50
+        sell: 50
+      '14':
+        material: JUKEBOX
+        buy: 100
+        sell: 100
+      '15':
+        material: ENCHANTING_TABLE
+        buy: 500
+        sell: 500
+      '16':
+        material: BREWING_STAND
+        buy: 70
+        sell: 50
+      '17':
+        material: CAULDRON
+        buy: 20
+        sell: 10
+      '18':
+        material: LODESTONE
+        buy: 2600
+        sell: 800
+      '19':
+        material: BELL
+        buy: 10
+        sell: 10
+      '20':
+        material: LIGHTNING_ROD
+        buy: 5
+        sell: 5
+      '21':
+        material: ARMOR_STAND
+        buy: 15
+        sell: 5
+      '22':
+        material: ITEM_FRAME
+        buy: 5
+        sell: 2
+      '23':
+        material: SCULK
+        buy: 10
+        sell: 10
+      '24':
+        material: SCULK_CATALYST
+        buy: 2000
+        sell: 1000
+      '25':
+        material: SCULK_SHRIEKER
+        buy: 2000
+        sell: 1000
+      '26':
+        material: DAYLIGHT_DETECTOR
+        buy: 50
+        sell: 25
+      '27':
+        material: WOODEN_PICKAXE
+        buy: 3
+        sell: 1
+      '28':
+        material: WOODEN_SHOVEL
+        buy: 1
+        sell: 1
+      '29':
+        material: WOODEN_AXE
+        buy: 3
+        sell: 1
+      '30':
+        material: WOODEN_SWORD
+        buy: 2
+        sell: 1
+      '31':
+        material: STONE_PICKAXE
+        buy: 4
+        sell: 2
+      '32':
+        material: STONE_SHOVEL
+        buy: 2
+        sell: 2
+      '33':
+        material: STONE_AXE
+        buy: 4
+        sell: 2
+      '34':
+        material: STONE_SWORD
+        buy: 3
+        sell: 2
+      '35':
+        material: IRON_PICKAXE
+        buy: 9
+        sell: 6
+      '36':
+        material: IRON_SHOVEL
+        buy: 3
+        sell: 3
+      '37':
+        material: IRON_AXE
+        buy: 9
+        sell: 6
+      '38':
+        material: IRON_SWORD
+        buy: 4
+        sell: 4
+      '39':
+        material: DIAMOND_PICKAXE
+        buy: 400
+        sell: 300
+      '40':
+        material: DIAMOND_SHOVEL
+        buy: 100
+        sell: 50
+      '41':
+        material: DIAMOND_AXE
+        buy: 300
+        sell: 300
+      '42':
+        material: DIAMOND_SWORD
+        buy: 200
+        sell: 200
+      '43':
+        material: BOW
+        buy: 15
+        sell: 10
+      '44':
+        material: ELYTRA
+        buy: 500
+        sell: 500
+  page2:
+    gui-rows: 4
+    items:
+      '45':
+        material: REDSTONE
+        buy: 2
+        sell: 1
+      '46':
+        material: REDSTONE_TORCH
+        buy: 3
+        sell: 2
+      '47':
+        material: REPEATER
+        buy: 5
+        sell: 5
+      '48':
+        material: REDSTONE_COMPARATOR
+        buy: 20
+        sell: 5
+      '49':
+        material: REDSTONE_LAMP
+        buy: 20
+        sell: 20
+      '50':
+        material: LEVER
+        buy: 1
+        sell: 1
+      '51':
+        material: TRIPWIRE_HOOK
+        buy: 3
+        sell: 3
+      '52':
+        material: DAYLIGHT_DETECTOR
+        buy: 25
+        sell: 20
+      '53':
+        material: LIGHTNING_ROD
+        buy: 1
+        sell: 1
+      '54':
+        material: RAIL
+        buy: 10
+        sell: 10
+      '55':
+        material: POWERED_RAIL
+        buy: 20
+        sell: 20
+      '56':
+        material: DETECTOR_RAIL
+        buy: 20
+        sell: 20
+      '57':
+        material: ACTIVATOR_RAIL
+        buy: 20
+        sell: 20
+      '58':
+        material: DISPENSER
+        buy: 7
+        sell: 7
+      '59':
+        material: DROPPER
+        buy: 5
+        sell: 5
+      '60':
+        material: HOPPER
+        buy: 10
+        sell: 10
+      '61':
+        material: OBSERVER
+        buy: 15
+        sell: 15
+      '62':
+        material: MINECART
+        buy: 5
+        sell: 5
+      '63':
+        material: ENDER_PEARL
+        buy: 30
+        sell: 10
+      '64':
+        material: BLAZE_ROD
+        buy: 40
+        sell: 30
