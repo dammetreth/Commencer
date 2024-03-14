@@ -1530,7 +1530,7 @@ pages:
   page2:
     gui-rows: 4
     items:
-     '45': 
+      '45': 
         material: FIREWORK
         buy: 10
         sell: 5
