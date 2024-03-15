@@ -925,127 +925,127 @@ pages:
       '137':
         material: LIGHT_GRAY_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '138':
         material: GRAY_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '139':
         material: BLACK_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '140':
         material: BROWN_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '141':
         material: RED_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '142':
         material: ORANGE_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '143':
         material: YELLOW_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '144':
         material: LIME_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '145':
         material: GREEN_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '146':
         material: CYAN_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '147':
         material: LIGHT_BLUE_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '148':
         material: BLUE_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '149':
         material: PURPLE_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '150':
         material: MAGENTA_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '151':
         material: PINK_STAINED_GLASS
         buy: 4
-        sell: 4
+        sell: 2
       '152':
         material: WHITE_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '153':
         material: LIGHT_GRAY_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '154':
         material: GRAY_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '155':
         material: BLACK_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '156':
         material: BROWN_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '157':
         material: RED_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '158':
         material: ORANGE_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '159':
         material: YELLOW_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '160':
         material: LIME_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '161':
         material: GREEN_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '162':
         material: CYAN_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '163':
         material: LIGHT_BLUE_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '164':
         material: BLUE_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '165':
         material: PURPLE_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '166':
         material: MAGENTA_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
       '167':
         material: PINK_STAINED_GLASS_PANE
         buy: 2
-        sell: 2
+        sell: 1
 
 pages:
   page1:
