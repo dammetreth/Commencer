@@ -1442,15 +1442,15 @@ pages:
       '23':
         material: SCULK
         buy: 10
-        sell: 10
+        sell: 5
       '24':
         material: SCULK_CATALYST
-        buy: 2000
-        sell: 1000
+        buy: 20
+        sell: 10
       '25':
         material: SCULK_SHRIEKER
-        buy: 2000
-        sell: 1000
+        buy: 50
+        sell: 25
       '26':
         material: DAYLIGHT_DETECTOR
         buy: 50
