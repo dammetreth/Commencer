@@ -1,0 +1,295 @@
+
+#-=-=-=-=-=-=-=-=-=- | CommenceSMP Economy | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-                           -=-=-=-=-=-=-=-=-=-
+
+	#IDEAS, COMMENTS & SUGGESSTIONS
+		#none yet:)
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#OPTIONS
+
+
+options:
+	commence:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##3988A3> Bank  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
+	story:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	fund:&a$&8Money&a$
+	funds:&a$&8Funds&a$
+	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
+	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &c Wait before trying this command again!
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#MESSAGES
+
+
+on load:
+	clear {Commence::BankWithdraw::*}
+	add "Thank you for your business, have a great day!" to {Commence::BankWithdraw::*}
+	add "Alright, transaction complete. Thank you." to {Commence::BankWithdraw::*}
+	add "Thanks for comin', have a good 'un!'" to {Commence::BankWithdraw::*}
+	add "Looks like it worked. Stay safe!" to {Commence::BankWithdraw::*}
+	add "Thanks. Next!" to {Commence::BankWithdraw::*}
+	add "You're lucky it worked. I'd worry about next time." to {Commence::BankWithdraw::*}
+
+	clear {Commence::BankDeposit::*}
+	add "The funds have been deposited. Have a good day!" to {Commence::BankDeposit::*}
+	add "The transaction was completed. Thank you." to {Commence::BankDeposit::*}
+	add "Looks like it's in there! Have a good day now!" to {Commence::BankDeposit::*}
+	add "Thank you for your business. Have a good one!" to {Commence::BankDeposit::*}
+	add "Thanks, next!" to {Commence::BankDeposit::*}
+	add "Sorry what? Oh yeah, I guess it's done." to {Commence::BankDeposit::*}
+	add "Great, now move along. There's much to do." to {Commence::BankDeposit::*}
+	add "Thank you, your funds are deposited. Stay safe!" to {Commence::BankDeposit::*}
+	add "Alright, bye now." to {Commence::BankDeposit::*}
+	add "Oh uh, looks like there was an error. Wait here... oh, just kidding. Seems the system went down for a second. Let's just do a little troubleshooting... oh um, I'm sorry, I don't think your money will be depsosited correctly. Maybe try again... OH wait, hold on. Just a moment now... let's see... hmm, now what was your name again? ... oh yes it's right here, of course. Okay um... let's see now. Ah, okay! I think your money was deposited. Now, remember it takes at least 24 hours for it to show up in your account, so ... oh you have immediate transfer? Okay, your funds should be available... well in a few minutes I suppose it usually takes just a few. Haha. Okay, um ... well anything else for you? Oh, okay... bye I guess. Nice uh, talking to you?" to {Commence::BankDeposit::*}
+	add "Goodbye, thank you." to {Commence::BankDeposit::*}
+	add "Huh? Oh, yeah, right let's just get this finished." to {Commence::BankDeposit::*}
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#CONDITIONS
+
+
+on command "/shop":
+	player's world is not "Survival" or "Survival3":
+		send "&9 Commence&8SMP &cYou can't use this command in %player's world%"
+		cancel event
+		stop
+
+on inventory click:
+	if event-inventory is (metadata tag "bank" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+		index of event-slot is 11:
+			close inventory of player
+			execute player command "/st land"
+		index of event-slot is 12:
+			close inventory of player
+			execute player command "/withdraw"
+		index of event-slot is 13:
+			close inventory of player
+			execute player command "/st"
+		index of event-slot is 14:
+			close inventory of player
+			execute player command "/deposit"
+		index of event-slot is 15:
+			close inventory of player
+			execute player command "/loan"
+	if event-inventory is (metadata tag "pay" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/bank"
+	if event-inventory is (metadata tag "withdraw" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/bank"
+		index of event-slot is 12:
+			close inventory of player
+			set {Commence::%player%::Bal1} to round({Commence::%player%::Bal1} * 0.8)
+			if {Commence::%player%::Bal1} is less than 1:
+				send "" to {_p}
+				send "{@commence}" to {_p}
+				send "&c   You can't withdraw less than $1"
+				set {Commence::%player%::Bal1} to player's balance
+			execute player command "/withdraw"
+		index of event-slot is 13:
+			close inventory of player
+			if {Commence::%player%::Bal1} is more than 1000:
+				send "" to {_p}
+				send "{@commence}" to {_p}
+				send "&c   You aren't able to withdraw more than $1,000"
+				clear {Commence::%player%::Bal1}
+			else if {Commence::%player%::Bal1} is less than player's balance:
+				remove {Commence::%player%::Bal1} from player's balance
+				give player {Commence::%player%::Bal1} of nether star named "{@funds}"
+				send "" to {_p}
+				send "{@commence}" to {_p}
+				send "&a   You successfully withdrew %{Commence::%player%::Bal1}% {@funds}"
+				clear {Commence::%player%::Bal1}
+			else:
+				send "" to {_p}
+				send "{@commence}" to {_p}
+				send "&c   You don't have enough funds to withdraw"
+				clear {Commence::%player%::Bal1}
+		index of event-slot is 14:
+			close inventory of player
+			set {Commence::%player%::Bal1} to round({Commence::%player%::Bal1} * 1.2)
+			if {Commence::%player%::Bal1} is more than 1000:
+				send "" to {_p}
+				send "{@commence}" to {_p}
+				send "&c   You aren't able to withdraw more than $1,000"
+				send "&c   If you can't fit it in your inventory, &4you lose it"
+				set {Commence::%player%::Bal1} to 1000
+			execute player command "/withdraw"
+	if event-inventory is (metadata tag "deposit" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/bank"
+		index of event-slot is 13:
+			close inventory of player
+			set {Commence::%player%::InvFunds} to amount of nether star in player's inventory
+			remove all nether stars from player's inventory
+			if {Commence::%player%::InvFunds} is not set:
+				set {Commence::%player%::InvFunds} to 0
+				send "" to {_p}
+				send "{@commence}" to {_p}
+				send "&c   You don't have any funds to deposit"
+				stop
+			add {Commence::%player%::InvFunds} to player's balance
+			send "" to {_p}
+			send "{@commence}" to {_p}
+			send "&a   You successfully deposited %{Commence::%player%::InvFunds}% {@funds}"
+			clear {Commence::%player%::InvFunds}
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#COMMANDS
+
+
+command /bal [<player>] [<offlineplayer>]:
+	usage: &c /bank
+	aliases: /b, /bank, /mon, /money, /zlots, /zl, /ba, /balance, /funds
+	description: &7 Opens your virtual bank
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		arg-1 or arg-2 is set:
+			arg-1's display name is set:
+				set {Commence::%player%::Funds} to player's balance
+				send ""
+				send "{@commence}"
+				send "&7   %arg-1's display name%&7's balance is %arg-1's balance% {@funds}&7."
+				stop
+			else if arg-2's balance is set:
+				set {Commence::%player%::Funds} to player's balance
+				send ""
+				send "{@commence}"
+				send "&9   %arg-2%&7's balance is %arg-2's balance% {@funds}&7."
+				stop
+			else:
+				send ""
+				send "{@commence}"
+				send "&c   %arg-1%&c is not a valid player name"
+		close player's inventory
+		wait 1 tick
+		set {Commence::%player%::Funds} to player's balance
+		set metadata tag "bank" of player to chest inventory with 3 rows named "&8-==&k|&8    Bank of &9Commence    &8&k|&8==-"
+		set slot 0 of metadata tag "bank" of player to dark gray stained glass pane named "&7"
+		loop 44 times:
+			set slot loop-value of metadata tag "bank" of player to dark gray stained glass pane named "&7"
+		player's world is "Survival3":
+			set slot 4 of metadata tag "bank" of player to book named "&8-&k|&9 Welcome to Your Bank &8&k|&8-" with lore "&7 Hover over the &fNether Star&7," and "&7  to view your balance" and "&8 Deposit funds into your" and "&8  account with the &aEmerald" and "&7 Withdraw funds from your" and "&7  account with the &cRedstone" and "&7 " and "&c Click the Iron Ingot to" and "&c  manage properties" and "&4 Click the &bDiamond&4 for" and "&4  loans and opportunities"
+			set slot 11 of metadata tag "bank" of player to iron ingot named "&a-&k| &2Real Estate &a&k|&a-" with lore "&7 Manage your housing," and "&7  shops & properties"
+		else:
+			set slot 4 of metadata tag "bank" of player to book named "&8-&k|&9 Welcome to Your Bank &8&k|&8-" with lore "&7 Hover over the &fNether Star&7," and "&7  to view your balance" and "&8 Deposit funds into your" and "&8  account with the &aEmerald" and "&7 Withdraw funds from your" and "&7  account with the &cRedstone"
+		set slot 12 of metadata tag "bank" of player to redstone named "&4-&k| &cWithdraw Funds &4&k|&4-" with lore "&7 Withdraw funds back" and "&7  into your inventory"
+		set slot 13 of metadata tag "bank" of player to nether star named "&3-&k| &7%player's display name%&9's Balance &3&k|&3-" with lore "&a You have %{Commence::%player%::Funds}% {@funds}"
+		clear {Commence::%player%::InvFunds}
+		set {Commence::%player%::InvFunds} to amount of nether star in player's inventory
+		set slot 14 of metadata tag "bank" of player to emerald named "&2-&k| &aDeposit Funds &2&k|&2-" with lore "&7 You have %{Commence::%player%::InvFunds} ? 0% {@funds}" and "&7  in your inventory"
+		player's world is "Survival3":
+			set slot 15 of metadata tag "bank" of player to diamond named "&b-&k| &bLoans & Opportunities &b&k|&b-" with lore "&7 There are no loans or" and "&7  opportunities at the" and "&7   moment"
+		set slot 22 of metadata tag "bank" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&8 Want to see something here?" and "&8 Contact &c/staff&8 or use &d/report" and "&7" and "&9 Commence&8SMP &6The Story"
+		set slot 8 of metadata tag "bank" of player to barrier named "&4-&k|&c &lClick to Close &4&k|&4-"
+		open (metadata tag "bank" of player) to player
+
+command /pay [<player>] [<integer>]:
+	usage: &c /pay [ PLAYER ] [ AMOUNT ]
+	description: &7 Pay another player
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if arg-1 is player:
+			send ""
+			send "{@commence}"
+			send "&c   You can't pay yourself"
+			stop
+		set {Commence::%player%::Funds} to player's balance
+		if {Commence::%player%::Funds} is less than arg-2:
+			send ""
+			send "{@commence}"
+			send "&c   You don't have enough funds to give"
+		else if {Commence::%player%::Funds} is less than 1:
+			send ""
+			send "{@commence}"
+			send "&c   You don't have any funds to give"
+		else if arg-2 is set:
+			send ""
+			send "{@commence}"
+			send "&7   You paid %arg-1's display name%&7 %arg-2% {@funds}&7"
+			add arg-2 to arg-1's balance
+			remove arg-2 from player's balance
+			send "" to arg-1
+			send "{@commence}" to arg-1
+			send "&7   %player's display name%&7 &7paid you %arg-2% {@funds}&7" to arg-1
+		else:
+			send ""
+			send "{@commence}"
+			send "&c   Type /pay [ Player's Name ] [ Amount of Funds ]"
+		
+command /withdraw [<player>]:
+	usage: &c /withdraw
+	description: &7 Withdraw money from your bank!
+	trigger:
+		close player's inventory
+		wait 1 tick
+		set {Commence::%player%::Funds} to player's balance
+		if {Commence::%player%::Funds} is less than 1:
+			set {Commence::%player%::Bal1} to 0
+			set {Commence::%player%::Bal2} to 0
+			send ""
+			send "{@commence}"
+			send "&c   You don't have any funds to withdraw"
+			stop
+		if {Commence::%player%::Bal1} is not set:
+			if {Commence::%player%::Funds} is less than 1000:
+				set {Commence::%player%::Bal1} to 100
+			else:
+				set {Commence::%player%::Bal1} to 1000
+		set metadata tag "withdraw" of player to chest inventory with 3 rows named "&8-==&k|&8    Bank of &9Commence    &8&k|&8==-"
+		set slot 0 of metadata tag "withdraw" of player to dark gray stained glass pane named "&7"
+		loop 44 times:
+			set slot loop-value of metadata tag "withdraw" of player to dark gray stained glass pane named "&7"
+		set slot 4 of metadata tag "withdraw" of player to book named "&8-&k|&9 Welcome to Your Bank &8&k|&8-" with lore "&7 Want to withdraw funds?" and "&8 Click the &aEmerald&8 to" and "&8  withdraw more funds" and "&7 Click the &cRedstone&7 to" and "&7  withdraw less funds" and "&8 Click the &fNether Star&8 to" and "&8  confirm the transaction"
+		set slot 12 of metadata tag "withdraw" of player to redstone named "&4-&k| &cWithdraw Less Funds &4&k|&4-" with lore "&7 Click to Withdraw %round({Commence::%player%::Bal1} * 0.2)% LESS {@funds}"
+		set slot 13 of metadata tag "withdraw" of player to nether star named "&4-&k| &aConfirm Transaction &4&k|&4-" with lore "&7 Click HERE to" and "&7 Withdraw %round({Commence::%player%::Bal1})% {@funds}"
+		set slot 14 of metadata tag "withdraw" of player to emerald named "&4-&k| &cWithdraw More Funds &4&k|&4-" with lore "&7Click to Withdraw %round({Commence::%player%::Bal1} * 0.2)% MORE {@funds}"
+		set slot 22 of metadata tag "withdraw" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&8 Want to see something here?" and "&8 Contact &c/staff&8 or use &d/report" and "&7" and "&9 Commence&8SMP &6The Story"
+		set slot 8 of metadata tag "withdraw" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+		open (metadata tag "withdraw" of player) to player
+
+command /deposit [<player>]:
+	usage: &c /withdraw
+	description: &7 Withdraw money from your bank!
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close player's inventory
+		wait 1 tick
+		clear {Commence::%player%::InvFunds}
+		set {Commence::%player%::InvFunds} to amount of nether star in player's inventory
+		if {Commence::%player%::InvFunds} is not set:
+			set {Commence::%player%::InvFunds} to 0
+			send ""
+			send "{@commence}"
+			send "&c   You don't have any funds to deposit"
+			stop
+		set {Commence::%player%::Bal3} to round({Commence::%player%::InvFunds} / 4)
+		set {Commence::%player%::Bal4} to round({Commence::%player%::InvFunds} / 2)
+		set metadata tag "deposit" of player to chest inventory with 3 rows named "&8-==&k|&8    Bank of &9Commence    &8&k|&8==-"
+		set slot 0 of metadata tag "deposit" of player to dark gray stained glass pane named "&7"
+		loop 44 times:
+			set slot loop-value of metadata tag "deposit" of player to dark gray stained glass pane named "&7"
+		set slot 4 of metadata tag "deposit" of player to book named "&8-&k|&9 Welcome to Your Bank &8&k|&8-" with lore "&7 Want to deposit funds?" and "&8 You can only deposit all" and "&8  your inventory funds" and "&7 Click the &fNether Star&7 to deposit"
+		set slot 13 of metadata tag "deposit" of player to nether star named "&2-&k| &aConfirm Transaction &2&k|&2-" with lore "&7 You have %{Commence::%player%::InvFunds}% {@funds}" and "&7 in your inventory" and "&a Click HERE to deposit"
+		set slot 22 of metadata tag "deposit" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&8 Want to see something here?" and "&8 Contact &c/staff&8 or use &d/report" and "&7" and "&9 Commence&8SMP &6The Story"
+		set slot 8 of metadata tag "deposit" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+		open (metadata tag "deposit" of player) to player
+
