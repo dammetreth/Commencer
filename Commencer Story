@@ -1,7 +1,178 @@
 #-=-=-=-=-=-=-=-=-=- | Tell a Story, Your Style | -=-=-=-=-=-=-=-=-=-
 
-#-=-=-=-=-=-=-=-=-=-                           -=-=-=-=-=-=-=-=-=-
-	#OPTIONS
+#-=-=-=-=-=-=-=-=-=-
+	#IDEAS, COMMENTS & SUGGESSTIONS
+
+		#POSITION RATING SYSTEM
+			#Allows Barons+ to reward hard working players with points
+			#Barons+ only have a certain amount of cred points to give away (depending on rank)
+			#Points are cred points, allows players to have more freedom and commands
+
+		#POWER 
+			#Cred points allow players to gain power
+			#If you get 4 cred points, you rank up to Squire / Knight
+			#If you get 8 cred points, you rank up to Baron / Duke
+			#If you get 10+ cred points, you can rank up to King / Emperor
+				#HOWEVER: you MUST ALSO have 1 Epic cred point to rank up to King / Emperor
+				#An Epic cred point can only be given from a Pope
+			#Only Emperor or above can create a Kingdom (officially)
+			#Emperors can bring in a King or state the position themselves
+			#Emperors and Kings can decide Kingdom rules, such as PVP & free-building
+			#Popes are the leader of a larger world group called Organized Communities, of which they name and control directly.
+			#Popes also have Story control for Kingdoms, and are able to manipulate story lines for certain players. They are also able to 'give' players magic powers, enable more races / classes, and also allows players to quit their job and join the Popes Organized Communities.
+			#There will only be 1 or 2 total Popes at a time.
+			#Superiors are very similar to Popes, but instead of being able to control Kingdom Story directly, Superiors are able to use their powers of influence to allow players to join secret organizations under Superior control.
+			#Kings, Emperors, Popes and Superiors can be 'impeached' from their position by player vote.
+			#Kings, Emperors, Popes and Superiors can kick players out of their organizations / kingdoms if needed! They are also able to 'fast recruit' players into upper ranks if needed!
+			#Popes are able to pray to their God or Devil and that God or Devil will obtain 1 cred point.
+
+		#ROYALTY
+			#Once a king has been established long enough, they are able to start choosing a prince to take over their kingdom.
+
+		#RANKS
+			#POSSIBLE RANKS?
+				#demi god, major / noble,
+			#Default is Adventurer
+			#Commoner is obtained by joining a Kingdom under an Emperor / King
+			#Squire, Baron and King are obtained ONLY if the player are in a Kingdom
+			#Otherwise they will become Knight, Duke and Emperor.
+			#In a Kingdom, Squire's are fighters and Baron's are builders.
+			#In nature, Knight's are fighters and Duke's are builders.
+			#Once you rank up from Adventuer / Commoner, you are able to give other players a cred point. You start with 2 and get 2 more each rank.
+			#Nobles are a secret rank, and are a direct assistant to the king.
+			#Kings and Emperors ranks can only be given from Popes.
+			#Pope rank can only be given from a God or Devil.
+			#Superior rank can only be given from a God or Devil.
+			#Gods and Devils are the staff of the server and are able to change and manipulate the story, Kingdoms and much more. They will almost have complete control!
+
+		#JOBS
+			#Jobs are automatically assigned to players who complete certain quests.
+			#Quests are given from NPCs around Commence Kingdom
+			#Once you have completed at least 5 different quests, you are able to join a job. A job may be automatically assigned to you, but you can also quit your job and join a new job.
+			#There are 2 kinds of jobs:
+			 #1: Local Player Jobs (temp jobs)
+			  #These jobs are given by other players on the server and can be rewarded with housing, money, material or cred points!
+			 #2: NPC and Server Jobs (perm jobs)
+			  #These are the jobs automatically assigned to you based on your race, quest completion and your Kingdom status.
+			#Considered Jobs:
+			 #Woodsmith / Lumberjack - obtained by crafting wood items / getting wood more OR assigned from a Kingdom
+			 #Blacksmith / Stonemason - obtained by crafting stone items / getting stone more OR assigned from a Kingdom
+			 #Crafter / Maker - obtained by crafting items / blocks more OR assigned from a Kingdom
+			 #Architect / Planner - obtained by building / breaking more OR assigned from a Kingdom
+			 #Farmer / Gardener - obtained by farming / gardening, etc more OR assigned from a Kingdom
+			 #Hunter / Asassin - obtained by killing hostile / peaceful mobs more OR assigned from a Kingdom
+			#You will obtain points starting in each category, and eventually moving on to a specific type of job
+			#After getting points in your category, you will be assigned a quest asking you to find an NPC with a job in the category and ask them for a job. If they accept they will become your Boss. Once they are your boss, they will be the only NPC to give you quests that will gain Job experience.
+			#Players can become specific builders for a Kingdom and are given materials from their majors and new kingdom quests.
+			#If you want to switch jobs, you can do so by quitting your current job in the Jobs menu.
+
+		#RACE DESCRIPTIONS
+			#Human: Generic lifeforms that play similar to default Minecraft
+			#Elf: Small, fast beings made for bows, low health but sneaky
+			#Fairy:
+			#Dwarf:
+			#Orc:
+			#Goblin:
+			#Werewolf:
+			#Halfling:
+			#Undead:
+			#Centaur:
+			#Vampire:
+			#Troll:
+			#Giant:
+			#Beastfolk:
+			#Dragonborne:
+			#Wyvern:
+			#More race ideas: Lizardmen, Dark elf, Gnome, Avian, Necromancer, Death Knight
+		
+		#SKILLS AND SKILL IDEAS:
+		 #Mining: When breaking blocks of any kind
+		 #Slaying: When killing hostile creatures
+		 #Archery: When using a bow to kill mobs
+		 #Crafting: When crafting items
+		 #Magic: When using or making magic items
+		 #Agility: When falling
+		 #Farming: When farming
+		 #Building: When placing blocks of any kind
+		 #Defense: When using a shield
+		 #Cooking: When using a furance or blast furance
+		 #Hunting: When killing passive creatures
+
+		#RACE IDEAS:
+		 #HUMAN -- 1, 1, 1 -- Small town with lots of shops, housing next to the big city (Survivaltown), generic place
+		 #ELF -- 11123, 111, -2963 -- Dark Oak forest biome with small homes featuring a powerful Bow shop & archery
+		 #FAIRY -- -13288, 107, -4945 -- Cherry Blossom Biome, large one with lots of trees and buildings built in them, featuring Magic
+		  #Can only eat Vegetarian items, NO MEAT!
+		  #Magic Wands: common, rare, legendary of basic wand (stick), bamboo wand (bamboo), fancy wand (brush), classy wand (blaze rod), gods wand (stick) and devils wand (stick)
+		  #Magic Blades: common wood sword, sparse iron sword, rare gold sword, unique diamond sword, legendary netherite sword
+		  #Magic Staffs: common wood axe, sparse iron axe, rare gold axe, unique diamond axe, legendary netherite axe, legendary combat trident
+		  #Magic Items: common and familiar poison mushroom and blindeye daisy, sparse ender pearl and tnt bomb, rare crazy cornflower and hoe of dispair, legendary fire bomb and call of angels and totem of undying
+		  #Magic Shop: open the shop and select an item, the items update every so often. similar to Gambling where you try to get 3, 4 or 5 in a row to win your item, the rarer the item the harder to win, each won item has 3 kinds from regular, upgraded and maxed out
+		 #DWARF -- -11457, 127, -557 or -14921, 117, -15011 -- Cliffside or hillside in a plains biome, small hobbit-like homes, featuring Cartography
+		 #ORC -- 181, -23, -35? -- Cave Base built in the side of a large, large cavern. Rock themed, featuring coal
+		 #GOBLIN -- 
+		 #WEREWOLF -- -17893, 101, 5098 -- Mountainous caverns in a forest, featuring pets & pet store
+		  #Weapons: Special weapon to allow Werewolves to transform Humans into werewolves
+		  #Villagers are always mean to Werewolves because they're hated
+		  #Werewolves can insta-tame animals
+		  #Armor gets taken off at night during the transformation except helmets
+		  #They can basically 1 hit kill at night & are really defensive
+		 #HALFLING -- -5060, 89, -14956 -- clothing bitches, wants to fit in with humans so makes their clothing (armor)
+		 #UNDEAD -- 1, 1, 1 -- Underground somewhere, featuring antiques
+		  #Antique Shop: find items of ... value that are mostly used but extremely good & powerful, updates frequently
+		  #Weapons: Special weapon to allow Undead to transform Humans into other Undead
+		 #CENTAUR -- 1, 1, 1 -- Plains with covered shops and housing 
+		  #Fast, can summon a Horse at any time
+		  #Vegetarians, live amongst animals in fields so they don't like killing non-hostile creatures
+		 #VAMPIRE -- 127, 119, -1745 -- Big City with lots of buildings and places to hide (SurvivalSpawn), featuring Gambling
+		  #Gambling: 3 slots, bet money & win funds from 13 different games
+		 #TROLL -- -15163, 75, 8930 -- Swampy marsh with huts, featuring magic frogs & community garden
+		 #GIANT -- 1, 1, 1 -- Live and work in the skies above the towns, featuring special tools
+		 #BEASTFOLK -- -953, 150, -13264 -- Snowy cliffsides, featuring snow and ice
+		 #DRAGONBORNE -- featuring lava?
+		 #WYVERN -- 12604, 117, -5508 -- Snowy cliffs & mountains, crystal coves for homes, featuring Crystal shops
+	
+		#ITEMS
+			#WEAPONS
+				#Might be able to put things like poison or fire aspect on a weapon
+				#Wands
+				#Spears
+				#Blades
+				#Staffs
+				#Each item has a Rarity class, indicated by the items color.
+				#Classes:
+					#Common
+					#Familiar
+					#Sparse
+					#Rare
+					#Unique
+					#Legendary
+					#Gods
+					#Devils
+
+		#MISCELLANEOUS
+			#Custom items, furniture, etc (like crowns, desks, chairs, etc)
+			#Fear for custom mobs? They would run away from specific custom items
+			#Titles like Top Attacker or Top Donator or Top Balance
+			#MANSION! 5200, 98, 17099
+			#MUSHROOM ISLAND! 3924 87 -65
+			#COOL TREE! -237, 127, -2381
+			#Race Upgrades: Races can upgrade and you can choose how to upgrade them
+			 #Spend Skill Levels to upgrade your Race (Evolution)
+		#STORY IDEAS:
+		# All Colors Changed to Simple and Gradients
+		# Sidebar Section: For You with Deaths, Kills, Homes, Funds, Playtime, Gamemode Info
+		# Armor Stand Information and Tutorials
+		# Portal to start the gamemode after learning
+		# Auction House
+		# Parties for groups of players
+		# Implement Custom Enchants from KitPvP to Story
+		# Jobs give you 1 or 2 quests for the day (and you can skip some)
+		# Kingdoms start as Tiny Villages and rank up
+			
+		#LOOT CRATES
+		 #Magic Chests as they're called will allow players to spend magic keys to open loot crates for special items
+
 #-=-=-=-=-=-=-=-=-=-
 	#OPTIONS
 
