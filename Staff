@@ -1,0 +1,556 @@
+	#-=-=-=-=-=-=-=-=-=- | CommenceSMP Staff Unite! | -=-=-=-=-=-=-=-=-=-
+
+options:
+	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
+	commence:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command in %player's world%&c!
+	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
+	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &c Wait before trying this command again!
+	inspector:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##C15755> Inspector  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	presider:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##C15755> Presider  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	legate:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##C15755> Legate  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	owner:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##8B969B> Owner  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	pvp:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##8B969B> KitPvP  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	nochat:&c   You are not permitted to chat!
+	nochat2:&c   You are not permitted to chat in this world!
+
+
+on load:
+	set {Commence::SpawnHub::Short} to "SH" if {Commence::SpawnHub::Short} is not set
+	set {Commence::SpawnHub_nether::Short} to "N" if {Commence::SpawnHub_nether::Short} is not set
+	set {Commence::SpawnHub_the_end::Short} to "E" if {Commence::SpawnHub_the_end::Short} is not set
+	set {Commence::Survival::Short} to "OG" if {Commence::Survival::Short} is not set
+	set {Commence::Survival2::Short} to "L" if {Commence::Survival2::Short} is not set
+	set {Commence::Survival3::Short} to "MR" if {Commence::Survival3::Short} is not set
+
+#-=-=-=-=-=-=-=-=-=-
+	#CHAT MESSAGES
+
+on chat:
+	message contains "nigg" or "nlgg" or "n!gg" or "niger" or "nige" or "niga":
+		cancel event
+		send ""
+		send "{@commence}"
+		send "&c   You are not permitted to use that language!"
+		send "%player% is using bad language in %player's world%: %message%" to console
+		stop
+	else if message contains ":skull:":
+		replace all ":skull:" in message with "☠"
+	else if message contains ":cry:":
+		replace all ":cry:" in message with "😭"
+	else if message contains ":pray:":
+		replace all ":pray:" in message with "🙏"
+	else if message contains ":skull:":
+		replace all ":skull:" in message with "☠"
+	if {Commence::%player%::Chat} is false:
+		send ""
+		send "{@commence}"
+		send "{@nochat}"
+		send "%player% is muted in %player's world%: %message%" to console
+		loop all players:
+			{Commence::%loop-value%::Admin} is true:
+				send "&7MUTED %{Commence::%player%::Displayname}%: %message%" to loop-player
+		cancel event
+		stop
+	else:
+		{Commence::%player%::Chat} is not set:
+			set {Commence::%player%::Chat} to true
+	{Commence::%player%::InspectorChat} is true:
+		cancel event
+		loop all players:
+			{Commence::%loop-value%::Inspector} is true:
+				send "&c INSPECTORCHAT %player's display name%: <##DCEDF4>%message%" to loop-player
+		send "INSPECTORCHAT %player%: %message%" to console
+		stop
+	{Commence::%player%::AdminChat} is true:
+		cancel event
+		loop all players:
+			{Commence::%loop-value%::Admin} is true:
+				send "&c ADMINCHAT %player's display name%: <##DCEDF4>%message%" to loop-player
+		send "ADMINCHAT %player%: %message%" to console
+		stop
+	player's world is "Survival" or "SpawnHub":
+		set chat format to "&8&l%{Commence::%player's world%::Short}% &r%{Commence::%player%::Displayname}%: <##DCEDF4>%message%"
+	else if player's world is "Survival2":
+		{Lifer::%player%::Age} is less than 5:
+			set chat format to "&8&lL &9%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%: &a%random element of {BabyTalk::*}%"
+			stop
+		set chat format to "&8&lL &9%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%: <##DCEDF4>%message%"
+	else if player's world is "Survival3" or "SpawnHub_nether" or "SpawnHub_the_end":
+		{Commence::%player%::Story::Rank} is set:
+			set chat format to "&8&l%{Commence::%player's world%::Short}% &r%{Commence::%player%::Story::Rank}%%player's display name%: <##DCEDF4>%message%"
+		else:
+			wait 1 tick
+			execute player command "/wq"
+	else if player's world is "CommenceCity":
+		set chat format to "&8&l%{Commence::%player's world%::Short}% &r%{Commence::%player%::Displayname}%: <##DCEDF4>%message%"
+	else:
+		set chat format to "&8&lC &r%{Commence::%player%::Displayname}%: <##DCEDF4>%message%"
+
+#-=-=-=-=-=-=-=-=-=-
+	#INSPECTOR COMMANDS
+
+command /ic:
+	aliases: /inspectorchat
+	usage: &c /inspectorchat
+	description: &7 Toggles inspector chat
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Inspector} is not true:
+			send "{@permissionmessage}"
+			stop
+		else if {Commence::%player%::InspectorChat} is true:
+			send ""
+			send "{@inspector}"
+			send "&7   You disabled &cInspector Chat&7"
+			send "&7   To re-enable, type &c/ic&7"
+			set {Commence::%player%::InspectorChat} to false
+		else if {Commence::%player%::InspectorChat} is false:
+			send ""
+			send "{@inspector}"
+			send "&7   You enabled &cInspector Chat&7"
+			send "&7   To disable, type &c/ic&7"
+			set {Commence::%player%::InspectorChat} to true
+		else:
+			send ""
+			send "{@inspector}"
+			send "&7   You enabled &cInspector Chat&7"
+			send "&7   To disable, type &c/ic&7"
+			set {Commence::%player%::InspectorChat} to true
+
+command /tp <player> [<player>]:
+	usage: &c /teleport [ PLAYER ] ~ TO PLAYER ~
+	aliases: /teleport, /tphere, /tpa, /tpahere, /tpaccept, /tpdeny
+	description: &7 Teleports player to another player
+	cooldown: 5 seconds
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Commence::%player%::Wait::TPR} is true:
+			send "" to arg-1
+			send "{@inspector}" to arg-1
+			send "&7   You teleported to %player's display name%&7" to arg-1
+			send ""
+			send "{@inspector}"
+			send "&7   %arg-1's display name%&7 Teleported to You"
+			teleport arg-1 to player
+			set {Commence::%player%::Wait::TPR} to false
+			set {Commence::%arg-1%::Wait::TP} to false
+			stop
+		if {Commence::%player%::Inspector} is not true:
+			loop all players:
+				arg-1 is loop-player:
+					arg-1 is player:
+						send ""
+						send "{@inspector}"
+						send "&c   You're Already at Yourself..."
+						stop
+					send ""
+					send "{@inspector}"
+					send "&7   You're Trying to Teleport to %arg-1's display name%&7"
+					send "&7   Your Request Will Timeout After 30 Seconds"
+					send "" to arg-1
+					send "{@inspector}" to arg-1
+					send "&7   %player's display name%&7 Is Trying to Teleport to You" to arg-1
+					send "&7   Type /tp %player%&7 to Accept" to arg-1
+					set {Commence::%player%::Wait::TP} to true
+					set {Commence::%arg-1%::Wait::TPR} to true
+					wait 30 seconds
+					{Commence::%arg-1%::Wait::TP} is true:
+						set {Commence::%player%::Wait::TP} to false
+						set {Commence::%arg-1%::Wait::TPR} to false
+						send ""
+						send "{@inspector}"
+						send "&7   %arg-1's display name%&7 Didn't Respond to Your Request"
+						send "&7   Try Sending Another Teleport Request Their Way?"
+						stop
+					else:
+						set {Commence::%player%::Wait::TP} to false
+						set {Commence::%arg-1%::Wait::TPR} to false
+						stop
+		arg-2 is set:
+			send ""
+			send "{@inspector}"
+			send "&7   You teleported %arg-1's display name%&7 to %arg-2's display name%"
+			send "" to arg-1
+			send "{@inspector}" to arg-1
+			send "&7   %player's display name%&7 teleported you to %arg-2's display name%" to arg-1
+			send "" to arg-2
+			send "{@inspector}" to arg-2
+			send "&7   %player's display name%&7 teleported %arg-1's display name%&7 to you" to arg-2
+			teleport arg-1 to arg-2
+		else:
+			arg-1 is player:
+				send ""
+				send "{@inspector}"
+				send "&c   You're Already at Yourself..."
+				stop
+			send ""
+			send "{@inspector}"
+			send "&7   You teleported to %arg-1's display name%&7"
+			teleport player to arg-1
+
+command /tpc <integer> <integer> <integer>:
+	usage: &c /teleport [ PLAYER ] ~ TO PLAYER ~
+	aliases: /teleport, /tphere
+	description: &7 Teleports player to another player
+	cooldown: 5 seconds
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Inspector} is not true:
+			send "&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cUse /tp to teleport to players!"
+			stop
+		arg-3 is set:
+			send ""
+			send "{@inspector}"
+			send "&7   You teleported to %arg-1%&7, %arg-2%&7, %arg-3%"
+			teleport player to location arg-1, arg-2, arg-3 in player's world
+
+command /fly [<player>]:
+	usage: &c /fly [ PLAYER ]
+	description: &7 Toggles fly mode
+	permission: commencer.inspector
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		player's world is not "Survival" or "Survival3" or "CommenceCity":
+			send "&c   You can't fly in this game mode"
+			stop
+		arg-1 is set:
+			arg-1's flight mode is true:
+				send ""
+				send "{@inspector}"
+				send "&7   Disabled flight mode for %arg-1's display name%"
+				send "" to arg-1
+				send "{@inspector}" to arg-1
+				send "&7   %player's display name% &7disabled flight mode for you" to arg-1
+				set arg-1's flight mode to false
+			else:
+				send ""
+				send "{@inspector}"
+				send "&7   Enabled flight mode for %arg-1's display name%"
+				send "" to arg-1
+				send "{@inspector}" to arg-1
+				send "&7   %player's display name% &7enabled flight mode for you" to arg-1
+				set arg-1's flight mode to true
+		else:
+			player's flight mode is true:
+				send ""
+				send "{@inspector}"
+				send "&7   Disabled flight mode for %player's display name%"
+				set player's flight mode to false
+			else:
+				send ""
+				send "{@inspector}"
+				send "&7   Enabled flight mode for %player's display name%"
+				set player's flight mode to true
+
+command /kick <player> [<text>]:
+	usage: &c /kick [ PLAYER ] [ REASON ]
+	description: &7 Kicks a player
+	permission: commencer.inspector
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Commence::%arg-1%::Rank::Value} is more than {Commence::%player%::Rank::Value}:
+			stop
+		arg-2 is set:
+			send ""
+			send "{@inspector}"
+			send "&c   You kicked %arg-1's display name%&c for %arg-2%&7"
+			send "" to arg-1
+			send "{@inspector}" to arg-1
+			send "&c   %player's display name% &ckicked you for %arg-2%&7" to arg-1
+			kick arg-1 because arg-2
+		else:
+			send ""
+			send "{@inspector}"
+			send "&c   You kicked %arg-1's display name%&c"
+			kick arg-1
+
+command /ban <offline player> [<text>]:
+	aliases: /banip
+	usage: &c /ban [ PLAYER ] [ REASON ] ~ TIME IN MINUTES ~
+	description: &7 Bans a player
+	permission: commencer.inspector
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		arg-1 is banned:
+			send ""
+			send "{@inspector}"
+			send "&c   %arg-1's display name ? arg-1%&c is already banned"
+		{Commence::%arg-1%::Rank::Value} is more than {Commence::%player%::Rank::Value}:
+			stop
+		arg-2 is set:
+			send ""
+			send "{@inspector}"
+			send "&c   You banned %arg-1's display name ? arg-1%&c for %arg-2%&7"
+			send "&c   To unban, type &c/unban [ PLAYER ]&7"
+			send "" to arg-1
+			send "{@inspector}" to arg-1
+			send "&c   You are now banned for %arg-2%&7" to arg-1
+			send "&c   To unban, type &c/unban [ PLAYER ]&7" to arg-1
+			ban arg-1 because arg-2
+			wait 1 second
+			kick arg-1 because arg-2
+		else:
+			send ""
+			send "{@inspector}"
+			send "&c   You banned %arg-1's display name ? arg-1%&c&7"
+			send "&c   To unban, type &c/unban [ PLAYER ]&7"
+			ban arg-1 because "You Are Not Permitted to Join CommenceSMP"
+
+command /unban <text>:
+	aliases: /pardon
+	usage: &c /unban [ PLAYER ]
+	description: &7 Unbans a player
+	permission: commencer.inspector
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+#		arg-1 is banned:
+		send ""
+		send "{@inspector}"
+		send "&c   You unbanned %arg-1%&c"
+		unban arg-1
+
+command /mute <player> [<integer>]:
+	aliases: /unmute
+	usage: &c /mute [ PLAYER ] [ TIME IN SECONDS ]
+	description: &7 Toggles mute for a player
+	permission: commencer.inspector
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Commence::%arg-1%::Rank::Value} is more than {Commence::%player%::Rank::Value}:
+			stop
+		arg-2 is set:
+			send ""
+			send "{@inspector}"
+			send "&c   %arg-1's display name% &cis now muted for %arg-2%"
+			send "" to arg-1
+			send "{@inspector}" to arg-1
+			send "&c   You are now now muted for %arg-2%" to arg-1
+			set {Commence::%arg-1%::Chat} to false
+			loop arg-2 times:
+				wait 1 second
+			set {Commence::%arg-1%::Chat} to true
+		else:
+			{Commence::%arg-1%::Chat} is false:
+				send ""
+				send "{@inspector}"
+				send "&c   &7MUTED %arg-1's display name% &cis now unmuted"
+				send "" to arg-1
+				send "{@inspector}" to arg-1
+				send "&c   You are now now unmuted" to arg-1
+				set {Commence::%arg-1%::Chat} to true
+				stop
+			else:
+				send ""
+				send "{@inspector}"
+				send "&c   %arg-1's display name% &cis now muted"
+				send "" to arg-1
+				send "{@inspector}" to arg-1
+				send "&c   You are now now muted" to arg-1
+				set {Commence::%arg-1%::Chat} to false
+
+#-=-=-=-=-=-=-=-=-=-
+	#PRESIDER COMMANDS
+
+command /ac:
+	aliases: /adminchat, /presiderchat, /pc, /legatechat, /lc
+	usage: &c /adminchat
+	description: &7 Toggles admin chat
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Admin} is not true:
+			send "{@permissionmessage}"
+			stop
+		else if {Commence::%player%::AdminChat} is true:
+			send ""
+			send "{@presider}"
+			send "&7   You disabled &cAdmin Chat&7"
+			send "&7   To re-enable, type &c/ac&7"
+			set {Commence::%player%::AdminChat} to false
+		else if {Commence::%player%::AdminChat} is false:
+			send ""
+			send "{@presider}"
+			send "&7   You enabled &cAdmin Chat&7"
+			send "&7   To disable, type &c/ac&7"
+			set {Commence::%player%::AdminChat} to true
+		else:
+			send ""
+			send "{@presider}"
+			send "&7   You enabled &cAdmin Chat&7"
+			send "&7   To disable, type &c/ac&7"
+			set {Commence::%player%::AdminChat} to true
+
+#-=-=-=-=-=-=-=-=-=-
+	#LEGATE COMMANDS
+
+#-=-=-=-=-=-=-=-=-=-
+	#OWNER COMMANDS
+
+command /sogsurvival <player>:
+	aliases: /sogs
+	usage: &c /sogs [ PLAYER ]
+	description: &7 Sends a player to Survival
+	permission: commencer.admin
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close arg-1's inventory
+		{Survival.Enabled} is not true:
+			send ""
+			send "{@commence}"
+			send "&c   Sorry, this game mode is currently disabled"
+			send "&7   To try other game modes, use &9/c"
+			stop
+		{PVP::%player%::Player} is true:
+			remove player from {PVP.Players::*}
+			clear {PVP::%player%::Player}
+			remove 1 from {PVP.PlayerCount}
+			if {PVP::%player%::Kills} is less than 0:
+				set {PVP::%player%::Kills} to 0
+				wait 1 tick
+			else if {PVP::%player%::Kills} is 0:
+				wait 1 tick
+			else:
+				remove 1 from {PVP::%player%::Kills}
+		send "" to arg-1
+		send "{@commence}" to arg-1
+		send "&7   You're about to teleport to &fOGSurvival&7" to arg-1
+		wait 37 ticks
+		{Survival::%arg-1%::LastLoc} is set:
+			teleport arg-1 to {Survival::%arg-1%::LastLoc}
+			stop
+		broadcast "&8  %arg-1's display name%&8 joined &fOGSurvival" to "Survival" and "SpawnHub"
+		teleport arg-1 to {Spawn.Survival}
+		if {Commence::%arg-1%::FirstGame1} is true:
+			set {Commence::%arg-1%::FirstGame1} to false
+			wait 1 second
+			send "" to arg-1
+			send "{@commence}" to arg-1
+			send "&7   Welcome to &fSurvival&7, %arg-1's display name%&7!" to arg-1
+			wait 16 ticks
+			send "&7   Run far away and don't die." to arg-1
+			send "&7   Griefing, Raiding, etc are allowed here!" to arg-1
+			wait 22 ticks
+			send "&7   To check out another mode, type &a/c" to arg-1
+			set slot 0 of arg-1 to stone pickaxe
+			set slot 1 of arg-1 to stone shovel
+			set slot 2 of arg-1 to stone axe
+			set slot 3 of arg-1 to iron sword
+			set slot 4 of arg-1 to iron chestplate
+			set slot 7 of arg-1 to 32 bread
+			set slot 8 of arg-1 to 64 torches
+
+command /bc <text>:
+	aliases: /broadcast, /bcs, /broadcasts
+	usage: &c /broadcast [ MESSAGE ]
+	description: &7 Broadcasts a message to the server
+	permission: commencer.admin
+	cooldown: 1 second
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		broadcast "&7 {@commencesmp}&fGODS<##3988A3>: %argument%"
+
+command /updatestop:
+	usage: &c /updatestop
+	description: &7 Restarts the server automatically
+	permission: commencer.admin
+	cooldown: 2 minutes
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Admin} is true:
+			broadcast ""
+			broadcast "    {@commencesmp} is Restarting!"
+			broadcast "&4     Restarting in 1 minute"
+			broadcast "&4      Join again! &8commencesmp.minehut.gg"
+			broadcast ""
+			wait 30 seconds
+			broadcast ""
+			broadcast "    {@commencesmp} is Restarting!"
+			broadcast "&4     Restarting in 30 seconds"
+			broadcast "&4      Join again! &8commencesmp.minehut.gg"
+			broadcast ""
+			wait 20 seconds
+			set {_tir} to 10
+			loop 10 times:
+				remove 1 from {_tir}
+				broadcast ""
+				broadcast "    {@commencesmp} is Restarting!"
+				broadcast "&4     Restarting in %{_tir}% seconds"
+				broadcast "&4      Join again! &8commencesmp.minehut.gg"
+				broadcast ""
+				wait 1 second
+			wait 10 seconds
+			execute console command "/restart"
+			
+command /setworldshort <world> <text>:
+	usage: &c /sws [ SHORT WORLD NAME ]
+	aliases: /sws
+	permission: commencer.admin
+	cooldown: 1 second
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%arg-1%::Short} is set:
+			send "&c Bruh, you've already done %arg-1%! (%{Commence::%arg-1%::Short}%)"
+			stop
+		else:
+			set {Commence::%arg-1%::Short} to arg-2
+			send "&7 Doooone! %arg-1%'s short name is now %arg-2%!"
+
+command /setspawn [<world>]:
+	aliases: /ss
+	usage: &c /setspawn
+	description: &7 Sets the spawn for that world
+	permission: commencer.admin
+	cooldown: 1 second
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if arg-1 is set:
+			set {_tw} to arg-1
+		else:
+			set {_tw} to player's world
+		set {Spawn::%{_tw}%} to player's location
+		send "{@owner}"
+		send ""
+		send "&7   You set the spawn point of world &a&l%{_tw}%&7 to &a&l%{Spawn::%{_tw}%}%&7!"
+		send ""
+
+command /setparkour <integer>:
+	aliases: /setp
+	usage: &c /setparkour
+	permission: commencer.admin
+	cooldown: 10 minutes
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		set {SpawnHub::Parkour%arg-1%S} to player's location
+		send "Doneeeeeeeee!"
+
+command /fakeop <player>:
+    usage: &c /fakeop [ PLAYER ]
+    description: &7 Sends a fakeop message to the argument, by &9Foxkid
+    permission: skript.fakeop
+    cooldown: 1 second
+    permission message: {@permissionmessage}
+    cooldown message: {@cooldownmessage}
+    trigger:
+        set {_target} to arg 1
+        send "&7&o[Made %{_target}% a server operator]" to {_target}
+        send "&c&l(FAKE) &7&o[Made %{_target}% a server operator]" to player
+        stop
