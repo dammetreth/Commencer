@@ -1,3 +1,4 @@
+# General Blocks
 pages:
   page1:
     gui-rows: 6
@@ -370,6 +371,7 @@ pages:
         buy: 15
         sell: 15
 
+# Decoration
 pages:
   page1:
     gui-rows: 6
@@ -694,11 +696,11 @@ pages:
         buy: 1
         sell: 1
       '81':
-        material: BARREL
-        buy: 5
-        sell: 2
+        material: MUD
+								buy: 1
+								sell: 1
       '82':
-        material: ENDER_CHEST
+        material: MUDDY_MANGROVE_ROOTS
         buy: 240
         sell: 120
       '83':
@@ -1047,6 +1049,7 @@ pages:
         buy: 2
         sell: 1
 
+# Farming
 pages:
   page1:
     gui-rows: 5
@@ -1184,6 +1187,7 @@ pages:
         buy: 3
         sell: 1
 
+# Misc
 pages:
   page1:
     gui-rows: 5
