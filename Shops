@@ -176,12 +176,12 @@ pages:
         sell: 25
       '44':
         material: GOLD_BLOCK
-        buy: 22
-        sell: 20
+        buy: 30
+        sell: 25
       '45':
         material: REDSTONE_BLOCK
-        buy: 18
-        sell: 14
+        buy: 36
+        sell: 28
   page2:
     gui-rows: 6
     items:
@@ -239,11 +239,11 @@ pages:
         sell: 6
       '59':
         material: GLASS
-        buy: 2
+        buy: 4
         sell: 2
       '60':
         material: GLASS_PANE
-        buy: 1
+        buy: 2
         sell: 1
       '61':
         material: SHULKER_BOX
@@ -1073,7 +1073,7 @@ pages:
         sell: 3
       '6':
         material: GREEN_DYE
-        buy: 1
+        buy: 2
         sell: 1
       '7':
         material: LIGHT_BLUE_DYE
@@ -1536,8 +1536,8 @@ pages:
         sell: 5
       '46':
         material: REDSTONE
-        buy: 2
-        sell: 1
+        buy: 4
+        sell: 2
       '47':
         material: REDSTONE_TORCH
         buy: 3
@@ -1577,15 +1577,15 @@ pages:
       '56':
         material: POWERED_RAIL
         buy: 20
-        sell: 20
+        sell: 5
       '57':
         material: DETECTOR_RAIL
         buy: 20
-        sell: 20
+        sell: 5
       '58':
         material: ACTIVATOR_RAIL
         buy: 20
-        sell: 20
+        sell: 5
       '59':
         material: DISPENSER
         buy: 7
