@@ -1,0 +1,570 @@
+#-=-=-=-=-=-=-=-=-=- | Live a Life in Lifer | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-                           -=-=-=-=-=-=-=-=-=-
+
+	#IDEAS, COMMENTS & SUGGESSTIONS
+
+		#Diseases or Rare Instances like Blindness when born
+		#Family allies
+		#Punish children
+		#Rare chance you spawn immortal
+		#Votekick for hackers
+		#Family Vault - Enderchest - Only a head of household can access
+		#Disable / Reenable having kids
+
+		#Family Heirlooms with buffs after a certain amount of generations
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#OPTIONS AND MESSAGES
+
+
+options:
+	lifer:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##529E6A>Lifer  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	worlds: "Survival2"
+	worlds2: "Survival2" and "SpawnHub"
+	stafferror:&c   Staff are not able to participate
+	permissionmessage:&9 Commence&8SMP &cYou are not permitted to use this command!
+	cooldownmessage:&9 Commence&8SMP &c Wait before trying this command again!
+	rtploc:&7   Now teleporting to random location in &aLifer
+	fammsg:&a   You are now &9%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%
+	foundermsg:&9   %player's display name%&8 is now &9%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%
+	famerror:&c   You are already part of the &8%{Lifer::%player%::Last}% &cfamily
+	nofamerror:&c   You are not part of a family. To reset, you will die
+	useerror:&c   You are not permitted to use that in %player's world%
+	noplayers:&c   There aren't enough players participating in the experience
+	childerror:&c   No families can birth so you will start your own
+	fampvp:&c   You can't hurt other members of your family
+	metaerror:&c   No families are available so you will start your own
+	worlderror:&c   You are not in the right world to start &aLifer
+	worlderror2:&c   You are not in the right world
+	notplayer:&c  %argument% is not participating in this experience
+	
+on load:
+	clear {Lifer.Babies::*}
+	add "Uh oh, you just had a surprise kid!" to {Lifer.Babies::*}
+	add "Uh oh, you just gave birth!" to {Lifer.Babies::*}
+	add "Umm, I think you just gave birth..." to {Lifer.Babies::*}
+	add "A kid just came out of ... you!" to {Lifer.Babies::*}
+	add "Oh great, you just had a kid!" to {Lifer.Babies::*}
+	add "Hey, you popped out a child!" to {Lifer.Babies::*}
+	add "Another child has been brought into this world." to {Lifer.Babies::*}
+	add "You are just popping out kids left and right!" to {Lifer.Babies::*}
+	add "Children are starting to come out of you!" to {Lifer.Babies::*}
+	add "Surprise, surprise... another child!" to {Lifer.Babies::*}
+	add "Great, you just had a kid!" to {Lifer.Babies::*}
+	add "Giving birth is really hard. You just did that!" to {Lifer.Babies::*}
+	add "Birthing children is a lot. Congrats!" to {Lifer.Babies::*}
+	add "Congrats on your newest little one!" to {Lifer.Babies::*}
+	add "Congrats, you have to deal with a brat!" to {Lifer.Babies::*}
+	
+#-=-=-=-=-=-=-=-=-=-
+
+	#FUNCTIONS
+
+
+function beginLifer(p: player):
+	{Lifer::%{_p}%::Condition} is not true:
+		teleport {_p} to {Spawn.Survival2}
+		set {Lifer.Players} to 0
+		clear {Lifer.PlayerNames::*}
+		loop all players in "Survival2":
+			{Lifer::%loop-player%::Condition} is true:
+				add loop-player to {Lifer.PlayerNames::*}
+				add 1 to {Lifer.Players}
+		{Lifer.Players} is less than 3:
+			set {Lifer.NotPlayers} to true
+		else:
+			set {Lifer.NotPlayers} to false
+		set {Lifer::%{_p}%::Condition} to false
+
+function joinFamily(p: player):
+	set the maximum health of {_p} to 10
+	set the walk speed of {_p} to 0.2
+	set the fly speed of {_p} to 0.1
+	set {_p}'s flight mode to false
+	if {Lifer.NotPlayers} is true:
+		set {Lifer.NotPlayers} to false
+		set {Lifer::%{_p}%::Parent} to random element of {Lifer.PlayerNames::*}
+		if {Lifer::%{Lifer::%{_p}%::Parent}%::Leader} is {_p}:
+			send "" to {_p}
+			send "{@childerror}" to {_p}
+			startFamily({_p})
+			stop
+		if {Lifer::%{Lifer::%{_p}%::Parent}%::Condition} is not true:
+			send "" to {_p}
+			send "{@metaerror}" to {_p}
+			startFamily({_p})
+			stop
+		if {Lifer::%{Lifer::%{_p}%::Parent}%::Age} is less than 15:
+			send "" to {_p}
+			send "{@childerror}" to {_p}
+			startFamily({_p})
+			stop
+	else:
+		send "" to {_p}
+		send "&c   There was an unknown error" to {_p}
+		execute {_p} command "/l"
+		stop
+	{Lifer::%{_p}%::Condition} is false:
+		send "" to {_p}
+		send "&7   You can't talk until you're 5 years old" to {_p}
+		send "&7   Your parent can hold you and you can't move" to {_p}
+		send "&7   You can be disowned from the family" to {_p}
+		send "" to {_p}
+		wait 40 ticks
+		set {Lifer::%{_p}%::First} to "&9%random element of {FirstName::*}%" or "&2%random element of {FirstName::*}%" or "&3%random element of {FirstName::*}%" or "&4%random element of {FirstName::*}%" or "&5%random element of {FirstName::*}%" or "&6%random element of {FirstName::*}%" or "&b%random element of {FirstName::*}%" or "&d%random element of {FirstName::*}%" or "&e%random element of {FirstName::*}%" or "&f%random element of {FirstName::*}%"
+		set {Lifer::%{_p}%::Last} to {Lifer::%{Lifer::%{_p}%::Parent}%::Last}
+		add {_p} to {Lifer::%{Lifer::%{_p}%::Founder}%::Legacy::*}
+		set {_p}'s display name to "&8%{Lifer::%{_p}%::First}% %{Lifer::%{_p}%::Last}%"
+		set {Lifer::%{_p}%::FirstName} to true
+		set {Lifer::%{_p}%::Founder} to {Lifer::%{Lifer::%{_p}%::Parent}%::Founder}
+		set {Lifer::%{_p}%::LastName} to true
+		set {Lifer::%{_p}%::Talk} to false
+		set {Lifer::%{_p}%::Age} to 0
+		add {_p} to {Lifer::%{Lifer::%{_p}%::Last}%::*}
+		set the maximum health of {_p} to 2 or 3
+		wait 10 ticks
+		send "" to {_p}
+		send "&7   You're about to join the %{Lifer::%{_p}%::Last}% &7family" to {_p}
+		send "&7    as &8%{Lifer::%{_p}%::First}% %{Lifer::%{_p}%::Last}%" to {_p}
+		send "" to {Lifer::%{_p}%::Parent}
+		send "{@lifer}" to {Lifer::%{_p}%::Parent}
+		send "&a   %random element of {Lifer.Babies::*}%" to {Lifer::%{_p}%::Parent}
+		send "&a    Welcome &8%{Lifer::%{_p}%::First}% %{Lifer::%{_p}%::Last}%" to {Lifer::%{_p}%::Parent}
+		set {Lifer::%{_p}%::Condition} to true
+		teleport {_p} to {Lifer::%{_p}%::Parent}
+		broadcast "&a   &8%{_p}% &ajoined the %{Lifer::%{_p}%::Last}% &afamily" to {@worlds2}
+		play sound "block.bell.resonate" at volume 100 at pitch 2 to {_p}
+		play sound "block.conduit.attack.target" at volume 100 at pitch 1 to {_p}
+
+function startFamily(p: player):
+	set the maximum health of {_p} to 10
+	set the walk speed of {_p} to 0.2
+	set the fly speed of {_p} to 0.1
+	set {_p}'s flight mode to false
+	if {Lifer.NotPlayers} is false:
+		send "" to {_p}
+		send "&7   Type &a/changename&7 to change your lastname" to {_p}
+		send "&7   Type &a/nokids&7 to become sterile" to {_p}
+		send "&7   Type &a/disown&7 to abandoned a child" to {_p}
+		send "" to {_p}
+		if {Lifer::%{_p}%::Last} is set:
+			send "" to {_p}
+			send "&c   You are already part of the &9%{Lifer::%{_p}%::Last}% &cfamily" to {_p}
+			stop
+	{Lifer::%{_p}%::Condition} is false:
+		wait 40 ticks
+		set {Lifer::%{_p}%::First} to "&9%random element of {FirstName::*}%" or "&2%random element of {FirstName::*}%" or "&3%random element of {FirstName::*}%" or "&4%random element of {FirstName::*}%" or "&5%random element of {FirstName::*}%" or "&6%random element of {FirstName::*}%" or "&b%random element of {FirstName::*}%" or "&d%random element of {FirstName::*}%" or "&e%random element of {FirstName::*}%" or "&f%random element of {FirstName::*}%"
+		set {Lifer::%{_p}%::Last} to "&9%random element of {LastName::*}%" or "&2%random element of {LastName::*}%" or "&3%random element of {LastName::*}%" or "&4%random element of {LastName::*}%" or "&5%random element of {LastName::*}%" or "&6%random element of {LastName::*}%" or "&b%random element of {LastName::*}%" or "&d%random element of {LastName::*}%" or "&e%random element of {LastName::*}%" or "&f%random element of {LastName::*}%"
+		set {Lifer::%{_p}%::Parent} to "&0*%random element of {FirstName::*}%"
+		set {Lifer::%{_p}%::Founder} to {_p}'s display name
+		clear {Lifer::%{Lifer::%{_p}%::Last}%::Legacy::*}
+		add {_p} to {Lifer::%{Lifer::%{_p}%::Founder}%::Legacy::*}
+		set {_p}'s display name to "&8%{Lifer::%{_p}%::First}% %{Lifer::%{_p}%::Last}%"
+		set {Lifer::%{_p}%::FirstName} to true
+		set {Lifer::%{_p}%::LastName} to true
+		set {Lifer::%{_p}%::Talk} to true
+		set {Lifer::%{_p}%::Age} to random integer between 15 and 22
+		add {_p} to {Lifer::%{Lifer::%{_p}%::Last}%::*}
+		set the maximum health of {_p} to 6 or 7 or 8
+		wait 10 ticks
+		broadcast "&a   &8%{_p}% &afounded the %{Lifer::%{_p}%::Last}% &afamily" to {@worlds2}
+		send "&a    as &8%{Lifer::%{_p}%::First}% %{Lifer::%{_p}%::Last}%&a aged %{Lifer::%{_p}%::Age}%" to {_p}
+		set {Lifer::%{_p}%::Condition} to true
+		set {_t1} to random integer between -500 and 500
+		set {_t2} to random integer between 90 and 120
+		set {_t3} to random integer between -500 and 500
+		teleport {_p} to location {_t1}, {_t2}, {_t3} in {_p}'s world
+		wait 1 second
+		block at {_p} is not air:
+			loop all blocks in radius 100 of {_p}:
+				loop-block is air:
+					teleport {_p} to location of loop-block
+					block under {_p} is not air:
+						stop loop
+		block under {_p} is air:
+			loop all blocks under {_p}:
+				loop-block is water:
+					stop loop
+				else if loop-block is air:
+					teleport {_p} to location of loop-block
+				else:
+					stop loop
+		give {_p} 1 of iron pickaxe
+		play sound "block.bell.resonate" at volume 100 at pitch 2 to {_p}
+		play sound "block.conduit.attack.target" at volume 100 at pitch 1 to {_p}
+
+function resetLifer(p: player):
+	set the maximum health of {_p} to 10
+	set the walk speed of {_p} to 0.2
+	set the fly speed of {_p} to 0.1
+	set {_p}'s flight mode to false
+	{Lifer::%{_p}%::Condition} is set:
+		if {Lifer::%{_p}%::First} is set:
+			set {Lifer::%{Lifer::%{_p}%::Child}%::ParentHold} to false
+			clear {Lifer::%{_p}%::Parent}
+			clear {Lifer::%{_p}%::First}
+			clear {Lifer::%{_p}%::Last}
+			reset {_p}'s display name
+			clear {Lifer::%{_p}%::FirstName}
+			clear {Lifer::%{_p}%::LastName}
+			clear {Lifer::%{_p}%::Talk}
+			clear {Lifer::%{_p}%::Age}
+			clear {Lifer::%{_p}%::Family}
+			clear {Lifer::%{_p}%::Founder}
+			clear {Lifer::%{_p}%::ParentHold}
+			clear {Lifer::%{_p}%::NoKids}
+			clear {Lifer::%{_p}%::NoChange}
+			clear {Lifer::%{_p}%::NoChangeF}
+			remove {_p} from {Lifer::%{Lifer::%{_p}%::Last}%::*}
+			remove {_p} from {Lifer::%{_p}%::Legacy::*}
+			set {Lifer::%{_p}%::Condition} to false
+			clear {Lifer::%{_p}%::Condition}
+			set {Lifer::%{_p}%::TempCondition} to true
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#COMMANDS
+
+
+command /lifer:
+	aliases: /life, /l
+	usage: &c /lifer
+	description: &7 Starts the Lifer experience
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Lifer.Enabled} is not true:
+			send ""
+			send "{@lifer}"
+			send "&c   Sorry, this game mode is currently disabled"
+			send "&7   To try other game modes, use &9/c"
+			stop
+		beginLifer(player)
+		send ""
+		send "{@lifer}"
+		send "&7   Welcome to &aLifer&7! Starting soon..."
+		{Lifer.NotPlayers} is true:
+			wait 12 tick
+			joinFamily(player)
+		else:
+			wait 12 tick
+			startFamily(player)
+
+command /joinfam:
+	aliases: /ljf, /joinfamily
+	usage: &c /joinfam
+	description: &7 Starts the Lifer experience
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		resetLifer(player)
+		wait 1 tick
+		joinFamily(player)
+#		send {Lifer.PlayerNames::*}
+
+command /disown [<text>]:
+	aliases: /nochild, /dis, /abandon
+	usage: &c /disown [a chilt]
+	description: &7 Toss a child away foreva
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Lifer::%arg-1%::Parent} contains uncolored player's display name:
+			arg-1 is set:
+				send ""
+				send "{@lifer}"
+				clear {_t}
+				loop {Lifer::%player%::Legacy::*}:
+					add 1 to {_t}
+					{Lifer::%arg-1%::Condition} is true:
+						remove arg-1 from {Lifer::%player%::Legacy::*}
+						set {Lifer::%arg-1%::Last} to "&8Unknown"
+				send "&a   Well, it's been... rough, but here we go"
+				wait 9 ticks
+				send "&a   You're about to disown a child"
+				wait 19 ticks
+		else:
+			send ""
+			send "{@lifer}"
+			send "&c   %arg-1%&c is not your child"
+
+command /nokids:
+	aliases: /nochildren, /nochild, /nok
+	usage: &c /nokids
+	description: &7 Become sterile and don't have kids
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Lifer::%player%::NoKids} is true:
+			send ""
+			send "{@lifer}"
+			send "&c   You are already sterile"
+			stop
+		send ""
+		send "{@lifer}"
+		send "&a   You have chosen to become sterile"
+		set {Lifer::%player%::NoKids} to true
+
+command /changefirst [<text>]:
+	aliases: /cf
+	usage: &c /changefirst [new first name]
+	description: &7 Change your first name
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		{Lifer::%player%::Founder} is set:
+			set {_tf} to "&9%arg-1%" or "&2%arg-1%" or "&3%arg-1%" or "&4%arg-1%" or "&5%arg-1%" or "&6%arg-1%" or "&b%arg-1%" or "&d%arg-1%" or "&e%arg-1%" or "&f%arg-1%"
+			send ""
+			send "{@lifer}"
+			send "&a   You are changing your first name to"
+			send "&a    %{_tf}%&a. Awaiting approval..."
+			wait 19 ticks
+			arg-1 is set:
+				if length of uncolored {_tf} is more than 12:
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tf}%&c is too long"
+					stop
+				else if length of uncolored {_tf} is less than 4:
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tf}%&c is too short"
+					stop
+				else if uncolored {_tf} contains uncolored {Lifer::%player%::Last}:
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tf}%&c is too similar to %{Lifer::%player%::Last}%"
+					stop
+				else if uncolored {_tf} contains "fuck" or "fu" or "cunt" or "pussy" or "dick" or "shit" or "nigger" or "nig" or "fag" or "faggot":
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tf}%&c isn't approved"
+					stop
+				else if uncolored {_tf} contains " " or ":" or "!" or "@" or "$" or "(" or ")" or "&" or "*" or "=" or "+" or "?" or "." or "," or "<" or ">" or "/" or "\":
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tf}%&c isn't approved"
+					stop
+				else if {Lifer::%player%::NoChangeF} is true:
+					send ""
+					send "&c   You already changed your first name"
+					stop
+				{Lifer::%player%::Age} is more than 17:
+					set {_tf} to "%{_tf}%" in proper case
+					set {Lifer::%player%::First} to {_tf}
+					send "&a   %player's display name% &achanged your first name to %{Lifer::%player%::First}%"
+					set {Lifer::%player%::NoChangeF} to true
+				else:
+					send ""
+					send "{@lifer}"
+					send "&c   You must be at least 18 years old"
+			else:
+				send ""
+				send "{@lifer}"
+				send "&c   You must type a first name"
+					
+command /changefam [<text>]:
+	aliases: /changename, /liferchangename, /changefamily, /cn, /changelast, /cl
+	usage: &c /changefam [new last name]
+	description: &7 Change your last name
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		uncolored {Lifer::%player%::Founder} is player:
+			arg-1 is set:
+				set {_tl} to "&9%arg-1%" or "&2%arg-1%" or "&3%arg-1%" or "&4%arg-1%" or "&5%arg-1%" or "&6%arg-1%" or "&b%arg-1%" or "&d%arg-1%" or "&e%arg-1%" or "&f%arg-1%"
+				send ""
+				send "{@lifer}"
+				send "&a   You are changing your last name to"
+				send "&a    %{_tl}%&a. Awaiting approval..."
+				wait 19 ticks
+				{Lifer::%player%::NoChange} is true:
+					send ""
+					send "&c   You already changed your last name"
+					stop
+				if length of uncolored {_tl} is more than 12:
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tl}%&c is too long"
+					stop
+				else if length of uncolored {_tl} is less than 4:
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tl}%&c is too short"
+					stop
+				else if uncolored {_tl} contains uncolored {Lifer::%player%::Last}:
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tl}%&c is too similar to %{Lifer::%player%::Last}%"
+					stop
+				else if uncolored {_tl} contains "fuck" or "fu" or "cunt" or "pussy" or "dick" or "shit" or "nigger" or "nig" or "fag" or "faggot":
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tl}%&c isn't approved"
+					stop
+				else if uncolored {_tl} contains " " or ":" or "!" or "@" or "$" or "(" or ")" or "&" or "*" or "=" or "+" or "?" or "." or "," or "<" or ">" or "/" or "\":
+					send ""
+					send "{@lifer}"
+					send "&c   Sorry, %{_tl}%&c isn't approved"
+					stop
+				else:
+					chance of 25%:
+						wait 18 ticks
+					chance of 25%:
+						wait 18 ticks
+					chance of 25%:
+						wait 18 ticks
+				clear {Lifer::%{Lifer::%player%::Founder}%::Legacy::*}
+				loop all players in "Survival2":
+					{Lifer::%loop-player%::Last} is {Lifer::%player%::Last}:
+						add loop-player to {Lifer::%{Lifer::%player%::Founder}%::Legacy::*}
+				set {_tl} to "%{_tl}%" in proper case
+				set {Lifer::%player%::Last} to "%{_tl}%"
+				loop {Lifer::%{Lifer::%player%::Founder}%::Legacy::*}:
+					set {Lifer::%loop-value%::Last} to "%{_tl}%"
+					send "&a   %player's display name% &achanged the family name to %{Lifer::%player%::Last}%" to loop-value 
+#				send "&a   Your name was approved for %{Lifer::%player%::Last}%"
+				set {Lifer::%player%::NoChange} to true
+			else:
+				send ""
+				send "{@lifer}"
+				send "&c   You must type a last name"
+		else:
+			send ""
+			send "{@lifer}"
+			send "&c   You must be a founder to change the name,"
+			{Lifer::%player%::Founder} is set:
+				send "&c    who is %{Lifer::%player%::Founder}%"
+				
+
+command /liferaddgibb <text>:
+	aliases: /lagb
+	permission: commencer.lifer.addgibb
+	permission message: &2  LIFER&c You are not permitted to use this command!
+	trigger:
+		add argument to {BabyTalk::*}
+		send {BabyTalk::*}
+command /liferaddloc:
+	permission: commencer.lifer.addgibb
+	permission message: &2  LIFER&c You are not permitted to use this command!
+	trigger:
+		add player's location to {Lifer.Tps::*}
+		send {Lifer.Tps::*}
+	
+#-=-=-=-=-=-=-=-=-=-
+
+	#CONDITIONS
+
+
+on place of white bed or purple bed or gray bed or black bed or blue bed or red bed or yellow bed or green bed or cyan bed or lime bed or orange bed:
+	world is "Survival2":
+		send "" to player
+		send "{@lifer}" to player
+		send "{@useerror}" to player
+		cancel event
+
+on bed enter:
+	world is "Survival2":
+		send ""
+		send "{@lifer}"
+		send "{@useerror}"
+		cancel event
+
+on right click on player:
+	{Lifer::%player%::ChildHold} is true:
+		target is {Lifer::%player%::Child}:
+			send "&c   You are no longer holding %{Lifer::%player%::Child}'s display name%" to player
+			send "&c   %player's display name% &cdropped you" to target
+			set {Lifer::%{Lifer::%player%::Child}%::ParentHold} to false
+			set {Lifer::%target%::ParentHold} to false
+			set {Lifer::%player%::ChildHold} to false
+			clear {Lifer::%player%::Child}
+			stop
+	world is "Survival2":
+		if {Lifer::%target%::Condition} is true:
+			send "&7   That's &8%{Lifer::%target%::First}% %{Lifer::%target%::Last}% &8(%target%) (%{Lifer::%target%::Age}%yo)" to player
+			if {Lifer::%target%::ParentHold} is true:
+				set {Lifer::%target%::ParentHold} to false
+				set {Lifer::%player%::ChildHold} to false
+				clear {Lifer::%player%::Child}
+				send "&a   You are no longer holding %{Lifer::%player%::Child}'s display name%" to player
+				send "&a   %player's display name% &cdropped you" to target
+				stop
+			player is {Lifer::%target%::Parent}:
+				{Lifer::%target%::Age} is less than 5:
+					set {Lifer::%target%::ParentHold} to true
+					send "&a   You are now holding %target's display name%" to player
+					send "&a    Look up and click to let them go" to player
+					send "&c   You are being held by your parent, %player's display name%" to target
+					send "&c    You can't move until they drop you" to target
+					set {Lifer::%player%::ChildHold} to true
+					set {Lifer::%player%::Child} to target
+					push target 1 meter forward
+				else:
+					send "&c   %{Lifer::%player%::Child}'s display name%&c can't be held anymore" to player
+					stop
+		else if target is player:
+			send "&a   That's &8%target%" to player
+		else:
+			stop
+
+on any movement:
+	{Lifer::%player%::ParentHold} is true:
+		{Lifer::%player%::Age} is more than 4:
+			stop
+		cancel event
+		while {Lifer::%player%::ParentHold} is true:
+			teleport player 2 meters above {Lifer::%player%::Parent}
+			wait 1 tick
+
+every 1 minute:
+	loop all players in "Survival2":
+		if {Lifer::%loop-player%::Condition} is true:
+			if {Lifer::%loop-player%::Age} is 0:
+				add 1 to {Lifer::%loop-player%::Age}
+				stop
+			else if {Lifer::%loop-player%::Age} is less than 60:
+				add 1 to {Lifer::%loop-player%::Age}
+				send "&8   %{Lifer::%loop-player%::First}% %{Lifer::%loop-player%::Last}%&7, you are now %{Lifer::%loop-player%::Age}%&7 years old" to loop-player
+				{Lifer::%loop-player%::Age} is less than 4:
+					set {Lifer::%loop-player%::Talk} to false
+					set the maximum health of the loop-player to 2 or 3
+				else if {Lifer::%loop-player%::Age} is 4:
+					set {Lifer::%loop-player%::Talk} to true
+				else if {Lifer::%loop-player%::Age} is 5:
+					set {Lifer::%loop-player%::ParentHold} to false
+#				{Lifer::%loop-player%::Age} is less than 20:
+#					set the maximum health of the loop-player to 6 or 7
+				{Lifer::%loop-player%::Age} is 9:
+					set the maximum health of the loop-player to 3 or 4
+				{Lifer::%loop-player%::Age} is 15:
+					set the maximum health of the loop-player to 5
+				{Lifer::%loop-player%::Age} is 16:
+					set the maximum health of the loop-player to 6 or 7
+				{Lifer::%loop-player%::Age} is 17:
+					set the maximum health of the loop-player to 8 or 9
+				{Lifer::%loop-player%::Age} is 18:
+					set the maximum health of the loop-player to 10
+				{Lifer::%loop-player%::Age} is 20:
+					set the maximum health of the loop-player to 12
+				{Lifer::%loop-player%::Age} is 24:
+					set the maximum health of the loop-player to 14
+				{Lifer::%loop-player%::Age} is 28:
+					set the maximum health of the loop-player to 16
+				{Lifer::%loop-player%::Age} is 30:
+					set the maximum health of the loop-player to 10 or 11 or 12 or 13 or 14 or 15
+				{Lifer::%loop-player%::Age} is 42:
+					set the maximum health of the loop-player to 9
+				{Lifer::%loop-player%::Age} is 53:
+					set the maximum health of the loop-player to 6
+				{Lifer::%loop-player%::Age} is 58:
+					set the maximum health of the loop-player to 4
+			else if {Lifer::%loop-player%::Age} is less than 99:
+				set health of loop-player to 0
+				stop
+			else:
+				set health of loop-player to 0
+		else:
+			stop
