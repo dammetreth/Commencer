@@ -172,8 +172,8 @@ pages:
         sell: 15
       '43':
         material: IRON_BLOCK
-        buy: 20
-        sell: 18
+        buy: 30
+        sell: 25
       '44':
         material: GOLD_BLOCK
         buy: 22
@@ -1573,7 +1573,7 @@ pages:
       '55':
         material: RAIL
         buy: 10
-        sell: 10
+        sell: 2
       '56':
         material: POWERED_RAIL
         buy: 20
