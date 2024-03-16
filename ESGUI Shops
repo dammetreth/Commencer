@@ -25,8 +25,8 @@ pages:
         sell: 1
       '6':
         material: SPRUCE_PLANKS
-        buy: 2
-        sell: 1
+        buy: 1
+        sell: 0
       '7':
         material: BIRCH_LOG
         buy: 2
@@ -49,8 +49,8 @@ pages:
         sell: 3
       '12':
         material: JUNGLE_PLANKS
-        buy: 3
-        sell: 2
+        buy: 2
+        sell: 1
       '13':
         material: ACACIA_LOG
         buy: 5
@@ -61,8 +61,8 @@ pages:
         sell: 3
       '15':
         material: ACACIA_PLANKS
-        buy: 3
-        sell: 2
+        buy: 2
+        sell: 1
       '16':
         material: DARK_OAK_LOG
         buy: 5
@@ -73,8 +73,8 @@ pages:
         sell: 3
       '18':
         material: DARK_OAK_PLANKS
-        buy: 3
-        sell: 2
+        buy: 2
+        sell: 1
       '19':
         material: MANGROVE_LOG
         buy: 10
@@ -85,16 +85,16 @@ pages:
         sell: 5
       '21':
         material: MANGROVE_PLANKS
-        buy: 5
-        sell: 3
+        buy: 3
+        sell: 2
       '22':
         material: BAMBOO_BLOCK
         buy: 8
         sell: 5
       '23':
         material: BAMBOO_PLANKS
-        buy: 5
-        sell: 3
+        buy: 2
+        sell: 1
       '24':
         material: BAMBOO_MOSAIC
         buy: 6
@@ -145,8 +145,8 @@ pages:
         sell: 1
       '36':
         material: NETHERRACK
-        buy: 5
-        sell: 2
+        buy: 3
+        sell: 1
       '37':
         material: SANDSTONE
         buy: 2
@@ -157,20 +157,20 @@ pages:
         sell: 2
       '39':
         material: SEA_LANTERN
-        buy: 10
-        sell: 8
-      '40':
-        material: PRISMARINE
         buy: 8
         sell: 6
+      '40':
+        material: PRISMARINE
+        buy: 6
+        sell: 4
       '41':
         material: PRISMARINE_BRICKS
-        buy: 10
-        sell: 9
+        buy: 8
+        sell: 7
       '42':
         material: DARK_PRISMARINE
-        buy: 15
-        sell: 15
+        buy: 10
+        sell: 8
       '43':
         material: IRON_BLOCK
         buy: 30
@@ -212,8 +212,8 @@ pages:
         sell: 2300
       '52':
         material: QUARTZ_BLOCK
-        buy: 20
-        sell: 20
+        buy: 15
+        sell: 15
       '53':
         material: AMETHYST_BLOCK
         buy: 20
@@ -228,12 +228,12 @@ pages:
         sell: 2
       '56':
         material: WHITE_CARPET
-        buy: 4
-        sell: 2
+        buy: 2
+        sell: 1
       '57':
         material: TERRACOTTA
-        buy: 8
-        sell: 6
+        buy: 4
+        sell: 2
       '58':
         material: WHITE_CONCRETE_POWDER
         buy: 8
@@ -248,8 +248,8 @@ pages:
         sell: 1
       '61':
         material: SHULKER_BOX
-        buy: 120
-        sell: 120
+        buy: 500
+        sell: 500
       '62':
         material: GRASS_BLOCK
         buy: 2
@@ -321,7 +321,7 @@ pages:
       '79':
         material: SPONGE
         buy: 100
-        sell: 0
+        sell: 50
       '80':
         material: BEE_NEST
         buy: 20
@@ -332,12 +332,12 @@ pages:
         sell: 20
       '82':
         material: SLIME_BLOCK
-        buy: 20
-        sell: 20
+        buy: 25
+        sell: 15
       '83':
         material: HONEY_BLOCK
-        buy: 20
-        sell: 20
+        buy: 25
+        sell: 15
       '84':
         material: COBWEB
         buy: 5
@@ -345,19 +345,15 @@ pages:
       '85':
         material: PISTON
         buy: 6
-        sell: 6
+        sell: 3
       '86':
         material: STICKY_PISTON
         buy: 12
-        sell: 12
+        sell: 6
       '87':
         material: COAL_BLOCK
         buy: 9
-        sell: 5
-      '87':
-        material: COAL_BLOCK
-        buy: 9
-        sell: 5
+        sell: 6
       '88':
         material: MOSS_BLOCK
         buy: 4
