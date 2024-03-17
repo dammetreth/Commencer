@@ -99,270 +99,283 @@ pages:
         material: BAMBOO_MOSAIC
         buy: 6
         sell: 3
-      '25':
+      '25': 
+        material: CRIMSON_STEM 
+        buy: 10
+        sell: 8
+      '26'
+        material: CRIMSON_PLANKS 
+      '27': 
+        material: WARPED_STEM
+      '28': 
+        material: WARPED_PLANKS 
+      '29':
         material: STONE
         buy: 1
         sell: 0
-      '26':
+      '30':
         material: SMOOTH_STONE
         buy: 3
         sell: 1
-      '27':
+      '31':
         material: COBBLESTONE
         buy: 2
         sell: 1
-      '28':
+      '32':
         material: MOSSY_COBBLESTONE
         buy: 2
         sell: 1
-      '29':
+      '33':
         material: STONE_BRICKS
         buy: 4
         sell: 1
-      '30':
+      '34':
         material: MOSSY_STONE_BRICKS
         buy: 5
         sell: 3
-      '31':
+      '35':
         material: GRANITE
         buy: 2
         sell: 1
-      '32':
+      '36':
         material: DIORITE
         buy: 2
         sell: 1
-      '33':
+      '37':
         material: ANDESITE
         buy: 2
         sell: 1
-      '34':
+      '38':
         material: DEEPSLATE
         buy: 2
         sell: 1
-      '35':
+      '39':
         material: COBBLED_DEEPSLATE
         buy: 3
         sell: 1
-      '36':
+      '40':
         material: NETHERRACK
         buy: 3
         sell: 1
-      '37':
+      '41':
         material: SANDSTONE
         buy: 2
         sell: 1
-      '38':
+      '42':
         material: RED_SANDSTONE
         buy: 3
         sell: 2
-      '39':
+      '43':
         material: SEA_LANTERN
         buy: 8
         sell: 6
-      '40':
+      '44':
         material: PRISMARINE
         buy: 6
         sell: 4
-      '41':
+      '45':
         material: PRISMARINE_BRICKS
         buy: 8
         sell: 7
-      '42':
-        material: DARK_PRISMARINE
-        buy: 10
-        sell: 8
-      '43':
-        material: IRON_BLOCK
-        buy: 30
-        sell: 25
-      '44':
-        material: GOLD_BLOCK
-        buy: 30
-        sell: 25
-      '45':
-        material: REDSTONE_BLOCK
-        buy: 36
-        sell: 28
   page2:
     gui-rows: 6
     items:
       '46':
+        material: DARK_PRISMARINE
+        buy: 10
+        sell: 8
+      '47':
+        material: IRON_BLOCK
+        buy: 30
+        sell: 25
+      '48':
+        material: GOLD_BLOCK
+        buy: 30
+        sell: 25
+      '49':
+        material: REDSTONE_BLOCK
+        buy: 36
+        sell: 28
+      '50':
         material: CHERRY_LOG
         buy: 10
         sell: 10
-      '47':
+      '51':
         material: CHERRY_WOOD
         buy: 10
         sell: 10
-      '48':
+      '52':
         material: CHERRY_PLANKS
         buy: 4
         sell: 2
-      '49':
+      '53':
         material: LAPIS_BLOCK
         buy: 26
         sell: 22
-      '50':
+      '54':
         material: DIAMOND_BLOCK
         buy: 960
         sell: 480
-      '51':
+      '55':
         material: NETHERITE_BLOCK
         buy: 7600
         sell: 2300
-      '52':
+      '56':
         material: QUARTZ_BLOCK
         buy: 15
         sell: 15
-      '53':
+      '57':
         material: AMETHYST_BLOCK
         buy: 20
         sell: 10
-      '54':
+      '58':
         material: EMERALD_BLOCK
         buy: 320
         sell: 160
-      '55':
+      '59':
         material: WHITE_WOOL
         buy: 4
         sell: 2
-      '56':
+      '60':
         material: WHITE_CARPET
         buy: 2
         sell: 1
-      '57':
+      '61':
         material: TERRACOTTA
         buy: 4
         sell: 2
-      '58':
+      '62':
         material: WHITE_CONCRETE_POWDER
         buy: 8
         sell: 6
-      '59':
+      '63':
         material: GLASS
         buy: 4
         sell: 2
-      '60':
+      '64':
         material: GLASS_PANE
         buy: 2
         sell: 1
-      '61':
+      '65':
         material: SHULKER_BOX
-        buy: 500
+        buy: 750
         sell: 500
-      '62':
+      '66':
         material: GRASS_BLOCK
         buy: 2
         sell: 2
-      '63':
+      '67':
         material: PODZOL
         buy: 3
         sell: 3
-      '64':
+      '68':
         material: MYCELIUM
         buy: 4
         sell: 4
-      '65':
+      '69':
         material: DIRT
         buy: 0
         sell: 0
-      '66':
+      '70':
         material: MUD
         buy: 2
         sell: 2
-      '67':
+      '71':
         material: CLAY
         buy: 3
         sell: 3
-      '68':
+      '72':
         material: GRAVEL
         buy: 2
         sell: 1
-      '69':
+      '73':
         material: SAND
         buy: 1
         sell: 1
-      '70':
+      '74':
         material: RED_SAND
         buy: 2
         sell: 2
-      '71':
+      '75':
         material: ICE
         buy: 2
         sell: 2
-      '72':
+      '76':
         material: CALCITE
         buy: 5
         sell: 5
-      '73':
+      '77':
         material: TUFF
         buy: 5
         sell: 5
-      '74':
+      '78':
         material: DRIPSTONE_BLOCK
         buy: 5
         sell: 5
-      '75':
+      '79':
         material: MAGMA_BLOCK
         buy: 12
         sell: 10
-      '76':
+      '80':
         material: OBSIDIAN
         buy: 22
         sell: 20
-      '77':
+      '81':
         material: CRYING_OBSIDIAN
         buy: 32
         sell: 30
-      '78':
+      '82':
         material: BONE_BLOCK
         buy: 12
         sell: 10
-      '79':
+      '83':
         material: SPONGE
         buy: 100
         sell: 50
-      '80':
+      '84':
         material: BEE_NEST
         buy: 20
         sell: 20
-      '81':
+      '85':
         material: HONEYCOMB_BLOCK
         buy: 20
         sell: 20
-      '82':
+      '86':
         material: SLIME_BLOCK
         buy: 25
         sell: 15
-      '83':
+      '87':
         material: HONEY_BLOCK
         buy: 25
         sell: 15
-      '84':
+      '88':
         material: COBWEB
         buy: 5
         sell: 5
-      '85':
+      '89':
         material: PISTON
         buy: 6
         sell: 3
-      '86':
+      '90':
         material: STICKY_PISTON
         buy: 12
         sell: 6
-      '87':
+  page3:
+    gui-rows: 2
+    items:
+      '91':
         material: COAL_BLOCK
         buy: 9
         sell: 6
-      '88':
+      '92':
         material: MOSS_BLOCK
         buy: 4
         sell: 2
-      '89':
+      '93':
         material: SMOOTH_STONE_SLAB
         buy: 2
         sell: 1
-      '90':
+      '94':
         material: BUDDING_AMETHYST
         buy: 15
         sell: 15
