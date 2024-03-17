@@ -1044,6 +1044,10 @@ pages:
         material: PINK_STAINED_GLASS_PANE
         buy: 2
         sell: 1
+       '168':
+        material: GLOW_INK_SAC
+        buy: 4
+        sell: 2
 
 # Farming
 pages:
