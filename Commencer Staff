@@ -27,6 +27,9 @@ on load:
 	#CHAT MESSAGES
 
 on chat:
+	{Commence::%player%::Displayname} is not set:
+		cancel event
+		stop
 	message contains "nigg" or "nlgg" or "n!gg" or "niger" or "nige" or "niga":
 		cancel event
 		send ""
