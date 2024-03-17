@@ -450,12 +450,12 @@ pages:
         sell: 2
       '20':
         material: IRON_BARS
-        buy: 4
-        sell: 4
+        buy: 2
+        sell: 1
       '21':
         material: CHAIN
         buy: 2
-        sell: 2
+        sell: 1
       '22':
         material: WHITE_BANNER
         buy: 5
@@ -526,8 +526,8 @@ pages:
         sell: 3
       '39':
         material: VINE
-        buy: 2
-        sell: 1
+        buy: 1
+        sell: 0
       '40':
         material: TALL_GRASS
         buy: 3
@@ -589,12 +589,12 @@ pages:
         sell: 5
       '54':
         material: BOOKSHELF
-        buy: 8
-        sell: 4
+        buy: 16
+        sell: 8
       '55':
         material: CHISELED_BOOKSHELF
-        buy: 12
-        sell: 8
+        buy: 20
+        sell: 10
       '56':
         material: OAK_SIGN
         buy: 2
@@ -673,8 +673,8 @@ pages:
         sell: 2
       '75':
         material: ENDER_CHEST
-        buy: 240
-        sell: 120
+        buy: 300
+        sell: 150
       '77':
         material: TARGET
         buy: 4
@@ -686,365 +686,361 @@ pages:
       '79':
         material: EXPERIENCE_BOTTLE
         buy: 30
-        sell: 5
+        sell: 15
       '80':
         material: SNOW_BLOCK
         buy: 1
-        sell: 1
+        sell: 1			
       '81':
-        material: MUD
-								buy: 1
-								sell: 1
-      '82':
         material: MUDDY_MANGROVE_ROOTS
         buy: 240
         sell: 120
-      '83':
+      '82':
         material: BRICKS
         buy: 4
         sell: 2
-      '84':
+      '83':
         material: TERRACOTTA
         buy: 4
         sell: 2
-      '85':
+      '84':
         material: WHITE_TERRACOTTA
         buy: 4
         sell: 2
-      '86':
+      '85':
         material: LIGHT_GRAY_TERRACOTTA
         buy: 4
         sell: 2
-      '87':
+      '86':
         material: GRAY_TERRACOTTA
         buy: 4
         sell: 2
-      '88':
+      '87':
         material: BLACK_TERRACOTTA
         buy: 4
         sell: 2
-      '89':
+      '88':
         material: BROWN_TERRACOTTA
         buy: 4
         sell: 2
-      '90':
+      '89':
         material: RED_TERRACOTTA
         buy: 4
         sell: 2
-      '91':
+      '90':
         material: ORANGE_TERRACOTTA
         buy: 4
         sell: 2
   page3:
     gui-rows: 6
     items:
-      '92':
+      '91':
         material: YELLOW_TERRACOTTA
         buy: 4
         sell: 2
-      '93':
+      '92':
         material: LIME_TERRACOTTA
         buy: 4
         sell: 2
-      '94':
+      '93':
         material: GREEN_TERRACOTTA
         buy: 4
         sell: 2
-      '95':
+      '94':
         material: CYAN_TERRACOTTA
         buy: 4
         sell: 2
-      '96':
+      '95':
         material: LIGHT_BLUE_TERRACOTTA
         buy: 4
         sell: 2
-      '97':
+      '96':
         material: BLUE_TERRACOTTA
         buy: 4
         sell: 2
-      '98':
+      '97':
         material: PURPLE_TERRACOTTA
         buy: 4
         sell: 2
-      '99':
+      '98':
         material: MAGENTA_TERRACOTTA
         buy: 4
         sell: 2
-      '100':
+      '99':
         material: PINK_TERRACOTTA
         buy: 4
-      '101':
+      '100':
         material: CONCRETE
         buy: 6
         sell: 3
-      '102':
+      '101':
         material: WHITE_CONCRETE
         buy: 6
         sell: 3
-      '103':
+      '102':
         material: LIGHT_GRAY_CONCRETE
         buy: 6
         sell: 3
-      '104':
+      '103':
         material: GRAY_CONCRETE
         buy: 6
         sell: 3
-      '105':
+      '104':
         material: BLACK_CONCRETE
         buy: 6
         sell: 3
-      '106':
+      '105':
         material: BROWN_CONCRETE
         buy: 6
         sell: 3
-      '107':
+      '106':
         material: RED_CONCRETE
         buy: 6
         sell: 3
-      '108':
+      '107':
         material: ORANGE_CONCRETE
         buy: 6
         sell: 3
-      '109':
+      '108':
         material: YELLOW_CONCRETE
         buy: 6
         sell: 3
-      '110':
+      '109':
         material: LIME_CONCRETE
         buy: 6
         sell: 3
-      '111':
+      '110':
         material: GREEN_CONCRETE
         buy: 6
         sell: 3
-      '112':
+      '111':
         material: CYAN_CONCRETE
         buy: 6
         sell: 3
-      '113':
+      '112':
         material: LIGHT_BLUE_CONCRETE
         buy: 6
         sell: 3
-      '114':
+      '113':
         material: BLUE_CONCRETE
         buy: 6
         sell: 3
-      '115':
+      '114':
         material: PURPLE_CONCRETE
         buy: 6
         sell: 3
-      '116':
+      '115':
         material: MAGENTA_CONCRETE
         buy: 6
         sell: 3
-      '117':
+      '116':
         material: PINK_CONCRETE
         buy: 6
         sell: 3
-      '118':
+      '117':
         material: WOOL
         buy: 4
         sell: 2
-      '119':
+      '118':
         material: WHITE_WOOL
         buy: 4
         sell: 2
-      '120':
+      '119':
         material: LIGHT_GRAY_WOOL
         buy: 4
         sell: 2
-      '121':
+      '120':
         material: GRAY_WOOL
         buy: 4
         sell: 2
-      '122':
+      '121':
         material: BLACK_WOOL
         buy: 4
         sell: 2
-      '123':
+      '122':
         material: BROWN_WOOL
         buy: 4
         sell: 2
-      '124':
+      '123':
         material: RED_WOOL
         buy: 4
         sell: 2
-      '125':
+      '124':
         material: ORANGE_WOOL
         buy: 4
         sell: 2
-      '126':
+      '125':
         material: YELLOW_WOOL
         buy: 4
         sell: 2
-      '127':
+      '126':
         material: LIME_WOOL
         buy: 4
         sell: 2
-      '128':
+      '127':
         material: GREEN_WOOL
         buy: 4
         sell: 2
-      '129':
+      '128':
         material: CYAN_WOOL
         buy: 4
         sell: 2
-      '130':
+      '129':
         material: LIGHT_BLUE_WOOL
         buy: 4
         sell: 2
-      '131':
+      '130':
         material: BLUE_WOOL
         buy: 4
         sell: 2
-      '132':
+      '131':
         material: PURPLE_WOOL
         buy: 4
         sell: 2
-      '133':
+      '132':
         material: MAGENTA_WOOL
         buy: 4
         sell: 2
-      '134':
+      '133':
         material: PINK_WOOL
         buy: 4
         sell: 2
-      '135':
+      '134':
         material: TINTED_GLASS
         buy: 5
         sell: 5
-      '136':
+      '135':
         material: WHITE_STAINED_GLASS
         buy: 4
         sell: 4
   page4:
     gui-rows: 6
     items:
-      '137':
+      '136':
         material: LIGHT_GRAY_STAINED_GLASS
         buy: 4
         sell: 2
-      '138':
+      '137':
         material: GRAY_STAINED_GLASS
         buy: 4
         sell: 2
-      '139':
+      '138':
         material: BLACK_STAINED_GLASS
         buy: 4
         sell: 2
-      '140':
+      '139':
         material: BROWN_STAINED_GLASS
         buy: 4
         sell: 2
-      '141':
+      '140':
         material: RED_STAINED_GLASS
         buy: 4
         sell: 2
-      '142':
+      '141':
         material: ORANGE_STAINED_GLASS
         buy: 4
         sell: 2
-      '143':
+      '142':
         material: YELLOW_STAINED_GLASS
         buy: 4
         sell: 2
-      '144':
+      '143':
         material: LIME_STAINED_GLASS
         buy: 4
         sell: 2
-      '145':
+      '144':
         material: GREEN_STAINED_GLASS
         buy: 4
         sell: 2
-      '146':
+      '145':
         material: CYAN_STAINED_GLASS
         buy: 4
         sell: 2
-      '147':
+      '146':
         material: LIGHT_BLUE_STAINED_GLASS
         buy: 4
         sell: 2
-      '148':
+      '147':
         material: BLUE_STAINED_GLASS
         buy: 4
         sell: 2
-      '149':
+      '148':
         material: PURPLE_STAINED_GLASS
         buy: 4
         sell: 2
-      '150':
+      '149':
         material: MAGENTA_STAINED_GLASS
         buy: 4
         sell: 2
-      '151':
+      '150':
         material: PINK_STAINED_GLASS
         buy: 4
         sell: 2
-      '152':
+      '151':
         material: WHITE_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '153':
+      '152':
         material: LIGHT_GRAY_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '154':
+      '153':
         material: GRAY_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '155':
+      '154':
         material: BLACK_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '156':
+      '155':
         material: BROWN_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '157':
+      '156':
         material: RED_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '158':
+      '157':
         material: ORANGE_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '159':
+      '158':
         material: YELLOW_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '160':
+      '159':
         material: LIME_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '161':
+      '160':
         material: GREEN_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '162':
+      '161':
         material: CYAN_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '163':
+      '162':
         material: LIGHT_BLUE_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '164':
+      '163':
         material: BLUE_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '165':
+      '164':
         material: PURPLE_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '166':
+      '165':
         material: MAGENTA_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-      '167':
+      '166':
         material: PINK_STAINED_GLASS_PANE
         buy: 2
         sell: 1
-       '168':
+       '167':
         material: GLOW_INK_SAC
         buy: 4
         sell: 2
@@ -1186,7 +1182,10 @@ pages:
         material: FEATHER
         buy: 3
         sell: 1
-
+      '33':
+        material: ARROW
+        buy: 3
+        sell: 2
 # Misc
 pages:
   page1:
@@ -1425,7 +1424,7 @@ pages:
         sell: 10
       '18':
         material: LODESTONE
-        buy: 2600
+        buy: 2000
         sell: 800
       '19':
         material: BELL
@@ -1529,7 +1528,7 @@ pages:
         sell: 10
       '44':
         material: ELYTRA
-        buy: 500
+        buy: 750
         sell: 500
   page2:
     gui-rows: 4
