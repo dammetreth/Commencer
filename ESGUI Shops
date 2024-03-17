@@ -105,10 +105,16 @@ pages:
         sell: 8
       '26'
         material: CRIMSON_PLANKS 
+        buy: 4
+        sell: 2
       '27': 
         material: WARPED_STEM
+        buy: 10
+        sell: 8
       '28': 
-        material: WARPED_PLANKS 
+        material: WARPED_PLANKS
+        buy: 4
+        sell: 2
       '29':
         material: STONE
         buy: 1
