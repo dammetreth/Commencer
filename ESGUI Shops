@@ -401,16 +401,20 @@ pages:
         material: GOLD_INGOT
         buy: 3
         sell: 2
-      '99': REDSTONE
+      '99':
+        material: REDSTONE
         buy: 4
         sell: 3
-     '100': LAPIS_LAZULI
+     '100': 
+        material: LAPIS_LAZULI 
         buy: 3
         sell: 2
-     '101': DIAMOND
+     '101': 
+        material: DIAMOND
         buy: 106
         sell: 53
-     '102': NETHERITE_INGOT
+     '102': 
+        material: NETHERITE_INGOT
         buy: 844
         sell: 633
      '103': EMERALD
