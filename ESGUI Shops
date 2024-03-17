@@ -192,11 +192,11 @@ pages:
         sell: 8
       '47':
         material: IRON_BLOCK
-        buy: 30
+        buy: 27
         sell: 25
       '48':
         material: GOLD_BLOCK
-        buy: 30
+        buy: 27
         sell: 25
       '49':
         material: REDSTONE_BLOCK
@@ -216,28 +216,28 @@ pages:
         sell: 2
       '53':
         material: LAPIS_BLOCK
-        buy: 26
+        buy: 27
         sell: 22
       '54':
         material: DIAMOND_BLOCK
-        buy: 960
+        buy: 954
         sell: 480
       '55':
         material: NETHERITE_BLOCK
-        buy: 7600
+        buy: 7596
         sell: 2300
       '56':
         material: QUARTZ_BLOCK
-        buy: 15
-        sell: 15
+        buy: 16
+        sell: 16
       '57':
         material: AMETHYST_BLOCK
         buy: 20
         sell: 10
       '58':
         material: EMERALD_BLOCK
-        buy: 320
-        sell: 160
+        buy: 324
+        sell: 162
       '59':
         material: WHITE_WOOL
         buy: 4
@@ -367,7 +367,7 @@ pages:
         buy: 12
         sell: 6
   page3:
-    gui-rows: 2
+    gui-rows: 3
     items:
       '91':
         material: COAL_BLOCK
@@ -385,6 +385,37 @@ pages:
         material: BUDDING_AMETHYST
         buy: 15
         sell: 15
+      '95':
+        material: BLOCK_OF_COPPER
+        buy: 27
+        sell: 18
+      '96':
+        material: COPPER_INGOT
+        buy: 3
+        sell: 2
+      '97':
+        material: IRON_INGOT
+        buy: 3
+        sell: 2
+      '98': 
+        material: GOLD_INGOT
+        buy: 3
+        sell: 2
+      '99': REDSTONE
+        buy: 4
+        sell: 3
+     '100': LAPIS_LAZULI
+        buy: 3
+        sell: 2
+     '101': DIAMOND
+        buy: 106
+        sell: 53
+     '102': NETHERITE_INGOT
+        buy: 844
+        sell: 633
+     '103': EMERALD
+        buy: 36
+        sell: 25
 
 # Decoration
 pages:
@@ -1063,6 +1094,18 @@ pages:
         material: PINK_STAINED_GLASS_PANE
         buy: 2
         sell: 1
+      '168':
+        material: PEARLESCENT_FROGLIGHT
+        buy: 50
+        sell: 30
+      '169':
+        material: VERDANT_FROGLIGHT
+        buy: 50
+        sell: 30
+      '170':
+        material: OCHRE_FROGLIGHT
+        buy: 50
+        sell: 30
 
 # Farming
 pages:
