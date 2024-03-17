@@ -103,7 +103,7 @@ pages:
         material: CRIMSON_STEM 
         buy: 10
         sell: 8
-      '26'
+      '26':
         material: CRIMSON_PLANKS 
         buy: 4
         sell: 2
