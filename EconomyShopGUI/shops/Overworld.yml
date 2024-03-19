@@ -35,7 +35,7 @@ pages:
         buy: 1
         sell: 0
       '9':
-        material: OAK_FENCE_DOOR
+        material: OAK_FENCE_GATE
         buy: 1
         sell: 0
       '10':
@@ -71,7 +71,7 @@ pages:
         buy: 1
         sell: 0
       '18':
-        material: SPRUCE_FENCE_DOOR
+        material: SPRUCE_FENCE_GATE
         buy: 1
         sell: 0
       '19':
@@ -107,7 +107,7 @@ pages:
         buy: 1
         sell: 0
       '27':
-        material: BIRCH_FENCE_DOOR
+        material: BIRCH_FENCE_GATE
         buy: 1
         sell: 0
       '28':
@@ -143,7 +143,7 @@ pages:
         buy: 1
         sell: 0
       '36':
-        material: JUNGLE_FENCE_DOOR
+        material: JUNGLE_FENCE_GATE
         buy: 1
         sell: 0
       '37':
@@ -179,7 +179,7 @@ pages:
         buy: 1
         sell: 0
       '45':
-        material: ACACIA_FENCE_DOOR
+        material: ACACIA_FENCE_GATE
         buy: 1
         sell: 0
   page2:
