@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: GRASS_BLOCK
-  displayname: '&8-&k|&9 Wood, Stone & Other Blocks &8&k|&8-'
-  name: '&8-==&k|&9   Commence&8SMP&8 Shop   &3&8&k|&8==-'
+  displayname: '&8-&k|&r&a&l Overworld &r&8&k|&8-'
+  name: '&8-==&k|&9   Commence&8SMP&8 &r&a&lOverworld %r&8Shop   &3&8&k|&8==-'

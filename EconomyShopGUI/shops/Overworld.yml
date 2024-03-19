@@ -1,0 +1,187 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: OAK_LOG
+        buy: 2
+        sell: 1
+      '2':
+        material: OAK_WOOD
+        buy: 2
+        sell: 1
+      '3':
+        material: STRIPPED_OAK_LOG
+        buy: 2
+        sell: 1
+      '4':
+        material: STRIPPED_OAK_WOOD
+        buy: 2
+        sell: 1
+      '5':
+        material: OAK_PLANKS
+        buy: 1
+        sell: 0
+      '6':
+        material: OAK_STAIRS
+        buy: 1
+        sell: 0
+      '7':
+        material: OAK_SLAB
+        buy: 1
+        sell: 0
+      '8':
+        material: OAK_FENCE
+        buy: 1
+        sell: 0
+      '9':
+        material: OAK_FENCE_DOOR
+        buy: 1
+        sell: 0
+      '10':
+        material: SPRUCE_LOG
+        buy: 2
+        sell: 1
+      '11':
+        material: SPRUCE_WOOD
+        buy: 2
+        sell: 1
+      '12':
+        material: STRIPPED_SPRUCE_LOG
+        buy: 2
+        sell: 1
+      '13':
+        material: STRIPPED_SPRUCE_WOOD
+        buy: 2
+        sell: 1
+      '14':
+        material: SPRUCE_PLANKS
+        buy: 1
+        sell: 0
+      '15':
+        material: SPRUCE_STAIRS
+        buy: 1
+        sell: 0
+      '16':
+        material: SPRUCE_SLAB
+        buy: 1
+        sell: 0
+      '17':
+        material: SPRUCE_FENCE
+        buy: 1
+        sell: 0
+      '18':
+        material: SPRUCE_FENCE_DOOR
+        buy: 1
+        sell: 0
+      '19':
+        material: BIRCH_LOG
+        buy: 2
+        sell: 1
+      '20':
+        material: BIRCH_WOOD
+        buy: 2
+        sell: 1
+      '21':
+        material: STRIPPED_BIRCH_LOG
+        buy: 2
+        sell: 1
+      '22':
+        material: STRIPPED_BIRCH_WOOD
+        buy: 2
+        sell: 1
+      '23':
+        material: BIRCH_PLANKS
+        buy: 1
+        sell: 0
+      '24':
+        material: BIRCH_STAIRS
+        buy: 1
+        sell: 0
+      '25':
+        material: BIRCH_SLAB
+        buy: 1
+        sell: 0
+      '26':
+        material: BIRCH_FENCE
+        buy: 1
+        sell: 0
+      '27':
+        material: BIRCH_FENCE_DOOR
+        buy: 1
+        sell: 0
+      '28':
+        material: JUNGLE_LOG
+        buy: 2
+        sell: 1
+      '29':
+        material: JUNGLE_WOOD
+        buy: 2
+        sell: 1
+      '30':
+        material: STRIPPED_JUNGLE_LOG
+        buy: 2
+        sell: 1
+      '31':
+        material: STRIPPED_JUNGLE_WOOD
+        buy: 2
+        sell: 1
+      '32':
+        material: JUNGLE_PLANKS
+        buy: 1
+        sell: 0
+      '33':
+        material: JUNGLE_STAIRS
+        buy: 1
+        sell: 0
+      '34':
+        material: JUNGLE_SLAB
+        buy: 1
+        sell: 0
+      '35':
+        material: JUNGLE_FENCE
+        buy: 1
+        sell: 0
+      '36':
+        material: JUNGLE_FENCE_DOOR
+        buy: 1
+        sell: 0
+      '37':
+        material: ACACIA_LOG
+        buy: 2
+        sell: 1
+      '38':
+        material: ACACIA_WOOD
+        buy: 2
+        sell: 1
+      '39':
+        material: STRIPPED_ACACIA_LOG
+        buy: 2
+        sell: 1
+      '40':
+        material: STRIPPED_ACACIA_WOOD
+        buy: 2
+        sell: 1
+      '41':
+        material: ACACIA_PLANKS
+        buy: 1
+        sell: 0
+      '42':
+        material: ACACIA_STAIRS
+        buy: 1
+        sell: 0
+      '43':
+        material: ACACIA_SLAB
+        buy: 1
+        sell: 0
+      '44':
+        material: ACACIA_FENCE
+        buy: 1
+        sell: 0
+      '45':
+        material: ACACIA_FENCE_DOOR
+        buy: 1
+        sell: 0
+  page2:
+    gui-rows: 6
+    

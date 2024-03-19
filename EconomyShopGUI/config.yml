@@ -278,7 +278,7 @@ custom-bedrock-player-profile:
 
 # The fill item for inside the main menu which will fill empty spots
 main-menu:
-  gui-rows: 3
+  gui-rows: 6
   fill-item:
     material: GRAY_STAINED_GLASS_PANE
     name: ' '
@@ -359,7 +359,7 @@ shops-nav-bar:
       material: GRAY_STAINED_GLASS_PANE
       name: ' '
     4:
-      material: red_stained_glass_pane
+      material: orange_stained_glass_pane
       name: '%translations-previous-page%'
       action: PAGE_BACK
       paginated:
@@ -368,10 +368,10 @@ shops-nav-bar:
           material: GRAY_STAINED_GLASS_PANE
           name: ' '
     5:
-      material: paper
+      material: compas
       name: '%translations-current-page%'
     6:
-      material: blue_stained_glass_pane
+      material: red_stained_glass_pane
       name: '%translations-next-page%'
       action: PAGE_NEXT
       paginated:

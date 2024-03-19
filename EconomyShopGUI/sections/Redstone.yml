@@ -1,5 +1,5 @@
 enable: false
-slot: 32
+slot: 26
 title: ''
 hidden: false
 sub-section: false
@@ -9,7 +9,7 @@ fill-item:
 nav-bar:
   mode: INHERIT
 item:
-  material: REDSTONE
+  material: REDSTONE_BLOCK
   lore:
   - '&4&lFor all redstone geeks!'
   displayname: '&c&lRedstone'
