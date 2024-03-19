@@ -2047,7 +2047,7 @@ on load:
 
 	loop all players:
 		loop-player is "TheMemeVillager":
-			cler {Commence::%loop-player%::Quest::*}
+			clear {Commence::%loop-player%::Quest::*}
 		loop-player is "Cdestre":
 #			clear {Commence::%loop-player%::*}
 #			clear {Commence.%loop-player%.FirstJoin}
