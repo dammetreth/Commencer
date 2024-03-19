@@ -295,9 +295,7 @@ command /ban <offline player> [<text>]:
 			send "" to arg-1
 			send "{@inspector}" to arg-1
 			send "&c   You are now banned for %arg-2%&7" to arg-1
-			send "&c   To unban, type &c/unban [ PLAYER ]&7" to arg-1
 			ban arg-1 because arg-2
-			wait 1 second
 			kick arg-1 because arg-2
 		else:
 			send ""
@@ -306,7 +304,7 @@ command /ban <offline player> [<text>]:
 			send "&c   To unban, type &c/unban [ PLAYER ]&7"
 			ban arg-1 because "You are banned from CommenceSMP by an Operator"
 
-command /banip <player> [<text>]:
+command /banip <offline player> [<text>]:
 	usage: &c /banip [ PLAYER ] [ REASON ]
 	description: &7 Bans a player
 	permission: commencer.inspector
@@ -323,21 +321,20 @@ command /banip <player> [<text>]:
 		arg-2 is set:
 			send ""
 			send "{@inspector}"
-			send "&c   You banned %IP of arg-1's ? arg-1%&c for %arg-2%&7"
+			send "&c   You banned %arg-1's display name ? arg-1%&c for %arg-2%&7"
 			send "&c   To unban, type &c/unban [ PLAYER ]&7"
 			send "" to arg-1
 			send "{@inspector}" to arg-1
 			send "&c   You are now banned for %arg-2%&7" to arg-1
-			send "&c   To unban, type &c/unban [ PLAYER ]&7" to arg-1
-			IP ban arg-1 because arg-1
-			wait 1 second
+			ban arg-1's ip because arg-2
 			kick arg-1 because arg-2
 		else:
 			send ""
 			send "{@inspector}"
-			send "&c   You banned %IP of arg-1's ? arg-1%&c&7"
+			send "&c   You banned %arg-1's display name ? arg-1%&c&7"
 			send "&c   To unban, type &c/unban [ PLAYER ]&7"
-			IP ban arg-1 because "You are banned from CommenceSMP by an Operator"
+			ban arg-1's ip because "You are banned from CommenceSMP by an Operator"
+			kick arg-1 because "You are banned from CommenceSMP by an Operator"
 
 command /unban <text>:
 	aliases: /pardon
