@@ -274,8 +274,7 @@ command /kick <player> [<text>]:
 			kick arg-1
 
 command /ban <offline player> [<text>]:
-	aliases: /banip
-	usage: &c /ban [ PLAYER ] [ REASON ] ~ TIME IN MINUTES ~
+	usage: &c /ban [ PLAYER ] [ REASON ]
 	description: &7 Bans a player
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -305,7 +304,40 @@ command /ban <offline player> [<text>]:
 			send "{@inspector}"
 			send "&c   You banned %arg-1's display name ? arg-1%&c&7"
 			send "&c   To unban, type &c/unban [ PLAYER ]&7"
-			ban arg-1 because "You Are Not Permitted to Join CommenceSMP"
+			ban arg-1 because "You are banned from CommenceSMP by an Operator"
+
+command /banip <player> [<text>]:
+	usage: &c /banip [ PLAYER ] [ REASON ]
+	description: &7 Bans a player
+	permission: commencer.inspector
+	cooldown: 10 seconds
+	permission message: {@permissionmessage}
+	cooldown message: {@cooldownmessage}
+	trigger:
+		arg-1 is banned:
+			send ""
+			send "{@inspector}"
+			send "&c   %arg-1's display name ? arg-1%&c is already banned"
+		{Commence::%arg-1%::Rank::Value} is more than {Commence::%player%::Rank::Value}:
+			stop
+		arg-2 is set:
+			send ""
+			send "{@inspector}"
+			send "&c   You banned %IP of arg-1's ? arg-1%&c for %arg-2%&7"
+			send "&c   To unban, type &c/unban [ PLAYER ]&7"
+			send "" to arg-1
+			send "{@inspector}" to arg-1
+			send "&c   You are now banned for %arg-2%&7" to arg-1
+			send "&c   To unban, type &c/unban [ PLAYER ]&7" to arg-1
+			IP ban arg-1 because arg-1
+			wait 1 second
+			kick arg-1 because arg-2
+		else:
+			send ""
+			send "{@inspector}"
+			send "&c   You banned %IP of arg-1's ? arg-1%&c&7"
+			send "&c   To unban, type &c/unban [ PLAYER ]&7"
+			IP ban arg-1 because "You are banned from CommenceSMP by an Operator"
 
 command /unban <text>:
 	aliases: /pardon
