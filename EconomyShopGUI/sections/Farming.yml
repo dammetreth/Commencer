@@ -1,0 +1,14 @@
+enable: true
+slot: 14
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: WHEAT
+  displayname: '&8-&k|&9 More Naturals & Farming &8&k|&8-'
+  name: '&8-==&k|&9   Commence&8SMP&8 Shop   &3&8&k|&8==-'

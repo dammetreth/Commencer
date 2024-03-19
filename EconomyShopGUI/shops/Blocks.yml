@@ -1,0 +1,426 @@
+pages:
+  page1:
+    gui-rows: 6
+    items:
+      '1':
+        material: OAK_LOG
+        buy: 2
+        sell: 1
+      '2':
+        material: OAK_WOOD
+        buy: 2
+        sell: 1
+      '3':
+        material: OAK_PLANKS
+        buy: 1
+        sell: 0
+      '4':
+        material: SPRUCE_LOG
+        buy: 3
+        sell: 1
+      '5':
+        material: SPRUCE_WOOD
+        buy: 3
+        sell: 1
+      '6':
+        material: SPRUCE_PLANKS
+        buy: 1
+        sell: 0
+      '7':
+        material: BIRCH_LOG
+        buy: 2
+        sell: 1
+      '8':
+        material: BIRCH_WOOD
+        buy: 2
+        sell: 1
+      '9':
+        material: BIRCH_PLANKS
+        buy: 1
+        sell: 0
+      '10':
+        material: JUNGLE_LOG
+        buy: 5
+        sell: 3
+      '11':
+        material: JUNGLE_WOOD
+        buy: 5
+        sell: 3
+      '12':
+        material: JUNGLE_PLANKS
+        buy: 2
+        sell: 1
+      '13':
+        material: ACACIA_LOG
+        buy: 5
+        sell: 3
+      '14':
+        material: ACACIA_WOOD
+        buy: 5
+        sell: 3
+      '15':
+        material: ACACIA_PLANKS
+        buy: 2
+        sell: 1
+      '16':
+        material: DARK_OAK_LOG
+        buy: 5
+        sell: 3
+      '17':
+        material: DARK_OAK_WOOD
+        buy: 5
+        sell: 3
+      '18':
+        material: DARK_OAK_PLANKS
+        buy: 2
+        sell: 1
+      '19':
+        material: MANGROVE_LOG
+        buy: 10
+        sell: 5
+      '20':
+        material: MANGROVE_WOOD
+        buy: 10
+        sell: 5
+      '21':
+        material: MANGROVE_PLANKS
+        buy: 3
+        sell: 2
+      '22':
+        material: BAMBOO_BLOCK
+        buy: 8
+        sell: 5
+      '23':
+        material: BAMBOO_PLANKS
+        buy: 2
+        sell: 1
+      '24':
+        material: BAMBOO_MOSAIC
+        buy: 6
+        sell: 3
+      '25': 
+        material: CRIMSON_STEM 
+        buy: 10
+        sell: 8
+      '26':
+        material: CRIMSON_PLANKS 
+        buy: 4
+        sell: 2
+      '27': 
+        material: WARPED_STEM
+        buy: 10
+        sell: 8
+      '28': 
+        material: WARPED_PLANKS
+        buy: 4
+        sell: 2
+      '29':
+        material: STONE
+        buy: 1
+        sell: 0
+      '30':
+        material: SMOOTH_STONE
+        buy: 3
+        sell: 1
+      '31':
+        material: COBBLESTONE
+        buy: 2
+        sell: 1
+      '32':
+        material: MOSSY_COBBLESTONE
+        buy: 2
+        sell: 1
+      '33':
+        material: STONE_BRICKS
+        buy: 4
+        sell: 1
+      '34':
+        material: MOSSY_STONE_BRICKS
+        buy: 5
+        sell: 3
+      '35':
+        material: GRANITE
+        buy: 2
+        sell: 1
+      '36':
+        material: DIORITE
+        buy: 2
+        sell: 1
+      '37':
+        material: ANDESITE
+        buy: 2
+        sell: 1
+      '38':
+        material: DEEPSLATE
+        buy: 2
+        sell: 1
+      '39':
+        material: COBBLED_DEEPSLATE
+        buy: 3
+        sell: 1
+      '40':
+        material: NETHERRACK
+        buy: 3
+        sell: 1
+      '41':
+        material: SANDSTONE
+        buy: 2
+        sell: 1
+      '42':
+        material: RED_SANDSTONE
+        buy: 3
+        sell: 2
+      '43':
+        material: SEA_LANTERN
+        buy: 8
+        sell: 6
+      '44':
+        material: PRISMARINE
+        buy: 6
+        sell: 4
+      '45':
+        material: PRISMARINE_BRICKS
+        buy: 8
+        sell: 7
+  page2:
+    gui-rows: 6
+    items:
+      '46':
+        material: DARK_PRISMARINE
+        buy: 10
+        sell: 8
+      '47':
+        material: IRON_BLOCK
+        buy: 27
+        sell: 25
+      '48':
+        material: GOLD_BLOCK
+        buy: 27
+        sell: 25
+      '49':
+        material: REDSTONE_BLOCK
+        buy: 36
+        sell: 28
+      '50':
+        material: CHERRY_LOG
+        buy: 10
+        sell: 10
+      '51':
+        material: CHERRY_WOOD
+        buy: 10
+        sell: 10
+      '52':
+        material: CHERRY_PLANKS
+        buy: 4
+        sell: 2
+      '53':
+        material: LAPIS_BLOCK
+        buy: 27
+        sell: 22
+      '54':
+        material: DIAMOND_BLOCK
+        buy: 954
+        sell: 480
+      '55':
+        material: NETHERITE_BLOCK
+        buy: 7596
+        sell: 2300
+      '56':
+        material: QUARTZ_BLOCK
+        buy: 16
+        sell: 16
+      '57':
+        material: AMETHYST_BLOCK
+        buy: 20
+        sell: 10
+      '58':
+        material: EMERALD_BLOCK
+        buy: 324
+        sell: 162
+      '59':
+        material: WHITE_WOOL
+        buy: 4
+        sell: 2
+      '60':
+        material: WHITE_CARPET
+        buy: 2
+        sell: 1
+      '61':
+        material: TERRACOTTA
+        buy: 4
+        sell: 2
+      '62':
+        material: WHITE_CONCRETE_POWDER
+        buy: 8
+        sell: 6
+      '63':
+        material: GLASS
+        buy: 4
+        sell: 2
+      '64':
+        material: GLASS_PANE
+        buy: 2
+        sell: 1
+      '65':
+        material: SHULKER_BOX
+        buy: 750
+        sell: 500
+      '66':
+        material: GRASS_BLOCK
+        buy: 2
+        sell: 2
+      '67':
+        material: PODZOL
+        buy: 3
+        sell: 3
+      '68':
+        material: MYCELIUM
+        buy: 4
+        sell: 4
+      '69':
+        material: DIRT
+        buy: 0
+        sell: 0
+      '70':
+        material: MUD
+        buy: 2
+        sell: 2
+      '71':
+        material: CLAY
+        buy: 3
+        sell: 3
+      '72':
+        material: GRAVEL
+        buy: 2
+        sell: 1
+      '73':
+        material: SAND
+        buy: 1
+        sell: 1
+      '74':
+        material: RED_SAND
+        buy: 2
+        sell: 2
+      '75':
+        material: ICE
+        buy: 2
+        sell: 2
+      '76':
+        material: CALCITE
+        buy: 5
+        sell: 5
+      '77':
+        material: TUFF
+        buy: 5
+        sell: 5
+      '78':
+        material: DRIPSTONE_BLOCK
+        buy: 5
+        sell: 5
+      '79':
+        material: MAGMA_BLOCK
+        buy: 12
+        sell: 10
+      '80':
+        material: OBSIDIAN
+        buy: 22
+        sell: 20
+      '81':
+        material: CRYING_OBSIDIAN
+        buy: 32
+        sell: 30
+      '82':
+        material: BONE_BLOCK
+        buy: 12
+        sell: 10
+      '83':
+        material: SPONGE
+        buy: 100
+        sell: 50
+      '84':
+        material: BEE_NEST
+        buy: 20
+        sell: 20
+      '85':
+        material: HONEYCOMB_BLOCK
+        buy: 20
+        sell: 20
+      '86':
+        material: SLIME_BLOCK
+        buy: 25
+        sell: 15
+      '87':
+        material: HONEY_BLOCK
+        buy: 25
+        sell: 15
+      '88':
+        material: COBWEB
+        buy: 5
+        sell: 5
+      '89':
+        material: PISTON
+        buy: 6
+        sell: 3
+      '90':
+        material: STICKY_PISTON
+        buy: 12
+        sell: 6
+  page3:
+    gui-rows: 3
+    items:
+      '91':
+        material: COAL_BLOCK
+        buy: 9
+        sell: 6
+      '92':
+        material: MOSS_BLOCK
+        buy: 4
+        sell: 2
+      '93':
+        material: SMOOTH_STONE_SLAB
+        buy: 2
+        sell: 1
+      '94':
+        material: BUDDING_AMETHYST
+        buy: 15
+        sell: 15
+      '95':
+        material: BLOCK_OF_COPPER
+        buy: 27
+        sell: 18
+      '96':
+        material: COPPER_INGOT
+        buy: 3
+        sell: 2
+      '97':
+        material: IRON_INGOT
+        buy: 3
+        sell: 2
+      '98': 
+        material: GOLD_INGOT
+        buy: 3
+        sell: 2
+      '99':
+        material: REDSTONE
+        buy: 4
+        sell: 3
+      '99':
+        material: REDSTONE
+        buy: 4
+        sell: 3
+      '100': 
+        material: LAPIS_LAZULI 
+        buy: 3
+        sell: 2
+      '101': 
+        material: DIAMOND
+        buy: 106
+        sell: 53
+      '102': 
+        material: NETHERITE_INGOT
+        buy: 844
+        sell: 633
+      '103':
+        material: EMERALD
+        buy: 36
+        sell: 25

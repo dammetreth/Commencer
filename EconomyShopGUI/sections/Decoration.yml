@@ -1,0 +1,14 @@
+enable: true
+slot: 12
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: TUBE_CORAL
+  displayname: '&8-&k|&9 Naturals, Decorations & Other Items &8&k|&8-'
+  name: '&8-==&k|&9   Commence&8SMP&8 Shop   &3&8&k|&8==-'
