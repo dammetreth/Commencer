@@ -1688,3 +1688,15 @@ pages:
         material: EYE_OF_ENDER
         buy: 70
         sell: 40
+      '66':
+        material: SCULK_SENSOR
+        buy: 150
+        sell: 50
+      '67':
+        material: AIR
+        buy: 0
+        sell: 0
+      '68':
+        material: CALIBRATED_SCULK_SENSOR
+        buy: 150
+        sell: 50
