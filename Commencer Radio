@@ -6,9 +6,10 @@ on load:
 comand /radio:
     trigger:
         {Commence:%palyer%:Radio} is false:
-            loop:
+            set {Commence:%player%:Radio} to true
+            loop {Commence:%palyer%:Radio} is true:
                 stop sound in master for the player
-                set {Commence:%player%:Radio} to true
+
 
                 play "music.credits" in master with volume 1 to palyer
                 wait 603 seconds
