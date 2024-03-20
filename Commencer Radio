@@ -1,0 +1,21 @@
+#Skrip
+on load:
+    broadcast "Radio is Online. Use /radio to listen to Radio"
+
+#command
+comand /radio:
+    trigger:
+        {Commence:%palyer%:Radio} is false:
+            loop:
+                stop sound in master for the player
+                set {Commence:%player%:Radio} to true
+
+                play "music.credits" in master with volume 1 to palyer
+                wait 603 seconds
+
+                play "music.end" in master with volume 1 to palyer
+                wait 904 seconds
+
+        {Commence:%palyer%:Radio} is true
+            stop sound in master for player
+            set {Commence:%player%:Radio} to false
