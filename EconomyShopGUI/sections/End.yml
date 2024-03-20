@@ -1,0 +1,14 @@
+enable: true
+slot: 29
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: ENDSTONE
+  displayname: '&8-&k|&r&5&l End &r&8&k|&8-'
+  name: '&8-==&k|&9   Commence&8SMP&8 &r&5&lEnd %r&8Shop   &3&8&k|&8==-'
