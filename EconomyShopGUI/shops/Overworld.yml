@@ -333,7 +333,7 @@ pages:
         buy: 1
         sell: 0.5
       '2':
-        material: STONE_STAIR
+        material: STONE_STAIRS
         buy: 1
         sell: 0.5
       '3':
@@ -345,7 +345,7 @@ pages:
         buy: 1
         sell: 0.5
       '5':
-        material: COBBLESTONE_STAIR
+        material: COBBLESTONE_STAIRS
         buy: 1
         sell: 0.5
       '6':
@@ -357,7 +357,7 @@ pages:
         buy: 1
         sell: 0.5
       '8':
-        material: STONE_BRICK_STAIR
+        material: STONE_BRICK_STAIRS
         buy: 1
         sell: 0.5
       '9':
@@ -369,7 +369,7 @@ pages:
         buy: 1
         sell: 0.5
       '11':
-        material: MOSSY_COBBLESTONE_STAIR
+        material: MOSSY_COBBLESTONE_STAIRS
         buy: 1
         sell: 0.5
       '12':
@@ -381,7 +381,7 @@ pages:
         buy: 1
         sell: 0.5
       '14':
-        material: MOSSY_STONE_BRICK_STAIR
+        material: MOSSY_STONE_BRICK_STAIRS
         buy: 1
         sell: 0.5
       '15':
@@ -393,7 +393,7 @@ pages:
         buy: 1
         sell: 0.5
       '17':
-        material: BRICK_STAIR
+        material: BRICK_STAIRS
         buy: 1
         sell: 0.5
       '18':
@@ -405,7 +405,7 @@ pages:
         buy: 1
         sell: 0.5
       '20':
-        material: DEEPSLATE_BRICK_STAIR
+        material: DEEPSLATE_BRICK_STAIRS
         buy: 1
         sell: 0.5
       '21':
@@ -417,7 +417,7 @@ pages:
         buy: 1
         sell: 0.5
       '23':
-        material: POLISHED_DEEPSLATE_STAIR
+        material: POLISHED_DEEPSLATE_STAIRS
         buy: 1
         sell: 0.5
       '24':
@@ -429,7 +429,7 @@ pages:
         buy: 1
         sell: 0.5
       '26':
-        material: DEEPSLATE_TILE_STAIR
+        material: DEEPSLATE_TILE_STAIRS
         buy: 1
         sell: 0.5
       '27':
@@ -590,7 +590,7 @@ pages:
         buy: 6
         sell: 2
       '21':
-        material: EWAXED_XPOSED_COPPER
+        material: WAXED_EXPOSED_COPPER
         buy: 5
         sell: 3
       '22':
