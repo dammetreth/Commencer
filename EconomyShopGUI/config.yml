@@ -368,7 +368,7 @@ shops-nav-bar:
           material: GRAY_STAINED_GLASS_PANE
           name: ' '
     5:
-      material: compas
+      material: compass
       name: '%translations-current-page%'
     6:
       material: red_stained_glass_pane
