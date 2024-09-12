@@ -527,6 +527,7 @@ function storyRank(p: player):
 	else:
 		set {Commence::%{_p}%::Story::Rank} to "{@adventurer}"
 	set {Commence::%{_p}%::Story::Attack} to {Commence::%uncolored {Commence::%{_p}%::Story::Form}%::AttackDamage}
+	set {Commence::%{_p}%::Story::Attack} to ({Commence::%{_p}%::Story::Attack} * 0.65) if {Commence::%{_p}%::Story::Attack} is more than 3
 	set {Commence::%{_p}%::Story::Defense} to {Commence::%uncolored {Commence::%{_p}%::Story::Form}%::DefenseDamage}
 	set {Commence::%{_p}%::Story::Defense} to 0 if {Commence::%{_p}%::Story::Sleep} is less than 3
 	set {Commence::%{_p}%::Story::Attack} to ({Commence::%{_p}%::Story::Attack} * 0.1) if {Commence::%{_p}%::Story::Sleep} is less than 3
@@ -655,20 +656,21 @@ function storyRank(p: player):
 			set {Commence::%{_p}%::Story::Defense} to {Commence::%uncolored {Commence::%{_p}%::Story::Form}%::DefenseDamage} + 2
 		light level at {_p} is greater than 14:
 			{Commence::%{_p}%::Story::Wait} is not true:
-				chance of 33%:
+				chance of 20%:
 					set {_t} to random element of {Commence::Vampire::SunMsg::*}
 					send "&c{@vampire}&e%{_t}%" to {_p}
 					send title "&c{@vampire}" with subtitle "&e%{_t}%" to {_p}
 					ignite {_p} for 5 seconds
 					damage {_p} by 1 or 2 or 3 or 4 or 5
-		block under {_p} is air:
+		block under block under {_p} is air:
+			stop if block under {_p} is not air
 			{Commence::%{_p}%::Disguised} is not set:
 				set {Commence::%{_p}%::Disguise} to "Bat"
 				spawn bat at {_p} with nbt compound from "{NoAI:1b}"
 				set {Commence::%{_p}%::Disguised} to last spawned bat
-#				hide {_p} from all players
+				hide {_p} from all players
 #				set {_p}'s game mode to spectator
-				apply invisibility to {_p} for 9999 days
+				apply invisibility 10 to {_p} for 9999 days
 				while {Commence::%{_p}%::Disguise} is set:
 					teleport {Commence::%{_p}%::Disguised} 0.1 meters behind {_p}
 					wait 1 tick
@@ -678,7 +680,7 @@ function storyRank(p: player):
 				clear {Commence::%{_p}%::Disguise}
 				clear {Commence::%{_p}%::Disguised}
 				remove potion effect of invisibility from {_p}'s active potion effects
-#				reveal {_p} from all players
+				reveal {_p} to all players
 #				set {_p}'s game mode to survival
 		set the generic scale attribute of {_p} to 1
 		set the generic gravity attribute of {_p} to 0.08
