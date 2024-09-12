@@ -1,0 +1,2424 @@
+	#-=-=-=-=-=-=-=-=-=- | Kit Player VS Player & Entity +Levels | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-                           -=-=-=-=-=-=-=-=-=-
+
+	#IDEAS, COMMENTS & SUGGESSTIONS
+
+#nothing yet ;)
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#OPTIONS AND MESSAGES
+
+
+options:
+	#Messages
+	pvp:&8  &8|-&l!&8-|  &9Commence&8SMP &cKitPvP  &8|-&l!&8-|
+	lifer:&8  &8|-&l!&8-|  &9Commence&8SMP &aLifer  &8|-&l!&8-|
+	commence:&8  &8|-&l!&8-|  &9Commence&8SMP&9  &8|-&l!&8-|
+	story:&8  &8|-&l!&8-|  &9Commence&8SMP&6 Story  &8|-&l!&8-|
+	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
+	begin:&7   You're about to start &cKitPvP
+	begin2:&7   You're about to start &cKitPvE
+	nopvp:&c   You are unable to participate in KitPvP
+	alrpvp:&c   You are already participating in KitPvP
+	notpvp:&c   You are not participating in KitPvP
+	welcome:&7   Welcome to &cKitPvP&7! %{PVP::PlayerCount}% &7other players
+	welcome2:&7   Welcome to &cKitPvE&7! %{PVP::PlayerCount}% &7other players. Starting now...
+	autoon:&7   You will automatically &cKitPVP &7upon respawn
+	autooff:&7   You will no longer &cKitPVP &7upon respawn
+	nochat:&c   Chatting is disabled in this world.
+	liqdeath:&9   Water&c and &4Lava &care deadly in KitPvP
+	permissionmessage:&9 Commence&8SMP &cYou are not permitted to use this command!
+	cooldownmessage:&9 Commence&8SMP &c Wait before trying this command again!
+	admin:&c   Your admin powers granted you success
+	fampvp:&c   You can't hurt other members of your family
+	worlds: "PVPSpawn" or "PVPLevel2" or "PVPLevel3" or "PVPLevel4"
+	worlds2: "PVPSpawn" and "PVPLevel2" and "PVPLevel3" and "PVPLevel4"
+	worlds3: "PVPSpawn" and "PVPLevel2" and "PVPLevel3" and "PVPLevel4" and "SpawnHub"
+	worlds4: "PVPSpawn" or "PVPLevel2" or "PVPLevel3" or "PVPLevel4" or "SpawnHub"
+	notworlds: "SpawnHub" and "CommenceCity" and "Survival" and "Survival2"
+	common:&8Common &a
+	uncommon:&7Uncommon &a
+	rare:&dRare &a
+	epic:&bEpic &a
+	legendary:&6Legendary &a
+	pvpspawn:&cLevel0
+	pvplevel1:&8Level1
+	pvplevel2:&bLevel2
+	pvplevel3:&6Level3
+	pvplevel4:&2Level4
+	pvplevel5:Level5
+
+	#Droppable
+	doublekill:&4Double Kill
+	triplekill:&4Triple Kill
+	heal:&aFull Heal
+	1weaponupgrade:&aWeapon Upgrade
+	1bowupgrade:&aBow Upgrade
+	doublebowupgrade:&aDouble Bow Upgrade
+	1bowpurchase:&aFree Bow
+	1armorpurchase:&aFree Armor
+	1armorupgrade:&aArmor Upgrade
+	doublearmorupgrade:&aDouble Armor Upgrade
+
+	#Enchants
+	ignite:named "&8Common &Ignite" with lore "&7 " and "&a +1 Ignite Victim Chance" and "&7 " 
+	explosion:named "&8Common &Explosion" with lore "&7 " and "&a +1 Explosion Chance" and "&7 " 
+	obliterate:named "&8Common &7Obliterate" with lore "&7 " and "&a +17 Knockback Chance" and "&7 " 
+	lucky:named "&8Common &7Lucky" with lore "&7 " and "&a +1 Extra Kill Chance" and "&7 "
+	slow:named "&8Common &7Slow" with lore "&7 " and "&a +1 Slow Victim Chance" and "&7 " 
+	slowarrow:named "&8Common &7Slow Arrows" with lore "&7 " and "&a +1 Slow Victim Chance" and "&7 " 
+	blind:named "&8Common &7Blind" with lore "&7 " and "&a +1 Blind Victim Chance" and "&7 " 
+	blindarrow:named "&8Common &7Blinding Arrows" with lore "&7 " and "&a +1 Blind Victim Chance" and "&7 " 
+	confuse:named "&8Common &7Confuse" with lore "&7 " and "&a +1 Confuse Victim Chance" and "&7 " 
+	confusearrow:named "&8Common &7Confuse Arrows" with lore "&7 " and "&a +1 Confuse Victim Chance" and "&7 " 
+	decapitation:named "&8Common &7Decapitate" with lore "&7 " and "&a +1 Decapitate Victim Chance" and "&7 " 
+	reshuffle:named "&8Common &7Reshuffle" with lore "&7 " and "&a +1 Reshuffle Victim Chance" and "&7 " 
+	rainarrow:named "&8Common &7Rain Arrows" with lore "&7 " and "&a +1 Rain Arrows Chance" and "&7 " 
+
+	haste:named "&dRare &7Haste" with lore "&7 " and "&a +1 Attack Swing" and "&7 " 
+	aquatic:named "&dRare &7Aquatic" with lore "&7 " and "&a +1 Swimming" and "&7 " 
+	glowing:named "&dRare &7Glowing" with lore "&7 " and "&a +1 Night Vision" and "&7 " 
+	poison:named "&dRare &7Poison" with lore "&7 " and "&a +1 Poison Victim Chance" and "&7 " 
+	poisonous:named "&dRare &7Poisonous" with lore "&7 " and "&a +2 Poison Victim Chance" and "&7 " 
+	spring:named "&dRare &7Spring" with lore "&7 " and "&a +1 Jump Boost" and "&7 " 
+	poisonarrow:named "&dRare &7Poison Arrows" with lore "&7 " and "&a +1 Poison Victim Chance" and "&7 " 
+	freezearrow:named "&dRare &7Freeze Arrows" with lore "&7 " and "&a +1 Freeze Victim Chance" and "&7 " 
+	clearsight:named "&dRare &7Clear Sight" with lore "&7 " and "&a +1 Clear Sight" and "&7 " 
+	molten:named "&dRare &7Molten" with lore "&7 " and "&a +1 Fire Victim Chance" and "&7 " 
+	electric:named "&dRare &7Electric" with lore "&7 " and "&a +1 Strike Victim Chance" and "&7 " 
+	rage:named "&dRare &7Rage" with lore "&7 " and "&a +2 Attack" and "&7 " 
+
+	wither:named "&bEpic &7Wither" with lore "&7 " and "&a +1 Wither Victim Chance" and "&7 " 
+	fireres:named "&bEpic &7Fire Resistance" with lore "&7 " and "&a +2 Fire Resistance" and "&7 " 
+	crit:named "&bEpic &7Crit" with lore "&7 " and "&a +2 Critical Hits" and "&7 " 
+	freeze:named "&bEpic &7Freeze" with lore "&7 " and "&a +1 Freeze Victim Chance" and "&7 " 
+	witherarrow:named "&bEpic &7Wither Arrows" with lore "&7 " and "&a +1 Wither Victim Chance" and "&7 " 
+	sticky:named "&bEpic &7Sticky" with lore "&7 " and "&a +1 Slowness, Nausea & Slow Swing Chance" and "&7 " 
+	levitation:named "&bEpic &7Levitation" with lore "&7 " and "&a +1 Levitate Victim Chance" and "&7 " 
+	dolphin:named "&bEpic &7Dolphin's Grace" with lore "&7 " and "&a +1 Dolphin's Grace" and "&7 " 
+	gears:named "&bEpic &7Gears" with lore "&7 " and "&a +1 Speed Boost" and "&7 " 
+	bleed:named "&bEpic &7Bleed" with lore "&7 " and "&a -1 Health Victim Chance" and "&7 " 
+	bleedarrow:named "&bEpic &7Bleed Arrows" with lore "&7 " and "&a -1 Health Victim Chance" and "&7 " 
+	barbed:named "&bEpic &7Barbed" with lore "&7 " and "&a -1 Health Victim Chance" and "&7 " 
+	lifesteal:named "&bEpic &7Lifesteal" with lore "&7 " and "&a +1 Steal Health Chance" and "&7 " 
+	lifestealarrow:named "&bEpic &7Lifesteal Arrows" with lore "&7 " and "&a +1 Steal Health Chance" and "&7 " 
+	overload:named "&bEpic &7Overload" with lore "&7 " and "&a +2 Hearts" and "&7 " 
+	armored:named "&bEpic &7Armored" with lore "&7 " and "&a +1 Defense" and "&7 " 
+	plated:named "&bEpic &7Plated" with lore "&7 " and "&a +1 Projectile Defense" and "&7 " 
+	arrowbreak:named "&bEpic &7Arrow Break" with lore "&7 " and "&a +1 Arrow Break Chance" and "&7 " 
+	dodge:named "&bEpic &7Dodge" with lore "&7 " and "&a +1 Dodge Attack" and "&7 " 
+	combatmedic:named "&bEpic &7Combat Medic" with lore "&7 " and "&a +1 Health Over Time Chance" and "&7 " 
+	thunder:named "&bEpic &7Thunder" with lore "&7 " and "&a +1 Strike Victim Chance" and "&7 " 
+	thundershot:named "&bEpic &7Thunder Arrows" with lore "&7 " and "&a +1 Strike Victim Chance" and "&7 " 
+	autoheal:named "&bEpic &7Autoheal" with lore "&7 " and "&a +1 Health Over Time" and "&7 " 
+	repel:named "&bEpic &7Repel" with lore "&7 " and "&a +1 Knockback Victim Chance" and "&7 " 
+	entangled:named "&bEpic &7Entangled" with lore "&7 " and "&a +1 Entangle Victim Chance" and "&7 " 
+	thunderstrike:named "&bEpic &7Thunder Strike" with lore "&7 " and "&a +1 Trident Strike Victim" and "&7 " 
+	extinguish:named "&bEpic &7Extinguish" with lore "&7 " and "&a +1 Fire Extinguisher" and "&7 " 
+	bowmaster:named "&bEpic &7Bowmaster" with lore "&7 " and "&a +1 Bow Damage" and "&7 " 
+	momentum:named "&bEpic &7Momentum" with lore "&7 " and "&a +1 Speed Boost with Fireworks" and "&7 " 
+	slayer:named "&bEpic &7Slayer" with lore "&7 " and "&a +1 Attack Damage" and "&7 " 
+	
+	lavawalker:named "&6Legendary &7Lava Walker" with lore "&7 " and "&a +1 Lava Walking" and "&7 " 
+	weakblow:named "&6Legendary &7Weakend Blow" with lore "&7 " and "&a -1 Attack Damage from Victim" and "&7 " 
+	slowfall:named "&6Legendary &7Slow Fall" with lore "&7 " and "&a +1 Slow Falling" and "&7 " 
+	shadowstep:named "&6Legendary &7Shadow Step" with lore "&7 " and "&a +1 Teleporting Behind Victim" and "&7 " 
+	execute:named "&6Legendary &7Execute" with lore "&7 " and "&a +1 Attack Murder" and "&7 " 
+	strength:named "&6Legendary &7Strength" with lore "&7 " and "&a +1 Attack Damage" and "&7 " 
+	critshot:named "&6Legendary &7Crit Shot" with lore "&7 " and "&a +1 Critical Shot" and "&7 " 
+	reflect:named "&6Legendary &7Reflect" with lore "&7 " and "&a +1 Reflect Attack Chance" and "&7 " 
+	torrent:named "&6Legendary &7Torrent" with lore "&7 " and "&a -1 Water Damage" and "&7 " 
+	chaos:named "&6Legendary &7Chaos" with lore "&7 " and "&a +1 Wither Victim Chance" and "&7 " 
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#THE VERY BASICS
+
+
+on load:
+	#Level 0 Kit Items
+	set {PVP::ShopItem} to glowing sunflower named "&8-&k|&8 &cKitPvP Shop Shortcut &8&k|&8-"
+	set {PVP::Level0::Sword0} to glowing wooden sword named "&cLvl0 &7Sword" with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword1} to wooden sword of sharpness 1 named "&cLvl0 &7Sword&a+1" with lore "&7 " and "&a +1 &7Attack" and "&7 " with nbt from "{HideFlags:63}" 
+	set {PVP::Level0::Sword2} to wooden sword of sharpness 1 and smite 1 named "&cLvl0 &7Sword&a+2" with lore "&7 " and "&a +2 &7Attack" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword3} to wooden sword of sharpness 2 and smite 1 named "&cLvl0 &7Sword&a+3" with lore "&7 " and "&a +3 &7Attack" and "&a +1 &7Damage" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword4} to wooden sword of sharpness 2 and smite 2 named "&cLvl0 &7Sword&a+4" with lore "&7 " and "&a +4 &7Attack" and "&a +3 &7Damage" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword5} to wooden sword of sharpness 3 and smite 2 and sweeping edge 3 named "&cLvl0 &7Sword&a+5" with lore "&7 " and "&a +5 &7Attack" and "&a +5 &7Damage" and "&a +3 &7Sweeping Edge" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword6} to wooden sword of sharpness 4 and smite 3 and sweeping edge 3 and knockback 2 named "&cLvl0 &7Sword&a+6" with lore "&7 " and "&a +6 &7Attack" and "&a +7 &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword7} to wooden sword of sharpness 4 and smite 4 and sweeping edge 3 and knockback 2 named "&cLvl0 &7Sword&a+7" with lore "&7 " and "&a +7 &7Attack" and "&a +9 &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword8} to stone sword of sharpness 5 and smite 4 and sweeping edge 3 and knockback 2 named "&cLvl0 &7Sword&a+8" with lore "&7 " and "&a +8 &7Attack" and "&a +11 &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword9} to stone sword of sharpness 5 and smite 5 and sweeping edge 3 and knockback 2 named "&cLvl0 &7Sword&a+9" with lore "&7 " and "&a +9 &7Attack" and "&a +13 &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword10} to stone sword of sharpness 6 and smite 5 and sweeping edge 3 and knockback 2 named "&cLvl0 &7Sword&a+10" with lore "&7 " and "&a +10 &7Attack" and "&a +15 &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Sword11} to stone sword of sharpness 7 and smite 6 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&cLvl0 &7Sword&a+11" with lore "&7 " and "&a +11 &7Attack" and "&a +17 &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Bow1} to glowing bow of infinity named "&cLvl0 &7Bow"
+	set {PVP::Level0::Bow2} to glowing bow of infinity and power 1 named "&cLvl0 &7Bow&a+1" with lore "&7 " and "&a +1 &7Attack" and "&7 " 
+	set {PVP::Level0::Bow3} to glowing bow of infinity and power 2 and punch 1 named "&cLvl0 &7Bow&a+2" with lore "&7 " and "&a +2 &7Attack" and "&a +1 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow4} to glowing bow of infinity and power 2 and punch 2 named "&cLvl0 &7Bow&a+3" with lore "&7 " and "&a +3 &7Attack" and "&a +2 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow5} to glowing bow of infinity and power 3 and punch 2 named "&cLvl0 &7Bow&a+4" with lore "&7 " and "&a +4 &7Attack" and "&a +3 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow6} to glowing bow of infinity and power 3 and punch 3 named "&cLvl0 &7Bow&a+5" with lore "&7 " and "&a +5 &7Attack" and "&a +3 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow7} to glowing bow of infinity and power 4 and punch 3 named "&cLvl0 &7Bow&a+6" with lore "&7 " and "&a +6 &7Attack" and "&a +4 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow8} to glowing bow of infinity and power 4 and punch 4 named "&cLvl0 &7Bow&a+7" with lore "&7 " and "&a +7 &7Attack" and "&a +4 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow9} to glowing bow of infinity and power 5 and punch 4 named "&cLvl0 &7Bow&a+8" with lore "&7 " and "&a +8 &7Attack" and "&a +4 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow10} to glowing bow of infinity and power 5 and punch 5 named "&cLvl0 &7Bow&a+9" with lore "&7 " and "&a +9 &7Attack" and "&a +4 &7Punch" and "&7 " 
+	set {PVP::Level0::Bow10} to glowing bow of infinity and power 6 and punch 6 named "&cLvl0 &7Bow&a+10" with lore "&7 " and "&a +10 &7Attack" and "&a +5 &7Punch" and "&7 " 
+	set {PVP::Level0::Arrow0} to glowing arrow named "&cLvl0 &7Arrow" with lore "&7 " and "&a +1 &7Infinity" and "&7 " 
+	set {PVP::Level0::Item1} to glowing tnt named "&cLvl0 &7Tnt"
+	set {PVP::Level0::Item2} to glowing flint and steel named "&cLvl0 &7Lighter"
+	set {PVP::Level0::Item3} to glowing cobweb named "&cLvl0 &7Cobweb"
+	set {PVP::Level0::Armor1} to glowing iron helmet named "&cLvl0 &fHelmet" with lore "&7 " and "&a +1 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor2} to glowing iron chestplate named "&cLvl0 &fChestplate" with lore "&7 " and "&a +1 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor3} to glowing iron boots named "&cLvl0 &fBoots" with lore "&7 " and "&a +1 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor4} to glowing iron leggings named "&cLvl0 &fLeggings" with lore "&7 " and "&a +1 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor5} to iron helmet of protection 2 named "&cLvl0 &fHelmet&a+1" with lore "&7 " and "&a +3 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor6} to iron chestplate of protection 1 named "&cLvl0 &fChestplate&a+1" with lore "&7 " and "&a +2 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor7} to iron boots of protection 2 named "&cLvl0 &fBoots&a+1" with lore "&7 " and "&a +3 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level0::Armor8} to iron leggings of protection 1 named "&cLvl0 &fLeggings&a+1" with lore "&7 " and "&a +2 &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+	#Level 1 Kit Items
+	set {PVP::ShopItem} to glowing sunflower named "&8-&k|&8 &cKitPvP Shop Shortcut &8&k|&8-" with lore "&7 " and "&a Right Click to Open" and "&a  the KitPvP Shop" and "&7 Purchase Weapons, Bows," and "&7  New Maps, Items & More" and "&7 " with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword0} to glowing stone sword named "&8Lvl1 &7Sword" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword1} to stone sword of sharpness 1 named "&8Lvl1 &7Sword&a+1" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword2} to stone sword of sharpness 2 and smite 1 named "&8Lvl1 &7Sword&a+2" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword3} to stone sword of sharpness 4 and smite 2 named "&8Lvl1 &7Sword&a+3" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword4} to stone sword of sharpness 5 and smite 5 named "&8Lvl1 &7Sword&a+4" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword5} to stone sword of sharpness 5 and smite 5 and sweeping edge 3 named "&8Lvl1 &7Sword&a+5" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword6} to stone sword of sharpness 5 and smite 5 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&8Lvl1 &7Sword&a+6" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword7} to stone sword of sharpness 5 and smite 5 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&8Lvl1 &7Sword&a+7" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword8} to iron sword of sharpness 5 and smite 5 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&8Lvl1 &7Sword&a+8" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword9} to iron sword of sharpness 5 and smite 5 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&8Lvl1 &7Sword&a+9" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword10} to iron sword of sharpness 5 and smite 5 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&8Lvl1 &7Sword&a+10" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Sword11} to iron sword of sharpness 5 and smite 5 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&8Lvl1 &7Sword&a+11" with nbt from "{HideFlags:63}"
+	set {PVP::Level1::Bow1} to glowing bow of infinity named "&8Lvl1 &7Bow"
+	set {PVP::Level1::Bow2} to glowing bow of infinity and power 1 named "&8Lvl1 &7Bow&a+1"
+	set {PVP::Level1::Bow3} to glowing bow of infinity and power 2 and punch 1 named "&8Lvl1 &7Bow&a+2"
+	set {PVP::Level1::Bow4} to glowing bow of infinity and power 2 and punch 2 named "&8Lvl1 &7Bow&a+3"
+	set {PVP::Level1::Bow5} to glowing bow of infinity and power 3 and punch 2 named "&8Lvl1 &7Bow&a+4"
+	set {PVP::Level1::Bow6} to glowing bow of infinity and power 3 and punch 3 named "&8Lvl1 &7Bow&a+5"
+	set {PVP::Level1::Bow7} to glowing bow of infinity and power 4 and punch 3 named "&8Lvl1 &7Bow&a+6"
+	set {PVP::Level1::Bow8} to glowing bow of infinity and power 4 and punch 4 named "&8Lvl1 &7Bow&a+7"
+	set {PVP::Level1::Bow9} to glowing bow of infinity and power 5 and punch 4 named "&8Lvl1 &7Bow&a+8"
+	set {PVP::Level1::Bow10} to glowing bow of infinity and power 5 and punch 5 named "&8Lvl1 &7Bow&a+9"
+	set {PVP::Level1::Bow10} to glowing bow of infinity and power 6 and punch 6 named "&8Lvl1 &7Bow&a+10"
+	set {PVP::Level1::Arrow0} to glowing arrow named "&8Lvl1 &7Arrow"
+	set {PVP::Level1::Item1} to glowing tnt named "&8Lvl1 &7Tnt"
+	set {PVP::Level1::Item2} to glowing flint and steel named "&8Lvl1 &7Lighter"
+	set {PVP::Level1::Item3} to glowing cobweb named "&8Lvl1 &7Cobweb"
+	set {PVP::Level1::Armor1} to iron helmet named "&8Lvl1 &fHelmet"
+	set {PVP::Level1::Armor2} to iron chestplate named "&8Lvl1 &fChestplate"
+	set {PVP::Level1::Armor3} to iron boots named "&8Lvl1 &fBoots"
+	set {PVP::Level1::Armor4} to iron leggings named "&8Lvl1 &fLeggings"
+	set {PVP::Level1::Armor5} to iron helmet of protection 2 named "&8Lvl1 &fHelmet"
+	set {PVP::Level1::Armor6} to iron chestplate of protection 1 named "&8Lvl1 &fChestplate"
+	set {PVP::Level1::Armor7} to iron boots of protection 2 named "&8Lvl1 &fBoots"
+	set {PVP::Level1::Armor8} to iron leggings of protection 1 named "&8Lvl1 &fLeggings"
+	#Level 2 Kit Items
+	set {PVP::Level2::Block1} to polished andesite named "&bLvl2 &7Block"
+	set {PVP::Level2::Block2} to purpur block named "&bLvl2 &7Block"
+	set {PVP::Level2::Sword} to iron sword of sharpness 5 named "&bLvl2 &7Sword"
+	set {PVP::Level2::Axe1} to iron axe of sharpness 8 named "&bLvl2 &7Axe"
+	set {PVP::Level2::Axe2} to diamond axe of sharpness 4 named "&bLvl2 &7Axe"
+	set {PVP::Level2::Bow} to bow of infinity 1 and power 1 named "&bLvl2 &7Bow"
+	set {PVP::Level2::Arrow} to 1 arrow named "&bLvl2 &7Arrow"
+	set {PVP::Level2::Helmet} to 1 iron helmet of protection 3 named "&bLvl2 &7Helmet"
+	set {PVP::Level2::Chestplate} to 1 iron chestplate named "&bLvl2 &7Chestplate"
+	set {PVP::Level2::Leggings} to 1 iron leggings of projectile protection 5 named "&bLvl2 &7Leggings"
+	set {PVP::Level2::Boots} to 1 iron boots of projectile protection 5 named "&bLvl2 &7Boots"
+	#Level 3 Kit Items
+	set {PVP::Level3::Block1} to diamond block named "&6Lvl3 &7Block"
+	set {PVP::Level3::Block2} to black glazed terracotta named "&6Lvl3 &7Block"
+	set {PVP::Level3::Sword} to diamond sword of sharpness 45 named "&6Lvl3 &7Sword"
+	set {PVP::Level3::Axe1} to diamond axe of sharpness 37 named "&6Lvl3 &7Axe"
+	set {PVP::Level3::Axe2} to netherite axe of sharpness 29 named "&6Lvl3 &7Axe"
+	set {PVP::Level3::Bow} to bow of infinity 1 and power 17 named "&6Lvl3 &7Bow"
+	set {PVP::Level3::Arrow} to 1 arrow named "&6Lvl3 &7Arrow"
+	set {PVP::Level3::Helmet} to 1 diamond helmet of protection 10 named "&6Lvl3 &7Helmet"
+	set {PVP::Level3::Chestplate} to 1 diamond chestplate of protection 10 named "&6Lvl3 &7Chestplate"
+	set {PVP::Level3::Leggings} to 1 diamond leggings of projectile protection 10 named "&6Lvl3 &7Leggings"
+	set {PVP::Level3::Boots} to 1 diamond boots of projectile protection 10 named "&6Lvl3 &7Boots"
+	#Level 4 Kit Items
+	set {PVP::Level4::Block1} to obsidian block named "&2Lvl4 &7Block"
+	set {PVP::Level4::Block2} to deepslate emerald ore named "&2Lvl4 &7Block"
+	set {PVP::Level4::Sword} to netherite sword of sharpness 69 named "&2Lvl4 &7Sword"
+	set {PVP::Level4::Shield} to glowing shield named "&2Lvl4 &7Shield"
+	set {PVP::Level4::Axe1} to diamond axe of sharpness 96 named "&2Lvl4 &7Axe"
+	set {PVP::Level4::Axe2} to netherite axe of sharpness 69 named "&2Lvl4 &7Axe"
+	set {PVP::Level4::Bow} to bow of infinity 1 and power 39 named "&2Lvl4 &7Bow"
+	set {PVP::Level4::Arrow} to 1 arrow named "&2Lvl4 &7Arrow"
+	set {PVP::Level4::Helmet} to 1 diamond helmet of projectile protection 93 named "&2Lvl4 &7Helmet"
+	set {PVP::Level4::Chestplate} to 1 diamond chestplate of projectile protection 93 named "&2Lvl4 &7Chestplate"
+	set {PVP::Level4::Leggings} to 1 diamond leggings of protection 93 named "&2Lvl4 &7Leggings"
+	set {PVP::Level4::Boots} to 1 diamond boots of protection 93 named "&2Lvl4 &7Boots"
+	#Enchants
+	clear {PVP::CommonEnchants::*}
+	set {PVP::Ignite} to "Sword, Bow"
+	set {PVP::Explosion} to "Sword, Bow"
+	set {PVP::Obliterate} to "Sword, Bow"
+	set {PVP::Lucky} to "Sword, Bow"
+	set {PVP::Slow} to "Sword"
+	set {PVP::Slow Arrows} to "Bow"
+	set {PVP::Blind} to "Sword"
+	set {PVP::Blinding Arrows} to "Bow"
+	set {PVP::Confuse} to "Sword"
+	set {PVP::Confusing Arrows} to "Bow"
+	set {PVP::Decapitate} to "Sword"
+	set {PVP::Reshuffle} to "Sword"
+	set {PVP::Rain Arrows} to "Bow"
+	set {PVP::Ignite.D} to "+1 Ignite Victim Chance"
+	set {PVP::Explosion.D} to "+1 Explosion Chance"
+	set {PVP::Obliterate.D} to "+1 Knockback Chance"
+	set {PVP::Lucky.D} to "+1 Extra Kill Chance"
+	set {PVP::Slow.D} to "+1 Slow Victim Chance"
+	set {PVP::Slow Arrows.D} to "+1 Slow Victim Chance"
+	set {PVP::Blind.D} to "+1 Blind Victim Chance"
+	set {PVP::Blinding Arrows.D} to "+1 Blind Victim Chance"
+	set {PVP::Confuse.D} to "+1 Confuse Victim Chance"
+	set {PVP::Confusing Arrows.D} to "+1 Confuse Victim CHance"
+	set {PVP::Decapitate.D} to "+1 Decapitate Victim Chance"
+	set {PVP::Reshuffle.D} to "+1 Reshuffle Victim's Hotbar"
+	set {PVP::Rain Arrows.D} to "+1 Rain Arrows Chance"
+	add "&7Ignite" to {PVP::CommonEnchants::*}
+	add "&7Explosion" to {PVP::CommonEnchants::*}
+	add "&7Obliterate" to {PVP::CommonEnchants::*}
+	add "&7Lucky" to {PVP::CommonEnchants::*}
+	add "&7Slow" to {PVP::CommonEnchants::*}
+	add "&7Slow Arrows" to {PVP::CommonEnchants::*}
+	add "&7Blind" to {PVP::CommonEnchants::*}
+	add "&7Blinding Arrows" to {PVP::CommonEnchants::*}
+	add "&7Confuse" to {PVP::CommonEnchants::*}
+	add "&7Confusing Arrows" to {PVP::CommonEnchants::*}
+	add "&7Decapitate" to {PVP::CommonEnchants::*}
+	add "&7Reshuffle" to {PVP::CommonEnchants::*}
+	add "&7Rain Arrows" to {PVP::CommonEnchants::*}
+	clear {PVP::RareEnchants::*}
+	set {PVP::Haste} to "Sword"
+	set {PVP::Aquatic} to "Boots"
+	set {PVP::Glowing} to "Helmet"
+	set {PVP::Poison} to "Sword, Bow"
+	set {PVP::Poisonous} to "Sword"
+	set {PVP::Spring} to "Boots"
+	set {PVP::Poison Arrows} to "Bow"
+	set {PVP::Freeze Arrows} to "Bow"
+	set {PVP::Clear Sight} to "Helmet"
+	set {PVP::Molten} to "Sword"
+	set {PVP::Electric} to "Sword"
+	set {PVP::Rage} to "Sword, Bow"
+	set {PVP::Haste.D} to "+1 Attack Swing"
+	set {PVP::Aquatic.D} to "+1 Water Resistance"
+	set {PVP::Glowing.D} to "+1 Night Vision"
+	set {PVP::Poison.D} to "+1 Poison Victim Chance"
+	set {PVP::Poisonous.D} to "+1 Poison Victim"
+	set {PVP::Spring.D} to "+1 Jump Boost"
+	set {PVP::Poison Arrows.D} to "+1 Poison Victim Chance"
+	set {PVP::Freeze Arrows.D} to "+1 Freeze Victim Chance"
+	set {PVP::Clear Sight.D} to "+1 Clear Sight"
+	set {PVP::Molten.D} to "+1 Ignite Victim Chance"
+	set {PVP::Electric.D} to "+1 Strike Victim Chance"
+	set {PVP::Rage.D} to "+2 Attack"
+	add "&7Haste" to {PVP::RareEnchants::*}
+	add "&7Aquatic" to {PVP::RareEnchants::*}
+	add "&7Glowing" to {PVP::RareEnchants::*}
+	add "&7Poison" to {PVP::RareEnchants::*}
+	add "&7Poisonous" to {PVP::RareEnchants::*}
+	add "&7Spring" to {PVP::RareEnchants::*}
+	add "&7Poison Arrows" to {PVP::RareEnchants::*}
+	add "&7Freeze Arrows" to {PVP::RareEnchants::*}
+	add "&7Clear Sight" to {PVP::RareEnchants::*}
+	add "&7Molten" to {PVP::RareEnchants::*}
+	add "&7Electric" to {PVP::RareEnchants::*}
+	add "&7Rage" to {PVP::RareEnchants::*}
+	clear {PVP::EpicEnchants::*}
+	set {PVP::Wither} to "Sword"
+	set {PVP::Fire Resistance} to "Helmet, Chesplate, Leggings, Boots"
+	set {PVP::Crit} to "Sword, Bow"
+	set {PVP::Freeze} to "Sword"
+	set {PVP::Wither Arrows} to "Bow"
+	set {PVP::Sticky} to "Sword"
+	set {PVP::Levitation} to "Sword, Bow"
+	set {PVP::Dolphin} to "Sword"
+	set {PVP::Gears} to "Boots"
+	set {PVP::Bleed} to "Sword"
+	set {PVP::Bleed Arrows} to "Bow"
+	set {PVP::Barbed} to "Sword"
+	set {PVP::Lifesteal} to "Sword"
+	set {PVP::Lifesteal Arrows} to "Bow"
+	set {PVP::Overload} to "Hearts"
+	set {PVP::Armored} to "Helmet, Chesplate, Leggings, Boots"
+	set {PVP::Plated} to "Helmet, Chesplate, Leggings, Boots"
+	set {PVP::Arrow Break} to "Helmet, Chesplate, Leggings, Boots"
+	set {PVP::Dodge} to "Boots"
+	set {PVP::Combat Medic} to "Hearts"
+	set {PVP::Thunder} to "Sword"
+	set {PVP::Thunder Arrows} to "Bow"
+	set {PVP::Autoheal} to "Hearts"
+	set {PVP::Repel} to "Chestplate"
+	set {PVP::Entangled} to "Helmet, Chesplate, Leggings, Boots"
+	set {PVP::Thunder Strike} to "Sword"
+	set {PVP::Extinguish} to "Sword, Bow"
+	set {PVP::Bowmaster} to "Bow"
+	set {PVP::Momentum} to "Boots"
+	set {PVP::Slayer} to "Sword"
+	set {PVP::Wither.D} to "+1 Wither Victim Chance"
+	set {PVP::Fire Resistance.D} to "+2 Fire Resistance"
+	set {PVP::Crit.D} to "+2 Critical Hits"
+	set {PVP::Freeze.D} to "+1 Freeze Victim Chance"
+	set {PVP::Wither Arrows.D} to "+1 Wither Victim Chance"
+	set {PVP::Sticky.D} to "-1 Movement"
+	set {PVP::Levitation.D} to "+1 Levitate Victim"
+	set {PVP::Dolphin.D} to "+1 Dolphin's Grace"
+	set {PVP::Gears.D} to "+1 Speed Boost"
+	set {PVP::Bleed.D} to  "-1 Victim Health"
+	set {PVP::Bleed Arrows.D} to "-1 Victim Health"
+	set {PVP::Barbed.D} to "-1 Victim Health"
+	set {PVP::Lifesteal.D} to "+1 Health Steal"
+	set {PVP::Lifesteal Arrows.D} to "+1 Health Steal"
+	set {PVP::Overload.D} to "+2 Hearts"
+	set {PVP::Armored.D} to "+1 Defense"
+	set {PVP::Plated.D} to "+1 Projectile Defense"
+	set {PVP::Arrow Break.D} to "+1 Arrow Break Chance"
+	set {PVP::Dodge.D} to "+1 Dodge Attack"
+	set {PVP::Combat Medic.D} to "+1 Health Over Time"
+	set {PVP::Thunder.D} to "+1 Strike Victim Chance"
+	set {PVP::Thunder Arrows.D} to "+1 Strike Victim Chance"
+	set {PVP::Autoheal.D} to "+1 Health Over Time"
+	set {PVP::Repel.D} to "+1 Knockback"
+	set {PVP::Entangled.D} to "+1 Entangle Victim Chance"
+	set {PVP::Thunder Strike.D} to "+1 Trident Strike"
+	set {PVP::Extinguish.D} to "+1 Fire Extinguisher"
+	set {PVP::Bowmaster.D} to "+1 Bow Damage"
+	set {PVP::Momentum.D} to "+1 Speed Boost"
+	set {PVP::Slayer.D} to "+1 Attack Damage"
+	add "&7Wither" to {PVP::EpicEnchants::*}
+	add "&7Fire Resistance" to {PVP::EpicEnchants::*}
+	add "&7Crit" to {PVP::EpicEnchants::*}
+	add "&7Freeze" to {PVP::EpicEnchants::*}
+	add "&7Wither Arrows" to {PVP::EpicEnchants::*}
+	add "&7Sticky" to {PVP::EpicEnchants::*}
+	add "&7Levitation" to {PVP::EpicEnchants::*}
+	add "&7Dolphin" to {PVP::EpicEnchants::*}
+	add "&7Gears" to {PVP::EpicEnchants::*}
+	add "&7Bleed" to {PVP::EpicEnchants::*}
+	add "&7Bleed Arrows" to {PVP::EpicEnchants::*}
+	add "&7Barbed" to {PVP::EpicEnchants::*}
+	add "&7Lifesteal" to {PVP::EpicEnchants::*}
+	add "&7Lifesteal Arrows" to {PVP::EpicEnchants::*}
+	add "&7Overload" to {PVP::EpicEnchants::*}
+	add "&7Armored" to {PVP::EpicEnchants::*}
+	add "&7Plated" to {PVP::EpicEnchants::*}
+	add "&7Arrow Break" to {PVP::EpicEnchants::*}
+	add "&7Dodge" to {PVP::EpicEnchants::*}
+	add "&7Combat Medic" to {PVP::EpicEnchants::*}
+	add "&7Thunder" to {PVP::EpicEnchants::*}
+	add "&7Thunder Arrows" to {PVP::EpicEnchants::*}
+	add "&7Autoheal" to {PVP::EpicEnchants::*}
+	add "&7Repel" to {PVP::EpicEnchants::*}
+	add "&7Entangled" to {PVP::EpicEnchants::*}
+	add "&7Thunder Strike" to {PVP::EpicEnchants::*}
+	add "&7Extinguish" to {PVP::EpicEnchants::*}
+	add "&7Bowmaster" to {PVP::EpicEnchants::*}
+	add "&7Momentum" to {PVP::EpicEnchants::*}
+	add "&7Slayer" to {PVP::EpicEnchants::*}
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#MAIN FUNCTIONS
+
+
+	#KitPvP Starter Function
+function kitPVP(p: player):
+	teleport {_p} to world "PVPSpawn"'s spawn
+	close {_p}'s inventory
+	set the maximum health of {_p} to 10
+	set the walk speed of {_p} to 0.2
+	set the fly speed of {_p} to 0.1
+	set {_p}'s flight mode to false
+	clear {PVP::AllPlayerCount}
+	loop {PVP::AllPlayers::*}:
+		add 1 to {PVP::AllPlayerCount}
+	{PVP::AllPlayerCount} is not set:
+		set {PVP::AllPlayerCount} to 0
+	{PVP::AllPlayerCount} is less than 3:
+		set {PVP::%{_p}%::PVE} to true
+		send "" to {_p}
+		send "{@pvp}" to {_p}
+		send "{@begin2}" to {_p}
+	else:
+		set {PVP::%{_p}%::PVE} to false
+		send "" to {_p}
+		send "{@pvp}" to {_p}
+		send "{@begin}" to {_p}
+	{PVP::%{_p}%::NoPVP} is true:
+		send "" to {_p}
+		send "{@nopvp}" to {_p}
+		stop
+	{PVP::%{_p}%::PVP} is not set:
+		set {PVP::%{_p}%::PVP} to false
+	else if {PVP::%{_p}%::PVP} is true:
+		send "" to {_p}
+		send "{@alrpvp}" to {_p}
+		teleport {_p} to world "PVPSpawn"'s spawn
+		stop
+	{PVP::%{_p}%::PVP} is false:
+		{_p}'s world is "Survival":
+			set {Survival::%{_p}%::LastLoc} to {_p}'s location
+		{_p}'s world is "Survival2":
+			{Lifer::%{_p}%::Condition} is true:
+				execute {_p} command "/s"
+		add 1 to {PVP::AllPlayerCount}
+		add {_p} to {PVP::AllPlayers::*}
+		{PVP::%{_p}%::Killer} is not set:
+			set {PVP::%{_p}%::Level} to "{@pvpspawn}"
+			set {PVP::%{_p}%::Kills} to 0
+			set {PVP::%{_p}%::Deaths} to 0
+			set {PVP::%{_p}%::Killer} to "Nobody"
+			set {PVP::%{_p}%::Murder} to "Nobody"
+			set {PVP::%{_p}%::Killstreak} to 0
+
+	#KitPvE Starter Function
+function kitPVE(p: player):
+	{PVP::%{_p}%::PVE} is true:
+		if {_p}'s world is "PVPSpawn":
+			clear {_tt}
+			clear {_rt}
+			uncolored {PVP::%{_p}%::Level} contains "0":
+				set {_tt} to random element of {PVP::-1::SLoc::*}
+				set {_rt} to random integer between 0 and 5
+			else:
+				set {_tt} to random element of {PVP::1::SLoc::*}
+				set {_rt} to random integer between 0 and 9
+		if {_p}'s world is "PVPLevel2":
+			clear {_tt}
+			clear {_rt}
+			set {_tt} to random element of {PVP::2::SLoc::*}
+			set {_rt} to random integer between 4 and 6
+		if {_p}'s world is "PVPLevel3":
+			clear {_tt}
+			clear {_rt}
+			set {_tt} to random element of {PVP::3::SLoc::*}
+			set {_rt} to random integer between 7 and 9
+		if {_p}'s world is "PVPLevel4":
+			clear {_tt}
+			clear {_rt}
+			set {_tt} to random element of {PVP::4::SLoc::*}
+			set {_rt} to random integer between 10 and 12
+		if {_p}'s world is "PVPLevel5":
+			clear {_tt}
+			clear {_rt}
+			set {_tt} to random element of {PVP::5::SLoc::*}
+			set {_rt} to random integer between 0 and 12
+		{_rt} is 0:
+#			chance of 24%:
+#				stop
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set {_chestplate} to leather chestplate
+			dye {_chestplate} red
+			set chestplate of last spawned zombie to {_chestplate}
+			set tool of last spawned zombie to glowing wooden sword of sharpness 3 named "&cLvl0 &7Sword"
+			set max health of last spawned zombie to 10
+			set health of last spawned zombie to 10
+			set displayname of last spawned zombie to "&cPvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+		{_rt} is 1:
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set {_chestplate} to leather chestplate
+			dye {_chestplate} red
+			set chestplate of last spawned zombie to {_chestplate}
+			set tool of last spawned zombie to glowing stone sword of sharpness 3 named "&8Lvl1 &7Sword"
+			set max health of last spawned zombie to 8
+			set health of last spawned zombie to 8
+			set displayname of last spawned zombie to "&8PvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+#			broadcast "&c   Zombie spawned %{_rt}%" to "PVPSpawn"
+		{_rt} is 2:
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set {_leggings} to leather leggings
+			dye {_leggings} red
+			set leggings of last spawned zombie to {_leggings}
+			set tool of last spawned zombie to glowing stone axe named "&8Lvl1 &7Axe"
+			set max health of last spawned zombie to 16
+			set health of last spawned zombie to 16
+			set displayname of last spawned zombie to "&8PvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+		{_rt} is 3:
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set {_boots} to leather boots
+			dye {_boots} red
+			set boots of last spawned zombie to {_boots}
+			set tool of last spawned zombie to iron axe named "&8Lvl1 &7Axe"
+			set max health of last spawned zombie to 24
+			set health of last spawned zombie to 24
+			set displayname of last spawned zombie to "&8PvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+		{_rt} is 4:
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned zombie to {PVP::Level2::Chestplate}
+			set tool of last spawned zombie to glowing iron sword named "&bLvl2 &7Sword"
+			set max health of last spawned zombie to 8
+			set health of last spawned zombie to 8
+			set displayname of last spawned zombie to "&bPvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+		{_rt} is 5:
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set leggings of last spawned zombie to {PVP::Level2::Leggings}
+			set tool of last spawned zombie to glowing diamond axe named "&bLvl2 &7Axe"
+			set max health of last spawned zombie to 6
+			set health of last spawned zombie to 6
+			set displayname of last spawned zombie to "&bPvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+		{_rt} is 6:
+			spawn skeleton at {_tt}
+			set last spawned skeleton's helmet to skull of random element of {Commence::AllPlayers::*}
+			set leggings of last spawned skeleton to {PVP::Level2::Leggings}
+			set boots of last spawned skeleton to {PVP::Level2::Boots}
+			set tool of last spawned skeleton to bow named "&bLvl2 &7Bow"
+			set max health of last spawned skeleton to 16
+			set health of last spawned skeleton to 16
+			set displayname of last spawned skeleton to "&bPvE &fSkeleton"
+		{_rt} is 7:
+			spawn zombie at {_tt}
+			set last spawned zombie's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned zombie to {PVP::Level3::Chestplate}
+			set leggings of last spawned zombie to {PVP::Level3::Leggings}
+			set boots of last spawned zombie to {PVP::Level3::Boots}
+			set tool of last spawned zombie to diamond sword of sharpness 52 named "&6Lvl3 &7Sword"
+			set max health of last spawned zombie to 10
+			set health of last spawned zombie to 10
+			set displayname of last spawned zombie to "&6PvE &cZombie"
+			apply speed 2 without particles to the last spawned zombie for 9999 minutes
+		{_rt} is 8:
+			spawn spider at {_tt}
+			set last spawned spider's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned spider to {PVP::Level3::Chestplate}
+			set leggings of last spawned spider to {PVP::Level3::Leggings}
+			set boots of last spawned spider to {PVP::Level3::Boots}
+			set tool of last spawned spider to diamond sword of sharpness 12 named "&6Lvl3 &7Sword"
+			set max health of last spawned spider to 26
+			set health of last spawned spider to 26
+			set displayname of last spawned spider to "&6PvE &8Spider"
+			apply strength 2 without particles to the last spawned spider for 9999 minutes
+		{_rt} is 9:
+			spawn skeleton at {_tt}
+			set last spawned skeleton's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned skeleton to {PVP::Level3::Chestplate}
+			set leggings of last spawned skeleton to {PVP::Level3::Leggings}
+			set boots of last spawned skeleton to {PVP::Level3::Boots}
+			set tool of last spawned skeleton to bow of power 10 named "&6Lvl3 &7Bow"
+			set max health of last spawned skeleton to 30
+			set health of last spawned skeleton to 30
+			set displayname of last spawned skeleton to "&6PvE &fSkeleton"
+		{_rt} is 10:
+			spawn wither skeleton at {_tt}
+			set last spawned wither skeleton's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned wither skeleton to {PVP::Level4::Chestplate}
+			set leggings of last spawned wither skeleton to {PVP::Level4::Leggings}
+			set boots of last spawned wither skeleton to {PVP::Level4::Boots}
+			set tool of last spawned wither skeleton to bow of power 60 named "&2Lvl4 &7Bow"
+			set max health of last spawned wither skeleton to 5
+			set health of last spawned wither skeleton to 5
+			set displayname of last spawned wither skeleton to "&2PvE &0Witherton"
+			apply speed 2 without particles to the last spawned wither skeleton for 9999 minutes
+		{_rt} is 11:
+			spawn spider at {_tt}
+			set last spawned spider's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned spider to {PVP::Level4::Chestplate}
+			set leggings of last spawned spider to {PVP::Level4::Leggings}
+			set boots of last spawned spider to {PVP::Level4::Boots}
+			set tool of last spawned spider to netherite sword of sharpness 26 named "&2Lvl4 &7Sword"
+			set max health of last spawned spider to 26
+			set health of last spawned spider to 26
+			set displayname of last spawned spider to "&2PvE &cSpider"
+			apply strength 2 without particles to the last spawned spider for 9999 minutes
+		{_rt} is 12:
+			spawn creeper at {_tt}
+			set last spawned creeper's helmet to skull of random element of {Commence::AllPlayers::*}
+			set chestplate of last spawned creeper to {PVP::Level4::Chestplate}
+			set leggings of last spawned creeper to {PVP::Level4::Leggings}
+			set boots of last spawned creeper to {PVP::Level4::Boots}
+			set max health of last spawned creeper to 10
+			set health of last spawned creeper to 10
+			set displayname of last spawned creeper to "&2PvE &aCreeper"
+			apply speed 20 without particles to the last spawned creeper for 9999 minutes
+	clear {PVP::AllPlayerCount}
+	loop all players in {@worlds2}:
+		add 1 to {PVP::AllPlayerCount}
+	{PVP::AllPlayerCount} is more than 4:
+		{PVP::Wait} is true:
+			set {PVP::Wait} to false
+			kill all zombies and skeletons and wither skeletons and spiders and creepers in {@worlds2}
+	else if {PVP::AllPlayerCount} is 4:
+		{PVP::Wait} is true:
+			set {PVP::Wait} to false
+			set {_c} to 0
+			loop all zombies and skeletons in "PVPSpawn":
+				add 1 to {_c}
+			{_c} is more than 30:
+				kill all zombies and skeletons and wither skeletons and spiders and creepers in {@worlds2}
+	else if {PVP::AllPlayerCount} is more than 2:
+		{PVP::Wait} is true:
+			set {PVP::Wait} to false
+			set {_c} to 0
+			loop all zombies and skeletons in "PVPSpawn":
+				add 1 to {_c}
+			{_c} is more than 30:
+				kill all zombies and skeletons and wither skeletons and spiders and creepers in {@worlds2}
+	else if {PVP::AllPlayerCount} is 1:
+		{PVP::Wait} is true:
+			set {PVP::Wait} to false
+			set {_c} to 0
+			loop all zombies and skeletons in "PVPSpawn":
+				add 1 to {_c}
+			{_c} is more than 50:
+				kill all zombies and skeletons and wither skeletons and spiders and creepers in {@worlds2}
+	else if {PVP::AllPlayerCount} is more than 7:
+		kill all zombies and skeletons and wither skeletons and spiders and creepers in {@worlds2}
+	else if {PVP::AllPlayerCount} is less than 1:
+		kill all zombies and skeletons and wither skeletons and spiders and creepers in {@worlds2}
+	#KitPvP Level Checker
+
+function levelCheck(p: player):
+	send "" to {_p}
+	send "&7   Every kill gains 1 point, every death loses 1 point" to {_p}
+	send "" to {_p}
+	{PVP::%{_p}%::PVE} is true:
+		broadcast "&c   %{_p}'s display name%&c joined KitPvE" to {@worlds3}
+	else:
+		broadcast "&c   %{_p}'s display name%&c joined KitPvP" to {@worlds3}
+	send "" to {_p}
+	if {PVP::%{_p}%::Level0} is false:
+		{PVP::%{_p}%::Level1} is true:
+			wait 1 tick
+		else if {PVP::%{_p}%::Level2} is true:
+			wait 1 tick
+		else if {PVP::%{_p}%::Level3} is true:
+			wait 1 tick
+		else if {PVP::%{_p}%::Level4} is true:
+			wait 1 tick
+		else:
+			set {PVP::%{_p}%::Level0} to true
+	if {PVP::%{_p}%::Level0} is true:
+		set {PVP::%{_p}%::Level} to  "{@pvpspawn}"
+		clear {_t}
+		set {_t} to random element of {PVP::0::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to 0
+	else if {PVP::%{_p}%::Level5} is true:
+		set {PVP::%{_p}%::Level} to  "{@pvplevel5}"
+		clear {_t}
+		set {_t} to random element of {PVP::5::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to a random integer between 1 and 12
+	else if {PVP::%{_p}%::Level4} is true:
+		set {PVP::%{_p}%::Level} to  "{@pvplevel4}"
+		clear {_t}
+		set {_t} to random element of {PVP::4::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to a random integer between 10 and 12
+	else if {PVP::%{_p}%::Level3} is true:
+		set {PVP::%{_p}%::Level} to  "{@pvplevel3}"
+		clear {_t}
+		set {_t} to random element of {PVP::3::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to a random integer between 7 and 9
+	else if {PVP::%{_p}%::Level2} is true:
+		set {PVP::%{_p}%::Level} to  "{@pvplevel2}"
+		clear {_t}
+		set {_t} to random element of {PVP::2::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to a random integer between 4 and 6
+	else if {PVP::%{_p}%::Level1} is true:
+		set {PVP::%{_p}%::Level} to  "{@pvplevel1}"
+		clear {_t}
+		set {_t} to random element of {PVP::1::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to 1
+	else:
+		set {PVP::%{_p}%::Level} to  "{@pvpspawn}"
+		clear {_t}
+		set {_t} to random element of {PVP::0::SLoc::*}
+		teleport {_p} to {_t}
+		wait 1 tick
+		set {PVP::%{_p}%::Kit} to 0
+
+	#KitPvP Kit Checker
+function kitCheck(p: player):
+	{_p}'s world is not {@worlds}:
+		stop
+	{PVP::%{_p}%::Kit} is 0:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &8Kit 0&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit0} is not set:
+			set {PVP::%{_p}%::Kit0} to 0
+		{PVP::%{_p}%::Kit0} is more than 10:
+			set slot 1 of {_p} to stone sword of sharpness 7 and smite 8 and sweeping edge 3 and fire aspect 1 and knockback 2 named "&cLvl0 &7Sword&a+%{PVP::%{_p}%::Kit0}%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit0}% &7Attack" and "&a +%{PVP::%{_p}%::Kit0} + 7% &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+			set {PVP::Kit0::%{PVP::%{_p}%::Kit0} + 1%} to "%{PVP::%{_p}%::Kit0} * 11 + 6%"
+			send "&7    You got a stone sword named &cLvl0 &7Sword&a+%{PVP::%{_p}%::Kit0}%" to {_p}
+		else if {PVP::Level0::Sword%{PVP::%{_p}%::Kit0}%} is set:
+			set slot 1 of {_p} to {PVP::Level0::Sword%{PVP::%{_p}%::Kit0}%}
+			send "&7    You got a %{PVP::Level0::Sword%{PVP::%{_p}%::Kit0}%}%" to {_p}
+		else:
+			set slot 1 of {_p} to {PVP::Level0::Sword1}
+			send "&7    You got a %{PVP::Level0::Sword%{PVP::%{_p}%::Kit0}%}%" to {_p}
+		if {PVP::%{_p}%::Kit0Bow} is more than 10:
+			set slot 2 of {_p} to glowing bow of infinity and power 8 and punch 8 named "&cLvl0 &7Bow&a+%{PVP::%{_p}%::Kit0Bow}%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit0Bow}% &7Attack" and "&a +%round({PVP::%{_p}%::Kit0Bow} * 0.7)% &7Punch" and "&7 " 
+			set slot 3 of {_p} to {PVP::Level0::Arrow0}
+			send "&7     You got a bow named &cLvl0 &7Bow&a+%{PVP::%{_p}%::Kit0Bow}%" to {_p}
+			send "&7      You got an %{PVP::Level0::Arrow0}%" to {_p}
+			set {PVP::Kit0Bow::%{PVP::%{_p}%::Kit0Bow} + 1%} to "%{PVP::%{_p}%::Kit0Bow} * 11 - 14%"
+		else if {PVP::%{_p}%::Kit0Bow} is more than 0:
+			set slot 2 of {_p} to {PVP::Level0::Bow%{PVP::%{_p}%::Kit0Bow}%}
+			set slot 3 of {_p} to {PVP::Level0::Arrow0}
+			send "&7     You got a %{PVP::Level0::Bow%{PVP::%{_p}%::Kit0Bow}%}%" to {_p}
+			send "&7      You got an %{PVP::Level0::Arrow0}%" to {_p}
+		else:
+			set slot 2 of {_p} to air
+			set slot 3 of {_p} to air
+			set {PVP::%{_p}%::Kit0Bow} to 0
+		if {PVP::%{_p}%::Kit0Armor} is more than 8:
+			equip {_p} with iron helmet of protection 4 named "&cLvl0 &fHelmet&a+%{PVP::%{_p}%::Kit0Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit0Armor} - 6% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7       You got an iron helemt named &cLvl0 &fHelmet&a+%{PVP::%{_p}%::Kit0Armor} - 7%" to {_p}
+			equip {_p} with iron chestplate of protection 3 named "&cLvl0 &fChestplate&a+%{PVP::%{_p}%::Kit0Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit0Armor} - 7% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7        You got an iron chestplate named &cLvl0 &fHelmet&a+%{PVP::%{_p}%::Kit0Armor} - 7%" to {_p}
+			equip {_p} with iron boots of protection 4 named "&cLvl0 &fBoots&a+%{PVP::%{_p}%::Kit0Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit0Armor} - 7% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7         You got an iron leggings named &cLvl0 &fHelmet&a+%{PVP::%{_p}%::Kit0Armor} - 7%" to {_p}
+			equip {_p} with iron leggings of protection 3 named "&cLvl0 &fLeggings&a+%{PVP::%{_p}%::Kit0Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit0Armor} - 6% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7          You got an iron boots named &cLvl0 &fHelmet&a+%{PVP::%{_p}%::Kit0Armor} - 7%" to {_p}
+			set {PVP::Kit0Armor::%{PVP::%{_p}%::Kit0Armor} + 1%} to "%{PVP::%{_p}%::Kit0Armor} * 11%"
+		else if {PVP::%{_p}%::Kit0Armor} is more than 0:
+			equip {_p} with {PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor}%}
+			send "&7       You got an %{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor}%}%" to {_p}
+			{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 1%} is set:
+				equip {_p} with {PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 1%}
+				send "&7        You got an %{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 1%}%" to {_p}
+			{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 2%} is set:
+				equip {_p} with {PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 2%}
+				send "&7         You got an %{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 2%}%" to {_p}
+			{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 3%} is set:
+				equip {_p} with {PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 3%}
+				send "&7          You got an %{PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor} - 3%}%" to {_p}
+#			set slot 2 of {_p} to {PVP::Level0::Armor%{PVP::%{_p}%::Kit0Armor}%}
+		else:
+			equip {_p} with air
+			set {PVP::%{_p}%::Kit0Armor} to 0
+		{PVP::%{_p}%::Kit0Item} is more than 0:
+			set {_t} to {PVP::%{_p}%::Kit0Item} + 3
+			{PVP::%{_p}%::Kit0Item} is 1:
+				set slot 4 of {_p} to {PVP::Level0::Item%{PVP::%{_p}%::Kit0Item}%}
+				send "&7           You got a %{PVP::Level0::Item%{PVP::%{_p}%::Kit0Item}%}%" to {_p}
+			else if {PVP::%{_p}%::Kit0Item} is 2:
+				set slot 4 of {_p} to {PVP::Level0::Item%{PVP::%{_p}%::Kit0Item}%}
+				set slot 5 of {_p} to {PVP::Level0::Item%{PVP::%{_p}%::Kit0Item} - 1%}
+				send "&7           You got a %{PVP::Level0::Item%{PVP::%{_p}%::Kit0Item}%}%" to {_p}
+				send "&7            You got a %{PVP::Level0::Item%{PVP::%{_p}%::Kit0Item} - 1%}%" to {_p}
+			else if {PVP::%{_p}%::Kit0Item} is 3:
+				set slot 4 of {_p} to {PVP::Level0::Item%{PVP::%{_p}%::Kit0Item}%}
+				set slot 5 of {_p} to {PVP::Level0::Item%{PVP::%{_p}%::Kit0Item} - 1%}
+				set slot 6 of {_p} to {PVP::Level0::Item%{PVP::%{_p}%::Kit0Item} - 2%}
+				send "&7           You got a %{PVP::Level0::Item%{PVP::%{_p}%::Kit0Item}%}%" to {_p}
+				send "&7            You got a %{PVP::Level0::Item%{PVP::%{_p}%::Kit0Item} - 1%}%" to {_p}
+				send "&7             You got a %{PVP::Level0::Item%{PVP::%{_p}%::Kit0Item} - 2%}%" to {_p}
+			else if {PVP::%{_p}%::Kit0Item} is more than 3:
+				set slot 4 of {_p} to {PVP::Level0::Item3}
+				set slot 5 of {_p} to {PVP::Level0::Item2}
+				set slot 6 of {_p} to {PVP::Level0::Item1}
+				send "&7           You got a %{PVP::Level0::Item3}%" to {_p}
+				send "&7            You got a %{PVP::Level0::Item2}%" to {_p}
+				send "&7             You got a %{PVP::Level0::Item1}%" to {_p}
+		else:
+			set slot 4 of {_p} to air
+			set slot 5 of {_p} to air
+			set slot 6 of {_p} to air
+			set {PVP::%{_p}%::Kit0Item} to 0
+		set slot 7 of {_p} to {PVP::ShopItem}
+		wait 1 tick
+	else if {PVP::%{_p}%::Kit} is 1:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &8You Got &8Kit 0&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit1} is not set:
+			set {PVP::%{_p}%::Kit1} to 0
+		{PVP::%{_p}%::Kit1} is more than 10:
+			set slot 1 of {_p} to stone sword of sharpness 7 and smite 8 and sweeping edge 3 named "&8Lvl1 &7Sword&a+%{PVP::%{_p}%::Kit1}%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit1}% &7Attack" and "&a +%{PVP::%{_p}%::Kit1} + 7% &7Damage" and "&a +3 &7Sweeping Edge" and "&a +1 &7Fire" and "&a +2 &7Knockback" and "&7 " with nbt from "{HideFlags:63}"
+		else if {PVP::Level1::Sword%{PVP::%{_p}%::Kit1}%} is set:
+			set slot 1 of {_p} to {PVP::Level1::Sword%{PVP::%{_p}%::Kit1}%}
+			send "&7    You got a %{PVP::Level1::Sword%{PVP::%{_p}%::Kit1}%}%" to {_p}
+		else:
+			set slot 1 of {_p} to {PVP::Level1::Sword1}
+			send "&7    You got a %{PVP::Level1::Sword%{PVP::%{_p}%::Kit1}%}%" to {_p}
+		if {PVP::%{_p}%::Kit1Bow} is more than 10:
+			set slot 2 of {_p} to glowing bow of infinity and power 8 and punch 8 named "&8Lvl1 &7Bow&a+%{PVP::%{_p}%::Kit1Bow}%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit1Bow}% &7Attack" and "&a +%round({PVP::%{_p}%::Kit1Bow} * 0.7)% &7Punch" and "&7 " 
+			set slot 3 of {_p} to {PVP::Level1::Arrow0}
+			send "&7     You got a bow named &8Lvl1 &7Bow&a+%{PVP::%{_p}%::Kit1Bow}%" to {_p}
+			send "&7      You got an %{PVP::Level1::Arrow0}%" to {_p}
+			set {PVP::Kit1Bow::%{PVP::%{_p}%::Kit1Bow} + 1%} to "%{PVP::%{_p}%::Kit1Bow} * 11 - 14%"
+		else if {PVP::%{_p}%::Kit1Bow} is more than 0:
+			set slot 2 of {_p} to {PVP::Level1::Bow%{PVP::%{_p}%::Kit1Bow}%}
+			set slot 3 of {_p} to {PVP::Level1::Arrow0}
+			send "&7     You got a %{PVP::Level1::Bow%{PVP::%{_p}%::Kit1Bow}%}%" to {_p}
+			send "&7      You got an %{PVP::Level1::Arrow0}%" to {_p}
+		else:
+			set slot 2 of {_p} to air
+			set slot 3 of {_p} to air
+			set {PVP::%{_p}%::Kit1Bow} to 0
+		if {PVP::%{_p}%::Kit1Armor} is more than 8:
+			equip {_p} with iron helmet of protection 4 named "&8Lvl1 &fHelmet&a+%{PVP::%{_p}%::Kit1Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit1Armor} - 6% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7       You got an iron helemt named &8Lvl1 &fHelmet&a+%{PVP::%{_p}%::Kit1Armor} - 7%" to {_p}
+			equip {_p} with iron chestplate of protection 3 named "&8Lvl1 &fChestplate&a+%{PVP::%{_p}%::Kit1Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit1Armor} - 7% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7        You got an iron chestplate named &8Lvl1 &fHelmet&a+%{PVP::%{_p}%::Kit1Armor} - 7%" to {_p}
+			equip {_p} with iron boots of protection 4 named "&8Lvl1 &fBoots&a+%{PVP::%{_p}%::Kit1Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit1Armor} - 7% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7         You got an iron leggings named &8Lvl1 &fHelmet&a+%{PVP::%{_p}%::Kit1Armor} - 7%" to {_p}
+			equip {_p} with iron leggings of protection 3 named "&8Lvl1 &fLeggings&a+%{PVP::%{_p}%::Kit1Armor} - 7%" with lore "&7 " and "&a +%{PVP::%{_p}%::Kit1Armor} - 6% &7Protection" and "&7 " with nbt from "{HideFlags:63}"
+			send "&7          You got an iron boots named &8Lvl1 &fHelmet&a+%{PVP::%{_p}%::Kit1Armor} - 7%" to {_p}
+			set {PVP::Kit1Armor::%{PVP::%{_p}%::Kit1Armor} + 1%} to "%{PVP::%{_p}%::Kit1Armor} * 11%"
+		else if {PVP::%{_p}%::Kit1Armor} is more than 0:
+			equip {_p} with {PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor}%}
+			send "&7       You got an %{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor}%}%" to {_p}
+			{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 1%} is set:
+				equip {_p} with {PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 1%}
+				send "&7        You got an %{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 1%}%" to {_p}
+			{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 2%} is set:
+				equip {_p} with {PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 2%}
+				send "&7         You got an %{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 2%}%" to {_p}
+			{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 3%} is set:
+				equip {_p} with {PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 3%}
+				send "&7          You got an %{PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor} - 3%}%" to {_p}
+#			set slot 2 of {_p} to {PVP::Level1::Armor%{PVP::%{_p}%::Kit1Armor}%}
+		else:
+			equip {_p} with air
+			set {PVP::%{_p}%::Kit1Armor} to 0
+		{PVP::%{_p}%::Kit1Item} is more than 0:
+			set {_t} to {PVP::%{_p}%::Kit1Item} + 3
+			{PVP::%{_p}%::Kit1Item} is 1:
+				set slot 4 of {_p} to {PVP::Level1::Item%{PVP::%{_p}%::Kit1Item}%}
+				send "&7           You got a %{PVP::Level1::Item%{PVP::%{_p}%::Kit1Item}%}%" to {_p}
+			else if {PVP::%{_p}%::Kit1Item} is 2:
+				set slot 4 of {_p} to {PVP::Level1::Item%{PVP::%{_p}%::Kit1Item}%}
+				set slot 5 of {_p} to {PVP::Level1::Item%{PVP::%{_p}%::Kit1Item} - 1%}
+				send "&7           You got a %{PVP::Level1::Item%{PVP::%{_p}%::Kit1Item}%}%" to {_p}
+				send "&7            You got a %{PVP::Level1::Item%{PVP::%{_p}%::Kit1Item} - 1%}%" to {_p}
+			else if {PVP::%{_p}%::Kit1Item} is 3:
+				set slot 4 of {_p} to {PVP::Level1::Item%{PVP::%{_p}%::Kit1Item}%}
+				set slot 5 of {_p} to {PVP::Level1::Item%{PVP::%{_p}%::Kit1Item} - 1%}
+				set slot 6 of {_p} to {PVP::Level1::Item%{PVP::%{_p}%::Kit1Item} - 2%}
+				send "&7           You got a %{PVP::Level1::Item%{PVP::%{_p}%::Kit1Item}%}%" to {_p}
+				send "&7            You got a %{PVP::Level1::Item%{PVP::%{_p}%::Kit1Item} - 1%}%" to {_p}
+				send "&7             You got a %{PVP::Level1::Item%{PVP::%{_p}%::Kit1Item} - 2%}%" to {_p}
+			else if {PVP::%{_p}%::Kit1Item} is more than 3:
+				set slot 4 of {_p} to {PVP::Level1::Item3}
+				set slot 5 of {_p} to {PVP::Level1::Item2}
+				set slot 6 of {_p} to {PVP::Level1::Item1}
+				send "&7           You got a %{PVP::Level1::Item3}%" to {_p}
+				send "&7            You got a %{PVP::Level1::Item2}%" to {_p}
+				send "&7             You got a %{PVP::Level1::Item1}%" to {_p}
+		else:
+			set slot 4 of {_p} to air
+			set slot 5 of {_p} to air
+			set slot 6 of {_p} to air
+			set {PVP::%{_p}%::Kit1Item} to 0
+		set slot 7 of {_p} to {PVP::ShopItem}
+		wait 1 tick
+	else if {PVP::%{_p}%::Kit} is 2:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &8Kit 2&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit1} is not set:
+			set {PVP::%{_p}%::Kit1} to 0
+		set slot 1 of {_p} to {PVP::Level1::Axe2}
+		send "&7    You got a &8Lvl1 &7Axe" to {_p}
+		wait 1 tick
+		set slot 3 of {_p} to {PVP::Level1::Block2}
+		send "&7     You got a &8Lvl1 &7Block" to {_p}
+		wait 1 tick
+	else if {PVP::%{_p}%::Kit} is 3:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &8Kit 3&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit1} is not set:
+			set {PVP::%{_p}%::Kit1} to 0
+		set slot 1 of {_p} to {PVP::Level1::Bow}
+		send "&7    You got a &8Lvl1 &7Bow" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level1::Axe1}
+		send "&7     You got a &8Lvl1 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level1::Arrow}
+		send "&7      You got a &8Lvl1 &7Arrow" to {_p}
+		wait 1 tick
+	else if {PVP::%{_p}%::Kit} is 4:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &bKit 4&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit2} is not set:
+			set {PVP::%{_p}%::Kit2} to 0
+		set slot 1 of {_p} to {PVP::Level2::Sword}
+		send "&7    You got a &bLvl2 &7Sword" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level2::Axe1}
+		send "&7     You got a &bLvl2 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level2::Block1}
+		send "&7      You got a &bLvl2 &7Block" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level2::Helmet}
+		equip {_p} with {PVP::Level2::Leggings}
+	else if {PVP::%{_p}%::Kit} is 5:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &bKit 5&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit2} is not set:
+			set {PVP::%{_p}%::Kit2} to 0
+		set slot 1 of {_p} to {PVP::Level2::Axe2}
+		send "&7     You got a &bLvl2 &7Axe" to {_p}
+		wait 1 tick
+		set slot 3 of {_p} to {PVP::Level2::Block2}
+		send "&7      You got a &bLvl2 &7Block" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level2::Chestplate}
+		equip {_p} with {PVP::Level2::Boots}
+	else if {PVP::%{_p}%::Kit} is 6:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &bKit 6&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit2} is not set:
+			set {PVP::%{_p}%::Kit2} to 0
+		set slot 1 of {_p} to {PVP::Level2::Bow}
+		send "&7    You got a &bLvl2 &7Bow" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level2::Axe1}
+		send "&7     You got a &bLvl2 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level2::Arrow}
+		send "&7       You got a &bLvl2 &7Arrow" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level2::Helmet}
+		equip {_p} with {PVP::Level2::Chestplate}
+		equip {_p} with {PVP::Level2::Leggings}
+	else if {PVP::%{_p}%::Kit} is 7:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &6Kit 7&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit3} is not set:
+			set {PVP::%{_p}%::Kit3} to 0
+		set slot 1 of {_p} to {PVP::Level3::Sword}
+		send "&7    You got a &6Lvl3 &7Sword" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level3::Axe1}
+		send "&7     You got a &6Lvl3 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level3::Block1}
+		send "&7      You got a &6Lvl3 &7Block" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level3::Helmet}
+		equip {_p} with {PVP::Level3::Chestplate}
+		equip {_p} with {PVP::Level3::Leggings}
+		equip {_p} with {PVP::Level3::Boots}
+	else if {PVP::%{_p}%::Kit} is 8:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &6Kit 8&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit3} is not set:
+			set {PVP::%{_p}%::Kit3} to 0
+		set slot 2 of {_p} to {PVP::Level3::Axe2}
+		send "&7     You got a &6Lvl3 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level3::Block1}
+		send "&7      You got a &6Lvl3 &7Block" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level3::Helmet}
+		equip {_p} with {PVP::Level3::Chestplate}
+		equip {_p} with {PVP::Level3::Leggings}
+		equip {_p} with {PVP::Level3::Boots}
+	else if {PVP::%{_p}%::Kit} is 9:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &6Kit 9&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit3} is not set:
+			set {PVP::%{_p}%::Kit3} to 0
+		set slot 1 of {_p} to {PVP::Level3::Bow}
+		send "&7    You got a &6Lvl3 &7Bow" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level3::Axe2}
+		send "&7     You got a &6Lvl3 &7Axe" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level3::Arrow}
+		send "&7      You got a &6Lvl3 &7Arrow" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level3::Helmet}
+		equip {_p} with {PVP::Level3::Chestplate}
+		equip {_p} with {PVP::Level3::Leggings}
+		equip {_p} with {PVP::Level3::Boots}
+	else if {PVP::%{_p}%::Kit} is 10:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &2Kit 10&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit4} is not set:
+			set {PVP::%{_p}%::Kit4} to 0
+		set slot 1 of {_p} to {PVP::Level4::Sword}
+		send "&7    You got a &2Lvl4 &7Sword" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level4::Axe1}
+		send "&7     You got a &2Lvl4 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level4::Block1}
+		send "&7      You got a &2Lvl4 &7Block" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level4::Helmet}
+		equip {_p} with {PVP::Level4::Chestplate}
+		equip {_p} with {PVP::Level4::Leggings}
+		equip {_p} with {PVP::Level4::Boots}
+		set {_p}'s off hand item to {PVP::Level4::Shield}
+	else if {PVP::%{_p}%::Kit} is 11:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &2Kit 11&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit4} is not set:
+			set {PVP::%{_p}%::Kit4} to 0
+		set slot 2 of {_p} to {PVP::Level4::Axe2}
+		send "&7     You got a &2Lvl4 &7Axe" to {_p}
+		wait 1 tick
+		set slot 4 of {_p} to {PVP::Level3::Block1}
+		send "&7      You got a &2Lvl4 &7Block" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level4::Helmet}
+		equip {_p} with {PVP::Level4::Chestplate}
+		equip {_p} with {PVP::Level4::Leggings}
+		equip {_p} with {PVP::Level4::Boots}
+		set {_p}'s off hand item to {PVP::Level4::Shield}
+	else if {PVP::%{_p}%::Kit} is 12:
+		clear {_p}'s inventory
+		send "&8  &8|-&l!&8-|  &cYou Got &6Kit 12&9  &8|-&l!&8-|" to {_p}
+		{PVP::%{_p}%::Kit4} is not set:
+			set {PVP::%{_p}%::Kit4} to 0
+		set slot 1 of {_p} to {PVP::Level4::Bow}
+		send "&7    You got a &2Lvl4 &7Bow" to {_p}
+		wait 1 tick
+		set slot 2 of {_p} to {PVP::Level3::Arrow}
+		send "&7    You got a &2Lvl4 &7Arrow" to {_p}
+		wait 1 tick
+		equip {_p} with {PVP::Level4::Helmet}
+		equip {_p} with {PVP::Level4::Chestplate}
+		equip {_p} with {PVP::Level4::Leggings}
+		equip {_p} with {PVP::Level4::Boots}
+		set {_p}'s off hand item to {PVP::Level4::Shield}
+	if {PVP::%{_p}%::Kills} is less than 1:
+		set {PVP::%{_p}%::Kills} to 0
+	set {PVP::%{_p}%::PVP} to true
+
+function resetPVP(p: player):
+#	clear {PVP::*}
+	loop {PVP::AllPlayers::*}:
+		loop-value is {_p}:
+			remove {_p} from {PVP::AllPlayers::*}
+			clear {PVP::%{_p}%::EnWait}
+			remove 1 from {PVP::AllPlayerCount}
+			add 1 to {PVP::%{_p}%::Deaths}
+			if {PVP::%{_p}%::Kills} is less than 0:
+				set {PVP::%{_p}%::Kills} to 0
+				wait 1 tick
+			else if {PVP::%{_p}%::Kills} is 0:
+				wait 1 tick
+			else:
+				remove 1 from {PVP::%{_p}%::Kills}
+			clear {PVP::%{_p}%::PVP}
+			clear {PVP::%{_p}%::PVE}
+
+function pvpDropper(p: player):
+	chance of 8%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@common}{@doublekill}&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kills}
+		send "&8  You got a {@common}{@doublekill}" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@common}Obliterate Enchantment&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%}
+		send "&8  You got a {@common}Obliterate Enchantment" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@common}Lucky Enchantment&c" to {_p}
+		send "&8  You got a {@common}Lucky Enchantment" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@common}Ignite Enchantment&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%Item}
+		send "&8  You got a {@common}Ignite Enchantment" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@common}Explosion Enchantment&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%Item}
+		send "&8  You got a {@common}Explosion Enchantment" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped an {@uncommon}{@heal}&c" to {_p}
+		heal {_p}
+		send "&8  You got an {@uncommon}{@heal}" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}{@1weaponupgrade}&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%}
+		kitCheck({_p})
+		send "&8  You got a {@rare}{@1weaponupgrade}" to {_p}
+		stop
+	chance of 2%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}{@1bowupgrade}&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%Bow}
+		kitCheck({_p})
+		send "&8  You got a {@rare}{@1bowupgrade}" to {_p}
+		stop
+	chance of 1%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}{@1armorupgrade}&c" to {_p}
+		add 1 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%Armor}
+		kitCheck({_p})
+		send "&8  You got a {@rare}{@1armorupgrade}" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@epic}{@doublearmorupgrade}&c" to {_p}
+		add 2 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%Armor}
+		kitCheck({_p})
+		send "&8  You got a {@epic}{@doublearmorupgrade}" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@epic}{@doublebowupgrade}&c" to {_p}
+		add 2 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%Bow}
+		kitCheck({_p})
+		send "&8  You got a {@epic}{@doublebowupgrade}" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@epic}{@triplekill}&c" to {_p}
+		add 2 to {PVP::%{_p}%::Kills}
+		send "&8  You got a {@epic}{@triplekill}" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}Haste Enchantment&c" to {_p}
+		send "&8  You got a {@rare}Haste Enchantment" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}Clear Sight Enchantment&c" to {_p}
+		send "&8  You got a {@rare}Clear Sight Enchantment" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}Rage Enchantment&c" to {_p}
+		add 2 to {PVP::%{_p}%::Kit%{PVP::%{_p}%::Kit}%}
+		send "&8  You got a {@rare}Rage Enchantment" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}Molten Enchantment&c" to {_p}
+		send "&8  You got a {@rare}Molten Enchantment" to {_p}
+		stop
+	chance of 0.5%:
+		send title "" with subtitle "&c   %{PVP::%{_p}%::Murder}%&c dropped a {@rare}Electric Enchantment&c" to {_p}
+		send "&8  You got a {@rare}Electric Enchantment" to {_p}
+		stop
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#MAIN CONDITIONS
+
+
+on right click:
+	stop if player's world's name does not contain "PVP"
+	item is sunflower:
+		name of item contains "PvP":
+			player's world is not "PVPSpawn":
+				stop
+			execute player command "/pshop"
+	item is flint and steel:
+		uncolored name of item contains "Lighter":
+			{PVP::%player%::EnWait} is true:
+				send "&9 Commence&8SMP &c Wait before trying this item again!" to player
+				stop
+			set {PVP::%player%::EnWait} to true
+			loop all entities in radius 5 of player:
+				loop-entity is player:
+					send title "" with subtitle "&c   You used Ignite&c"
+				else:
+					ignite loop-entity
+					damage loop-entity by 5 hearts
+			wait 5 seconds
+			set {PVP::%player%::EnWait} to false
+	item is tnt:
+		uncolored name of item contains "Tnt":
+			{PVP::%player%::EnWait} is true:
+				send "&9 Commence&8SMP &c Wait before trying this item again!" to player
+				stop
+			set {PVP::%player%::EnWait} to true
+			loop all entities in radius 5 of player:
+				loop-entity is player:
+					create an explosion of force 5 in front of player
+				else:
+					damage loop-entity by 8 hearts
+			send title "" with subtitle "&c   You used Explosion&c"
+			wait 5 seconds
+			set {PVP::%player%::EnWait} to false
+	item is cobweb:
+		stop
+	uncolored name of item contains "Bow":
+		stop
+	item is shield:
+		stop
+	{PVP::%player%::PVP} is true:
+		cancel event
+
+on break:
+	player's world is {@worlds}:
+		item is cobweb or tnt:
+			stop
+		{Commence::%player%::Admin} is true:
+			{PVP::%player%::PVP} is true:
+				cancel event
+			stop
+		cancel event
+
+on place:
+	player's world is {@worlds}:
+		item is cobweb:
+			{PVP::%player%::EnWait} is true:
+				send "&9 Commence&8SMP &c Wait before trying this item again!" to player
+				cancel event
+				stop
+			set {PVP::%player%::EnWait} to true
+			create an explosion of force 5 at target
+			send title "" with subtitle "&c   You used Cobweb&c"
+			wait 5 seconds
+			set {PVP::%player%::EnWait} to false
+			set event-block to air
+			set slot 4 of player to {PVP::Level0::Item3}
+			stop
+		{Commence::%player%::Admin} is true:
+			{PVP::%player%::PVP} is true:
+				cancel event
+			stop
+		cancel event
+
+on drop:
+	world is {@worlds}:
+		cancel event
+
+on item damage:
+	player's world is {@worlds}:
+		cancel event
+
+on any player move:
+	world is {@worlds}:
+#		clear {PVP::%player%::Attacker}
+		if block under player is barrier:
+			{PVP::%player%::Temp} is true:
+				stop
+			set {PVP::%player%::Temp} to true
+			execute player command "/kitpvp"
+			send ""
+			send "&7   You're about to respawn in &cKitPvP"
+			wait 150 ticks
+			set {PVP::%player%::Temp} to false
+		else if player is in water:
+			damage entity by 1
+			wait 1 tick
+			send ""
+			send "{@liqdeath}"
+			stop
+		else if player is in lava:
+			damage entity by 1
+			wait 1 tick
+			send ""
+			send "{@liqdeath}"
+			stop
+
+on spawn:
+	world is "PVPSpawn":
+		event-entity is a zombie:
+			wait 1 tick
+		event-entity is a skeleton:
+			wait 1 tick
+		event-entity is a spider:
+			wait 1 tick
+		event-entity is a wither skeleton:
+			wait 1 tick
+		event-entity is a creeper:
+			wait 1 tick
+		event-entity is an arrow:
+			wait 1 tick
+		event-entity is an armor stand:
+			wait 1 tick
+		event-entity is a villager:
+			wait 1 tick
+		else:
+			cancel event
+	world is "PVPLevel2":
+		event-entity is a zombie:
+			wait 1 tick
+		event-entity is a skeleton:
+			wait 1 tick
+		event-entity is an arrow:
+			wait 1 tick
+		else:
+			cancel event
+	world is "PVPLevel3":
+		event-entity is a zombie:
+			wait 1 tick
+		event-entity is a skeleton:
+			wait 1 tick
+		event-entity is a spider:
+			wait 1 tick
+		event-entity is a wither skeleton:
+			wait 1 tick
+		event-entity is an arrow:
+			wait 1 tick
+		else:
+			cancel event
+	world is "PVPLevel4":
+		event-entity is a zombie:
+			wait 1 tick
+		event-entity is a skeleton:
+			wait 1 tick
+		event-entity is a spider:
+			wait 1 tick
+		event-entity is a wither skeleton:
+			wait 1 tick
+		event-entity is a creeper:
+			wait 1 tick
+		event-entity is a pig:
+			wait 1 tick
+		event-entity is a chicken:
+			wait 1 tick
+		event-entity is a sheep:
+			wait 1 tick
+		event-entity is a cow:
+			wait 1 tick
+		event-entity is an arrow:
+			wait 1 tick
+		event-entity is a creeper:
+			wait 1 tick
+		else:
+			cancel event
+	world is "PVPLevel5":
+		event-entity is a zombie:
+			wait 1 tick
+		event-entity is a skeleton:
+			wait 1 tick
+		event-entity is a spider:
+			wait 1 tick
+		event-entity is a wither skeleton:
+			wait 1 tick
+		event-entity is a creeper:
+			wait 1 tick
+		event-entity is an arrow:
+			wait 1 tick
+		event-entity is a creeper:
+			wait 1 tick
+		else:
+			cancel event
+
+on respawn:
+	player's world is {@worlds}:
+		{PVP::%player%::Auto} is true:
+			teleport player to {Spawn.PVPSpawn}
+			wait 5 ticks
+			execute player command "/kitpvp"
+			send "&7   You automatically respawned in &cKitPvP"
+			send "&7   Disable automatic respawning with &c/kpa"
+			stop
+
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#DEATH AND DAMAGE CONDITIONS
+
+on entity target:
+	"%region at player%" contains "pvpprotect":
+		cancel event
+		stop
+
+on damage:
+	world is {@worlds}:
+		"%region at attacker%" contains "pvpprotect":
+			cancel event
+			stop
+		victim is a cow:
+			cancel event
+			stop
+		victim is a pig:
+			cancel event
+			stop
+		victim is a sheep:
+			cancel event
+			stop
+		victim is a chicken:
+			cancel event
+			stop
+		victim is in lava:
+			set victim's health to 0
+			set {PVP::%victim%::Attacker} to "&4Lava"
+			set {_w} to ""
+			stop
+		victim is in water:
+			set victim's health to 0
+			set {PVP::%victim%::Attacker} to "&9Water"
+			set {_w} to ""
+			stop
+		damage cause is entity explosion: 
+			set victim's health to 0 or 0 or 0 or 0.5
+			attacker's display name is set:
+				set {PVP::%victim%::Attacker} to attacker's display name
+			else:
+				set {PVP::%victim%::Attacker} to attacker
+			stop
+		else if damage cause is void:
+			set victim's health to 0
+			stop
+#		if "%damage cause%" is "entity explosion":
+#			increase damage by 5000%
+#			set victim's health to 0 or 0 or 0 or 0.5
+#			attacker's display name is set:
+#				set {PVP::%victim%::Attacker} to attacker's display name
+#			else:
+#				set {PVP::%victim%::Attacker} to attacker
+#		if "%damage cause%" is "void":
+#			set victim's health to 0
+#			stop
+		victim is a player:
+			uncolored name of attacker contains "PvE":
+				increase damage by -375%
+				set {PVP::%victim%::Attacker} to attacker's display name
+			else if attacker is a player:
+				set {PVP::%victim%::Attacker} to attacker's display name
+		uncolored name of victim contains "PvE":
+			increase damage by 100%
+			world is "PVPLevel3":
+				increase damage by 500%
+			world is "PVPLevel4":
+				increase damage by 600%
+			set {PVP::%victim%::Attacker} to attacker's display name
+		else if uncolored name of attacker contains "PvE":
+			damage cause is projectile or fire:
+				increase damage by 400%
+			increase damage by -300%
+			set {PVP::%victim%::Attacker} to attacker's display name
+#		{PVP::%victim%::PVP} is not true:
+#			send "" to victim
+#			send "{@notpvp}" to victim
+#			set victim's health to 0
+#			cancel event
+#		{PVP::%attacker%::PVP} is not true:
+#			send "" to attacker
+#			send "{@notpvp}" to attacker
+#			set attacker's health to 0
+#			cancel event
+		wait 30 ticks
+		clear {PVP::%victim%::Attacker}
+
+on death:
+	victim is a player:
+		resetPVP(victim)
+	world is {@worlds}:
+		set death message to ""
+		clear drops
+		set {PVP::%victim%::DT} to true
+		if name of attacker's tool is not set:
+			clear {_w}
+			if attacker's tool is air:
+				set {_w} to ""
+			else:
+				set {_w} to "&8using a %attacker's tool%"
+		else:
+			set {_w} to "&8using %name of attacker's tool%"
+		uncolored name of attacker contains "PvE":
+			victim is a player:
+				set {PVP::Wait} to true
+#				{PVP::%victim%::Attacker} is not set:
+#					set {PVP::%victim%::Attacker} to attacker's display name
+			{PVP::%victim%::Attacker} is set:
+				set {PVP::%victim%::Killer} to attacker's display name
+				add 1 to {PVP::%victim%::Deaths}
+#				remove 1 from {PVP::%victim%::Kills}
+				{PVP::%victim%::Kills} is less than 1:
+					set {PVP::%victim%::Kills} to 0
+				{PVP::NoKillBC} is true:
+					wait 1 tick
+				else:
+					broadcast "&8   %{PVP::%victim%::Attacker}%&8 killed &8%victim's display name%&8 &4%{_w}%&c" to {@worlds2}
+					stop
+				broadcast "&8   %victim's display name% &8died to a %attacker%&8 in &cKitPvP&8" to {@notworlds}
+				stop
+		else if attacker is a player:
+			victim is a player:
+				{PVP::AllPlayerCount} is less than 1:
+					set {PVP::AllPlayerCount} to 0
+				else:
+					remove 1 from {PVP::AllPlayerCount}
+				{PVP::%victim%::Attacker} is not set:
+					set {PVP::%victim%::Attacker} to attacker's display name
+			else:
+				{PVP::%victim%::Attacker} is not set:
+					set {PVP::%victim%::Attacker} to attacker
+			{PVP::%victim%::Attacker} is set:
+				set {PVP::%attacker%::Murder} to victim's display name
+				pvpDropper(attacker)
+				set {PVP::%victim%::Killer} to attacker's display name
+				add 1 to {PVP::%attacker%::Kills}
+				add 1 to {PVP::%attacker%::AllKills}
+				add 1 to {PVP::%victim%::Deaths}
+				remove 1 from {PVP::%victim%::Kills}
+				{PVP::%victim%::Kills} is less than 1:
+					set {PVP::%victim%::Kills} to 0
+				{PVP::%attacker%::Murder} is not set:
+					set {PVP::%attacker%::Murder} to "&8a %victim%"
+				{PVP::NoKillBC} is true:
+					wait 1 tick
+				else:
+					broadcast "&8   %attacker's display name%&8 killed &8%{PVP::%attacker%::Murder}%&8 &4%{_w}%&c" to {@worlds2}
+					stop
+				uncolored name of victim contains "PvE":
+					set attacker's health to attacker's health + 1
+				else:
+					broadcast "&8   %{PVP::%attacker%::Murder}% &8died from %attacker%&8 in &cKitPvP&8" to {@notworlds}
+					set attacker's health to attacker's health + 3
+					stop
+		else if {PVP::%victim%::Attacker} is set:
+			broadcast "&8   %victim's display name% &8died to %{PVP::%victim%::Attacker}%&8 in &cKitPvP&8"
+			stop
+		else:
+			victim is a player:
+				wait 1 tick
+			else:
+				stop
+			add 1 to {PVP::%victim%::Deaths}
+			{PVP::%victim%::Kills} is less than 1:
+				set {PVP::%victim%::Kills} to 0
+			else:
+				remove 1 from {PVP::%victim%::Kills}
+			if damage cause is not set:
+				broadcast "&8   %victim's display name% &8died&8 in &cKitPvP&8"
+				stop
+			broadcast "&8   %victim's display name% &8died to %damage cause%&8 in &cKitPvP&8"
+			stop
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#MAIN COMMANDS
+
+
+command /kitpvp:
+	aliases: /kpvp, /pvp, /kp, /pve, /kpve, /kitpve
+	usage: &c /kitpvp
+	description: &7 Starts the KitPvP experience
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {PVP::%player%::PVP} is set:
+			send ""
+			send "{@alrpvp}"
+			stop
+		{PVP::Enabled} is not true:
+			send ""
+			send "{@commence}"
+			send "&c   Sorry, this game mode is currently disabled"
+			send "&7   To try other game modes, use &9/c"
+			stop
+		kitPVP(player)
+		{PVP::%player%::PVP} is false:
+			wait 40 ticks
+			levelCheck(player)
+		{PVP::%player%::PVP} is false:
+			wait 10 ticks
+			kitCheck(player)
+		{PVP::%player%::PVP} is false:
+			wait 10 ticks
+			kitPVE(player)
+
+command /kitpvpauto:
+	aliases: /kpvpa, /pvpa, /kpa, /kpvea, /pvea
+	usage: &c /kitpvpauto
+	description: &7 When you die, you'll go back in automatically
+	cooldown: 10 seconds
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {PVP::%player%::Auto} is true:
+			send ""
+			send "{@pvp}"
+			send "{@autooff}"
+			set {PVP::%player%::Auto} to false
+		else:
+			if {PVP::%player%::PVP} is true:
+				send ""
+				send "{@pvp}"
+				send "{@autoon}"
+				set {PVP::%player%::Auto} to true
+			else:
+				execute player command "/kitpvp"
+				send ""
+				send "{@autoon}"
+				set {PVP::%player%::Auto} to true
+
+command /kitpvpreset [<player>]:
+	usage: &c /kitpvpreset
+	description: &7 Resets the KitPvP experience
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Admin} is not true:
+			send ""
+			send "{@commence}"
+			send "{@permissionmessage}"
+			stop
+		arg-1 is set:
+			resetPVP(arg-1)
+		resetPVP(player)
+		stop
+		clear {PVP::AllPlayers::*}
+		clear {PVP::AllPlayerCount}
+
+
+command /addkills <integer> [<player>]:
+	usage: &c /addkills
+	description: &7 Add kills to a players total or your own
+	cooldown: 10 seconds
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Admin} is not true:
+			send ""
+			send "{@commence}"
+			send "{@permissionmessage}"
+			stop
+		if arg-2 is not set:
+			add arg-1 to {PVP::%player%::Kills}
+			clear {PVP::%player%::Kit0Armor}
+			clear {PVP::%player%::Kit0Item}
+			clear {PVP::%player%::Kit0Bow}
+			clear {PVP::%player%::Kit0}
+			clear {PVP::%player%::Kit1}
+			clear {PVP::%player%::Kit2}
+			clear {PVP::%player%::Kit3}
+			clear {PVP::%player%::Kit4}
+			clear {PVP::%player%::Level1}
+			clear {PVP::%player%::Level2}
+			clear {PVP::%player%::Level3}
+			clear {PVP::%player%::Level4}
+			send "{@admin}"
+			stop
+		add arg-1 to {PVP::%arg-2%::Kills}
+		clear {PVP::%arg-2%::Kit0Armor}
+		clear {PVP::%arg-2%::Kit0Item}
+		clear {PVP::%arg-2%::Kit0Bow}
+		clear {PVP::%arg-2%::Kit0}
+		clear {PVP::%arg-2%::Kit1}
+		clear {PVP::%arg-2%::Kit2}
+		clear {PVP::%arg-2%::Kit3}
+		clear {PVP::%arg-2%::Kit4}
+		clear {PVP::%arg-2%::Level1}
+		clear {PVP::%arg-2%::Level2}
+		clear {PVP::%arg-2%::Level3}
+		clear {PVP::%arg-2%::Level4}
+		send "{@admin}"
+
+command /setkills <integer> [<player>]:
+	usage: &c /setkills
+	description: &7 Sets a players kills or your own
+	cooldown: 10 seconds
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Admin} is not true:
+			send ""
+			send "{@commence}"
+			send "{@permissionmessage}"
+			stop
+		if arg-2 is not set:
+			set {PVP::%player%::Kills} to arg-1
+			clear {PVP::%player%::*}
+			send "{@admin}"
+			kitCheck(player)
+			stop
+		set {PVP::%arg-2%::Kills} to arg-1
+		clear {PVP::%player%::*}
+		send "{@admin}"
+		kitCheck(arg-2)
+
+command /resetpvp:
+	aliases: /resetpve, /fixpvp, /fixpve
+	usage: &c /resetpvp
+	description: &7 Fixes PvP
+	trigger:
+		if {Commence::%player%::Admin} is not true:
+			send ""
+			send "{@commence}"
+			send "{@permissionmessage}"
+			stop
+		clear {PVP::AllPlayers::*}
+		clear {PVP::AllPlayerCount}
+		loop all players:
+			{PVP::%loop-player%::PVP} is true:
+				player's world is not {@worlds}:
+					resetPVP(player)
+					stop
+				add 1 to {PVP::AllPlayerCount}
+				add loop-player to {PVP::AllPlayers::*}
+		{PVP::AllPlayerCount} is set:
+			send ""
+			send "{@commence}"
+			send "&7   There's %{PVP::AllPlayerCount}% &7player's in &cKitPvP"
+			send "&7    Players: %{PVP::AllPlayers::*}%"
+		else:
+			send ""
+			send "{@commence}"
+			send "&7   There's no &7player's in &cKitPvP"
+			send "&7    Players: 0"
+
+command /kitpvpspawnset <integer> [<text>]:
+	usage: &c /kitpvpspawnset [ LEVEL ] [ CLEAR ]
+	description: &7 Sets a location for PvP spawnin
+	trigger:
+		if {Commence::%player%::Admin} is not true:
+			send "{@commence}"
+			send ""
+			send "{@permissionmessage}"
+			send ""
+			stop
+		arg-2 is set:
+			loop {PVP::%arg-1%::SLoc::*}:
+				send loop-value to player
+			clear {PVP::%arg-1%::SLoc::*}
+			send "&aAll that is now cleared"
+			stop
+		clear {_t}
+		set {_t} to player's location
+		add {_t} to {PVP::%arg-1%::SLoc::*}
+		send "&aAll done ;)"
+		loop {PVP::%arg-1%::SLoc::*}:
+			send loop-value to player
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#KITPVP GUI
+
+
+	#SHOP IDEAS:
+	#Custom Enchants - Available to get from Mob/Player Drops, Very Rare Drop in Level0, Command to View All Enchants, No Shop
+	#Custom Enchant Types - Choose Some
+	#Common Enchants -- Obliterate - Extreme Knockback, Lucky - Chance for extra XP, Experience - Chance for extra XP Mining, Reforged - Chance to regain dura, Slow - Chance to slow victim, Slowing Arrow - Chance to slow victim, Blinding Arrow - Chance to blind victim, Confusing Arrow - Chance to nauseate victim, Confusion, Chance to nauseate victim, Blind - Chance to blind victim, Decapitation - Victim drops head, Hotbar Shuffle - Rearranges the victims hotbar, Arrow Rain - Rains arrows above victim
+	#Rare Enchants -- Haste - Allows faster attack swinging, Aquatic - Does not die from water, Glowing - Gives night vision, Poison - Chance to poison victim, Springs - Jump boost, Poisonous Arrows - Chance to poison victim, Freezing Arrow - Chance to freeze victim, Clear Sight - No blindness or nausea, Molten - Chance to set fire to victim, Electric - Chance to strike victim, Poisonous - Chance to poison victim, Rage - Deal more damage when low on HP
+	#Epic Enchants -- Withering - Chance to wither victim, Fire Resistance - No death from lava, Crit Hit - Chance to land crits, Ice Aspect - Freeze victim in place, Withering Arrows - Chance to wither victim, Sticky - Chance to cause slowness, nausea and slow swinging to victim, Wither - Chance to wither victim, Levitating Blow - Chance to make victim hover, Dolphins Grace - Perm dolphins grace, Gears - Perm speed boost, Bleed - Causes victim to lose health over time, Bleeding Arrows - Causes victim to lose health over time, Barbed - Causes victim to lose health over time for helmets, Lifesteal - Chance to regain health, Lifesteal Arrows - Chance to regain health, Overload - More hearts, Armored - Decreased damage from attacker, Plated - Decreased arrow damage, Arrow Break - Chance for arrows to break no dmg, Dodge - Chance for dodging attacks, Combat Medic - Chance to heal, Thunder - Chance to strike victim, Thunder Shot - Chane to strike victim with arrows, Auto Heal - Passively heal, Repel - Kock back attacker, Entangled - Entangle the victim, Thunder Strike - Strike lightning with trident, Extinguish - No fire, Bowmaster - More damage with bow, Momentum - Speed boost with fireworks, Slayer - More damage
+	#Legendary Enchants -- Lava Walker - Walk on lava, Weakened Blow - Weaken victim, Slow Fall - Slow falling, Shadow Step - Teleport behind victim, Execute - Finish off victim early, Strength - More damage, Crit shot - Chance to crit arrows, Reflect - Reflect attack back, Torrent - No damage in water, Chaos - Chance of weakness and wither effects
+	#Normal Enchants - Also Available from Mob/Player Drops, Can Buy in Shop Though
+	#Leaderboard - Shows the player with the most total kills, killstreaks and richest, Top Players Get Boosts
+	#Items - Totems, XP Bottles, Custom Armor, Temp Cobwebs, Instant TNT, Launchers, Traps
+	#Level0 Starts with full iron with prot 3 and sharpness 3 sword which can be further upgraded
+	#Pickaxe System - Purchase a Pickaxe and Mine Ores to Get Enchants & Other Goodies
+
+on inventory click:
+	if event-inventory is (metadata tag "buy" of player):
+		cancel event
+		index of event-slot is 21:
+			clear {Commence::%player%::Item}
+			clear {Commence::%player%::ItemOwner}
+			clear {Commence::%player%::ItemPrice}
+			close inventory of player
+	if event-inventory is (metadata tag "enchant" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+	if event-inventory is (metadata tag "level4" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+	if event-inventory is (metadata tag "level3" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+	if event-inventory is (metadata tag "level2" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+	if event-inventory is (metadata tag "level1" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+	if event-inventory is (metadata tag "level0" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+		index of event-slot is 12:
+			close inventory of player
+			{PVP::%player%::Kills} is more than ({PVP::%player%::Kit0Item} + 1) ? 0:
+				set {_t} to {PVP::Kit0Item::%{PVP::%player%::Kit0Item} + 1%}
+				set {PVP::%player%::Kit0Item} to ({PVP::%player%::Kit0Item} + 1)
+				kitCheck(player)
+				remove {PVP::Kit0Item::%{PVP::%player%::Kit0Item}%} from {PVP::%player%::Kills}
+				send ""
+				send ""
+				send "&c   You spent %{_t}% Points"
+				send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+			else:
+				send ""
+				send "{@pvp}"
+				send "&c   Sorry, you must have at least %{PVP::Kit0Item::%{PVP::%player%::Kit0Item} + 1%} ? 0%&c Points"
+				send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+		index of event-slot is 16:
+			close inventory of player
+			execute player command "/enchants"
+	if event-inventory is (metadata tag "levels" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+			execute player command "/pstore"
+		index of event-slot is 9:
+			close inventory of player
+			{PVP::%player%::Level0} is not true:
+				set {PVP::%player%::Level0} to true
+				send ""
+				send "{@pvp}"
+				send "&7   You will now spawn in &8Level0"
+				resetPVP(player)
+				wait 1 tick
+				execute player command "/pvp"
+			else:
+				set {PVP::%player%::Level0} to false
+				send ""
+				send "{@pvp}"
+				send "&7   You will no longer spawn in &8Level0"
+#				{PVP::%player%::Level4} is false:
+#					{PVP::%player%::Level3} is false:
+#						{PVP::%player%::Level2} is false:
+#							{PVP::%player%::Level1} is false:
+#								set {PVP::%player%::Level0} to true
+				resetPVP(player)
+				wait 1 tick
+				execute player command "/pvp"
+#			open (metadata tag "levels" of player) to player
+		index of event-slot is 11:
+			close inventory of player
+			{PVP::%player%::Level1} is not true:
+				{PVP::%player%::Kills} is more than 9:
+					remove 10 from {PVP::%player%::Kills}
+					set {PVP::%player%::Level1} to true
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&a   You purchased &8Level1&a for &c10 Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+					send "&7   You will spawn in &8Level1&7 automatically"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least 10 Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else:
+				{PVP::%player%::Level0} is true:
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&7   You will now spawn in &8Level1"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					set {PVP::%player%::Level0} to true
+					send ""
+					send "{@pvp}"
+					send "&7   You will no longer spawn in &8Level1"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+		index of event-slot is 13:
+			close inventory of player
+			{PVP::%player%::Level2} is not true:
+				{PVP::%player%::Kills} is more than 99:
+					remove 100 from {PVP::%player%::Kills}
+					set {PVP::%player%::Level2} to true
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&a   You purchased &bLevel2&a for &c100 Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+					send "&7   You will spawn in &bLevel2&7 automatically"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least 100 Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else:
+				{PVP::%player%::Level0} is true:
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&7   You will now spawn in &bLevel2"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					set {PVP::%player%::Level0} to true
+					send ""
+					send "{@pvp}"
+					send "&7   You will no longer spawn in &bLevel2"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+		index of event-slot is 15:
+			close inventory of player
+			{PVP::%player%::Level3} is not true:
+				{PVP::%player%::Kills} is more than 499:
+					remove 500 from {PVP::%player%::Kills}
+					set {PVP::%player%::Level3} to true
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&a   You purchased &6Level3&a for &c500 Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+					send "&7   You will spawn in &6Level3&7 automatically"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least 500 Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else:
+				{PVP::%player%::Level0} is true:
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&7   You will now spawn in &6Level3"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					set {PVP::%player%::Level0} to true
+					send ""
+					send "{@pvp}"
+					send "&7   You will no longer spawn in &6Level3"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+		index of event-slot is 99:
+			close inventory of player
+			{PVP::%player%::Level4} is not true:
+				{PVP::%player%::Kills} is more than 999:
+					remove 1000 from {PVP::%player%::Kills}
+					set {PVP::%player%::Level4} to true
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&a   You purchased &2Level4&a for &c1000 Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+					send "&7   You will spawn in &2Level4&7 automatically"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least 1000 Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else:
+				{PVP::%player%::Level0} is true:
+					set {PVP::%player%::Level0} to false
+					send ""
+					send "{@pvp}"
+					send "&7   You will now spawn in &2Level4"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+				else:
+					set {PVP::%player%::Level0} to true
+					send ""
+					send "{@pvp}"
+					send "&7   You will no longer spawn in &2Level4"
+					resetPVP(player)
+					wait 1 tick
+					execute player command "/pvp"
+		index of event-slot is 17:
+			close inventory of player
+			{PVP::%player%::Kills} is more than 1999:
+				send ""
+				send "{@pvp}"
+				send "&c   This Feature is Coming Soon"
+			else:
+				send ""
+				send "{@pvp}"
+				send "&c   Sorry, you must have 1999 Points"
+				send "&c    to Unlock More Levels, Items and Enchants"
+		index of event-slot is 21:
+			close inventory of player
+			{PVP::%player%::Level0} is true:
+				set {_tk} to {PVP::Kit0::%{PVP::%player%::Kit0} + 1%}
+				{PVP::%player%::Kills} is more than {_tk} - 1:
+					add 1 to {PVP::%player%::Kit0}
+					remove {_tk} from {PVP::%player%::Kills}
+					kitCheck(player)
+					send ""
+					send "&c   You spent %{_tk}% Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least %{_tk}%&c Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else if {PVP::%player%::Level1} is true:
+				set {_tk} to {PVP::Kit1::%{PVP::%player%::Kit1} + 1%}
+				{PVP::%player%::Kills} is more than {_tk} - 1:
+					set {PVP::%player%::Kit1} to ({PVP::%player%::Kit1} + 1)
+					remove {_tk} from {PVP::%player%::Kills}
+					kitCheck(player)
+					send ""
+					send "&c   You spent %{_tk}% Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least %{_tk}%&c Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+				stop
+		index of event-slot is 23:
+			close inventory of player
+			{PVP::%player%::Level0} is true:
+				set {_tk} to {PVP::Kit0Bow::%{PVP::%player%::Kit0Bow} + 1%}
+				{PVP::%player%::Kills} is more than {_tk} - 1:
+					set {PVP::%player%::Kit0Bow} to ({PVP::%player%::Kit0Bow} + 1)
+					remove {_tk} from {PVP::%player%::Kills}
+					kitCheck(player)
+					send ""
+					send "&c   You spent %{_tk}% Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least %{_tk}%&c Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else if {PVP::%player%::Level1} is true:
+				set {_tk} to {PVP::Kit1Bow::%{PVP::%player%::Kit1Bow} + 1%}
+				{PVP::%player%::Kills} is more than {_tk} - 1:
+					set {PVP::%player%::Kit1Bow} to ({PVP::%player%::Kit1Bow} + 1)
+					remove {_tk} from {PVP::%player%::Kills}
+					kitCheck(player)
+					send ""
+					send "&c   You spent %{_tk}% Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least %{_tk}%&c Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+				stop
+		index of event-slot is 25:
+			close inventory of player
+			{PVP::%player%::Level0} is true:
+				set {_tk} to {PVP::Kit0Armor::%{PVP::%player%::Kit0Armor} + 1%}
+				{PVP::%player%::Kills} is more than {_tk} - 1:
+					set {PVP::%player%::Kit0Armor} to {PVP::%player%::Kit0Armor} + 1
+					remove {_tk} from {PVP::%player%::Kills}
+					kitCheck(player)
+					send ""
+					send "&c   You spent %{_tk}%&c Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+				else:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least %{_tk}%&c Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+			else if {PVP::%player%::Level1} is true:
+				set {_tk} to {PVP::Kit1Armor::%{PVP::%player%::Kit1Armor} + 1%}
+				{_tk} is more than {PVP::%player%::Kills}:
+					send ""
+					send "{@pvp}"
+					send "&c   Sorry, you must have at least %{_tk}%&c Points"
+					send "&c    and you only have %{PVP::%player%::Kills}%&c Points"
+				else:
+					set {PVP::%player%::Kit1Armor} to {PVP::%player%::Kit1Armor} + 1
+					remove {_tk} from {PVP::%player%::Kills}
+					kitCheck(player)
+					send ""
+					send "&c   You spent %{_tk}%&c Points"
+					send "&c   Your updated balance is %{PVP::%player%::Kills}% Points"
+				stop
+
+	if event-inventory is (metadata tag "pvpstore" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+		index of event-slot is 12:
+			close inventory of player
+			execute player command "/levels"
+		index of event-slot is 14:
+			close inventory of player
+			execute player command "/items"
+		index of event-slot is 15:
+			close inventory of player
+			execute player command "/enchants"
+	if {PVP::%player%::PVP} is true:
+		cancel event
+	world is "SpawnHub":
+		cancel event
+			
+command /pvpstore [<text>]:
+	aliases: /pstore, /pvpshop, /pshop, /kshop, /kstore
+	usage: &c /pvpstore
+	description: &7 Opens the PvP Store GUI
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close inventory of player
+		wait 1 tick
+		argument is not set:
+			set metadata tag "pvpstore" of player to chest inventory with 3 rows named "&8-==&k|&c        KitPvP Shop        &8&k|&8==-"
+			set slot 0 of metadata tag "pvpstore" of player to dark gray stained glass pane named "&7"
+			loop 44 times:
+				set slot loop-value of metadata tag "pvpstore" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "pvpstore" of player to skull of player named "&8-&k|&8 Welcome to the &cKitPvP Shop &8&k|&8-" with lore "&7 Welcome to &cKitPvP&7, %player's display name%&7!" and "&8 Every kill gains you 1 point" and "&7 Get enough points to experience" and "&7  brand new kits and levels" and "&8 Buy new levels by clicking the" and "&8  other options to the left" and "&7 Experience new mobs and unique" and "&7  level quirks to spice up the game" and "&8 Purchase custom enchants and kits" and "&8  or stick with the defaults" and "&8" and "&c Hover over the items below to view" and "&c  different things you can buy" and "&4 Click the items below to buy" and "&4  the level or items"
+			set slot 12 of metadata tag "pvpstore" of player to netherite sword with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Levels & Upgrades &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and purchase new maps" and "&8  by spending Points" and "&8" and "&c Click to View Levels & Upgrades &c"
+			set slot 14 of metadata tag "pvpstore" of player to totem of undying with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Items & Enchants &8&k|&8-" with lore "&8 Unlock custom items by level," and "&8  and create your own enchants" and "&8" and "&c Click to View Items & Enchants &c"
+#			set slot 15 of metadata tag "pvpstore" of player to glowing book named "&8-&k|&c KitPvP Kit Upgrades &8&k|&8-" with lore "" and "&8" and "&c Click to View Kit Upgrades &c"
+			set {_tk} to {PVP::%player%::AllKills}
+			set {_tks} to {PVP::%player%::Killstreak}
+			set {_td} to {PVP::%player%::Deaths}
+			set {_tp} to {PVP::%player%::Kills}
+			set {_tb} to player's balance
+			set slot 22 of metadata tag "pvpstore" of player to painting with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Leaderboards &8&k|&8-" with lore "&c Top Player: &9%player's display name%" and "&c Top Kills: &9%player's display name% &8%{_tk}%" and "&c Top Killstreak: &9%player's display name% &8%{_tks}%" and "&c Top Deaths: &9%player's display name% &8%{_td}%" and "&c Top Points: &9%player's display name% &8%{_tp}%" and "&c Richest Player: &9%player's display name% &a$&8%{_tb}%&a$"
+			set slot 8 of metadata tag "pvpstore" of player to barrier named "&4-&k|&c &lClick to Close &4&k|&4-"
+			open (metadata tag "pvpstore" of player) to player
+			stop
+
+command /levels [<integer>]:
+	usage: &c /levels
+	description: &7 Opens the Levels GUI
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close inventory of player
+		wait 1 tick
+		set metadata tag "levels" of player to chest inventory with 4 rows named "&8-==&k|&c        KitPvP Shop        &8&k|&8==-"
+		set slot 0 of metadata tag "levels" of player to dark gray stained glass pane named "&7"
+		loop 62 times:
+			set slot loop-value of metadata tag "levels" of player to dark gray stained glass pane named "&7"
+		set slot 4 of metadata tag "levels" of player to skull of player named "&8-&k|&8 Welcome to the &cKitPvP Shop &8&k|&8-" with lore "&7 Welcome to &cKitPvP&7, %player's display name%&7!" and "&8 Every kill gains you 1 point" and "&7 Get enough points to experience" and "&7  brand new kits and levels" and "&8 Buy new levels by clicking the" and "&8  other options to the left" and "&7 Experience new mobs and unique" and "&7  level quirks to spice up the game" and "&8 Purchase custom enchants and kits" and "&8  or stick with the defaults" and "&8" and "&c Hover over the items below to view" and "&c  different things you can buy" and "&4 Click the items below to buy" and "&4  the level or items"
+		{PVP::%player%::PVP} is true:
+			set slot 20 and 22 and 24 of metadata tag "levels" of player to light gray stained glass pane named "&7"
+			{PVP::%player%::Level0} is true:
+				set slot 19 of metadata tag "levels" of player to glowing dirt named "&8-&k|&c You've Selected &cKitPvP &cLevel0 &8&k|&8-" with lore "&c Welcome to &cLevel0, the Hub" and "&7 Click the options to the left" and "&7  to upgrade aspects of your" and "&7  kit in &cLevel0"
+				{PVP::%player%::Kit0} is less than 1:
+					set {PVP::Kit0::%{PVP::%player%::Kit0}%} to 2
+				else:
+					set {PVP::Kit0::%{PVP::%player%::Kit0}%} to ({PVP::%player%::Kit0} + {PVP::%player%::Kit0}) + 1
+				{PVP::%player%::Kit0Bow} is less than 1:
+					set {PVP::Kit0Bow::%{PVP::%player%::Kit0Bow}%} to 0
+				else:
+					set {PVP::Kit0Bow::%{PVP::%player%::Kit0Bow}%} to ({PVP::%player%::Kit0Bow} + {PVP::%player%::Kit0Bow}) + 1
+				{PVP::%player%::Kit0Armor} is less than 1:
+					set {PVP::Kit0Armor::%{PVP::%player%::Kit0Armor}%} to 0
+				else:
+					set {PVP::Kit0Armor::%{PVP::%player%::Kit0Armor}%} to ({PVP::%player%::Kit0Armor} + {PVP::%player%::Kit0Armor}) + 1
+				set {PVP::Kit0::%{PVP::%player%::Kit0} + 1%} to round({PVP::Kit0::%{PVP::%player%::Kit0}%} * 1.62)
+				set {PVP::Kit0Bow::%{PVP::%player%::Kit0Bow} + 1%} to round({PVP::Kit0Bow::%{PVP::%player%::Kit0Bow}%} * 1.12) + 5
+				set {PVP::Kit0Armor::%{PVP::%player%::Kit0Armor} + 1%} to round({PVP::Kit0Armor::%{PVP::%player%::Kit0Armor}%} * 2.49) + 17
+				{PVP::%player%::Kit1} is less than 1:
+					set {PVP::Kit1::%{PVP::%player%::Kit1}%} to 8
+				else:
+					set {PVP::Kit1::%{PVP::%player%::Kit1}%} to ({PVP::%player%::Kit1} + {PVP::%player%::Kit1}) + 1
+				{PVP::%player%::Kit1Bow} is less than 1:
+					set {PVP::Kit1Bow::%{PVP::%player%::Kit1Bow}%} to 5
+				else:
+					set {PVP::Kit1Bow::%{PVP::%player%::Kit1Bow}%} to ({PVP::%player%::Kit1Bow} + {PVP::%player%::Kit1Bow}) + 1
+				{PVP::%player%::Kit1Armor} is less than 1:
+					set {PVP::Kit1Armor::%{PVP::%player%::Kit1Armor}%} to 8
+				else:
+					set {PVP::Kit1Armor::%{PVP::%player%::Kit1Armor}%} to ({PVP::%player%::Kit1Armor} + {PVP::%player%::Kit1Armor}) + 1
+				set {PVP::Kit1::%{PVP::%player%::Kit1} + 1%} to round({PVP::Kit1::%{PVP::%player%::Kit1}%} * 1.62)
+				set {PVP::Kit1Bow::%{PVP::%player%::Kit1Bow} + 1%} to round({PVP::Kit1Bow::%{PVP::%player%::Kit1Bow}%} * 1.12) + 5
+				set {PVP::Kit1Armor::%{PVP::%player%::Kit1Armor} + 1%} to round({PVP::Kit1Armor::%{PVP::%player%::Kit1Armor}%} * 2.49) + 17
+				{PVP::%player%::Kit0Bow} is more than 0:
+					set slot 23 of metadata tag "levels" of player to glowing bow named "&8-&k|&c Level0 Bow Upgrade &8&k|&8-" with lore "&7 Want to get a bow and become an" and "&7  archer? Purchase a bow or" and "&7  bow upgrade and you'll dominate!" and "&8 Current Price: &7%{PVP::Kit0Bow::%{PVP::%player%::Kit0Bow} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Bow}% times" and "&8" and "&c Click to Upgrade your Bow &c"
+				else:
+					set slot 23 of metadata tag "levels" of player to glowing bow named "&8-&k|&c Level0 Bow Purchase &8&k|&8-" with lore "&7 Want to get a bow and become an" and "&7  archer? Purchase a bow or" and "&7  bow upgrade and you'll dominate!" and "&8 Current Price: &7%{PVP::Kit0Bow::%{PVP::%player%::Kit0Bow} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Bow}% times" and "&8" and "&c Click to Purchase a Bow &c"
+				{PVP::%player%::Kit0Armor} is more than 0:
+					set slot 25 of metadata tag "levels" of player to glowing leather chestplate with nbt from "{HideFlags:63}" named "&8-&k|&c Level0 Armor Upgrade &8&k|&8-" with lore "&7 Want to protect yourself out" and "&7  in the wild? Purchase access to" and "&7  armor and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit0Armor::%{PVP::%player%::Kit0Armor} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Armor}% times" and "&8" and "&c Click to Upgrade Armor &c"
+				else:
+					set slot 25 of metadata tag "levels" of player to glowing leather chestplate with nbt from "{HideFlags:63}" named "&8-&k|&c Level0 Armor Purchase &8&k|&8-" with lore "&7 Want to protect yourself out" and "&7  in the wild? Purchase access to" and "&7  armor and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit0Armor::%{PVP::%player%::Kit0Armor} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Armor}% times" and "&8" and "&c Click to Purchase Armor &c"
+				{PVP::%player%::Kit0} is set:
+					set slot 21 of metadata tag "levels" of player to glowing wooden sword with nbt from "{HideFlags:63}" named "&8-&k|&c Level0 Weapon Upgrade &8&k|&8-" with lore "&7 Want to upgrade your weak old" and "&7  wooden sword? Purchase a kit" and "&7  upgrade or two and you'll rock!" and "&8 Current Price: &7%{PVP::Kit0::%{PVP::%player%::Kit0} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0}% times" and "&8" and "&c Click to Upgrade your Weapon &c"
+				else:
+					set {PVP::%player%::Kit0} to 0
+					set slot 21 of metadata tag "levels" of player to glowing wooden sword with nbt from "{HideFlags:63}" named "&8-&k|&c Level0 &aKit Upgrade &8&k|&8-" with lore "&7 Want to upgrade your weak old" and "&7  wooden sword? Purchase a kit" and "&7  upgrade or two and you'll rock!" and "&8 Current Price: &7%{PVP::Kit0::%{PVP::%player%::Kit0} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0}% times" and "&8" and "&c Click to Upgrade your Kit &c"
+				set slot 9 of metadata tag "levels" of player to glowing dirt named "&8-&k|&9 Owned &cKitPvP &cLevel0 &8&k|&8-" with lore "&c Welcome to &cLevel0, the Hub" and "&7 This level is Default" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8" and "&c You're Spawning in This Level &c"
+				open (metadata tag "levels" of player) to player
+#				stop
+			else:
+				set slot 9 of metadata tag "levels" of player to dirt named "&8-&k|&9 Owned &cKitPvP &cLevel0 &8&k|&8-" with lore "&c Welcome to &cLevel0, the Hub" and "&7 This level is Default" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8" and "&c Click to Toggle this Level &c"
+			{PVP::%player%::Level1} is true:
+				{PVP::%player%::Level0} is true:
+					set slot 11 of metadata tag "levels" of player to bone block named "&8-&k|&9 Owned &cKitPvP &8Level1 &8&k|&8-" with lore "&c Welcome to &8Level1, the Town" and "&7 This level is &aEASY" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8" and "&c Click to Toggle this Level &c"
+				else:
+					{PVP::%player%::Kit1} is set:
+						set slot 21 of metadata tag "levels" of player to glowing stone sword with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1&c Weapon Upgrade &8&k|&8-" with lore "&7 Want to get the advantage" and "&7  against the others? Get" and "&7  your sword upgraded now!" and "&8 Current Price: &7%{PVP::Kit1::%{PVP::%player%::Kit1} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit1}% times" and "&8" and "&c Click to Upgrade your Weapon &c"
+					else:
+						set {PVP::%player%::Kit1} to 0
+						set slot 21 of metadata tag "levels" of player to glowing stone sword with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1&c Weapon Upgrade &8&k|&8-" with lore "&7 Want to get the advantage" and "&7  against the others? Get" and "&7  your sword upgraded now!" and "&8 Current Price: &7%{PVP::Kit1::%{PVP::%player%::Kit1} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit1}% times" and "&8" and "&c Click to Upgrade your Weapon &c"
+					{PVP::%player%::Kit1Bow} is more than 0:
+						set slot 23 of metadata tag "levels" of player to glowing bow named "&8-&k|&8 Level1&c Bow Upgrade &8&k|&8-" with lore "&7 Want to get a bow and become an" and "&7  archer? Purchase a bow or" and "&7  bow upgrade and you'll dominate!" and "&8 Current Price: &7%{PVP::Kit1Bow::%{PVP::%player%::Kit1Bow} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit1Bow}% times" and "&8" and "&c Click to Upgrade your Bow &c"
+					else:
+						set slot 23 of metadata tag "levels" of player to glowing bow named "&8-&k|&8 Level1&c Bow Purchase &8&k|&8-" with lore "&7 Want to get a bow and become an" and "&7  archer? Purchase a bow or" and "&7  bow upgrade and you'll dominate!" and "&8 Current Price: &7%{PVP::Kit1Bow::%{PVP::%player%::Kit1Bow} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit1Bow}% times" and "&8" and "&c Click to Purchase a Bow &c"
+					{PVP::%player%::Kit1Armor} is more than 0:
+						set slot 25 of metadata tag "levels" of player to glowing iron chestplate with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1&c Armor Upgrade &8&k|&8-" with lore "&7 Want to protect yourself out" and "&7  in the wild? Purchase access to" and "&7  armor and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit1Armor::%{PVP::%player%::Kit1Armor} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit1Armor}% times" and "&8" and "&c Click to Upgrade Armor &c"
+					else:
+						set slot 25 of metadata tag "levels" of player to glowing iron chestplate with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1&c Armor Purchase &8&k|&8-" with lore "&7 Want to protect yourself out" and "&7  in the wild? Purchase access to" and "&7  armor and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit1Armor::%{PVP::%player%::Kit1Armor} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit1Armor}% times" and "&8" and "&c Click to Purchase Armor &c"
+					set slot 19 of metadata tag "levels" of player to glowing bone block named "&8-&k|&c You've Selected &cKitPvP &8Level1 &8&k|&8-" with lore "&c Welcome to &8Level1, the Town" and "&7 Click the options to the left" and "&7  to upgrade aspects of your" and "&7  kit in &8Level1" 
+					set slot 11 of metadata tag "levels" of player to glowing bone block named "&8-&k|&9 Owned &cKitPvP &8Level1 &8&k|&8-" with lore "&c Welcome to &8Level1, the Town" and "&7 This level is &aEasy" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8" and "&c You're Spawning in This Level &c"
+			else:
+				set slot 11 of metadata tag "levels" of player to bone block named "&8-&k|&9 Purchase &cKitPvP &8Level1 &8&k|&8-" with lore "&c Welcome to &8Level1, the Town" and "&7 This level is &aEasy" and "&8 This level costs &c10 Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&8" and "&c Click to Purchase this Level &c"
+			{PVP::%player%::Level2} is true:
+				{PVP::%player%::Level0} is true:
+					set slot 13 of metadata tag "levels" of player to stone named "&8-&k|&9 Owned &cKitPvP &bLevel2 &8&k|&8-" with lore "&c Welcome to &bLevel2, the Caverns" and "&7 This level is &eModerate" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8 This level costs &c100 Points" and "&8" and "&c Click to Toggle this Level &c"
+				else:
+					set slot 21 of metadata tag "levels" of player to glowing emerald named "&8-&k|&b Level2 &aKit Upgrade &8&k|&8-" with lore "&7 Want to upgrade your weak old" and "&7  wooden sword? Purchase a kit" and "&7  upgrade or two and you'll rock!" and "&8 Current Price: &7%{PVP::Kit2::%{PVP::%player%::Kit2} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit2}% times" and "&8" and "&c Click to Upgrade your Kit &c"
+					set slot 30 of metadata tag "levels" of player to iron sword with nbt from "{HideFlags:63}" named "&8-&k|&b Level2 &cItems &8&k|&8-" with lore "&7 Unlock Cobwebs, Throw Potions," and "&7  Launchers, etc" and "&8" and "&c This Feature is Coming Soon"
+					set slot 39 of metadata tag "levels" of player to glowing stone sword with nbt from "{HideFlags:63}" named "&8-&k|&b Level2 &cEnchants &8&k|&8-" with lore "&7 Unlock Traditional and" and "&7  Custom Enchants, etc" and "&8" and "&c This Feature is Coming Soon"
+			else:
+				set slot 13 of metadata tag "levels" of player to stone named "&8-&k|&9 Purchase &c KitPvP &bLevel2 &8&k|&8-" with lore "&c Welcome to &bLevel2, the Caverns" and "&7 This level is &eModerate" and "&8 This level costs &c100 Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&8" and "&c Click to Purchase this Level &c"
+			{PVP::%player%::Level3} is true:
+				{PVP::%player%::Level0} is true:
+					set slot 15 of metadata tag "levels" of player to gold block named "&8-&k|&9 Owned &c KitPvP &6Level3 &8&k|&8-" with lore "&c Welcome to &6Level3, the Skydome" and "&7 This level is &cHard" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8 This level costs &c500 Points" and "&8" and "&c Click to Toggle this Level &c"
+				else:
+					set slot 23 of metadata tag "levels" of player to glowing emerald named "&8-&k|&6 Level3 &aKit Upgrade &8&k|&8-" with lore "&7 Want to upgrade your weak old" and "&7  wooden sword? Purchase a kit" and "&7  upgrade or two and you'll rock!" and "&8 Current Price: &7%{PVP::Kit3::%{PVP::%player%::Kit3} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit3}% times" and "&8" and "&c Click to Upgrade your Kit &c"
+					set slot 32 of metadata tag "levels" of player to gold sword with nbt from "{HideFlags:63}" named "&8-&k|&6 Level3 &cItems &8&k|&8-" with lore "&7 Unlock Custom Armor," and "&7  XP Bottles, etc" and "&8" and "&c This Feature is Coming Soon"
+					set slot 41 of metadata tag "levels" of player to glowing iron sword with nbt from "{HideFlags:63}" named "&8-&k|&6 Level3 &cEnchants &8&k|&8-" with lore "&7 Unlock Traditional and" and "&7  Custom Enchants, etc" and "&8" and "&c This Feature is Coming Soon"
+			else:
+				set slot 15 of metadata tag "levels" of player to gold block named "&8-&k|&9 Purchase &c KitPvP &6Level3 &8&k|&8-" with lore "&c Welcome to &6Level3, the Skydome" and "&7 This level is &cHard" and "&8 This level costs &c500 Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&8" and "&c Click to Purchase this Level &c"
+			{PVP::%player%::Level4} is true:
+				{PVP::%player%::Level0} is true:
+					set slot 17 of metadata tag "levels" of player to grass block named "&8-&k|&9 Owned &c KitPvP &2Level4 &8&k|&8-" with lore "&c Welcome to &2Level4, the Islands" and "&7 This level is &cHard" and "&8 Hover over the items below to view" and "&8  different things you can buy" and "&7 Click the items below to buy" and "&7  the things for use in that level" and "&8 This level costs &c1000 Points" and "&8" and "&c Click to Toggle this Level &c"
+				else:
+					set slot 24 of metadata tag "levels" of player to glowing emerald named "&8-&k|&2 Level4 &aKit Upgrade &8&k|&8-" with lore "&7 Want to upgrade your weak old" and "&7  wooden sword? Purchase a kit" and "&7  upgrade or two and you'll rock!" and "&8 Current Price: &7%{PVP::Kit4::%{PVP::%player%::Kit4} + 1%}% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit4}% times" and "&8" and "&c Click to Upgrade your Kit &c"
+					set slot 33 of metadata tag "levels" of player to netherite sword with nbt from "{HideFlags:63}" named "&8-&k|&2 Level4 &cItems &8&k|&8-" with lore "&7 Unlock OP Weapons" and "&7  and Armor, etc" and "&8" and "&c This Feature is Coming Soon"
+					set slot 42 of metadata tag "levels" of player to glowing diamond sword with nbt from "{HideFlags:63}" named "&8-&k|&2 Level4 &cEnchants &8&k|&8-" with lore "&7 Unlock Traditional and" and "&7  Custom Enchants, etc" and "&8" and "&c This Feature is Coming Soon"
+			else:
+				set slot 17 of metadata tag "levels" of player to grass block named "&8-&k|&9 Purchase &c KitPvP &2Level4 &8&k|&8-" with lore "&c Welcome to &2Level4, the Islands" and "&7 This level is &cHard" and "&8 This level costs &c1000 Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&8" and "&c Click to Purchase this Level &c"
+			set slot 17 of metadata tag "levels" of player to glowing stone bricks named "&8-&k|&9 More &cKitPvP Levels &8&k|&8-" with lore "" and "&c You need 1999 Points to view" and "&c  additional levels..." and "&c You have %{PVP::%player%::Kills}% &cPoints" and "&7" and "&c Click to View More Levels &c"
+#		else:
+			
+		set slot 8 of metadata tag "levels" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+		open (metadata tag "levels" of player) to player
+
+command /items [<integer>]:
+	aliases: /kit, /kits
+	usage: &c /items
+	description: &7 Opens the Items GUI
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close inventory of player
+		wait 1 tick
+		{PVP::%player%::Level0} is true:
+			set metadata tag "level0" of player to chest inventory with 3 rows named "&8-==&k|&c        KitPvP Shop        &8&k|&8==-"
+			set slot 0 of metadata tag "level0" of player to dark gray stained glass pane named "&7"
+			loop 44 times:
+				set slot loop-value of metadata tag "level0" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "level0" of player to skull of player named "&8-&k|&8 Check out the &cKitPvP Shop &8&k|&8-" with lore "&7 Hover over the items below to view" and "&7  different things you can buy" and "&8 Click the items below to buy" and "&8  the items or enchants"
+			{PVP::%player%::PVP} is not true:
+				set slot 8 of metadata tag "level0" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+				open (metadata tag "level0" of player) to player
+				stop
+			set slot 10 of metadata tag "level0" of player to dirt block with nbt from "{HideFlags:63}" named "&8-&k|&c Level0 Items & Custom Enchants &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and purchase new maps" and "&8  by spending Points" and "&8" and "&c Click the Items to the Left to &c" and "&c  View Different Things &c"
+			{PVP::%player%::Kit0Item} is more than 0:
+				set slot 12 of metadata tag "level0" of player to tnt with nbt from "{HideFlags:63}" named "&8-&k|&c Level0&c Item Upgrade &8&k|&8-" with lore "&7 Want to try an alternative" and "&7  weapon style? Purchase access to" and "&7  items and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit0Item::%{PVP::%player%::Kit0Item} + 1%} ? 0% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Item}% times" and "&8" and "&c Click to Upgrade Items &c"
+			else:
+				set slot 12 of metadata tag "level0" of player to tnt with nbt from "{HideFlags:63}" named "&8-&k|&c Level0&c Item Purchase &8&k|&8-" with lore "&7 Want to try an alternative" and "&7  weapon style? Purchase access to" and "&7  items and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit0Item::%{PVP::%player%::Kit0Item} + 1%} ? 0% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Item}% times" and "&8" and "&c Click to Purchase Items &c"
+			set slot 14 of metadata tag "level0" of player to water bottle with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Enchantment Creator &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and bow with our new" and "&8  custom enchantment creator" and "&8" and "&c Click to Create Enchantments &c" and "&7" and "&c THIS FEATURE IS COMING SOON "
+			set slot 16 of metadata tag "level0" of player to potion of healing with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Enchantment Shop &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and bow with premade" and "&8  custom enchantments " and "&8" and "&c Click to View Enchantments &c"
+			set slot 8 of metadata tag "level0" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			open (metadata tag "level0" of player) to player
+		else if {PVP::%player%::Level1} is true:
+			set metadata tag "level1" of player to chest inventory with 3 rows named "&8-==&k|&c        KitPvP Shop        &8&k|&8==-"
+			set slot 0 of metadata tag "level1" of player to dark gray stained glass pane named "&7"
+			loop 44 times:
+				set slot loop-value of metadata tag "level1" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "level1" of player to skull of player named "&8-&k|&8 Check out the &cKitPvP Shop &8&k|&8-" with lore "&7 Hover over the items below to view" and "&7  different things you can buy" and "&8 Click the items below to buy" and "&8  the items or enchants"
+			set slot 10 of metadata tag "level1" of player to dirt block with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1 Items & Custom Enchants &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and purchase new maps" and "&8  by spending Points" and "&8" and "&c Click to View Levels & Upgrades &c"
+			{PVP::%player%::Kit0Item} is more than 0:
+				set slot 12 of metadata tag "level1" of player to tnt with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1&c Item Upgrade &8&k|&8-" with lore "&7 Want to try an alternative" and "&7  weapon style? Purchase access to" and "&7  items and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit0Item::%{PVP::%player%::Kit0Item} + 1%} ? 0% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Item}% times" and "&8" and "&c Click to Upgrade Items &c"
+			else:
+				set slot 12 of metadata tag "level1" of player to tnt with nbt from "{HideFlags:63}" named "&8-&k|&8 Level1&c Item Purchase &8&k|&8-" with lore "&7 Want to try an alternative" and "&7  weapon style? Purchase access to" and "&7  items and you'll be a god!" and "&8 Current Price: &7%{PVP::Kit0Item::%{PVP::%player%::Kit0Item} + 1%} ? 0% Points" and "&7 You have %{PVP::%player%::Kills}% &7points" and "&7  and have upgraded %{PVP::%player%::Kit0Item}% times" and "&8" and "&c Click to Purchase Items &c"
+			set slot 14 of metadata tag "level1" of player to water bottle with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Enchantment Creator &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and bow with our new" and "&8  custom enchantment creator" and "&8" and "&c Click to Create an Enchant &c"
+			set slot 16 of metadata tag "level1" of player to potion of healing with nbt from "{HideFlags:63}" named "&8-&k|&c KitPvP Enchantment Shop &8&k|&8-" with lore "&8 Upgrade your weapons, armor," and "&8  and bow with premade" and "&8  custom enchantments " and "&8" and "&c Click to Create an Enchant &c"
+			set slot 8 of metadata tag "level1" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			open (metadata tag "level1" of player) to player
+
+command /enchants [<integer>]:
+	aliases: /enchant, /enchantment, /enchantments
+	usage: &c /enchants
+	description: &7 Opens the Enchant Shop GUI
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close inventory of player
+		wait 1 tick
+		set metadata tag "enchant" of player to chest inventory with 7 rows named "&8-==&k|&c        KitPvP Shop        &8&k|&8==-"
+		set slot 0 of metadata tag "enchant" of player to dark gray stained glass pane named "&7"
+		loop 53 times:
+			set slot loop-value of metadata tag "enchant" of player to dark gray stained glass pane named "&7"
+		set slot 4 of metadata tag "enchant" of player to skull of player named "&8-&k|&8 Check out the &cEnchantment Shop &8&k|&8-" with lore "&7 Hover over the items below to view" and "&7  different things you can buy" and "&8 Click the items below to buy" and "&8  the enchantments"
+		set {Commence::List} to 9
+		loop 13 times:
+			add 1 to {Commence::List}
+			set {_t} to random integer between 3 and 55
+			set {_te} to random element of {PVP::CommonEnchants::*}
+			{Commence::List} is 17:
+				add 2 to {Commence::List}
+			else if {Commence::List} is 26:
+				add 2 to {Commence::List}
+			else if {Commence::List} is 35:
+				add 2 to {Commence::List}
+			set slot {Commence::List} of metadata tag "enchant" of player to glowing book named "&8 Common &7%{_te}%" with lore " &7 " and "&a %{PVP::%uncolored {_te}%::D}%" and "&a Price: &c%{_t}% &cPoints" and "&a Your Points: &c%{PVP::%player%::Kills}%" and "&a Usage: &c%{PVP::%uncolored {_te}%}%" and "&7 " and "&c Click to Purchase this Enchant"
+		loop 12 times:
+			add 1 to {Commence::List}
+			set {_t} to random integer between 56 and 117
+			set {_te} to random element of {PVP::RareEnchants::*}
+			{Commence::List} is 17:
+				add 2 to {Commence::List}
+			else if {Commence::List} is 26:
+				add 2 to {Commence::List}
+			else if {Commence::List} is 35:
+				add 2 to {Commence::List}
+			set slot {Commence::List} of metadata tag "enchant" of player to glowing book named "&d Rare &7%{_te}%" with lore " &7 " and "&a %{PVP::%uncolored {_te}%::D}%" and "&a Price: &c%{_t}% &cPoints" and "&a Your Points: &c%{PVP::%player%::Kills}%" and "&a Usage: &c%{PVP::%uncolored {_te}%}%" and "&7 " and "&c Click to Purchase this Enchant"
+		loop 3 times:
+			add 1 to {Commence::List}
+			set {_t} to random integer between 118 and 299
+			set {_te} to random element of {PVP::EpicEnchants::*}
+			{Commence::List} is 17:
+				add 2 to {Commence::List}
+			else if {Commence::List} is 26:
+				add 2 to {Commence::List}
+			else if {Commence::List} is 35:
+				add 2 to {Commence::List}
+			set slot {Commence::List} of metadata tag "enchant" of player to glowing book named "&b Epic &7%{_te}%" with lore " &7 " and "&a %{PVP::%uncolored {_te}%::D}%" and "&a Price: &c%{_t}% &cPoints" and "&a Your Points: &c%{PVP::%player%::Kills}%" and "&a Usage: &c%{PVP::%uncolored {_te}%}%" and "&7 " and "&c Click to Purchase this Enchant"
+		set slot 8 of metadata tag "enchant" of player to barrier named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+		open (metadata tag "enchant" of player) to player
+
+command /buy [<text>]:
+	aliases: /purchase
+	usage: &c /buy
+	description: &7 Opens the Final Shop GUI
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		close inventory of player
+		wait 1 tick
+		argument is not set:
+			stop
+		else if arg-1 is set:
+			set metadata tag "buy" of player to chest inventory with 4 rows named "&8-==&k|&9    Purchase Something   &8&k|&8==-"
+			set slot 0 of metadata tag "buy" of player to dark gray stained glass pane named "&7"
+			loop 44 times:
+				set slot loop-value of metadata tag "buy" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "buy" of player to skull of player named "&8-&k|&8 You're Buying Something &8&k|&8-" with lore "&7 Hover over the options below to " and "&7  accept or deny the purchase" and "&8 Click the options below to buy" and "&8  or cancel the transaction"
+			set slot 21 of metadata tag "buy" of player to glowing redstone named "&8-&k|&c Cancel Transaction &8&k|&8-" with lore "&7 Cancel the transaction" and "&8" and "&c Click to Cancel"
+			{Commence::%player%::Item} is set:
+				set slot 23 of metadata tag "buy" of player to glowing emerald named "&8-&k|&a Purchase %{Commence::%arg-1%::Item}% &8&k|&8-" with lore "&7 Price: &a$%{Commence::%arg-1%::ItemPrice}%" and "&8" and "&a Click to Purchase %{Commence::%player%::Item}%"
+			open (metadata tag "buy" of player) to player
