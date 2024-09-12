@@ -1,0 +1,695 @@
+#-=-=-=-=-=-=-=-=-=- | Let's Get Questing! | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-
+	#IDEAS
+
+		#Different Activities or Quests for Different Types of Players:
+		#The Roleplayer: Immerses themselves in the game-mode’s lore, characters, and storylines, contributing to the shared narrative and interacting with others in-character.
+		#The Adventurer: Engages in quests, explores constantly, and seeks out challenges like dungeons and bosses, thriving on the thrill of discovery and combat.
+		#The Socialite: Values social interaction and collaboration, often participating in group events, kingdoms, and large-scale projects involving other players.
+		#The Trader: Focuses on the game-mode’s economy, running shops, bartering with other players, and accumulating wealth through trade and resource management.
+		#The Builder: Contributes to the game-mode’s environment by constructing cities, towns, and other communal structures, enhancing the immersive experience.
+
+#-=-=-=-=-=-=-=-=-=-
+	#OPTIONS AND MESSAGES
+
+options:
+	commence:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
+	questing:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s Quests  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	permissionmessage:&9 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
+	cooldownmessage:&9 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cWait before trying this command again!
+
+	worlds: "Survival3" or "Survival3_nether" or "Survival3_the_end"
+	funds:&a$&8Funds&a$
+	mana:<##855EC9>🧪Mana
+
+on skript load:
+	set {Commence::Quest::Story::0} to "Your Story"
+	set {Commence::Quest::Story::0::Type} to "Story"
+	set {Commence::Quest::Story::0::Total} to "1"
+	set {Commence::Quest::Story::0::Reward} to "Form Kit"
+	
+	#Story Dialogue
+	clear {Commence::Story::Dialogue::1::*}
+	add "" to {Commence::Story::Dialogue::1::*}
+	add " {@commencesmp} {@mythicalrealms} © version %{Commence::ServerVersion}% Alpha" to {Commence::Story::Dialogue::1::*}
+	add "You find yourself standing in the middle of an open, blocky world," to {Commence::Story::Dialogue::1::*}
+	add " the sun casting a warm glow over the grassy plains." to {Commence::Story::Dialogue::1::*}
+	add "There’s nothing but the sound of your own footsteps as you wander," to {Commence::Story::Dialogue::1::*}
+	add " unsure of what’s to come." to {Commence::Story::Dialogue::1::*}
+	add "Suddenly, a note drops from the sky," to {Commence::Story::Dialogue::1::*}
+	add " fluttering down right in front of you." to {Commence::Story::Dialogue::1::*}
+	add "You pick it up and read:" to {Commence::Story::Dialogue::1::*}
+	add "Greetings, Traveler! You are cordially invited to a grand gathering at Big A's Manor," to {Commence::Story::Dialogue::1::*}
+	add " where you'll be introduced to a vast array of characters you've never met before!" to {Commence::Story::Dialogue::1::*}
+	add "Prepare to be amazed, bewildered, and maybe even a little confused..." to {Commence::Story::Dialogue::1::*}
+	add "Follow the path of lanterns, and all will be revealed. —Big A" to {Commence::Story::Dialogue::1::*}
+	add "" to {Commence::Story::Dialogue::1::*}
+	
+	#Automatic Quests
+	clear {Commence::Quest::Global::*}
+	loop (random integer between 2 and 11) times:
+		set {_tc} to random element of {Commence::Blocks::Stone::*} or {Commence::Blocks::Logs::*} or {Commence::Blocks::Planks::*}
+		add {_tc} to {Commence::Quest::Global::*}
+		set {Commence::Quest::Global::%{_tc}%::Type} to "Collect"
+		set {Commence::Quest::Global::%{_tc}%::Total} to random integer between 2 and 128
+		set {Commence::Quest::Global::%{_tc}%::Reward} to "Random Enchanted Book" or "Random Tool" or "Random Weapon" or "Random Gem"
+	loop (random integer between 2 and 11) times:
+		set {_tc} to random element of {Commence::Mobs::Peaceful::*} or {Commence::Mobs::Hostile::*}
+		add {_tc} to {Commence::Quest::Global::*}
+		set {Commence::Quest::Global::%{_tc}%::Type} to "Kill"
+		set {Commence::Quest::Global::%{_tc}%::Total} to random integer between 2 and 16
+		set {Commence::Quest::Global::%{_tc}%::Reward} to "Random Enchanted Book" or "Random Armor" or "Random Gem"
+	loop (random integer between 2 and 11) times:
+		set {_tc} to random element of {Commence::Items::Wood::*} or {Commence::Items::Stone::*}
+		add {_tc} to {Commence::Quest::Global::*}
+		set {Commence::Quest::Global::%{_tc}%::Type} to "Make"
+		set {Commence::Quest::Global::%{_tc}%::Total} to random integer between 2 and 16
+		set {Commence::Quest::Global::%{_tc}%::Reward} to "Random Gem"
+	loop (random integer between 2 and 11) times:
+		set {_tc} to random element of {Commence::Blocks::Wood::*} or {Commence::Blocks::Workstations::*}
+		add {_tc} to {Commence::Quest::Global::*}
+		set {Commence::Quest::Global::%{_tc}%::Type} to "Craft"
+		set {Commence::Quest::Global::%{_tc}%::Total} to random integer between 2 and 32
+		set {Commence::Quest::Global::%{_tc}%::Reward} to "Random Gem"
+	loop (random integer between 2 and 11) times:
+		set {_tc} to random element of {Commence::Mobs::Boss::*}
+		add {_tc} to {Commence::Quest::Global::*}
+		set {Commence::Quest::Global::%{_tc}%::Type} to "Boss"
+		set {Commence::Quest::Global::%{_tc}%::Total} to 1
+		set {Commence::Quest::Global::%{_tc}%::Reward} to "Random OP Item"
+
+on inventory click:
+	if event-inventory is (metadata tag "questhub" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+		else if index of event-slot is 10:
+			execute player command "/questjournal"
+		else if index of event-slot is 11:
+			set {_tr} to 4 if amount of {Commence::Quest::Global::*} is more than 7
+			set {_tr} to 5 if amount of {Commence::Quest::Global::*} is more than 14
+			set {_tr} to 6 if amount of {Commence::Quest::Global::*} is more than 21
+			set {_tr} to 3 if amount of {Commence::Quest::Global::*} is less than 8
+			set metadata tag "questglobal" of player to chest inventory with {_tr} rows named "&8-==&k|&9 {@mythicalrealms} <##D0944D>Quests &8&k|&8==-"
+			set slot 0 of metadata tag "questglobal" of player to dark gray stained glass pane named "&7"
+			loop 53 times:
+				set slot loop-value of metadata tag "questglobal" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "questglobal" of player to book named "&8-&k|<##D0944D>  Global Available Quests  &8&k|&8-" with lore "&7 View All Available Quests" and "" and "&c Hover Over Quests for Info" and "&4 Click a Quest to Accept"
+			set {Commence::List} to 9
+			loop {Commence::Quest::Global::*}:
+				add 1 to {Commence::List}
+				add 2 to {Commence::List} if {Commence::List} is 17
+				add 2 to {Commence::List} if {Commence::List} is 26
+				add 2 to {Commence::List} if {Commence::List} is 35
+				stop loop if {Commence::List} is more than 43
+				uncolored loop-value contains "bricks" or "stairs" or "planks" or "granite":
+					set {_ts} to "%loop-value%" in proper case
+				else:
+					set {_ts} to "%loop-value%s" in proper case
+				set slot {Commence::List} of metadata tag "questglobal" of player to glowing map named "&8-&k|<##A0723D> Quest %loop-index%: &6%{Commence::Quest::Global::%loop-value%::Total}% %{_ts}% &8&k|&8-" with lore "&7 Quest Type: &6%{Commence::Quest::Global::%loop-value%::Type}%" and "&8 Quest Requirement: &6%{Commence::Quest::Global::%loop-value%::Total}%&6 Total" and "&7 Rewards: &6%{Commence::Quest::Global::%loop-value%::Reward}%&6, {@funds}&6, Story XP" and "&c " and "<##00C889> Click HERE to Start Quest"
+			set slot 8 of metadata tag "questglobal" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			open (metadata tag "questglobal" of player) to player
+			clear {_tr}
+		else if index of event-slot is 12:
+			{Commence::%player%::Quest::Active} is {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%}:
+				stop
+			else if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is set:
+				close inventory of player
+				set {Commence::%player%::Quest::Active} to {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%}
+				set {Commence::%player%::Quest::Type} to {Commence::%player%::Quest::Main::Type}
+				set {Commence::%player%::Quest::Reward} to {Commence::%player%::Quest::Main::Reward}
+				set {Commence::%player%::Quest::Progress} to {Commence::%player%::Quest::Main::Progress}
+				set {Commence::%player%::Quest::Total} to {Commence::%player%::Quest::Main::Total}
+				set {Commence::%player%::Quest::Citizen} to {Commence::%player%::Quest::Main::Citizen}
+				send "{@questing}"
+				send "<##00C889>+<##E2A156> You Switched To Your Main Quest"
+				send "<##E2A156>  Your Main Quest Goal is &a%{Commence::%player%::Quest::Type}% %{Commence::%player%::Quest::Total}% %{Commence::%player%::Quest::Active}%"
+				send "<##E2A156>  Your Goal Progress is &a%{Commence::%player%::Quest::Progress}%&a/%{Commence::%player%::Quest::Total}%"
+			else if {Commence::%player%::Quests} is more than 0:
+				set {_ti} to 12 if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is set
+				set {_ti} to 11 if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is not set
+				add 2 to {_ti} if index of event-slot is more than 16
+				loop {Commence::%player%::Quests} times:
+					"%index of event-slot - {_ti}%" is "%loop-value%":
+						uncolored {Commence::%player%::Quest::%loop-value%::ID} is uncolored {Commence::%player%::Quest::Active}:
+							close inventory of player
+							send "{@questing}"
+							send "<##CB625F>-<##E2A156> You Removed Your Quest %{Commence::%player%::Quest::%loop-value%::ID}%"
+							send "<##8B969B>  You Can No Longer Receive Rewards For This Quest"
+							remove 1 from {Commence::%player%::Quests}
+							remove 1 from {Commence::%player%::Quest::Score} if {Commence::%player%::Quest::Score} is more than 1
+							clear {Commence::%player%::Quest::%loop-value%::ID}
+							clear {Commence::%player%::Quest::%loop-value%::Type}
+							clear {Commence::%player%::Quest::%loop-value%::Reward}
+							clear {Commence::%player%::Quest::%loop-value%::Progress}
+							clear {Commence::%player%::Quest::%loop-value%::Total}
+							clear {Commence::%player%::Quest::%loop-value%::Citizen}
+							set {Commence::%player%::Quest::Active} to "None"
+							clear {Commence::%player%::Quest::Type}
+							clear {Commence::%player%::Quest::Reward}
+							clear {Commence::%player%::Quest::Progress}
+							clear {Commence::%player%::Quest::Total}
+							clear {Commence::%player%::Quest::Citizen}
+						else if {Commence::%player%::Quest::%loop-value%::ID} is set:
+							close inventory of player
+							set {Commence::%player%::Quest::Active} to {Commence::%player%::Quest::%loop-value%::ID}
+							set {Commence::%player%::Quest::Type} to {Commence::%player%::Quest::%loop-value%::Type}
+							set {Commence::%player%::Quest::Reward} to {Commence::%player%::Quest::%loop-value%::Reward}
+							set {Commence::%player%::Quest::Progress} to {Commence::%player%::Quest::%loop-value%::Progress}
+							set {Commence::%player%::Quest::Total} to {Commence::%player%::Quest::%loop-value%::Total}
+							set {Commence::%player%::Quest::Citizen} to {Commence::%player%::Quest::%loop-value%::Citizen}
+							send "{@questing}"
+							send "<##00C889>+<##E2A156> You Switched To Quest: %{Commence::%player%::Quest::%loop-value%::ID}%"
+							send "<##8B969B>  This Quest Goal is &a%{Commence::%player%::Quest::Type}% %{Commence::%player%::Quest::Total}% %{Commence::%player%::Quest::Active}%"
+							send "<##8B969B>  This Goal Progress is &a%{Commence::%player%::Quest::Progress}%&a/%{Commence::%player%::Quest::Total}%"
+		else if index of event-slot is 13, 14, 15, 16, 19, 20, 21, 22, 23, 24 or 25:
+			set {_ti} to 12 if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is set
+			set {_ti} to 11 if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is not set
+			add 2 to {_ti} if index of event-slot is more than 16
+			loop {Commence::%player%::Quests} times:
+				"%index of event-slot - {_ti}%" is "%loop-value%":
+					uncolored {Commence::%player%::Quest::%loop-value%::ID} is uncolored {Commence::%player%::Quest::Active}:
+						close inventory of player
+						send "{@questing}"
+						send "<##CB625F>-<##E2A156> You Removed Your Quest %{Commence::%player%::Quest::%loop-value%::ID}%"
+						send "<##8B969B>  You Can No Longer Receive Rewards For This Quest"
+						remove 1 from {Commence::%player%::Quests}
+						remove 1 from {Commence::%player%::Quest::Score} if {Commence::%player%::Quest::Score} is more than 1
+						clear {Commence::%player%::Quest::%loop-value%::ID}
+						clear {Commence::%player%::Quest::%loop-value%::Type}
+						clear {Commence::%player%::Quest::%loop-value%::Reward}
+						clear {Commence::%player%::Quest::%loop-value%::Progress}
+						clear {Commence::%player%::Quest::%loop-value%::Total}
+						clear {Commence::%player%::Quest::%loop-value%::Citizen}
+						set {Commence::%player%::Quest::Active} to "None"
+						clear {Commence::%player%::Quest::Type}
+						clear {Commence::%player%::Quest::Reward}
+						clear {Commence::%player%::Quest::Progress}
+						clear {Commence::%player%::Quest::Total}
+						clear {Commence::%player%::Quest::Citizen}
+					else if {Commence::%player%::Quest::%loop-value%::ID} is set:
+						close inventory of player
+						set {Commence::%player%::Quest::Active} to {Commence::%player%::Quest::%loop-value%::ID}
+						set {Commence::%player%::Quest::Type} to {Commence::%player%::Quest::%loop-value%::Type}
+						set {Commence::%player%::Quest::Reward} to {Commence::%player%::Quest::%loop-value%::Reward}
+						set {Commence::%player%::Quest::Progress} to {Commence::%player%::Quest::%loop-value%::Progress}
+						set {Commence::%player%::Quest::Total} to {Commence::%player%::Quest::%loop-value%::Total}
+						set {Commence::%player%::Quest::Citizen} to {Commence::%player%::Quest::%loop-value%::Citizen}
+						send "{@questing}"
+						send "<##00C889>+<##E2A156> You Switched To Quest: %{Commence::%player%::Quest::%loop-value%::ID}%"
+						send "<##8B969B>  This Quest Goal is &a%{Commence::%player%::Quest::Type}% %{Commence::%player%::Quest::Total}% %{Commence::%player%::Quest::Active}%"
+						send "<##8B969B>  This Goal Progress is &a%{Commence::%player%::Quest::Progress}%&a/%{Commence::%player%::Quest::Total}%"
+	else if event-inventory is (metadata tag "questglobal" of player):
+		cancel event
+		index of event-slot is 8:
+			execute player command "/questhub"
+		loop {Commence::Quest::Global::*}:
+			set {Commence::List} to 9
+			add 2 to {Commence::List} if index of event-slot is more than 15
+			add 2 to {Commence::List} if index of event-slot is more than 24
+			add 2 to {Commence::List} if index of event-slot is more than 33
+			stop loop if index of event-slot is more than 42
+			"%index of event-slot - {Commence::List}%" is loop-index:
+				close inventory of player
+				uncolored loop-value contains "bricks" or "stairs" or "planks" or "granite":
+					set {_ts} to "%loop-value%" in proper case
+				else:
+					set {_ts} to "%loop-value%s" in proper case
+				add 1 to {Commence::%player%::Quests}
+				set {Commence::%player%::Quest::Active} to {_ts}
+				set {Commence::%player%::Quest::%{Commence::%player%::Quests}%::ID} to {Commence::%player%::Quest::Active}
+				set {Commence::%player%::Quest::Type} to {Commence::Quest::Global::%loop-value%::Type}
+				set {Commence::%player%::Quest::%{Commence::%player%::Quests}%::Type} to {Commence::Quest::Global::%loop-value%::Type}
+				set {Commence::%player%::Quest::%{Commence::%player%::Quests}%::Reward} to {Commence::Quest::Global::%loop-value%::Reward}
+				set {Commence::%player%::Quest::%{Commence::%player%::Quests}%::Progress} to 0
+				set {Commence::%player%::Quest::Progress} to 0
+				set {Commence::%player%::Quest::%{Commence::%player%::Quests}%::Total} to {Commence::Quest::Global::%loop-value%::Total}
+				set {Commence::%player%::Quest::Total} to {Commence::Quest::Global::%loop-value%::Total}
+				set {Commence::%player%::Quest::%{Commence::%player%::Quests}%::Citizen} to "None"
+				remove loop-value from {Commence::Quest::Global::*}
+				clear {Commence::Quest::Global::%loop-value%::ID}
+				clear {Commence::Quest::Global::%loop-value%::Type}
+				clear {Commence::Quest::Global::%loop-value%::Reward}
+				clear {Commence::Quest::Global::%loop-value%::Total}
+				send title "<##00C889>+<##E2A156>New %{Commence::%player%::Quest::%{Commence::%player%::Quests}%::Type}% Quest" with subtitle "<##8B969B>Your Goal is to %{Commence::%player%::Quest::%{Commence::%player%::Quests}%::Type}% %{Commence::%player%::Quest::%{Commence::%player%::Quests}%::Total}% %{Commence::%player%::Quest::Active}%"
+				send "{@questing}"
+				send "<##00C889>+<##E2A156> You Got a New %{Commence::%player%::Quest::%{Commence::%player%::Quests}%::Type}% Quest"
+				send "<##8B969B>  Your New Quest Goal is to %{Commence::%player%::Quest::%{Commence::%player%::Quests}%::Type}% %{Commence::%player%::Quest::%{Commence::%player%::Quests}%::Total}% %{Commence::%player%::Quest::Active}%"
+				stop
+	else if event-inventory is (metadata tag "questjournal" of player):
+		cancel event
+		index of event-slot is 8:
+			execute player command "/questhub"
+
+command /questhub:
+	aliases: quests, quest, questjournal
+	usage: &c/questhub
+	description: &7Opens the QuestHub GUI
+	trigger:
+		stop if player's world is not {@worlds}
+		stop if {Commence::%player%::Story::Wait} is true
+#		{Commence::%player%::Quest::Active} is not "None":
+#			send ""
+#			stop
+		set {Commence::%player%::Quest::Level} to 1 if {Commence::%player%::Quest::Level} is not set #Quest Difficulty
+		set {Commence::%player%::Quest::Story} to 0 if {Commence::%player%::Quest::Story} is not set #Story Quests
+		set {Commence::%player%::Quest::Score} to 0 if {Commence::%player%::Quest::Score} is not set #Quest Score
+		set {Commence::%player%::Quests} to 0 if {Commence::%player%::Quests} is not set
+		{Commence::%player%::Quest::Story} is less than 1:
+			questStory(player, 1)
+			stop
+		command contains "questjournal":
+			set {_tr} to 4 if amount of {Commence::%player%::Quest::Journal::*} is more than 7
+			set {_tr} to 5 if amount of {Commence::%player%::Quest::Journal::*} is more than 14
+			set {_tr} to 6 if amount of {Commence::%player%::Quest::Journal::*} is more than 21
+			set {_tr} to 3 if amount of {Commence::%player%::Quest::Journal::*} is less than 8
+			set metadata tag "questjournal" of player to chest inventory with {_tr} rows named "&8-==&k|&9 {@mythicalrealms} <##D0944D>Quests &8&k|&8==-"
+			set slot 0 of metadata tag "questjournal" of player to dark gray stained glass pane named "&7"
+			loop 53 times:
+				set slot loop-value of metadata tag "questjournal" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "questjournal" of player to skull of player named "&8-&k|<##FFBE75>  %player's display name%<##D0944D>'s Quest Journal  &8&k|&8-" with lore "&7 View All Past Completed Quests" and "&8 Total Active Quests: &6%{Commence::%player%::Quests}%" and "&7 Total Completed Quests: &6%amount of {Commence::%player%::Quest::Journal::*}%" and "&8 Quest Level: &6%{Commence::%player%::Quest::Level}%" and "&7 Story Quest: &6%{Commence::%player%::Quest::Story}%/%amount of {Commence::Quest::Story::*}%" and "&8 Quest Score: &6%{Commence::%player%::Quest::Score}%" and "" and "&c Hover Over Quests for Info"
+			set {Commence::List} to 9
+			loop {Commence::%player%::Quest::Journal::*}:
+				add 1 to {Commence::List}
+				add 2 to {Commence::List} if {Commence::List} is 17
+				add 2 to {Commence::List} if {Commence::List} is 26
+				add 2 to {Commence::List} if {Commence::List} is 35
+				stop loop if {Commence::List} is more than 43
+				set slot {Commence::List} of metadata tag "questjournal" of player to glowing paper named "&8-&k|<##A0723D> Quest %loop-index%: %loop-value% &8&k|&8-" with lore "&7 Quest Type: &6%{Commence::%player%::Quest::Journal::%loop-value%::Type}%" and "&8 Quest Requirement: &6%{Commence::%player%::Quest::Journal::%loop-value%::Total}%/%{Commence::%player%::Quest::Journal::%loop-value%::Total}%" and "&7 Rewards: &6%{Commence::%player%::Quest::Journal::%loop-value%::Reward}%&6, {@funds}&6, Story XP"
+			set slot 8 of metadata tag "questjournal" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			open (metadata tag "questjournal" of player) to player
+			clear {_tr}
+			stop
+		command contains "quest":
+			set {_tr} to 4 if {Commence::%player%::Quests} is more than 5
+			set {_tr} to 3 if {Commence::%player%::Quests} is less than 6
+			set metadata tag "questhub" of player to chest inventory with {_tr} rows named "&8-==&k|&9 {@mythicalrealms} <##D0944D>Quests &8&k|&8==-"
+			set slot 0 of metadata tag "questhub" of player to dark gray stained glass pane named "&7"
+			loop 53 times:
+				set slot loop-value of metadata tag "questhub" of player to dark gray stained glass pane named "&7"
+			set slot 4 of metadata tag "questhub" of player to skull of player named "&8-&k|<##D0944D>  Manage Your Quests  &8&k|&8-" with lore "&7 You Can Manage Up to 8 Quests" and "&8 Total Active Quests: &6%{Commence::%player%::Quests}%" and "&7 Total Completed Quests: &6%amount of {Commence::%player%::Quest::Journal::*}%" and "&7 Quest Level: &6%{Commence::%player%::Quest::Level}%" and "&8 Story Quest: &6%{Commence::%player%::Quest::Story}%/%amount of {Commence::Quest::Story::*}%" and "&7 Quest Score: &6%{Commence::%player%::Quest::Score}%" and "" and "&c Hover Over Quests for Info" and "&4 Click a Quest to Make it Active"
+			set slot 10 of metadata tag "questhub" of player to glowing enchanted book named "&8-&k|<##D0944D> %player's display name%<##D0944D>'s Quest Journal &8&k|&8-" with lore "&7 View Past Quests" and "&c " and "<##00C889> Click HERE to Access Journal" if {Commence::%player%::Quest::Active} is not {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%}
+			set slot 11 of metadata tag "questhub" of player to glowing book named "&8-&k|<##D0944D> Global Available Quests &8&k|&8-" with lore "&7 View All Available Quests" and "&c " and "<##00C889> Click HERE to Access Quests"
+			set slot 12 of metadata tag "questhub" of player to glowing paper named "&8-&k|<##D0944D> Main Quest: %{Commence::Quest::Story::%{Commence::%player%::Quest::Story}%}% &8&k|&8-" with lore "&7 Type: %{Commence::%player%::Quest::Main::Type}%&6" and "&8 Rewards: &6%{Commence::%player%::Quest::Main::Reward}%&6, {@funds}&6, Story XP" and "&7 Quest Progress: &6%{Commence::%player%::Quest::Main::Progress}%/%{Commence::%player%::Quest::Main::Total}%" and "&c " and "<##00C889> Click HERE to Make Quest Active" if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is set
+			set slot 12 of metadata tag "questhub" of player to glowing paper named "&8-&k|<##00C889> ACTIVE<##D0944D> Main Quest: %{Commence::Quest::Story::%{Commence::%player%::Quest::Story}%}% &8&k|&8-" with lore "&7 Type: %{Commence::%player%::Quest::Main::Type}%&6" and "&8 Rewards: &6%{Commence::%player%::Quest::Main::Reward}%&6, {@funds}&6, Story XP" and "&7 Quest Progress: &6%{Commence::%player%::Quest::Main::Progress}%/%{Commence::%player%::Quest::Main::Total}%" if {Commence::%player%::Quest::Active} is {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%}
+			set {Commence::List} to 11 if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is not set
+			set {Commence::List} to 12 if {Commence::Quest::Story::%{Commence::%player%::Quest::Story}%} is set
+			loop {Commence::%player%::Quests} times:
+				remove 1 from {Commence::%player%::Quests} if {Commence::%player%::Quest::%loop-value%::ID} is not set
+				clear {Commence::%player%::Quest::%loop-value%::Type} if {Commence::%player%::Quest::%loop-value%::ID} is not set
+				clear {Commence::%player%::Quest::%loop-value%::Reward} if {Commence::%player%::Quest::%loop-value%::ID} is not set
+				clear {Commence::%player%::Quest::%loop-value%::Progress} if {Commence::%player%::Quest::%loop-value%::ID} is not set
+				clear {Commence::%player%::Quest::%loop-value%::Total} if {Commence::%player%::Quest::%loop-value%::ID} is not set
+				clear {Commence::%player%::Quest::%loop-value%::Citizen} if {Commence::%player%::Quest::%loop-value%::ID} is not set
+				{Commence::%player%::Quest::%loop-value%::ID} is set:
+					add 1 to {Commence::List}
+					add 2 to {Commence::List} if {Commence::List} is 17
+					add 2 to {Commence::List} if {Commence::List} is 26
+					add 2 to {Commence::List} if {Commence::List} is 35
+					stop loop if {Commence::List} is more than 43
+					set slot {Commence::List} of metadata tag "questhub" of player to map named "&8-&k|<##D0944D> %{Commence::%player%::Quest::%loop-value%::Type}% %{Commence::%player%::Quest::%loop-value%::Total}% %{Commence::%player%::Quest::%loop-value%::ID}% &8&k|&8-" with lore "&7 Citizen: &6%{Commence::%player%::Quest::%loop-value%::Citizen}%" and "&8 Rewards: &6%{Commence::%player%::Quest::%loop-value%::Reward}%&6, {@funds}&6, Story XP" and "&7 Time Limit: &6None" and "&8 Level: &6%{Commence::%player%::Quest::Level}%" and "&7 Quest Progress: &6%{Commence::%player%::Quest::%loop-value%::Progress}%/%{Commence::%player%::Quest::%loop-value%::Total}%" and "&c " and "<##00C889> Click HERE to Make Quest Active" if {Commence::%player%::Quest::%loop-value%::ID} is not {Commence::%player%::Quest::Active}
+					set slot {Commence::List} of metadata tag "questhub" of player to map named "&8-&k|<##00C889> ACTIVE<##A0723D> %{Commence::%player%::Quest::%loop-value%::Type}% %{Commence::%player%::Quest::%loop-value%::Total}% %{Commence::%player%::Quest::%loop-value%::ID}% &8&k|&8-" with lore "&7 Citizen: &6%{Commence::%player%::Quest::%loop-value%::Citizen}%" and "&8 Rewards: &6%{Commence::%player%::Quest::%loop-value%::Reward}%&6, {@funds}&6, Story XP" and "&7 Time Limit: &6None" and "&8 Level: &6%{Commence::%player%::Quest::Level}%" and "&7 Quest Progress: &6%{Commence::%player%::Quest::%loop-value%::Progress}%/%{Commence::%player%::Quest::%loop-value%::Total}%" and "&c " and "<##CB625F> Click HERE to Remove Quest" if {Commence::%player%::Quest::%loop-value%::ID} is {Commence::%player%::Quest::Active}
+			set slot 8 of metadata tag "questhub" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			open (metadata tag "questhub" of player) to player
+			clear {_tr}
+#		{Commence::%player%::Quest::Active} #Current Quest
+#		{Commence::%player%::Quest::%{Commence::%player%::Quest::Active}%::ID} #Quest Name
+#		{Commence::%player%::Quest::%{Commence::%player%::Quest::Active}%::Type} #Quest Type
+#		{Commence::%player%::Quest::%{Commence::%player%::Quest::Active}%::Reward} #Quest Reward
+#		{Commence::%player%::Quest::%{Commence::%player%::Quest::Active}%::Progress} #Player's Progress
+#		{Commence::%player%::Quest::%{Commence::%player%::Quest::Active}%::Total} #Player's Total
+#		{Commence::%player%::Quest::%{Commence::%player%::Quest::Active}%::Citizen} #NPC or Citizen
+
+command /teststory <integer>:
+	trigger:
+		set {_t} to arg-1
+		questStory(player, {_t})
+
+function questStory(p: player, t: integer):
+	{_t} is 1:
+		set {_tl::%{_p}%::loc} to {_p}'s location
+		apply invisibility to {_p} for 9999 days
+		set {Commence::%{_p}%::Story::Wait} to true
+		add 1 to {Commence::%{_p}%::Quests}
+		set {Commence::%{_p}%::Quest::Active} to "Your Story"
+		set {Commence::%{_p}%::Quest::Main::ID} to {Commence::%{_p}%::Quest::Active}
+		set {Commence::%{_p}%::Quest::Main::Type} to "Story"
+		set {Commence::%{_p}%::Quest::Main::Reward} to "Form Kit"
+		set {Commence::%{_p}%::Quest::Main::Progress} to 0
+		set {Commence::%{_p}%::Quest::Main::Total} to 1
+		set {Commence::%{_p}%::Quest::Main::Citizen} to "None"
+		teleport {_p} to {Commence::StoryLoc::1}
+		send title "" with subtitle "<##00C889>Sun dripped like honey across the rolling plains," to {_p} 
+		send "<##00C889> Sun dripped like honey across the rolling plains," to {_p}
+		wait 3 seconds
+		send title "" with subtitle "<##00C889> painting the sky with a canvas of orange and pink." to {_p} 
+		send "<##00C889> painting the sky with a canvas of orange and pink." to {_p}
+		wait 3 seconds
+		teleport {_p} to {Commence::StoryLoc::2}
+		send title "" with subtitle "<##00C889>You were blissfully roaming through the mythical lands," to {_p} 
+		send "<##00C889> You were blissfully roaming through the mythical lands," to {_p}
+		wait 3 seconds
+		teleport {_p} to {Commence::StoryLoc::3}
+		send title "" with subtitle "<##00C889> about to claim your first logs from a tree." to {_p} 
+		send "<##00C889> about to claim your first logs from a tree." to {_p}
+		wait 3 seconds
+		teleport {_p} to {Commence::StoryLoc::4}
+		send title "" with subtitle "<##00C889>You gave the tree a solid few punches to the core," to {_p} 
+		send "<##00C889> You gave the tree a solid few punches to the core," to {_p}
+		wait 3 seconds
+		send title "" with subtitle "<##00C889> completely unaware of the presence watching you from behind." to {_p}
+		send "<##00C889> completely unaware of the presence watching you from behind." to {_p}
+		wait 3 seconds
+		teleport {_p} to {Commence::StoryLoc::5}
+		send title "" with subtitle "<##00C889>Wait, the presence watching you from behind!?" to {_p}
+		send "<##00C889> Wait, the presence watching you from behind!?" to {_p}
+		wait 5 seconds
+		play sound "entity.generic.explode" at volume 100 at pitch 17 to {_p}
+		play sound "entity.dragon_fireball.explode" at volume 100 at pitch 57 to {_p}
+		spawn armor stand at {Commence::StoryLoc::1} with nbt compound from "{NoAI:1b}"
+		equip last spawned armor stand with skull of {_p}
+		equip last spawned armor stand with iron chestplate of protection 1
+		equip last spawned armor stand with iron leggings of protection 1
+		equip last spawned armor stand with iron boots of protection 1
+		teleport {_p} 1 block in front of last spawned armor stand
+		make {_p} face last spawned armor stand's location
+		set {_p}'s pitch to 0
+		make last spawned armor stand face {_p}'s location
+		set last spawned armor stand's target to {_p}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "" to {_p}
+		send " &fAngel &kCdestre&9&kOWNER&7 says..." to {_p}
+		wait 1 second
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Woah there, champ! Don't go giving those trees a complex!" to {_p}
+		send "<##DCEDF4> Woah there, champ! Don't go giving those trees a complex!" to {_p}
+		wait 3 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>I'm an Angel of a higher realm, who's name..." to {_p}
+		send "<##DCEDF4> I'm an Angel of a higher realm, who's name..." to {_p}
+		wait 2.5 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Well let's just say you couldn't pronounce it...!" to {_p}
+		send "<##DCEDF4> Well let's just say you couldn't pronounce it...!" to {_p}
+		wait 2 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>You can refer to me as Big A, cause, well, I'm kind of a big deal." to {_p}
+		send "<##DCEDF4> You can refer to me as Big A, cause, well, I'm kind of a big deal." to {_p}
+		wait 2.7 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>See, this world used to be a peaceful place." to {_p}
+		send "<##DCEDF4> See, this world used to be a peaceful place." to {_p}
+		wait 2.2 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>But peace, well, it's a fickle beast." to {_p}
+		send "<##DCEDF4> But peace, well, it's a fickle beast." to {_p}
+		wait 2 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Like a cloud one minute, gone the next." to {_p}
+		send "<##DCEDF4> Like a cloud one minute, gone the next." to {_p}
+		wait 2.6 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Then things started to… shift." to {_p}
+		send "<##DCEDF4> Then things started to… shift." to {_p}
+		wait 2.1 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Unrest bubbled beneath the surface," to {_p}
+		send "<##DCEDF4> Unrest bubbled beneath the surface," to {_p}
+		wait 1.9 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>like a pot of lava about to erupt!" to {_p}
+		send "<##DCEDF4> like a pot of lava about to erupt!" to {_p}
+		wait 1.8 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>No one knows exactly what happened," to {_p}
+		send "<##DCEDF4> No one knows exactly what happened," to {_p}
+		wait 1.7 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>not even yours truly." to {_p}
+		send "<##DCEDF4> not even yours truly." to {_p}
+		wait 2.6 seconds
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Well, maybe not entirely..." to {_p}
+		send "<##DCEDF4> Well, maybe not entirely..." to {_p}
+		clear {Commence::%{_p}%::Story::Wait}
+		questReward({_p})
+		remove potion effect of invisibility from {_p}'s active potion effects
+		kill last spawned armor stand
+		teleport {_p} to {_tl::%{_p}%::loc}
+		clear {_tl::%{_p}%::loc}
+		stop
+	else if {_t} is 2:
+		set {_tl::%{_p}%::loc} to {_p}'s location
+		apply invisibility to {_p} for 9999 days
+		set {Commence::%{_p}%::Story::Wait} to true
+		add 1 to {Commence::%{_p}%::Quests}
+		set {Commence::%{_p}%::Quest::Active} to "Your Story"
+		set {Commence::%{_p}%::Quest::Main::ID} to {Commence::%{_p}%::Quest::Active}
+		set {Commence::%{_p}%::Quest::Main::Type} to "Story"
+		set {Commence::%{_p}%::Quest::Main::Reward} to "Starter Kit"
+		set {Commence::%{_p}%::Quest::Main::Progress} to 0
+		set {Commence::%{_p}%::Quest::Main::Total} to 1
+		set {Commence::%{_p}%::Quest::Main::Citizen} to "None"
+		teleport {_p} to {Commence::StoryLoc::6}
+		send title "" with subtitle "<##00C889>You have been summoned here today by order of the divine. " to {_p} 
+		send "<##00C889> You have been summoned here today by order of the divine. " to {_p}
+		wait 3 seconds
+		teleport {_p} to {Commence::StoryLoc::7}
+		send title "" with subtitle "<##00C889>Something or someone wants YOU to appear here, " to {_p} 
+		send "<##00C889> Something or someone wants YOU to appear here, " to {_p}
+		wait 4 seconds
+		teleport {_p} to {Commence::StoryLoc::8}
+		send title "" with subtitle "<##00C889>so let's take a peek inside, shall we?" to {_p} 
+		send "<##00C889> so let's take a peek inside, shall we?" to {_p}
+		wait 3.5 seconds
+		teleport {_p} to {Commence::StoryLoc::9}
+		send title "" with subtitle "<##00C889>You're greeted by some kind of, grand staircase?" to {_p} 
+		send "<##00C889> You're greeted by some kind of, grand staircase?" to {_p}
+		wait 4.6 seconds
+		teleport {_p} to {Commence::StoryLoc::10}
+		send title "" with subtitle "<##00C889>And some kind of... meeting room? But nobody's in sight! " to {_p} 
+		send "<##00C889> And some kind of... meeting room? But nobody's in sight! " to {_p}
+		wait 3.7 seconds
+		teleport {_p} to {Commence::StoryLoc::11}
+		send title "" with subtitle "<##00C889>Quite strange if you ask me... wait..." to {_p} 
+		send "<##00C889> Quite strange if you ask me... wait..." to {_p}
+		wait 3.3 seconds
+		teleport {_p} to {Commence::StoryLoc::12}
+		send title "" with subtitle "<##00C889>sorry, I'm NOT supposed to be part of this narrative!..." to {_p} 
+		send "<##00C889> sorry, I'm NOT supposed to be part of this narrative!..." to {_p}
+		wait 10 seconds
+		teleport {_p} to {Commence::StoryLoc::13}
+		send title "" with subtitle "<##00C889>But I do wonder why you were brought here...?" to {_p} 
+		send "<##00C889> But I do wonder why you were brought here...?" to {_p}
+		wait 4.9 seconds
+		teleport {_p} to {Commence::StoryLoc::14}
+		send title "" with subtitle "<##00C889>And it seems like you've been stood up by your" to {_p} 
+		send "<##00C889> And it seems like you've been stood up by your" to {_p}
+		wait 3.8 seconds
+		send title "" with subtitle "<##00C889>date you didn't even know you had!" to {_p} 
+		send "<##00C889> date you didn't even know you had!" to {_p}
+		wait 3.4 seconds
+		clear {Commence::%{_p}%::Story::Wait}
+		questReward({_p})
+		remove potion effect of invisibility from {_p}'s active potion effects
+		kill last spawned armor stand
+		teleport {_p} to {_tl::%{_p}%::loc}
+		clear {_tl::%{_p}%::loc}
+		stop
+	else if {_t} is 3:
+		set {_tl::%{_p}%::loc} to {_p}'s location
+		apply invisibility to {_p} for 9999 days
+		set {Commence::%{_p}%::Story::Wait} to true
+		add 1 to {Commence::%{_p}%::Quests}
+		set {Commence::%{_p}%::Quest::Active} to "Your Story"
+		set {Commence::%{_p}%::Quest::Main::ID} to {Commence::%{_p}%::Quest::Active}
+		set {Commence::%{_p}%::Quest::Main::Type} to "Story"
+		set {Commence::%{_p}%::Quest::Main::Reward} to "Starter Kit"
+		set {Commence::%{_p}%::Quest::Main::Progress} to 0
+		set {Commence::%{_p}%::Quest::Main::Total} to 1
+		set {Commence::%{_p}%::Quest::Main::Citizen} to "None"
+		teleport {_p} to {Commence::StoryLoc::6}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Oh come on, it's really not that deep." to {_p} 
+		send "<##00C889> Oh come on, it's really not that deep." to {_p}
+		wait 3 seconds
+		teleport {_p} to {Commence::StoryLoc::7}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Just take your legs, lift 'em up and GLIDE!" to {_p} 
+		send "<##00C889> Just take your legs, lift 'em up and GLIDE!" to {_p}
+		wait 4 seconds
+		teleport {_p} to {Commence::StoryLoc::8}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>..." to {_p} 
+		send "<##00C889> ..." to {_p}
+		wait 3.5 seconds
+		teleport {_p} to {Commence::StoryLoc::9}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>You're not going to do it, are you?" to {_p} 
+		send "<##00C889> You're not going to do it, are you?" to {_p}
+		wait 4.6 seconds
+		teleport {_p} to {Commence::StoryLoc::10}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Well, that's just... too bad..." to {_p} 
+		send "<##00C889> Well, that's just... too bad..." to {_p}
+		wait 3.7 seconds
+		teleport {_p} to {Commence::StoryLoc::11}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>OooOOOoOoooOooo la la la la la..." to {_p} 
+		send "<##00C889> OooOOOoOoooOooo la la la la la..." to {_p}
+		wait 3.3 seconds
+		teleport {_p} to {Commence::StoryLoc::12}
+		send title "<##C7D7DD>&4&kBonewart&8 says... " with subtitle "&7Oh what are you waiting for!" to {_p} 
+		send "<##00C889> Oh what are you waiting for!" to {_p}
+		wait 10 seconds
+		teleport {_p} to {Commence::StoryLoc::13}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>Huh?!" to {_p} 
+		send "<##00C889> Huh?!" to {_p}
+		wait 4.9 seconds
+		teleport {_p} to {Commence::StoryLoc::14}
+		send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "<##DCEDF4>YOU!" to {_p} 
+		send "<##00C889> YOU!" to {_p}
+		wait 3.8 seconds
+		send title "<##C7D7DD>&4&kBonewart&8 says... " with subtitle "&7Ahahahahahahahahahahaha!" to {_p} 
+		send "<##00C889> Ahahahahahahahahahahaha!" to {_p}
+		wait 3.4 seconds
+		clear {Commence::%{_p}%::Story::Wait}
+		questReward({_p})
+		remove potion effect of invisibility from {_p}'s active potion effects
+		kill last spawned armor stand
+		teleport {_p} to {_tl::%{_p}%::loc}
+		clear {_tl::%{_p}%::loc}
+		stop
+
+
+
+
+
+
+	wait 5 seconds
+	{Commence::%{_p}%::Story::Form} is set:
+		teleport {_p} to {Commence::StoryLoc::1}
+		set {Commence::%{_p}%::Story::Wait} to true
+#		set {Commence::%{_p}%::NPC::Wait} to true
+		set {Commence::%{_p}%::Quest::Progress} to 0
+		set {Commence::%{_p}%::Quest::Type} to "Story"
+		set {Commence::%{_p}%::Quest::Active} to "Your Story"
+		set {Commence::%{_p}%::Quest::Proper} to "Welcome to"
+		set {Commence::%{_p}%::Quest::Total} to "Welcome to"
+		send title "&a+<##D0944D>New Quest" with subtitle "<##8B969B>%{Commence::%{_p}%::Quest::Proper}% %{Commence::%{_p}%::Quest::Active}%" to {_p}
+		wait 5 seconds
+		{Commence::%{_p}%::Story::Wait} is true:
+			teleport {_p} to {Commence::StoryLoc::1}
+			set block 4 meters above {_p} to glowstone
+			send title "" with subtitle "&f A light shines down on you..." to {_p}
+			send "&f A light shines down on you..." to {_p}
+			wait 22 ticks
+			execute {_p} command "/testcutscene 1"
+		loop {Commence::Story1::*}:
+			loop-value is "1":		
+				{Commence::%{_p}%::Story::Wait} is true:
+					send title "&fAngel &kCdestre&9&kOWNER&7 says..." with subtitle "" to {_p}
+					send " &fAngel &kCdestre&9&kOWNER&7 says..." to {_p}
+					wait 17 ticks
+			else:
+				{Commence::%{_p}%::Story::Wait} is true:
+					send subtitle "%loop-value%" to {_p}
+					send "%loop-value%" to {_p}
+					wait 25 ticks or 30 ticks or 35 ticks or 40 ticks or 45 ticks or 50 ticks
+		if block 4 meters above {_p} is glowstone:
+			set block 4 meters above {_p} to air
+			wait 5 seconds
+		loop {Warp::Warps::*}:
+			uncolored "%loop-value%" contains uncolored "%{Commence::%{_p}%::Story::Form}%":
+				set {_tb} to loop-value
+				stop loop
+		{Warp::%{_tb}%} is set:
+			teleport {_p} to {Warp::%{_tb}%::TP}
+		else if {Story::%{_p}%::LastLoc} is set:
+			teleport {_p} to {Story::%{_p}%::LastLoc}
+		else:
+			teleport {_p} to {Spawn::Survival3}
+		clear {_tb}
+		clear {Commence::%{_p}%::Wait}
+		clear {Commence::%{_p}%::Story::Wait}
+		clear {Commence::%{_p}%::NPC::Active}
+		clear {Commence::%{_p}%::NPC::Temp}
+		wait 1 tick
+		wait 1 second
+		send "" to {_p}
+		send "&7  <##70797C>|-<##CB625F>&l!<##70797C>-| <##D0944D>Right Click on Villagers for a Quest Chance" to {_p}
+		send "&7  <##70797C>|-<##CB625F>&l!<##70797C>-| <##D0944D>Complete Quests for Money, Experience, Etc" to {_p}
+		send "&7  <##70797C>|-<##CB625F>&l!<##70797C>-| <##D0944D>Get a Job for More Money <##00C889>/jobs" to {_p}
+		send "&7  <##70797C>|-<##CB625F>&l!<##70797C>-| <##D0944D>Join a Kingdom <##00C889>/kingdom<##D0944D> or Go By Yourself <##00C889>/rtp" to {_p}
+		send "&7  <##70797C>|-<##CB625F>&l!<##70797C>-| <##D0944D>Type <##00C889>/mrm<##D0944D> for the Main Menu GUI & more Info" to {_p}
+	loop {Commence::Story::AllPlayers::*}:
+		if {_p} is loop-value:
+			stop
+	add {_p} to {Commence::Story::AllPlayers::*}
+
+function itemChecker(p: player):
+	{_p}'s world is {@worlds}:
+		stop if {Commence::%{_p}%::Quest::Active} is "None"
+		clear {Commence::%{_p}%::Quest::Inventory}
+		stop if {Commence::%{_p}%::Quest::Type} does not contain "Collect" or "Craft" or "Make"
+		loop all items in the inventory of {_p}:
+			uncolored "%{Commence::%{_p}%::Quest::Active}%" contains uncolored "%loop-item%":
+				add item amount of loop-item to {Commence::%{_p}%::Quest::Inventory}
+				set {Commence::%{_p}%::Quest::Progress} to {Commence::%{_p}%::Quest::Inventory}
+			else if uncolored "%loop-item%" contains uncolored "%{Commence::%{_p}%::Quest::Active}%":
+				add item amount of loop-item to {Commence::%{_p}%::Quest::Inventory}
+				set {Commence::%{_p}%::Quest::Progress} to {Commence::%{_p}%::Quest::Inventory}
+		{Commence::%{_p}%::Quest::Progress} is not set:
+			set {Commence::%{_p}%::Quest::Progress} to 0
+		else if {Commence::%{_p}%::Quest::Progress} is less than 1:
+			set {Commence::%{_p}%::Quest::Progress} to 0
+		if {Commence::%{_p}%::Quest::Progress} >= {Commence::%{_p}%::Quest::Total}:
+			questReward({_p})
+
+function questReward(p: player):
+	loop {Commence::%{_p}%::Quests} times:
+		{Commence::%{_p}%::Quest::%loop-value%::ID} or {Commence::%{_p}%::Quest::Main::ID} is {Commence::%{_p}%::Quest::Active}:
+#			{Commence::%{_p}%::Quest::Main::Reward} is "Form Kit":
+			{Commence::%{_p}%::Quest::Main::ID} is set:
+				add {Commence::%{_p}%::Quest::Main::ID} to {Commence::%{_p}%::Quest::Journal::*}
+				set {Commence::%{_p}%::Quest::Journal::%{Commence::%{_p}%::Quest::Main::ID}%::Type} to {Commence::%{_p}%::Quest::Main::Type}
+				set {Commence::%{_p}%::Quest::Journal::%{Commence::%{_p}%::Quest::Main::ID}%::Total} to {Commence::%{_p}%::Quest::Main::Total}
+				set {Commence::%{_p}%::Quest::Journal::%{Commence::%{_p}%::Quest::Main::ID}%::Reward} to {Commence::%{_p}%::Quest::Main::Reward}
+				remove 1 from {Commence::%{_p}%::Quests}
+				clear {Commence::%{_p}%::Quest::Main::ID}
+				clear {Commence::%{_p}%::Quest::Main::Type}
+				clear {Commence::%{_p}%::Quest::Main::Reward}
+				clear {Commence::%{_p}%::Quest::Main::Progress}
+				clear {Commence::%{_p}%::Quest::Main::Total}
+				clear {Commence::%{_p}%::Quest::Main::Citizen}
+				set {Commence::%{_p}%::Quest::Active} to "None"
+				clear {Commence::%{_p}%::Quest::Type}
+				clear {Commence::%{_p}%::Quest::Reward}
+				clear {Commence::%{_p}%::Quest::Progress}
+				clear {Commence::%{_p}%::Quest::Total}
+				clear {Commence::%{_p}%::Quest::Citizen}
+				add 1 to {Commence::%{_p}%::Quest::Story}
+				add 1 to {Commence::%{_p}%::Quest::Score}
+				send "temp completion message" to {_p}
+				stop
+			else:
+				add {Commence::%{_p}%::Quest::%loop-value%::ID} to {Commence::%{_p}%::Quest::Journal::*}
+				set {Commence::%{_p}%::Quest::Journal::%{Commence::%{_p}%::Quest::%loop-value%::ID}%::Type} to {Commence::%{_p}%::Quest::%loop-value%::Type}
+				set {Commence::%{_p}%::Quest::Journal::%{Commence::%{_p}%::Quest::%loop-value%::ID}%::Total} to {Commence::%{_p}%::Quest::%loop-value%::Total}
+				set {Commence::%{_p}%::Quest::Journal::%{Commence::%{_p}%::Quest::%loop-value%::ID}%::Reward} to {Commence::%{_p}%::Quest::%loop-value%::Reward}
+				set {_tf} to round(({Commence::%{_p}%::Quest::%loop-value%::Progress} + {Commence::%{_p}%::Quest::Score} + {Commence::%{_p}%::Quest::Level}) * random integer between 0.8 and 1.1)
+				set {_tm} to round(({Commence::%{_p}%::Quest::Score} + {Commence::%{_p}%::Quest::Level}) * random integer between 0.4 and 0.7)
+				send "{@questing}" to {_p}
+				send "<##00C889>  +<##E2A156>You Completed Your %{Commence::%{_p}%::Quest::%loop-value%::Type} ? {Commence::%{_p}%::Quest::Main::Type}% %{Commence::%{_p}%::Quest::%loop-value%::ID} ? {Commence::%{_p}%::Quest::Main::ID}% Quest!" to {_p}
+				send "<##8B969B>  You Got Rewards! &6%{Commence::%{_p}%::Quest::%loop-value%::Reward} ? {Commence::%{_p}%::Quest::Main::Reward}%" to {_p}
+				send "<##8B969B>  You Got Rewards! &a+$%{_tm}% {@mana}" to {_p}
+				send "<##8B969B>  You Got Rewards! &a+$%{_tf}% {@funds}" to {_p}
+				send "<##8B969B>  You Got Rewards! &6+1 Score Point" to {_p}
+				if uncolored {Commence::%{_p}%::Quest::%loop-value%::Reward} is "Random Weapon":
+					give {_p} 1 of diamond sword or golden sword or wooden sword or stone sword or iron sword
+				else if uncolored {Commence::%{_p}%::Quest::%loop-value%::Reward} is "Random Gem":
+					give {_p} 1 or 2 or 3 or 4 of diamond or gold ingot or iron ingot or coal
+				else if uncolored {Commence::%{_p}%::Quest::%loop-value%::Reward} is "Random Tool":
+					give {_p} 1 of wooden pickaxe or wooden shovel or stone pickaxe or stone shovel or iron pickaxe or iron shovel
+				else if uncolored {Commence::%{_p}%::Quest::%loop-value%::Reward} is "Random Armor":
+					give {_p} 1 of leather helmet or iron chestplate or golden leggings or diamond boots
+				else if uncolored {Commence::%{_p}%::Quest::%loop-value%::Reward} is "Random Enchanted Book":
+					give {_p} 1 of enchanted book of infinity or enchanted book of projectile protection
+				else if uncolored {Commence::%{_p}%::Quest::%loop-value%::Reward} is "Random OP Item":
+					give {_p} 1 of netherite sword of sharpness 3 or diamond axe of sweeping edge 3
+				remove 1 from {Commence::%{_p}%::Quests}
+				clear {Commence::%{_p}%::Quest::%loop-value%::ID}
+				clear {Commence::%{_p}%::Quest::%loop-value%::Type}
+				clear {Commence::%{_p}%::Quest::%loop-value%::Reward}
+				clear {Commence::%{_p}%::Quest::%loop-value%::Progress}
+				clear {Commence::%{_p}%::Quest::%loop-value%::Total}
+				clear {Commence::%{_p}%::Quest::%loop-value%::Citizen}
+				set {Commence::%{_p}%::Quest::Active} to "None"
+				clear {Commence::%{_p}%::Quest::Type}
+				clear {Commence::%{_p}%::Quest::Reward}
+				clear {Commence::%{_p}%::Quest::Progress}
+				clear {Commence::%{_p}%::Quest::Total}
+				clear {Commence::%{_p}%::Quest::Citizen}
+				add 1 to {Commence::%{_p}%::Quest::Score}
