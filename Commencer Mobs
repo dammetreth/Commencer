@@ -1,0 +1,412 @@
+#-=-=-=-=-=-=-=-=-=- | Only The Finest Custom Mobs! | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#Gamemode Rules
+	#Rule1:Functions are for execution, Conditions are for Functions, Variables are for all
+	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  &9Commence&8SMP  &8|-&l!&8-|
+	#Rule3:Make a GUI menu for the gamemode
+	#Rule4:Integrate the other gamemodes features into the new one
+
+#-=-=-=-=-=-=-=-=-=-
+	#OPTIONS AND MESSAGES
+
+#on script load:
+#	create entity type named "Bandit"
+#
+#	option entity type "Bandit" has health: 20
+#	option entity type "Bandit" has damage: 5
+
+options:
+	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
+	commence:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##70797C>(<##CC3B3B>&l!<##70797C>)
+	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command in %player's world%&c!
+	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
+	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &c Wait before trying this command again!
+	commencemgl:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>M<##545B5E>G<##545B5E>L
+	
+	helper:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##FF608D> Helper <##70797C>(<##CC3B3B>&l!<##70797C>)
+	lifer:<##00C889>L<##00C08D>i<##00BA8D>f<##00B48D>e<##00AE8D>r<##00A88D> 60 Minute Survival
+	kitpvp:&cKitPvP &8
+	ogsurvival:&fOGSurvival <##AA3D3B>+Anarchy
+	story:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##70797C>(<##CC3B3B>&l!<##70797C>)
+	storyhomes:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##8B969B>Homes <##70797C>(<##CC3B3B>&l!<##70797C>)
+	storykingdoms:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##8B969B>Kingdoms <##70797C>(<##CC3B3B>&l!<##70797C>)
+	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)&c
+	
+	rtp:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>R<##3C91AD>a<##4099B7>n<##43A2C1>d<##49AFD1>o<##4EBBE0>m<##52C4EA>T<##55CDF4>P <##70797C>(<##CC3B3B>&l!<##70797C>)
+	tpmsg:&7   You're about to teleport to &9%player's world%
+	tpmsgs:&7   You're about to teleport to &fOGSurvival
+	tpmsgm:&7   You're about to teleport to <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
+	comingsoon:&c   Sorry, this feature is coming soon. Stay tuned!
+	AdHeader:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P Announcement <##70797C>(<##CC3B3B>&l!<##70797C>)
+	MRAdHeader:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s Announcement <##70797C>(<##CC3B3B>&l!<##70797C>)
+	AdFooter:&8   ! -=-==-=- |       &7&l                         &8| -=-==-=- !
+	bc: "Survival" and "Survival2" and "SpawnHub"
+	worlds: "Survival3" or "Spawnhub_nether" or "SpawnHub_the_end" or "SpawnHub" or "Survival3_nether" or "Survival3_the_end"
+	entrant:<##393D3F>E<##404547>N<##474C4F>T<##4E5456>R<##545B5E>A<##5B6266>N<##626A6D>T <##778084>
+	constructor:<##393D3F>C<##404547>O<##474C4F>N<##4E5456>S<##545B5E>T<##5B6266>R<##626A6D>U<##626A6D>C<##697175>T<##70797C>O<##778084>R <##A0E3F7>
+	artisan:<##87C196>A<##7CBF8D>R<##72BF85>T<##69BF7D>I<##5FBF74>S<##54BC69>A<##4CBF63>N <##B2FFC5>
+	engineer:<##58AA6B>E<##54A367>N<##509B62>G<##4C935D>I<##488C58>N<##448453>E<##407C4E>E<##3C754A>R <##3A7047>
+	inspector:<##C9908F>I<##C98A88>N<##C98482>S<##C97E7C>P<##C97876>E<##C97270>C<##C96C6A>T<##C96664>O<##CB625F>R <##C15755>
+	presider:<##C96868>P<##BC6262>R<##AD5A5A>E<##A35656>S<##964F4F>I<##894848>D<##7C4242>E<##703B3B>R <##603333>
+	legate:<##7954BC>L<##704CB2>E<##6745A8>G<##573693>A<##5F3D9E>T<##573693>E <##9866E2>
+	coowner:<##3988A4>COO<##3C91AD>W<##4099B7>N<##43A2C1>E<##49AFD1>R<##4EBBE0> <##52C4EA>
+	owner:<##3988A4>O<##3C91AD>W<##4099B7>N<##43A2C1>E<##49AFD1>R<##4EBBE0> <##52C4EA>
+
+on skript load:
+	clear {Commence::Custom::Mobs::Hostile::*}
+	add "Plankton" and "Bandit" and "Ghoul" and "Shaman" to {Commence::Custom::Mobs::Hostile::*}
+	clear {Commence::Custom::Mobs::Passive::*}
+	add "Whale" to {Commence::Custom::Mobs::Passive::*}
+	clear {Commence::Custom::Mobs::Boss::*}
+
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	#CUSTOM MOBS
+
+command /testmobs:
+	trigger:
+		spawn guardian at location of block above block at player's target
+		apply invisibility without particles to last spawned guardian for 9999 days
+
+on entity drop:
+	event-item is a player head:
+		cancel event
+
+on death:
+	victim's name contains "&0":
+		clear drops
+
+on spawn of creeper:
+	spawn reason is natural
+	{Commence::Story::Bloodmoon} is true:
+		world is {@worlds}:
+			cancel event
+			spawn powered creeper at location of event-entity
+			chance of 1%:
+				strike lightning effect at event-entity
+
+on spawn of squid:
+	spawn reason is natural
+	world is {@worlds}:
+		chance of 25%:
+			biome at event-entity contains warm ocean or lukewarm ocean:
+				loop (random integer between 5 and 10) times:
+					spawn drowned (random integer between 1 and 10) meters below event-entity
+					set the generic scale attribute of last spawned drowned to 0.2
+					set last spawned drowned's name to "&0Plankton"
+					apply invisibility without particles to last spawned drowned for 9999 days
+					set last spawned drowned's tool to air
+					set last spawned drowned's helmet to sea pickle
+					set last spawned drowned's max health to 9999
+					set last spawned drowned's health to 5
+		chance of 3%:
+			biome at event-entity is ocean or deep ocean or deep cold ocean or cold ocean:
+				spawn dolphin (random integer between 1 and 10) meters above event-entity
+				set the generic scale attribute of last spawned dolphin to (random integer between 4 and 9.5)
+				set the generic movement speed attribute of last spawned dolphin to 0.5
+				set last spawned dolphin's name to "&0Whale"
+				set last spawned dolphin's max health to 40
+				set last spawned dolphin's health to 40
+		chance of 1%:
+			biome at event-entity is ocean or deep ocean or warm ocean:
+				spawn squid (random integer between 1 and 10) meters above event-entity
+				set the generic scale attribute of last spawned squid to (random integer between 4 and 6.5)
+				set last spawned squid's name to "&0Octopus"
+				set last spawned squid's max health to 30
+				set last spawned squid's health to 30
+		chance of 1%:
+			biome at event-entity is ocean or deep ocean or warm ocean:
+				spawn glow squid (random integer between 1 and 10) meters above event-entity
+				set the generic scale attribute of last spawned glow squid to (random integer between 4 and 6.5)
+				set last spawned glow squid's name to "&0Glow Octopus"
+				set last spawned glow squid's max health to 30
+				set last spawned glow squid's health to 30
+
+on bucket fill:
+	event-block is water:
+		loop all entities in radius 1 of event-block:
+			name of loop-entity contains "&0Plankton":
+				kill loop-entity
+				set player's held item to water bucket named "&fBucket of Plankton"
+
+on right click:
+	name of player's held item is "&fBucket of Plankton":
+		cancel event
+		loop (random integer between 2 and 5) times:
+			spawn drowned 1 meter in front of player
+			set the generic scale attribute of last spawned drowned to 0.2
+			set last spawned drowned's name to "&0Plankton"
+			apply invisibility without particles to last spawned drowned for 9999 days
+			set last spawned drowned's tool to air
+			set last spawned drowned's helmet to sea pickle
+			set last spawned drowned's max health to 9999
+			set last spawned drowned's health to 5
+			set player's held item to bucket
+
+on spawn of skeleton:
+	spawn reason is natural
+	world is {@worlds}:
+		chance of 4%:
+			set the generic scale attribute of event-entity to 1
+			set the generic knockback resistance attribute of event-entity to 5
+			set the generic attack damage attribute of event-entity to 4
+			set the generic movement speed attribute of event-entity to 0.55
+			set event-entity's max health to 20
+			set event-entity's health to 20
+			set event-entity's name to "&0Bandit"
+			set event-entity's tool to golden sword of sharpness 1 or bow of multishot
+			equip event-entity with all golden armor
+			set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUzYzE1NTliZjEyNTI1Y2E5Y2RlYWYxNDMxMTI2OGZiMzlhZDM2M2VhYjhjYTNiODUyNmQ5YjQwYTJjNzU4ZCJ9fX0="
+			apply jump boost without particles to event-entity for 9999 days
+	{Commence::Story::Bloodmoon} is true:
+		cancel event
+		spawn wither skeleton at location of event-entity
+
+on spawn of zombie:
+	spawn reason is natural
+	world is {@worlds}:
+		chance of 1%:
+			set the generic scale attribute of event-entity to 1.6
+			set the generic knockback resistance attribute of event-entity to 10
+			set the generic attack damage attribute of event-entity to 4
+			set the generic movement speed attribute of event-entity to 0.4
+			set event-entity's max health to 16
+			set event-entity's health to 16
+			set event-entity's name to "&0Ghoul"
+			set event-entity's tool to cornflower or wooden sword of sharpness 2 or iron sword
+			equip event-entity with all netherite armor
+			set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI2M2Q3YTQ2MDE3N2JkNjc2YjJlZmQyNTAwODU3OTdmMmI4Mzg5YTM3NmU4NzNjMDYyMjRhNjdkNzVlZjRmNiJ9fX0="
+			apply jump boost without particles to event-entity for 9999 days
+		chance of 1%:
+			biome at event-entity is badlands or wooded badlands or eroded badlands:
+				set the generic scale attribute of event-entity to 0.7
+				set the generic knockback resistance attribute of event-entity to 10
+				set the generic attack damage attribute of event-entity to 1
+				set the generic movement speed attribute of event-entity to 0.4
+				set event-entity's max health to 8
+				set event-entity's health to 8
+				set event-entity's name to "&0Fire Orb"
+				set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ2NDljNmMyMmNiMjQ4MGExNDAwZmI3ZTg0NWJkZGYzNmZmY2QzMDExZGQ1MWE4ZTlhYWJlYmVhZTkxOGJiNiJ9fX0="
+				unequip event-entity's armor
+				set event-entity's tool to air
+				apply invisibility without particles to event-entity for 9999 days
+			biome at event-entity is ocean or warm ocean or beach or river or frozen river or swamp or stony shore:
+				set the generic scale attribute of event-entity to 0.7
+				set the generic knockback resistance attribute of event-entity to 10
+				set the generic attack damage attribute of event-entity to 1
+				set the generic movement speed attribute of event-entity to 0.4
+				set event-entity's max health to 8
+				set event-entity's health to 8
+				set event-entity's name to "&0Water Orb"
+				set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQzNzI4NTc5MzEzMWVkNzU1ZjFiMDA5OGYyOWRkNDEzZDY3NjU2YjYyMDg3Mjg5MzU0OTJiNDliMWQwZDRiYSJ9fX0="
+				unequip event-entity's armor
+				set event-entity's tool to air
+				apply invisibility without particles to event-entity for 9999 days
+			biome at event-entity is jagged peaks or stony peaks or cherry grove or grove or windswept hills or windswept gravelly hills or windswept forest or windswept savanna:
+				set the generic scale attribute of event-entity to 0.7
+				set the generic knockback resistance attribute of event-entity to 10
+				set the generic attack damage attribute of event-entity to 1
+				set the generic movement speed attribute of event-entity to 0.4
+				set event-entity's max health to 8
+				set event-entity's health to 8
+				set event-entity's name to "&0Air Orb"
+				set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNhNThiZWM2NTY2OGI2ODJhYmFiMzYxMzAwYTljNDEzM2JiNmMwNmRiODg0NzIxMGE2MmI4ODRlZTZmYmM3ZCJ9fX0="
+				unequip event-entity's armor
+				set event-entity's tool to air
+				apply invisibility without particles to event-entity for 9999 days
+			event-entity's y-coordinate is less than 0:
+				set the generic scale attribute of event-entity to 0.7
+				set the generic knockback resistance attribute of event-entity to 10
+				set the generic attack damage attribute of event-entity to 1
+				set the generic movement speed attribute of event-entity to 0.4
+				set event-entity's max health to 8
+				set event-entity's health to 8
+				set event-entity's name to "&0Earth Orb"
+				set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZGVjMDRkMjM4MGNkNzcwMjdmOWQ0NDQ1NWM5OGI3ZWRjNWY2NjRjYTBkZDMwYTYxMDY5MDM5MTUzOTFkYiJ9fX0="
+				unequip event-entity's armor
+				set event-entity's tool to air
+				apply invisibility without particles to event-entity for 9999 days
+		chance of 0.1%:
+			set the generic scale attribute of event-entity to 0.6
+			set the generic knockback resistance attribute of event-entity to 10
+			set the generic attack damage attribute of event-entity to 1.5
+			set the generic movement speed attribute of event-entity to 0.28
+			set event-entity's max health to 10
+			set event-entity's health to 10
+			set event-entity's name to "&0Shaman"
+			set event-entity's tool to stick of sharpness 5 or bamboo of sharpness 5 or brush of sharpness 5 or blaze rod of sharpness 5 
+			equip event-entity with all leather armor
+			dye event-entity's armor black
+			set event-entity's helmet to skull with value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA4MWU5YjYwMzRmNzE1ZmQwMmY1YjRkMzExYTQ4OWY4ZjZhY2E3MjcyNGQ4NWJmZDE5NjQ5NjU1ZDVjYjI1NyJ9fX0="
+			apply jump boost without particles to event-entity for 9999 days
+
+on damage:
+	victim's name is "&0Ghoul":
+		chance of 10%:
+			heal victim by 6
+	else if victim's name is "&0Shaman":
+		chance of 25%:
+			victim's health is less than 3:
+				heal victim by 3
+
+on spawn of zombie or wither skeleton or spider or creeper:
+	spawn reason is natural
+	{Commence::Story::Bloodmoon} is true:
+		world is {@worlds}:
+			set {_tc} to leather chestplate of protection 3
+			dye {_tc} red
+			set {_tl} to leather leggings of protection 2
+			dye {_tl} red
+			set {_tb} to leather boots of protection 1
+			dye {_tb} red
+			set event-entity's helmet to skull of random element of {Commence::Story::AllPlayers::*}
+			set chestplate of event-entity to {_tc}
+			set leggings of event-entity to {_tl}
+			set boots of event-entity to {_tb}
+			set tool of event-entity to glowing wooden sword of sharpness 2 named "&cOP &7Sword"
+			set max health of event-entity to 10
+			set health of event-entity to 10
+			apply speed 2 without particles to the event-entity for 9999 days
+
+on spawn of monster:
+	spawn reason is natural
+	world is {@worlds}:
+		moon phase of world "Survival3" is new moon:
+			cancel event
+
+on spawn of phantom:
+	spawn reason is natural
+	world is {@worlds}:
+		cancel event
+
+on place of a dragon egg:
+	if block under is a gold block:
+		broadcast "Dragon Hatching"
+		set {_enderdragonbarprogress} to 0
+		set {_enderdragonbar} to boss bar with id "dragon-bar" with title "Dragon Bar" with color red
+		add all players to bar players of {_enderdragonbar}
+		loop 3 times: # Looping 120 times with a delay of 10 ticks will give us 60 seconds
+			set {_enderdragonbarprogress} to {_enderdragonbarprogress} + 1
+			set bar progress of {_enderdragonbar} to {_enderdragonbarprogress}
+			wait 0.6 seconds
+		remove all players from bar players of {_enderdragonbar}
+		if event-block is a dragon egg:
+			if block under event-block is a gold block:
+				set {_location} to location of event-block
+				send "succesfull" to player
+				create explosion of force 4 at location of event-block
+				spawn a enderman at location of event-block
+				set displayname of the last spawned enderman to "Dragon Boss"
+#				set displayname of the last spawned enderman to "%player's displayname%s Dragon"
+				tame last spawned enderman to player
+#				set ai of last spawned enderman to false
+				set block under event-block to air
+				set event-block to air
+				drop a dragon egg at location of event-block
+				drop a gold block at location of event-block
+				loop 10 times:
+					last spawned enderman's target is a player
+					wait 1 second
+#				loop all endermans in world "Survival3":
+#					send "You should be riding this bitch rn" to player if loop-entity's display name is "%player's displayname%s Dragon"
+#					make player ride event-entity if loop-entity's display name is "%player's displayname%s Dragon"
+				wait 10 second
+				kill all entities of type enderman in world "Survival3"
+
+on right click:
+	send "You should be riding this bitch rn" to player if event-entity's display name is "%player%s Dragon"
+	make player ride event-entity if event-entity's display name is "%player%s Dragon"
+    
+
+# command /npc <text>:
+#   permission message: You don't have permission to use this command.
+#   executable by: players
+#   usage: "/npc <name>"
+#   trigger:
+#     if arg-1 is set:
+#       if name of player is "Velourship":
+#         spawn a chicken at the player
+#         set {_chicken} to last spawned entity
+#         if {_chicken} is set:
+#           set display name of {_chicken} to "%arg-1%"
+#           set {npc.chicken.%player%} to {_chicken}
+#           set no damage ticks of {_chicken} to 1000000  # Makes the chicken immune to all damage temporarily
+#           while {npc.chicken.%player%} is alive:
+#             set target of {npc.chicken.%player%} to player
+#             make {npc.chicken.%player%} look at player
+#             shoot egg from {npc.chicken.%player%} at speed 1.5
+#             wait 0.5 seconds
+#     else:
+#       send "Usage: /npc <name>" to player
+# 
+# on projectile hit:
+#   projectile is an egg
+#   shooter is a chicken:
+#     set {_location} to location of the victim
+#     spawn primed tnt at {_location}
+# 
+# on entity explode:
+#   loop all entities within 5 meters of event-location:
+#     if loop-entity is {npc.chicken.%player%}:
+#       cancel event
+# 
+# on damage:
+#   victim is {npc.chicken.%player%}:
+#     if cause is explosion:
+#       cancel event
+#     else if cause is not player:
+#       cancel event  # Ensures the chicken can only be harmed by direct player attacks
+
+command /rollercoaster:
+	trigger:
+		block under player is blue wool:
+			send " {@info} &aYou're About to Ride a RollerCoaster!"
+			wait 1 seconds
+			loop 999 times:
+				wait 5 ticks
+				set {_tl} to location of block under player
+				loop all blocks in radius 1 of {_tl}:
+					location of loop-block is not {_tl}:
+						loop-block is blue wool:
+							teleport player to location of block above loop-block
+							make player face location of block behind player
+							stop loop
+						else if block to the left of loop-block is blue wool:
+							teleport player to location of block above block to the left of loop-block
+							make player face location of block in front block to the left of player
+							stop loop
+						else if block to the right of loop-block is blue wool:
+							teleport player to location of block above block to the right of loop-block
+							make player face location of block in front block to the right of player
+							stop loop
+						else if block above loop-block is blue wool:
+							teleport player to location of block above block above loop-block
+							make player face location of block above block behind player
+							stop loop
+						else if block above block to the left of loop-block is blue wool:
+							teleport player to location of block above block above block to the left of loop-block
+							make player face location of block above block in front block to the left of player
+							stop loop
+						else if block above block to the right of loop-block is blue wool:
+							teleport player to location of block above block above block to the right of loop-block
+							make player face location of block above block in front block to the right of player
+							stop loop
+						else if block below loop-block is blue wool:
+							teleport player to location of block below block below loop-block
+							make player face location of block below block behind player
+							stop loop
+						else if block below block to the left of loop-block is blue wool:
+							teleport player to location of block below block below block to the left of loop-block
+							make player face location of block below block in front block to the left of player
+							stop loop
+						else if block below block to the right of loop-block is blue wool:
+							teleport player to location of block below block below block to the right of loop-block
+							make player face location of block below block in front block to the right of player
+							stop loop
+				block under player's location is not blue wool:
+					send " {@info} You Disconnected From the Track"
+					stop loop
+		else:
+			send " {@info} Find a Valid RollerCoaster and Try Again!"
