@@ -476,7 +476,7 @@ options:
 #-=-=-=-=-=-=-=-=-=-
 	#MESSAGES AND VARIABLES
 
-on load:
+on skript load:
 	set {Commence::ServerVersion} to 0.3 if {Commence::ServerVersion} is not set
 	add 0.01 to {Commence::ServerVersion}
 	#STORY TUTORIAL
@@ -3004,6 +3004,7 @@ function assignItem():
 		stop
 
 function assignSkill(p: player):
+	stop if {_p}'s gamemode is not survival
 	add 1 to {Commence::%{_p}%::Story::Experience}
 	{Commence::%{_p}%::Story::Level} is not set:
 		set {Commence::%{_p}%::Story::Level} to 0
@@ -3144,7 +3145,7 @@ function assignSpell(p: player):
 
 function playSpell(p: player, l: number, t: text):
 	{Commence::%{_p}%::Target::Assign} is not set:
-		loop all entities in radius 10 of {_p}:
+		loop all entities in radius 5 of {_p}:
 			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is not {_p}
 			set {Commence::%{_p}%::Target::Assign} to loop-entity if {_p}'s target is a mob
 			set {Commence::%{_p}%::Target::Assign} to loop-entity if {_p}'s target is a player
@@ -4425,7 +4426,7 @@ function runCodex(p: player, m: text):
 	stop if {Commence::%{_p}%::Magic::Wait} is true
 	set {Commence::%{_p}%::Magic::Wait} to true
 	{Commence::%{_p}%::Target::Assign} is not set:
-		loop all entities in radius 10 of {_p}:
+		loop all entities in radius 5 of {_p}:
 			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is not {_p}
 			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is a mob
 			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is a player
@@ -4438,13 +4439,13 @@ function runCodex(p: player, m: text):
 	wait 1 tick
 	{Commence::%{_p}%::Story::Mana} is less than 5:
 		send "{@spellusenomana}" to {_p}
-		set {Commence::%{_p}%::Magic::Wait} to false
+		clear {Commence::%{_p}%::Magic::Wait}
 		clear {Commence::%{_p}%::Codex::Spell}
 		clear {Commence::%{_p}%::Target::Assign}
 		stop
 	{Commence::%{_p}%::Story::Infusion} is less than 3:
 		send "{@spellusenoinfusion}" to {_p}
-		set {Commence::%{_p}%::Magic::Wait} to false
+		clear {Commence::%{_p}%::Magic::Wait}
 		clear {Commence::%{_p}%::Codex::Spell}
 		clear {Commence::%{_p}%::Target::Assign}
 		stop
@@ -4582,7 +4583,7 @@ function runCodex(p: player, m: text):
 		clear {_tl}
 		loop 10 times:
 			wait 1 second
-		set {Commence::%{_p}%::Magic::Wait} to false
+		clear {Commence::%{_p}%::Magic::Wait}
 		stop
 	set {_pb} to block at {Commence::%{_p}%::Target::Assign} ? {_p} if block at {Commence::%{_p}%::Target::Assign} ? {_p} is air or grass or tall grass
 	
@@ -4632,7 +4633,7 @@ function runCodex(p: player, m: text):
 	clear {_tl}
 	loop 10 times:
 		wait 1 second
-	set {Commence::%{_p}%::Magic::Wait} to false
+	clear {Commence::%{_p}%::Magic::Wait}
 
 command /codex:
 	usage: &c/codex
@@ -4643,6 +4644,7 @@ command /codex:
 			stop
 		stop if {Commence::%player%::Codex::Spell} is true
 		set {Commence::%player%::Codex::Spell} to true
+		clear {Commence::%player%::Magic::Wait}
 		close inventory of player
 		send " {@info} <##855EC9>You Can Now Cast a Vocal Spell"
 		stop
