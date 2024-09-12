@@ -56,7 +56,7 @@ options:
 	coowner:<##3988A4>COO<##3C91AD>W<##4099B7>N<##43A2C1>E<##49AFD1>R<##4EBBE0> <##52C4EA>
 	owner:<##3988A4>O<##3C91AD>W<##4099B7>N<##43A2C1>E<##49AFD1>R<##4EBBE0> <##52C4EA>
 
-on load:
+on skript load:
 	
 	{Spawn::SpawnHub} is not set:
 		set {Spawn::SpawnHub} to world "SpawnHub"'s spawn
@@ -148,7 +148,7 @@ on load:
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Want to Learn Spells? <##D0944D>/learnspells" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Check Out Your Stats! <##D0944D>/mrm stats" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Get a Job to Earn Money! <##D0944D>/jobs" to {Commence::Story::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Need to Remove a Home? <##D0944D>/removehomee" to {Commence::Story::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Need to Remove a Home? <##D0944D>/removehome <##CB625F>Home Name" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Want to Access Your Quest Hub? <##D0944D>/questhub" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Do Quests for Good Rewards! <##D0944D>/questhub" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Have a Comment, Suggestion or Question? <##D0944D>/report <##CB625F>Message" to {Commence::Story::Ads::*}
@@ -222,7 +222,7 @@ on join:
 		teleport player to {Spawn.SpawnHub}
 		add 1 to {Commence::TotalPlayers}
 		add player to {Commence::AllPlayers::*}
-		set join message to "<##3988A3>  Welcome to {@commencesmp}, <##778084>%player%<##3988A3>! &f##%{Commence::TotalPlayers}%"
+		set join message to "<##3988A3>  Welcome to {@commencesmp}, <##778084>%player%<##3988A3>! &f#%amount of {Commence::AllPlayers::*}%"
 		set {Commence::%player%::FirstJoin} to true
 		firstJoin(player)
 		wait 45 ticks
@@ -1968,19 +1968,21 @@ command /kingdoms [<text>] [<integer>]:
 
 command /help:
 	aliases: /helper, /h, /?, /about, /bukkit:help, /bukkit:?, /bukkit:about
+	usage: &c/help
+	description: &7Views Server Kingdoms
 	cooldown: 2 seconds
+	cooldown message: {@cooldownmessage}
 	trigger:
 		send ""
 		send "{@helper}"
-		send "&7    Hover over the options to view more information"
-		send "&7    Click the options to view more detailed information"
-		send "&7    For even more information, type &a/commands"
-		send "&7    If you have something to say, type &d/report &c[text]"
-		send "&7    For further assistance, contact a &4/staff&7 member"
-		execute player command "/info"
+		send "&7  Hello! What can we help you with today?"
+		send "&7  Click an Option below to choose a help category."
+		send "&7  Or, type something and we'll try our best to help out."
+		send "&7  If you'd like information on the server, use &a/info"
+		send "&7  For further assistance, contact a &4/staff&7 member"
 
-command /viewreports [<text>]:
-	aliases: /vr
+command /vr [<text>]:
+	aliases: /viewreports
 	cooldown: 2 seconds
 	trigger:
 		arg-1 is set:
@@ -2009,18 +2011,14 @@ command /report [<text>]:
 			send ""
 			send "{@helper}"
 			send "&7  Thank you for submitting to &3Commence&8SMP&c staff"
-			wait 10 ticks
 			send "&7  We will review and take everything into consideration!"
 			send "&d  Your Message: %arg-1%"
-			wait 18 ticks
 			send "&7  You should hear from us soon. Thank you again!"
 		else:
 			send ""
 			send "{@helper}"
 			send "&7  Thank you for using the &dReporter"
-			wait 12 ticks
 			send "&7  To report something, type the following:"
-			wait 19 ticks
 			send "&d  /report &c[ your comment, question, suggestion, concern here ]"
 
 #-=-=-=-=-=-=-=-=-=-
@@ -2071,13 +2069,15 @@ command /vote:
 		send ""
 		send "{@commence}"
 		send "&7   Show Your Support by Voting for the Server!"
-		send "&7   Players With the Most Votes at the End of a Month"
-		send "&7   Get a Free Epic Reward Of Their Choice! Vote Now:"
-		send "&8   [ <link:https://minecraft-server.net/details/CommenceSMP/><tooltip:&7Click to Open Minecraft-Server.net ><##55CDF4>Click Here for Minecraft-Server.net &8]"
-		send "&8   [ <link:https://www.planetminecraft.com/server/commencesmp/><tooltip:&7Click to Open Planet Minecraft ><##55CDF4>Click Here for Planet Minecraft &8]"
-		send "&8   [ <link:https://minecraftservers.org/server/640702><tooltip:&7Click to Open MinecraftServers.org ><##55CDF4>Click Here for MinecraftServers.org &8]"
-		send "&8   [ <link:https://minecraft-server-list.com/server/505154/><tooltip:&7Click to Open Minecraft-Server-List.com ><##55CDF4>Click Here for Minecraft-Server-List.com&8]"
-		send "&8   [ <link:https://minecraft-mp.com/server-s333439><tooltip:&7Click to Open Minecraft Multiplayer List ><##55CDF4>Click Here for Minecraft Multiplayer List &8]"
+		send "&7   The Top Voter at the End of a Month Wins a"
+		send "&7   Free Epic Reward Of Their Choice! Vote Now:"
+		send "&8   [ <link:https://minecraft-server.net/details/CommenceSMP/><tooltip:&7Click to Open Minecraft-Server.net ><##55CDF4>1. Click Here for Minecraft-Server.net &8]"
+		send "&8   [ <link:https://www.planetminecraft.com/server/commencesmp/><tooltip:&7Click to Open Planet Minecraft ><##55CDF4>2. Click Here for Planet Minecraft &8]"
+		send "&8   [ <link:https://minecraftservers.org/server/640702><tooltip:&7Click to Open MinecraftServers.org ><##55CDF4>3. Click Here for MinecraftServers.org &8]"
+		send "&8   [ <link:https://minecraft-server-list.com/server/505154/><tooltip:&7Click to Open Minecraft-Server-List.com ><##55CDF4>4. Click Here for Minecraft-Server-List.com&8]"
+		send "&8   [ <link:https://minecraft-mp.com/server-s333439><tooltip:&7Click to Open Minecraft Multiplayer List ><##55CDF4>5. Click Here for Minecraft Multiplayer List &8]"
+		send "&8   [ <link:https://minecraft.buzz/vote/11543><tooltip:&7Click to Open Minecraft Buzz ><##55CDF4>6. Click Here for Minecraft Buzz&8]"
+		send "&8   [ <link:https://minebrowse.com/server/5740><tooltip:&7Click to Open Minebrowse ><##55CDF4>7. Click Here for Minebrowse &8]"
 
 command /cheer <text>:
 	aliases: announce, praise, thank, vote, wonder
