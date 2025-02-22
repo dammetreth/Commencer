@@ -4,7 +4,7 @@
 
 	#Gamemode Rules
 	#Rule1:Functions are for execution, Conditions are for Functions, Variables are for all
-	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  &9Commence&8SMP  &8|-&l!&8-|
+	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  <##3988A3>Commence&8SMP  &8|-&l!&8-|
 	#Rule3:Make a GUI menu for the gamemode
 	#Rule4:Integrate the other gamemodes features into the new one
 
@@ -20,26 +20,26 @@
 options:
 	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
 	commence:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##70797C>(<##CC3B3B>&l!<##70797C>)
-	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command in %player's world%&c!
-	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
-	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &c Wait before trying this command again!
+	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command in %player's world%<##CB625F>!
+	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command!
+	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F> Wait before trying this command again!
 	commencemgl:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>M<##545B5E>G<##545B5E>L
 	
 	helper:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##FF608D> Helper <##70797C>(<##CC3B3B>&l!<##70797C>)
 	lifer:<##00C889>L<##00C08D>i<##00BA8D>f<##00B48D>e<##00AE8D>r<##00A88D> 60 Minute Survival
-	kitpvp:&cKitPvP &8
+	kitpvp:<##CB625F>KitPvP &8
 	ogsurvival:&fOGSurvival <##AA3D3B>+Anarchy
 	story:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##70797C>(<##CC3B3B>&l!<##70797C>)
 	storyhomes:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##8B969B>Homes <##70797C>(<##CC3B3B>&l!<##70797C>)
 	storykingdoms:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##8B969B>Kingdoms <##70797C>(<##CC3B3B>&l!<##70797C>)
 	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
-	info:<##70797C>(<##CC3B3B>&l!<##70797C>)&c
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)<##CB625F>
 	
 	rtp:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>R<##3C91AD>a<##4099B7>n<##43A2C1>d<##49AFD1>o<##4EBBE0>m<##52C4EA>T<##55CDF4>P <##70797C>(<##CC3B3B>&l!<##70797C>)
-	tpmsg:&7   You're about to teleport to &9%player's world%
+	tpmsg:&7   You're about to teleport to <##3988A3>%player's world%
 	tpmsgs:&7   You're about to teleport to &fOGSurvival
 	tpmsgm:&7   You're about to teleport to <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
-	comingsoon:&c   Sorry, this feature is coming soon. Stay tuned!
+	comingsoon:<##CB625F>   Sorry, this feature is coming soon. Stay tuned!
 	AdHeader:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P Announcement <##70797C>(<##CC3B3B>&l!<##70797C>)
 	MRAdHeader:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s Announcement <##70797C>(<##CC3B3B>&l!<##70797C>)
 	AdFooter:&8   ! -=-==-=- |       &7&l                         &8| -=-==-=- !
@@ -64,11 +64,6 @@ on skript load:
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	#CUSTOM MOBS
-
-command /testmobs:
-	trigger:
-		spawn guardian at location of block above block at player's target
-		apply invisibility without particles to last spawned guardian for 9999 days
 
 on entity drop:
 	event-item is a player head:
@@ -265,7 +260,7 @@ on spawn of zombie or wither skeleton or spider or creeper:
 			set chestplate of event-entity to {_tc}
 			set leggings of event-entity to {_tl}
 			set boots of event-entity to {_tb}
-			set tool of event-entity to glowing wooden sword of sharpness 2 named "&cOP &7Sword"
+			set tool of event-entity to glowing wooden sword of sharpness 2 named "<##CB625F>OP &7Sword"
 			set max health of event-entity to 10
 			set health of event-entity to 10
 			apply speed 2 without particles to the event-entity for 9999 days
@@ -362,7 +357,7 @@ on right click:
 command /rollercoaster:
 	trigger:
 		block under player is blue wool:
-			send " {@info} &aYou're About to Ride a RollerCoaster!"
+			send " {@info} <##00C889>You're About to Ride a RollerCoaster!"
 			wait 1 seconds
 			loop 999 times:
 				wait 5 ticks
@@ -410,3 +405,40 @@ command /rollercoaster:
 					stop loop
 		else:
 			send " {@info} Find a Valid RollerCoaster and Try Again!"
+
+command /testpet:
+	trigger:
+		{Commence::%player%::EvolutionPet} is set:
+			kill {Commence::%player%::EvolutionPet}
+			send "Killed %{Commence::%player%::EvolutionPet}'s display name%"
+			clear {Commence::%player%::EvolutionPet}
+			stop
+		stop if block under player is air or water or lava
+		stop if block in front of block under player is air
+		spawn armor stand at block in front of block at player
+		set {_tstone} to 0
+		set {_tdirt} to 0
+		set {_twater} to 0
+		set {_tlava} to 0
+		loop all blocks under last spawned armor stand:
+			add 1 to {_tstone} if loop-block is stone
+			add 1 to {_tdirt} if loop-block is dirt
+			add 1 to {_twater} if loop-block is water
+			add 1 to {_tlava} if loop-block is lava
+		loop all blocks in radius 20 of last spawned armor stand:
+			add 1 to {_tstone} if loop-block is stone
+			add 1 to {_tdirt} if loop-block is dirt
+			add 1 to {_twater} if loop-block is water
+			add 1 to {_tlava} if loop-block is lava
+		set {_tname} to "%biome at last spawned armor stand% %type of block under last spawned armor stand% %round((temperature of block under last spawned armor stand) * 100)%%{_tstone}%%{_tdirt}%%{_twater}%%{_tlava}%" in proper case
+		replace every "Block " in {_tname} with ""
+		replace every "Smooth " in {_tname} with ""
+		replace every " Stone" in {_tname} with ""
+		replace every "Raw " in {_tname} with ""
+		replace every "s " in {_tname} with " "
+		replace every "Custom " in {_tname} with ""
+		replace every "Gras " in {_tname} with "Grass "
+		replace every "Glas " in {_tname} with "Glass "
+		set last spawned armor stand's display name to {_tname}
+		set {Commence::%player%::EvolutionPet} to last spawned armor stand
+		send "Spawned %{Commence::%player%::EvolutionPet}'s display name% at %location of {Commence::%player%::EvolutionPet}%"
