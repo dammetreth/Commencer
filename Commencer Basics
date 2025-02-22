@@ -4,7 +4,7 @@
 
 	#Gamemode Rules
 	#Rule1:Functions are for execution, Conditions are for Functions, Variables are for all
-	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  &9Commence&8SMP  &8|-&l!&8-|
+	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  <##3988A3>Commence&8SMP  &8|-&l!&8-|
 	#Rule3:Make a GUI menu for the gamemode
 	#Rule4:Integrate the other gamemodes features into the new one
 	
@@ -21,26 +21,26 @@
 options:
 	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
 	commence:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##70797C>(<##CC3B3B>&l!<##70797C>)
-	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command in %player's world%&c!
-	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
-	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &c Wait before trying this command again!
+	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command in %player's world%<##CB625F>!
+	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command!
+	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F> Wait before trying this command again!
 	commencemgl:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>M<##545B5E>G<##545B5E>L
 	
 	helper:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##FF608D> Helper <##70797C>(<##CC3B3B>&l!<##70797C>)
 	lifer:<##00C889>L<##00C08D>i<##00BA8D>f<##00B48D>e<##00AE8D>r<##00A88D> 60 Minute Survival
-	kitpvp:&cKitPvP &8
+	kitpvp:<##CB625F>KitPvP &8
 	ogsurvival:&fOGSurvival <##AA3D3B>+Anarchy
 	story:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##70797C>(<##CC3B3B>&l!<##70797C>)
 	storyhomes:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##8B969B>Homes <##70797C>(<##CC3B3B>&l!<##70797C>)
 	storykingdoms:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##8B969B>Kingdoms <##70797C>(<##CC3B3B>&l!<##70797C>)
 	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
-	info:<##70797C>(<##CC3B3B>&l!<##70797C>)&c
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)<##CB625F>
 	
 	rtp:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>R<##3C91AD>a<##4099B7>n<##43A2C1>d<##49AFD1>o<##4EBBE0>m<##52C4EA>T<##55CDF4>P <##70797C>(<##CC3B3B>&l!<##70797C>)
-	tpmsg:&7   You're about to teleport to &9%player's world%
+	tpmsg:&7   You're about to teleport to <##3988A3>%player's world%
 	tpmsgs:&7   You're about to teleport to &fOGSurvival
 	tpmsgm:&7   You're about to teleport to <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
-	comingsoon:&c   Sorry, this feature is coming soon. Stay tuned!
+	comingsoon:<##CB625F>   Sorry, this feature is coming soon. Stay tuned!
 	AdHeader:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P Announcement <##70797C>(<##CC3B3B>&l!<##70797C>)
 	MRAdHeader:&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s Announcement <##70797C>(<##CC3B3B>&l!<##70797C>)
 	AdFooter:&8   ! -=-==-=- |       &7&l                         &8| -=-==-=- !
@@ -77,32 +77,32 @@ on skript load:
 	add "&7   Time to get far away from here," to {Survival::RTPMsg::*}
 
 	clear {Commence::CommissionRewards::*}
-	add "&c&l18+ &aInstant Payment" to {Commence::CommissionRewards::*}
-	add "&c&l18+ &aPayment Plan" to {Commence::CommissionRewards::*}
-	add "&c&l13+ &a20 Free Magic Box Keys" to {Commence::CommissionRewards::*}
-	add "&c&l13+ &aFree Donator Perk" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree Admin Build" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree Worldedit Build" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree Schematic Paste-in" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree Mythical Realms Power Upgrade" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree Mythical Realms Defense Upgrade" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree 100,000 Mana in Mythical Realms" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree Form Reset in Mythical Realms" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &a5 Free Level Upgrades in Mythical Realms" to {Commence::CommissionRewards::*}
-	add "&c&l10+ &aFree $1,000,000" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l18+ <##00C889>Instant Payment" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l18+ <##00C889>Payment Plan" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l13+ <##00C889>20 Free Magic Box Keys" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l13+ <##00C889>Free Donator Perk" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free Admin Build" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free Worldedit Build" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free Schematic Paste-in" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free Mythical Realms Power Upgrade" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free Mythical Realms Defense Upgrade" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free 100,000 Mana in Mythical Realms" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free Form Reset in Mythical Realms" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>5 Free Level Upgrades in Mythical Realms" to {Commence::CommissionRewards::*}
+	add "<##CB625F>&l10+ <##00C889>Free $1,000,000" to {Commence::CommissionRewards::*}
 	
 	set {Commence::HNS::Map::1} to "&6Penthouse"
 	set {Commence::HNS::Map::1::Description} to "&6Large, Fancy and Secretive"
-	set {Commence::HNS::Map::2} to "&9Isolated Reef"
-	set {Commence::HNS::Map::2::Description} to "&9Large, Open Expansive Water"
+	set {Commence::HNS::Map::2} to "<##3988A3>Isolated Reef"
+	set {Commence::HNS::Map::2::Description} to "<##3988A3>Large, Open Expansive Water"
 	set {Commence::HNS::Map::3} to "&2Ether's Garden"
 	set {Commence::HNS::Map::3::Description} to "&2Enclosed Garden of Dreams"
 	set {Commence::HNS::Map::4} to "&fFourth Ave"
 	set {Commence::HNS::Map::4::Description} to "&fTunnel Filled City Block"
 	set {Commence::HNS::Map::5} to "&4Brimanda's Abode"
 	set {Commence::HNS::Map::5::Description} to "&4Mysterious Haunted House"
-	set {Commence::HNS::Map::6} to "&aDimensional Anchor"
-	set {Commence::HNS::Map::6::Description} to "&aDifficult Magic Chamber"
+	set {Commence::HNS::Map::6} to "<##00C889>Dimensional Anchor"
+	set {Commence::HNS::Map::6::Description} to "<##00C889>Difficult Magic Chamber"
 	set {Commence::HNS::Map::7} to "&bGrocery Mart"
 	set {Commence::HNS::Map::7::Description} to "&b24hr Convenience Store"
 
@@ -115,17 +115,17 @@ on skript load:
 #	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need information on anything? &8[ <command:/info><tooltip:<##3988A3>Click to Open The Info GUI><##3988A3>Click Here &8], &8[ <command:/help><tooltip:<##3988A3>Click to Open The Help GUI><##FF608D>Click Here &8]" to {Commence::Ads::*}
 #	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need help from staff? &8[ <command:/staff><tooltip:<##3988A3>Click to Open The Staff GUI><##CB625F>Click Here &8], &8[ <command:/info><tooltip:<##3988A3>Click to Open The Info GUI><##3988A3>Click Here &8], &8[ <command:/help><tooltip:<##3988A3>Click to Open The Help GUI><##FF608D>Click Here &8]" to {Commence::Ads::*}
 #	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to try something new? &8[ <command:/c><tooltip:<##3988A3>Click to Open The Gamemodes GUI><##3988A3>Click Here &8], &8[ <command:/info><tooltip:<##3988A3>Click to Open The Info GUI><##3988A3>Click Here &8]" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need to get back to &fOGSurvival&7? &9/survival" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Have any suggestions, concerns etc? &d/report &c[text]" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Wanna say something? &d/report &c[text]" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to rank up? &a/ranks, /info" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need any help? &c/staff, &d/help, &a/info" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need to get back to &9SpawnHub&7? &a/spawn" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to know what plugins we have? &a/plugins, /info" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7See an issue? Need to report something? &d/report &c[text]" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need to get back to &fOGSurvival&7? <##3988A3>/survival" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Have any suggestions, concerns etc? &d/report <##CB625F>[text]" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Wanna say something? &d/report <##CB625F>[text]" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to rank up? <##00C889>/ranks, /info" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need any help? <##CB625F>/staff, &d/help, <##00C889>/info" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Need to get back to <##3988A3>SpawnHub&7? <##00C889>/spawn" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to know what plugins we have? <##00C889>/plugins, /info" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7See an issue? Need to report something? &d/report <##CB625F>[text]" to {Commence::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7We have a discord! &d/discord" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to see rank commands? &a/commands &c[rank]" to {Commence::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to disable the Sidebars? &9/sidebar" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to see rank commands? <##00C889>/commands <##CB625F>[rank]" to {Commence::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) &7Want to disable the Sidebars? <##3988A3>/sidebar" to {Commence::Ads::*}
 	clear {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Need Server Information? <##47AACC>/info" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Check Out Our Discord! <##855EC9>/discord" to {Commence::Story::Ads::*}
@@ -140,8 +140,8 @@ on skript load:
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Want to Teleport to a Kingdom? <##D0944D>/kingdom <##CB625F>Kingdom Name" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##00C889>Did You Know?<##C7D7DD> You Can Promote Others! <##D0944D>/positionpoints" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Give Away Your Position Points! <##D0944D>/positionpoints" to {Commence::Story::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Check Out The Warps! &9/warps" to {Commence::Story::Ads::*}
-	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Set Yourself a Home! &9/home" to {Commence::Story::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Check Out The Warps! <##3988A3>/warps" to {Commence::Story::Ads::*}
+	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Set Yourself a Home! <##3988A3>/home" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Need Help or Info? <##47AACC>/help" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Access the Main Menu! <##D0944D>/mrm" to {Commence::Story::Ads::*}
 	add " <##70797C>(<##CC3B3B>&l!<##70797C>) <##C7D7DD>Join a Magic School! <##D0944D>/magicschools" to {Commence::Story::Ads::*}
@@ -211,10 +211,11 @@ on join:
 		teleport player to {Spawn.SpawnHub} if player's world is not "SpawnHub" or "Survival3"
 		send ""
 		send "<##49AFD1>  It's really great to see you again, %player's display name%<##49AFD1>!" or "<##49AFD1>  Nice to see you again, %player's display name%<##49AFD1>!" or "<##49AFD1>  Fantastic you're back, %player's display name%<##49AFD1>!" or "<##49AFD1>  Uh oh, a wild %player's display name%<##49AFD1> popped up!" or "<##49AFD1>  It's just not the same without you, %player's display name%<##49AFD1>!" or "<##49AFD1>  Everyone's day just got brighter, %player's display name%<##49AFD1>!" or "<##49AFD1>  The good vibes are flowing today, %player's display name%<##49AFD1>!" or "<##49AFD1>  The positivity is radiating today, %player's display name%<##49AFD1>!" or "<##49AFD1>  You've been sincerely missed, %player's display name%<##49AFD1>!"
-		send "&8  Welcome back to {@commencesmp}© v%{Commence::ServerVersion}%! (&aMC 1.21.1<##545B5E>)"
+		send "&8  Welcome back to {@commencesmp}© v%{Commence::ServerVersion}%! (<##00C889>MC 1.21.4<##545B5E>)"
 		send "<##49AFD1>  Newest News:"
-		send "<##49AFD1>  ✡ &7{@commencesmp}&7 Officially Supports MC1.7.9-1.21.1 Clients!"
-		send "<##49AFD1>  ✡ <##CB625F>Have You Seen Any...Strange Beings Around Lately?" or "<##49AFD1>  ✡ <##CB625F>What Have You Found Exploring...?" or "<##49AFD1>  ✡ <##CB625F>The Abundance of Mystery is Upon Us...!"
+		send "<##49AFD1>  ✡ &7{@commencesmp}&7 Officially Supports MC1.13-1.21.3 Clients!"
+#		send "<##49AFD1>  ✡ <##CB625F>Have You Seen Any...Strange Beings Around Lately?" or "<##49AFD1>  ✡ <##CB625F>What Have You Found Exploring...?" or "<##49AFD1>  ✡ <##CB625F>The Abundance of Mystery is Upon Us...!"
+		send "<##49AFD1>  ✡ <##00C889>The Mythical Eleven are Here to Save the Day! <##855EC9>/discord"
 		send title "" with subtitle "<##49AFD1>  It's really great to see you again, %player's display name%<##49AFD1>!" or "<##49AFD1>  Nice to see you again, %player's display name%<##49AFD1>!" or "<##49AFD1>  Fantastic you're back, %player's display name%<##49AFD1>!" or "<##49AFD1>  Uh oh, a wild %player's display name%<##49AFD1> popped up!" or "<##49AFD1>  It's just not the same without you, %player's display name%<##49AFD1>!" or "<##49AFD1>  Everyone's day just got brighter, %player's display name%<##49AFD1>!" or "<##49AFD1>  The good vibes are flowing today, %player's display name%<##49AFD1>!" or "<##49AFD1>  The positivity is radiating today, %player's display name%<##49AFD1>!" or "<##49AFD1>  You've been sincerely missed, %player's display name%<##49AFD1>!"
 		send ""
 		send "&8  Check Out <##49AFD1>/website&8 or <##855EC9>/discord&8 for More Info & News"
@@ -249,6 +250,10 @@ on quit:
 			send "<##778084>  %player's display name% <##CB625F>quit silently" to loop-player if {Commence::%loop-player%::Rank::Value} >= {Commence::%player%::Rank::Value}
 	else:
 		set quit message to "<##778084>  %player's display name% <##3988A3>quit"
+
+on command "//replacenear":
+	cancel event
+	send "NO, ABSOLUTELY NOT, NOT AGAIN BRETHREN"
 
 #-=-=-=-=-=-=-=-=-=-
 	#FIRST JOIN
@@ -287,7 +292,7 @@ function firstJoin(p: player):
 		send "&7   To Open the Gamemode Navigator, type <##3988A4>/c&7 or" to {_p}
 		send "&7    Click the Compass in your Inventory" to {_p}
 		send "" to {_p}
-		send "&8   For more help, type &d/help&8 or contact &c/staff" to {_p}
+		send "&8   For more help, type &d/help&8 or contact <##CB625F>/staff" to {_p}
 
 #-=-=-=-=-=-=-=-=-=-
 	#RANKS
@@ -353,7 +358,7 @@ function rankCheck(p: player):
 		set {_p}'s tablist name to "<##00C889> L &8&8%{Lifer::%{_p}%::First}% &8%{Lifer::%{_p}%::Last}% &8%{Lifer::%{_p}%::Age}% "
 	else if uncolored "%{_p}'s world%" contains "PVP" or "PVPSpawn":
 		add {_p} to nametag "pvp"
-		set {_p}'s tablist name to "&c KP &4%{_p}% "
+		set {_p}'s tablist name to "<##CB625F> KP &4%{_p}% "
 	else if uncolored "%{_p}'s world%" contains "Survival3" or "Survival3_nether" or "Survival3_the_end":
 		{Commence::%{_p}%::Story::Rank} is set:
 			add {_p} to nametag "story"
@@ -370,7 +375,7 @@ function rankCheck(p: player):
 		wait 1 second
 
 command /setworldprefix <world> <text>:
-	usage: &c/swp [ WORLD PREFIX ]
+	usage: <##CB625F>/swp [ WORLD PREFIX ]
 	aliases: /swp
 	permission: commencer.admin
 	cooldown: 1 second
@@ -378,7 +383,7 @@ command /setworldprefix <world> <text>:
 	cooldown message: {@cooldownmessage}
 	trigger:
 #		if {Commence::%arg-1%::Short} is set:
-#			send "&c Bruh, you've already done %arg-1%! (%{Commence::%arg-1%::Short}%)"
+#			send "<##CB625F> Bruh, you've already done %arg-1%! (%{Commence::%arg-1%::Short}%)"
 #			stop
 #		else:
 		set {Commence::%arg-1%::Short} to arg-2
@@ -410,7 +415,7 @@ command /fixstaff:
 		send "OnlineMods: %{Commence::Inspectors::*}%"
 
 command /promote <player> [<integer>]:
-	usage: &c /promote [player]
+	usage: <##CB625F> /promote [player]
 	description: &7 Promote a player to the next rank
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
@@ -422,7 +427,7 @@ command /promote <player> [<integer>]:
 			else:
 				send ""
 				send "{@commence}"
-				send "&c   %arg-1's display name%&7 is not able to be promoted anymore"
+				send "<##CB625F>   %arg-1's display name%&7 is not able to be promoted anymore"
 				stop
 		else if {Commence::%arg-1%::Admin} is false:
 			if {Commence::%arg-1%::Rank::Value} is less than 7:
@@ -430,17 +435,17 @@ command /promote <player> [<integer>]:
 			else:
 				send ""
 				send "{@commence}"
-				send "&c   %arg-1's display name%&7 is not able to be promoted anymore"
+				send "<##CB625F>   %arg-1's display name%&7 is not able to be promoted anymore"
 				stop
 		else if {Commence::%arg-1%::Rank::Value} is more than or equal to {Commence::%player%::Rank::Value}:
 			send ""
 			send "{@commence}"
-			send "&c   %arg-1's display name%&7 is not able to be promoted by you"
+			send "<##CB625F>   %arg-1's display name%&7 is not able to be promoted by you"
 			stop
 #		else:
 #			send ""
 #			send "{@commence}"
-#			send "&c   %arg-1's display name%&7 is not able to be promoted by you"
+#			send "<##CB625F>   %arg-1's display name%&7 is not able to be promoted by you"
 #			stop
 		if arg-2 is set:
 			set {Commence::%arg-1%::Rank::Value} to arg-2
@@ -490,7 +495,7 @@ command /promote <player> [<integer>]:
 		rankCheck(arg-1)
 
 command /demote <player> [<integer>]:
-	usage: &c /demote [player]
+	usage: <##CB625F> /demote [player]
 	description: &7 Demote a player to the default rank
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
@@ -503,7 +508,7 @@ command /demote <player> [<integer>]:
 		else if {Commence::%arg-1%::Rank::Value} is more than or equal to {Commence::%player%::Rank::Value}:
 			send ""
 			send "{@commence}"
-			send "&c   %arg-1's display name%&7 can't be demoted by you"
+			send "<##CB625F>   %arg-1's display name%&7 can't be demoted by you"
 			stop
 		if {Commence::%arg-1%::Inspector} is true:
 			remove arg-1 from {Commence::AllInspectors::*}
@@ -520,7 +525,7 @@ command /demote <player> [<integer>]:
 			else:
 				send ""
 				send "{@commence}"
-				send "&c   %arg-1's display name%&7 can't be demoted"
+				send "<##CB625F>   %arg-1's display name%&7 can't be demoted"
 				stop
 		set {Commence::%arg-1%::Rank::Value} to 0
 		set arg-1's display name to "{@entrant}%arg-1%"
@@ -530,7 +535,7 @@ command /demote <player> [<integer>]:
 		send "&7   You demoted %arg-1%&7 to %{Commence::Rank::0}%"
 		send "" to arg-1
 		send "{@commence}" to arg-1
-		send "&c&l  -DEMOTION" to arg-1
+		send "<##CB625F>&l  -DEMOTION" to arg-1
 		send "&8   You are now %{Commence::Rank::0}%" to arg-1
 		rankCheck(arg-1)
 
@@ -539,6 +544,7 @@ command /demote <player> [<integer>]:
 
 every 10 minutes:
 #every 10 seconds:
+	stop if amount of all players is less than 1
 	broadcast "" to {@bc}
 	broadcast "{@AdHeader}" to {@bc}
 	broadcast random element of {Commence::Ads::*} to {@bc}
@@ -550,6 +556,7 @@ every 10 minutes:
 	#SERVER CONDITIONS
 
 every 5 seconds:
+	stop if amount of all players is less than 1
 	loop all players:
 		resetPVP(loop-player) if loop-player's world is not "PVPSpawn" or "PVPLevel1" or "PVPLevel2" or "PVPLevel3" or "PVPLevel4" or "PVPLevel5"
 		kitPVE(loop-player) if loop-player's world is "PVPSpawn" or "PVPLevel1" or "PVPLevel2" or "PVPLevel3" or "PVPLevel4" or "PVPLevel5"
@@ -570,15 +577,15 @@ function sideBar(p: player):
 		{Commence::%{_p}%::PVPBar} is not true:
 			toggle {_p}'s scoreboard to off
 			stop
-		set title of {_p}'s scoreboard to "<##70797C> -&k| {@commencesmp} &cKitPvP <##70797C>&k|<##70797C>-"
+		set title of {_p}'s scoreboard to "<##70797C> -&k| {@commencesmp} <##CB625F>KitPvP <##70797C>&k|<##70797C>-"
 		set line 1 of {_p}'s scoreboard to "&7 "
 		set line 2 of {_p}'s scoreboard to "&7 <##57D1F9>%{_p}'s display name%<##50C0E5>'s <##49AFD1>I<##429EBC>n<##3988A3>f<##307389>o:"
-		set line 3 of {_p}'s scoreboard to "&7  &cLevel: <##8B969B>%{PVP::%{_p}%::Level} ? 0%"
-		set line 4 of {_p}'s scoreboard to "&7   &cKills: <##8B969B>%{PVP::%{_p}%::AllKills} ? 0%"
-		set line 5 of {_p}'s scoreboard to "&7  &cPoints: <##8B969B>%{PVP::%{_p}%::Kills} ? 0%"
-		set line 6 of {_p}'s scoreboard to "&7   &cDeaths: <##8B969B>%{PVP::%{_p}%::Deaths} ? 0%"
-		set line 7 of {_p}'s scoreboard to "&7  &cLast Killer: <##8B969B>%{PVP::%{_p}%::Killer} ? 0%"
-		set line 8 of {_p}'s scoreboard to "&7   &cLast Kill: <##8B969B>%{PVP::%{_p}%::Murder} ? 0%"
+		set line 3 of {_p}'s scoreboard to "&7  <##CB625F>Level: <##8B969B>%{PVP::%{_p}%::Level} ? 0%"
+		set line 4 of {_p}'s scoreboard to "&7   <##CB625F>Kills: <##8B969B>%{PVP::%{_p}%::AllKills} ? 0%"
+		set line 5 of {_p}'s scoreboard to "&7  <##CB625F>Points: <##8B969B>%{PVP::%{_p}%::Kills} ? 0%"
+		set line 6 of {_p}'s scoreboard to "&7   <##CB625F>Deaths: <##8B969B>%{PVP::%{_p}%::Deaths} ? 0%"
+		set line 7 of {_p}'s scoreboard to "&7  <##CB625F>Last Killer: <##8B969B>%{PVP::%{_p}%::Killer} ? 0%"
+		set line 8 of {_p}'s scoreboard to "&7   <##CB625F>Last Kill: <##8B969B>%{PVP::%{_p}%::Murder} ? 0%"
 #		set line 9 of {_p}'s scoreboard to "&7 "
 	else if {_p}'s world is "Survival2":
 		{Commence::%{_p}%::LiferBar} is not set:
@@ -640,23 +647,23 @@ function sideBar(p: player):
 #		set line 13 of {_p}'s scoreboard to "&7 "
 	else:
 		{Commence::%{_p}%::StoryBar} is not set:
-			set {Commence::%{_p}%::StoryBar} to true
+			set {Commence::%{_p}%::StoryBar} to "Default"
 		else if {Commence::%{_p}%::Story::Form} is not set:
 			toggle {_p}'s scoreboard to off
 			stop
-		else if {Commence::%{_p}%::StoryBar} is not true:
+		else if {Commence::%{_p}%::StoryBar} is false:
 			toggle {_p}'s scoreboard to off
 			stop
 		set {Commence::%{_p}%::Story::Infusion} to 0 if {Commence::%{_p}%::Story::Infusion} is not set
-		stop if {Commence::%{_p}%::StoryBar} is not true
 		set title of {_p}'s scoreboard to "<##70797C> -&k|&r {@mythicalrealms} <##70797C>&k|<##70797C>-"
 		set line 1 of {_p}'s scoreboard to "&8 "
-		set line 2 of {_p}'s scoreboard to "&7  <##00C889>🍖:%{_p}'s hunger ? 0% <##00C889>🪣:%{Commence::%{_p}%::Story::Thirst} ? 0% <##00C889>⌚:%{Commence::%{_p}%::Story::Sleep} ? 0% <##855EC9>🧪:%{Commence::%{_p}%::Story::Mana} ? 0% <##855EC9>⏳:%{Commence::%{_p}%::Story::Infusion} ? 0%"
+		set line 2 of {_p}'s scoreboard to "&7  <##00C889>🍖:%{_p}'s hunger ? 0% <##00C889>🪣:%{Commence::%{_p}%::Story::Thirst} ? 0% <##00C889>⌚:%{Commence::%{_p}%::Story::Sleep} ? 0% "#<##855EC9>🧪:%{Commence::%{_p}%::Story::Mana} ? 0% <##855EC9>⏳:%{Commence::%{_p}%::Story::Infusion} ? 0%"
 		set line 3 of {_p}'s scoreboard to "&7   <##00608D>⛨:%{Commence::%{_p}%::Story::Level} ? 0% %{Commence::%{_p}%::Story::Experience} ? 0%/%{Commence::%{_p}%::Story::LevelUpgrade} ? 0%"
-		set line 4 of {_p}'s scoreboard to "&7  <##CB625F>🗡:%(({Commence::%{_p}%::Story::Attack} ? 0) + ({Commence::%{_p}%::Skill::SlayingLevel} * 0.03) + ({Commence::%{_p}%::Skill::ArcheryLevel} * 0.03) + ({Commence::%{_p}%::Skill::HuntingLevel} * 0.03)) + 1% <##CB625F>⚔:%((({Commence::%{_p}%::Story::Defense} ? 0) * -1) + ({Commence::%{_p}%::Skill::DefenseLevel}) * 0.03)% <##CB625F>☠:%{Survival::%{_p}%::Deaths} ? 0%"
+		set line 4 of {_p}'s scoreboard to "&7  <##CB625F>🗡:%(({Commence::%{_p}%::Story::Attack} ? 0) + ({Commence::%{_p}%::Skill::SlayingLevel} * 0.03) + ({Commence::%{_p}%::Skill::HuntingLevel} * 0.03)) + 1% <##CB625F>⚔:%((({Commence::%{_p}%::Story::Defense} ? 0) * -1) + ({Commence::%{_p}%::Skill::DefenseLevel}) * 0.03)% <##CB625F>☠:%{Survival::%{_p}%::Deaths} ? 0%"
 		set line 5 of {_p}'s scoreboard to "&7   <##D0944D>✳:%{Commence::%{_p}%::Quest::Score} ? 0% <##D0944D>❇:%{Commence::%{_p}%::Story::Position} ? 0% <##D0944D>₵:%balance of {_p}%"
 		{Commence::%{_p}%::Story::Position} is less than 1:
 			set {Commence::%{_p}%::Story::Position} to 1
+		else if {Commence::%{_p}%::StoryBar} is "Minimal":
 		set line 6 of {_p}'s scoreboard to "&7  <##D0944D>%{Commence::%{_p}%::DisplayName}%"
 		set line 7 of {_p}'s scoreboard to "&7   <##FFC889>F<##FCB35F>o<##D0944D>r<##A0723D>m: <##D0944D>%{Commence::%{_p}%::Story::Form}%"
 		set line 8 of {_p}'s scoreboard to "&7  <##FFC889>R<##FCB35F>a<##D0944D>n<##A0723D>k: <##D0944D>%{Commence::%{_p}%::Story::Rank}%"
@@ -717,6 +724,11 @@ on walking on barrier:
 		teleport player to {SpawnHub::Parkour1S}
 		stop
 
+on walking on cyan glass:
+	world is "SpawnHub":
+		push player upwards with force 0.5
+		push player forward with force 1
+
 #-=-=-=-=-=-=-=-=-=-
 	#BLOCK RULES
 
@@ -748,18 +760,18 @@ on click:
 
 command /randomteleport [<player>]:
 	aliases: /rtp, /wild, /wilderness, /tpr
-	usage: &c /randomteleport
+	usage: <##CB625F> /randomteleport
 	description: &7 Teleports to a random location.
 #	cooldown: 2 minutes
 #	cooldown bypass: *
-#	cooldown message: &9 Commence&8SMP &c There's a 2 minute cooldown to use this again!
+#	cooldown message: <##3988A3> Commence&8SMP <##CB625F> There's a 2 minute cooldown to use this again!
 	trigger:
 		if argument isn't set:
 			player's world is "Survival3" or "Survival3_nether" or "Survival3_the_end" or "SpawnHub":
 				set {Commence::%player%::Story::Wait} to true
 				send ""
 				send "{@rtp}"
-				send "&c   You are not in the right world" if player's world is not "Survival3"
+				send "<##CB625F>   You are not in the right world" if player's world is not "Survival3"
 				send "" if player's world is not "Survival3"
 				send "&7   Now teleporting to random location in &6{@mythicalrealms}..."
 				send "&7   This could take up to 5 seconds..."
@@ -775,25 +787,25 @@ command /randomteleport [<player>]:
 						stop loop
 #				wait 100 ticks
 				{Commence::%player%::RTP} is not set:
-					send "&c   Unable to find suitable location to teleport"
+					send "<##CB625F>   Unable to find suitable location to teleport"
 					wait 2 ticks
-					send "&c   Trying again..."
+					send "<##CB625F>   Trying again..."
 					wait 5 ticks
 					execute player command "/rtp"
 					stop
 				else if block under {Commence::%player%::RTP} is water:
-					send "&c   Unable to find suitable location to teleport,"
-					send "&c    you'd be trapped in water!"
+					send "<##CB625F>   Unable to find suitable location to teleport,"
+					send "<##CB625F>    you'd be trapped in water!"
 					wait 2 ticks
-					send "&c   Trying again..."
+					send "<##CB625F>   Trying again..."
 					wait 5 ticks
 					execute player command "/rtp"
 					stop
 				else if block at {Commence::%player%::RTP} is not air:
-					send "&c   Unable to find suitable location to teleport,"
-					send "&c    you'd be trapped in a %type of block at {Commence::%player%::RTP}%&c!"
+					send "<##CB625F>   Unable to find suitable location to teleport,"
+					send "<##CB625F>    you'd be trapped in a %type of block at {Commence::%player%::RTP}%<##CB625F>!"
 					wait 2 ticks
-					send "&c   Trying again..."
+					send "<##CB625F>   Trying again..."
 					wait 5 ticks
 					execute player command "/rtp"
 					stop
@@ -808,13 +820,13 @@ command /randomteleport [<player>]:
 			else if player's world is "Survival2":
 				send ""
 				send "{@rtp}"
-				send "&c   You are not permitted to RTP in this gamemode"
+				send "<##CB625F>   You are not permitted to RTP in this gamemode"
 				stop
 			else:
 				set {Commence::%player%::Story::Wait} to true
 				send ""
 				send "{@rtp}"
-				send "&c   You are not in the right world" if player's world is not "Survival"
+				send "<##CB625F>   You are not in the right world" if player's world is not "Survival"
 				send "" if player's world is not "Survival"
 #				teleport player to {Spawn::Survival} if player's world is not "Survival"
 				send "&7   Now teleporting to random location in &fOGSurvival::.."
@@ -843,7 +855,7 @@ command /randomteleport [<player>]:
 
 command /spawn [<text>]:
 	aliases: s, hub, lobby
-	usage: &c /spawn [ WORLD ]
+	usage: <##CB625F> /spawn [ WORLD ]
 	description: &7 Teleports to the server spawn.
 	cooldown: 2 seconds
 	cooldown message: {@cooldownmessage}
@@ -891,13 +903,13 @@ command /spawn [<text>]:
 			else:
 				send ""
 				send "{@commence}"
-				send "&c   %arg-1%&c is not a world or gamemode"
-				send "&c    Type &9/c&c to view gamemodes"
+				send "<##CB625F>   %arg-1%<##CB625F> is not a world or gamemode"
+				send "<##CB625F>    Type <##3988A3>/c<##CB625F> to view gamemodes"
 				stop
 
 command /survival:
 	aliases: /ogsurvival, /smp
-	usage: &c survival
+	usage: <##CB625F> survival
 	description: &7 Teleports to the Survival
 	cooldown: 2 seconds
 	cooldown message: {@cooldownmessage}
@@ -905,20 +917,20 @@ command /survival:
 		{Survival::Enabled} is not true:
 			send ""
 			send "{@commence}"
-			send "&c   Sorry, this game mode is currently disabled"
-			send "&7   To try other game modes, use &9/c"
+			send "<##CB625F>   Sorry, this game mode is currently disabled"
+			send "&7   To try other game modes, use <##3988A3>/c"
 			stop
 		player's world is "Survival":
 			send ""
 			send "{@commence}"
-			send "&c   You're already in &fOGSurvival"
-			send "&7   To teleport to &9Survivalspawn&7, use &9/spawn survival"
+			send "<##CB625F>   You're already in &fOGSurvival"
+			send "&7   To teleport to <##3988A3>Survivalspawn&7, use <##3988A3>/spawn survival"
 			stop
 		else if player's world contains "PVP":
 			send ""
 			send "{@commence}"
-			send "&c   To make the KitPvP experience better,"
-			send "&c    this command has been disabled"
+			send "<##CB625F>   To make the KitPvP experience better,"
+			send "<##CB625F>    this command has been disabled"
 			stop
 		else if player's world is "Survival2":
 			execute player command "/s"
@@ -934,1041 +946,12 @@ command /survival:
 			remove 1 from {PVP::AllPlayerCount}
 		execute console command "/sogs %player%"
 
-on inventory click:
-	if event-inventory is (metadata tag "warps" of player):
-		cancel event
-		set {Commence::List} to 9
-		loop {Warp::Warps::*} and {Warp::Warps.S::*}:
-			add 1 to {Commence::List} if loop-value does not contain "Base"
-			{Commence::List} is 17:
-				add 2 to {Commence::List}
-			else if {Commence::List} is 26:
-				add 2 to {Commence::List}
-			else if {Commence::List} is 35:
-				add 2 to {Commence::List}
-			index of event-slot is {Commence::List}:
-				close inventory of player
-				teleport player to {Warp::%loop-value%::TP}
-				send ""
-				send "{@commence}"
-				send "&7   You warped to %{Warp::%loop-value%}%"
-				stop
-		index of event-slot is 8:
-			close inventory of player
-	if event-inventory is (metadata tag "homes" of player):
-		cancel event
-		index of event-slot is 8:
-			close inventory of player
-		amount of {Commence::%player%::Homes::All::*} is less than 1:
-			index of event-slot is 13:
-				close inventory of player
-				execute player command "/sethome Home1"
-		else:
-			index of event-slot is 10:
-				close inventory of player
-				execute player command "/sethome Home%amount of {Commence::%player%::Homes::All::*} + 1%"
-			{Commence::%player%::%index of event-slot%::Name} is set:
-				close inventory of player
-				execute player command "/home %uncolored {Commence::%player%::%index of event-slot%::Name}%"
-	if event-inventory is (metadata tag "kingdoms" of player):
-		cancel event
-		{Commence::%player%::Story::Kingdom} is not "None":
-			uncolored {Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%::Owner} is player:
-				index of event-slot is 15:
-					execute player command "/kingdomsettings"
-			index of event-slot is 12:
-				execute player command "/listkingdoms"
-			index of event-slot is 13:
-				execute player command "/kingdom %uncolored {Commence::%player%::Story::Kingdom}%"
-			index of event-slot is 14:
-				execute player command "/leavekingdom %uncolored {Commence::%player%::Story::Kingdom}%"
-		else:
-			index of event-slot is 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42 or 43:
-				{Commence::%player%::Kingdom%index of event-slot%::Name} is set:
-					execute player command "/joinkingdom %uncolored {Commence::%player%::Kingdom%index of event-slot%::Name}%"
-		index of event-slot is 8:
-			close inventory of player
-	if event-inventory is (metadata tag "positionpoints" of player):
-		cancel event
-		index of event-slot is 8:
-			close inventory of player
-		index of event-slot is 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42 or 43:
-			set {Commence::%player%::SlotIndex} to index of event-slot
-			{Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Position} is more than 3:
-				send "<##CB625F>   %{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}'s display name ? {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%<##CB625F> can't be promoted by you"
-				stop
-			{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name} is not set:
-				stop
-			close inventory of player
-			add 1 to {Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Position}
-			wait 25 ticks
-			send ""
-			send "{@storykingdoms}"
-			send "<##00C889>   You just promoted %{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}'s display name ? {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%<##00C889> to a %{Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Rank}%"
-			send "" to {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}
-			send "{@storykingdoms}" to {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}
-			send "<##00C889>   %player's display name ? player%<##00C889> just promoted you to a %{Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Rank}%" to {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}
-		loop 44 times:
-			clear {Commence::%player%::%loop-value%::Name}
-			clear {Commence::%player%::%loop-value%::Owner}
-			clear {Commence::%player%::%loop-value%::Price}
-		stop
-	if event-inventory is (metadata tag "epicpositionpoints" of player):
-		cancel event
-		index of event-slot is 8:
-			close inventory of player
-		index of event-slot is 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42 or 43:
-			set {Commence::%player%::SlotIndex} to index of event-slot
-			{Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Position} >= {Commence::%player%::Story::Position}:
-				send "<##CB625F>   %{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}'s display name ? {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%<##CB625F> can't be promoted by you"
-				stop
-			{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name} is not set:
-				stop
-			close inventory of player
-			add 1 to {Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Position}
-			storyRank({Commence::%player%::%{Commence::%player%::SlotIndex}%::Name})
-			send ""
-			send "{@storykingdoms}"
-			send "<##00C889>   You just promoted %{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}'s display name ? {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%<##00C889> to a %{Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Rank}%"
-			send "" to {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}
-			send "{@storykingdoms}" to {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}
-			send "<##00C889>   %player's display name ? player%<##00C889> just promoted you to a %{Commence::%{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%::Story::Rank}%" to {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}
-		loop 44 times:
-			clear {Commence::%player%::%loop-value%::Name}
-			clear {Commence::%player%::%loop-value%::Owner}
-			clear {Commence::%player%::%loop-value%::Price}
-		stop
-	if event-inventory's name contains "Kingdom Market":
-		cancel event
-		index of event-slot is 8:
-			close inventory of player
-		index of event-slot is between 10 and 34:
-			set {Commence::%player%::SlotIndex} to index of event-slot
-			{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name} is not set:
-				stop
-			close inventory of player
-			send "<##CB625F>   Are you sure you want to purchase %{Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}'s name ? {Commence::%player%::%{Commence::%player%::SlotIndex}%::Name}%<##CB625F>?"
-			execute player command "/ps %index of event-slot%"
-
-command /warps [<text>] [<player>]:
-	aliases: warp
-	usage: &c /warps
-	description: &7 Views the warps
-	cooldown: 1 second
-	cooldown message: {@cooldownmessage}
-	trigger:
-		close inventory of player
-		wait 1 tick
-		player's world is "Survival3" or "Survival3_nether" or "Survival3_the_end":
-			arg-2 is set:
-				{Commence::%player%::Admin} is true:
-					{Warp::%arg-1%} is set:
-						teleport arg-2 to {Warp::%arg-1%::TP}
-						send ""
-						send "{@commence}"
-						send "&7   You sent %arg-2's display name% to <##D0944D>%uncolored {Warp::%arg-1%}%"
-						stop
-					else:
-						send ""
-						send "{@commence}"
-						send "&c   %arg-1% is not a valid location"
-						stop
-			else if arg-1 is set:
-				{Warp::%arg-1%} is set:
-					teleport player to {Warp::%arg-1%::TP}
-					send ""
-					send "{@commence}"
-					send "&7   You warped to <##D0944D>%uncolored {Warp::%arg-1%}%"
-					stop
-				else:
-					send ""
-					send "{@commence}"
-					send "&c   %arg-1% is not a valid location"
-					stop
-			else:
-				set {Commence::List} to 0
-				loop {Warp::Warps::*}:
-					add 1 to {Commence::List} if loop-value does not contain "Base"
-				loop {Warp::Warps.S::*}:
-					{Commence::%player%::Admin} is true:
-						add 1 to {Commence::List}
-				if {Commence::List} is more than 21:
-					set {_t} to 6
-				else if {Commence::List} is more than 14:
-					set {_t} to 5
-				else if {Commence::List} is more than 7:
-					set {_t} to 4
-				else:
-					set {_t} to 3
-				{Commence::List} is less than 1:
-					send "&c   Sorry, no warps are set right now!"
-					stop
-				set metadata tag "warps" of player to chest inventory with {_t} rows named "&8-==&k|<##D0944D>      Mythical Warps      &8&k|&8==-"
-				set slot 0 of metadata tag "warps" of player to dark gray stained glass pane named "&7"
-				loop 53 times:
-					set slot loop-value of metadata tag "warps" of player to dark gray stained glass pane named "&7"
-				set slot 4 of metadata tag "warps" of player to book named "&8-&k|<##D0944D> Browse Warp Locations &8&k|&8-" with lore "&7" and "&c Hover over warps to view info" and "&4 Click warps to teleport there"
-				set {Commence::List} to 9
-				loop {Warp::Warps::*}:
-					add 1 to {Commence::List} if loop-value does not contain "Base"
-					{Commence::List} is 17:
-						add 2 to {Commence::List}
-					else if {Commence::List} is 26:
-						add 2 to {Commence::List}
-					else if {Commence::List} is 35:
-						add 2 to {Commence::List}
-					else if {Commence::List} is more than 43:
-						stop loop
-					set slot {Commence::List} of metadata tag "warps" of player to glowing paper named "&8-&k|<##D0944D> %loop-value% Warp &8&k|&8-" with lore "&7 Use: <##D0944D>/warp %loop-value%" and "&8 Or: <##D0944D>Click HERE" and "&7 Set by: <##D0944D>%{Warp::%loop-value%::Owner}%" and "&8 Location: {@mythicalrealms}" if loop-value does not contain "Base"
-				loop {Warp::Warps.S::*}:
-					{Commence::%player%::Admin} is true:
-						add 1 to {Commence::List} if loop-value does not contain "Base"
-					{Commence::List} is 17:
-						add 2 to {Commence::List}
-					else if {Commence::List} is 26:
-						add 2 to {Commence::List}
-					else if {Commence::List} is 35:
-						add 2 to {Commence::List}
-					else if {Commence::List} is more than 43:
-						stop loop
-					set slot {Commence::List} of metadata tag "warps" of player to glowing paper named "&8-&k|<##5BAF70> Secret <##D0944D>%loop-value% Warp &8&k|&8-" with lore "&7 Set by: <##D0944D>%{Warp::%loop-value%::Owner}%" and "&8 Location: {@mythicalrealms}"
-				set slot 8 of metadata tag "warps" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
-				open (metadata tag "warps" of player) to player
-
-command /setwarp <text> [<text>]:
-	aliases: createwarp
-	usage: &c /setwarp [name]
-	description: &7 Create a warp
-	permission: commencer.admin
-	cooldown: 1 second
-	permission message: {@permissionmessage}
-	cooldown message: {@cooldownmessage}
-	trigger:
-		{Commence::%player%::Admin} is true:
-			arg-1 is set:
-				arg-2 is set:
-					{Warp::%arg-1%} is set:
-						set {Warp::%arg-1%} to "<##D0944D>%arg-2%"
-						replace every arg-1 in {Warp::Warps.S::*} with arg-2
-						loop {Warp::Warps.S::*}:
-							loop-value contains arg-1:
-								replace loop-value in {Warp::Warps.S::*} with arg-2
-								stop loop
-						send ""
-						send "{@commence}"
-						send "&7   You changed %{Warp::%arg-1%}% to %arg-2%"
-#						clear {Warp::%arg-1%::*}
-						stop
-					set {Warp::%arg-1%::TP} to player's location
-					set {Warp::%arg-1%::Owner} to player's display name
-					set {Warp::%arg-1%} to "<##D0944D>%arg-1%"
-					add arg-1 to {Warp::Warps.S::*}
-					send ""
-					send "{@commence}"
-					send "&7   You created a new SECRET Warp Location"
-					send "&a    Created %{Warp::%arg-1%}%,"
-					send "&a     at %{Warp::%arg-1%::TP}%"
-					stop
-				{Warp::%arg-1%} is set:
-					send ""
-					send "{@commence}"
-					send "&c   %{Warp::%arg-1%}% &calready exists"
-					stop
-				set {Warp::%arg-1%::TP} to player's location
-				set {Warp::%arg-1%::Owner} to player's display name
-				set {Warp::%arg-1%} to "<##D0944D>%arg-1%"
-				add arg-1 to {Warp::Warps::*}
-				send ""
-				send "{@commence}"
-				send "&7   You created a new Warp Location"
-				send "&a    Created %{Warp::%arg-1%}%,"
-				send "&a     at %{Warp::%arg-1%::TP}%"
-
-command /delwarp <text>:
-	usage: &c /delwarp [name]
-	description: &7 Delete a warp
-	permission: commencer.admin
-	cooldown: 1 second
-	permission message: {@permissionmessage}
-	cooldown message: {@cooldownmessage}
-	trigger:
-		{Commence::%player%::Admin} is true:
-			arg-1 is set:
-				loop {Warp::Warps.S::*}:
-					arg-1 is loop-value:
-						send ""
-						send "{@commence}"
-						send "&7   You deleted a SECRET Warp Location"
-						send "&c    Removed %{Warp::%arg-1%}%,"
-						send "&c     at %{Warp::%arg-1%::TP}%"
-						clear {Warp::%arg-1%::TP}
-						clear {Warp::%arg-1%::Owner}
-						remove loop-value from {Warp::Warps::*}
-						remove loop-value from {Warp::Warps.S::*}
-						clear {Warp::%arg-1%}
-						stop loop
-						stop
-				loop {Warp::Warps::*}:
-					loop-value is arg-1:
-						send ""
-						send "{@commence}"
-						send "&7   You deleted a Warp Location"
-						send "&c    Removed %{Warp::%arg-1%}%,"
-						send "&c     at %{Warp::%arg-1%::TP}%"
-						clear {Warp::%arg-1%::TP}
-						clear {Warp::%arg-1%::Owner}
-						remove loop-value from {Warp::Warps::*}
-						remove loop-value from {Warp::Warps.S::*}
-						clear {Warp::%arg-1%}
-
-command /homes [<text>] [<offlineplayer>]:
-	aliases: /home, /sethome, /delhome, /createhome, /removehome
-	usage: &c/homes
-	description: &7Manage Your Homes
-	cooldown: 1 second
-	cooldown message: {@cooldownmessage}
-	trigger:
-		player's world is "Survival3" or "Survival3_nether" or "Survival3_the_end":
-			arg-2 is set:
-				{Commence::%player%::Inspector} is true:
-					{Commence::%arg-2%::Homes::%arg-1%} is set:
-						teleport player to {Commence::%arg-2%::Homes::%arg-1%::TP}
-						send ""
-						send "{@storyhomes}"
-						send " {@info} <##00C889>You teleported to %arg-2's display name ? arg-2%&7's %{Commence::%arg-2%::Homes::%arg-1%}%"
-						send " {@info} %arg-2's display name ? arg-2%'s Homes: (%amount of {Commence::%arg-2%::Homes::All::*}%)"
-						send " {@info} %{Commence::%arg-2%::Homes::All::*}%"
-						stop
-					else:
-						send ""
-						send "{@storyhomes}"
-						send " {@info} %arg-1% is Not a Set Home by %arg-2's display name ? arg-2%"
-						stop
-			else if command is "sethome" or "createhome":
-				arg-1 is set:
-					loop {Commence::%player%::Homes::All::*}:
-						uncolored loop-value contains uncolored {Commence::%player%::Homes::%arg-1%}:
-							send ""
-							send "{@storyhomes}"
-							send " {@info} You Already Have a Home Called %arg-1%"
-							stop
-					amount of {Commence::%player%::Homes::All::*} is more than 19:
-						send ""
-						send "{@storyhomes}"
-						send " {@info} You Already Have Too Many Homes"
-						stop
-					set {Commence::%player%::Homes::%arg-1%::TP} to player's location
-					set {Commence::%player%::Homes::%arg-1%} to "<##D0944D>%arg-1%"
-					add {Commence::%player%::Homes::%arg-1%} to {Commence::%player%::Homes::All::*}
-					send ""
-					send "{@storyhomes}"
-					send " {@info} <##00C889>You Created a New Home Called %{Commence::%player%::Homes::%arg-1%}%"
-					send " {@info} <##00C889> in {@mythicalrealms}<##00C889> at %{Commence::%player%::Homes::%arg-1%::TP}%<##00C889>!"
-					stop
-			else if command is "delhome" or "removehome":
-				arg-1 is set:
-					stop if {Commence::%player%::Homes::%arg-1%} is not set
-					send ""
-					send "{@storyhomes}"
-					send " {@info} You Removed Your Home %{Commence::%player%::Homes::%arg-1%}%"
-					remove {Commence::%player%::Homes::%arg-1%} from {Commence::%player%::Homes::*} and {Commence::%player%::Homes::All::*}
-					clear {Commence::%player%::Homes::%arg-1%}
-					clear {Commence::%player%::Homes::%arg-1%::TP}
-					stop
-				else:
-					send ""
-					send "{@storyhomes}"
-					send " {@info} You Must Specify a Home to Remove"
-					stop
-			else if arg-1 is set:
-				{Commence::%player%::Homes::%arg-1%} is set:
-					teleport player to {Commence::%player%::Homes::%arg-1%::TP}
-					send ""
-					send "{@storyhomes}"
-					send " {@info} <##00C889>You Teleported to %{Commence::%player%::Homes::%arg-1%}%"
-					stop
-				else:
-					send ""
-					send "{@storyhomes}"
-					send " {@info} %arg-1% is Not a Set Home by You"
-					stop
-			else:
-				set {_tr} to 4 if amount of {Commence::%player%::Homes::All::*} is more than 6
-				set {_tr} to 5 if amount of {Commence::%player%::Homes::All::*} is more than 13
-				set {_tr} to 6 if amount of {Commence::%player%::Homes::All::*} is more than 20
-				set {_tr} to 3 if amount of {Commence::%player%::Homes::All::*} is less than 7
-				set metadata tag "homes" of player to chest inventory with {_tr} rows named "&8-==&k|<##D0944D>      <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>Homes      &8&k|&8==-"
-				set slot 0 of metadata tag "homes" of player to dark gray stained glass pane named "&7"
-				loop 53 times:
-					set slot loop-value of metadata tag "homes" of player to dark gray stained glass pane named "&7"
-					clear {Commence::%player%::%loop-value%::Name}
-					clear {Commence::%player%::%loop-value%::Owner}
-					clear {Commence::%player%::%loop-value%::Price}
-				set slot 4 of metadata tag "homes" of player to book named "&8-&k|<##D0944D> Browse Your Homes &8&k|&8-" with lore "&7 Type /delhome [name] to remove" and "&7" and "&c Hover over homes to view info" and "&4 Click homes to teleport there"
-				set slot 10 of metadata tag "homes" of player to glowing compass named "&8-&k|<##D0944D> Create a New Home &8&k|&8-" with lore "&7 Info: <##D0944D>Set to your location" and "&7 " and "<##00C889>  Click Here to Create a Home"
-				amount of {Commence::%player%::Homes::All::*} is less than 1:
-					set slot 13 of metadata tag "homes" of player to glowing compass named "&8-&k|<##D0944D> Create a New Home &8&k|&8-" with lore "&7 Info: <##D0944D>Set to your location" and "&7 " and "<##00C889>  Click Here to Create a Home"
-					set slot 8 of metadata tag "homes" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
-					open (metadata tag "homes" of player) to player
-					stop
-				set {Commence::List} to 10
-				loop {Commence::%player%::Homes::All::*}:
-					add 1 to {Commence::List}
-					add 2 to {Commence::List} if {Commence::List} is 17 or 26 or 35
-					stop loop if {Commence::List} is more than 43
-					set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-					set slot {Commence::List} of metadata tag "homes" of player to (oak wood or spruce wood or dark oak wood or mangrove wood or acacia wood) named "&8-&k|<##D0944D> Teleport to %loop-value% &8&k|&8-" with lore "&7 Location: <##D0944D>{@mythicalrealms}" and "&7 " and "<##00C889>  Click Here to Teleport to %loop-value%"
-				set slot 8 of metadata tag "homes" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
-				open (metadata tag "homes" of player) to player
-				stop
-
-command /kingdoms [<text>] [<integer>]:
-	aliases: /kingdom, /createkingdom, /removekingdom, /joinkingdom, /leavekingdom, /lk, listkingdoms, /kingdomsettings, /kingdommarket, /kingdomsell, /pp, /positionpoints, /epp, /epicpositionpoints
-	usage: <##CB625F> /kingdom
-	description: &7 Views Server Kingdoms
-#	cooldown: 1 second
-#	cooldown message: {@cooldownmessage}
-	trigger:
-		close inventory of player
-		wait 1 tick
-		player's world is "Survival3" or "Survival3_nether" or "Survival3_the_end":
-			{Commence::%player%::Story::Form} is set:
-				command contains "epp" or "epicpositionpoints":
-					{Commence::%player%::Story::Position} is less than 4:
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You can't currently promote any players"
-						stop
-					else if {Commence::%player%::Story::Position} is more than 1:
-						loop {Commence::Story::AllPlayers::*}:
-							add 1 to {Commence::List}
-						if {Commence::List} is more than 21:
-							set {_t} to 6
-						else if {Commence::List} is more than 14:
-							set {_t} to 5
-						else if {Commence::List} is more than 7:
-							set {_t} to 4
-						else:
-							set {_t} to 3
-						set metadata tag "epicpositionpoints" of player to chest inventory with {_t} rows named "&8-==&k|<##D0944D>      Position Points      &8&k|&8==-"
-						set slot 0 of metadata tag "epicpositionpoints" of player to dark gray stained glass pane named "&7"
-						loop 53 times:
-							set slot loop-value of metadata tag "epicpositionpoints" of player to dark gray stained glass pane named "&7"
-						set slot 4 of metadata tag "epicpositionpoints" of player to book named "&8-&k|<##D0944D> Give Position Points &8&k|&8-" with lore "<##CB625F> Hover over players to view info" and "&4 Click players to promote them"
-						set {Commence::List} to 9
-						loop {Commence::Story::AllPlayers::*}:
-							loop-value is not player:
-								{Commence::%loop-value%::Story::Position} is less than {Commence::%player%::Story::Position}:
-									add 1 to {Commence::List}
-									{Commence::List} is 17:
-										add 2 to {Commence::List}
-									else if {Commence::List} is 26:
-										add 2 to {Commence::List}
-									else if {Commence::List} is 35:
-										add 2 to {Commence::List}
-									else if {Commence::List} is more than 43:
-										stop loop
-									{Commence::List} is 9:
-										send "<##CB625F>   No player's are able to be promoted"
-										stop
-									set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-									{Commence::%player%::NPC::Temp} is set:
-										set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
-									else:
-										set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
-									set {_tp} to loop-value
-									set slot {Commence::List} of metadata tag "epicpositionpoints" of player to skull of {_tp} named "&8-&k|<##D0944D> %{Commence::%{_tp}%::Rank}%%{_tp}'s display name ? {_tp}% &8&k|&8-" with lore "&8 Rank: %{Commence::%{_tp}%::Story::Rank}%" and "&8 Form: %{Commence::%{_tp}%::Story::Form}%" and "&7 Position: %{Commence::%{_tp}%::Story::Position}%" and "&8 Epic Position: %{Commence::%{_tp}%::Story::EpicPosition}%" and "&7" and "<##00608D> Promote This Player by Clicking Here"
-						set slot 8 of metadata tag "epicpositionpoints" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
-						open (metadata tag "epicpositionpoints" of player) to player
-						stop
-				command contains "pp" or "positionpoints":
-					{Commence::%player%::Story::Kingdom} is "None":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You aren't part of a Kingdom"
-						stop
-					{Commence::%player%::Story::Position} is 1:
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You can't currently promote any players"
-						stop
-					else if {Commence::%player%::Story::Position} is more than 1:
-						loop {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Members::*}:
-							add 1 to {Commence::List}
-						if {Commence::List} is more than 21:
-							set {_t} to 6
-						else if {Commence::List} is more than 14:
-							set {_t} to 5
-						else if {Commence::List} is more than 7:
-							set {_t} to 4
-						else:
-							set {_t} to 3
-						set metadata tag "positionpoints" of player to chest inventory with {_t} rows named "&8-==&k|<##D0944D>      Position Points      &8&k|&8==-"
-						set slot 0 of metadata tag "positionpoints" of player to dark gray stained glass pane named "&7"
-						loop 53 times:
-							set slot loop-value of metadata tag "positionpoints" of player to dark gray stained glass pane named "&7"
-						set slot 4 of metadata tag "positionpoints" of player to book named "&8-&k|<##D0944D> Give Position Points &8&k|&8-" with lore "<##CB625F> Hover over players to view info" and "&4 Click players to promote them"
-						set {Commence::List} to 9
-						loop {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Members::*}:
-							loop-value is not player:
-								{Commence::%loop-value%::Story::Position} is less than {Commence::%player%::Story::Position}:
-									add 1 to {Commence::List}
-									{Commence::List} is 17:
-										add 2 to {Commence::List}
-									else if {Commence::List} is 26:
-										add 2 to {Commence::List}
-									else if {Commence::List} is 35:
-										add 2 to {Commence::List}
-									else if {Commence::List} is more than 43:
-										stop loop
-									{Commence::List} is 10:
-										send "<##CB625F>   No player's are able to be promoted in %{Commence::%player%::Story::Kingdom}%"
-										stop
-									set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-									{Commence::%player%::NPC::Temp} is set:
-										set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
-									else:
-										set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
-									set {_tp} to loop-value
-									set slot {Commence::List} of metadata tag "positionpoints" of player to skull of {_tp} named "&8-&k|<##D0944D> %{Commence::%{_tp}%::Rank}%%{_tp}'s display name ? {_tp}% &8&k|&8-" with lore "&8 Rank: %{Commence::%{_tp}%::Story::Rank}%" and "&8 Form: %{Commence::%{_tp}%::Story::Form}%" and "&7 Position: %{Commence::%{_tp}%::Story::Position}%" and "&8 Epic Position: %{Commence::%{_tp}%::Story::EpicPosition}%" and "&7" and "<##00608D> Promote This Player by Clicking Here"
-						set slot 8 of metadata tag "positionpoints" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
-						open (metadata tag "positionpoints" of player) to player
-						stop
-				command contains "sell":
-					{Commence::%player%::Story::Kingdom} is "None":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You aren't part of a Kingdom"
-						stop
-					{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} is "Owner":
-						uncolored {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner} is not player:
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You don't own the %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}% %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-							stop
-					arg-1 is "hand":
-						send ""
-						send "{@storykingdoms}"
-						player's tool is air:
-							send "<##CB625F>   You can only sell blocks or items"
-							stop
-						name of player's tool is set:
-							send "<##CB625F>   Sorry, selling named items is not supported"
-							send "<##CB625F>   This feature will be coming soon:)"
-							stop
-						set {_tt} to player's tool
-						remove player's tool from player
-						set {_tt} to "%{_tt}%" in proper case
-						send "<##CB625F>   You decided to sell %{_tt}% for $%arg-2%" if arg-2 is set
-						send "<##CB625F>   You decided to sell %{_tt}% for FREE" if arg-2 is not set
-						send "<##CB625F>   Manage it in /kingdommarket"
-						add {_tt} parsed as item to {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market::*}
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market::%{_tt} parsed as item%::Price} to arg-2 if arg-2 is set
-						stop
-#					else:
-				command contains "market":
-					{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} is not true:
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%'s Market is Disabled"
-						stop
-					else:
-						set {_tk} to {Commence::%player%::Story::Kingdom} if {Commence::%player%::Story::Kingdom} is not "None"
-						{Commence::Kingdoms::%{_tk}%::Global} is "Private":
-							{Commence::%player%::Story::Kingdom} is not uncolored {Commence::Kingdoms::%arg-1 ? {Commence::%player%::Story::Kingdom}%}:
-								send ""
-								send "{@storykingdoms}"
-								send "<##CB625F>   You aren't part of %{Commence::Kingdoms::%arg-1 ? {Commence::%player%::Story::Kingdom}%} ? arg-1%<##CB625F>'s Market"
-								stop
-						set {_tk} to arg-1 if arg-1 is set
-						loop {Commence::Kingdoms::*}:
-							uncolored loop-value contains uncolored arg-1:
-								set {_tk} to uncolored loop-value
-						set {Commence::List} to 0
-						loop {Commence::Kingdoms::%{_tk}%::Market::*}:
-							add 1 to {Commence::List}
-						if {Commence::List} is more than 21:
-							set {_t} to 6
-						else if {Commence::List} is more than 14:
-							set {_t} to 5
-						else if {Commence::List} is more than 7:
-							set {_t} to 4
-						else:
-							set {_t} to 3
-						{Commence::List} is less than 1:
-							{Commence::Kingdoms::%{_tk}%} is not set:
-								send ""
-								send "{@storykingdoms}"
-								send "<##CB625F>   You aren't part of a Kingdom" if arg-1 is not set
-								send "<##CB625F>   %arg-1% is not a valid Kingdom" if arg-1 is set
-								stop
-							send "<##CB625F>   There are no items in the %{Commence::Kingdoms::%{_tk}%}% %{Commence::Kingdoms::%{_tk}%::Type}% Market"
-							stop
-						set metadata tag "%{_tk}%market" of player to chest inventory with {_t} rows named "&8-==&k|<##D0944D>      Kingdom Market     &8&k|&8==-"
-						set slot 0 of metadata tag "%{_tk}%market" of player to dark gray stained glass pane named "&7"
-						loop 53 times:
-							set slot loop-value of metadata tag "%{_tk}%market" of player to dark gray stained glass pane named "&7"
-						set slot 4 of metadata tag "%{_tk}%market" of player to book named "&8-&k|<##D0944D> Kingdom Market &8&k|&8-" with lore "<##CB625F> Hover over items to view info" and "&4 Click items to purchase them"
-						set {Commence::List} to 9
-						loop {Commence::Kingdoms::%{_tk}%::Market::*}:
-							add 1 to {Commence::List}
-							{Commence::List} is 17:
-								add 2 to {Commence::List}
-							else if {Commence::List} is 26:
-								add 2 to {Commence::List}
-							else if {Commence::List} is 35:
-								add 2 to {Commence::List}
-							else if {Commence::List} is more than 43:
-								stop loop
-							set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-							{Commence::%player%::NPC::Temp} is set:
-								set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
-							else:
-								set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
-							set {Commence::%player%::%{Commence::List}%::Price} to {Commence::Kingdoms::%{_tk}%::Market::%loop-value%::Price} ? 0
-							set {Commence::%player%::%{Commence::List}%::Time} to 12
-							set slot {Commence::List} of metadata tag "%{_tk}%market" of player to loop-value named "&8-&k|<##D0944D> For Sale: %loop-value% &8&k|&8-" with lore "&8 Item Type: %loop-value's type%" and "&7 Seller: %{Commence::%player%::%{Commence::List}%::Owner}%" and "&8 Price: $%{Commence::%player%::%{Commence::List}%::Price} ? 0%" and "&7 Time Left: %{Commence::%player%::%{Commence::List}%::Time} ? 0% Hours"
-						set slot 8 of metadata tag "%{_tk}%market" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
-						open (metadata tag "%{_tk}%market" of player) to player
-						stop
-				command contains "settings":
-					arg-1 is "newname":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   Changing Kingdom Names is Coming Soon"
-						stop
-					arg-1 is "pospoint":
-						execute player command "/pp"
-						stop
-					arg-1 is "newbalance":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   Kingdom Bank is Coming Soon"
-						stop
-					arg-1 is "taxpercentage":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   Tax and Land Claims are Coming Soon"
-						stop
-					arg-1 is "event":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   Kingdom Events are Coming Soon"
-						stop
-					arg-1 is "loc":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						block under player is air or water or lava:
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   Try a Safer Location Before Trying Again"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::TP} to player's location
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   The TP location for %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now at %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::TP}%"
-						stop
-					arg-1 is "public":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} to "Public"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now a Public %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					else if arg-1 is "private":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} to "Private"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now a Private %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					else if arg-1 is "faction":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} to "Faction"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now a Faction %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					else if arg-1 is "roleplay":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} to "Roleplay"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now a Roleplay %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					arg-1 is "ally":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} to "Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is "Never"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} to "Request" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is "Always"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} to "Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is "Request"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now a %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule}% Ally %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					arg-1 is "war":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} to "Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is "Never"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} to "Request" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is "Always"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} to "Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is "Request"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> is now a %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule}% War %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					arg-1 is "claim":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} to "Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is "Never"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} to "Apprval" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is "Always"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} to "Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is "Approval"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##00C889>   Player's in %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> can %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule}% Claim Land"
-						stop
-					arg-1 is "market":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} is true:
-							set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} to false
-						else:
-							set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} to true
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> Market is now %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market}%"
-						stop
-					arg-1 is "global":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} is "Private":
-							set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} to "Global"
-						else:
-							set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} to "Private"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> Market is now %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global}%"
-						stop
-					arg-1 is "sell":
-						{Commence::%player%::Story::Kingdom} is "None":
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You aren't part of a Kingdom"
-							stop
-						{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} is "Members":
-							set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} to "Owner"
-						else:
-							set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} to "Members"
-						send ""
-						send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-						send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule}% can sell items in %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889>'s Market"
-						stop
-					{Commence::%player%::Story::Kingdom} is "None":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You aren't part of a Kingdom"
-						stop
-					uncolored {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner} is not player:
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You don't own the %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}% %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						stop
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::PosPoints} to 1 if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::PosPoints} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} to "Public" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} to "Request" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} to "Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} to "Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} to "Members" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} to false if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} is not set
-					set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} to "Private" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} is not set
-					send ""
-					send "&8 <##70797C>(<##CC3B3B>&l!<##70797C>) <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% &8Settings <##70797C>(<##CC3B3B>&l!<##70797C>)"
-					send "<##D0944D> "
-					send "<##00C889>   Hover Over the Green Options Below to View Info"
-					send "<##00C889>   Click the Green Options Below to Change Them"
-					send "<##D0944D> "
-					send "<##D0944D>   %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%'s Name: <tooltip:<##D0944D>You can change the name by clicking here and typing the new name in chat.><run command:/kingdomsettings newname><##00C889>%{Commence::%player%::Story::Kingdom}%"
-					send "<##D0944D>   TP Location: <tooltip:<##D0944D>You can change the location of where you're teleported for the Kingdom by clicking here.><run command:/kingdomsettings loc><##00C889>Set and Ready"
-					send "<##D0944D>   Position Points Available: <tooltip:<##D0944D>You can give out position points to players in your Kingdom to rank them up to the next rank, allowing them to perform certain jobs or tasks for you and also allows for new commands, more land claims, higher tax percentage, more grants, higher prestige and more power.><run command:/kingdomsettings pospoint><##00C889>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::PosPoints}%"
-					send "<##D0944D>   Balance: <tooltip:<##D0944D>You can change the balance by clicking here and typing the new number in chat. You must have the funds if attempting to add more.><run command:/kingdomsettings newbalance><##00C889>$%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Funds}%"
-					send "<##D0944D>   Tax Percentage: <tooltip:<##D0944D>You can change the tax percentage by clicking here and typing the new number in chat. It must be reasonable.><run command:/kingdomsettings taxpercentage><##00C889>7.5%%"
-					send "<##D0944D>   Upcoming Events: <tooltip:<##D0944D>You can plan events for your community to participate in.><run command:/kingdomsettings event><##00C889>None"
-					send "<##D0944D>   Alliance Rule: <tooltip:<##D0944D>You can change whether you always ally, ally on request or never ally with other Kingdoms.><run command:/kingdomsettings ally><##00C889>Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is "Always"
-					send "<##D0944D>   Alliance Rule: <tooltip:<##D0944D>You can change whether you always ally, ally on request or never ally with other Kingdoms.><run command:/kingdomsettings ally><##00C889>Request" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is "Request"
-					send "<##D0944D>   Alliance Rule: <tooltip:<##D0944D>You can change whether you always ally, ally on request or never ally with other Kingdoms.><run command:/kingdomsettings ally><##00C889>Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::AllyRule} is "Never"
-					send "<##D0944D>   War Rule: <tooltip:<##D0944D>You can change whether you always fight, fight on request, or never fight with other Kingdoms.><run command:/kingdomsettings war><##00C889>Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is "Always"
-					send "<##D0944D>   War Rule: <tooltip:<##D0944D>You can change whether you always fight, fight on request, or never fight with other Kingdoms.><run command:/kingdomsettings war><##00C889>Request" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is "Request"
-					send "<##D0944D>   War Rule: <tooltip:<##D0944D>You can change whether you always fight, fight on request, or never fight with other Kingdoms.><run command:/kingdomsettings war><##00C889>Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::WarRule} is "Never"
-					send "<##D0944D>   Land Claim Rule: <tooltip:<##D0944D>You can choose whether the land in the Kingdom can be purchased and claimed by members.><run command:/kingdomsettings claim><##00C889>Always" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is "Always"
-					send "<##D0944D>   Land Claim Rule: <tooltip:<##D0944D>You can choose whether the land in the Kingdom can be purchased and claimed by members.><run command:/kingdomsettings claim><##00C889>With Approval" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is "Approval"
-					send "<##D0944D>   Land Claim Rule: <tooltip:<##D0944D>You can choose whether the land in the Kingdom can be purchased and claimed by members.><run command:/kingdomsettings claim><##00C889>Never" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::ClaimRule} is "Never"
-					send "<##D0944D>   Privacy: <tooltip:<##D0944D>Your Kingdom is currently OPEN to the public. Anyone can join.><run command:/kingdomsettings private><##00C889>Public" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} is "Public"
-					send "<##D0944D>   Privacy: <tooltip:<##D0944D>Your Kingdom is currently CLOSED to the public. Nobody can join.><run command:/kingdomsettings faction><##00C889>Private" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} is "Private"
-					send "<##D0944D>   Privacy: <tooltip:<##D0944D>Your Kingdom is currently OPEN to Faction players only.><run command:/kingdomsettings roleplay><##00C889>Faction" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} is "Faction"
-					send "<##D0944D>   Privacy: <tooltip:<##D0944D>Your Kingdom is currently OPEN to Roleplay players only. Nobody can join.><run command:/kingdomsettings public><##00C889>Roleplay" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Privacy} is "Roleplay"
-					send "<##D0944D>   Kingdom Market: <tooltip:<##D0944D>You can allow your players to contribute to your Kingdom Market, which works like an auction house.><run command:/kingdomsettings market><##00C889>Disabled" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} is false
-					send "<##D0944D>   Kingdom Market: <tooltip:<##D0944D>You can allow your players to contribute to your Kingdom Market, which works like an auction house.><run command:/kingdomsettings market><##00C889>Enabled" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Market} is true
-					send "<##D0944D>   Global Market: <tooltip:<##D0944D>You can choose to allow only players in your Kingdom to purchase in your Market, or allow anyone on the server to purchase in your Market.><run command:/kingdomsettings global><##00C889>Disabled" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} is "Private"
-					send "<##D0944D>   Global Market: <tooltip:<##D0944D>You can choose to allow only players in your Kingdom to purchase in your Market, or allow anyone on the server to purchase in your Market.><run command:/kingdomsettings global><##00C889>Global" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Global} is "Global"
-					send "<##D0944D>   Selling Rule: <tooltip:<##D0944D>You can choose whether the players can sell items in the Market, or just the owner, you.><run command:/kingdomsettings sell><##00C889>Members" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} is "Members"
-					send "<##D0944D>   Selling Rule: <tooltip:<##D0944D>You can choose whether the players can sell items in the Market, or just the owner, you.><run command:/kingdomsettings sell><##00C889>Owner" if {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::SellRule} is "Owner"
-					send "<##D0944D> "
-					send "<tooltip:<##D0944D>WARNING: Clicking here will delete your Kingdom and all related aspects!><run command:/removekingdom><##CB625F>   Delete %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%"
-					send "<##D0944D> "
-					stop
-				command contains "add" or "create":
-					{Commence::%player%::Story::Kingdom} is not "None":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You're Already a Part of The %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##CB625F> Kingdom"
-						stop
-					arg-1 is set:
-						block under player is air or water or lava:
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   Try a Safer Location Before Trying Again"
-							stop
-						player's balance is less than 11000:
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   You must have at least &a$10,000 + $1,000 Deposit<##CB625F> to create a Kingdom"
-							stop
-						remove 11000 from player's balance
-						set {Commence::%player%::Story::Kingdom} to arg-1 in proper case
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%} to arg-1 in proper case
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::TP} to player's location
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type} to "<##D0944D>Hamlet"
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Funds} to 1000
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner} to player's display name
-						set {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%} to "<##8ACCBE>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%"
-						add {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%} to {Commence::Kingdoms::List::*}
-						add player to {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Members::*}
-						send ""
-						send "{@storykingdoms}"
-						send "<##00C889>   You Just Created a New Kingdom"
-						send "<##00C889>    And it Cost you &a$11,000"
-						send "<##00C889>    Called The %{Commence::Kingdoms::%arg-1 in proper case%}%<##00C889> %{Commence::Kingdoms::%arg-1 in proper case%::Type}%"
-						send "<##00C889>     with Owner: %{Commence::Kingdoms::%arg-1 in proper case%::Owner}%"
-						send "<##00C889>     and Type: %{Commence::Kingdoms::%arg-1 in proper case%::Type}%"
-						send "<##00C889>     at %{Commence::Kingdoms::%arg-1 in proper case%::TP}%"
-						send "<##00C889> "
-						send "<##00C889>  Manage it in <##D0944D>/kingdoms"
-						stop
-				else if command contains "del" or "remove":
-					uncolored {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner} is player:
-#						{Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%} is not set:
-#							stop
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   You removed the %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##CB625F> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-						remove {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%} from {Commence::Kingdoms::List::*}
-						remove {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%} from {Commence::Kingdoms::*}
-						clear {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::*}
-						set {Commence::%player%::Story::Kingdom} to "None"
-						stop
-					else:
-						arg-1 is set:
-							send "{@storykingdoms}"
-							send "<##CB625F>   You must own %{Commence::%{Commence::Kingdoms::%arg-1%::Owner}%::Story::Kingdom} ? arg-1% to remove it (%{Commence::Kingdoms::%arg-1%::Owner}%<##CB625F>)" if {Commence::Kingdoms::%arg-1%::Owner} is set
-							send "<##CB625F>   %arg-1% is not a valid Kingdom" if {Commence::Kingdoms::%arg-1%::Owner} is not set
-							stop
-			command contains "list":
-				set {Commence::List} to 0
-				loop {Commence::Kingdoms::List::*}:
-					add 1 to {Commence::List}
-				if {Commence::List} is more than 21:
-					set {_t} to 6
-				else if {Commence::List} is more than 14:
-					set {_t} to 5
-				else if {Commence::List} is more than 7:
-					set {_t} to 4
-				else:
-					set {_t} to 3
-				set metadata tag "kingdoms" of player to chest inventory with {_t} rows named "&8-==&k|<##D0944D>    Mythical Kingdoms    &8&k|&8==-"
-				set slot 0 of metadata tag "kingdoms" of player to dark gray stained glass pane named "&7"
-				loop 53 times:
-					set slot loop-value of metadata tag "kingdoms" of player to dark gray stained glass pane named "&7"
-				set slot 4 of metadata tag "kingdoms" of player to book named "&8-&k|<##D0944D> Browse Kingdoms &8&k|&8-" with lore "&7" and "<##CB625F> Hover over kingdoms to view info" and "&4 Click kingdoms to teleport there"
-				set {Commence::List} to 9
-				loop {Commence::Kingdoms::List::*}:
-					add 1 to {Commence::List}
-					{Commence::List} is 17:
-						add 2 to {Commence::List}
-					else if {Commence::List} is 26:
-						add 2 to {Commence::List}
-					else if {Commence::List} is 35:
-						add 2 to {Commence::List}
-					{Commence::List} is less than 10:
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   There are no Kingdom's available to Join right now"
-						send "<##CB625F>   Why don't you make one? Type <##D0944D>/createkingdom [name]"
-						stop
-					set slot {Commence::List} of metadata tag "kingdoms" of player to glowing paper named "&8-&k|<##D0944D> The %loop-value%<##D0944D> %{Commence::Kingdoms::%uncolored loop-value%::Type}%&8&k|&8-" with lore "&7" and "&7 Owner: <##D0944D>%{Commence::Kingdoms::%uncolored loop-value%::Owner}%" and "&8 Type: <##D0944D>%{Commence::Kingdoms::%uncolored loop-value%::Type}%" and "&7 Location: {@mythicalrealms}" and "&7"
-				set slot 8 of metadata tag "kingdoms" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
-				open (metadata tag "kingdoms" of player) to player
-				stop
-			command contains "join":
-				{Commence::%player%::Story::Kingdom} is not "None":
-					send ""
-					send "{@storykingdoms}"
-					send "<##CB625F>   You're Already a Part of The %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##CB625F> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%"
-					stop
-				{Commence::Kingdoms::%arg-1%} is set:
-					{Commence::Kingdoms::%arg-1%::Privacy} is not "Public":
-						send ""
-						send "{@storykingdoms}"
-						send "<##CB625F>   The %{Commence::Kingdoms::%arg-1%}% %{Commence::Kingdoms::%arg-1%::Type}% <##CB625F>is not accepting new players to join"
-						stop
-					set {Commence::%player%::Story::Kingdom} to uncolored {Commence::Kingdoms::%arg-1%}
-					add player to {Commence::Kingdoms::%arg-1%::Members::*}
-					send ""
-					send "{@storykingdoms}"
-					send "<##00C889>   You Just Joined a Kingdom"
-					send "<##00C889>   Called The %{Commence::Kingdoms::%arg-1%}%<##00C889> %{Commence::Kingdoms::%arg-1%::Type}%"
-					send "<##00C889>    with Owner: %{Commence::Kingdoms::%arg-1%::Owner}%"
-					send "<##00C889>    and Type: %{Commence::Kingdoms::%arg-1%::Type}%"
-					send "<##00C889>    in %{Commence::Kingdoms::%arg-1%::TP}'s world%"
-					send "<##00C889> "
-					send "<##CB625F>   Manage it in <##D0944D>/kingdoms"
-					stop
-				else:
-					send ""
-					send "{@storykingdoms}"
-					send "<##CB625F>   %arg-1% is not a valid Kingdom"
-					stop
-			command contains "leave":
-				uncolored {Commence::Kingdoms::%arg-1 ? uncolored {Commence::%player%::Story::Kingdom}%::Owner} is player:
-					send ""
-					send "{@storykingdoms}"
-					send "<##CB625F>   You're the Owner and Can't Leave The %{Commence::Kingdoms::%arg-1 ? uncolored {Commence::%player%::Story::Kingdom}%}%<##CB625F> %{Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%::Type}%"
-					stop
-				{Commence::%player%::Story::Kingdom} is not "None":
-					send ""
-					send "{@storykingdoms}"
-					send "<##00C889>   You Just Left The %{Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%}%<##00C889> %{Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%::Type}%"
-					loop {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Members::*}:
-						remove loop-value from {Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Members::*} if loop-value is player
-					set {Commence::%player%::Story::Kingdom} to "None"
-					stop
-				else:
-					arg-1 is not set:
-						stop
-					send ""
-					send "{@storykingdoms}"
-					send "<##CB625F>   You Aren't a Part of The %arg-1%<##CB625F> %{Commence::Kingdoms::%arg-1%::Type}%"
-					stop
-			arg-1 is set:
-				{Commence::Kingdoms::%arg-1%} is set:
-					{Commence::Kingdoms::%arg-1%::Privacy} is not "Public":
-						arg-1 is not {Commence::%player%::Story::Kingdom}:
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   %{Commence::Kingdoms::%arg-1%}%<##CB625F> is not a Public Kingdom"
-							stop
-					teleport player to {Commence::Kingdoms::%arg-1%::TP}
-					send ""
-					send "{@storykingdoms}"
-					send "&7   You teleported to the %{Commence::Kingdoms::%arg-1%}%&7 %{Commence::Kingdoms::%arg-1%::Type}%"
-					stop
-				else:
-					send ""
-					send "{@storykingdoms}"
-					send "<##CB625F>   %arg-1% is not a valid %{Commence::Kingdoms::%arg-1%::Type}%" if arg-1 is set
-					stop
-			else:
-				set {Commence::List} to 0
-				loop {Commence::Kingdoms::List::*}:
-					add 1 to {Commence::List}
-				if {Commence::List} is more than 21:
-					set {_t} to 6
-				else if {Commence::List} is more than 14:
-					set {_t} to 5
-				else if {Commence::List} is more than 7:
-					set {_t} to 4
-				else:
-					set {_t} to 3
-				set metadata tag "kingdoms" of player to chest inventory with {_t} rows named "&8-==&k|<##D0944D>    Mythical Kingdoms    &8&k|&8==-"
-				set slot 0 of metadata tag "kingdoms" of player to dark gray stained glass pane named "&7"
-				loop {Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%::Members::*}:
-					set {_tm} to loop-index parsed as integer
-				{_tm} is more than 7:
-					wait 1 tick
-				else:
-					set {_tm} to "%{Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%::Members::*}%"
-				loop 53 times:
-					set slot loop-value of metadata tag "kingdoms" of player to dark gray stained glass pane named "&7"
-				set slot 4 of metadata tag "kingdoms" of player to book named "&8-&k|<##D0944D> Manage Kingdoms &8&k|&8-" with lore "&7" and "<##CB625F> Hover over paper to view info" and "&4 Click the paper to complete the action" and "&4 Click the ender pearl to teleport to the Kingdom"
-				{Commence::%player%::Story::Kingdom} is not "None":
-					uncolored {Commence::Kingdoms::%uncolored {Commence::%player%::Story::Kingdom}%::Owner} is player:
-						set slot 11 of metadata tag "kingdoms" of player to glowing map named "&8-&k|<##D0944D> The %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##D0944D> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%'s Members &8&k|&8-" with lore "&7 Owner: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner}%" and "&8 Members: <##D0944D>%{_tm}%" and "&7 Location: {@mythicalrealms}" and "&7"
-						set slot 15 of metadata tag "kingdoms" of player to glowing map named "&8-&k|<##CB625F> View the %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##CB625F> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% Settings &8&k|&8-" with lore "&7" and "&7 Owner: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner}%" and "&8 Type: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%" and "&7 Location: {@mythicalrealms}" and "&7" and "<##00608D> View Settings by Clicking <##CB625F>HERE" and "&7"
-					set slot 12 of metadata tag "kingdoms" of player to glowing paper named "&8-&k|<##D0944D> View All Available Kingdoms &8&k|&8-" with lore "&7" and "&7 View: <##D0944D>by Clicking HERE" and "&7  or: <##D0944D>type /listkingdom" and "&7" and "<##00608D> View List by Clicking <##00C889>HERE" and "&7"
-					set slot 13 of metadata tag "kingdoms" of player to glowing ender pearl named "&8-&k|<##D0944D> The %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##D0944D> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% &8&k|&8-" with lore "&7" and "&7 Owner: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner}%" and "&8 Members: <##D0944D>%{_tm}%" and "&7 Money: <##D0944D>$%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Funds}%" and "&8 Type: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%" and "&7 Location: {@mythicalrealms}" and "&7" and "<##00608D> Teleport by Clicking <##CB625F>HERE" and "&7"
-					set slot 14 of metadata tag "kingdoms" of player to glowing paper named "&8-&k|<##CB625F> Leave the %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%}%<##CB625F> %{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}% &8&k|&8-" with lore "&7" and "&7 Owner: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Owner}%" and "&8 Type: <##D0944D>%{Commence::Kingdoms::%{Commence::%player%::Story::Kingdom}%::Type}%" and "&7 Location: {@mythicalrealms}" and "&7" and "<##00608D> Leave by Clicking <##CB625F>HERE"
-					set slot 8 of metadata tag "kingdoms" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
-					open (metadata tag "kingdoms" of player) to player
-					stop
-				else:
-					set {Commence::List} to 9
-					loop {Commence::Kingdoms::List::*}:
-						add 1 to {Commence::List}
-						{Commence::List} is 17:
-							add 2 to {Commence::List}
-						else if {Commence::List} is 26:
-							add 2 to {Commence::List}
-						else if {Commence::List} is 35:
-							add 2 to {Commence::List}
-						{Commence::List} is less than 10:
-							send ""
-							send "{@storykingdoms}"
-							send "<##CB625F>   There are no Kingdom's available to Join right now"
-							send "<##CB625F>   Why don't you make one? Type <##D0944D>/createkingdom [name]"
-							stop
-						set {Commence::%player%::Kingdom%{Commence::List}%::Name} to loop-value
-						set slot {Commence::List} of metadata tag "kingdoms" of player to glowing paper named "&8-&k|<##D0944D> The %loop-value%<##D0944D> %{Commence::Kingdoms::%uncolored loop-value%::Type}%&8&k|&8-" with lore "&7" and "&7 Owner: <##D0944D>%{Commence::Kingdoms::%uncolored loop-value%::Owner}%" and "&8 Type: <##D0944D>%{Commence::Kingdoms::%uncolored loop-value%::Type}%" and "&7 Location: {@mythicalrealms}" and "&7" and "<##00608D> Join by Clicking <##00C889>HERE" and "&7"
-					set slot 8 of metadata tag "kingdoms" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
-					open (metadata tag "kingdoms" of player) to player
-
 #-=-=-=-=-=-=-=-=-=-
 	#REPORTER
 
 command /help:
 	aliases: /helper, /h, /?, /about, /bukkit:help, /bukkit:?, /bukkit:about
-	usage: &c/help
+	usage: <##CB625F>/help
 	description: &7Views Server Kingdoms
 	cooldown: 2 seconds
 	cooldown message: {@cooldownmessage}
@@ -1978,7 +961,7 @@ command /help:
 		send "&7  Hello! What can we help you with today?"
 		send "&7  Click an Option below to choose a help category."
 		send "&7  Or, type something and we'll try our best to help out."
-		send "&7  If you'd like information on the server, use &a/info"
+		send "&7  If you'd like information on the server, use <##00C889>/info"
 		send "&7  For further assistance, contact a &4/staff&7 member"
 
 command /vr [<text>]:
@@ -2010,7 +993,7 @@ command /report [<text>]:
 			add " %{_te}%&7: %{_tem}%" to {Commence::Report::*}
 			send ""
 			send "{@helper}"
-			send "&7  Thank you for submitting to &3Commence&8SMP&c staff"
+			send "&7  Thank you for submitting to &3Commence&8SMP<##CB625F> staff"
 			send "&7  We will review and take everything into consideration!"
 			send "&d  Your Message: %arg-1%"
 			send "&7  You should hear from us soon. Thank you again!"
@@ -2019,13 +1002,13 @@ command /report [<text>]:
 			send "{@helper}"
 			send "&7  Thank you for using the &dReporter"
 			send "&7  To report something, type the following:"
-			send "&d  /report &c[ your comment, question, suggestion, concern here ]"
+			send "&d  /report <##CB625F>[ your comment, question, suggestion, concern here ]"
 
 #-=-=-=-=-=-=-=-=-=-
 	#SERVER RADIO
 
 command /radio:
-	usage: &c/radio
+	usage: <##CB625F>/radio
 	description: &7Starts the Radio
 	cooldown: 2 seconds
 	cooldown message: {@cooldownmessage}
@@ -2047,7 +1030,7 @@ command /radio:
 
 command /website:
 	aliases: ws
-	usage: &c/website
+	usage: <##CB625F>/website
 	description: &7 Views the website
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
@@ -2057,10 +1040,10 @@ command /website:
 		send "&7   Check out our snazzy website! It contains plenty of info!"
 		send "&7   Useful things like donation, commands, game-modes, etc"
 		send "&7   Come check it out! Click below:"
-		send "&8   [ <link:http://www.commencesmp.com><tooltip:&8Click to Open The &aWebsite &8Link>Click Here to Open the &aWebsite &8]"
+		send "&8   [ <link:http://www.commencesmp.com><tooltip:&8Click to Open The <##00C889>Website &8Link>Click Here to Open the <##00C889>Website &8]"
 
 command /vote:
-	usage: &c/vote
+	usage: <##CB625F>/vote
 	description: &7Vote For The Server
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
@@ -2081,7 +1064,7 @@ command /vote:
 
 command /cheer <text>:
 	aliases: announce, praise, thank, vote, wonder
-	usage: &c/ welcomeback [ PLAYER ]
+	usage: <##CB625F>/ welcomeback [ PLAYER ]
 	description: &7 Welcomes a player back to the server
 	cooldown: 1 minute
 	cooldown message: {@cooldownmessage}
@@ -2092,7 +1075,7 @@ command /cheer <text>:
 
 command /wb <player>:
 	aliases: welcomeback, welback, welb
-	usage: &c/ welcomeback [ PLAYER ]
+	usage: <##CB625F>/ welcomeback [ PLAYER ]
 	description: &7 Welcomes a player back to the server
 	cooldown: 10 seconds
 	cooldown message: {@cooldownmessage}
@@ -2101,23 +1084,23 @@ command /wb <player>:
 
 command /welcome <player>:
 	aliases: wel
-	usage: &c/ welcome [ PLAYER ]
+	usage: <##CB625F>/ welcome [ PLAYER ]
 	description: &7 Welcomes a player to the server
 	cooldown: 10 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
-		broadcast "  &9%{Commence::%player%::DisplayName}%&7: Welcome, %arg-1's display name ? arg-1%&7!:)"
+		broadcast "  <##3988A3>%{Commence::%player%::DisplayName}%&7: Welcome, %arg-1's display name ? arg-1%&7!:)"
 
 command /bye <player>:
-	usage: &c/ bye [ PLAYER ]
+	usage: <##CB625F>/ bye [ PLAYER ]
 	description: &7 Welcomes a player to the server
 	cooldown: 10 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
-		broadcast "  &9%{Commence::%player%::DisplayName}%&7: See ya next time, %arg-1's display name ? arg-1%&7!:)" to player's world
+		broadcast "  <##3988A3>%{Commence::%player%::DisplayName}%&7: See ya next time, %arg-1's display name ? arg-1%&7!:)" to player's world
 
 command /discord:
-	usage: &c /discord
+	usage: <##CB625F> /discord
 	description: &7 Views the discord
 	cooldown: 10 seconds
 	cooldown message: {@cooldownmessage}
@@ -2125,11 +1108,12 @@ command /discord:
 		send ""
 		send "{@commence}"
 		send "&7   We have a &5Discord &7server! Click below:"
-		send "&8   [ <link:https://discord.gg/Qq43r2mZzs><tooltip:&8Click to Open The &5Discord &8Link>Click Here to Open &5Discord &8]"
+		send "&8   [ <link:https://discord.gg/2TBNF5V3jP><tooltip:&8Click to Open The &5Discord &8Link>Click Here to Open &5Discord &8]"
 
 command /donate:
-	usage: &c /donate
-	description: &7 Views the website
+	aliases: /support
+	usage: <##CB625F>/donate
+	description: &7Views the Donation and Support Info
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
@@ -2144,31 +1128,31 @@ on inventory click:
 		index of event-slot is 10:
 			{Survival::Enabled} is true:
 				set {Survival::Enabled} to false
-				send "&c   You disabled &fOGSurvival"
+				send "<##CB625F>   You disabled &fOGSurvival"
 			else:
 				set {Survival::Enabled} to true
-				send "&a   You enabled &fOGSurvival"
+				send "<##00C889>   You enabled &fOGSurvival"
 		index of event-slot is 19:
 			{Lifer::Enabled} is true:
 				set {Lifer::Enabled} to false
-				send "&c   You disabled &aLifer"
+				send "<##CB625F>   You disabled <##00C889>Lifer"
 			else:
 				set {Lifer::Enabled} to true
-				send "&a   You enabled Lifer"
+				send "<##00C889>   You enabled Lifer"
 		index of event-slot is 28:
 			{CS::Enabled} is true:
 				set {CS::Enabled} to false
-				send "&c   You disabled {@mythicalrealms}"
+				send "<##CB625F>   You disabled {@mythicalrealms}"
 			else:
 				set {CS::Enabled} to true
-				send "&a   You enabled {@mythicalrealms}"
+				send "<##00C889>   You enabled {@mythicalrealms}"
 		index of event-slot is 37:
 			{PVP::Enabled} is true:
 				set {PVP::Enabled} to false
-				send "&c   You disabled KitPvP"
+				send "<##CB625F>   You disabled KitPvP"
 			else:
 				set {PVP::Enabled} to true
-				send "&a   You enabled &cKitPvP"
+				send "<##00C889>   You enabled <##CB625F>KitPvP"
 		index of event-slot is 8:
 			close inventory of player
 		else if index of event-slot is 4:
@@ -2243,11 +1227,11 @@ on inventory click:
 		index of event-slot is 8:
 			close inventory of player
 		index of event-slot is 10:
-			execute player command "/sidebar survival"
+			execute player command "/sidebar spawnhub"
 		index of event-slot is 12:
 			execute player command "/sidebar story"
 		index of event-slot is 14:
-			execute player command "/sidebar spawnhub"
+			execute player command "/sidebar survival"
 		index of event-slot is 16:
 			execute player command "/sidebar lifer"
 	if event-inventory is (metadata tag "infos" of player):
@@ -2262,7 +1246,7 @@ on inventory click:
 			execute player command "/ranks"
 		index of event-slot is 20:
 			close inventory of player
-			send "&c   Sorry, this feature is coming soon"
+			send "<##CB625F>   Sorry, this feature is coming soon"
 			execute player command "/guide"
 		index of event-slot is 21:
 			close inventory of player
@@ -2272,14 +1256,14 @@ on inventory click:
 			execute player command "/c"
 		index of event-slot is 23:
 			close inventory of player
-			send "&c   Sorry, this feature is coming soon"
+			send "<##CB625F>   Sorry, this feature is coming soon"
 			execute player command "/mechanics"
 		index of event-slot is 24:
 			close inventory of player
 			execute player command "/commands"
 		index of event-slot is 25:
 			close inventory of player
-			send "&c   Sorry, this feature is coming soon"
+			send "<##CB625F>   Sorry, this feature is coming soon"
 			execute player command "/plans"
 		index of event-slot is 28:
 			close inventory of player
@@ -2308,7 +1292,7 @@ on inventory click:
 
 command /info [<text>]:
 	aliases: /ifo, /news, /eabout, /cinfo, /in, /help, /bukkit:help, /essentials:help, /minecraft:help
-	usage: &c /info [ RANKS | DONATE | WEBSITE | LIFER | COMMANDS | PLUGINS ]
+	usage: <##CB625F> /info [ RANKS | DONATE | WEBSITE | LIFER | COMMANDS | PLUGINS ]
 	description: &7 Views basic information about the server
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
@@ -2316,109 +1300,109 @@ command /info [<text>]:
 		close inventory of player
 		wait 1 tick
 		argument is not set:
-			set metadata tag "infos" of player to chest inventory with 4 rows named "&8-==&k|&9   {@commencesmp}&8 Help   &8&k|&8==-"
+			set metadata tag "infos" of player to chest inventory with 4 rows named "&8-==&k|<##3988A3>   {@commencesmp}&8 Help   &8&k|&8==-"
 			set slot 0 of metadata tag "infos" of player to dark gray stained glass pane named "&7"
 			loop 44 times:
 				set slot loop-value of metadata tag "infos" of player to dark gray stained glass pane named "&7"
 			set slot 4 of metadata tag "infos" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore "&7Hover over the items below to view" and "&7 information on server topics"
-			set slot 10 of metadata tag "infos" of player to armor stand named "&8-&k|&9 Server Ranks &8&k|&8-" with lore "&7Lists all server ranks" and "&8Click a rank to view its" and "&8 commands" and "&7" and "&9Click here for the ranks GUI"
-			set slot 11 of metadata tag "infos" of player to book named "&8-&k|&0 Server Guide &8&k|&8-" with lore "&8Don't know what to do?" and "&7Check out our server" and "&7 guide" and "&7" and "&c Coming Soon"
-			set slot 12 of metadata tag "infos" of player to heart of the sea named "&8-&k|&a Server Plugins &8&k|&8-" with lore "&7Lists all server plugins" and "&7 and their functions" and "&7" and "&9Click here for the plugins GUI"
-			set slot 13 of metadata tag "infos" of player to compass named "&8-&k|&9 Server Gamemodes &8&k|&8-" with lore "&7The main GUI for selecting a" and "&7 gamemode" and "&7" and "&9Click to open the gamemodes GUI"
-			set slot 14 of metadata tag "infos" of player to disc fragment named "&8-&k|&0 Server Mechanics &8&k|&8-" with lore "&7Lists our mechanics for" and "&7 your understanding" and "&7" and "&c Coming Soon" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
-			set slot 15 of metadata tag "infos" of player to book named "&8-&k|&9 Server Commands &8&k|&8-" with lore "&7Lists all rank commands" and "&8Click a rank to view its" and "&8 commands" and "&7" and "&9Click here for the ranks GUI"
-			set slot 16 of metadata tag "infos" of player to glowing echo shard named "&8-&k|&0 Server Plans &8&k|&8-" with lore "&7Check out what we" and "&7 have coming" and "&7" and "&c Coming Soon"
-			set slot 19 of metadata tag "infos" of player to oak door named "&8-&k|&a Server Shop &8&k|&8-" with lore "&7Come to our server shop" and "&7 now in a GUI!" and "&8Sell items to get money" and "&7" and "&9Click here for the shop GUI"
-			set slot 20 of metadata tag "infos" of player to glowing book named "&8-&k|&9 Server Rules &8&k|&8-" with lore "&7Lists all server rules" and "&8Any broken rules are" and "&8 punishable up to ban" and "&7" and "&9Click here for the rules GUI"
-			set slot 21 of metadata tag "infos" of player to grass named "&8-&k|&a Server Website &8&k|&8-" with lore "&7Gains a link to our website" and "&7" and "&9Click here for the website link"
-			set slot 22 of metadata tag "infos" of player to crying obsidian named "&8-&k|&5 Server Discord &8&k|&8-" with lore "&7Gains a link to our discord" and "&7" and "&9Click here for the discord link"
-			set slot 23 of metadata tag "infos" of player to glowing nether star named "&8-&k|&b Server Donations &8&k|&8-" with lore "&7Gains a link to our website" and "&7" and "&9Click here for the website link"
-			set slot 24 of metadata tag "infos" of player to glowing book named "&8-&k|&d Server Help &8&k|&8-" with lore "&7Need any help?" and "&8Contact a &c/staff&8 member" and "&7" and "&9Click here for &dHelper"
-			set slot 25 of metadata tag "infos" of player to player skull named "&8-&k|&9 Server List &8&k|&8-" with lore "&7Lists all online players" and "&7" and "&9Click here for the who GUI"
-			set slot 31 of metadata tag "infos" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&7Want to see something here?" and "&8Contact &c/staff&8 or use &d/report" and "&7" and "&9Click for help reporting"
-			set slot 8 of metadata tag "infos" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			set slot 10 of metadata tag "infos" of player to armor stand named "&8-&k|<##3988A3> Server Ranks &8&k|&8-" with lore "&7Lists all server ranks" and "&8Click a rank to view its" and "&8 commands" and "&7" and "<##3988A3>Click here for the ranks GUI"
+			set slot 11 of metadata tag "infos" of player to book named "&8-&k|&0 Server Guide &8&k|&8-" with lore "&8Don't know what to do?" and "&7Check out our server" and "&7 guide" and "&7" and "<##CB625F> Coming Soon"
+			set slot 12 of metadata tag "infos" of player to heart of the sea named "&8-&k|<##00C889> Server Plugins &8&k|&8-" with lore "&7Lists all server plugins" and "&7 and their functions" and "&7" and "<##3988A3>Click here for the plugins GUI"
+			set slot 13 of metadata tag "infos" of player to compass named "&8-&k|<##3988A3> Server Gamemodes &8&k|&8-" with lore "&7The main GUI for selecting a" and "&7 gamemode" and "&7" and "<##3988A3>Click to open the gamemodes GUI"
+			set slot 14 of metadata tag "infos" of player to disc fragment named "&8-&k|&0 Server Mechanics &8&k|&8-" with lore "&7Lists our mechanics for" and "&7 your understanding" and "&7" and "<##CB625F> Coming Soon" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
+			set slot 15 of metadata tag "infos" of player to book named "&8-&k|<##3988A3> Server Commands &8&k|&8-" with lore "&7Lists all rank commands" and "&8Click a rank to view its" and "&8 commands" and "&7" and "<##3988A3>Click here for the ranks GUI"
+			set slot 16 of metadata tag "infos" of player to glowing echo shard named "&8-&k|&0 Server Plans &8&k|&8-" with lore "&7Check out what we" and "&7 have coming" and "&7" and "<##CB625F> Coming Soon"
+			set slot 19 of metadata tag "infos" of player to oak door named "&8-&k|<##00C889> Server Shop &8&k|&8-" with lore "&7Come to our server shop" and "&7 now in a GUI!" and "&8Sell items to get money" and "&7" and "<##3988A3>Click here for the shop GUI"
+			set slot 20 of metadata tag "infos" of player to glowing book named "&8-&k|<##3988A3> Server Rules &8&k|&8-" with lore "&7Lists all server rules" and "&8Any broken rules are" and "&8 punishable up to ban" and "&7" and "<##3988A3>Click here for the rules GUI"
+			set slot 21 of metadata tag "infos" of player to grass named "&8-&k|<##00C889> Server Website &8&k|&8-" with lore "&7Gains a link to our website" and "&7" and "<##3988A3>Click here for the website link"
+			set slot 22 of metadata tag "infos" of player to crying obsidian named "&8-&k|&5 Server Discord &8&k|&8-" with lore "&7Gains a link to our discord" and "&7" and "<##3988A3>Click here for the discord link"
+			set slot 23 of metadata tag "infos" of player to glowing nether star named "&8-&k|&b Server Donations &8&k|&8-" with lore "&7Gains a link to our website" and "&7" and "<##3988A3>Click here for the website link"
+			set slot 24 of metadata tag "infos" of player to glowing book named "&8-&k|&d Server Help &8&k|&8-" with lore "&7Need any help?" and "&8Contact a <##CB625F>/staff&8 member" and "&7" and "<##3988A3>Click here for &dHelper"
+			set slot 25 of metadata tag "infos" of player to player skull named "&8-&k|<##3988A3> Server List &8&k|&8-" with lore "&7Lists all online players" and "&7" and "<##3988A3>Click here for the who GUI"
+			set slot 31 of metadata tag "infos" of player to paper named "&8-&k|<##3988A3> Suggestions? &8&k|&8-" with lore "&7Want to see something here?" and "&8Contact <##CB625F>/staff&8 or use &d/report" and "&7" and "<##3988A3>Click for help reporting"
+			set slot 8 of metadata tag "infos" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 			open (metadata tag "infos" of player) to player
 
 command /rules:
 	aliases: /srules
-	usage: &c /rules
+	usage: <##CB625F> /rules
 	description: &7 Views the rules
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
 		close inventory of player
 		wait 1 tick
-		set metadata tag "rules" of player to chest inventory with 3 rows named "&8-==&k|&9  {@commencesmp}&8 Rules  &8&k|&8==-"
+		set metadata tag "rules" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>  {@commencesmp}&8 Rules  &8&k|&8==-"
 		set slot 0 of metadata tag "rules" of player to dark gray stained glass pane named "&7"
 		loop 44 times:
 			set slot loop-value of metadata tag "rules" of player to dark gray stained glass pane named "&7"
 		set slot 4 of metadata tag "rules" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore "&7Hover over the red below" and "&7 to view the server rules"
-		set slot 10 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 1: No Hacks &8&k|&8-" with lore "&7No hacking of any" and "&7 kind, including clients" and "&7 and mods (exceptions)" and "&7 are allowed in ANY part" and "&7 of the server"
-		set slot 11 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 2: &fOGSurvival &8&k|&8-" with lore "&7Griefing, raiding, teaming," and "&7 PvP, base takeovers, " and "&7 etc (/staff) are" and "&7 allowed in this Gamemode"
-		set slot 12 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 3: {@mythicalrealms} &8&k|&8-" with lore "&7No Grieifing, Raiding or similar" and "&7 allowed in this Gamemode"
-		set slot 13 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 4: Excessive Caps &8&k|&8-" with lore "&7YELLING or spamming excessively" and "&7 will result in a temporary" and "&7 mute, kick or ban"
-		set slot 14 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 5: Disrespect &8&k|&8-" with lore "&7Disrespecting or being rude" and "&7 to any other players or staff" and "&7 will result in a temporary" and "&7 mute, kick or ban"
-		set slot 15 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 6: Fighting &8&k|&8-" with lore "&7Civilized debates are okay" and "&7 but excessive arguing" and "&7 will result in a temporary" and "&7 mute, kick or ban"
-		set slot 16 of metadata tag "rules" of player to red stained glass pane named "&8-&k|&c&l Rule 7: Implied Rules &8&k|&8-" with lore "&7Some rules are universal or" and "&7 common sense and aren't listed" and "&7 here. For help, contact /staff" and "&7And whatever you do, DO NOT," and "&7 I repeat, DO NOT Milk a Fox!"
-		set slot 22 of metadata tag "rules" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&8Want to see a rule here?" and "&8Contact &c/staff&8 or use &a/website" and "&7" and "&7{@commencesmp} Survival"
-		set slot 8 of metadata tag "rules" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+		set slot 10 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 1: No Hacks &8&k|&8-" with lore "&7No hacking of any" and "&7 kind, including clients" and "&7 and mods (exceptions)" and "&7 are allowed in ANY part" and "&7 of the server"
+		set slot 11 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 2: &fOGSurvival &8&k|&8-" with lore "&7Griefing, raiding, teaming," and "&7 PvP, base takeovers, " and "&7 etc (/staff) are" and "&7 allowed in this Gamemode"
+		set slot 12 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 3: {@mythicalrealms} &8&k|&8-" with lore "&7No Grieifing, Raiding or similar" and "&7 allowed in this Gamemode"
+		set slot 13 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 4: Excessive Caps &8&k|&8-" with lore "&7YELLING or spamming excessively" and "&7 will result in a temporary" and "&7 mute, kick or ban"
+		set slot 14 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 5: Disrespect &8&k|&8-" with lore "&7Disrespecting or being rude" and "&7 to any other players or staff" and "&7 will result in a temporary" and "&7 mute, kick or ban"
+		set slot 15 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 6: Fighting &8&k|&8-" with lore "&7Civilized debates are okay" and "&7 but excessive arguing" and "&7 will result in a temporary" and "&7 mute, kick or ban"
+		set slot 16 of metadata tag "rules" of player to red stained glass pane named "&8-&k|<##CB625F>&l Rule 7: Implied Rules &8&k|&8-" with lore "&7Some rules are universal or" and "&7 common sense and aren't listed" and "&7 here. For help, contact /staff" and "&7And whatever you do, DO NOT," and "&7 I repeat, DO NOT Milk a Fox!"
+		set slot 22 of metadata tag "rules" of player to paper named "&8-&k|<##3988A3> Suggestions? &8&k|&8-" with lore "&8Want to see a rule here?" and "&8Contact <##CB625F>/staff&8 or use <##00C889>/website" and "&7" and "&7{@commencesmp} Survival"
+		set slot 8 of metadata tag "rules" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "rules" of player) to player
 
 command /ranks:
 	aliases: /listranks, /lr
-	usage: &c /ranks
+	usage: <##CB625F> /ranks
 	description: &7 Views the ranks
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
 		close inventory of player
 		wait 1 tick
-		set metadata tag "ranks" of player to chest inventory with 5 rows named "&8-==&k|&9  {@commencesmp}&8 Ranks  &8&k|&8==-"
+		set metadata tag "ranks" of player to chest inventory with 5 rows named "&8-==&k|<##3988A3>  {@commencesmp}&8 Ranks  &8&k|&8==-"
 		set slot 0 of metadata tag "ranks" of player to dark gray stained glass pane named "&7"
 		loop 44 times:
 			set slot loop-value of metadata tag "ranks" of player to dark gray stained glass pane named "&7"
 		set slot 4 of metadata tag "ranks" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore "&7Hover over the dyes below to" and "&7 view information on the ranks" and "&8Click on the dyes below to" and "&8 view commands for each rank"
 		set slot 10 of metadata tag "ranks" of player to gray dye named "&8-&k|&7&l {@entrant}Rank &8&k|&8-" with lore "&8Default Server Guest Rank" and "&7Starts with all basic commands"
 		set slot 12 of metadata tag "ranks" of player to light blue dye named "&8-&k|&b&l {@constructor}Rank &8&k|&8-" with lore "&8Member of the Server" and "&7Play the Server for a While"
-		set slot 14 of metadata tag "ranks" of player to light green dye named "&8-&k|&a&l {@artisan}Rank &8&k|&8-" with lore "&8Builder of the Server" and "&7Be a Good Role Model and Builder"
+		set slot 14 of metadata tag "ranks" of player to light green dye named "&8-&k|<##00C889>&l {@artisan}Rank &8&k|&8-" with lore "&8Builder of the Server" and "&7Be a Good Role Model and Builder"
 		set slot 16 of metadata tag "ranks" of player to green dye named "&8-&k|&2&l {@engineer}Rank &8&k|&8-" with lore "&8Architect of the Server" and "&7Be a Master Builder"
-		set slot 20 of metadata tag "ranks" of player to red dye named "&8-&k|&c&l {@inspector}Rank &8&k|&8-" with lore "&8Moderator of the Server" and "&7Be a Good Example and Help Others"
+		set slot 20 of metadata tag "ranks" of player to red dye named "&8-&k|<##CB625F>&l {@inspector}Rank &8&k|&8-" with lore "&8Moderator of the Server" and "&7Be a Good Example and Help Others"
 		set slot 22 of metadata tag "ranks" of player to brown dye named "&8-&k|&4&l {@presider}Rank &8&k|&8-" with lore "&8Admin of the Server" and "&7Be an Amazing Staff Member"
 		set slot 24 of metadata tag "ranks" of player to pink dye named "&8-&k|&d&l {@legate}Rank &8&k|&8-" with lore "&8High Admin of the Server" and "&7Be a God"
-		set slot 30 of metadata tag "ranks" of player to blue dye named "&8-&k|&9&l {@coowner}Rank &8&k|&8-" with lore "&8Belongs to Nobody:("
-		set slot 32 of metadata tag "ranks" of player to black dye named "&8-&k|&9&l {@owner}Rank &8&k|&8-" with lore "&8Belongs to {@owner} Cdestre"
-		set slot 8 of metadata tag "ranks" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+		set slot 30 of metadata tag "ranks" of player to blue dye named "&8-&k|<##3988A3>&l {@coowner}Rank &8&k|&8-" with lore "&8Belongs to Nobody:("
+		set slot 32 of metadata tag "ranks" of player to black dye named "&8-&k|<##3988A3>&l {@owner}Rank &8&k|&8-" with lore "&8Belongs to {@owner} Cdestre"
+		set slot 8 of metadata tag "ranks" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "ranks" of player) to player
 
 command /plugins:
 	aliases: /pl, /bukkit:plugins, /plugin
-	usage: &c /plugins
+	usage: <##CB625F> /plugins
 	description: &7 Views the plugins
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
 		close inventory of player
 		wait 1 tick
-		set metadata tag "plugins" of player to chest inventory with 4 rows named "&8-==&k|&9  {@commencesmp}&8 Plugins  &8&k|&8==-"
+		set metadata tag "plugins" of player to chest inventory with 4 rows named "&8-==&k|<##3988A3>  {@commencesmp}&8 Plugins  &8&k|&8==-"
 		set slot 0 of metadata tag "plugins" of player to dark gray stained glass pane named "&7"
 		loop 44 times:
 			set slot loop-value of metadata tag "plugins" of player to dark gray stained glass pane named "&7"
 		set slot 4 of metadata tag "plugins" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore "&7Hover over the items below to" and "&7 view information on our plugins"
-		set slot 11 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&a CoreProtect &8&k|&8-" with lore "&8Allows for block time" and "&8 manipulation" and "&7" and "&7Built for 1.20.1"
-		set slot 12 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&9 Commencer &8&k|&8-" with lore "&8Our main plugin that handles" and "&8 most the operations" and "&7" and "&7Built for CommenceSMP 1.20.1"
-		set slot 13 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&a GSit &8&k|&8-" with lore "&8Allows for ALL the sitting" and "&7" and "&7Built for Paper 1.20.1"
-		set slot 14 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&a NametagEdit &8&k|&8-" with lore "&8Allows for colored nametags" and "&8 above heads and in Tab" and "&7" and "&7Built for 1.20.1"
-		set slot 15 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&c WorldGuard &8&k|&8-" with lore "&8Used for protecting regions" and "&8 and player protections" and "&7" and "&7Built for 1.20.1 &4DISABLED"
-		set slot 21 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&c Multiverse &8&k|&8-" with lore "&8Allows for many worlds" and "&7" and "&7Built for 1.20.1"
+		set slot 11 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##00C889> CoreProtect &8&k|&8-" with lore "&8Allows for block time" and "&8 manipulation" and "&7" and "&7Built for 1.20.1"
+		set slot 12 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##3988A3> Commencer &8&k|&8-" with lore "&8Our main plugin that handles" and "&8 most the operations" and "&7" and "&7Built for CommenceSMP 1.20.1"
+		set slot 13 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##00C889> GSit &8&k|&8-" with lore "&8Allows for ALL the sitting" and "&7" and "&7Built for Paper 1.20.1"
+		set slot 14 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##00C889> NametagEdit &8&k|&8-" with lore "&8Allows for colored nametags" and "&8 above heads and in Tab" and "&7" and "&7Built for 1.20.1"
+		set slot 15 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##CB625F> WorldGuard &8&k|&8-" with lore "&8Used for protecting regions" and "&8 and player protections" and "&7" and "&7Built for 1.20.1 &4DISABLED"
+		set slot 21 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##CB625F> Multiverse &8&k|&8-" with lore "&8Allows for many worlds" and "&7" and "&7Built for 1.20.1"
 		set slot 22 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&b EconomyShopGUI &8&k|&8-" with lore "&8Allows for store functionality" and "&7" and "&7Built for Paper 1.20.1"
-		set slot 23 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|&a WorldEdit &8&k|&8-" with lore "&8Allows for fast building" and "&7" and "&7Built for CommenceSMP 1.20.1"
-		set slot 31 of metadata tag "plugins" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&7Want to see a plugin here?" and "&8Type &d/report &c[suggestion here]" and "&7" and "&9Click for help reporting"
-		set slot 8 of metadata tag "plugins" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+		set slot 23 of metadata tag "plugins" of player to green stained glass pane named "&8-&k|<##00C889> WorldEdit &8&k|&8-" with lore "&8Allows for fast building" and "&7" and "&7Built for CommenceSMP 1.20.1"
+		set slot 31 of metadata tag "plugins" of player to paper named "&8-&k|<##3988A3> Suggestions? &8&k|&8-" with lore "&7Want to see a plugin here?" and "&8Type &d/report <##CB625F>[suggestion here]" and "&7" and "<##3988A3>Click for help reporting"
+		set slot 8 of metadata tag "plugins" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "plugins" of player) to player
 
 command /c [<world>]:
 	aliases: commencer, commence, com
-	usage: &c /commence
+	usage: <##CB625F> /commence
 	description: &7 Server Navigator
 	cooldown: 1 second
 	cooldown message: {@cooldownmessage}
@@ -2428,29 +1412,29 @@ command /c [<world>]:
 		player's world is not "SpawnHub" or "Survival":
 			send "{@worldpermissionmessage}"
 			stop
-		set metadata tag "commence" of player to chest inventory with 3 rows named "&8-==&k|&9   <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>Navigator   &8&k|&8==-"
+		set metadata tag "commence" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>   <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>Navigator   &8&k|&8==-"
 		set slot 0 of metadata tag "commence" of player to dark gray stained glass pane named "&7"
 		loop 44 times:
 			set slot loop-value of metadata tag "commence" of player to dark gray stained glass pane named "&7"
-		set slot 4 of metadata tag "commence" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore " &7Hey there %player's display name%&7," and "&7 welcome to the community!" and " &8Hover over the options below to" and " &8 view our gamemodes. Click to" and " &8 join the selected gamemode" and " &7If you want to get back to &aSpawnHub" and " &7 from anywhere, use &a/spawn&7" and " &8If you need any help, use &a/info&8 or &c/staff"
+		set slot 4 of metadata tag "commence" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore " &7Hey there %player's display name%&7," and "&7 welcome to the community!" and " &8Hover over the options below to" and " &8 view our gamemodes. Click to" and " &8 join the selected gamemode" and " &7If you want to get back to <##00C889>SpawnHub" and " &7 from anywhere, use <##00C889>/spawn&7" and " &8If you need any help, use <##00C889>/info&8 or <##CB625F>/staff"
 		{CS::Enabled} is true:
-			set slot 11 of metadata tag "commence" of player to nether star named "&9-&k|&6 {@mythicalrealms} &9&k|&9-" with lore " &7Live amongst 17 other Forms" and " &7 and join the ongoing" and " &7 battles as you and your" and " &7 community ultimately" and " &7 fight for peace & power." and " &8Learn the rich history of" and " &8 your race and find out what" and " &8 exactly is going on here" and " &8 by exploring the lands" and  " &8 talking to the locals." and  " &7Complete quests and see" and  " &7 cutscenes like you've never" and  " &7 seen before." and  " &8Rise to the top of your" and  " &8 very own empire or" and  " &8 become a working part of" and  " &8 your community, the choice" and  " &8 is ultimately yours." and  " &7Fight to the end and" and  " &7 ultimately decide: are" and  " &7 you one with the" and  " &f Angels&7 or the &8Demons&7?" and  " &8Explore Kingdoms, Live a Life," and  " &8 Gain Skills, Play Minigames," and  " &8 Experience Magic, Get a" and  " &8 Job, Become Royalty," and  " &8 Learn the Story, Talk to NPCs," and  " &8 Get and Complete Quests," and  " &8 and Make it Big Out There!" and "&7" and "&9  Click to Join &6{@mythicalrealms}" and "&7"# if {CS::Enabled} is true
+			set slot 11 of metadata tag "commence" of player to nether star named "<##3988A3>-&k|&6 {@mythicalrealms} <##3988A3>&k|<##3988A3>-" with lore " &7Live amongst 17 other Forms" and " &7 and join the ongoing" and " &7 battles as you and your" and " &7 community ultimately" and " &7 fight for peace & power." and " &8Learn the rich history of" and " &8 your race and find out what" and " &8 exactly is going on here" and " &8 by exploring the lands" and  " &8 talking to the locals." and  " &7Complete quests and see" and  " &7 cutscenes like you've never" and  " &7 seen before." and  " &8Rise to the top of your" and  " &8 very own empire or" and  " &8 become a working part of" and  " &8 your community, the choice" and  " &8 is ultimately yours." and  " &7Fight to the end and" and  " &7 ultimately decide: are" and  " &7 you one with the" and  " &f Angels&7 or the &8Demons&7?" and  " &8Explore Kingdoms, Live a Life," and  " &8 Gain Skills, Play Minigames," and  " &8 Experience Magic, Get a" and  " &8 Job, Become Royalty," and  " &8 Learn the Story, Talk to NPCs," and  " &8 Get and Complete Quests," and  " &8 and Make it Big Out There!" and "&7" and "<##3988A3>  Click to Join &6{@mythicalrealms}" and "&7"# if {CS::Enabled} is true
 		else:
-			set slot 11 of metadata tag "commence" of player to heart of the sea named "&9-&k|&a Lifer &d60 Minutes &9&k|&9-" with lore " &2Live a Life in Lifer" and " &8Every Real Minute is" and " &8 One In-Game Year" and " &2Join a Family or " and " &2 Start your Own" and " &8See how far you can" and " &8 Survive in 60 Minutes" and "&7" and "  &9Click to Join &aLifer" and "&7" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
+			set slot 11 of metadata tag "commence" of player to heart of the sea named "<##3988A3>-&k|<##00C889> Lifer &d60 Minutes <##3988A3>&k|<##3988A3>-" with lore " &2Live a Life in Lifer" and " &8Every Real Minute is" and " &8 One In-Game Year" and " &2Join a Family or " and " &2 Start your Own" and " &8See how far you can" and " &8 Survive in 60 Minutes" and "&7" and "  <##3988A3>Click to Join <##00C889>Lifer" and "&7" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
 		{Survival::Enabled} is true:
-			set slot 13 of metadata tag "commence" of player to grass block named "&9-&k|&f OGSurvival &4+Anarchy &9&k|&9-" with lore " &9Vanilla Survival with a " and " &9 Chaotic Anarchy Twist" and " &8Use &a/rtp&8 to find your area" and " &9Griefing, Raiding, Teaming," and " &9 Nuking, etc are allowed" and " &8Only rules are No Cheating" and " &8 and No Hacks At All" and "&7" and "  &9Click to Join &fOGSurvival" and "&7"# if {Survival::Enabled} is true
+			set slot 13 of metadata tag "commence" of player to grass block named "<##3988A3>-&k|&f OGSurvival &4+Anarchy <##3988A3>&k|<##3988A3>-" with lore " <##3988A3>Vanilla Survival with a " and " <##3988A3> Chaotic Anarchy Twist" and " &8Use <##00C889>/rtp&8 to find your area" and " <##3988A3>Griefing, Raiding, Teaming," and " <##3988A3> Nuking, etc are allowed" and " &8Only rules are No Cheating" and " &8 and No Hacks At All" and "&7" and "  <##3988A3>Click to Join &fOGSurvival" and "&7"# if {Survival::Enabled} is true
 		else:
-			set slot 13 of metadata tag "commence" of player to grass block named "&9-&k|&f OGSurvival &4+Anarchy &9&k|&9-" with lore " &cThis Gamemode is Currently Disabled! "
-		set slot 15 of metadata tag "commence" of player to enchanted book named "&9-&k|&d Helper &9&k|&9-" with lore " &dHey, %player's display name%&d!" and " &dDo you need any help?" and " &dHelper is here to help!" and "&7" and " &7Use &d/report&7 to say things" and " &8Use &4/staff&8 and &a/info" and " &8 for further help" and "&7" and "&9  Click to View Information" and "&7" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
-#		set slot 16 of metadata tag "commence" of player to netherite sword named "&9-&k|&4 KitPvP &8Levels &9&k|&9-" with lore " &cUnlimited Weapon, Bow " and " &c Armor and Item Upgrades" and " &8Use &c/pshop&8 to buy things" and " &8 using points" and " &cGain Points from Killing " and " &c Other Players & Entities" and " &8Get Enough Points to" and " &8 Experience New Maps" and " &cLose a Point When You're " and " &c Killed or Die" and "&7" and "  &9Click to Join &cKitPvP" and "&7"  with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable if {PVP::Enabled} is true
+			set slot 13 of metadata tag "commence" of player to grass block named "<##3988A3>-&k|&f OGSurvival &4+Anarchy <##3988A3>&k|<##3988A3>-" with lore " <##CB625F>This Gamemode is Currently Disabled! "
+		set slot 15 of metadata tag "commence" of player to enchanted book named "<##3988A3>-&k|&d Helper <##3988A3>&k|<##3988A3>-" with lore " &dHey, %player's display name%&d!" and " &dDo you need any help?" and " &dHelper is here to help!" and "&7" and " &7Use &d/report&7 to say things" and " &8Use &4/staff&8 and <##00C889>/info" and " &8 for further help" and "&7" and "<##3988A3>  Click to View Information" and "&7" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
+#		set slot 16 of metadata tag "commence" of player to netherite sword named "<##3988A3>-&k|&4 KitPvP &8Levels <##3988A3>&k|<##3988A3>-" with lore " <##CB625F>Unlimited Weapon, Bow " and " <##CB625F> Armor and Item Upgrades" and " &8Use <##CB625F>/pshop&8 to buy things" and " &8 using points" and " <##CB625F>Gain Points from Killing " and " <##CB625F> Other Players & Entities" and " &8Get Enough Points to" and " &8 Experience New Maps" and " <##CB625F>Lose a Point When You're " and " <##CB625F> Killed or Die" and "&7" and "  <##3988A3>Click to Join <##CB625F>KitPvP" and "&7"  with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable if {PVP::Enabled} is true
 
-		set slot 22 of metadata tag "commence" of player to paper named "&8-&k|<##3988A4> Suggestions? &8&k|&8-" with lore " &7Want to see a gamemode here?" and " &8Have something to say?" and " &7Have a question or concern?" and " &8Type &d/report &c[ message here ]" and " &8 or Contact a &c/staff &8member" and "&7" and "&d  Click for Help Reporting"
-		set slot 8 of metadata tag "commence" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+		set slot 22 of metadata tag "commence" of player to paper named "&8-&k|<##3988A4> Suggestions? &8&k|&8-" with lore " &7Want to see a gamemode here?" and " &8Have something to say?" and " &7Have a question or concern?" and " &8Type &d/report <##CB625F>[ message here ]" and " &8 or Contact a <##CB625F>/staff &8member" and "&7" and "&d  Click for Help Reporting"
+		set slot 8 of metadata tag "commence" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "commence" of player) to player
 
 command /staff:
 	aliases: admins
-	usage: &c /staff
+	usage: <##CB625F> /staff
 	description: &7 Views the staff on the server
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
@@ -2464,10 +1448,10 @@ command /staff:
 		if {Commence::Admins::*} is not set:
 			send ""
 			send "{@commence}"
-			send "&c   No Staff are Online Currently"
-			send "&c   Type /report or &a/info"
+			send "<##CB625F>   No Staff are Online Currently"
+			send "<##CB625F>   Type /report or <##00C889>/info"
 		else:
-			set metadata tag "staff" of player to chest inventory with 3 rows named "&8-==&k|&9  {@commencesmp}&c Staff  &8&k|&8==-"
+			set metadata tag "staff" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>  {@commencesmp}<##CB625F> Staff  &8&k|&8==-"
 			set slot 0 of metadata tag "staff" of player to dark gray stained glass pane named "&7"
 			loop 44 times:
 				set slot loop-value of metadata tag "staff" of player to dark gray stained glass pane named "&7"
@@ -2485,23 +1469,23 @@ command /staff:
 				add 1 to {Commence::List}
 				set slot {Commence::List} of metadata tag "staff" of player to skull of loop-value named "%{Commence::%loop-value%::Rank}%%loop-value's display name%" if {Commence::%loop-value%::Rank::Value} is 4
 				stop loop
-			set slot 8 of metadata tag "staff" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			set slot 8 of metadata tag "staff" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 			open (metadata tag "staff" of player) to player
 
 command /online:
 	aliases: list, who, playerlist, plist
-	usage: &c /list
+	usage: <##CB625F> /list
 	description: &7 Views all online players
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
 		close inventory of player
 		wait 1 tick
-		set metadata tag "online" of player to chest inventory with 4 rows named "&8-==&k|&9 {@commencesmp}&8 Players &8&k|&8==-"
+		set metadata tag "online" of player to chest inventory with 4 rows named "&8-==&k|<##3988A3> {@commencesmp}&8 Players &8&k|&8==-"
 		set slot 0 of metadata tag "online" of player to dark gray stained glass pane named "&7"
 		loop 44 times:
 			set slot loop-value of metadata tag "online" of player to dark gray stained glass pane named "&7"
-		set slot 4 of metadata tag "online" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore "&7Hey there %player's display name%," and "&7 welcome to the community!" and "&8If you need any help, use &a/info&8 or &c/staff"
+		set slot 4 of metadata tag "online" of player to skull of player named "&8-&k|<##3988A4> Welcome to {@commencesmp} &8&k|&8-" with lore "&7Hey there %player's display name%," and "&7 welcome to the community!" and "&8If you need any help, use <##00C889>/info&8 or <##CB625F>/staff"
 		set {Commence::List} to 9
 		loop all players:
 			add 1 to {Commence::List}
@@ -2512,12 +1496,12 @@ command /online:
 			else if {Commence::List} is 35:
 				add 2 to {Commence::List}
 			set slot {Commence::List} of metadata tag "online" of player to skull of loop-value named "%{Commence::%loop-value%::Rank}%%loop-value's display name%"
-		set slot 8 of metadata tag "online" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+		set slot 8 of metadata tag "online" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "online" of player) to player
 			
 command /sidebar [<text>]:
 	aliases: /sb
-	usage: &c /sidebar
+	usage: <##CB625F> /sidebar
 	description: &7 Opens the Sidebar GUI
 	cooldown: 1 second
 	cooldown message: {@cooldownmessage}
@@ -2541,40 +1525,50 @@ command /sidebar [<text>]:
 				toggle player's scoreboard to on
 				set {Commence::%player%::LiferBar} to true
 		else if arg-1 is "story":
-			{Commence::%player%::StoryBar} is true:
+			{Commence::%player%::StoryBar} is "Default":
+				toggle player's scoreboard to on
+				set {Commence::%player%::StoryBar} to "Detailed"
+			else if {Commence::%player%::StoryBar} is "Detailed":
 				set {Commence::%player%::StoryBar} to false
+			else if {Commence::%player%::StoryBar} is false:
+				toggle player's scoreboard to on
+				set {Commence::%player%::StoryBar} to "Minimal"
 			else:
 				toggle player's scoreboard to on
-				set {Commence::%player%::StoryBar} to true
+				set {Commence::%player%::StoryBar} to "Default"
+			send " {@info} <##A22226>{@mythicalrealms} Sidebar is Now %{Commence::%player%::StoryBar}%"
 		else if arg-1 is "spawnhub":
 			{Commence::%player%::SideBar} is true:
 				set {Commence::%player%::SideBar} to false
 			else:
 				toggle player's scoreboard to on
 				set {Commence::%player%::SideBar} to true
-		set metadata tag "sidebar" of player to chest inventory with 3 rows named "&8-==&k|&9 {@commencesmp}&8 Sidebar &8&k|&8==-"
+		set metadata tag "sidebar" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>  {@commencesmp}&8 Sidebar &8&k|&8==-"
 		set slot 0 of metadata tag "sidebar" of player to dark gray stained glass pane named "&7"
 		loop 26 times:
 			set slot loop-value of metadata tag "sidebar" of player to dark gray stained glass pane named "&7"
-		set slot 4 of metadata tag "sidebar" of player to book named "&8-&k|&9 Toggle Gamemode Sidebars &8&k|&8-" with lore "&7 Here you can toggle the" and "&7  sidebars for each world" and "&c NOTE it can take up to " and "&c  5 seconds to toggle" and "&7" and "&9 Click the items below to toggle"
-		{Commence::%player%::SurvivalBar} is false:
-			set slot 10 of metadata tag "sidebar" of player to glowing dirt named "&8-&k|&f OGSurvival Sidebar &8&k|&8-" with lore "&c Sidebar is DISABLED in &fOGSurvival" and "&7 " and "&9  Click to &aenable&9 the sidebar"
-		else if {Commence::%player%::SurvivalBar} is not false:
-			set slot 10 of metadata tag "sidebar" of player to glowing dirt named "&8-&k|&f OGSurvival Sidebar &8&k|&8-" with lore "&a Sidebar is ENABLED in &fOGSurvival" and "&7 " and "&9  Click to &cdisable&9 the sidebar"
-		{Commence::%player%::StoryBar} is false:
-			set slot 12 of metadata tag "sidebar" of player to glowing book named "&8-&k|&c {@mythicalrealms} Sidebar &8&k|&8-" with lore "&c Sidebar is DISABLED in {@mythicalrealms}" and "&7 " and "&9  Click to &aenable&9 the sidebar" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
-		else if {Commence::%player%::StoryBar} is not false:
-			set slot 12 of metadata tag "sidebar" of player to glowing book named "&8-&k|&c {@mythicalrealms} Sidebar &8&k|&8-" with lore "&a Sidebar is ENABLED in {@mythicalrealms}" and "&7 " and "&8-&k|&e Icon Key &8&k|&8-" and "&7  <##00C889>🍖: Hunger (Out of 10)" and "&7  <##00C889>🪣: Thirst (Out of 10)" and "&7  <##00C889>⌚: Sleep (Out of 10)" and "&7  <##855EC9>🧪: Mana" and "&7  <##00608D>⛨: RPG Level (Level XP/Next Level XP)" and "&7  <##CB625F>🗡: Attack (Default is 1)" and "&7  <##CB625F>⚔: Defense (Default is 0)" and "&7  <##CB625F>☠: Deaths (All Game-Modes)" and "&7  <##D0944D>✳: Story Score (/mrm scoreshop)" and "&7  <##D0944D>❇: Story Position (/positionpoints)" and "&7  <##D0944D>₵: Balance (Money)" and "&7 " and "&9  Click to &cdisable&9 the sidebar" with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable
+		set slot 4 of metadata tag "sidebar" of player to book named "&8-&k|<##3988A3> Toggle Gamemode Sidebars &8&k|&8-" with lore "&7 Enable / Disable Sidebars in Each Game-Mode"
 		{Commence::%player%::SideBar} is false:
-			set slot 14 of metadata tag "sidebar" of player to glowing compass named "&8-&k|&9 SpawnHub Sidebar &8&k|&8-" with lore "&c Sidebar is DISABLED in &9SpawnHub" and "&7 " and "&9  Click to &aenable&9 the sidebar"
+			set slot 10 of metadata tag "sidebar" of player to glowing compass named "&8-&k|<##3988A3> General Sidebar &8&k|&8-" with lore "&7 Applies to SpawnHub, Minigames & Others" and "<##CB625F> General Sidebar is Disabled" and "&7 " and "<##00C889> Click HERE to Enable General Sidebar"
 		else if {Commence::%player%::SideBar} is not false:
-			set slot 14 of metadata tag "sidebar" of player to glowing compass named "&8-&k|&9 SpawnHub Sidebar &8&k|&8-" with lore "&a Sidebar is ENABLED in &9SpawnHub" and "&7 " and "&9  Click to &cdisable&9 the sidebar"
+			set slot 10 of metadata tag "sidebar" of player to glowing compass named "&8-&k|<##3988A3> General Sidebar &8&k|&8-" with lore "&7 Applies to SpawnHub, Minigames & Others" and "<##00C889> General Sidebar is Enabled" and "&7 " and "<##CB625F> Click HERE to Disable General Sidebar"
+		{Commence::%player%::StoryBar} is false:
+			set slot 12 of metadata tag "sidebar" of player to glowing book named "&8-&k|<##CB625F> {@mythicalrealms} Sidebar &8&k|&8-" with lore "&7 Applies to {@mythicalrealms}" and "<##CB625F> Mythical Realms Sidebar is Disabled" and "&7 " and "<##00C889> Click HERE for Minimal Mythical Realms Sidebar"
+		else if {Commence::%player%::StoryBar} is "Minimal":
+			set slot 12 of metadata tag "sidebar" of player to glowing book named "&8-&k|<##CB625F> {@mythicalrealms} Minimal Sidebar &8&k|&8-" with lore "&7 Applies to {@mythicalrealms}" and "<##00C889> Mythical Realms Sidebar is Enabled as Minimal" and "&7 " and "&8-&k|<##3988A3> Icon Key &8&k|&8-" and "&7  <##00C889>🍖: Hunger (Out of 10)" and "&7  <##00C889>🪣: Thirst (Out of 10)" and "&7  <##00C889>⌚: Sleep (Out of 10)" and "&7  <##855EC9>🧪: Mana" and "&7  <##855EC9>⏳: Infusion" and "&7  <##00608D>⛨: RPG Level (Level XP/Next Level XP)" and "&7  <##CB625F>🗡: Attack (Default is 1)" and "&7  <##CB625F>⚔: Defense (Default is 0)" and "&7  <##CB625F>☠: Deaths (All Game-Modes)" and "&7  <##D0944D>✳: Story Score (/mrm scoreshop)" and "&7  <##D0944D>❇: Story Position (/positionpoints)" and "&7  <##D0944D>₵: Balance (Money)" and "&7 " and "<##00C889> Click HERE for Default Mythical Realms Sidebar"
+		else if {Commence::%player%::StoryBar} is "Detailed":
+			set slot 12 of metadata tag "sidebar" of player to glowing book named "&8-&k|<##CB625F> {@mythicalrealms} Detailed Sidebar &8&k|&8-" with lore "&7 Applies to {@mythicalrealms}" and "<##00C889> Mythical Realms Sidebar is Enabled as Detailed" and "&7 " and "&8-&k|<##3988A3> Icon Key &8&k|&8-" and "&7  <##00C889>🍖: Hunger (Out of 10)" and "&7  <##00C889>🪣: Thirst (Out of 10)" and "&7  <##00C889>⌚: Sleep (Out of 10)" and "&7  <##855EC9>🧪: Mana" and "&7  <##855EC9>⏳: Infusion" and "&7  <##00608D>⛨: RPG Level (Level XP/Next Level XP)" and "&7  <##CB625F>🗡: Attack (Default is 1)" and "&7  <##CB625F>⚔: Defense (Default is 0)" and "&7  <##CB625F>☠: Deaths (All Game-Modes)" and "&7  <##D0944D>✳: Story Score (/mrm scoreshop)" and "&7  <##D0944D>❇: Story Position (/positionpoints)" and "&7  <##D0944D>₵: Balance (Money)" and "&7 " and "<##CB625F> Click HERE to Disable Mythical Realms Sidebar"
+		else:
+			set slot 12 of metadata tag "sidebar" of player to glowing book named "&8-&k|<##CB625F> {@mythicalrealms} Default Sidebar &8&k|&8-" with lore "&7 Applies to {@mythicalrealms}" and "<##00C889> Mythical Realms Sidebar is Enabled as Default" and "&7 " and "&8-&k|<##3988A3> Icon Key &8&k|&8-" and "&7  <##00C889>🍖: Hunger (Out of 10)" and "&7  <##00C889>🪣: Thirst (Out of 10)" and "&7  <##00C889>⌚: Sleep (Out of 10)" and "&7  <##855EC9>🧪: Mana" and "&7  <##855EC9>⏳: Infusion" and "&7  <##00608D>⛨: RPG Level (Level XP/Next Level XP)" and "&7  <##CB625F>🗡: Attack (Default is 1)" and "&7  <##CB625F>⚔: Defense (Default is 0)" and "&7  <##CB625F>☠: Deaths (All Game-Modes)" and "&7  <##D0944D>✳: Story Score (/mrm scoreshop)" and "&7  <##D0944D>❇: Story Position (/positionpoints)" and "&7  <##D0944D>₵: Balance (Money)" and "&7 " and "<##00C889> Click HERE for Detailed Mythical Realms Sidebar"
+		{Commence::%player%::SurvivalBar} is false:
+			set slot 14 of metadata tag "sidebar" of player to glowing dirt named "&8-&k|&f OGSurvival Sidebar &8&k|&8-" with lore "&7 Applies to &fOGSurvival" and "<##CB625F> OGSurvival Sidebar is Disabled" and "&7 " and "<##00C889> Click HERE to Enable OGSurvival Sidebar"
+		else if {Commence::%player%::SurvivalBar} is not false:
+			set slot 14 of metadata tag "sidebar" of player to glowing dirt named "&8-&k|&f OGSurvival Sidebar &8&k|&8-" with lore "&7 Applies to &fOGSurvival" and "<##00C889> OGSurvival Sidebar is Enabled" and "&7 " and "<##CB625F> Click HERE to Disable OGSurvival Sidebar"
 		{Commence::%player%::LiferBar} is false:
-			set slot 16 of metadata tag "sidebar" of player to glowing heart of the sea named "&8-&k|&a Lifer Sidebar &8&k|&8-" with lore "&c Sidebar is DISABLED in &aLifer" and "&7 " and "&9  Click to &aenable&9 the sidebar"
+			set slot 16 of metadata tag "sidebar" of player to glowing heart of the sea named "&8-&k|<##00C889> Lifer Sidebar &8&k|&8-" with lore "&7 Applies to <##00C889>Lifer" and "<##CB625F> Lifer Sidebar is Disabled" and "&7 " and "<##00C889> Click HERE to Enable Lifer Sidebar"
 		else if {Commence::%player%::LiferBar} is not false:
-			set slot 16 of metadata tag "sidebar" of player to glowing heart of the sea named "&8-&k|&a Lifer Sidebar &8&k|&8-" with lore "&a Sidebar is ENABLED in &aLifer" and "&7 " and "&9  Click to &cdisable&9 the sidebar"
-		set slot 22 of metadata tag "sidebar" of player to paper named "&8-&k|&9 Suggestions? &8&k|&8-" with lore "&7Want to see something here?" and "&8Type &c/report [text]" and "&7" and "&9  Click for help reporting"
-		set slot 8 of metadata tag "sidebar" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			set slot 16 of metadata tag "sidebar" of player to glowing heart of the sea named "&8-&k|<##00C889> Lifer Sidebar &8&k|&8-" with lore "&7 Applies to <##00C889>Lifer" and "<##00C889> Lifer Sidebar is Enabled" and "&7 " and "<##CB625F> Click HERE to Disable Lifer Sidebar"
+		set slot 8 of metadata tag "sidebar" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "sidebar" of player) to player
 
 #-=-=-=-=-=-=-=-=-=-
@@ -2582,7 +1576,7 @@ command /sidebar [<text>]:
 
 command /adminpanel [<text>]:
 	aliases: /ap
-	usage: &c /adminpanel
+	usage: <##CB625F> /adminpanel
 	description: &7 Views the admin panel
 	permission: commencer.admin
 	cooldown: 1 second
@@ -2591,45 +1585,45 @@ command /adminpanel [<text>]:
 	trigger:
 		close inventory of player
 		player's world is not "SpawnHub":
-			send "&c   You gotta be in &9SpawnHub"
+			send "<##CB625F>   You gotta be in <##3988A3>SpawnHub"
 			execute player command "/s"
 			wait 1 second
 			execute player command "/ap"
 			stop
-		set metadata tag "adminpanel" of player to chest inventory with 6 rows named "&8-==&k|&9  {@commencesmp}&c Staff  &8&k|&8==-"
+		set metadata tag "adminpanel" of player to chest inventory with 6 rows named "&8-==&k|<##3988A3>  {@commencesmp}<##CB625F> Staff  &8&k|&8==-"
 		set slot 0 of metadata tag "adminpanel" of player to dark gray stained glass pane named "&7"
 		loop 53 times:
 			set slot loop-value of metadata tag "adminpanel" of player to dark gray stained glass pane named "&7"
-		set slot 4 of metadata tag "adminpanel" of player to skull of player named "&8-&k|&c Welcome to the Admin Zone &8&k|&8-" with lore "&7Hey there %player's display name%," and "&7 welcome to the Admins!" and "&8Hover over the options below to" and "&8 control the server shtuffz"
+		set slot 4 of metadata tag "adminpanel" of player to skull of player named "&8-&k|<##CB625F> Welcome to the Admin Zone &8&k|&8-" with lore "&7Hey there %player's display name%," and "&7 welcome to the Admins!" and "&8Hover over the options below to" and "&8 control the server shtuffz"
 		{Survival::Enabled} is true:
-			set slot 10 of metadata tag "adminpanel" of player to grass block named "&9-&k|&f OGSurvival &7is &aEnabled &9&k|&9-"
+			set slot 10 of metadata tag "adminpanel" of player to grass block named "<##3988A3>-&k|&f OGSurvival &7is <##00C889>Enabled <##3988A3>&k|<##3988A3>-"
 		else:
-			set slot 10 of metadata tag "adminpanel" of player to grass block named "&9-&k|&f OGSurvival &7is &cDisabled &9&k|&9-"
+			set slot 10 of metadata tag "adminpanel" of player to grass block named "<##3988A3>-&k|&f OGSurvival &7is <##CB625F>Disabled <##3988A3>&k|<##3988A3>-"
 		{Lifer::Enabled} is true:
-			set slot 19 of metadata tag "adminpanel" of player to heart of the sea named "&9-&k|&a Lifer &7is &aEnabled &9&k|&9-"
+			set slot 19 of metadata tag "adminpanel" of player to heart of the sea named "<##3988A3>-&k|<##00C889> Lifer &7is <##00C889>Enabled <##3988A3>&k|<##3988A3>-"
 		else:
-			set slot 19 of metadata tag "adminpanel" of player to heart of the sea named "&9-&k|&a Lifer &7is &cDisabled &9&k|&9-"
+			set slot 19 of metadata tag "adminpanel" of player to heart of the sea named "<##3988A3>-&k|<##00C889> Lifer &7is <##CB625F>Disabled <##3988A3>&k|<##3988A3>-"
 		{CS::Enabled} is true:
-			set slot 28 of metadata tag "adminpanel" of player to glowing book named "&9-&k|&6 Commence Story &7is &aEnabled &9&k|&9-"
+			set slot 28 of metadata tag "adminpanel" of player to glowing book named "<##3988A3>-&k|&6 Commence Story &7is <##00C889>Enabled <##3988A3>&k|<##3988A3>-"
 		else:
-			set slot 28 of metadata tag "adminpanel" of player to glowing book named "&9-&k|&6 Commence Story &7is &cDisabled &9&k|&9-"
+			set slot 28 of metadata tag "adminpanel" of player to glowing book named "<##3988A3>-&k|&6 Commence Story &7is <##CB625F>Disabled <##3988A3>&k|<##3988A3>-"
 		{PVP::Enabled} is true:
-			set slot 37 of metadata tag "adminpanel" of player to netherite sword named "&9-&k|&4 KitPvP &7is &aEnabled &9&k|&9-"
+			set slot 37 of metadata tag "adminpanel" of player to netherite sword named "<##3988A3>-&k|&4 KitPvP &7is <##00C889>Enabled <##3988A3>&k|<##3988A3>-"
 		else:
-			set slot 37 of metadata tag "adminpanel" of player to netherite sword named "&9-&k|&4 KitPvP &7is &cDisabled &9&k|&9-"
-		set slot 8 of metadata tag "adminpanel" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			set slot 37 of metadata tag "adminpanel" of player to netherite sword named "<##3988A3>-&k|&4 KitPvP &7is <##CB625F>Disabled <##3988A3>&k|<##3988A3>-"
+		set slot 8 of metadata tag "adminpanel" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 		open (metadata tag "adminpanel" of player) to player
 
 command /bd <string> [<string>] [<number>] [<string>]:
 	description: Create block display entities.
 	aliases: blockdisplay
-	usage: &c/bd [block] scale [number] (-axis)
+	usage: <##CB625F>/bd [block] scale [number] (-axis)
 	permission: op
 	trigger:
 		if arg-1 is "delete" or "remove":
 			if arg-2 is "all":
 				make player execute command "/minecraft:kill @e[type=minecraft:block_display]"
-				send "&6Removed &call &6Block Display entities" to player
+				send "&6Removed <##CB625F>all &6Block Display entities" to player
 				stop
 			if arg-2 is not set:
 				make player execute command "/minecraft:kill @e[type=minecraft:block_display,limit=1,distance=..1.5]"
@@ -2650,11 +1644,11 @@ command /bd <string> [<string>] [<number>] [<string>]:
 						make player execute command "/summon block_display ~ ~%{_center}% ~ {block_state:{Name:""%{_blocktype::1}%""},transformation:{translation:[-%{_center}%f,-%{_center}%f,-%{_center}%f],left_rotation:[0f,0f,0f,1f],scale:[%{_scale}%f,%{_scale}%f,%{_scale}%f],right_rotation:[0f,0f,0f,1f]}}"
 					else:
 						make player execute command "/execute align xyz run summon block_display ~ ~%{_center}% ~ {block_state:{Name:""%{_blocktype::1}%""},transformation:{translation:[-%{_center}%f,-%{_center}%f,-%{_center}%f],left_rotation:[0f,0f,0f,1f],scale:[%{_scale}%f,%{_scale}%f,%{_scale}%f],right_rotation:[0f,0f,0f,1f]}}"
-					send "&aSummoned new Block Display entity with data &6%{_blocktype::1}% &ascaled to &6%{_scale}%." to player
+					send "<##00C889>Summoned new Block Display entity with data &6%{_blocktype::1}% <##00C889>scaled to &6%{_scale}%." to player
 					stop
 			else:
-				send "&cCorrect usage: /db [block] scale [num]"
+				send "<##CB625F>Correct usage: /db [block] scale [num]"
 				stop
-			send "&aSummoned new Block Display entity with data &6%{_blocktype::1}%." to player
+			send "<##00C889>Summoned new Block Display entity with data &6%{_blocktype::1}%." to player
 		else:
-			send "&cInvalid block type" to player
+			send "<##CB625F>Invalid block type" to player
