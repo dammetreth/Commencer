@@ -1,0 +1,117 @@
+# Music PLugin
+command /music1:
+#	permission message: You don't have permission to broadcast messages
+	executable by: players and console
+	trigger:
+		play sound "block.note_block.harp" with volume 1 and pitch 1.059463
+		play sound "block.note_block.harp" with volume 1 and pitch 1.259921
+		play sound "block.note_block.harp" with volume 1 and pitch 0.529732
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		play sound "block.note_block.bell" with volume 1 and pitch 1.059463
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		wait 0.2 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.943874
+		wait 0.1 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.840896
+		wait 0.1 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.793701
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+
+		play sound "block.note_block.harp" with volume 1 and pitch 1.059463
+		play sound "block.note_block.harp" with volume 1 and pitch 0.793701
+		play sound "block.note_block.harp" with volume 1 and pitch 0.529732
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		play sound "block.note_block.bell" with volume 1 and pitch 1.259921
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1.059463
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		play sound "block.note_block.bell" with volume 1 and pitch 1.189207
+		play sound "block.note_block.harp" with volume 1 and pitch 1.189207
+		play sound "block.note_block.harp" with volume 1 and pitch 0.943874
+		play sound "block.note_block.harp" with volume 1 and pitch 0.594604
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.943874
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		play sound "block.note_block.harp" with volume 1 and pitch 1.189207
+		play sound "block.note_block.harp" with volume 1 and pitch 0.943874
+		play sound "block.note_block.harp" with volume 1 and pitch 0.707107
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		play sound "block.note_block.bell" with volume 1 and pitch 0.840896
+		play sound "block.note_block.bell" with volume 1 and pitch 1.059463
+		play sound "block.note_block.harp" with volume 1 and pitch 1.059463
+		play sound "block.note_block.harp" with volume 1 and pitch 0.840896
+		play sound "block.note_block.harp" with volume 1 and pitch 0.629961
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		wait 0.2 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.943874
+		play sound "block.note_block.bell" with volume 1 and pitch 0.793701
+		wait 0.1 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.840896
+		play sound "block.note_block.bell" with volume 1 and pitch 0.707107
+		wait 0.1 seconds
+		play sound "block.note_block.bell" with volume 1 and pitch 0.793701
+		play sound "block.note_block.bell" with volume 1 and pitch 0.629961
+		play sound "block.note_block.harp" with volume 1 and pitch 1.059463
+		play sound "block.note_block.harp" with volume 1 and pitch 0.840896
+		play sound "block.note_block.harp" with volume 1 and pitch 0.793701
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		play sound "block.note_block.bell" with volume 1 and pitch 0.629961
+		play sound "block.note_block.bell" with volume 1 and pitch 0.529732
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.840896
+		play sound "block.note_block.bell" with volume 1 and pitch 0.594604
+		play sound "block.note_block.harp" with volume 1 and pitch 0.793701
+		play sound "block.note_block.harp" with volume 1 and pitch 0.629961
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		play sound "block.note_block.bell" with volume 1 and pitch 0.793701
+		play sound "block.note_block.bell" with volume 1 and pitch 0.594604
+		play sound "block.note_block.harp" with volume 1 and pitch 0.793701
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 0.943874
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1
+		play sound "block.note_block.bell" with volume 1 and pitch 0.629961
+		wait 0.4 seconds
+		play sound "block.note_block.bass" with volume 1 and pitch 1
+		wait 0.4 seconds

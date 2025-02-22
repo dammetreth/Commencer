@@ -1,0 +1,1868 @@
+#-=-=-=-=-=-=-=-=-=- | Let's Handle the Magic Systems! | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-
+	#IDEAS
+
+		#None:(
+
+#-=-=-=-=-=-=-=-=-=-
+	#OPTIONS AND MESSAGES
+
+options:
+	lifer:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##529E6A>Lifer  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	liferd:<##00C889>L<##00C08D>i<##00BA8D>f<##00B48D>e<##00AE8D>r
+	commence:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
+	story:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
+	permissionmessage:&9 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
+	itempermissionmessage:&9 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cThis feature is exclusive to <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s&c!
+	cooldownmessage:&9 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cWait before trying this command again!
+	spellcooldownmessage:&9 <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s &cWait before trying a spell again!
+	spellusenomana:&9 <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s &cYou're out of Mana!
+	fampvp:&c   You can't hurt other members of your family
+	admin:&c   Your admin powers granted you success
+	notworlds: "Survival" or "Survival2" or "PVPSpawn" or "PVPLevel2" or "PVPLevel3" or "PVPLevel4" or "PVPLevel5"
+	worlds: "Survival3" or "Survival3_nether" or "Survival3_the_end"
+	worlds2: "Survival3" and "Survival3_nether" and "Survival3_the_end"
+	bcworlds: "WorldQuest" and "SpawnHub"
+	WTP:&7   You're about to teleport to <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s <##545B5E>
+	funds:&a$&8Funds&a$
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)&c
+
+	adventurer:<##393D3F>A<##404547>D<##474C4F>V<##4E5456>E<##545B5E>N<##5B6266>T<##626A6D>U<##626A6D>R<##697175>E<##70797C>R <##778084>
+	commoner:<##393D3F>C<##404547>O<##474C4F>M<##4E5456>M<##545B5E>O<##5B6266>N<##626A6D>E<##626A6D>R <##778084>
+	squire:<##545B5E>S<##66645E>Q<##786E5E>U<##8A775E>I<##9C805E>R<##B88E5D>E <##A0E3F7>
+	knight:<##545B5E>K<##66645E>N<##786E5E>I<##8A775E>G<##9C805E>H<##B88E5D>T <##A0E3F7>
+	baron:<##58AA6B>B<##54A367>A<##509B62>R<##4C935D>O<##488C58>N <##3A7047>
+	duke:<##58AA6B>D<##54A367>U<##509B62>K<##4C935D>E <##3A7047>
+	noble:<##7954BC>N<##704CB2>O<##6745A8>B<##573693>L<##5F3D9E>E <##9866E2>
+	king:<##A5753E>K<##AF7D42>I<##BA8446>N<##C48B4A>G &8
+	emperor:<##916737>E<##9B6E3B>M<##A5753E>P<##AF7D42>E<##BA8446>R<##C48B4A>O<##D0944D>R &8
+	pope:<##E8A458>P<##F2AC5C>O<##FCB35F>P<##FFB96B>E &f
+	superior:<##D89A52>S<##E2A156>U<##E8A458>P<##F2AC5C>E<##FCB35F>R<##FFB96B>I<##FFBE75>O<##FFC37F>R &f
+	god:<##DCEDF4>G<##E8F8FF>O<##F7FCFF>D <##EFFAFF>
+	devil:<##CB625F>D<##C15755>E<##BA4E4C>V<##B24543>I<##AA3D3B>L <##1D2021>
+
+	lightgreenrace:&8-&k|&a Hover for Info, Click to Become &8&k|&8-
+	lightgreenrace2:&a Light Green Forms are Small & Basic
+	greenrace:&8-&k|&2 Hover for Info, Click to Become &8&k|&8-
+	greenrace2:&2 Green Forms are Generic but Powerful
+	lightredrace:&8-&k|&c Hover for Info, Click to Become &8&k|&8-
+	lightredrace2:&c Red Forms are Unique & Powerful
+	redrace:&8-&k|&4 Hover for Info, Click to Become &8&k|&8-
+	redrace2:&4 Dark Red Forms are Most Powerful but Hard
+	racetitle:&8-==&k|&6      Choose a Form      &8&k|&8==-
+	racetitle2:&8  &8|-&l!&8-|  &aYou Chose a Form  &8|-&l!&8-|
+	racechoose1:<##D0944D>  Click HERE to Become this Form Origin!
+	racechoose2:<##CB625F>  Careful! It's Hard to Change Forms!
+	raceinfo:&8-&k|&7 Welcome to &6The Story &8&k|&8-
+	raceinfo2:&a You've finally been called here
+	raceinfo3:&a  to choose your destiny in this
+	raceinfo4:&a  world. The gods have decided to
+	raceinfo5:&a  let you choose a Form type!
+	raceinfo6:&2 You'd better choose well though,
+	raceinfo7:&2  you only have &cone shot&2!
+
+	berserker:<##5BAF70>Berserker<##778084>
+	assassin:<##5BAF70>Assassin<##778084>
+	swordsman:<##5BAF70>Swordsman<##778084>
+	archer:<##5BAF70>Archer<##778084>
+	cleric:<##5BAF70>Cleric<##778084>
+	mutator:<##5BAF70>Mutator<##778084>
+	summoner:<##5BAF70>Summoner<##778084>
+	demonlike:<##5BAF70>Demonlike<##778084>
+	sunman:<##5BAF70>Sunman<##778084>
+	explorer:<##5BAF70>Explorer<##778084>
+	skyflier:<##5BAF70>Sky Flier<##778084>
+	aerialarcher:<##5BAF70>Aerial Archer<##778084>
+	gemmaster:<##5BAF70>Gem Master<##778084>
+	
+	human:&9<##7DF29C> Human <##778084>
+	humanl1:<##D0944D> Type:<##778084> Human, Higher Power Image
+	humanl2:<##D0944D> Playstyle:<##778084> Human, Default
+	humanl3:<##D0944D> Special:<##778084> Economy & Towny
+	halfling:<##54A368> Halfling <##778084>
+	halflingl1:<##D0944D> Type:<##778084> Human Mutant, Mediator Junction
+	halflingl2:<##D0944D> Playstyle:<##778084> Human, Fast
+	halflingl3:<##D0944D> Special:<##778084> Armor & Clothing
+	werewolf:<##EF7C7C> Werewolf <##778084>
+	werewolfl1:<##D0944D> Type:<##778084> Human Mutant, Lower Power Image
+	werewolfl2:<##D0944D> Playstyle:<##778084> Human/Day, Werewolf/Night
+	werewolfl3:<##D0944D> Special:<##778084> Pets
+	vampire:<##964F4F> Vampire <##778084>
+	vampirel1:<##D0944D> Type:<##778084> Human Mutant, Stealthy Fights
+	vampirel2:<##D0944D> Playstyle:<##778084> Human, Speedy, Flight, No Sun
+	vampirel3:<##D0944D> Special:<##778084> Cities & Gaming
+	dwarf:&9<##7DF29C> Dwarf <##778084>
+	dwarfl1:<##D0944D> Type:<##778084> Small Human, Clever Structure
+	dwarfl2:<##D0944D> Playstyle:<##778084> Human, Weak, No Dark
+	dwarfl3:<##D0944D> Special:<##778084> Cartography & Maps
+	goblin:&9<##54A368> Goblin <##778084>
+	goblinl1:<##D0944D> Type:<##778084> Human Mutant, Demonic Summoner
+	goblinl2:<##D0944D> Playstyle:<##778084> Human, Very Weak
+	goblinl3:<##D0944D> Special:<##778084> None
+	elf:&9<##EF7C7C> Elf <##778084>
+	elfl1:<##D0944D> Type:<##778084> Small Human, Nefarious Rebellion
+	elfl2:<##D0944D> Playstyle:<##778084> Human, Weak, Bowmaster
+	elfl3:<##D0944D> Special:<##778084> Bows & Archery
+	fairy:&9<##964F4F> Fairy <##778084>
+	fairyl1:<##D0944D> Type:<##778084> Small Human, Pure Magic
+	fairyl2:<##D0944D> Playstyle:<##778084> Human, Quick, Very Weak
+	fairyl3:<##D0944D> Special:<##778084> Magic & Spells
+	orc:&9<##7DF29C> Orc <##778084>
+	orcl1:<##D0944D> Type:<##778084> Large Human, Dumb Strength
+	orcl2:<##D0944D> Playstyle:<##778084> Human, Slow, Strong
+	orcl3:<##D0944D> Special:<##778084> Rock & Stone
+	undead:&9<##54A368> Undead <##778084>
+	undeadl1:<##D0944D> Type:<##778084> Human Mutant, After Death
+	undeadl2:<##D0944D> Playstyle:<##778084> Human, Weak, Can't Die
+	undeadl3:<##D0944D> Special:<##778084> Hatred by All
+	centaur:&9<##EF7C7C> Centaur <##778084>
+	centaurl1:<##D0944D> Type:<##778084> Large Human, Mystical Prowess
+	centaurl2:<##D0944D> Playstyle:<##778084> Human, Vegetarian, Crossbowmaster, Strong
+	centaurl3:<##D0944D> Special:<##778084> Crossbow & Archery
+	troll:&9<##964F4F> Troll <##778084>
+	trolll1:<##D0944D> Type:<##778084> Human Mutant, Mischievous Hauntings
+	trolll2:<##D0944D> Playstyle:<##778084> Human, Slow, Strong
+	trolll3:<##D0944D> Special:<##778084> Frogs & Gardening
+	giant:&9<##7DF29C> Giant <##778084>
+	giantl1:<##D0944D> Type:<##778084> Largest Human, Matter Power
+	giantl2:<##D0944D> Playstyle:<##778084> Human, Slow, Special Tools
+	giantl3:<##D0944D> Special:<##778084> Large Tools & Weapons
+	beastfolk:&9<##54A368> Beastfolk <##778084>
+	beastfolkl1:<##D0944D> Type:<##778084> Large Human, Creation Overload
+	beastfolkl2:<##D0944D> Playstyle:<##778084> Human, Strong, Powerful
+	beastfolkl3:<##D0944D> Special:<##778084> Snow & Ice
+	dragonborne:&9<##EF7C7C> Dragonborne <##778084>
+	dragonbornel1:<##D0944D> Type:<##778084> Large Human, Ariel Actors
+	dragonbornel2:<##D0944D> Playstyle:<##778084> Human, Strong, Flight
+	dragonbornel3:<##D0944D> Special:<##778084> Lava & Deep Rock
+	wyvern:&9<##964F4F> Wyvern <##778084>
+	wyvernl1:<##D0944D> Type:<##778084> Large Human, Mystic Elemental
+	wyvernl2:<##D0944D> Playstyle:<##778084> Human, Defensive, Flight
+	wyvernl3:<##D0944D> Special:<##778084> Water & Crystal
+	demon:&9<##CB625F> Demon <##778084>
+	demonl:<##CB625F> Nothing is known about Demons
+	angel:&9<##DCEDF4> Angel <##778084>
+	angell:<##DCEDF4> Nothing is known about Angels
+
+	unbreaking:<##626A6D>Unbreaking
+	damage:<##626A6D>Damage
+	fireaspect:<##626A6D>Fire Aspect
+	poison:<##626A6D>Poison
+	freeze:<##626A6D>Freeze
+	firebomb:<##626A6D>Fire Bomb
+	efficiency:<##626A6D>Efficiency
+	poison:<##626A6D>Poison
+	knockback:<##626A6D>Knockback
+	crit:<##626A6D>Critical Hit
+
+	fire:<##E48833>Fire
+	flame:<##E48833>Flame
+	fireball:<##E48833>Fireball
+	firearrows:<##E48833>Fire Arrows
+	molten:<##E48833>Molten
+	rage:<##E48833>Rage
+	reshuffle:<##E48833>Reshuffle
+	flameburst:<##E48833>Flame Burst
+	infernowave:<##E48833>Inferno Wave
+	blazingshield:<##E48833>Blazing Shield
+
+	brume:<##CB625F>Brume
+	teleport:<##CB625F>Teleport
+	levitation:<##CB625F>Levitation
+	lucky:<##CB625F>Lucky
+	blind:<##CB625F>Blind
+	confuse:<##CB625F>Confuse
+	spring:<##CB625F>Spring
+	
+	ice:<##57D1F9>Ice
+	freeze:<##57D1F9>Freeze
+	freezearrows:<##57D1F9>Freeze Arrows
+	crit:<##57D1F9>Critical
+	gears:<##57D1F9>Gears
+	barbed:<##57D1F9>Barbed
+	plated:<##57D1F9>Plated
+	
+	storm:<##916DD6>Storm
+	lightningstrike:<##916DD6>Lightning Strike
+	electric:<##916DD6>Electric
+	overload:<##916DD6>Overload
+	repel:<##916DD6>Repel
+	thunderstrike:<##916DD6>Thunder Strike
+	thunder:<##916DD6>Thunder
+	thundershot:<##916DD6>Thunder Shot
+	magnetism:<##916DD6>Magnetism
+
+	earth:<##77552D>Earth
+	explosion:<##77552D>Explosion
+	earthquake:<##77552D>Earthquake
+	obliterate:<##77552D>Obliterate
+	blastproof:<##77552D>Blastproof
+	slow:<##77552D>Slow
+	slowarrows:<##77552D>Slow Arrows
+	lifedrain:<##77552D>Life Drain
+	fortunesfavor:<##77552D>Fortune's Favor
+	
+	life:<##00C889>Life
+	heal:<##00C889>Heal
+	summon:<##00C889>Summon
+	shield:<##00C889>Shield
+	haste:<##00C889>Haste
+	dodge:<##00C889>Dodge
+	autoheal:<##00C889>Autoheal
+	combatmedic:<##00C889>Combat Medic
+	lifesteal:<##00C889>Lifesteal
+	lifestealarrows:<##00C889>Lifesteal Arrows
+	glide:<##00C889>Glide
+	
+	death:<##545B5E>Death
+	slow:<##545B5E>Slow
+	decapitation:<##545B5E>Decapitate
+	clearsight:<##545B5E>Clear Sight
+	levitation:<##545B5E>Levitation
+	slayer:<##545B5E>Slayer
+	etherealdefense:<##545B5E>Ethereal Defense
+	enderwalk:<##545B5E>Enderwalk
+	parry:<##545B5E>Parry
+	blink:<##545B5E>Blink
+	silencingtouch:<##545B5E>Silencing Touch
+
+	questsummary:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##D0944D>Story <##D89A52>Quest <##E2A156>Summary  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	questtitle:&8-==&k|&6	 Choose a Quest	 &8&k|&8==-
+	questinfo1:&7 Complete Quests to Gain
+	questinfo2:&7  Experience & Score Points
+	questinfo3:&8 Experience Gets You a Job
+	questinfo4:&7 Score Points Are Spent in /sshop
+	questinfo5:&8 
+	questinfo6:&7 
+	questwarn1:&c   Your current quest is for %{Commence::%player%::Quest::Proper}% %{Commence::%player%::Quest::Active}%
+	questwarn2:&c 
+	questwarn3:&c 
+	questwarn4:&c 
+	queststart1:&7%{Commence::%player%::NPC::Active}% says...
+	queststart2:<##DCEDF4>   %{Commence::%player%::NPC::Quest1}%
+	queststart3:<##DCEDF4>    %random element of {Commence::QuestStart2::*}%%{Commence::%player%::Quest::Proper}%
+	queststart4:<##DCEDF4>     %{Commence::%player%::NPC::Quest3}%
+	questmsg1:&7 
+	questmsg2:&7 
+	questmsg3:&7 
+
+	common:<##545B5E>Common
+	commonp:90
+	familiar:<##6F695E>Familiar
+	familiarp:40
+	sparse:<##8A775E>Sparse
+	sparsep:10
+	rare:<##AF8A5D>Rare
+	rarep:5
+	unique:<##CA985D>Unique
+	uniquep:1
+	legendary:<##F7AF5D>Legendary
+	legendaryp:0.1
+	gods:<##EFFAFF>Gods
+	godsp:0.01
+	devils:<##AA3D3B>Devils
+	devilsp:0.01
+
+	magicitem:<##855EC9>❃Magic Item
+	targetspell:<##CB625F>❂Target Spell
+	selfspell:<##00C889>☻Self Spell
+	projectilespell:<##CB625F>🏹Projectile Spell
+	effectdspell:<##CB625F>🔥Effect Damage Spell
+	radiusdspell:<##CB625F>✪Radius Damage Spell
+	effectbspell:<##00C889>🔥Effect Buff Spell
+	radiusbspell:<##00C889>✪Radius Buff Spell
+	manaitem:<##855EC9>🧪Uses Mana
+
+	specialitem:<##F7AF5D>☯Special Item
+	gembaseitem:<##855EC9>ΔGem Base
+	wyvernitem:<##964F4F>☽Wyvern Crystal
+	dragonborneitem:<##892929>☀Dragonborne Scale
+	handonlyitem:<##CB625F>☞Hand-Only Item
+	inventoryitem:<##CB625F>回Inventory Item
+	mythicalitem:<##F7AF5D>❃Uses Mythical Essence
+	spellitem:<##855EC9>◎Casts Spells
+	abilityitem:<##855EC9>☄Special Abilities
+	heart:<##CB625F>♥
+	maxhearts:<##CB625F>♥Max
+	unbreakable:<##CB625F>☮Unbreakable
+	armorprotection:<##CB625F>۞Armor Protection
+	itemdamage:<##CB625F>🗡Attack Damage
+	attackerdamage:<##CB625F>🗡Attacker Damage
+	attackdamage:<##CB625F>🗡Attack Damage
+	attackspeed:<##CB625F>🗡Attack Speed
+	itemdefense:<##CB625F>⚔Attack Defense
+	
+	level1:&c ▪ &7
+	level2:&c ▪▪ &7
+	level3:&c ▪▪▪ &7
+	level4:&c ▪▪▪▪ &7
+	level5:&c ▪▪▪▪▪ &7
+	mlevel1:&c ▫ &7
+	mlevel2:&c ▫▫ &7
+	mlevel3:&c ▫▫▫ &7
+	mlevel4:&c ▫▫▫▫ &7
+	mlevel5:&c ▫▫▫▫▫ &7
+	zombie:<##892929>Zombie
+	skeleton:<##8B969B>Skeleton
+	spider:<##892929>Spider
+	creeper:<##3A7047>Creeper
+	witch:<##402475>Witch
+
+	spellcooldownmessage: <##70797C>(<##CC3B3B>&l!<##70797C>)&c Wait Before Trying a Spell Again!
+	spellusenomana: <##70797C>(<##CC3B3B>&l!<##70797C>)&c You're out of 🧪Mana!
+	spellusenoinfusion: <##70797C>(<##CC3B3B>&l!<##70797C>)&c You're out of ⏳Infusion!
+	levelup:<##7DF29C>&l +<##D0944D>LEVEL UP! &7
+	skillupgrade:<##7DF29C>&l +<##00C889>SKILL &7Level up! <##D0944D>
+	skilllearn:<##7DF29C>&l +<##00C889>SKILL &7New Skill Learned! <##D0944D>
+	schoollearn:<##7DF29C>&l +<##D0944D>MAGIC SCHOOL &7You've Been Invited to the <##D0944D>
+	spelllearn:<##7DF29C>&l +<##3867B7>SPELL &7New Spell Learned! <##D0944D>
+	spelluse:<##7DF29C>&l +<##3867B7>SPELL &7You Used <##D0944D>
+	spelluseon:<##964F4F>&l -<##3867B7>SPELL 
+	spellfail:<##964F4F>&l -<##3867B7>SPELL &cYour Spell Failed!
+	noloadedspells:<##964F4F>&l -<##3867B7>SPELL &cRight Click to Load Spells! <##D0944D>
+	joboffer:<##7DF29C>&l +<##A0723D>JOB &7New Job Offer! <##D0944D>
+	jobaccept:<##7DF29C>&l +<##A0723D>JOB &7You Accepted a Job at <##D0944D>
+	jobdecline:<##964F4F>&l -<##A0723D>JOB &7You Declined a Job at <##D0944D>
+
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	#MYTHICAL MAGIC
+
+function playSpell(p: player, l: number, t: text):
+	{Commence::%{_p}%::Target::Assign} is not set:
+		loop all entities in radius 5 of {_p}:
+			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is not {_p}
+			set {Commence::%{_p}%::Target::Assign} to loop-entity if {_p}'s target is a mob
+			set {Commence::%{_p}%::Target::Assign} to loop-entity if {_p}'s target is a player
+	set {Commence::%{_p}%::Target::Assign} to {_p}'s target if {_p}'s target is a mob
+	set {Commence::%{_p}%::Target::Assign} to {_p}'s target if {_p}'s target is a player
+	clear {Commence::%{_p}%::Target::Assign} if {Commence::%{_p}%::Target::Assign} is {_p}
+	send "{@spelluse}%{_t}%" to {_p}
+	play sound "entity.evoker.cast_spell" at volume 1 at {_p}
+	play sound "entity.evoker.prepare_summon" at volume 1 at {_p}
+	clear {Commence::%{_p}%::Magic::Effect}
+	remove 1 from {Commence::%{_p}%::Story::Mana} if {Commence::%{_p}%::Story::Mana} is more than 0
+	chance of ({Commence::%{_p}%::Skill::MagicLevel} * 0.005):
+		add 1 to {Commence::%{_p}%::Story::Mana}
+		send "<##00608D> MAGIC SKILL &7You Cast for Free!" or "<##00608D> MAGIC SKILL &7You Got Your Mana Back!" to {_p}
+	set {Commence::%{_p}%::Magic::Damage} to ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+
+	{_t} is "%{Commence::Magic::Fire::Spells::Flame}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			ignite {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Molten Rage}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 2"
+		{_l} is 1:
+			apply strength to {_p} for 8 seconds
+			apply speed to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Fireball}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			make {_p} shoot small fireball at speed ({Commence::%{_p}%::Magic::Damage} * 0.1) (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+			ignite {Commence::%{_p}%::Target::Assign} for 4 seconds
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Flamestrike}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			ignite {Commence::%{_p}%::Target::Assign} for 4 seconds
+			strike lightning effect at {Commence::%{_p}%::Target::Assign}
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Molten Shot}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(yellow, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of flame at {_p}
+					draw 1 of flame at {Commence::%{_p}%::Target::Assign}
+			spawn blaze at {_p}
+			set {_ts} to last spawned blaze
+			push the last spawned entity (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+			wait 1 second
+			set block at {Commence::%{_p}%::Target::Assign} to fire if block at {Commence::%{_p}%::Target::Assign} is air
+			set {_tb} to block at {Commence::%{_p}%::Target::Assign}
+			ignite {Commence::%{_p}%::Target::Assign} for 4 seconds
+			kill {_ts}
+			wait 10 ticks
+			set block at {_tb} to air
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Flame Burst}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(yellow, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of flame at {_p}
+					draw 1 of flame at {Commence::%{_p}%::Target::Assign}
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+			wait 10 ticks
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+			wait 10 ticks
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+			wait 10 ticks
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Inferno Wave}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(yellow, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of flame at {_p}
+					draw 1 of flame at {Commence::%{_p}%::Target::Assign}
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+			wait 10 ticks
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+			wait 10 ticks
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+			wait 10 ticks
+			ignite {Commence::%{_p}%::Target::Assign} for 1 second
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Blazing Shield}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Firestorm}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(yellow, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of flame at {_p}
+					draw 1 of flame at {Commence::%{_p}%::Target::Assign}
+			loop 16 times:
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the right of {_p}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the left of {_p}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks behind {_p}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks in front of {_p}
+				set {_pl} to location of {_p} if {_pl} is not set
+				set {_pl} to location of block 8 blocks above {_pl}
+				set {_pla} to location of block 8 blocks below {_pl}
+				shoot small fireball from location of {_pl} at speed ({Commence::%{_p}%::Magic::Damage} * 0.1) (direction from {_pl} to {_pla})
+				wait 1 tick
+			clear {_pl}
+			clear {_pla}
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Ember Shot}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			make {_p} shoot fireball at speed ({Commence::%{_p}%::Magic::Damage} * 0.1) (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Phoenix Dive}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			push {_p} up
+			push {_p} (direction from {_p} to location of block 5 blocks in front of {_p})
+			wait 2 ticks
+			push {_p} (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Magic::Damage} * 0.1)
+			wait 2 ticks
+			push {_p} down
+			push {_p} backwards
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Flame Ring}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop 180 times:
+				set {_pl} to {Commence::%{_p}%::Target::Assign}'s location
+				set {_v} to spherical vector radius 1, yaw (loop-value*5), pitch 0
+				set y of {_v} to (loop-value*0.2)
+				draw 0 of flame at {_pl} ~ {_v}
+			ignite {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Blazing Trail}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 2"
+		{_l} is 1:
+			{Commence::%{_p}%::Magic::Effect} contains "Fire":
+				loop 12 times:
+					wait 1 tick
+					loop 180 times:
+						set {_pl} to {_p}'s location
+						set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+						set y of {_v} to (loop-value-1*0.2)
+						chance of 10%:
+							draw 0 of flame at {_pl} ~ {_v}
+							draw 1 of flame at {_pl}
+			loop 4 times:
+				set block behind {_p} to fire if block behind {_p} is air
+				set {_tb} to block behind {_p}
+				wait 1 second
+				set block at {_tb} to air
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Hellfire}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop 20 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {Commence::%{_p}%::Target::Assign}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					draw 0 of flame at {_pl} ~ {_v}
+			ignite {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Fiery Explosion}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			create a fake explosion at {Commence::%{_p}%::Target::Assign}
+			ignite {Commence::%{_p}%::Target::Assign} for 8 seconds
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Magic::Damage} * 0.05)
+			push {Commence::%{_p}%::Target::Assign} backwards
+	else if {_t} is "%{Commence::Magic::Fire::Spells::Infernal Gateway}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Fire 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(yellow, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of flame at {_p}
+					draw 1 of flame at {Commence::%{_p}%::Target::Assign}
+			loop 4 times:
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the right of {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the left of {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks behind {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks in front of {Commence::%{_p}%::Target::Assign}
+				set {_pl} to location of {Commence::%{_p}%::Target::Assign} if {_pl} is not set
+				shoot small fireball from location of {_pl} at speed ({Commence::%{_p}%::Magic::Damage} * 0.1) (direction from {_pl} to {Commence::%{_p}%::Target::Assign})
+				wait 1 second
+
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Windgust}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			push {Commence::%{_p}%::Target::Assign} backwards
+			damage {Commence::%{_p}%::Target::Assign} by 0.2
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Armored}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			apply resistance to {_p} for 5 seconds
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Confuse}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			apply nausea 5 to {Commence::%{_p}%::Target::Assign} for 10 seconds
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Spring}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			apply jump boost 10 to {_p} for 10 seconds
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Fly}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			{_p}'s flight mode is not true:
+				set {_p}'s flight mode to true
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Aqua Jet}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			loop 20 times:
+				wait 1 tick
+				damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Magic::Damage} * 0.05)
+				loop 180 times:
+					set {_pl} to {Commence::%{_p}%::Target::Assign}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					draw 0 of splash at {_pl} ~ {_v}
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Tidal Wave}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light red, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light red, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of dripping_water at {_p}
+					draw 1 of dripping_water at {Commence::%{_p}%::Target::Assign}
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Healing Waters}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			{Commence::%{_p}%::Magic::Effect} contains "Brume":
+				loop 12 times:
+					wait 1 tick
+					loop 180 times:
+						set {_pl} to {_p}'s location
+						set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+						set y of {_v} to (loop-value-1*0.2)
+						chance of 10%:
+							draw 0 of entity_effect at {_pl} ~ {_v}
+							draw 1 of entity_effect at {_pl}
+			set block at {_p} to water if block at {_p} is air
+			set {_tb} to block at {_p}
+			apply regeneration to {_p} for 8 seconds
+			wait 4 seconds
+			set block at {_tb} to air if block at {_tb} is water
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Watersurge}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light red, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light red, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of dripping_water at {_p}
+					draw 1 of dripping_water at {Commence::%{_p}%::Target::Assign}
+			set block at {Commence::%{_p}%::Target::Assign} to water if block at {Commence::%{_p}%::Target::Assign} is air
+			set {_tb} to block at {Commence::%{_p}%::Target::Assign}
+			wait 4 seconds
+			set block at {_tb} to air if block at {_tb} is water
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Mist Cloud}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			loop all players and mobs in radius 5 of {_p}:
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at loop-entity
+				damage loop-entity by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1) if loop-entity is not {_p}
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Air Shield}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds if block under {_p} is air
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Air Leap}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			push {_p} upwards
+			push {_p} (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Whirlwind}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			push {_p} upwards
+			push {_p} (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Hurricane}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light red, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light red, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of dripping_water at {_p}
+					draw 1 of dripping_water at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} upwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			strike lightning effect at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Wind Barrier}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Brume::Spells::Zephyr}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Brume 2"
+		{_l} is 1:
+			apply speed to {_p} for 8 seconds
+
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Freeze}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			apply slowness 99 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply jump boost 256 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Glacial Barrier}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Critical Hit}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			damage {Commence::%{_p}%::Target::Assign} by 2
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Glacial Gears}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 2"
+		{_l} is 1:
+			apply speed 1 to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Barbed}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Frostbite}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light blue, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light blue, white, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of scrape at {_p}
+					draw 1 of scrape at {Commence::%{_p}%::Target::Assign}
+			apply slowness 2 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 5 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 5 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Ice Nova}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light blue, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light blue, white, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of scrape at {_p}
+					draw 1 of scrape at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 5 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 5 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Ice Prison}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			apply slowness 99 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply jump boost 256 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply blindness to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Ice Spikes}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light blue, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light blue, white, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of scrape at {_p}
+					draw 1 of scrape at {Commence::%{_p}%::Target::Assign}
+			loop 4 times:
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the right of {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the left of {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks behind {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks in front of {Commence::%{_p}%::Target::Assign}
+				set {_pl} to location of {Commence::%{_p}%::Target::Assign} if {_pl} is not set
+				shoot small fireball from location of {_pl} at speed ({Commence::%{_p}%::Magic::Damage} * 0.1) upwards
+				wait 1 second
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Ice Shard}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			make {_p} shoot small fireball at speed ({Commence::%{_p}%::Magic::Damage} * 0.1) (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Frost Armor}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds if biome at {_p} contains snow
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Ice Wall}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Glacial Path}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 2"
+		{_l} is 1:
+			{Commence::%{_p}%::Magic::Effect} contains "Ice":
+				loop 12 times:
+					wait 1 tick
+					loop 180 times:
+						set {_pl} to {_p}'s location
+						set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+						set y of {_v} to (loop-value-1*0.2)
+						chance of 10%:
+							draw 0 of bubble_pop at {_pl} ~ {_v}
+							draw 1 of bubble at {_pl}
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+			set block in front of {_p} to ice if block in front of {_p} is water
+			wait 5 ticks
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Blizzard}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light blue, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light blue, white, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of scrape at {_p}
+					draw 1 of scrape at {Commence::%{_p}%::Target::Assign}
+			loop random integer between 1 and 180 times:
+				draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			loop random integer between 1 and 180 times:
+				draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+			loop random integer between 1 and 180 times:
+				draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			loop random integer between 1 and 180 times:
+				draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Icy Grasp}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			apply slowness 99 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply jump boost 256 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Ice::Spells::Arctic Wind}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Ice 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(light blue, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(light blue, white, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of scrape at {_p}
+					draw 1 of scrape at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} upwards
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05)
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05)
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05)
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05)
+			wait 5 ticks
+
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Thunder}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			play sound "entity.lightning_bolt.thunder" at volume 100 at pitch 17 at {Commence::%{_p}%::Target::Assign}
+			play sound "item.trident.thunder" at volume 100 at pitch 17 at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Electrified Aura}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 2"
+		{_l} is 1:
+			loop all players and mobs in radius 5 of {_p}:
+				damage loop-entity by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1) if loop-entity is not {_p}
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Repel}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			push {Commence::%{_p}%::Target::Assign} backwards
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Lightning}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			play sound "entity.lightning_bolt.thunder" at volume 100 at pitch 50 at {Commence::%{_p}%::Target::Assign}
+			strike lightning effect at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Electric Overload}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			loop 5 times:
+				set {_tf} to {Commence::%{_p}%::Magic::Effect}
+				play sound "block.metal.fall" at volume 100 at pitch 50 at {Commence::%{_p}%::Target::Assign}
+				wait 1 tick
+				play sound "block.metal.hit" at volume 100 at pitch 50 at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Thunderbolt}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			play sound "entity.lightning_bolt.thunder" at volume 100 at pitch 50 at {Commence::%{_p}%::Target::Assign}
+			play sound "item.trident.thunder" at volume 100 at pitch 17 at {Commence::%{_p}%::Target::Assign}
+			strike lightning effect at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Lightningstrike}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(purple, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(magenta, purple, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of electric_spark at {_p}
+					draw 1 of electric_spark at {Commence::%{_p}%::Target::Assign}
+			play sound "entity.lightning_bolt.thunder" at volume 100 at pitch 50 at {Commence::%{_p}%::Target::Assign}
+			play sound "item.trident.thunder" at volume 100 at pitch 17 at {Commence::%{_p}%::Target::Assign}
+			wait 20 ticks
+			strike lightning effect at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Storm Surge}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(purple, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(magenta, purple, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of electric_spark at {_p}
+					draw 1 of electric_spark at {Commence::%{_p}%::Target::Assign}
+			loop 4 times:
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the right of {_p}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the left of {_p}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks behind {_p}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks in front of {_p}
+				set {_pl} to location of {_p} if {_pl} is not set
+				strike lightning effect at location of {_pl}
+				wait 5 tick
+			clear {_pl}
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Tempest Surge}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 2"
+		{_l} is 1:
+			{Commence::%{_p}%::Magic::Effect} contains "Storm":
+				loop 12 times:
+					wait 1 tick
+					loop 180 times:
+						set {_pl} to {_p}'s location
+						set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+						set y of {_v} to (loop-value-1*0.2)
+						chance of 10%:
+							draw 0 of electric_spark at {_pl} ~ {_v}
+							draw 1 of electric_spark at {_pl}
+			weather in {_p}'s world is sun:
+				set weather in {_p}'s world to rain
+				wait 4 seconds
+				set weather in {_p}'s world to sun
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Gale Wings}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 2"
+		{_l} is 1:
+			push {_p} upwards
+			force {_p} to start flying
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Cyclone}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(purple, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(magenta, purple, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of electric_spark at {_p}
+					draw 1 of electric_spark at {Commence::%{_p}%::Target::Assign}
+			weather in {_p}'s world is sun:
+				set weather in {_p}'s world to thunder
+			push {Commence::%{_p}%::Target::Assign} upward
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 1 tick
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 1 tick
+			strike lightning effect at location of {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+			push {Commence::%{_p}%::Target::Assign} backwards
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Torrential Downpour}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			weather in {_p}'s world is sun:
+				set weather in {_p}'s world to rain
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Static Shock}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			loop all players and mobs in radius 5 of {_p}:
+				damage loop-entity by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1) if loop-entity is not {_p}
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Wind Walk}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(purple, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(magenta, purple, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of electric_spark at {_p}
+					draw 1 of electric_spark at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Mist Veil}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 2"
+		{_l} is 1:
+			weather in {_p}'s world is rain:
+				apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Storm::Spells::Eye of the Storm}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Storm 2"
+		{_l} is 1:
+			weather in {_p}'s world is thunder:
+				apply strength to {_p} for 8 seconds
+
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Earthquake}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Blastproof}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Explosion}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			create a fake explosion at {Commence::%{_p}%::Target::Assign}
+			damage {Commence::%{_p}%::Target::Assign} by 2
+			push {Commence::%{_p}%::Target::Assign} backwards
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Fortunes Favor}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 2"
+		{_l} is 1:
+			apply regeneration 3 to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Slow}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			apply slowness 2 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply jump boost 256 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Rock Barrier}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 2"
+		{_l} is 1:
+			apply regeneration 3 to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Terra Spike}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			loop 4 times:
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the right of {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks to the left of {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks behind {Commence::%{_p}%::Target::Assign}
+				chance of 25%:
+					set {_pl} to location of block random integer between 1 and 5 blocks in front of {Commence::%{_p}%::Target::Assign}
+				set {_pl} to location of {Commence::%{_p}%::Target::Assign} if {_pl} is not set
+				shoot small fireball from location of {_pl} at speed ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2) up
+				wait 1 second
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Terraward}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Rockfist}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			make {_p} shoot tipped arrow at speed ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2) (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Trap}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			apply slowness 2 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply jump boost 256 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Earthen Barrier}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Geokinetic Pull}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			push {Commence::%{_p}%::Target::Assign} (direction from {Commence::%{_p}%::Target::Assign} to {_p})
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Stone Skin}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Root Grasp}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			apply slowness to {Commence::%{_p}%::Target::Assign}
+			loop 4 times:
+				damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+				wait 1 second
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Stone Surge}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			loop 8 times:
+				make {_p} shoot tipped arrow at speed ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2) (direction from {_p} to {Commence::%{_p}%::Target::Assign})
+				wait 5 ticks
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Tectonic Shift}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} forward
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} left
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} backwards
+			wait 5 ticks
+			push {Commence::%{_p}%::Target::Assign} right
+	else if {_t} is "%{Commence::Magic::Earth::Spells::Cracked Pulse}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Earth 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			loop 8 times:
+				damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2)
+				wait 5 ticks
+
+	else if {_t} is "%{Commence::Magic::Life::Spells::Lifesteal}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(green, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(green, light green, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of totem_of_undying at {_p}
+					draw 1 of totem_of_undying at {Commence::%{_p}%::Target::Assign}
+			apply regeneration 3 to {_p} for 5 seconds
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 10 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 10 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Life::Spells::Blooming Shield}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Life::Spells::Heal}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			heal {_p} by 3 or 4 or 5
+	else if {_t} is "%{Commence::Magic::Life::Spells::Summon}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			teleport {Commence::%{_p}%::Target::Assign} 2 or 3 or 4 blocks in front of {_p} if {Commence::%{_p}%::Target::Assign} is a mob
+	else if {_t} is "%{Commence::Magic::Life::Spells::Shield}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			apply resistance to {_p} for 5 seconds
+	else if {_t} is "%{Commence::Magic::Life::Spells::Glide}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			{_p}'s flight mode is not true:
+				set {_p}'s flight mode to true
+	else if {_t} is "%{Commence::Magic::Life::Spells::CombatMedic}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			apply regeneration 3 to {_p} for 5 seconds
+			heal {_p} by 2
+			apply regeneration 3 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			heal {Commence::%{_p}%::Target::Assign} by 2
+	else if {_t} is "%{Commence::Magic::Life::Spells::Nature's Grasp}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Life::Spells::Photosynthesis}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			apply bone meal to {_p}'s target block
+	else if {_t} is "%{Commence::Magic::Life::Spells::Thornshield}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+			loop all players and mobs in radius 2 of {_p}:
+				damage loop-entity by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.2) if loop-entity is not {_p}
+	else if {_t} is "%{Commence::Magic::Life::Spells::Forest Guardian}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			{Commence::%{_p}%::Magic::Effect} contains "Life":
+				loop 12 times:
+					wait 1 tick
+					loop 180 times:
+						set {_pl} to {_p}'s location
+						set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+						set y of {_v} to (loop-value-1*0.2)
+						chance of 10%:
+							draw 0 of totem_of_undying at {_pl} ~ {_v}
+							draw 1 of totem_of_undying at {_pl}
+			spawn iron golem at location of {_p}
+			set name of last spawned iron golem to "%{_p}'s display name%'s Guardian"
+			set last spawned iron golem's target to {Commence::%{_p}%::Target::Assign}
+			wait 4 seconds
+			kill all entities in world "Survival3" where [name of entity input is "%{_p}'s display name%'s Guardian"]
+	else if {_t} is "%{Commence::Magic::Life::Spells::Life Seed}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			loop all players and mobs in radius 3 of {_p}:
+				apply regeneration to loop-entity for 8 seconds
+	else if {_t} is "%{Commence::Magic::Life::Spells::Youth's Fountain}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			remove potion effect of poison from {_p}'s active potion effects
+	else if {_t} is "%{Commence::Magic::Life::Spells::Healing Touch}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			heal {Commence::%{_p}%::Target::Assign} by 2 or 3 or 4
+	else if {_t} is "%{Commence::Magic::Life::Spells::Vitality Surge}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			{Commence::%{_p}%::Magic::Effect} contains "Life":
+				loop 12 times:
+					wait 1 tick
+					loop 180 times:
+						set {_pl} to {_p}'s location
+						set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+						set y of {_v} to (loop-value-1*0.2)
+						chance of 10%:
+							draw 0 of totem_of_undying at {_pl} ~ {_v}
+							draw 1 of totem_of_undying at {_pl}
+			loop 8 times:
+				set {_p}'s max health to ({_p}'s max health + 2)
+				wait 5 ticks
+	else if {_t} is "%{Commence::Magic::Life::Spells::Spiritual Resilience}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Life::Spells::Empathic Bond}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Life 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(green, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(green, light green, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of totem_of_undying at {_p}
+					draw 1 of totem_of_undying at {Commence::%{_p}%::Target::Assign}
+			loop 40 times:
+				set {_p}'s health to {Commence::%{_p}%::Target::Assign}'s health
+				wait 1 tick
+
+	else if {_t} is "%{Commence::Magic::Death::Spells::Decapitate}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			apply wither 1 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Levitation}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			apply levitation to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Clear Sight}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 2"
+		{_l} is 1:
+			apply night vision to {_p} for 5 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Parry}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(dark gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(dark gray, black, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of sculk_soul at {_p}
+					draw 1 of sculk_soul at {Commence::%{_p}%::Target::Assign}
+			apply resistance to {_p} for 5 seconds
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 10 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+			wait 10 ticks
+			damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_t} is "%{Commence::Magic::Death::Spells::Ethereal Defense}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Soul Drain}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			apply wither 2 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Graveyard Shift}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(dark gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(dark gray, black, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of sculk_soul at {_p}
+					draw 1 of sculk_soul at {Commence::%{_p}%::Target::Assign}
+			loop 2 times:
+				spawn zombie at location of {_p}
+				set name of last spawned zombie to "%{_p}'s display name%'s Guardian"
+				set last spawned zombie's target to {Commence::%{_p}%::Target::Assign}
+			loop 2 times:
+				spawn skeleton at location of {_p}
+				set name of last spawned skeleton to "%{_p}'s display name%'s Guardian"
+				set last spawned skeleton's target to {Commence::%{_p}%::Target::Assign}
+			wait 4 seconds
+			kill all entities in world "Survival3" where [name of entity input is "%{_p}'s display name%'s Guardian"]
+	else if {_t} is "%{Commence::Magic::Death::Spells::Necrotic Aura}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(dark gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(dark gray, black, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of sculk_soul at {_p}
+					draw 1 of sculk_soul at {Commence::%{_p}%::Target::Assign}
+			loop 4 times:
+				loop all players and mobs in radius 5 of {_p}:
+					damage loop-entity by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05) if loop-entity is not {_p}
+				wait 1 second
+	else if {_t} is "%{Commence::Magic::Death::Spells::Soul Link}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(dark gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(dark gray, black, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of sculk_soul at {_p}
+					draw 1 of sculk_soul at {Commence::%{_p}%::Target::Assign}
+			loop 40 times:
+				set {_p}'s health to {Commence::%{_p}%::Target::Assign}'s health
+				wait 1 tick
+	else if {_t} is "%{Commence::Magic::Death::Spells::Reaper's Grasp}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			apply slowness 2 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+			apply jump boost 256 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Wraithwalk}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 2"
+		{_l} is 1:
+			apply strength to {_p} for 8 seconds
+			apply speed to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Curse of Agony}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 2"
+		{_l} is 1:
+			apply resistance to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Shadeform}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 2"
+		{_l} is 1:
+			apply invisibility to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Eclipse}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 2"
+		{_l} is 1:
+			time in {_p}'s world is night:
+				apply strength to {_p} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Spectral Blades}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			apply wither 2 to {Commence::%{_p}%::Target::Assign} for 8 seconds
+	else if {_t} is "%{Commence::Magic::Death::Spells::Final Reckoning}%":
+		set {Commence::%{_p}%::Magic::Effect} to "Death 1"
+		{_l} is 1:
+			loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+				draw 20 of dust using dustOption(dark gray, 10) loop-value meters in front of {_p} with offset vector(1, 1, 1) 
+				draw 20 of dust_color_transition using dustTransition(dark gray, black, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of sculk_soul at {_p}
+					draw 1 of sculk_soul at {Commence::%{_p}%::Target::Assign}
+			loop 8 times:
+				damage {Commence::%{_p}%::Target::Assign} by ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05)
+				wait 5 ticks
+
+	else:
+		send "{@spellfail}" to {_p}
+	{Commence::%{_p}%::Target::Assign} is set:
+		send "{@spelluseon} %{_p}'s display name%&7 used %{_t}%&7 on you" to {Commence::%{_p}%::Target::Assign} if {Commence::%{_p}%::Magic::Effect} does not contain " 2"
+	else if {Commence::%{_p}%::Magic::Effect} does not contain " 2":
+		send "{@spellfail}" to {_p}
+	{Commence::%{_p}%::Magic::Effect} contains " 2":
+		{Commence::%{_p}%::Magic::Effect} contains "Fire":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of flame at {_pl} ~ {_v}
+						draw 1 of flame at {_pl}
+		else if {Commence::%{_p}%::Magic::Effect} contains "Brume":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of entity_effect at {_pl} ~ {_v}
+						draw 1 of entity_effect at {_pl}
+		else if {Commence::%{_p}%::Magic::Effect} contains "Ice":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of bubble at {_pl} ~ {_v}
+						draw 1 of bubble_pop at {_pl}
+		else if {Commence::%{_p}%::Magic::Effect} contains "Storm":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of electric_spark at {_pl} ~ {_v}
+						draw 1 of electric_spark at {_pl}
+		else if {Commence::%{_p}%::Magic::Effect} contains "Earth":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of cloud at {_pl} ~ {_v}
+						draw 1 of cloud at {_pl}
+		else if {Commence::%{_p}%::Magic::Effect} contains "Life":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of totem_of_undying at {_pl} ~ {_v}
+						draw 1 of totem_of_undying at {_pl}
+		else if {Commence::%{_p}%::Magic::Effect} contains "Death":
+			loop 12 times:
+				wait 1 tick
+				loop 180 times:
+					set {_pl} to {_p}'s location
+					set {_v} to spherical vector radius 1, yaw (loop-value-2*5), pitch 0
+					set y of {_v} to (loop-value-1*0.2)
+					chance of 10%:
+						draw 0 of sculk_soul at {_pl} ~ {_v}
+						draw 1 of sculk_soul at {_pl}
+	else:
+		loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+			{Commence::%{_p}%::Magic::Effect} contains "Fire":
+				draw 20 of dust using dustOption(yellow, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of flame at {_p}
+					draw 1 of flame at {Commence::%{_p}%::Target::Assign}
+			else if {Commence::%{_p}%::Magic::Effect} contains "Brume":
+				draw 20 of dust using dustOption(light red, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0) 
+				draw 20 of dust_color_transition using dustTransition(light red, red, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of dripping_water at {_p}
+					draw 1 of dripping_water at {Commence::%{_p}%::Target::Assign}
+			else if {Commence::%{_p}%::Magic::Effect} contains "Ice":
+				draw 20 of dust using dustOption(light blue, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0)
+				draw 20 of dust_color_transition using dustTransition(light blue, white, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of scrape at {_p}
+					draw 1 of scrape at {Commence::%{_p}%::Target::Assign}
+			else if {Commence::%{_p}%::Magic::Effect} contains "Storm":
+				draw 20 of dust using dustOption(purple, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0)
+				draw 20 of dust_color_transition using dustTransition(magenta, purple, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of electric_spark at {_p}
+					draw 1 of electric_spark at {Commence::%{_p}%::Target::Assign}
+			else if {Commence::%{_p}%::Magic::Effect} contains "Earth":
+				draw 20 of dust using dustOption(gray, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0)
+				draw 20 of dust_color_transition using dustTransition(gold, gray, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of white_smoke at {_p}
+					draw 1 of white_smoke at {Commence::%{_p}%::Target::Assign}
+			else if {Commence::%{_p}%::Magic::Effect} contains "Life":
+				draw 20 of dust using dustOption(green, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0)
+				draw 20 of dust_color_transition using dustTransition(green, light green, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of totem_of_undying at {_p}
+					draw 1 of totem_of_undying at {Commence::%{_p}%::Target::Assign}
+			else if {Commence::%{_p}%::Magic::Effect} contains "Death":
+				draw 20 of dust using dustOption(dark gray, 10) loop-value meters in front of {_p} with offset vector(0, 1, 0)
+				draw 20 of dust_color_transition using dustTransition(dark gray, black, 3) at {_p} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180) 
+				draw 20 of dust_color_transition using dustTransition(orange, red, 3) at {Commence::%{_p}%::Target::Assign} with offset vector(random integer between 1 and 180, random integer between 1 and 180, random integer between 1 and 180)
+				loop random integer between 1 and 180 times:
+					draw 1 of sculk_soul at {_p}
+					draw 1 of sculk_soul at {Commence::%{_p}%::Target::Assign}
+
+function runCodex(p: player, m: text):
+	stop if {Commence::%{_p}%::Magic::Wait} is true
+	set {Commence::%{_p}%::Magic::Wait} to true
+	{Commence::%{_p}%::Target::Assign} is not set:
+		loop all entities in radius 5 of {_p}:
+			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is not {_p}
+			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is a mob
+			set {Commence::%{_p}%::Target::Assign} to loop-entity if loop-entity is a player
+	set {Commence::%{_p}%::Target::Assign} to {_p}'s target if {_p}'s target is a mob
+	set {Commence::%{_p}%::Target::Assign} to {_p}'s target if {_p}'s target is a player
+	clear {Commence::%{_p}%::Target::Assign} if {Commence::%{_p}%::Target::Assign} is {_p}
+	clear {Commence::%{_p}%::Target::Assign} if {Commence::%{_p}%::Target::Assign} is not a player or mob
+	play sound "entity.evoker.cast_spell" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+	play sound "entity.evoker.prepare_summon" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+	wait 1 tick
+	{Commence::%{_p}%::Story::Mana} is less than 5:
+		send "{@spellusenomana}" to {_p}
+		clear {Commence::%{_p}%::Magic::Wait}
+		clear {Commence::%{_p}%::Codex::Spell}
+		clear {Commence::%{_p}%::Target::Assign}
+		stop
+	{Commence::%{_p}%::Story::Infusion} is less than 3:
+		send "{@spellusenoinfusion}" to {_p}
+		clear {Commence::%{_p}%::Magic::Wait}
+		clear {Commence::%{_p}%::Codex::Spell}
+		clear {Commence::%{_p}%::Target::Assign}
+		stop
+	remove 5 from {Commence::%{_p}%::Story::Mana}
+	remove 3 from {Commence::%{_p}%::Story::Infusion}
+	set {Commence::%{_p}%::ActiveSkill} to "Magic"
+	assignSkill({_p})
+	set {Commence::%{_p}%::ActiveSkill} to "Sorcery"
+	assignSkill({_p})
+
+	#More Element IDEAS
+	#None
+	loop {Commence::Magic::Codex::Spells::Elements::*}: #Base
+		set {_tee} to loop-value if {_m} contains loop-value
+		{_m} contains "Tidalis":
+			set {_te} to "dripping_water"
+			set {_tb} to "water"
+			set {_tpe} to "water breathing" if {Commence::%{_p}%::Target::Assign} is not set
+			play sound "ambient.underwater.enter" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "ambient.underwater.exit" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Cryogis":
+			set {_te} to "snowflake"
+			set {_tb} to "ice" or "packed ice"
+			apply slowness 9999 to {Commence::%{_p}%::Target::Assign} for 5 seconds if {Commence::%{_p}%::Target::Assign} is set
+			apply jump boost -1 to {Commence::%{_p}%::Target::Assign} for 5 seconds if {Commence::%{_p}%::Target::Assign} is set
+			play sound "block.snow.break" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "block.snow.fall" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "block.snow.place" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Solaris":
+			set {_te} to "dripping_lava"
+			set {_tb} to "fire"
+			ignite {Commence::%{_p}%::Target::Assign} ? {_p}
+			play sound "item.firecharge.use" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Sysmis":
+			set {_te} to "crit"
+			set {_tb} to "%block under {_p}%" if block under {_p} is not air
+			set {_tb} to "stone" if block under {_p} is air
+			chance of 30%:
+				push {Commence::%{_p}%::Target::Assign} ? {_p} down
+			play sound "block.grass.break" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "block.grass.fall" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "block.grass.place" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Aegis":
+			set {_te} to "white_smoke"
+			push {Commence::%{_p}%::Target::Assign} ? {_p} backwards at speed 0.05
+			play sound "block.smoker.smoke" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Vegetalis":
+			set {_te} to "spore_blossom_air"
+			set {_tb} to "grass block" or "dirt"
+			set {_tpe} to "poison" if {Commence::%{_p}%::Target::Assign} is set
+			play sound "item.crop.plant" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "item.crop.plant" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Mistis":
+			set {_te} to "white_ash"
+			set {_tpe} to "blindness" if {Commence::%{_p}%::Target::Assign} is set
+			play sound "entity.boat.paddle_water" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "entity.boat.paddle_land" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Magmalis":
+			set {_te} to "lava"
+			set {_tb} to "lava"
+			ignite {Commence::%{_p}%::Target::Assign} ? {_p}
+			play sound "block.lava.ambient" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "block.lava.pop" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "item.bucket.fill_lava" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+		else if {_m} contains "Stormis":
+			set {_te} to "electric_spark"
+			chance of 30%:
+				strike lightning effect at {Commence::%{_p}%::Target::Assign} ? {_p}
+			play sound "entity.lightning_bolt.impact" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			play sound "entity.lightning_bolt.thunder" at volume 1 at pitch (random integer between 0.5 and 1.5) at {_p}
+			stop loop
+	loop {Commence::Magic::Codex::Spells::Variations::*}: #Shape
+		set {_tv} to loop-value if {_m} contains loop-value
+		stop loop if {_m} contains loop-value
+
+	#More Shape IDEAS
+	#None
+	{_m} contains "Undular":
+		loop (distance between {_p} and {Commence::%{_p}%::Target::Assign}) times:
+			draw 10 of {_te} loop-value meters in front of {_p} with offset vector(0, 1, 0)
+			wait 1 tick
+	else if {_m} contains "Ramparto":
+		set {_tsa} to a solid rectangle with length ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1) and width ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+		rotate shape {_tsa} around z axis by 90 degrees
+	else if {_m} contains "Orbius":
+		set {_tsa} to a sphere with radius ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_m} contains "Thornias":
+		set {_tsa} to a line in direction vector(0, 1, 0) and length ({Commence::%{_p}%::Skill::SorceryLevel} * 0.1)
+	else if {_m} contains "Cirrusyo":
+		set {_te} to "cloud"
+		set {_tsa} to a solid ellipsoid of radius ({Commence::%{_p}%::Skill::SorceryLevel} * 0.03) and ({Commence::%{_p}%::Skill::SorceryLevel} * 0.06) and ({Commence::%{_p}%::Skill::SorceryLevel} * 0.09)
+	else if {_m} contains "Captivario":
+		set {_tsa} to a hollow cuboid from vector(-5, 0, -5) to vector(5, 5, 5)
+		apply slowness 9999 to {Commence::%{_p}%::Target::Assign} ? {_p} for 3 seconds
+		apply jump boost -1 to {Commence::%{_p}%::Target::Assign} ? {_p} for 3 seconds
+	else if {_m} contains "Detonax":
+		set {_te} to "explosion"
+		set {_tsa} to a sphere with radius 0.3
+	else if {_m} contains "Cascadia":
+		set {_tsa} to a solid ellipsoid of radius ({Commence::%{_p}%::Skill::SorceryLevel} * 0.01) and ({Commence::%{_p}%::Skill::SorceryLevel} * 0.03) and ({Commence::%{_p}%::Skill::SorceryLevel} * 0.07)
+	else if {_m} contains "Invasia":
+		set {_tsa} to a spiral with radius ({Commence::%{_p}%::Skill::MagicLevel} * 0.05) and height ({Commence::%{_p}%::Skill::SorceryLevel} * 0.05) and winding rate of 2 loops per meter
+	else if {_m} contains "Shacklum":
+		loop ((distance between {_p} and {Commence::%{_p}%::Target::Assign}) * 5) times:
+			draw 1 of {_te} (loop-value * 0.2) meters in front of {_p} with offset vector(0, 1, 0)
+			wait 1 tick
+		loop ((distance between {_p} and {Commence::%{_p}%::Target::Assign}) * 5) times:
+			teleport {_p} to location of block 0.2 blocks in front of {_p}
+			wait 1 tick
+	{_tsa} is set:
+		draw an animation of the shape ({_tsa}) at block above {Commence::%{_p}%::Target::Assign} ? {_p} over 3 seconds:
+			set event-shape's particle to {_te} parsed as particle
+	loop {Commence::Magic::Codex::Spells::Actions::*}: #Action
+		set {_ta} to loop-value if {_m} contains loop-value
+		stop loop if {_m} contains loop-value
+	{_tee} or {_te} or {_tv} or {_ta} or {Commence::%{_p}%::Target::Assign} is not set:
+		send "{@spellfail}" to {_p} if {_tee} or {_te} or {_tv} or {_ta} or {Commence::%{_p}%::Target::Assign} is not set
+		clear {Commence::%{_p}%::Codex::Spell}
+		clear {Commence::%{_p}%::Target::Assign}
+		clear {_te}
+		clear {_tv}
+		clear {_ta}
+		clear {_tb}
+		clear {_tpe}
+		clear {_tee}
+		clear {_tsa}
+		clear {_tl}
+		loop 10 times:
+			wait 1 second
+		clear {Commence::%{_p}%::Magic::Wait}
+		stop
+	set {_pb} to block at {Commence::%{_p}%::Target::Assign} ? {_p} if block at {Commence::%{_p}%::Target::Assign} ? {_p} is air or grass or tall grass
+	
+	#More Action IDEAS
+	#Bonemeal
+	{_ta} is "Cauterizim":
+		wait 1 second if {Commence::%{_p}%::Target::Assign} is set
+		heal {Commence::%{_p}%::Target::Assign} ? {_p} by ({Commence::%{_p}%::Skill::MagicLevel} * 0.3)
+		extinguish {Commence::%{_p}%::Target::Assign} ? {_p}
+	else if {_ta} is "Wardius":
+		wait 1 second if {Commence::%{_p}%::Target::Assign} is set
+		apply resistance round({Commence::%{_p}%::Skill::MagicLevel} * 0.3) to {Commence::%{_p}%::Target::Assign} ? {_p}
+		extinguish {Commence::%{_p}%::Target::Assign} ? {_p}
+	else if {_ta} is "Assaultius":
+		wait 1 second if {Commence::%{_p}%::Target::Assign} is set
+		make {_p} damage {Commence::%{_p}%::Target::Assign} by (6 + ({Commence::%{_p}%::Skill::MagicLevel} * 0.05))
+		set {_pb} to {_tb} if {_pb} is set
+		set block above {_pb} to {_tb} if {_pb} is set
+	else if {_ta} is "Displacius":
+		wait 1 second if {Commence::%{_p}%::Target::Assign} is set
+		push {Commence::%{_p}%::Target::Assign} ? {_p} forward at speed ({Commence::%{_p}%::Skill::MagicLevel} * 0.1)
+		push {Commence::%{_p}%::Target::Assign} ? {_p} up at speed ({Commence::%{_p}%::Skill::MagicLevel} * 0.1)
+		chance of 50%:
+			push {Commence::%{_p}%::Target::Assign} ? {_p} 5 blocks to the left at speed ({Commence::%{_p}%::Skill::MagicLevel} * 0.05)
+		chance of 50%:
+			push {Commence::%{_p}%::Target::Assign} ? {_p} 5 blocks to the right at speed ({Commence::%{_p}%::Skill::MagicLevel} * 0.05)
+	else if {_ta} is "Obscurus":
+		wait 1 second if {Commence::%{_p}%::Target::Assign} is set
+		apply blindness round({Commence::%{_p}%::Skill::MagicLevel} * 0.3) to {Commence::%{_p}%::Target::Assign} ? {_p}
+	else if {_ta} is "Repulsia":
+		wait 1 second if {Commence::%{_p}%::Target::Assign} is set
+		push {Commence::%{_p}%::Target::Assign} ? {_p} backwards at speed ({Commence::%{_p}%::Skill::MagicLevel} * 0.01)
+	apply {_tpe} round({Commence::%{_p}%::Skill::MagicLevel} * 0.3) to {Commence::%{_p}%::Target::Assign} ? {_p}
+	send "{@spelluse}<##855EC9>%{_tee}% %{_tv}% %{_ta}%" to {_p}
+	send "{@spelluseon} %{_p}'s display name%&7 Cast <##855EC9>%{_tee}% %{_tv}% %{_ta}%&7 On You" to {Commence::%{_p}%::Target::Assign}
+	set block at {_pb} to air
+	clear {Commence::%{_p}%::Codex::Spell}
+	clear {Commence::%{_p}%::Target::Assign}
+	clear {_te}
+	clear {_tv}
+	clear {_ta}
+	clear {_tb}
+	clear {_pb}
+	clear {_tpe}
+	clear {_tee}
+	clear {_tsa}
+	clear {_tl}
+	loop 10 times:
+		wait 1 second
+	clear {Commence::%{_p}%::Magic::Wait}
+
+command /codex:
+	usage: &c/codex
+	description: &7Opens The Codex
+	trigger:
+		player's world is not {@worlds}:
+			send " {@info} {@itempermissionmessage}"
+			stop
+		stop if {Commence::%player%::Codex::Spell} is true
+		set {Commence::%player%::Codex::Spell} to true
+		clear {Commence::%player%::Magic::Wait}
+		close inventory of player
+		send " {@info} <##855EC9>You Can Now Cast a Vocal Spell"
+		stop
+		set {_tr} to 4 if amount of {Commence::%player%::Magic::Spells::*} is more than 7
+		set {_tr} to 5 if amount of {Commence::%player%::Magic::Spells::*} is more than 14
+		set {_tr} to 6 if amount of {Commence::%player%::Magic::Spells::*} is more than 21
+		set {_tr} to 3 if amount of {Commence::%player%::Magic::Spells::*} is less than 8
+		amount of {Commence::%player%::Magic::Spells::*} is less than 1:
+			send " {@info} Learn a Spell Before Trying Again!"
+			stop
+		set metadata tag "spells" of player to chest inventory with {_t} rows named "&8-==&k|<##855EC9>         The Codex         &8&k|&8==-"
+		set slot 0 of metadata tag "spells" of player to dark gray stained glass pane named "&7"
+		loop 53 times:
+			set slot loop-value of metadata tag "spells" of player to dark gray stained glass pane named "&7"
+			clear {Commence::%player%::%loop-value%::Name}
+			clear {Commence::%player%::%loop-value%::Owner}
+			clear {Commence::%player%::%loop-value%::Price}
+		set slot 4 of metadata tag "spells" of player to book named "&8-&k|<##855EC9> Browse Your Learned Spells &8&k|&8-" with lore "&c Hover over spells to view info" and "&4 Click spells to cast them"
+		set {Commence::List} to 9
+		loop {Commence::Magic::Codex::Spells::*}:
+			add 1 to {Commence::List}
+			add 2 to {Commence::List} if {Commence::List} is 17 or 26 or 35
+			stop loop if {Commence::List} is more than 43
+			set {Commence::%player%::%{Commence::List}%::Name} to loop-value
+			{Commence::%player%::NPC::Temp} is set:
+				set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
+			else:
+				set {Commence::%player%::%{Commence::List}%::Owner} to player's display name
+			set {Commence::%player%::%{Commence::List}%::Price} to 0
+			set slot {Commence::List} of metadata tag "spells" of player to player's tool named "&8-&k|<##00608D> %loop-value% Spell &8&k|&8-" with lore "&8 Type: %{Commence::Magic::%uncolored {Commence::%player%::Magic::Type}%::Spell::%uncolored loop-value%::Type}%" and "&7 Description: <##00C889>%{Commence::Magic::%uncolored {Commence::%player%::Magic::Type}%::Spell::%uncolored loop-value%::Description}%" and "&8 Execute By: {@magicitem}"  with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable if {Commence::Magic::%uncolored {Commence::%player%::Magic::Type}%::Spell::%uncolored loop-value%::Type} is set
+			set slot {Commence::List} of metadata tag "spells" of player to player's tool named "&8-&k|<##00608D> %loop-value% Spell &8&k|&8-" with lore "&8 Type: %{Commence::Magic::%uncolored {Commence::%player%::Magic::Type2}%::Spell::%uncolored loop-value%::Type}%" and "&7 Description: <##00C889>%{Commence::Magic::%uncolored {Commence::%player%::Magic::Type2}%::Spell::%uncolored loop-value%::Description}%" and "&8 Execute By: {@magicitem}"  with item flags hide_additional_tooltip, hide_armor_trim, hide_attributes, hide_destroys, hide_dye,hide_enchants, hide_placed_on,hide_stored_enchants, and hide_unbreakable if {Commence::Magic::%uncolored {Commence::%player%::Magic::Type2}%::Spell::%uncolored loop-value%::Type} is set
+		set slot 8 of metadata tag "spells" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+		open (metadata tag "spells" of player) to player
+		stop

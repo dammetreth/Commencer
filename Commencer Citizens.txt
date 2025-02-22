@@ -1,0 +1,1676 @@
+#-=-=-=-=-=-=-=-=-=- | Let's Have Non Playable Characters! | -=-=-=-=-=-=-=-=-=-
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#IDEAS, COMMENTS & SUGGESSTIONS
+
+		#NPC NAME TEMPLATE
+		
+
+		#FIRST NAMES BACKUP DATABASE:
+		#Bill, Yam, James, Robert, John, Michael, David, William, Richard, Joseph, Thomas, Daniel, Charles, Matthew, Donald, Mark, Paul, Kevin, Brian, George, Kenneth, Gary, Jacob, Mary, Patricia, Barbara, Christopher, Nancy, Betty, Sarah, Karen, Linda, Jen, Jennifer, Ash, Ashley, Margaret, Margy, Kimberly, Em, Emily, Sandy, Sandra, Michelle, Melissa, Deb, Deborah, Debbie, Debby, Dorothy, Edward, Jeffrey, Ryan, Sharon, Laura, Lauran, Cynthia, Amy, Angela, Rebecca, Angie, Eric, Scott, Justin, Emma, Ann, Anna, Nicole, Brandon, Ben, Benjamin, Benjie, Helen, Debra, Christine, Gregory, Alex, Alexander, Samuel, Patrick, Frank, Rachel, Carolyn, Janet, Maria, Jack, Ray, Raymond, Olivia, Diane, Diana, Joyce, Vic, Victor, Victoria, Nat, Nathan, Julie, Banana, Kyle, Kelly, Joan, Noah, Ruth, Doug, Douglas, Pete, Peter, Virginia, Lauren, Jeremy, Walt, Walter, Andrea, Hann, Hanna, Hannah, Christian, Judith, Evelyn, Keith, Roger, Terry, Austin, Martha, Cheryl, Sherry, Jerry, Jackson, Gerald, Carl, Sean, Shawn, Teresa, Gloria, Mady, Maddie, Madison, Harold, Dylan, Janice, Lawrence, Jes, Jess, Jessie, Jesse, Ab, Abbie, Abby, Alice, Judy, Joe, Gabriel, Alan, Denise, Amber, Grace, Julia, Juan, Willie, Elijah, Wayne, Randi, Randy, Beverly, Charlotte, Vincent, Natalie, Roy, Doris, Alexis, Rus, Russ, Russel, Russell, Phil, Philip, Phillip, Eugene, Marie, Trisha, Melinda, Miranda, Margie, Winston, Margot, Megan, Meaghan, Randall, Damon, Lady, Demi, Nick, Timmy, Sheldon, Shelly, Georgie, Missy, Raven, Rayven, Gertrude, Gerty, Trudy and Jimmy
+		#LAST NAMES BACKUP DATABASE:
+		#Drake, Anderson, Smith, Johnson, Williams, Brown, Jones, Garcia, Miller, Davis, Martinez, Hernandez, Lopez, Gonzales, Wilson, Rodriguez, Taylor, Moore, Lee, Perez, Thompson, White, Harris, Sanchez, Clark, Ramirez, Lewis, Robinson, Walker, Young, Allen, King, Wright, Torres, Nguyen, Flores, Green, Adams, Nelson, Baker, Rivera, Cambell, Mitchell, Carter, Roberts, Gomez, Phillips, Philips, Evans, Turner, Diaz, Parker, Cruz, Edwards, Collins, Reyes, Stewart, Morris, Morales, Murphy, Cook, Rogers, Gutierrez, Ortiz, Morgan, Cooper, Peterson, Baily, Reed, Ramos, Ender, Cox, Richardson, Watson, Brooks, Chavez, Wood, Woods, Bennet, Gray, Mendoza, Ruiz, Hughes, Price, Alvarez, Castillo, Sanders, Patel, Myers, Ross, Foster, Long, Sullivan, Barnes, Simmons, Romero, Jordan, Fisher, Phisher, Henderson, Patterson, Hamilton, Bryant, West, Griffin, Reynolds, Graham, Ford, Castro, Murray, Stevens, Aguilar, Medina, Tran, Ellis, Gibson, Herrera, Owens, Harrison, Fernandez, Wells, Washington, Kennedy, Vargas, Hendry, Chen, Webb, Tucker, Guzman, Burns, Crawford, Olson, Porter, Hunter, Simpson, Munoz, Hicks, Holmes, Black, Wagner, Palmer, Boyd, Rose, Stone, Salazar, Fox, Warren, Mills, Meyer, Schmidt, Garza, Daniels, Nichols, Stephens, Soto, Payne, Grant, Dunn, Gardner, Weaver, Spencer, Hawkins, Paytas, Knowles, Deveraux, Doubtfire, Springer, Foxworthy, Lala, Gaga, Jonas, Lovado, Sprouse, Crocker, Baxter, Simone and Badgers
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#OPTIONS AND MESSAGES
+
+
+options:
+	commence:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
+	bank:<##545B5E>Bank of <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e
+	story:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
+	parkour:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##529E6A>Parkour  <##70797C>|-<##CB625F>&l!<##70797C>-|
+	permissionmessage:<##3988A3> <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command!
+	cooldownmessage:<##3988A3> <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>Wait before trying this command again!
+	worlds: "Survival3" or "Survival3_nether" or "Survival3_the_end"
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)<##CB625F>
+	fund:<##00C889>$&8Money<##00C889>$
+	funds:<##00C889>$&8Funds<##00C889>$
+
+on load:
+	{FirstName::*} is not set:
+		add "Bill" and "Yam" and "James" and "Robert" and "John" and "Michael" and "David" and "William" and "Richard" and "Joseph" and "Thomas" and "Daniel" and "Charles" and "Matthew" and "Donald" and "Mark" and "Paul" and "Kevin" and "Brian" and "George" and "Kenneth" and "Gary" and "Jacob" and "Mary" and "Patricia" and "Barbara" and "Christopher" and "Nancy" and "Betty" and "Sarah" and "Karen" and "Linda" and "Jen" and "Jennifer" and "Ash" and "Ashley" and "Margaret" and "Margy" and "Kimberly" and "Em" and "Emily" and "Sandy" and "Sandra" and "Michelle" and "Melissa" and "Deb" and "Deborah" and "Debbie" and "Debby" and "Dorothy" and "Edward" and "Jeffrey" and "Ryan" and "Sharon" and "Laura" and "Lauran" and "Cynthia" and "Amy" and "Angela" and "Rebecca" and "Angie" and "Eric" and "Scott" and "Justin" and "Emma" and "Ann" and "Anna" and "Nicole" and "Brandon" and "Ben" and "Benjamin" and "Benjie" and "Helen" and "Debra" and "Christine" and "Gregory" and "Alex" and "Alexander" and "Samuel" and "Patrick" and "Frank" and "Rachel" and "Carolyn" and "Janet" and "Maria" and "Jack" and "Ray" and "Raymond" and "Olivia" and "Diane" and "Diana" and "Joyce" and "Vic" and "Victor" and "Victoria" and "Nat" and "Nathan" and "Julie" and "Banana" and "Kyle" and "Kelly" and "Joan" and "Noah" and "Ruth" and "Doug" and "Douglas" and "Pete" and "Peter" and "Virginia" and "Lauren" and "Jeremy" and "Walt" and "Walter" and "Andrea" and "Hann" and "Hanna" and "Hannah" and "Christian" and "Judith" and "Evelyn" and "Keith" and "Roger" and "Terry" and "Austin" and "Martha" and "Cheryl" and "Sherry" and "Jerry" and "Jackson" and "Gerald" and "Carl" and "Sean" and "Shawn" and "Teresa" and "Gloria" and "Mady" and "Maddie" and "Madison" and "Harold" and "Dylan" and "Janice" and "Lawrence" and "Jes" and "Jess" and "Jessie" and "Jesse" and "Ab" and "Abbie" and "Abby" and "Alice" and "Judy" and "Joe" and "Gabriel" and "Alan" and "Denise" and "Amber" and "Grace" and "Julia" and "Juan" and "Willie" and "Elijah" and "Wayne" and "Randi" and "Randy" and "Beverly" and "Charlotte" and "Vincent" and "Natalie" and "Roy" and "Doris" and "Alexis" and "Rus" and "Russ" and "Russel" and "Russell" and "Phil" and "Philip" and "Phillip" and "Eugene" and "Marie" and "Trisha" and "Melinda" and "Miranda" and "Margie" and "Winston" and "Margot" and "Megan" and "Meaghan" and "Randall" and "Damon" and "Lady" and "Demi" and "Nick" and "Timmy" and "Sheldon" and "Shelly" and "Georgie" and "Missy" and "Raven" and "Rayven" and "Gertrude" and "Gerty" and "Trudy" and "Jimmy" to {FirstName::*}
+	{LastName::*} is not set:
+		add "Drake" and "Anderson" and "Smith" and "Johnson" and "Williams" and "Brown" and "Jones" and "Garcia" and "Miller" and "Davis" and "Martinez" and "Hernandez" and "Lopez" and "Gonzales" and "Wilson" and "Rodriguez" and "Taylor" and "Moore" and "Lee" and "Perez" and "Thompson" and "White" and "Harris" and "Sanchez" and "Clark" and "Ramirez" and "Lewis" and "Robinson" and "Walker" and "Young" and "Allen" and "King" and "Wright" and "Torres" and "Nguyen" and "Flores" and "Green" and "Adams" and "Nelson" and "Baker" and "Rivera" and "Cambell" and "Mitchell" and "Carter" and "Roberts" and "Gomez" and "Phillips" and "Philips" and "Evans" and "Turner" and "Diaz" and "Parker" and "Cruz" and "Edwards" and "Collins" and "Reyes" and "Stewart" and "Morris" and "Morales" and "Murphy" and "Cook" and "Rogers" and "Gutierrez" and "Ortiz" and "Morgan" and "Cooper" and "Peterson" and "Baily" and "Reed" and "Ramos" and "Ender" and "Cox" and "Richardson" and "Watson" and "Brooks" and "Chavez" and "Wood" and "Woods" and "Bennet" and "Gray" and "Mendoza" and "Ruiz" and "Hughes" and "Price" and "Alvarez" and "Castillo" and "Sanders" and "Patel" and "Myers" and "Ross" and "Foster" and "Long" and "Sullivan" and "Barnes" and "Simmons" and "Romero" and "Jordan" and "Fisher" and "Phisher" and "Henderson" and "Patterson" and "Hamilton" and "Bryant" and "West" and "Griffin" and "Reynolds" and "Graham" and "Ford" and "Castro" and "Murray" and "Stevens" and "Aguilar" and "Medina" and "Tran" and "Ellis" and "Gibson" and "Herrera" and "Owens" and "Harrison" and "Fernandez" and "Wells" and "Washington" and "Kennedy" and "Vargas" and "Hendry" and "Chen" and "Webb" and "Tucker" and "Guzman" and "Burns" and "Crawford" and "Olson" and "Porter" and "Hunter" and "Simpson" and "Munoz" and "Hicks" and "Holmes" and "Black" and "Wagner" and "Palmer" and "Boyd" and "Rose" and "Stone" and "Salazar" and "Fox" and "Warren" and "Mills" and "Meyer" and "Schmidt" and "Garza" and "Daniels" and "Nichols" and "Stephens" and "Soto" and "Payne" and "Grant" and "Dunn" and "Gardner" and "Weaver" and "Spencer" and "Hawkins" and "Paytas" and "Knowles" and "Deveraux" and "Doubtfire" and "Springer" and "Foxworthy" and "Lala" and "Gaga" and "Jonas" and "Lovado" and "Sprouse" and "Crocker" and "Baxter" and "Simone" and "Badgers" to {LastName::*}
+#	clear {Commence::Citizens::*}
+#	add "&7 Oh, are you talking to me?" to {Commence::Citizens::*}
+#	add "&7 Hey there, how's it goin?" to {Commence::Citizens::*}
+#	add "&7 Have you heard about the monster on the hill?" to {Commence::Citizens::*}
+#	add "&7 Hmm, there's just so much to figure out...!" to {Commence::Citizens::*}
+#	add "&7 Congrats on your precious little newborn!" to {Commence::Citizens::*}
+#	add "&7 Oh uh, who the hell are you?" to {Commence::Citizens::*}
+#	add "&7 Oh, are you new here? Just don't sleep in my bed, ight?" to {Commence::Citizens::*}
+#	add "&7 Eating at the Seaside Shanty is my favorite thing to do!" to {Commence::Citizens::*}
+#	add "&7 Uh oh, no way. I hear there's monsters coming out at night!" to {Commence::Citizens::*}
+#	add "&7 That's crazy what I've heard about the hill recently..." to {Commence::Citizens::*}
+#	add "&7 I hear there's a cool house around!" to {Commence::Citizens::*}
+#	add "&7 Hey, wanna be friends? I've really been desperate lately..." to {Commence::Citizens::*}
+#	add "&7 Hey, you look cool. What are you doing in a place like this?" to {Commence::Citizens::*}
+#	add "&7 Oh, hello there!" to {Commence::Citizens::*}
+#	add "&7 Hey, how's it goin?" to {Commence::Citizens::*}
+#	add "&7 Pretty out here, huh!" to {Commence::Citizens::*}
+#	add "&7 Great, another stranger. Get the hell outta here man!" to {Commence::Citizens::*}
+#	add "&7 You don't look very nice. Goodbye!" to {Commence::Citizens::*}
+#	add "&7 Uh, you don't look well. Come on in to my house!" to {Commence::Citizens::*}
+#	add "&7 Get the HELL away from me right now!" to {Commence::Citizens::*}
+#	add "&7 Don't talk to my friend like that!" to {Commence::Citizens::*}
+#	add "&7 Looks cool, dunnit?" to {Commence::Citizens::*}
+#	add "&7 I've had it up to here with everyone in this town!" to {Commence::Citizens::*}
+#	add "&7 Nothin' like a good cup a joe!" to {Commence::Citizens::*}
+#	add "&7 Please do not bother me. I am very busy right now!" to {Commence::Citizens::*}
+#	add "&7 Sorry, I am occupied. Please try me again later." to {Commence::Citizens::*}
+	clear {Commence::Citizens::Gray1::*}
+	add "Oh uh, hello there. How is it going?" to {Commence::Citizens::Gray1::*}
+	add "Great to see you here. Glad you could make it!" to {Commence::Citizens::Gray1::*}
+	add "Welcome to our pretty little village." to {Commence::Citizens::Gray1::*}
+	add "It's really cool how far the town has come along!" to {Commence::Citizens::Gray1::*}
+	add "I am really enjoying being a part of this community!" to {Commence::Citizens::Gray1::*}
+	add "Did you know about the scary hill mysteries?" to {Commence::Citizens::Gray1::*}
+	add "You know that thing about mysteries? Yeah, never mind!" to {Commence::Citizens::Gray1::*}
+	add "The city is so cool! I just wish there was more to do there..." to {Commence::Citizens::Gray1::*}
+	clear {Commence::Citizens::Gray2::*}
+	add "You sure make yourself known around here, don't ya?" to {Commence::Citizens::Gray2::*}
+	add "Oh, sorry I don't have time to chat. I need to get back..." to {Commence::Citizens::Gray2::*}
+	clear {Commence::Citizens::Yellow1::*}
+	add "Hello there pardner, glad ya could make it!" to {Commence::Citizens::Yellow1::*}
+	add "Heyo, yous seems cool. Ya wanna be some friends?" to {Commence::Citizens::Yellow1::*}
+	add "I gotta gets back to chuckin, see yas!" to {Commence::Citizens::Yellow1::*}
+	add "Whee hikes and doggies ya scared the livin kings outta me!" to {Commence::Citizens::Yellow1::*}
+	add "Let's justs pretend that didn't just happen..." to {Commence::Citizens::Yellow1::*}
+	clear {Commence::Citizens::Yellow2::*}
+	add "I don'ts sees too many of yas kinds arounds too often..." to {Commence::Citizens::Yellow2::*}
+	add "What in the sam hell are you doing?" to {Commence::Citizens::Yellow2::*}
+	add "Greats, I really didn't need this again!" to {Commence::Citizens::Yellow2::*}
+	add "Ya'll are gettin on my last daggon nerve I tells ya!" to {Commence::Citizens::Yellow2::*}
+	add "Not quites sure what yous doin heres but okay..." to {Commence::Citizens::Yellow2::*}
+	clear {Commence::Citizens::Gold1::*}
+	add "Great to see explorers around, huh?" to {Commence::Citizens::Gold1::*}
+	add "Hello there." to {Commence::Citizens::Gold1::*}
+	add "Hey stranger. You look good today." to {Commence::Citizens::Gold1::*}
+	add "There's a ton of businesses in the city. I am moving there!" to {Commence::Citizens::Gold1::*}
+	add "Have you been to the city? It's great." to {Commence::Citizens::Gold1::*}
+	add "You heard abouts the city? I hear it's really great." to {Commence::Citizens::Gold1::*}
+	clear {Commence::Citizens::Gold2::*}
+	add "Hmm, you seem like a strange type." to {Commence::Citizens::Gold2::*}
+	add "Can you not see that I am busy?" to {Commence::Citizens::Gold2::*}
+	add "Sorry pal, whats it to ya?" to {Commence::Citizens::Gold2::*}
+	add "Do ya need somethin'? I'm kinda busy here." to {Commence::Citizens::Gold2::*}
+	clear {Commence::Citizens::Navy1::*}
+	add "Wowza, we don't see your kind around much!" to {Commence::Citizens::Navy1::*}
+	add "Fantastic to meet you... ahahahaha!" to {Commence::Citizens::Navy1::*}
+	add "Ooo...I am cooking up something good just for you...!" to {Commence::Citizens::Navy1::*}
+	add "Ahahahahahahahahahahahaha.... ahahahaha... ahh... ha... h..." to {Commence::Citizens::Navy1::*}
+	add "Oh, look at you... Oh yes, I want a piece of that!" to {Commence::Citizens::Navy1::*}
+	add "Let me just brew up something for you there...!" to {Commence::Citizens::Navy1::*}
+	add "Great to see you again... ahahahaha!" to {Commence::Citizens::Navy1::*}
+	clear {Commence::Citizens::Navy2::*}
+	add "Oh, another victim for our ritual!" to {Commence::Citizens::Navy2::*}
+	add "I really am sick of hearing about... excuse me?" to {Commence::Citizens::Navy2::*}
+	add "Hmmm, one wonders what your kind is here for..." to {Commence::Citizens::Navy2::*}
+	clear {Commence::Citizens::White1::*}
+	add "Not now, I am extremely busy!" to {Commence::Citizens::White1::*}
+	add "Can't you see that I am working?" to {Commence::Citizens::White1::*}
+	add "I am sick of everyone in this town!" to {Commence::Citizens::White1::*}
+	add "Yes... uh huh... oh yes... no I agree..." to {Commence::Citizens::White1::*}
+	add "Sorry, not the time right now!" to {Commence::Citizens::White1::*}
+	clear {Commence::Citizens::White2::*}
+	add "Really? All these people and you're HERE?" to {Commence::Citizens::White2::*}
+	add "Go talk to someone who cares, pal." to {Commence::Citizens::White2::*}
+	add "Oh, look, another traveller. Get lost loser!" to {Commence::Citizens::White2::*}
+	add "Umm hellllo? I can't talk right now. Busy!" to {Commence::Citizens::White2::*}
+	add "Didn't ya hear me the first time?" to {Commence::Citizens::White2::*}
+	clear {Commence::Citizens::Blue1::*}
+	add "There's so much to do these days!" to {Commence::Citizens::Blue1::*}
+	add "The Seaside Shanty is my favorite place to dine!" to {Commence::Citizens::Blue1::*}
+	add "I really love the Library. Come check it out with me!" to {Commence::Citizens::Blue1::*}
+	clear {Commence::Citizens::Blue2::*}
+	add "There's nothing more..." to {Commence::Citizens::Blue2::*}
+	add "I really want to be a Chef..." to {Commence::Citizens::Blue2::*}
+	add "I really want to be a Doctor..." to {Commence::Citizens::Blue2::*}
+	add "I am not having a good day. Please leave me alone for now." to {Commence::Citizens::Blue2::*}
+	add "Great, I just heard some bad news..." to {Commence::Citizens::Blue2::*}
+	add "There's nothing to do here..." to {Commence::Citizens::Blue2::*}
+	add "Sometimes I don't like living here much." to {Commence::Citizens::Blue2::*}
+	add "If it weren't for my family, I would be gone!" to {Commence::Citizens::Blue2::*}
+	clear {Commence::Citizens::Sky1::*}
+	add "Hello! Check out our new credit card options today!" to {Commence::Citizens::Sky1::*}
+	add "We have great rates on mortgage loans!" to {Commence::Citizens::Sky1::*}
+	add "Come check out our new car loans!" to {Commence::Citizens::Sky1::*}
+	add "We have the BEST deals in town!" to {Commence::Citizens::Sky1::*}
+	add "Need cash now? No problem!" to {Commence::Citizens::Sky1::*}
+	add "Oh yes, another one, how can I help you?" to {Commence::Citizens::Sky1::*}
+	clear {Commence::Citizens::Sky2::*}
+	add "Don't forget to rate me 5 stars on Banktellers Anonymous!" to {Commence::Citizens::Sky2::*}
+	add "I still want that rating on Banktellers Anonymous!" to {Commence::Citizens::Sky2::*}
+	add "I am busy. Come to my bank or get out my face!" to {Commence::Citizens::Sky2::*}
+	add "If you're not here to give me money, bye." to {Commence::Citizens::Sky2::*}
+	clear {Commence::Citizens::Green1::*}
+	add "There's something strange going on here. Just wait..." to {Commence::Citizens::Green1::*}
+	add "Walking around without a thought to them!" to {Commence::Citizens::Green1::*}
+	add "Oh... sorry I didn't see you there. What's up?" to {Commence::Citizens::Green1::*}
+	add "Oh uh... you need something there?" to {Commence::Citizens::Green1::*}
+	add "Looks like you could use a hand. Need help?" to {Commence::Citizens::Green1::*}
+	clear {Commence::Citizens::Green2::*}
+	add "Ew ya freak! What are you doing?!" to {Commence::Citizens::Green2::*}
+	add "I've had it! Get away from me!" to {Commence::Citizens::Green2::*}
+	add "Oh... It's YOU again..." to {Commence::Citizens::Green2::*}
+	add "Great. Just great. Thanks a lot. Seriously." to {Commence::Citizens::Green2::*}
+	add "Look at all of them... just pitiful!" to {Commence::Citizens::Green2::*}
+	clear {Commence::Citizens::Green3::*}
+	add "Oh, uh hello. Welcome to ... here. How can I help?" to {Commence::Citizens::Green3::*}
+	add "Thanks for stopping by. How can I help you today?" to {Commence::Citizens::Green3::*}
+	add "Hey there! Welcome. What can I do for you?" to {Commence::Citizens::Green3::*}
+	add "Hello! What can I get started for you?" to {Commence::Citizens::Green3::*}
+	add "Thanks for choosing us! What can I do for you?" to {Commence::Citizens::Green3::*}
+	add "I really appreciate your business!" to {Commence::Citizens::Green3::*}
+	add "You're really helping me out here, ya know!" to {Commence::Citizens::Green3::*}
+	add "Out of all the people, YOU decide to show up?" to {Commence::Citizens::Green3::*}
+	add "Sorry, we're out of everything. Haha just kidding!" to {Commence::Citizens::Green3::*}
+	add "Oh... Uh, hello there. How can I help you...?" to {Commence::Citizens::Green3::*}
+	clear {Commence::Citizens::Finding::*}
+	add "No I haven't seen" to {Commence::Citizens::Finding::*}
+	add "Sorry, I haven't seen" to {Commence::Citizens::Finding::*}
+	add "I haven't seen" to {Commence::Citizens::Finding::*}
+	add "Nope, I have not saw" to {Commence::Citizens::Finding::*}
+	add "I have not seen" to {Commence::Citizens::Finding::*}
+	clear {Commence::Citizens::Close::*}
+	add "I've seen" to {Commence::Citizens::Close::*}
+	add "Oh yeah, maybe I have seen" to {Commence::Citizens::Close::*}
+	add "Now that you mention it, I think I have seen" to {Commence::Citizens::Close::*}
+	add "Yes, I have seen" to {Commence::Citizens::Close::*}
+	add "Yep, right over there in fact, I saw" to {Commence::Citizens::Close::*}
+
+	clear {Commence::QuestStart1::*}
+	add "Hello, I need some help. Can you complete this for me?" to {Commence::QuestStart1::*}
+	add "Hey, hey you! Get over here and help me, I need it..." to {Commence::QuestStart1::*}
+	add "Hello friend, I am in need of some assistance." to {Commence::QuestStart1::*}
+	add "Can you help me please? I need some help. Please help me!" to {Commence::QuestStart1::*}
+	add "Great, another explorer. Get working chump! Help me out!" to {Commence::QuestStart1::*}
+	add "I've seen many your kind around, great workers you are..." to {Commence::QuestStart1::*}
+	add "You need some quick cash? Can you do this for me please?" to {Commence::QuestStart1::*}
+	add "Want something cool? Do this for me and I'll give you it." to {Commence::QuestStart1::*}
+	add "You're looking to help? Haha, funny. Do this for me then!" to {Commence::QuestStart1::*}
+	add "Hello, stranger. Can you help me out a little please?" to {Commence::QuestStart1::*}
+	add "Hi there, I am short something for my new project. Help!" to {Commence::QuestStart1::*}
+	add "What's good, friend. Help a brotha out over here?" to {Commence::QuestStart1::*}
+	add "Hello, I need some help. Are you willing to help me?" to {Commence::QuestStart1::*}
+	add "HELP ME! HELP! PLEASE HELP ME! HEY YOU! HELP ME PLEASE!" to {Commence::QuestStart1::*}
+	add "Watch your tone! Do this for me and I won't kill you!" to {Commence::QuestStart1::*}
+	add "What are you doing here? Get working! ... Now!!!" to {Commence::QuestStart1::*}
+	add "Are ya lost? Get going, you're wasting so much time!" to {Commence::QuestStart1::*}
+	add "Hey, hey you... Want one of these? I know you do..." to {Commence::QuestStart1::*}
+	add "Oh, I didn't see you there. Uh, can you do this?" to {Commence::QuestStart1::*}
+	add "What's up, how's it goin? Help me out here?" to {Commence::QuestStart1::*}
+	clear {Commence::QuestStart1::Gray1::*}
+	add "Oh, hi there! I need a favor done, you down?" to {Commence::QuestStart1::Gray1::*}
+	add "Great to see you! Any way you could lend a hand?" to {Commence::QuestStart1::Gray1::*}
+	add "Hello there! There's something I need done, help?" to {Commence::QuestStart1::Gray1::*}
+	clear {Commence::QuestStart1::Gray2::*}
+	add "Oh, hey... can you help me out?" to {Commence::QuestStart1::Gray2::*}
+	add "Oh hey... I am looking for some help..." to {Commence::QuestStart1::Gray2::*}
+	add "Hey I need some help here! Help me?" to {Commence::QuestStart1::Gray2::*}
+	clear {Commence::QuestStart1::Yellow1::*}
+	add "Howdy! I needs something done, can ya'll help?" to {Commence::QuestStart1::Yellow1::*}
+	add "Hey, yous there! I needs some help over here!" to {Commence::QuestStart1::Yellow1::*}
+	add "Hey pardner, help me out and I'll give ya a reward!" to {Commence::QuestStart1::Yellow1::*}
+	clear {Commence::QuestStart1::Yellow2::*}
+	add "Greats, another explorer. Can ya bothers to help me?" to {Commence::QuestStart1::Yellow2::*}
+	add "Hey, could ya spare a hand? Ya ain't doin nothing..." to {Commence::QuestStart1::Yellow2::*}
+	add "Ya'll owe me so much! I needs some help here...!" to {Commence::QuestStart1::Yellow2::*}
+	clear {Commence::QuestStart1::Gold1::*}
+	add "Yo, I need help and you're not doing anything." to {Commence::QuestStart1::Gold1::*}
+	add "Hey, can you help me? I can reward you, I guess..." to {Commence::QuestStart1::Gold1::*}
+	add "Get over here. I need something from you!" to {Commence::QuestStart1::Gold1::*}
+	clear {Commence::QuestStart1::Gold2::*}
+	add "Yo, I need help and you're not doing anything." to {Commence::QuestStart1::Gold2::*}
+	add "Hey, can you help me? I can reward you, I guess..." to {Commence::QuestStart1::Gold2::*}
+	add "Get over here. I need something from you!" to {Commence::QuestStart1::Gold2::*}
+	clear {Commence::QuestStart1::Navy1::*}
+	add "Oh... hey there good lookin'! Help me... please?" to {Commence::QuestStart1::Navy1::*}
+	add "Ooohohohohh hi! Please help me out here... ahaha!" to {Commence::QuestStart1::Navy1::*}
+	add "My my, looks like you need something to do... ahaha!" to {Commence::QuestStart1::Navy1::*}
+	clear {Commence::QuestStart1::Navy2::*}
+	add "Oh... hey there good lookin'! Help me... please?" to {Commence::QuestStart1::Navy2::*}
+	add "Ooohohohohh hi! Please help me out here... ahaha!" to {Commence::QuestStart1::Navy2::*}
+	add "My my, looks like you need something to do... ahaha!" to {Commence::QuestStart1::Navy2::*}
+	clear {Commence::QuestStart1::White1::*}
+	add "I am really busy and I can't do this task." to {Commence::QuestStart1::White1::*}
+	add "There's so much to do. Can you help me out here?" to {Commence::QuestStart1::White1::*}
+	add "Hey, get over here and help me! Now! Come on!" to {Commence::QuestStart1::White1::*}
+	clear {Commence::QuestStart1::White2::*}
+	add "I am really busy and I can't do this task." to {Commence::QuestStart1::White2::*}
+	add "There's so much to do. Can you help me out here?" to {Commence::QuestStart1::White2::*}
+	add "Hey, get over here and help me! Now! Come on!" to {Commence::QuestStart1::White2::*}
+	clear {Commence::QuestStart1::Blue1::*}
+	add "Oh, hi there. I really need something done." to {Commence::QuestStart1::Blue1::*}
+	add "Hi. Can you please help me? That'd be cool..." to {Commence::QuestStart1::Blue1::*}
+	add "...hi? Can I help you? Actually can you help me?" to {Commence::QuestStart1::Blue1::*}
+	clear {Commence::QuestStart1::Blue2::*}
+	add "Oh, hi there. I really need something done." to {Commence::QuestStart1::Blue2::*}
+	add "Hi. Can you please help me? That'd be cool..." to {Commence::QuestStart1::Blue2::*}
+	add "...hi? Can I help you? Actually can you help me?" to {Commence::QuestStart1::Blue2::*}
+	clear {Commence::QuestStart1::Sky1::*}
+	add "Hello! I am occupied right now and need something done!" to {Commence::QuestStart1::Sky1::*}
+	add "Hey! Please help me out and I will give you cool stuff!" to {Commence::QuestStart1::Sky1::*}
+	add "If you're not giving me money, BYE! ...actually, help?" to {Commence::QuestStart1::Sky1::*}
+	clear {Commence::QuestStart1::Sky2::*}
+	add "Hello! I am occupied right now and need something done!" to {Commence::QuestStart1::Sky2::*}
+	add "Hey! Please help me out and I will give you cool stuff!" to {Commence::QuestStart1::Sky2::*}
+	add "If you're not giving me money, BYE! ...actually, help?" to {Commence::QuestStart1::Sky2::*}
+	clear {Commence::QuestStart1::Green1::*}
+	add "Hey I am short something, help me out?" to {Commence::QuestStart1::Green1::*}
+	add "Hello, I am looking for someone to help me." to {Commence::QuestStart1::Green1::*}
+	add "Can you help me out here? I'd appreciate it!" to {Commence::QuestStart1::Green1::*}
+	clear {Commence::QuestStart1::Green2::*}
+	add "Hey I am short something, help me out?" to {Commence::QuestStart1::Green2::*}
+	add "Hello, I am looking for someone to help me." to {Commence::QuestStart1::Green2::*}
+	add "Can you help me out here? I'd appreciate it!" to {Commence::QuestStart1::Green2::*}
+	clear {Commence::QuestStart2::*}
+	add "Can you " to {Commence::QuestStart2::*}
+	add "Can you please " to {Commence::QuestStart2::*}
+	add "Can you possibly " to {Commence::QuestStart2::*}
+	add "Could you " to {Commence::QuestStart2::*}
+	add "Could you please " to {Commence::QuestStart2::*}
+	add "Could you possibly " to {Commence::QuestStart2::*}
+	add "Any way you could " to {Commence::QuestStart2::*}
+	add "Any way you could possibly " to {Commence::QuestStart2::*}
+	add "Any way you could please " to {Commence::QuestStart2::*}
+	add "Any chance you could " to {Commence::QuestStart2::*}
+	add "Any chance you could possibly " to {Commence::QuestStart2::*}
+	add "Any chance you could please " to {Commence::QuestStart2::*}
+	add "Can you go out there and " to {Commence::QuestStart2::*}
+	add "Can you go and possibly " to {Commence::QuestStart2::*}
+	add "Can you go out there please and " to {Commence::QuestStart2::*}
+	clear {Commence::QuestStart3::*}
+	add "Thanks, I guess. Return to me when you're done!" to {Commence::QuestStart3::*}
+	add "Come find me when you're done and I'll give you something!" to {Commence::QuestStart3::*}
+	add "Return to me when you're finished to get my reward." to {Commence::QuestStart3::*}
+	add "You're exepcting a reward for this? Ha! Try me!" to {Commence::QuestStart3::*}
+	add "What's taking so long? Get moving traveller! Now!" to {Commence::QuestStart3::*}
+	add "Get your reward from me when you're finished! Thank you!" to {Commence::QuestStart3::*}
+	add "I'm waiting! Hurry and return to me, I need these items!" to {Commence::QuestStart3::*}
+	add "Find me when you're finished and we'll talk about a reward." to {Commence::QuestStart3::*}
+	add "And don't even think about talking to me till you're done!" to {Commence::QuestStart3::*}
+	clear {Commence::QuestStart3::Gray1::*}
+	add "You'd be doing me a real solid! Thank you." to {Commence::QuestStart3::Gray1::*}
+	add "I'd really appreciate your help!" to {Commence::QuestStart3::Gray1::*}
+	add "Thank you so much. Come find me for a reward!" to {Commence::QuestStart3::Gray1::*}
+	clear {Commence::QuestStart3::Gray2::*}
+	add "You'd be doing me a real solid! Thank you." to {Commence::QuestStart3::Gray2::*}
+	add "I'd really appreciate your help!" to {Commence::QuestStart3::Gray2::*}
+	add "Thank you so much. Come find me for a reward!" to {Commence::QuestStart3::Gray2::*}
+	clear {Commence::QuestStart3::Yellow1::*}
+	add "Thank yas, this means a lot!" to {Commence::QuestStart3::Yellow1::*}
+	add "You're a real pickle picker, ya know!" to {Commence::QuestStart3::Yellow1::*}
+	add "Great things'll come yer way soon!" to {Commence::QuestStart3::Yellow1::*}
+	clear {Commence::QuestStart3::Yellow2::*}
+	add "Thank yas, this means a lot!" to {Commence::QuestStart3::Yellow2::*}
+	add "You're a real pickle picker, ya know!" to {Commence::QuestStart3::Yellow2::*}
+	add "Great things'll come yer way soon!" to {Commence::QuestStart3::Yellow2::*}
+	clear {Commence::QuestStart3::Gold1::*}
+	add "Thanks, I guess. Return to me for something!" to {Commence::QuestStart3::Gold1::*}
+	add "Just come find me when you're done." to {Commence::QuestStart3::Gold1::*}
+	add "Get goin'! Times a wastin!" to {Commence::QuestStart3::Gold1::*}
+	clear {Commence::QuestStart3::Gold2::*}
+	add "Thanks, I guess. Return to me for something!" to {Commence::QuestStart3::Gold2::*}
+	add "Just come find me when you're done."  to {Commence::QuestStart3::Gold2::*}
+	add "Get goin'! Times a wastin!" to {Commence::QuestStart3::Gold2::*}
+	clear {Commence::QuestStart3::Navy1::*}
+	add "Oooo, you're really helpin' me out!" to {Commence::QuestStart3::Navy1::*}
+	add "Come find me when you're done... ahahahah!" to {Commence::QuestStart3::Navy1::*}
+	add "You're really gonna do it? Ahahhah!" to {Commence::QuestStart3::Navy1::*}
+	clear {Commence::QuestStart3::Navy2::*}
+	add "Oooo, you're really helpin' me out!" to {Commence::QuestStart3::Navy2::*}
+	add "Come find me when you're done... ahahahah!" to {Commence::QuestStart3::Navy2::*}
+	add "You're really gonna do it? Ahahhah!" to {Commence::QuestStart3::Navy2::*}
+	clear {Commence::QuestStart3::White1::*}
+	add "Thank you. That is all." to {Commence::QuestStart3::White1::*}
+	add "This is a serious time saver. Thanks." to {Commence::QuestStart3::White1::*}
+	add "Please hurry. I need it right now!" to {Commence::QuestStart3::White1::*}
+	clear {Commence::QuestStart3::White2::*}
+	add "Thank you. That is all." to {Commence::QuestStart3::White2::*}
+	add "This is a serious time saver. Thanks." to {Commence::QuestStart3::White2::*}
+	add "Please hurry. I need it right now!" to {Commence::QuestStart3::White2::*}
+	clear {Commence::QuestStart3::Blue1::*}
+	add "Really brave of you. Come back here soon." to {Commence::QuestStart3::Blue1::*}
+	add "I'd really appreciate it if you did!" to {Commence::QuestStart3::Blue1::*}
+	add "Just try to hurry, I am in a rush!" to {Commence::QuestStart3::Blue1::*}
+	clear {Commence::QuestStart3::Blue2::*}
+	add "Really brave of you. Come back here soon." to {Commence::QuestStart3::Blue2::*}
+	add "I'd really appreciate it if you did!" to {Commence::QuestStart3::Blue2::*}
+	add "Just try to hurry, I am in a rush!" to {Commence::QuestStart3::Blue2::*}
+	clear {Commence::QuestStart3::Sky1::*}
+	add "Please! I have a good reward for you!" to {Commence::QuestStart3::Sky1::*}
+	add "If you hurry I will give you some money!" to {Commence::QuestStart3::Sky1::*}
+	add "If you're looking for funds I would hurry." to {Commence::QuestStart3::Sky1::*}
+	clear {Commence::QuestStart3::Sky2::*}
+	add "Please! I have a good reward for you!" to {Commence::QuestStart3::Sky2::*}
+	add "If you hurry I will give you some money!" to {Commence::QuestStart3::Sky2::*}
+	add "If you're looking for funds I would hurry." to {Commence::QuestStart3::Sky2::*}
+	clear {Commence::QuestStart3::Green1::*}
+	add "You're awesome! Thanks a ton." to {Commence::QuestStart3::Green1::*}
+	add "If you could do that, you'd be great!" to {Commence::QuestStart3::Green1::*}
+	add "I would really appreciate it! Like a ton!" to {Commence::QuestStart3::Green1::*}
+	clear {Commence::QuestStart3::Green2::*}
+	add "You're awesome! Thanks a ton." to {Commence::QuestStart3::Green2::*}
+	add "If you could do that, you'd be great!" to {Commence::QuestStart3::Green2::*}
+	add "I would really appreciate it! Like a ton!" to {Commence::QuestStart3::Green2::*}
+	clear {Commence::QuestEnd0::*}
+	add "Find me again to get my reward!" to {Commence::QuestEnd0::*}
+	add "Come get me and I will reward you!" to {Commence::QuestEnd0::*}
+	add "Hurry and find me again so I can reward you!" to {Commence::QuestEnd0::*}
+	clear {Commence::QuestEnd1::*}
+	add "Oh, you're finally back! Great! Awesome!" to {Commence::QuestEnd1::*}
+	add "Oh hey! Great to see ya again." to {Commence::QuestEnd1::*}
+	add "Oh, you again? Oh wait, you did it? Really?" to {Commence::QuestEnd1::*}
+	add "Cool, you actually made it back. Awesome." to {Commence::QuestEnd1::*}
+	clear {Commence::QuestEnd1::Gray1::*}
+	add "Wow, you did it! Great job explorer!" to {Commence::QuestEnd1::Gray1::*}
+	add "Great, you actually made it back safely!" to {Commence::QuestEnd1::Gray1::*}
+	add "Oh hey! You did it! Thanks a million!" to {Commence::QuestEnd1::Gray1::*}
+	clear {Commence::QuestEnd1::Gray2::*}
+	add "Wow, you did it! Great job explorer!" to {Commence::QuestEnd1::Gray2::*}
+	add "Great, you actually made it back safely!" to {Commence::QuestEnd1::Gray2::*}
+	add "Oh hey! You did it! Thanks a million!" to {Commence::QuestEnd1::Gray2::*}
+	clear {Commence::QuestEnd1::Yellow1::*}
+	add "Hey, thanks fer doin' that there!" to {Commence::QuestEnd1::Yellow1::*}
+	add "Yer a real one, ya know thats?" to {Commence::QuestEnd1::Yellow1::*}
+	add "Hey pardner, ya made it back!" to {Commence::QuestEnd1::Yellow1::*}
+	clear {Commence::QuestEnd1::Yellow2::*}
+	add "Hey, thanks fer doin' that there!" to {Commence::QuestEnd1::Yellow2::*}
+	add "Yer a real one, ya know thats?" to {Commence::QuestEnd1::Yellow2::*}
+	add "Hey pardner, ya made it back!" to {Commence::QuestEnd1::Yellow2::*}
+	clear {Commence::QuestEnd1::Gold1::*}
+	add "Wow, you actually came back..." to {Commence::QuestEnd1::Gold1::*}
+	add "Oh shoot, you actually came back. Great." to {Commence::QuestEnd1::Gold1::*}
+	add "You really did it, huh? Credit belongs to you..." to {Commence::QuestEnd1::Gold1::*}
+	clear {Commence::QuestEnd1::Gold2::*}
+	add "Wow, you actually came back..." to {Commence::QuestEnd1::Gold2::*}
+	add "Oh shoot, you actually came back. Great." to {Commence::QuestEnd1::Gold2::*}
+	add "You really did it, huh? Credit belongs to you..." to {Commence::QuestEnd1::Gold2::*}
+	clear {Commence::QuestEnd1::Navy1::*}
+	add "Oh, hello again good lookin'!" to {Commence::QuestEnd1::Navy1::*}
+	add "Wow, you actually came back! Ahahhaha!" to {Commence::QuestEnd1::Navy1::*}
+	add "You're nuts! You actually did it?" to {Commence::QuestEnd1::Navy1::*}
+	clear {Commence::QuestEnd1::Navy2::*}
+	add "Oh, hello again good lookin'!" to {Commence::QuestEnd1::Navy2::*}
+	add "Wow, you actually came back! Ahahhaha!" to {Commence::QuestEnd1::Navy2::*}
+	add "You're nuts! You actually did it?" to {Commence::QuestEnd1::Navy2::*}
+	clear {Commence::QuestEnd1::White1::*}
+	add "Hurry and give me the items. I am very busy!" to {Commence::QuestEnd1::White1::*}
+	add "Oh, hi. Did I tell you to do something?" to {Commence::QuestEnd1::White1::*}
+	add "Oh, you again. Great, and you actually did it?" to {Commence::QuestEnd1::White1::*}
+	clear {Commence::QuestEnd1::White2::*}
+	add "Hurry and give me the items. I am very busy!" to {Commence::QuestEnd1::White2::*}
+	add "Oh, hi. Did I tell you to do something?" to {Commence::QuestEnd1::White2::*}
+	add "Oh, you again. Great, and you actually did it?" to {Commence::QuestEnd1::White2::*}
+	clear {Commence::QuestEnd1::Blue1::*}
+	add "Oh, wow, you actually like, did it?" to {Commence::QuestEnd1::Blue1::*}
+	add "Hey there again, thanks for coming back to me." to {Commence::QuestEnd1::Blue1::*}
+	add "Oh, hi... you actually found me..." to {Commence::QuestEnd1::Blue1::*}
+	clear {Commence::QuestEnd1::Blue2::*}
+	add "Oh, wow, you actually like, did it?" to {Commence::QuestEnd1::Blue2::*}
+	add "Hey there again, thanks for coming back to me." to {Commence::QuestEnd1::Blue2::*}
+	add "Oh, hi... you actually found me..." to {Commence::QuestEnd1::Blue2::*}
+	clear {Commence::QuestEnd1::Sky1::*}
+	add "What? You made it back? Alive?" to {Commence::QuestEnd1::Sky1::*}
+	add "Make it quick, I am on a business meeting right now!" to {Commence::QuestEnd1::Sky1::*}
+	add "Come on, hurry it up. There's not enough time!" to {Commence::QuestEnd1::Sky1::*}
+	clear {Commence::QuestEnd1::Sky2::*}
+	add "What? You made it back? Alive?" to {Commence::QuestEnd1::Sky2::*}
+	add "Make it quick, I am on a business meeting right now!" to {Commence::QuestEnd1::Sky2::*}
+	add "Come on, hurry it up. There's not enough time!" to {Commence::QuestEnd1::Sky2::*}
+	clear {Commence::QuestEnd1::Green1::*}
+	add "Hey, you made it back. Let's get settled, shall we?" to {Commence::QuestEnd1::Green1::*}
+	add "Hello, great to see ya again!" to {Commence::QuestEnd1::Green1::*}
+	add "You are a trooper! Thanks for helpin' me out!" to {Commence::QuestEnd1::Green1::*}
+	clear {Commence::QuestEnd1::Green2::*}
+	add "Hey, you made it back. Let's get settled, shall we?" to {Commence::QuestEnd1::Green2::*}
+	add "Hello, great to see ya again!" to {Commence::QuestEnd1::Green2::*}
+	add "You are a trooper! Thanks for helpin' me out!" to {Commence::QuestEnd1::Green2::*}
+	clear {Commence::QuestEnd2::*}
+	add "Thanks a ton for doing that for me, seriously!" to {Commence::QuestEnd2::*}
+	add "There's something weird here... oh, uh and" to {Commence::QuestEnd2::*}
+	add "Anyway, let's get this over with I guess." to {Commence::QuestEnd2::*}
+	add "I really didn't expect you to come back. Really." to {Commence::QuestEnd2::*}
+	clear {Commence::QuestEnd2::Gray1::*}
+	add "Let me grab a little something, how about" to {Commence::QuestEnd2::Gray1::*}
+	add "Let's get you a reward! I have some extra" to {Commence::QuestEnd2::Gray1::*}
+	add "You've done well! Here's" to {Commence::QuestEnd2::Gray1::*}
+	clear {Commence::QuestEnd2::Gray2::*}
+	add "Let me grab a little something, how about" to {Commence::QuestEnd2::Gray2::*}
+	add "Let's get you a reward! I have" to {Commence::QuestEnd2::Gray2::*}
+	add "You've done well! Here's" to {Commence::QuestEnd2::Gray2::*}
+	clear {Commence::QuestEnd2::Yellow1::*}
+	add "Ya dids great work! Here's" to {Commence::QuestEnd2::Yellow1::*}
+	add "Now a reward, hows abouts" to {Commence::QuestEnd2::Yellow1::*}
+	add "I must gives ya something, hows abouts" to {Commence::QuestEnd2::Yellow1::*}
+	clear {Commence::QuestEnd2::Yellow2::*}
+	add "Ya dids great work! Here's" to {Commence::QuestEnd2::Yellow2::*}
+	add "Now a reward, hows abouts" to {Commence::QuestEnd2::Yellow2::*}
+	add "I must gives ya something, hows abouts" to {Commence::QuestEnd2::Yellow2::*}
+	clear {Commence::QuestEnd2::Gold1::*}
+	add "I guess I should reward you. Here's" to {Commence::QuestEnd2::Gold1::*}
+	add "And now you need a reward. You like" to {Commence::QuestEnd2::Gold1::*}
+	add "I suppose you should get something. You need" to {Commence::QuestEnd2::Gold1::*}
+	clear {Commence::QuestEnd2::Gold2::*}
+	add "I guess I should reward you. Here's" to {Commence::QuestEnd2::Gold2::*}
+	add "And now you need a reward. You like" to {Commence::QuestEnd2::Gold2::*}
+	add "I suppose you should get something. You need" to {Commence::QuestEnd2::Gold2::*}
+	clear {Commence::QuestEnd2::Navy1::*}
+	add "Mmm, let's see what I have here... You want" to {Commence::QuestEnd2::Navy1::*}
+	add "Ooohohohoh a reward! Of course hehehhe... You likey" to {Commence::QuestEnd2::Navy1::*}
+	add "My my now you need a reward of course! Here's" to {Commence::QuestEnd2::Navy1::*}
+	clear {Commence::QuestEnd2::Navy2::*}
+	add "Mmm, let's see what I have here... You want" to {Commence::QuestEnd2::Navy2::*}
+	add "Ooohohohoh a reward! Of course... You likey" to {Commence::QuestEnd2::Navy2::*}
+	add "My my, now you need a reward! Here's" to {Commence::QuestEnd2::Navy2::*}
+	clear {Commence::QuestEnd2::White1::*}
+	add "Great, now you need a reawrd. You like" to {Commence::QuestEnd2::White1::*}
+	add "And now I have to get you a reward. Here's" to {Commence::QuestEnd2::White1::*}
+	add "Well, here you go. How's" to {Commence::QuestEnd2::White1::*}
+	clear {Commence::QuestEnd2::White2::*}
+	add "Great, now you need a reawrd. You like" to {Commence::QuestEnd2::White2::*}
+	add "And now I have to get you a reward. Here's" to {Commence::QuestEnd2::White2::*}
+	add "Well, here you go. How's" to {Commence::QuestEnd2::White2::*}
+	clear {Commence::QuestEnd2::Blue1::*}
+	add "Here's something for you, I guess. How's" to {Commence::QuestEnd2::Blue1::*}
+	add "There's something for you, I hope you like" to {Commence::QuestEnd2::Blue1::*}
+	add "...and now I have to reward you. Here's" to {Commence::QuestEnd2::Blue1::*}
+	clear {Commence::QuestEnd2::Blue2::*}
+	add "Here's something for you, I guess. How's" to {Commence::QuestEnd2::Blue2::*}
+	add "There's something for you, I hope you like" to {Commence::QuestEnd2::Blue2::*}
+	add "...and now I have to reward you. Here's" to {Commence::QuestEnd2::Blue2::*}
+	clear {Commence::QuestEnd2::Sky1::*}
+	add "Now let me grab you a little something! Here's" to {Commence::QuestEnd2::Sky1::*}
+	add "How about some cool stuff? How's" to {Commence::QuestEnd2::Sky1::*}
+	add "Bye now! Oh, wait, you need a reward? You like" to {Commence::QuestEnd2::Sky1::*}
+	clear {Commence::QuestEnd2::Sky2::*}
+	add "Now let me grab you a little something! Here's" to {Commence::QuestEnd2::Sky2::*}
+	add "How about some cool stuff? How's" to {Commence::QuestEnd2::Sky2::*}
+	add "Bye now! Oh, wait, you need a reward? You like" to {Commence::QuestEnd2::Sky2::*}
+	clear {Commence::QuestEnd2::Green1::*}
+	add "Okay, so here's" to {Commence::QuestEnd2::Green1::*}
+	add "Let me grab something. Here's" to {Commence::QuestEnd2::Green1::*}
+	add "Okay, now let me get a reward... Here's" to {Commence::QuestEnd2::Green1::*}
+	clear {Commence::QuestEnd2::Green2::*}
+	add "Okay, so here's" to {Commence::QuestEnd2::Green2::*}
+	add "Let me grab something. Here's" to {Commence::QuestEnd2::Green2::*}
+	add "Okay, now let me get a reward... Here's" to {Commence::QuestEnd2::Green2::*}
+	clear {Commence::QuestEnd3::*}
+	add "Here... let me grab somethin' for you. Here ya go!" to {Commence::QuestEnd3::*}
+	add "Let me get you something from my stash real quick." to {Commence::QuestEnd3::*}
+	add "So let's get ya a lil something. Will this do?" to {Commence::QuestEnd3::*}
+	add "I am so glad you did that. Here! Find me for more!" to {Commence::QuestEnd3::*}
+	add "Here, get out of my sight now. I am sick of you!" to {Commence::QuestEnd3::*}
+	clear {Commence::QuestEnd3::Gray1::*}
+	add "Well, see ya later I guess..." to {Commence::QuestEnd3::Gray1::*}
+	add "Again... thanks for helping me out..." to {Commence::QuestEnd3::Gray1::*}
+	add "Okay, and we're done here... thanks." to {Commence::QuestEnd3::Gray1::*}
+	clear {Commence::QuestEnd3::Gray2::*}
+	add "Well, see ya later I guess..." to {Commence::QuestEnd3::Gray2::*}
+	add "Again... thanks for helping me out..." to {Commence::QuestEnd3::Gray2::*}
+	add "Okay, and we're done here... thanks." to {Commence::QuestEnd3::Gray2::*}
+	clear {Commence::QuestEnd3::Yellow1::*}
+	add "Thanks fer ya help! Bye now!" to {Commence::QuestEnd3::Yellow1::*}
+	add "Yer a real one! I'll sees ya next time!" to {Commence::QuestEnd3::Yellow1::*}
+	add "Greats business with ya!" to {Commence::QuestEnd3::Yellow1::*}
+	clear {Commence::QuestEnd3::Yellow2::*}
+	add "Thanks fer ya help! Bye now!" to {Commence::QuestEnd3::Yellow2::*}
+	add "Yer a real one! I'll sees ya next time!" to {Commence::QuestEnd3::Yellow2::*}
+	add "Greats business with ya!" to {Commence::QuestEnd3::Yellow2::*}
+	clear {Commence::QuestEnd3::Gold1::*}
+	add "Maybe you're really not as bad as everyone says." to {Commence::QuestEnd3::Gold1::*}
+	add "You're not that bad, really." to {Commence::QuestEnd3::Gold1::*}
+	add "I really didn't think you'd come back. Seriously." to {Commence::QuestEnd3::Gold1::*}
+	clear {Commence::QuestEnd3::Gold2::*}
+	add "Maybe you're really not as bad as everyone says." to {Commence::QuestEnd3::Gold2::*}
+	add "You're not that bad, really." to {Commence::QuestEnd3::Gold2::*}
+	add "I really didn't think you'd come back. Seriously." to {Commence::QuestEnd3::Gold2::*}
+	clear {Commence::QuestEnd3::Navy1::*}
+	add "Ooohhh, please visit me again soon!" to {Commence::QuestEnd3::Navy1::*}
+	add "I need to see your face again... Visit soon!" to {Commence::QuestEnd3::Navy1::*}
+	add "And now we depart... Or do we... Ahahahhahah!" to {Commence::QuestEnd3::Navy1::*}
+	clear {Commence::QuestEnd3::Navy2::*}
+	add "Ooohhh, please visit me again soon!" to {Commence::QuestEnd3::Navy2::*}
+	add "I need to see your face again... Visit soon!" to {Commence::QuestEnd3::Navy2::*}
+	add "And now we depart... Or do we... Ahahahhahah!" to {Commence::QuestEnd3::Navy2::*}
+	clear {Commence::QuestEnd3::White1::*}
+	add "You did okay though. I guess." to {Commence::QuestEnd3::White1::*}
+	add "You could have came back faster, you know." to {Commence::QuestEnd3::White1::*}
+	add "There's so much wasted time now. Thanks a lot." to {Commence::QuestEnd3::White1::*}
+	clear {Commence::QuestEnd3::White2::*}
+	add "You did okay though. I guess." to {Commence::QuestEnd3::White2::*}
+	add "You could have came back faster, you know." to {Commence::QuestEnd3::White2::*}
+	add "There's so much wasted time now. Thanks a lot." to {Commence::QuestEnd3::White2::*}
+	clear {Commence::QuestEnd3::Blue1::*}
+	add "I guess that's all for now..." to {Commence::QuestEnd3::Blue1::*}
+	add "Thanks. I have nothing else for you right now..." to {Commence::QuestEnd3::Blue1::*}
+	add "I actually need some more help. Talk to me again later." to {Commence::QuestEnd3::Blue1::*}
+	clear {Commence::QuestEnd3::Blue2::*}
+	add "I guess that's all for now..." to {Commence::QuestEnd3::Blue2::*}
+	add "Thanks. I have nothing else for you right now..." to {Commence::QuestEnd3::Blue2::*}
+	add "I actually need some more help. Talk to me again later." to {Commence::QuestEnd3::Blue2::*}
+	clear {Commence::QuestEnd3::Sky1::*}
+	add "Great to do business! Great day now." to {Commence::QuestEnd3::Sky1::*}
+	add "Transaction complete. Bye now." to {Commence::QuestEnd3::Sky1::*}
+	add "You got your money, I got my money. Adios!" to {Commence::QuestEnd3::Sky1::*}
+	clear {Commence::QuestEnd3::Sky2::*}
+	add "Great to do business! Great day now." to {Commence::QuestEnd3::Sky2::*}
+	add "Transaction complete. Bye now." to {Commence::QuestEnd3::Sky2::*}
+	add "You got your money, I got my money. Adios!" to {Commence::QuestEnd3::Sky2::*}
+	clear {Commence::QuestEnd3::Green1::*}
+	add "You were great. Thanks for your help." to {Commence::QuestEnd3::Green1::*}
+	add "You did exactly what I said. Thank you. Bye now." to {Commence::QuestEnd3::Green1::*}
+	add "Great job. You're awesome! Let's do this again." to {Commence::QuestEnd3::Green1::*}
+	clear {Commence::QuestEnd3::Green2::*}
+	add "You were great. Thanks for your help." to {Commence::QuestEnd3::Green2::*}
+	add "You did exactly what I said. Thank you. Bye now." to {Commence::QuestEnd3::Green2::*}
+	add "Great job. You're awesome! Let's do this again." to {Commence::QuestEnd3::Green2::*}
+	clear {Commence::QuestNoProg::*}
+	add "Return back to ME when you finish my request. Thanks again!" to {Commence::QuestNoProg::*}
+	add "What are you doing back here? Get going! Now! Do my request! NOW!" to {Commence::QuestNoProg::*}
+	add "Hurry back to ME to get my reward. Hurry! I need it!" to {Commence::QuestNoProg::*}
+	add "Oh uh, no rush I guess. I only need those things NOW! MOVE!" to {Commence::QuestNoProg::*}
+	add "Oh and thanks again for doing that for me! Find me when you're done." to {Commence::QuestNoProg::*}
+	add "Thanks again! Come find me when you're done for a reward!" to {Commence::QuestNoProg::*}
+	add "Find me when you're done. Only me. Not Susan over there!" to {Commence::QuestNoProg::*}
+	add "Thanks for doing that. It means a lot! Find me again please!" to {Commence::QuestNoProg::*}
+	clear {Commence::FindNPC::*}
+	add "Find your quest vendor, " to {Commence::FindNPC::*}
+	
+	#QUEST REWARDS
+	clear {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Mending to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Protection 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Fire Protection 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Feather Falling 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Blast Protection 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Projectile Protection 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Respiration to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Aqua Affinity to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Swift Sneak 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Depth Strider 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Sharpness 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Smite 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Looting 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Knockback 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Efficiency 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Fortune 1 to {Commence::Story::Quests::Rewards1::*}
+	add Enchanted Book of Infinity to {Commence::Story::Quests::Rewards1::*}
+	loop 3 times:
+		add "%random integer between 2 and 16% Diamonds" to {Commence::Story::Quests::Rewards1::*}
+	loop 5 times:
+		add "%random integer between 16 and 64% Iron Ingots" to {Commence::Story::Quests::Rewards1::*}
+		add "%random integer between 64 and 128% Gold Ingots" to {Commence::Story::Quests::Rewards1::*}
+	add "Netherite Ingot" to {Commence::Story::Quests::Rewards1::*}
+	add "4 Blaze Rods" to {Commence::Story::Quests::Rewards1::*}
+	add "4 Magma Cream" to {Commence::Story::Quests::Rewards1::*}
+	add "4 Ender Pearls" to {Commence::Story::Quests::Rewards1::*}
+	add "64 Oak Logs" to {Commence::Story::Quests::Rewards1::*}
+	add "16 Cooked Chicken" to {Commence::Story::Quests::Rewards1::*}
+	add "16 Cooked Porkchops" to {Commence::Story::Quests::Rewards1::*}
+	add "16 Steak" to {Commence::Story::Quests::Rewards1::*}
+	add "64 Wheat" to {Commence::Story::Quests::Rewards1::*}
+	add "128 Oak Planks" to {Commence::Story::Quests::Rewards1::*}
+	clear {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Stone named "Stone" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Stone Stairs named "Stone Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Stone Slabs named "Stone Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Cobblestone named "Cobblestone" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Cobblestone Stairs named "Cobblestone Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Cobblestone Slabs named "Cobblestone Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Smooth Stone named "Smooth Stone" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Smooth Stone Slabs named "Smooth Stone Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Stone Bricks named "Stone Bricks" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Stone Brick Stairs named "Stone Brick Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Stone Brick Slabs named "Stone Brick Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Granite named "Granite" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Granite Stairs named "Granite Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Granite Slabs named "Granite Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Diorite named "Diorite" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Diorite Stairs named "Diorite Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Diorite Slabs named "Diorite Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Andesite named "Andesite" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Andesite Stairs named "Andesite Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Andesite Slabs named "Andesite Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Bricks named "Bricks" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Brick Stairs named "Brick Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Brick Slabs named "Brick Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Sandstone named "Sandstone" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Sandstone Stairs named "Sandstone Stairs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 24 Sandstone Slabs named "Sandstone Slabs" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 32 Coal named "Coal" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 16 Iron Ingot named "Iron Ingots" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 48 Redstone named "Redstone" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 White Bed named "White Bed" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Crafting Table named "Crafting Table" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Stonecutter named "Stonecutter" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Grindstone named "Grindstone" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Loom named "Loom" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Furnace named "Furnace" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Blast Furnace named "Blast Furnace" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Anvil named "Anvil" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Composter named "Composter" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Cauldron named "Cauldron" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Wood Pickaxe named "Wood Pickaxe" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Wood Axe named "Wood Axe" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Wood Sword named "Wood Sword" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Stone Pickaxe named "Stone Pickaxe" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Stone Axe named "Stone Axe" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Stone Sword named "Stone Sword" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Iron Pickaxe named "Iron Pickaxe" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Iron Axe named "Iron Axe" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	add 1 Iron Sword named "Iron Sword" to {Commence::Story::Quests::Rewards1::Gray1::*}
+	clear {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Wheat" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Raw Beef" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Raw Porkchops" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Raw Mutton" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Raw Chicken" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Wheat Seeds" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Pumpkin Seeds" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Melon Seeds" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Beetroot Seeds" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Composter" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Oak Logs" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	add "Oak Planks" to {Commence::Story::Quests::Rewards1::Yellow1::*}
+	clear {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Apples named "Apples" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Melon Slices named "Melon Slices" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Sweet Berries named "Sweet Berries" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Glow Berries named "Glow Berries" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Carrots named "Carrots" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Potatoes named "Potatoes" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 2 Cooked Beef named "Cooked Beef" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 2 Cooked Porkchops named "Cooked Porkchops" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 2 Cooked Mutton named "Cooked Mutton" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 2 Cooked Chicken named "Cooked Chicken" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Bread named "Bread" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Cookies named "Cookies" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 4 Wheat named "Wheat" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	add 1 Milk Bucket named "Milk Bucket" to {Commence::Story::Quests::Rewards1::Gold1::*}
+	clear {Commence::Story::Quests::Rewards1::Navy1::*}
+	add 1 Honey Bottle named "Honey Bottle" to {Commence::Story::Quests::Rewards1::Navy1::*}
+	add 1 Milk Bucket named "Milk Bucket" to {Commence::Story::Quests::Rewards1::Navy1::*}
+	add 1 Suspicious Stew named "Suspicious Stew" to {Commence::Story::Quests::Rewards1::Navy1::*}
+	add 2 Books named "Books" to {Commence::Story::Quests::Rewards1::Navy1::*}
+	add 8 Iron Ingots named "Iron Ingots" to {Commence::Story::Quests::Rewards1::Navy1::*}
+	clear {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Stone named "Stone" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Stone Stairs named "Stone Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Stone Slabs named "Stone Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Cobblestone named "Cobblestone" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Cobblestone Stairs named "Cobblestone Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Cobblestone Slabs named "Cobblestone Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Smooth Stone named "Smooth Stone" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Smooth Stone Slabs named "Smooth Stone Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Stone Bricks named "Stone Bricks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Stone Brick Stairs named "Stone Brick Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Stone Brick Slabs named "Stone Brick Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Granite named "Granite" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Granite Stairs named "Granite Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Granite Slabs named "Granite Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Diorite named "Diorite" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Diorite Stairs named "Diorite Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Diorite Slabs named "Diorite Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Andesite named "Andesite" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Andesite Stairs named "Andesite Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Andesite Slabs named "Andesite Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Bricks named "Bricks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Brick Stairs named "Brick Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Brick Slabs named "Brick Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Sandstone named "Sandstone" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Sandstone Stairs named "Sandstone Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Sandstone Slabs named "Sandstone Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 8 Oak Logs named "Oak Logs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Oak Planks named "Oak Planks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Oak Stairs named "Oak Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Oak Slabs named "Oak Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 8 Birch Logs named "Birch Logs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Birch Planks named "Birch Planks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Birch Stairs named "Birch Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Birch Slabs named "Birch Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 8 Dark Oak Logs named "Dark Oak Logs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Dark Oak Planks named "Dark Oak Planks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Dark Oak Stairs named "Dark Oak Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Dark Oak Slabs named "Dark Oak Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 8 Spruce Logs named "Spruce Logs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Spruce Planks named "Spruce Planks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Spruce Stairs named "Spruce Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Spruce Slabs named "Spruce Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 8 Acacia Logs named "Acacia Logs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 32 Acacia Planks named "Acacia Planks" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 16 Acacia Stairs named "Acacia Stairs" to {Commence::Story::Quests::Rewards1::White1::*}
+	add 24 Acacia Slabs named "Acacia Slabs" to {Commence::Story::Quests::Rewards1::White1::*}
+	clear {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Wood Pickaxe named "Wood Pickaxe" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Wood Axe named "Wood Axe" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Wood Sword named "Wood Sword" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Stone Pickaxe named "Stone Pickaxe" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Stone Axe named "Stone Axe" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Stone Sword named "Stone Sword" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Iron Pickaxe named "Iron Pickaxe" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Iron Axe named "Iron Axe" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Iron Sword named "Iron Sword" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Leather Chestplate named "Leather Chestplate" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Leather Boots named "Leather Boots" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Iron Chestplate named "Iron Chestplate" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Iron Boots named "Iron Boots" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 1 Bow named "Bow" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	add 8 Arrows named "Arrows" to {Commence::Story::Quests::Rewards1::Blue1::*}
+	clear {Commence::Story::Quests::Rewards1::Sky1::*}
+	add 8 Nether Stars named "<##00C889>$&8Funds<##00C889>$" to {Commence::Story::Quests::Rewards1::Sky1::*}
+	add 16 Nether Stars named "<##00C889>$&8Funds<##00C889>$" to {Commence::Story::Quests::Rewards1::Sky1::*}
+	add 32 Nether Stars named "<##00C889>$&8Funds<##00C889>$" to {Commence::Story::Quests::Rewards1::Sky1::*}
+	add 48 Nether Stars named "<##00C889>$&8Funds<##00C889>$" to {Commence::Story::Quests::Rewards1::Sky1::*}
+	add 64 Nether Stars named "<##00C889>$&8Funds<##00C889>$" to {Commence::Story::Quests::Rewards1::Sky1::*}
+	clear {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Stone named "Stone" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Stone Stairs named "Stone Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Stone Slabs named "Stone Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Cobblestone named "Cobblestone" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Cobblestone Stairs named "Cobblestone Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Cobblestone Slabs named "Cobblestone Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Smooth Stone named "Smooth Stone" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Smooth Stone Slabs named "Smooth Stone Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Stone Bricks named "Stone Bricks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Stone Brick Stairs named "Stone Brick Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Stone Brick Slabs named "Stone Brick Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Granite named "Granite" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Granite Stairs named "Granite Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Granite Slabs named "Granite Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Diorite named "Diorite" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Diorite Stairs named "Diorite Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Diorite Slabs named "Diorite Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Andesite named "Andesite" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Andesite Stairs named "Andesite Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Andesite Slabs named "Andesite Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Bricks named "Bricks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Brick Stairs named "Brick Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Brick Slabs named "Brick Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Sandstone named "Sandstone" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Sandstone Stairs named "Sandstone Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Sandstone Slabs named "Sandstone Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 8 Oak Logs named "Oak Logs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Oak Planks named "Oak Planks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Oak Stairs named "Oak Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Oak Slabs named "Oak Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 8 Birch Logs named "Birch Logs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Birch Planks named "Birch Planks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Birch Stairs named "Birch Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Birch Slabs named "Birch Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 8 Dark Oak Logs named "Dark Oak Logs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Dark Oak Planks named "Dark Oak Planks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Dark Oak Stairs named "Dark Oak Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Dark Oak Slabs named "Dark Oak Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 8 Spruce Logs named "Spruce Logs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Spruce Planks named "Spruce Planks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Spruce Stairs named "Spruce Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Spruce Slabs named "Spruce Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 8 Acacia Logs named "Acacia Logs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 32 Acacia Planks named "Acacia Planks" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 16 Acacia Stairs named "Acacia Stairs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 24 Acacia Slabs named "Acacia Slabs" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Wood Pickaxe named "Wood Pickaxe" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Wood Axe named "Wood Axe" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Wood Sword named "Wood Sword" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Stone Pickaxe named "Stone Pickaxe" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Stone Axe named "Stone Axe" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Stone Sword named "Stone Sword" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Iron Pickaxe named "Iron Pickaxe" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Iron Axe named "Iron Axe" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Iron Sword named "Iron Sword" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Leather Chestplate named "Leather Chestplate" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Leather Boots named "Leather Boots" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Iron Chestplate named "Iron Chestplate" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Iron Boots named "Iron Boots" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 1 Bow named "Bow" to {Commence::Story::Quests::Rewards1::Green1::*}
+	add 8 Arrows named "Arrows" to {Commence::Story::Quests::Rewards1::Green1::*}
+
+	clear {Commence::Quest::Story::Dialogue::*}
+	add "Greetings, chosen one! I am an Angel from the higher realms, and you’ve been selected to receive divine wisdom." to {Commence::Quest::Story::Dialogue::1}
+
+	set {Commence::Citizens::Class::Presidential} to "<##D0944D>Presidential Class"
+	set {Commence::Citizens::Class::Elite} to "<##3988A3>Elite Class"
+	set {Commence::Citizens::Class::Highest} to "<##57D1F9>Highest Class"
+	set {Commence::Citizens::Class::High} to "<##00FC89>High Class"
+	set {Commence::Citizens::Class::Middle} to "<##F7FCFF>Middle Class"
+	set {Commence::Citizens::Class::Low} to "<##CB625F>Low Class"
+	set {Commence::Citizens::Class::Lowest} to "<##8B969B>Lowest Class"
+	set {Commence::Citizens::Class::Under} to "<##892929>Under Class"
+	
+	clear {Commence::Citizens::Careers::*}
+	
+	#GOVERNMENT
+	add "<##D0944D>Mayor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Governor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Leader" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Emperor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Pope" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Leader" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>King" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Queen" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>President" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Chancellor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Prime Minister" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Duke" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Baron" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Councilor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Ambassador" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>General" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Commander" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Judge" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Philanthropist" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Arbiter" to {Commence::Citizens::Careers::*}
+	
+	#CORPORATE
+	add "<##D0944D>Chief Executive Officer" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Chief Financial Officer" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Chief Technology Officer" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Chief Operating Officer" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Business Owner" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Entrepreneur" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Investor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Industrialist" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Banker" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Broker" to {Commence::Citizens::Careers::*}
+
+	#ACADEMIC
+	add "<##D0944D>Curator" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Dean" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Historian" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Scholar" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Author" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Composer" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Artist" to {Commence::Citizens::Careers::*}
+	
+	#RELIGION
+	add "<##D0944D>Priest" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Prophet" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Monk" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Nun" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Oracle" to {Commence::Citizens::Careers::*}
+	
+	#MILITARY
+	add "<##D0944D>Warlard" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Admiral" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Marshal" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Strategist" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Captain" to {Commence::Citizens::Careers::*}
+	
+	#MAGIC
+	add "<##D0944D>Archmage" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Grand Enchanter" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>High Alchemist" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Seer" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Elementalist" to {Commence::Citizens::Careers::*}
+	
+	#SCIENCE
+	add "<##D0944D>Inventor" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Mechanist" to {Commence::Citizens::Careers::*}
+	add "<##D0944D>Technologist" to {Commence::Citizens::Careers::*}
+	
+
+	clear {Commence::Citizens::Jobs::*}
+	
+	#BUILDING & CONSTRUCTION
+	add "<##F7FCFF>Stonemason" to {Commence::Citizens::Jobs::*}
+	set {Commence::Stonemason::Inventory::*} to "stone", "coal ore", "iron ore", "andesite", and "granite"
+	set {Commence::Stonemason::Companies::*} to "Chisel & Stone Co.", "Granite Guild", "Monolith Masonry", "CarveCraft Industries", and "Cornerstone Creations"
+	add "<##F7FCFF>Architect" to {Commence::Citizens::Jobs::*}
+	set {Commence::Architect::Inventory::*} to "stone bricks", "quartz block", "polished andesite", "smooth sandstone", and "dark prismarine"
+	set {Commence::Architect::Companies::*} to "Visionary Blueprints", "Ethereal Designs", "Pinnacle Planners", "ArchCraft Studio", and "Stone & Sky Associates"
+	add "<##F7FCFF>Builder" to {Commence::Citizens::Jobs::*}
+	set {Commence::Builder::Inventory::*} to "cobblestone", "planks", "concrete", "glass", and "brick block"
+	set {Commence::Builder::Companies::*} to "Ironclad Builders", "Cobalt Construction", "Cornerstone Craftsmen", "Brick by Brick Co.", and "Skyward Structures"
+	add "<##F7FCFF>Carpenter" to {Commence::Citizens::Jobs::*}
+	set {Commence::Carpenter::Inventory::*} to "planks", "fence", "ladder", "trapdoor", and "door"
+	set {Commence::Carpenter::Companies::*} to "Woodland Works", "Timber Touch Carpentry", "Golden Grain Woodworks", "Oak & Nail Co.", and "The Crafted Beam"
+	add "<##F7FCFF>Miner" to {Commence::Citizens::Jobs::*}
+	set {Commence::Miner::Inventory::*} to "stone pickaxe", "iron pickaxe", "coal", "iron ore", and "diamond"
+	set {Commence::Miner::Companies::*} to "Deep Core Excavation", "Ore Horizons", "Mineral Masters", "Bedrock Breakers", and "GemForge Industries"
+	add "<##F7FCFF>Lumberjack" to {Commence::Citizens::Jobs::*}
+	set {Commence::Lumberjack::Inventory::*} to "stone axe", "iron axe", "oak log", "spruce log", and "birch log"
+	set {Commence::Lumberjack::Companies::*} to "Evergreen Logging", "Timber Titans", "ForestFell Co.", "The Axe & Arbor Co.", and "Sylvan Supply"
+	add "<##F7FCFF>Terraformer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Terraformer::Inventory::*} to "grass block", "dirt", "podzol", "coarse dirt", and "gravel"
+	set {Commence::Terraformer::Companies::*} to "EarthWorks Landscaping", "Nature's Canvas", "Terrain Titans", "Shaper’s Guild", and "Green Horizon"
+	add "<##F7FCFF>Decorator" to {Commence::Citizens::Jobs::*}
+	set {Commence::Decorator::Inventory::*} to "flower pot", "painting", "banner", "carpet", and "lantern"
+	set {Commence::Decorator::Companies::*} to "Ornamental Interiors", "Finishing Flourish", "Accent & Ambience", "Radiant Rooms Co.", and "Palette & Place"
+	add "<##F7FCFF>Engineer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Engineer::Inventory::*} to "redstone", "observer", "piston", "dispenser", and "hopper"
+	set {Commence::Engineer::Companies::*} to "Redstone Solutions", "Techspire Innovations", "PistonWorks Engineering", "ForgeLogic Systems", and "CircuitCore Designs"
+	
+	#AGRICULTURE
+	add "<##876E52>Farmer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Farmer::Inventory::*} to "wheat seeds", "potatoes", "carrots", "beetroot seeds", and "bone meal"
+	set {Commence::Farmer::Companies::*} to "Harvest Haven", "Golden Fields Co.", "Plow & Provisions", "EverGrow Farms", and "Sprout & Seed Co."
+	add "<##876E52>Gardener" to {Commence::Citizens::Jobs::*}
+	set {Commence::Gardener::Inventory::*} to "sapling", "flower", "grass block", "lily pad", and "vines"
+	set {Commence::Gardener::Companies::*} to "BloomCraft Horticulture", "Verdant Visions", "Petal & Thorn Gardening", "Leaf & Root Creations", and "Emerald Gardens"
+	add "<##876E52>Beekeeper" to {Commence::Citizens::Jobs::*}
+	set {Commence::Beekeeper::Inventory::*} to "bee nest", "honey bottle", "honeycomb", "flower", and "campfire"
+	set {Commence::Beekeeper::Companies::*} to "Honeycomb Harmony", "Hive & Honey Co.", "BuzzWorks Apiary", "Golden Nectar Farms", and "The Beekeepers' Guild"
+	add "<##876E52>Ranchor" to {Commence::Citizens::Jobs::*}
+	set {Commence::Rancher::Inventory::*} to "wheat", "carrot", "hay block", "lead", and "fence"
+	set {Commence::Rancher::Companies::*} to "Pasture Prime Ranch", "Hoof & Horn Co.", "Trailblazer Livestock", "Ranch & Roam Ltd.", and "CattleCraft Enterprises"
+	add "<##876E52>Fisherman" to {Commence::Citizens::Jobs::*}
+	set {Commence::Fisherman::Inventory::*} to "fishing rod", "cod", "salmon", "pufferfish", and "tropical fish"
+	set {Commence::Fisherman::Companies::*} to "Ocean's Bounty", "Hook & Line Co.", "WaveRider Fisheries", "Mariner's Harvest", and "The Salty Catch"
+	add "<##876E52>Huntsman" to {Commence::Citizens::Jobs::*}
+	set {Commence::Huntsman::Inventory::*} to "bow", "arrow", "crossbow", "leather", and "rabbit hide"
+	set {Commence::Huntsman::Companies::*} to "Prowler's Guild", "Hunter’s Haven", "Wildcraft Outfitters", "Stalk & Strike Co.", and "Predator's Edge"
+	add "<##876E52>Forager" to {Commence::Citizens::Jobs::*}
+	set {Commence::Forager::Inventory::*} to "mushroom", "sweet berries", "kelp", "sugar cane", and "seagrass"
+	set {Commence::Forager::Companies::*} to "Nature’s Basket", "Wanderer’s Harvest", "Thicket & Thorn Co.", "ForestFinds Ltd.", and "Wildroots Collective"
+	add "<##876E52>Herbalist" to {Commence::Citizens::Jobs::*}
+	set {Commence::Herbalist::Inventory::*} to "flower", "sapling", "mushroom", "nether wart", and "fermented spider eye"
+	set {Commence::Herbalist::Companies::*} to "Green Grove Apothecary", "Herbal Harmony Co.", "The Verdant Cure", "Plant & Potion Workshop", and "Folk Remedy Guild"
+	
+	#CRAFTING
+	add "<##3988A3>Blacksmith" to {Commence::Citizens::Jobs::*}
+	set {Commence::Blacksmith::Inventory::*} to "iron ingot", "anvil", "blast furnace", "coal", and "stone"
+	set {Commence::Blacksmith::Companies::*} to "Iron & Ember Forge", "Molten Metalworks", "Steelshard Smithery", "Hammer & Anvil Co.", and "ForgeCraft Foundry"
+	add "<##3988A3>Weaponsmith" to {Commence::Citizens::Jobs::*}
+	set {Commence::Weaponsmith::Inventory::*} to "iron sword", "diamond sword", "bow", "crossbow", and "trident"
+	set {Commence::Weaponsmith::Companies::*} to "Blade & Bow Co.", "EdgeMaster Arms", "Arrowhead Arsenal", "The Forged Fang", and "Vanguard Weaponry"
+	add "<##3988A3>Armorer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Armorer::Inventory::*} to "iron chestplate", "diamond helmet", "shield", "chainmail", and "netherite ingot"
+	set {Commence::Armorer::Companies::*} to "Plated Precision", "Bulwark Armories", "Aegis Armorworks", "Ironhide Co.", and "Defender's Forge"
+	add "<##3988A3>Toolsmith" to {Commence::Citizens::Jobs::*}
+	set {Commence::Toolsmith::Inventory::*} to "stone pickaxe", "iron shovel", "diamond axe", "hoe", and "smithing table"
+	set {Commence::Toolsmith::Companies::*} to "Iron Edge Tools", "Precision Toolcraft", "Gearsmith Co.", "The Crafted Grip", and "WorkForge Supplies"
+	add "<##3988A3>Leatherworker" to {Commence::Citizens::Jobs::*}
+	set {Commence::Leatherworker::Inventory::*} to "leather", "leather helmet", "saddle", "item frame", and "leather horse armor"
+	set {Commence::Leatherworker::Companies::*} to "Tanned & Tailored", "HideCraft Goods", "The Leather Loom", "Pelt & Stitch Co.", and "Hide & Seek Supply"
+	add "<##3988A3>Glassblower" to {Commence::Citizens::Jobs::*}
+	set {Commence::Glassblower::Inventory::*} to "glass", "stained glass", "glass pane", "beacon", and "sand"
+	set {Commence::Glassblower::Companies::*} to "LustreWorks Glass", "PrismForge Studios", "Shatterproof Designs", "The Glass Guild", and "CrystalCraft Co."
+	add "<##3988A3>Potter" to {Commence::Citizens::Jobs::*}
+	set {Commence::Potter::Inventory::*} to "clay", "brick", "terracotta", "flower pot", and "glazed terracotta"
+	set {Commence::Potter::Companies::*} to "Clay & Kiln Co.", "Earth & Fire Studios", "TerraCraft Pottery", "Vessel Creations", and "Molded Masterpieces"
+	add "<##3988A3>Stitcher" to {Commence::Citizens::Jobs::*}
+	set {Commence::Stitcher::Inventory::*} to "wool", "carpet", "banner", "string", and "scaffolding"
+	set {Commence::Stitcher::Companies::*} to "Thread & Needle Co.", "BannerCraft Creations", "Stitchworks Studio", "The Woven Loom", and "PatternForge"
+	add "<##3988A3>Enchanter" to {Commence::Citizens::Jobs::*}
+	set {Commence::Enchanter::Inventory::*} to "enchantment table", "bookshelf", "lapis lazuli", "anvil", and "experience bottle"
+	set {Commence::Enchanter::Companies::*} to "Arcane Imbuements", "Ethereal Enchantments", "Runewright Ltd.", "Mystic Forge", and "Enchanted Edge Co."
+	
+	#FOOD
+	add "<##F2CDA9>Chef" to {Commence::Citizens::Jobs::*}
+	set {Commence::Chef::Inventory::*} to "steak", "cooked porkchop", "golden apple", "cake", and "beetroot soup"
+	set {Commence::Chef::Companies::*} to "Gilded Plate Co.", "Golden Skillet Kitchens", "Epicurean Delights", "Culinary Canvas", and "FlavorForge Co."
+	add "<##F2CDA9>Baker" to {Commence::Citizens::Jobs::*}
+	set {Commence::Baker::Inventory::*} to "wheat", "bread", "cookie", "cake", and "pumpkin pie"
+	set {Commence::Baker::Companies::*} to "Rising Loaf Bakery", "Sugar & Crust Co.", "Golden Grains Bakehouse", "PastryCraft Delights", and "Oven & Hearth Co."
+	add "<##F2CDA9>Butcher" to {Commence::Citizens::Jobs::*}
+	set {Commence::Butcher::Inventory::*} to "raw beef", "raw porkchop", "leather", "rabbit", and "chicken"
+	set {Commence::Butcher::Companies::*} to "Prime Cuts Butchery", "Meat & Marrow Co.", "The Carving Block", "Hearth & Hide Butchery", and "ChopCraft Co."
+	add "<##F2CDA9>Brewer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Brewer::Inventory::*} to "brewing stand", "nether wart", "potion", "glass bottle", and "blaze powder"
+	set {Commence::Brewer::Companies::*} to "PotionBrews Co.", "Nether Nectar", "Alechemy Brewery", "CauldronCraft Beverages", and "The Brewing Barrel"
+	add "<##F2CDA9>Innkeeper" to {Commence::Citizens::Jobs::*}
+	set {Commence::Innkeeper::Inventory::*} to "bread", "stew", "honey bottle", "bed", and "torch"
+	set {Commence::Innkeeper::Companies::*} to "Hearthstone Lodge", "Traveler's Rest Inn", "The Wandering Hearth", "Lantern & Larder", and "Wayfarer’s Refuge"
+	add "<##F2CDA9>Waiter" to {Commence::Citizens::Jobs::*}
+	set {Commence::Waiter::Inventory::*} to "plate item", "cup", "bowl", "cooked chicken", and "cooked cod"
+	set {Commence::Waiter::Companies::*} to "Dining Detail", "Silver Tray Co.", "TableServe Ltd.", "Polished Plate Waitstaff", and "MealCraft Services"
+	
+	#COMBAT
+	add "<##561A1A>Assassin" to {Commence::Citizens::Jobs::*}
+	set {Commence::Assassin::Inventory::*} to "iron sword", "crossbow", "ender pearl", "potion of invisibility", and "totem of undying"
+	set {Commence::Assassin::Companies::*} to "Shadow Fang Guild", "Silent Strike Co.", "Phantom's Blade", "The Cloaked Dagger", and "Viper’s Veil"
+	add "<##561A1A>Knight" to {Commence::Citizens::Jobs::*}
+	set {Commence::Knight::Inventory::*} to "shield", "iron sword", "chainmail armor", "horse", and "saddle"
+	set {Commence::Knight::Companies::*} to "The Iron Order", "Valor & Vigil Co.", "The Golden Sword", "Shieldbearer Guild", and "Aegis Collective"
+	add "<##561A1A>Guard" to {Commence::Citizens::Jobs::*}
+	set {Commence::Guard::Inventory::*} to "iron sword", "bow", "shield", "torch", and "iron helmet"
+	set {Commence::Guard::Companies::*} to "Steel Sentinel Security", "Fortified Watch Co.", "Ironclad Defenders", "The Vigilant Blade", and "SafeHaven Patrol"
+	add "<##561A1A>Mercenary" to {Commence::Citizens::Jobs::*}
+	set {Commence::Mercenary::Inventory::*} to "iron sword", "crossbow", "diamond armor", "totem of undying", and "gold ingot"
+	set {Commence::Mercenary::Companies::*} to "BattleBorn Mercenaries", "Contracted Steel", "The Iron Resolve", "Hired Blade Co.", and "The Vanguard Pact"
+	add "<##561A1A>Archer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Archer::Inventory::*} to "bow", "arrow", "crossbow", "spectral arrow", and "string"
+	set {Commence::Archer::Companies::*} to "The Feathered Bow", "Piercing Precision Co.", "Archer’s Haven", "The Silent Quiver", and "Bullseye Brigade"
+	
+	#MAGIC
+	add "<##855EC9>Cleric" to {Commence::Citizens::Jobs::*}
+	set {Commence::Cleric::Inventory::*} to "potion of healing", "potion of regeneration", "golden apple", "book", and "cross"
+	set {Commence::Cleric::Companies::*} to "Sanctum of Light", "Healer’s Haven", "Holy Flame Guild", "Blessed Remedies Co.", and "Ethereal Aid"
+	add "<##855EC9>Mage" to {Commence::Citizens::Jobs::*}
+	set {Commence::Mage::Inventory::*} to "blaze rod", "ender pearl", "nether star", "fire charge", and "potion of strength"
+	set {Commence::Mage::Companies::*} to "Arcane Tower Guild", "The Mystic Circle", "Runic Edge Co.", "Elemental Mastery", and "The Crystal Veil"
+	add "<##855EC9>Alchemist" to {Commence::Citizens::Jobs::*}
+	set {Commence::Alchemist::Inventory::*} to "brewing stand", "nether wart", "potion", "redstone", and "spider eye"
+	set {Commence::Alchemist::Companies::*} to "Cauldron & Crucible", "PotionCraft Inc.", "The Alchemy Guild", "Mystic Mixtures", and "Elixir Emporium"
+	add "<##855EC9>Scribe" to {Commence::Citizens::Jobs::*}
+	set {Commence::Scribe::Inventory::*} to "book", "quill", "ink sac", "paper", and "lectern"
+	set {Commence::Scribe::Companies::*} to "Quill & Scroll Co.", "The Ink Well", "TomeCraft Ltd.", "Glyph & Grimoire", and "Scribes' Haven"
+	add "<##855EC9>Librarian" to {Commence::Citizens::Jobs::*}
+	set {Commence::Librarian::Inventory::*} to "bookshelf", "enchantment table", "book", "quill", and "ink sac"
+	set {Commence::Librarian::Companies::*} to "Shelves of Knowledge", "The Quiet Tome Co.", "Library of Lore", "Books & Beyond Ltd.", and "Archivist's Refuge"
+	
+	add "<##855EC9>Scholar" to {Commence::Citizens::Jobs::*}
+	set {Commence::Scholar::Inventory::*} to "book", "lectern", "compass", "map", and "clock"
+	set {Commence::Scholar::Companies::*} to "Haven of Insight", "Knowledge Keepers", "Scholarly Pursuits Inc.", "Wisdom Forge", and "Eureka Collective"
+	add "<##855EC9>Runesmith" to {Commence::Citizens::Jobs::*}
+	set {Commence::Runesmith::Inventory::*} to "glowstone dust", "redstone", "lapis lazuli", "netherite ingot", and "rune block"
+	set {Commence::Runesmith::Companies::*} to "Sigilworks Forge", "Runic Realms Inc.", "Ethereal Engravings", "Rune & Relic Co.", and "Glowstone Imbuers"
+	add "<##855EC9>Squire" to {Commence::Citizens::Jobs::*}
+	set {Commence::Squire::Inventory::*} to "iron sword", "shield", "chainmail chestplate", "torch", and "bread"
+	set {Commence::Squire::Companies::*} to "The Shieldbearer's Guild", "Iron Path Apprentices", "Knightly Vanguard", "Training Grounds Inc.", and "Steel Aspirants"
+	add "<##855EC9>Wizard" to {Commence::Citizens::Jobs::*}
+	set {Commence::Wizard::Inventory::*} to "wand item", "enchanted book", "crystal ball", "potion of swiftness", and "nether star"
+	set {Commence::Wizard::Companies::*} to "Staff & Scroll Academy", "The Wandwrights", "Mystic Wardens", "NetherStar Arcana", and "Celestial Guild"
+	
+	#ECONOMY
+	add "<##7DF29C>Merchant" to {Commence::Citizens::Jobs::*}
+	set {Commence::Merchant::Inventory::*} to "chest", "gold ingot", "emerald", "diamond", and "iron ingot"
+	set {Commence::Merchant::Companies::*} to "Golden Exchange Co.", "Market Maven Ltd.", "Emerald Emporium", "Barter & Beyond", and "The Trade Winds"
+	add "<##7DF29C>Bankteller" to {Commence::Citizens::Jobs::*}
+	set {Commence::Bankteller::Inventory::*} to "emerald", "gold block", "iron block", "diamond block", and "ledger book"
+	set {Commence::Bankteller::Companies::*} to "Vault & Ledger Co.", "Emerald Trust Bank", "The Gold Standard", "Diamond Reserve Ltd.", and "SafeKeep Banking"
+	add "<##7DF29C>LoanOfficer" to {Commence::Citizens::Jobs::*}
+	set {Commence::LoanOfficer::Inventory::*} to "ledger book", "gold ingot", "emerald", "ink sac", and "quill"
+	set {Commence::LoanOfficer::Companies::*} to "Prosperity Lending", "Golden Future Loans", "Ironclad Credit Co.", "Emerald Capital Solutions", and "TrustForge Finance"
+	add "<##7DF29C>Realtor" to {Commence::Citizens::Jobs::*}
+	set {Commence::Realtor::Inventory::*} to "map", "compass", "book", "ledger", and "emerald"
+	set {Commence::Realtor::Companies::*} to "Hearth & Haven Realty", "Compass Properties", "Key & Ledger Co.", "Landmark Living Ltd.", and "Pathfinder Estates"
+	add "<##7DF29C>Auctioneer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Auctioneer::Inventory::*} to "bell", "chest", "diamond", "emerald", and "gavel"
+	set {Commence::Auctioneer::Companies::*} to "Gavel & Gold Auctions", "The Trading Block", "Golden Bell Auctioneers", "Treasure Trove Ltd.", and "Rare Finds Collective"
+	add "<##7DF29C>Receptionist" to {Commence::Citizens::Jobs::*}
+	set {Commence::Receptionist::Inventory::*} to "ledger book", "ink sac", "book", "feather", and "clock"
+	set {Commence::Receptionist::Companies::*} to "The Front Desk Co.", "Gatekeeper Services", "WelcomeWorks Ltd.", "Smile & Greet Inc.", and "EntryPoint Solutions"
+	add "<##7DF29C>Shopkeeper" to {Commence::Citizens::Jobs::*}
+	set {Commence::Shopkeeper::Inventory::*} to "chest", "barrel", "gold ingot", "emerald", and "item frame"
+	set {Commence::Shopkeeper::Companies::*} to "Chest & Barrel Co.", "The Everyday Emporium", "Trading Post Co.", "Golden Goods Ltd.", and "Market Maven"
+	
+	#TRANSPORTATION
+	add "<##647F6B>Cartographer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Cartographer::Inventory::*} to "map", "compass", "paper", "ink sac", and "quill"
+	set {Commence::Cartographer::Companies::*} to "Mapped Horizons", "CompassCraft Co.", "Wayfinder Cartography", "Chart & Compass Ltd.", and "Navigators' Guild"
+	add "<##647F6B>Explorer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Explorer::Inventory::*} to "compass", "map", "boat", "spyglass", and "bed"
+	set {Commence::Explorer::Companies::*} to "Frontier Ventures", "Trailblazers Inc.", "The Wandering Compass", "Pathfinders' League", and "Horizon Seekers"
+	add "<##647F6B>Shipwright" to {Commence::Citizens::Jobs::*}
+	set {Commence::Shipwright::Inventory::*} to "wooden planks", "boat", "iron ingot", "sail item", and "torch"
+	set {Commence::Shipwright::Companies::*} to "Anchor & Sail Co.", "Harborworks Ltd.", "Mariner’s Forge", "WaveCraft Yards", and "Seafarer’s Haven"
+	add "<##647F6B>Stablemaster" to {Commence::Citizens::Jobs::*}
+	set {Commence::Stablemaster::Inventory::*} to "hay bale", "lead", "saddle", "horse armor", and "fence"
+	set {Commence::Stablemaster::Companies::*} to "Hoof & Hay Stables", "The Tamed Mount", "Rider’s Refuge", "Gallop Haven Ltd.", and "Trailblazer Ranch Co."
+	add "<##647F6B>Pilot" to {Commence::Citizens::Jobs::*}
+	set {Commence::Pilot::Inventory::*} to "elytra", "firework rocket", "spyglass", "compass", and "map"
+	set {Commence::Pilot::Companies::*} to "Soaring Skies Co.", "Elytra Ventures", "Cloudriders Inc.", "Firework Flight Systems", and "Skyship Guild"
+	add "<##647F6B>Rail Engineer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Rail Engineer::Inventory::*} to "rail", "powered rail", "redstone torch", "minecart", and "detector rail"
+	set {Commence::Rail Engineer::Companies::*} to "Track & Tunnel Co.", "RailForge Systems", "Iron Tracks Inc.", "Cartcraft Engineers", and "Steam & Steel Railworks"
+	
+	#ARTISTRY
+	add "<##4F6A9E>Musician" to {Commence::Citizens::Jobs::*}
+	set {Commence::Musician::Inventory::*} to "noteblock", "jukebox", "disc 13", "disc cat", and "music note item"
+	set {Commence::Musician::Companies::*} to "Melody Makers Inc.", "Harmonic Haven", "Echo Ensemble Ltd.", "Soundwave Studios", and "The Resonance Guild"
+	add "<##4F6A9E>Actor" to {Commence::Citizens::Jobs::*}
+	set {Commence::Actor::Inventory::*} to "mask item", "banner", "lantern", "torch", and "carpet"
+	set {Commence::Actor::Companies::*} to "StageCraft Performances", "Curtain Call Co.", "The Spotlight Studio", "Mask & Lantern Troupe", and "Drama Forge"
+	add "<##4F6A9E>Writer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Writer::Inventory::*} to "book", "quill", "ink sac", "paper", and "lectern"
+	set {Commence::Writer::Companies::*} to "InkSpire Writers Guild", "Quill & Scroll Co.", "Narrative Nexus Ltd.", "Tales & Tomes Inc.", and "Wordsmiths' Workshop"
+	add "<##4F6A9E>Organizer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Organizer::Inventory::*} to "lectern", "bell", "firework rocket", "map", and "chest"
+	set {Commence::Organizer::Companies::*} to "EventCraft Co.", "The Grand Plan Guild", "Celebration Architects", "Bell & Banner Co.", and "Chronicle Events"
+	
+	#TECHNOLOGY
+	add "<##8B969B>Tinkerer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Tinkerer::Inventory::*} to "redstone", "observer", "dispenser", "piston", and "hopper"
+	set {Commence::Tinkerer::Companies::*} to "Redstone Innovations", "TinkerForge Co.", "Crafted Contraptions", "Precision Mechanics Ltd.", and "The Cogsmiths' Guild"
+	add "<##8B969B>Mechanic" to {Commence::Citizens::Jobs::*}
+	set {Commence::Mechanic::Inventory::*} to "iron ingot", "minecart", "anvil", "detector rail", and "lever"
+	set {Commence::Mechanic::Companies::*} to "Ironworks Engineering", "Gear & Grind Co.", "Redstone Repairs", "Automaton Craftworks", and "CircuitCore Mechanics"
+	
+	#OTHER
+	add "<##A6855E>Healer" to {Commence::Citizens::Jobs::*}
+	set {Commence::Healer::Inventory::*} to "potion of healing", "totem of undying", "golden apple", "bell", and "milk bucket"
+	set {Commence::Healer::Companies::*} to "Sanctuary Wellness Co.", "Golden Remedy Guild", "Ethereal Aid Ltd.", "Bell & Balm Healing", and "Potion & Care Co."
+	add "<##A6855E>Gravedigger" to {Commence::Citizens::Jobs::*}
+	set {Commence::Gravedigger::Inventory::*} to "shovel", "coarse dirt", "soul sand", "bone", and "torch"
+	set {Commence::Gravedigger::Companies::*} to "Eternal Rest Co.", "Soul & Stone Burial", "Hallowed Grounds Ltd.", "Ash & Earth Services", and "The Final Rest Guild"
+	add "<##A6855E>Spy" to {Commence::Citizens::Jobs::*}
+	set {Commence::Spy::Inventory::*} to "spyglass", "potion of invisibility", "leather boots", "compass", and "string"
+	set {Commence::Spy::Companies::*} to "Phantom Insight", "ShadowNetwork Inc.", "Silent Tracks Co.", "CovertCraft Ltd.", and "The Whisper Guild"
+	add "<##A6855E>Scout" to {Commence::Citizens::Jobs::*}
+	set {Commence::Scout::Inventory::*} to "map", "spyglass", "compass", "bread", and "torch"
+	set {Commence::Scout::Companies::*} to "Pathfinder Ventures", "Trailblazers' Guild", "The Wayfinder’s Co.", "Horizon Seekers", and "StealthTrack Inc."
+	add "<##A6855E>Courier" to {Commence::Citizens::Jobs::*}
+	set {Commence::Courier::Inventory::*} to "chest", "barrel", "cart item", "horse", and "map"
+	set {Commence::Courier::Companies::*} to "Parcel & Path Co.", "SwiftStep Delivery", "Relay & Ride Couriers", "Messenger's Mark", and "Express Line Co."
+	add "<##A6855E>Cleaner" to {Commence::Citizens::Jobs::*}
+	set {Commence::Cleaner::Inventory::*} to "broom item", "bucket", "water bucket", "sponge", and "scaffolding"
+	set {Commence::Cleaner::Companies::*} to "Sweep & Shine Co.", "GleamWorks Ltd.", "Fresh Start Services", "Polish & Tidy Co.", and "SparkleCraft Cleaning"
+	add "<##A6855E>Maid" to {Commence::Citizens::Jobs::*}
+	set {Commence::Maid::Inventory::*} to "bucket", "flower pot", "duster item", "glass pane", and "carpet"
+	set {Commence::Maid::Companies::*} to "Lilywhite Services", "Rosewood Maids", "Duster & Dish Co.", "HomeCraft Cleaners", and "The Hearthkeepers"
+	add "<##A6855E>Servant" to {Commence::Citizens::Jobs::*}
+	set {Commence::Servant::Inventory::*} to "plate item", "cup", "bread", "flower pot", and "torch"
+	set {Commence::Servant::Companies::*} to "The Silver Tray Guild", "Loyal Hand Services", "Hearth & Hall Co.", "Steward's Guild", and "Refined Aides"
+	add "<##A6855E>Butler" to {Commence::Citizens::Jobs::*}
+	set {Commence::Butler::Inventory::*} to "plate item", "clock", "flower pot", "candle", and "book"
+	set {Commence::Butler::Companies::*} to "The Polished Plate", "Bell & Clock Ltd.", "Gentleman’s Manor Co.", "Hearthstone Services", and "Timely Touch"
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#CONDITIONS
+
+on inventory close:
+	clear {Commence::%player%::NPC::Temp}
+
+on inventory click:
+	if event-inventory is (metadata tag "npcshop" of player):
+		cancel event
+		index of event-slot is 8:
+			close inventory of player
+		index of event-slot is between 10 and 43:
+			stop if {Commence::%player%::%index of event-slot%::Name} is not set
+			send " {@info} Are You Sure? <##00C889>You're Purchasing %item amount of {Commence::%player%::%index of event-slot%::Name} parsed as item ? item amount of {Commence::%player%::%index of event-slot%::Name} ? 0% %{Commence::%player%::%index of event-slot%::Name} parsed as item ? {Commence::%player%::%index of event-slot%::Name}%"
+			execute player command "/ps %index of event-slot%"
+
+on npc right click:
+	stop if event-number is not set
+	stop if npc name of event-npc is not set
+	stop if {Commence::%player%::Wait} is true
+	stop if {Commence::%player%::NPC::Wait} is true
+	set {Commence::%player%::NPC::Temp} to event-npc
+	stop if {Commence::%player%::NPC::Temp} is not set
+	set {Commence::%player%::NPC::Wait} to true
+	loop {Commence::Citizens::Jobs::*}:
+		uncolored npc name of {Commence::%player%::NPC::Temp} contains uncolored loop-value:
+#			send "Job Match %loop-value%" to player
+			set {Commence::%{Commence::%player%::NPC::Temp}%::Job} to loop-value
+			stop loop
+	set {Commence::%{Commence::%player%::NPC::Temp}%::Personality} to 1 or 2 if {Commence::%{Commence::%player%::NPC::Temp}%::Personality} is not set
+	loop {LastName::*}:
+		npc name of {Commence::%player%::NPC::Temp} contains loop-value:
+#			send "Name Match %loop-value%" to player
+			set {Commence::%{Commence::%player%::NPC::Temp}%::Family} to loop-value
+			stop loop
+	set {Commence::%{Commence::%player%::NPC::Temp}%::Company} to random element of {Commence::%uncolored {Commence::%{Commence::%player%::NPC::Temp}%::Job}%::Companies::*} if {Commence::%{Commence::%player%::NPC::Temp}%::Company} is not set
+	set {Commence::%{Commence::%player%::NPC::Temp}%::Class} to {Commence::Citizens::Class::Presidential} or {Commence::Citizens::Class::Highest} or {Commence::Citizens::Class::High} or {Commence::Citizens::Class::Middle} or {Commence::Citizens::Class::Low} or {Commence::Citizens::Class::Lowest} or {Commence::Citizens::Class::Under} if {Commence::%{Commence::%player%::NPC::Temp}%::Class} is not set
+#	send {Commence::%{Commence::%player%::NPC::Temp}%::Personality} and {Commence::%{Commence::%player%::NPC::Temp}%::Family} and {Commence::%{Commence::%player%::NPC::Temp}%::Company} and {Commence::%{Commence::%player%::NPC::Temp}%::Class} and {Commence::%{Commence::%player%::NPC::Temp}%::Job} to player
+	if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Stonemason" or "Architect" or "Builder" or "Carpenter" or "Miner" or "Lumberjack" or "Terraformer" or "Decorator" or "Engineer":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Gray%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Farmer" or "Gardener" or "Beekeeper" or "Fisherman" or "Huntsman" or "Forager" or "Herbalist":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Green3::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Blacksmith" or "Weaponsmith" or "Armorer" or "Toolsmith" or "Leatherworker" or "Glassblower" or "Potter" or "Stitcher" or "Enchanter":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Yellow%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Chef" or "Baker" or "Butcher" or "Innkeeper" or "Waiter" or "Bartender":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Green3::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Assassin" or "Knight" or "Guard" or "Mercenary" or "Archer":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Gold%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Cleric" or "Mage" or "Alchemist" or "Scribe" or "Librarian" or "Scholar" or "Runesmith" or "Squire" or "Wizard":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Green3::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Merchant" or "Auctioneer" or "Receptionist" or "Shopkeeper":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Navy%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Cartographer" or "Explorer" or "Shipwright" or "Stablemaster" or "Pilot" or "Rail Engineer":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Green3::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Musician" or "Actor" or "Writer" or "Organizer":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::White%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Tinkerer" or "Mechanic":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Blue%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Healer" or "Gravedigger" or "Spy" or "Scout" or "Courier" or "Cleaner" or "Maid" or "Servant" or "Butler":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		play sound "entity.villager.celebrate" at volume 100 to player
+		send "<##DCEDF4>   %random element of {Commence::Citizens::Sky%{Commence::%{Commence::%player%::NPC::Temp}%::Personality}%::*}%" to player
+		play sound "entity.villager.yes" at volume 100 to player
+	else if npc name of {Commence::%player%::NPC::Temp} contains "Bank" or "Loan" or "Department":
+		send " %npc full name of {Commence::%player%::NPC::Temp}%&7 says..." to player
+		wait 7 ticks
+		{Commence::%player%::Bank::Account} is not true:
+			play sound "entity.villager.celebrate" at volume 100 to player
+			send "<##DCEDF4>   Looks like you don't have an account here yet." to player
+			wait 24 ticks
+			send "<##DCEDF4>   Here, I'll open one for you for free!" to player
+			play sound "entity.villager.yes" at volume 100 to player
+			wait 48 ticks
+			set {Commence::%player%::Bank::Account} to true
+			send " {@info} <##00C889>You Opened a Bank Account at {@bank}" to player
+		else if player's inventory contains emerald:
+			play sound "entity.villager.celebrate" at volume 100 to player
+			send "<##DCEDF4>   Looks like you've got some {@funds}<##DCEDF4> to deposit." to player
+			wait 24 ticks
+			send "<##DCEDF4>   Would you like to deposit %amount of emerald in player's inventory% {@funds}<##DCEDF4> now?" to player
+			play sound "entity.villager.yes" at volume 100 to player
+		else:
+			play sound "entity.villager.celebrate" at volume 100 to player
+			send "<##DCEDF4>   %random element of {Commence::Citizens::Sky1::*}%" to player
+			play sound "entity.villager.yes" at volume 100 to player
+		wait 12 ticks
+		execute player command "/bank"
+	else if npc name of {Commence::%player%::NPC::Temp} contains "OGSurvival":
+		execute player command "/survival"
+	else if npc name of {Commence::%player%::NPC::Temp} contains "Lifer":
+		execute player command "/lifer"
+	else if uncolored npc name of {Commence::%player%::NPC::Temp} contains "Mythical":
+		{CS::Enabled} is true:
+			execute player command "/mr"
+		else:
+			send "&6  Hey, %player's display name%&6!" to player
+			send "<##CB625F>   Sorry, this gamemode is currently disabled!" to player
+			send "<##CB625F>   This gamemode is in VERY early development!" to player
+			send "<##CB625F>   Report bugs with &d/report" to player
+	else if npc name of {Commence::%player%::NPC::Temp} contains "KitPvP":
+		execute player command "/pvp"
+	else if npc name of {Commence::%player%::NPC::Temp} contains "Spawn":
+		execute player command "/s"
+	else if npc name of {Commence::%player%::NPC::Temp} contains "Helper":
+		execute player command "/help"
+	else if npc name of {Commence::%player%::NPC::Temp} contains "Navigator":
+		execute player command "/c"
+	{Commence::%{Commence::%player%::NPC::Temp}%::Job} is set:
+		{Commence::%uncolored {Commence::%{Commence::%player%::NPC::Temp}%::Job}%::Inventory::*} is set:
+			chance of 11%:
+				loop random integer between 1 and 3 times:
+					add random element of {Commence::%uncolored {Commence::%{Commence::%player%::NPC::Temp}%::Job}%::Inventory::*} to {Commence::%{Commence::%player%::NPC::Temp}%::Goods::*}
+			set {_tr} to 3 if amount of {Commence::%{Commence::%player%::NPC::Temp}%::Goods::*} is less than 8
+			set {_tr} to 4 if amount of {Commence::%{Commence::%player%::NPC::Temp}%::Goods::*} is more than 7
+			set {_tr} to 5 if amount of {Commence::%{Commence::%player%::NPC::Temp}%::Goods::*} is more than 14
+			set {_tr} to 6 if amount of {Commence::%{Commence::%player%::NPC::Temp}%::Goods::*} is more than 21
+			set metadata tag "npcshop" of player to chest inventory with {_tr} rows named "&0-==&k|<##A6855E> %{Commence::%{Commence::%player%::NPC::Temp}%::Company}% &0&k|&0==-"
+			set slot 0 of metadata tag "npcshop" of player to dark gray stained glass pane named "&7"
+			loop 53 times:
+				set slot loop-value of metadata tag "npcshop" of player to dark gray stained glass pane named "&7"
+				clear {Commence::%player%::%loop-value%::Name}
+				clear {Commence::%player%::%loop-value%::Owner}
+				clear {Commence::%player%::%loop-value%::Price}
+			set slot 4 of metadata tag "npcshop" of player to book named "&8-&k|<##A6855E> %{Commence::%{Commence::%player%::NPC::Temp}%::Company}% is Open for Business! &8&k|&8-" with lore "&7 Items Restock About Every Day!" and "" and "<##00C889> Hover Over Items to View Info" and "<##00C889> Click an Item to Purchase It"
+			set {Commence::List} to 9
+			loop {Commence::%{Commence::%player%::NPC::Temp}%::Goods::*}:
+				add 1 to {Commence::List}
+				add 2 to {Commence::List} if {Commence::List} is 17 or 26 or 35
+				stop loop if {Commence::List} is more than 43
+				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
+				set {Commence::%player%::%{Commence::List}%::Price} to 1
+				set slot {Commence::List} of metadata tag "npcshop" of player to {Commence::%player%::%{Commence::List}%::Name} parsed as item named "&8-&k|<##A6855E> %item amount of {Commence::%player%::%{Commence::List}%::Name} parsed as item% %{Commence::%player%::%{Commence::List}%::Name}% &8&k|&8-" with lore "&7 Price: <##00C889>$%{Commence::%player%::%{Commence::List}%::Price}%"
+			set slot 8 of metadata tag "npcshop" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
+			open (metadata tag "npcshop" of player) to player
+		else:
+			send " {@info} Sorry, We're Sold Out of Everything Today!" to player
+			send " {@info} Check Back Soon For More Stock!" to player
+	wait 2 seconds
+	set {Commence::%player%::NPC::Wait} to false
+
+#-=-=-=-=-=-=-=-=-=-
+
+	#COMMANDS
+
+
+command /addfirst <text>:
+	usage: <##CB625F> /addfirstname
+	description: &7 Adds a first name to the database
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		loop {FirstName::*}:
+			loop-value contains arg-1:
+				send ""
+				send "{@commence}"
+				send "<##CB625F>   %arg-1%<##CB625F> is already a First Name"
+				stop
+		loop {LastName::*}:
+			loop-value contains arg-1:
+				send ""
+				send "{@commence}"
+				send "<##CB625F>   %arg-1%<##CB625F> is already a Last Name"
+				stop
+		add arg-1 to {FirstName::*}
+		send ""
+		send "{@commence}"
+		send "&7   You added %arg-1%&7 to the First Names database"
+		send "&7   All First Names:"
+		send "&7    %{FirstName::*}%"
+		send ""
+		send "&7   All Last Names:"
+		send "&7    %{LastName::*}%"
+		stop
+
+command /testmagicshop:
+	permission: commence.owner
+	trigger:
+		loop {Commence::Items::Custom::Wands::*} and {Commence::Items::Custom::Blades::*} and {Commence::Items::Custom::Staffs::*} and {Commence::Items::Custom::Magic::*}:
+#			send loop-value
+			loop-value is stick or wooden sword or wooden axe or oxeye daisy or brown mushroom:
+				send loop-value
+			loop-value is brush or iron sword or iron axe or tnt:
+				send loop-value
+			loop-value is golden sword or golden axe or milk bucket or cornflower or diamond hoe:
+				send loop-value
+			loop-value is blaze rod or diamond sword or diamond axe or fire charge:
+				send loop-value
+			loop-value is netherite sword or netherite axe or trident or totem of undying:
+				send loop-value
+
+command /addlast <text>:
+	usage: <##CB625F> /addlastname
+	description: &7 Adds a first name to the database
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		loop {FirstName::*}:
+			loop-value contains arg-1:
+				send ""
+				send "{@commence}"
+				send "<##CB625F>   %arg-1%<##CB625F> is already a First Name"
+				stop
+		loop {LastName::*}:
+			loop-value contains arg-1:
+				send ""
+				send "{@commence}"
+				send "<##CB625F>   %arg-1%<##CB625F> is already a Last Name"
+				stop
+		add arg-1 to {LastName::*}
+		send ""
+		send "{@commence}"
+		send "&7   You added %arg-1%&7 to the Last Names database"
+		send "&7   All First Names:"
+		send "&7    %{FirstName::*}%"
+		send ""
+		send "&7   All Last Names:"
+		send "&7    %{LastName::*}%"
+		stop
+
+command /removename <text>:
+	description: &7 Removes a name from the database
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		loop {FirstName::*}:
+			loop-value is arg-1:
+				remove arg-1 from {FirstName::*}
+				send ""
+				send "{@commence}"
+				send "<##CB625F>   %arg-1%<##CB625F> is now removed from First Name"
+				send "&7   All First Names:"
+				send "&7    %{FirstName::*}%"
+				send ""
+				send "&7   All Last Names:"
+				send "&7    %{LastName::*}%"
+				stop
+		loop {LastName::*}:
+			loop-value is arg-1:
+				remove arg-1 from {LastName::*}
+				send ""
+				send "{@commence}"
+				send "<##CB625F>   %arg-1%<##CB625F> is now removed from Last Name"
+				send "&7   All First Names:"
+				send "&7    %{FirstName::*}%"
+				send ""
+				send "&7   All Last Names:"
+				send "&7    %{LastName::*}%"
+				stop
+		send ""
+		send "{@commence}"
+		send "<##CB625F>   %arg-1%<##CB625F> is not a First or Last Name"
+		send "&7   All First Names:"
+		send "&7    %{FirstName::*}%"
+		send ""
+		send "&7   All Last Names:"
+		send "&7    %{LastName::*}%"
+		stop
+
+command /editspawn:
+	usage: <##CB625F> /editspawn
+	description: &7 Edits spawnhub
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Inspector} is not true:
+			send "{@permissionmessage}"
+			stop
+		send "<##CB625F> You can edit <##3988A3>SpawnHub<##CB625F> for 1 hour "
+		set {Commence::%player%::AdminEdit} to true
+		wait 60 minutes
+		send "<##CB625F> You can no longer edit <##3988A3>SpawnHub"
+		set {Commence::%player%::AdminEdit} to false
+
+command /removenpc:
+	usage: <##CB625F> /removenpc
+	description: &7 Remove NPCs
+	cooldown: 1 second
+	cooldown message: {@cooldownmessage}
+	trigger:
+		if {Commence::%player%::Inspector} is not true:
+			send "{@permissionmessage}"
+			stop
+		send "<##CB625F> You can remove NPC's for 15 seconds"
+		set {Commence::%player%::AdminKill} to true
+		wait 15 seconds
+		send "<##CB625F> You can no longer remove NPC's"
+		set {Commence::%player%::AdminKill} to false
+
+command /addnpc <text> [<text>]:
+	aliases: /createnpc
+	usage: <##CB625F> /addnpc
+	description: &7 Create an NPC
+	trigger:
+		if {Commence::%player%::Inspector} is not true:
+			send "{@permissionmessage}"
+			stop
+		#SPAWNHUB
+		if arg-1 is set:
+			arg-1 is "holo":
+				spawn armor stand at player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				if arg-2 is not set:
+					set display name of last spawned entity to "<##DCEDF4>A Server Formed With Love and Care"
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##3988A4>Welcome to {@commencesmp}!"
+				else:
+					set display name of last spawned entity to "<##855EC9>Welcome to {@commencesmp}<##855EC9>!"
+					wait 1 tick
+					spawn armor stand 1.6 meter above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##70797C>Type <##D0944D>/mythicalrealms<##70797C> for heavily modified Survival"
+					wait 1 tick
+					spawn armor stand 1.2 meter above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##70797C>Type &f/survival<##70797C> for default Survival"
+			else if arg-1 is "holoc":
+				spawn armor stand at player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				if arg-2 is not set:
+					set display name of last spawned entity to "<##DCEDF4>Need Information or Help With Something? Type <##00C889>/info"
+				else:
+					set display name of last spawned entity to "<##855EC9>%colored arg-2%"
+			else if arg-1 is "holoc2":
+				spawn armor stand at player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				if arg-2 is not set:
+					set display name of last spawned entity to "{@commencesmp} <##DCEDF4>Game-Modes Ahead!"
+				else:
+					set display name of last spawned entity to "<##855EC9>%arg-2%"
+			else if arg-1 is "holoc3":
+				spawn armor stand at player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				if arg-2 is not set:
+					set display name of last spawned entity to "<##DCEDF4>Player-Driven MMORPG Experience"
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##D0944D>Welcome to M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s"
+				else:
+					set display name of last spawned entity to "<##855EC9>%arg-2%"
+			else if arg-1 is "holoc4":
+				spawn armor stand at player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				if arg-2 is not set:
+					set display name of last spawned entity to "<##DCEDF4>Uniquely-Crafted for Maximum Fun"
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##00908D>Minigame Lobby"
+				else:
+					set display name of last spawned entity to "<##855EC9>%arg-2%"
+			else if arg-1 is "holopvp":
+				spawn armor stand at player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned entity to "<##CB625F>Buy New Levels and Unlocks"
+				wait 1 tick
+				spawn armor stand 0.4 meter above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned entity to "<##CB625F>Spend Points With /pvpshop"
+				wait 1 tick
+				spawn armor stand 0.8 meter above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned entity to "<##CB625F>Every Kill Gains You 1 Point"
+				wait 1 tick
+				spawn armor stand 1.2 meter above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned entity to "<##CB625F>Welcome to KitPvP &8Levels<##CB625F>!"
+			else if arg-1 is "portal":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				if arg-2 is "ogsurvival":
+					set display name of last spawned villager to "&f  &fOGSurvival <##AA3D3B>+Anarchy  "
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned armor stand to "<##3988A3>  Click me to teleport to  "
+				else if arg-2 is "commencer":
+					set display name of last spawned villager to "<##3988A3>  {@commencesmp}Navigator  "
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##3988A3>  Click me to open the  "
+				else if arg-2 is "lifer":
+					set display name of last spawned villager to "<##00C889>  <##00C889>L<##00C08D>i<##00BA8D>f<##00B48D>e<##00AE8D>r<##00A88D> 60 Minute Survival  "
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##3988A3>  Click me to teleport to  "
+				else if arg-2 is "worldquest" or "mythicalrealms":
+					set display name of last spawned villager to "&6  <##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s  "
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##3988A3>  Click me to teleport to  "
+				else if arg-2 is "kitpvp":
+					set display name of last spawned villager to "<##CB625F>  KitPvP &8Levels  "
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##3988A3>  Click me to teleport to  "
+				else:
+					set display name of last spawned villager to "<##3988A3>  SpawnHub  "
+					spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+					add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+					set display name of last spawned entity to "<##3988A3>  Click me to teleport back to  "
+			else if arg-1 is "helper":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				set display name of last spawned entity to "<##3988A3>  Commence&dHelper  "
+				spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned entity to "<##3988A3>  Click me to open the  "
+			else if arg-1 is "challenge":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				set display name of last spawned entity to "&8&l >> <##CB625F>Challenge&8&lNPC &f%random element of {FirstName::*}%&7%random element of {LastName::*}% <##CB625F>Coming&8SOON"
+			else if arg-1 is "pvpmerc":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				apply slowness 999 without particles to last spawned villager for 9999 minutes
+				set display name of last spawned villager to "<##CB625F>  KitPvP Shop Merchant  "
+				spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned armor stand to "&4  %random element of {FirstName::*}%&8%random element of {LastName::*}%  "
+				stop
+			else if arg-1 is "harry":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				apply slowness 999 without particles to last spawned villager for 9999 minutes
+				set display name of last spawned villager to "&8&l >> &dHelper&4Harry "
+			else if arg-1 is "custom":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				apply slowness 999 without particles to last spawned villager for 9999 minutes
+				set display name of last spawned villager to colored arg-2
+				stop
+			else if arg-1 is "stcitizen" or "citizen":
+				spawn villager at player's location
+				set display name of last spawned villager to "%random element of {Commence::Citizens::Jobs::*}% %random element of {FirstName::*}%&8%random element of {LastName::*}% &7Citizen"
+			else if arg-1 is "merc" or "m" or "merchant":
+				if arg-2 is set:
+					loop {Commence::Citizens::Jobs::*} and {Commence::Citizens::Careers::*}:
+						uncolored loop-value contains arg-2:
+							set {_t} to "%loop-value%" in proper case
+							execute player command "/npc create %{_t}% %random element of {FirstName::*}%&8%random element of {LastName::*}% --nameplate true"
+							execute player command "/npc lookclose"
+							stop
+						set {_t} to arg-2 in proper case
+					execute player command "/npc create <##00C889>%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &b%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%" or "<##CB625F>%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &d%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &e%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &f%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &1%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &2%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &3%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &4%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &5%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &6%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &7%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%--nameplate true" or "/npc create &8%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%" or "<##3988A3>%colored arg-2% %random element of {FirstName::*}%&8%random element of {LastName::*}%"
+					execute player command "/npc lookclose"
+#						set display name of last spawned villager to 
+					stop
+				else:
+					execute player command "/npc create %random element of {Commence::Citizens::Jobs::*} or {Commence::Citizens::Careers::*}% %random element of {FirstName::*}%&8%random element of {LastName::*}% --nameplate true"
+					execute player command "/npc lookclose"
+					stop
+
+		#PARKOUR
+			else if arg-1 is "parkourr":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				apply slowness 999 without particles to last spawned villager for 9999 minutes
+				set display name of last spawned villager to "<##3988A3>  SpawnHub&8Parkour Right  "
+				spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned armor stand to "<##3988A3>  Click me to start  "
+			else if arg-1 is "parkourl":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				apply slowness 999 without particles to last spawned villager for 9999 minutes
+				set display name of last spawned villager to "<##3988A3>  SpawnHub&8Parkour Left  "
+				spawn armor stand 0.23 meters above player's location with nbt compound from "{Invisible:1b}"
+				add nbt compound from "{NoGravity:1b}" to nbt compound of last spawned entity
+				set display name of last spawned armor stand to "<##3988A3>  Click me to start  "
+
+
+		#OTHER
+			else if arg-1 is "rtp":
+				spawn villager at player's location with nbt compound from "{NoAI:1b}"
+				apply slowness 999 without particles to last spawned villager for 9999 minutes
+				set display name of last spawned villager to "&8&l >> <##3988A3>RTP&8&lNPC &f%random element of {FirstName::*}%&7%random element of {LastName::*}% <##3988A3>Random&8&lTeleporter"
+			else:
+				send "<##CB625F>    Sorry, %arg-1%'s not one of em. Try againe playa %arg-2%" to player
