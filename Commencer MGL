@@ -4,7 +4,7 @@
 
 	#Gamemode Rules
 	#Rule1:Functions are for execution, Conditions are for Functions, Variables are for all
-	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  &9Commence&8SMP  &8|-&l!&8-|
+	#Rule2:Have a Short name &8&lCS and a Long name &8|-&l!&8-|  <##3988A3>Commence&8SMP  &8|-&l!&8-|
 	#Rule3:Make a GUI menu for the gamemode
 	#Rule4:Integrate the other gamemodes features into the new one
 
@@ -17,13 +17,13 @@ options:
 	commencehns:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##00908D>M<##00908D>G<##00908D>L<##00908D># Hide&Seek
 	commencespleef:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##00908D>M<##00908D>G<##00908D>L<##00908D>
 	commenceprophunt:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##00908D>M<##00908D>G<##00908D>L<##00908D>
-	info:<##70797C>(<##CC3B3B>&l!<##70797C>)&c
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)<##CB625F>
 
-on skript load:
-	set {Commence::Items::Custom::Minigames::IsolatedReef} to glow ink sac named "&8-&7&k| &9Isolated Illuminator &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🔥Glow Ink Sac" and "&7 " and "<##00C889> +<##855EC9> Right Click to Glow Players"
+on load:
+	set {Commence::Items::Custom::Minigames::IsolatedReef} to glow ink sac named "&8-&7&k| <##3988A3>Isolated Illuminator &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🔥Glow Ink Sac" and "&7 " and "<##00C889> +<##855EC9> Right Click to Glow Players"
 	set {Commence::Items::Custom::Minigames::EthersGarden} to wind charge named "&8-&7&k| &2Windle &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🔥Wind Charge" and "&7 " and "<##00C889> +<##855EC9> Right Click to Push Around Players"
 	set {Commence::Items::Custom::Minigames::FourthAve} to goat horn named "&8-&7&k| &fFunky Device &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🔥Goat Horn" and "&7 " and "<##00C889> +<##855EC9> Right Click to Sound Players"
-	set {Commence::Items::Custom::Minigames::DimensionalAnchor} to ender pearl named "&8-&7&k| &aInterdimensional Travel &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🔥Ender Pearl" and "&7 " and "<##00C889> +<##855EC9> Right Click to Teleport Around" and "<##00C889> +<##855EC9> Right Click to Glow Players"
+	set {Commence::Items::Custom::Minigames::DimensionalAnchor} to ender pearl named "&8-&7&k| <##00C889>Interdimensional Travel &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🔥Ender Pearl" and "&7 " and "<##00C889> +<##855EC9> Right Click to Teleport Around" and "<##00C889> +<##855EC9> Right Click to Glow Players"
 	set {Commence::Items::Custom::Minigames::SpleefersShovel} to glowing netherite shovel named "&8-&7&k| <##00908D>Spleefer's Shovel &7&k|&8-" with lore "<##00C889> =<##F7AF5D> 🗡Netherite Shovel" and "&7 " and "<##00C889> +<##855EC9> Left Click to Break Snow" and "<##00C889> +<##855EC9> Right Click to Throw Projectile"
 	loop all players:
 		loop-player is "Cdestre":
@@ -43,7 +43,7 @@ on right click:
 		cancel event
 		stop if {Commence::%player%::Minigame} is not set
 		{Commence::%player%::Wait} is true:
-			send "&7  {@commencemgl}&c Wait 10 seconds before trying this again!" to player
+			send "&7  {@commencemgl}<##CB625F> Wait 10 seconds before trying this again!" to player
 			stop
 		set {Commence::%player%::Wait} to true
 		loop all players in radius (25 or 50 or 100) of player:
@@ -56,7 +56,7 @@ on right click:
 	else if player's tool is {Commence::Items::Custom::Minigames::EthersGarden}:
 		cancel event
 		{Commence::%player%::Wait} is true:
-			send "&7  {@commencemgl}&c Wait 10 seconds before trying this again!" to player
+			send "&7  {@commencemgl}<##CB625F> Wait 10 seconds before trying this again!" to player
 			stop
 		set {Commence::%player%::Wait} to true
 		loop all players in radius (25 or 50 or 100) of player:
@@ -70,7 +70,7 @@ on right click:
 	else if player's tool is {Commence::Items::Custom::Minigames::FourthAve}:
 		cancel event
 		{Commence::%player%::Wait} is true:
-			send "&7  {@commencemgl}&c Wait 10 seconds before trying this again!" to player
+			send "&7  {@commencemgl}<##CB625F> Wait 10 seconds before trying this again!" to player
 			stop
 		set {Commence::%player%::Wait} to true
 		loop all players in radius (25 or 50 or 100) of player:
@@ -84,7 +84,7 @@ on right click:
 	else if player's tool is {Commence::Items::Custom::Minigames::DimensionalAnchor}:
 		cancel event
 		{Commence::%player%::Story::Wait} is true:
-			send "&7  {@commencemgl}&c Wait 10 seconds before trying this again!" to player
+			send "&7  {@commencemgl}<##CB625F> Wait 10 seconds before trying this again!" to player
 			stop
 		set {Commence::%player%::Story::Wait} to true
 		apply invisibility without particles to {_p} for 3 seconds
@@ -126,8 +126,8 @@ on damage:
 				send title "<##00908D>The Seeker, %attacker's display name%<##00908D> Has Won!" to {Commence::HNS::%{Commence::%attacker%::Minigame}%::Players::*}
 				teleport {Commence::HNS::%{Commence::%attacker%::Minigame}%::Seeker} to world "City2"'s spawn
 				teleport {Commence::HNS::%{Commence::%attacker%::Minigame}%::Players::*} to {Commence::HNS::%{Commence::%attacker%::Minigame}%::CaughtLoc}
-				send "&c  {@commencehns} %{Commence::HNS::Map::%{Commence::%attacker%::Minigame}%}%<##00908D> Has Stopped With a Winner!" to {Commence::HNS::%{Commence::%attacker%::Minigame}%::Players::*}
-				send "&c  {@commencehns} The Seeker, %attacker's display name%<##00908D> Has Won!" to {Commence::HNS::%{Commence::%attacker%::Minigame}%::Players::*} and {Commence::HNS::%{Commence::%attacker%::Minigame}%::Seeker}
+				send "<##CB625F>  {@commencehns} %{Commence::HNS::Map::%{Commence::%attacker%::Minigame}%}%<##00908D> Has Stopped With a Winner!" to {Commence::HNS::%{Commence::%attacker%::Minigame}%::Players::*}
+				send "<##CB625F>  {@commencehns} The Seeker, %attacker's display name%<##00908D> Has Won!" to {Commence::HNS::%{Commence::%attacker%::Minigame}%::Players::*} and {Commence::HNS::%{Commence::%attacker%::Minigame}%::Seeker}
 				clear {Commence::HNS::%{Commence::%attacker%::Minigame}%::Counter}
 				clear {Commence::HNS::%{Commence::%attacker%::Minigame}%::Seeker}
 				remove {Commence::%attacker%::Minigame} from {Commence::HNS::Started::*}
@@ -159,8 +159,8 @@ every 1 second:
 			send title "" with subtitle "<##00908D>The Hiders, %{Commence::HNS::%loop-value%::Players::*}'s display name%<##00908D> Have Won!" to {Commence::HNS::%loop-value%::Players::*} and {Commence::HNS::%loop-value%::Seeker}
 			teleport {Commence::HNS::%loop-value%::Seeker} to world "City2"'s spawn
 			teleport {Commence::HNS::%loop-value%::Players::*} to {Commence::HNS::%loop-value%::CaughtLoc}
-			send "&c  {@commencehns} %{Commence::HNS::Map::%loop-value%}%<##00908D> Has Stopped With Winners!" to {Commence::HNS::%loop-value%::Players::*} and {Commence::HNS::%loop-value%::Seeker}
-			send "&c  {@commencehns} The Hiders, %{Commence::HNS::%loop-value%::Players::*}'s display name%<##00908D> Have Won!" to {Commence::HNS::%loop-value%::Players::*} and {Commence::HNS::%loop-value%::Seeker}
+			send "<##CB625F>  {@commencehns} %{Commence::HNS::Map::%loop-value%}%<##00908D> Has Stopped With Winners!" to {Commence::HNS::%loop-value%::Players::*} and {Commence::HNS::%loop-value%::Seeker}
+			send "<##CB625F>  {@commencehns} The Hiders, %{Commence::HNS::%loop-value%::Players::*}'s display name%<##00908D> Have Won!" to {Commence::HNS::%loop-value%::Players::*} and {Commence::HNS::%loop-value%::Seeker}
 			loop {Commence::HNS::%loop-value%::Players::*}:
 				clear {Commence::%loop-value-2%::Minigame}
 				add 1 to {Commence::%loop-value-2%::Minigame::Score}
@@ -185,20 +185,20 @@ every 1 second:
 			send title "<##00908D>The Game Will Begin in &f5 Seconds<##00908D>!" to {Commence::HNS::%loop-value%::Players::*} if {Commence::HNS::%loop-value%::Timer} is 5
 			{Commence::HNS::%loop-value%::Timer} is 0:
 				{Commence::HNS::%loop-value%::Counter} is less than 2:
-					send "&c{@info}  There is only %{Commence::HNS::%loop-value%::Counter}%&c Player in %{Commence::HNS::Map::%loop-value%}%" to {Commence::HNS::%loop-value%::Players::*}
-					send "&c{@info}  Waiting For More Players..." to {Commence::HNS::%loop-value%::Players::*}
+					send "<##CB625F>{@info}  There is only %{Commence::HNS::%loop-value%::Counter}%<##CB625F> Player in %{Commence::HNS::Map::%loop-value%}%" to {Commence::HNS::%loop-value%::Players::*}
+					send "<##CB625F>{@info}  Waiting For More Players..." to {Commence::HNS::%loop-value%::Players::*}
 					set {Commence::HNS::%loop-value%::Timer} to 121
 					stop
 				{Commence::HNS::Games::*} does not contain loop-value:
-					send "&c{@info}  There is no {@commencehns} %{Commence::HNS::Map::%loop-value%}%<##00908D> Game" to {Commence::HNS::%loop-value%::Players::*}
+					send "<##CB625F>{@info}  There is no {@commencehns} %{Commence::HNS::Map::%loop-value%}%<##00908D> Game" to {Commence::HNS::%loop-value%::Players::*}
 					stop
 				{Commence::HNS::Started::*} contains loop-value:
-					send "&c{@info}  There's Already a Started {@commencehns} %{Commence::HNS::Map::%loop-value%}%<##00908D> Game" to {Commence::HNS::%loop-value%::Players::*}
+					send "<##CB625F>{@info}  There's Already a Started {@commencehns} %{Commence::HNS::Map::%loop-value%}%<##00908D> Game" to {Commence::HNS::%loop-value%::Players::*}
 					stop
 				set {Commence::HNS::%loop-value%::Seeker} to random element out of {Commence::HNS::%loop-value%::Players::*}
-				send title "<##00908D>You're a Hider!" with subtitle "&cFind a Good Hiding Place! Quickly!" to {Commence::HNS::%loop-value%::Players::*}
-				send "&c{@info}  %{Commence::HNS::Map::%loop-value%}%<##00908D> Has Started!" to {Commence::HNS::%loop-value%::Players::*}
-				send title "&cYou're the Seeker!" with subtitle "&cYou'll Be Released in 30 Seconds!" to {Commence::HNS::%loop-value%::Seeker}
+				send title "<##00908D>You're a Hider!" with subtitle "<##CB625F>Find a Good Hiding Place! Quickly!" to {Commence::HNS::%loop-value%::Players::*}
+				send "<##CB625F>{@info}  %{Commence::HNS::Map::%loop-value%}%<##00908D> Has Started!" to {Commence::HNS::%loop-value%::Players::*}
+				send title "<##CB625F>You're the Seeker!" with subtitle "<##CB625F>You'll Be Released in 30 Seconds!" to {Commence::HNS::%loop-value%::Seeker}
 				teleport {Commence::HNS::%loop-value%::Players::*} to {Commence::HNS::%loop-value%::HiderLoc}
 				set the generic scale attribute of {Commence::HNS::%loop-value%::Seeker} to 0.1
 				set the maximum health of {Commence::HNS::%loop-value%::Players::*} to 10
@@ -212,7 +212,7 @@ every 1 second:
 				give {Commence::HNS::%loop-value%::Seeker} 1 of {Commence::Items::Custom::Minigames::EthersGarden} if loop-value is 3
 				give {Commence::HNS::%loop-value%::Seeker} 1 of {Commence::Items::Custom::Minigames::FourthAve} if loop-value is 4
 				give {Commence::HNS::%loop-value%::Seeker} 1 of {Commence::Items::Custom::Minigames::DimensionalAnchor} if loop-value is 6
-				send title "%{Commence::HNS::%loop-value%::Seeker}'s display name% says..." with subtitle "&cReady or Not, Here I Come!" to {Commence::HNS::%loop-value%::Players::*}
+				send title "%{Commence::HNS::%loop-value%::Seeker}'s display name% says..." with subtitle "<##CB625F>Ready or Not, Here I Come!" to {Commence::HNS::%loop-value%::Players::*}
 				set {Commence::HNS::%loop-value%::Timer} to 300
 				stop
 	loop all players:
@@ -247,24 +247,24 @@ command /mg [<text>] [<text>]:
 			send title "<##00908D>The Game Will Begin in &f%{Commence::HNS::%{Commence::%player%::Minigame}%::Timer}% Seconds<##00908D>!" to {Commence::HNS::%{Commence::%player%::Minigame}%::Players::*}
 			stop
 		else if command contains "panel":
-			set metadata tag "minigamepanel" of player to chest inventory with {_tr} rows named "&8-==&k|&9       {@commencemgl}       &8&k|&8==-"
+			set metadata tag "minigamepanel" of player to chest inventory with {_tr} rows named "&8-==&k|<##3988A3>       {@commencemgl}       &8&k|&8==-"
 			set slot 0 of metadata tag "minigamepanel" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "minigamepanel" of player to dark gray stained glass pane named "&7"
-			set slot 4 of metadata tag "minigamemenu" of player to book named "&8-&k|<##00908D>  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E> Minigame Lobby Main Menu  &8&k|&8-" with lore "&8 Manage Your Minigame Experience" and "&c Hover Over Items for Info" and "&4 Click an Item to Join a Game"
-			set slot 10 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##00908D> Toggle Hide&Seek &8&k|&8-" with lore "&8 Toggle the Hide&Seek Minigame" and "&c " and "<##CB625F> Click HERE to Disable Hide&Seek" if {Commence::HNS} is true
-			set slot 10 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##CB625F> Toggle Hide&Seek &8&k|&8-" with lore "&8 Toggle the Hide&Seek Minigame" and "&c " and "<##00C889> Click HERE to Enable Hide&Seek" if {Commence::HNS} is not true
-			set slot 12 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##00908D> Toggle Spleef &8&k|&8-" with lore "&8 Toggle the Spleef Minigame" and "&c " and "<##CB625F> Click HERE to Disable Spleef" if {Commence::Spleef} is true
-			set slot 12 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##CB625F> Toggle Spleef &8&k|&8-" with lore "&8 Toggle the Spleef Minigame" and "&c " and "<##00C889> Click HERE to Enable Spleef" if {Commence::Spleef} is not true
-			set slot 14 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##00908D> Toggle Prop Hunt &8&k|&8-" with lore "&8 Toggle the Prop Hunt Minigame" and "&c " and "<##CB625F> Click HERE to Disable Prop Hunt" if {Commence::PropHunt} is true
-			set slot 14 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##CB625F> Toggle Prop Hunt &8&k|&8-" with lore "&8 Toggle the Prop Hunt Minigame" and "&c " and "<##00C889> Click HERE to Enable Prop Hunt" if {Commence::PropHunt} is not true
-			set slot 8 of metadata tag "minigamepanel" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			set slot 4 of metadata tag "minigamemenu" of player to book named "&8-&k|<##00908D>  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E> Minigame Lobby Main Menu  &8&k|&8-" with lore "&8 Manage Your Minigame Experience" and "<##CB625F> Hover Over Items for Info" and "&4 Click an Item to Join a Game"
+			set slot 10 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##00908D> Toggle Hide&Seek &8&k|&8-" with lore "&8 Toggle the Hide&Seek Minigame" and "<##CB625F> " and "<##CB625F> Click HERE to Disable Hide&Seek" if {Commence::HNS} is true
+			set slot 10 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##CB625F> Toggle Hide&Seek &8&k|&8-" with lore "&8 Toggle the Hide&Seek Minigame" and "<##CB625F> " and "<##00C889> Click HERE to Enable Hide&Seek" if {Commence::HNS} is not true
+			set slot 12 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##00908D> Toggle Spleef &8&k|&8-" with lore "&8 Toggle the Spleef Minigame" and "<##CB625F> " and "<##CB625F> Click HERE to Disable Spleef" if {Commence::Spleef} is true
+			set slot 12 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##CB625F> Toggle Spleef &8&k|&8-" with lore "&8 Toggle the Spleef Minigame" and "<##CB625F> " and "<##00C889> Click HERE to Enable Spleef" if {Commence::Spleef} is not true
+			set slot 14 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##00908D> Toggle Prop Hunt &8&k|&8-" with lore "&8 Toggle the Prop Hunt Minigame" and "<##CB625F> " and "<##CB625F> Click HERE to Disable Prop Hunt" if {Commence::PropHunt} is true
+			set slot 14 of metadata tag "minigamepanel" of player to glowing paper named "&8-&k|<##CB625F> Toggle Prop Hunt &8&k|&8-" with lore "&8 Toggle the Prop Hunt Minigame" and "<##CB625F> " and "<##00C889> Click HERE to Enable Prop Hunt" if {Commence::PropHunt} is not true
+			set slot 8 of metadata tag "minigamepanel" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 			open (metadata tag "minigamepanel" of player) to player
 			stop
 		else if command contains "leave" or "quit":
 			loop {Commence::HNS::Started::*}:
 				if {Commence::HNS::%loop-value%::Players::*} contains player:
-					send "&c{@info}  You Can't Leave a Started Minigame&c Due to Playercount"
+					send "<##CB625F>{@info}  You Can't Leave a Started Minigame<##CB625F> Due to Playercount"
 					stop
 			loop {Commence::HNS::Games::*}:
 				if {Commence::HNS::%loop-value%::Players::*} contains player:
@@ -286,25 +286,25 @@ command /mg [<text>] [<text>]:
 					clear inventory of player
 					remove 1 from {Commence::HNS::%loop-value%::Counter}
 				else:
-					send "&c{@info}  You're Not Participating in {@commencehns} %{Commence::HNS::Map::%loop-value%}%"
+					send "<##CB625F>{@info}  You're Not Participating in {@commencehns} %{Commence::HNS::Map::%loop-value%}%"
 			stop
 		if {Commence::HNS} is true:
 			if arg-2 is "lobby":
 				set {Commence::Minigame::Lobby} to location of player
-				send "&c  Lobby Location Has Been Set"
+				send "<##CB625F>  Lobby Location Has Been Set"
 			{Commence::%player%::Minigame} is set:
 				if command contains "mgsettings":
 					if arg-2 is "seeker":
 						set {Commence::HNS::%arg-1%::SeekerLoc} to location of player
-						send "&c{@info}  Seeker Location for %arg-1% Has Been Set"
+						send "<##CB625F>{@info}  Seeker Location for %arg-1% Has Been Set"
 					if arg-2 is "hider":
 						set {Commence::HNS::%arg-1%::HiderLoc} to location of player
-						send "&c{@info}  Hiders Location for %arg-1% Has Been Set"
+						send "<##CB625F>{@info}  Hiders Location for %arg-1% Has Been Set"
 					if arg-2 is "caught":
 						set {Commence::HNS::%arg-1%::CaughtLoc} to location of player
-						send "&c{@info}  Caught Location for %arg-1% Has Been Set"
+						send "<##CB625F>{@info}  Caught Location for %arg-1% Has Been Set"
 					stop
-				send "&c{@info}  You're already in a Minigame, %{Commence::HNS::Map::%{Commence::%player%::Minigame}%}%"
+				send "<##CB625F>{@info}  You're already in a Minigame, %{Commence::HNS::Map::%{Commence::%player%::Minigame}%}%"
 				stop
 			set {Commence::List} to 0
 			loop {Commence::HNS::Games::*} and {Commence::Spleef::Games::*} and {Commence::PropHunt::Games::*}:
@@ -313,11 +313,11 @@ command /mg [<text>] [<text>]:
 			set {_tr} to 5 if {Commence::List} is more than 14
 			set {_tr} to 4 if {Commence::List} is more than 7
 			set {_tr} to 3 if {Commence::List} is less than 8
-			set metadata tag "minigamemenu" of player to chest inventory with {_tr} rows named "&8-==&k|&9       {@commencemgl}       &8&k|&8==-"
+			set metadata tag "minigamemenu" of player to chest inventory with {_tr} rows named "&8-==&k|<##3988A3>       {@commencemgl}       &8&k|&8==-"
 			set slot 0 of metadata tag "minigamemenu" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "minigamemenu" of player to dark gray stained glass pane named "&7"
-			set slot 4 of metadata tag "minigamemenu" of player to book named "&8-&k|<##00908D>  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E> Minigame Lobby Main Menu  &8&k|&8-" with lore "&8 Manage Your Minigame Experience" and "&c Hover Over Items for Info" and "&4 Click an Item to Join a Game"
+			set slot 4 of metadata tag "minigamemenu" of player to book named "&8-&k|<##00908D>  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E> Minigame Lobby Main Menu  &8&k|&8-" with lore "&8 Manage Your Minigame Experience" and "<##CB625F> Hover Over Items for Info" and "&4 Click an Item to Join a Game"
 			set {Commence::List} to 9
 			loop {Commence::HNS::Games::*}:
 				add 1 to {Commence::List}
@@ -325,34 +325,34 @@ command /mg [<text>] [<text>]:
 				add 2 to {Commence::List} if {Commence::List} is 26
 				add 2 to {Commence::List} if {Commence::List} is 35
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-				set slot {Commence::List} of metadata tag "minigamemenu" of player to glowing paper named "&8-&k|<##00908D> Join %{Commence::HNS::Map::%loop-value%}% Hide&Seek &8&k|&8-" with lore "&7 Total Active Games: %amount of {Commence::HNS::Games::*} ? 0%" and "&7 Running Games: %amount of {Commence::HNS::Started::*} ? 0%" and "&7 Active Players: %{Commence::HNS::%loop-value%::Players::*}%" and "&c " and "<##00C889> Click HERE to Join a Game"
+				set slot {Commence::List} of metadata tag "minigamemenu" of player to glowing paper named "&8-&k|<##00908D> Join %{Commence::HNS::Map::%loop-value%}% Hide&Seek &8&k|&8-" with lore "&7 Total Active Games: %amount of {Commence::HNS::Games::*} ? 0%" and "&7 Running Games: %amount of {Commence::HNS::Started::*} ? 0%" and "&7 Active Players: %{Commence::HNS::%loop-value%::Players::*}%" and "<##CB625F> " and "<##00C889> Click HERE to Join a Game"
 			{Commence::List} is 9:
 				add 1 to {Commence::List}
-				set slot {Commence::List} of metadata tag "minigamemenu" of player to grass block named "&8-&k|<##00908D> Start a Hide&Seek Game &8&k|&8-" with lore "&7 {@commencehns} Total Active Games: %amount of {Commence::HNS::Games::*} ? 0%" and "&7 {@commencehns} Running Games: %amount of {Commence::HNS::Started::*} ? 0%" and "&7 {@commencehns} Potential Players: %amount of players in world("City2")%" and "&c " and "<##00C889> Click HERE to Start a Game"
+				set slot {Commence::List} of metadata tag "minigamemenu" of player to grass block named "&8-&k|<##00908D> Start a Hide&Seek Game &8&k|&8-" with lore "&7 {@commencehns} Total Active Games: %amount of {Commence::HNS::Games::*} ? 0%" and "&7 {@commencehns} Running Games: %amount of {Commence::HNS::Started::*} ? 0%" and "&7 {@commencehns} Potential Players: %amount of players in world("City2")%" and "<##CB625F> " and "<##00C889> Click HERE to Start a Game"
 			loop {Commence::Spleef::Games::*}:
 				add 1 to {Commence::List}
 				add 2 to {Commence::List} if {Commence::List} is 17
 				add 2 to {Commence::List} if {Commence::List} is 26
 				add 2 to {Commence::List} if {Commence::List} is 35
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-				set slot {Commence::List} of metadata tag "minigamemenu" of player to glowing paper named "&8-&k|<##00908D> Join a Spleef Game &8&k|&8-" with lore "&7 Total Active Games: %amount of {Commence::Spleef::Games::*} ? 0%" and "&7 Running Games: %amount of {Commence::Spleef::Started::*} ? 0%" and "&7 Potential Players: %amount of players in world("City2")%" and "&c " and "<##00C889> Click HERE to Join a Game"
+				set slot {Commence::List} of metadata tag "minigamemenu" of player to glowing paper named "&8-&k|<##00908D> Join a Spleef Game &8&k|&8-" with lore "&7 Total Active Games: %amount of {Commence::Spleef::Games::*} ? 0%" and "&7 Running Games: %amount of {Commence::Spleef::Started::*} ? 0%" and "&7 Potential Players: %amount of players in world("City2")%" and "<##CB625F> " and "<##00C889> Click HERE to Join a Game"
 			amount of {Commence::Spleef::Games::*} is 0:
 				add 1 to {Commence::List}
-				set slot {Commence::List} of metadata tag "minigamemenu" of player to snow block named "&8-&k|<##00908D> Start a Spleef Game &8&k|&8-" with lore "&7 {@commencehns} Total Active Games: %amount of {Commence::Spleef::Games::*} ? 0%" and "&7 {@commencehns} Running Games: %amount of {Commence::Spleef::Started::*} ? 0%" and "&7 {@commencehns} Potential Players: %amount of players in world("City2")%" and "&c " and "<##00C889> Click HERE to Start a Game" if {Commence::Spleef} is true
+				set slot {Commence::List} of metadata tag "minigamemenu" of player to snow block named "&8-&k|<##00908D> Start a Spleef Game &8&k|&8-" with lore "&7 {@commencehns} Total Active Games: %amount of {Commence::Spleef::Games::*} ? 0%" and "&7 {@commencehns} Running Games: %amount of {Commence::Spleef::Started::*} ? 0%" and "&7 {@commencehns} Potential Players: %amount of players in world("City2")%" and "<##CB625F> " and "<##00C889> Click HERE to Start a Game" if {Commence::Spleef} is true
 			loop {Commence::PropHunt::Games::*}:
 				add 1 to {Commence::List}
 				add 2 to {Commence::List} if {Commence::List} is 17
 				add 2 to {Commence::List} if {Commence::List} is 26
 				add 2 to {Commence::List} if {Commence::List} is 35
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
-				set slot {Commence::List} of metadata tag "minigamemenu" of player to glowing paper named "&8-&k|<##00908D> Join a Spleef Game &8&k|&8-" with lore "&7 Total Active Games: %amount of {Commence::PropHunt::Games::*} ? 0%" and "&7 Running Games: %amount of {Commence::PropHunt::Started::*} ? 0%" and "&7 Potential Players: %amount of players in world("City2")%" and "&c " and "<##00C889> Click HERE to Join a Game"
+				set slot {Commence::List} of metadata tag "minigamemenu" of player to glowing paper named "&8-&k|<##00908D> Join a Spleef Game &8&k|&8-" with lore "&7 Total Active Games: %amount of {Commence::PropHunt::Games::*} ? 0%" and "&7 Running Games: %amount of {Commence::PropHunt::Started::*} ? 0%" and "&7 Potential Players: %amount of players in world("City2")%" and "<##CB625F> " and "<##00C889> Click HERE to Join a Game"
 			amount of {Commence::PropHunt::Games::*} is 0:
 				add 1 to {Commence::List}
-				set slot {Commence::List} of metadata tag "minigamemenu" of player to crafting table named "&8-&k|<##00908D> Start a Prop Hunt Game &8&k|&8-" with lore "&7 {@commenceprophunt} Total Active Games: %amount of {Commence::Spleef::Games::*} ? 0%" and "&7 {@commenceprophunt} Running Games: %amount of {Commence::Spleef::Started::*} ? 0%" and "&7 {@commenceprophunt} Potential Players: %amount of players in world("City2")%" and "&c " and "<##00C889> Click HERE to Start a Game" if {Commence::PropHunt} is true
-			set slot 8 of metadata tag "minigamemenu" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+				set slot {Commence::List} of metadata tag "minigamemenu" of player to crafting table named "&8-&k|<##00908D> Start a Prop Hunt Game &8&k|&8-" with lore "&7 {@commenceprophunt} Total Active Games: %amount of {Commence::Spleef::Games::*} ? 0%" and "&7 {@commenceprophunt} Running Games: %amount of {Commence::Spleef::Started::*} ? 0%" and "&7 {@commenceprophunt} Potential Players: %amount of players in world("City2")%" and "<##CB625F> " and "<##00C889> Click HERE to Start a Game" if {Commence::PropHunt} is true
+			set slot 8 of metadata tag "minigamemenu" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 			open (metadata tag "minigamemenu" of player) to player
 		else:
-			send "{@commencemgl} &cis Currently Disabled"
+			send "{@commencemgl} <##CB625F>is Currently Disabled"
 
 on inventory click:
 	if event-inventory is (metadata tag "hnsmap" of player):
@@ -361,9 +361,9 @@ on inventory click:
 		stop if {Commence::HNS::Map::%{_tg}%} is not set
 		close inventory of player
 		send title "<##00908D>A Minigame, %{Commence::HNS::Map::%{_tg}%}%<##00908D>, is Starting!" with subtitle "<##00908D>Type &8/mg<##00908D> to Join!" to all players
-		send title "<##00908D>A Minigame, %{Commence::HNS::Map::%{_tg}%}%<##00908D>, is Starting!" with subtitle "&cWaiting for More Players..." to player
-		send "&c{@info}  <##00908D>%{Commence::HNS::Map::%{_tg}%}%<##00908D> Is Starting! <##00908D>Type &8/mg<##00908D> to Join!" to all players
-		send "&c{@info}  <##00908D>You're Joining %{Commence::HNS::Map::%{_tg}%}% <##00908D>Momentarily!"
+		send title "<##00908D>A Minigame, %{Commence::HNS::Map::%{_tg}%}%<##00908D>, is Starting!" with subtitle "<##CB625F>Waiting for More Players..." to player
+		send "<##CB625F>{@info}  <##00908D>%{Commence::HNS::Map::%{_tg}%}%<##00908D> Is Starting! <##00908D>Type &8/mg<##00908D> to Join!" to all players
+		send "<##CB625F>{@info}  <##00908D>You're Joining %{Commence::HNS::Map::%{_tg}%}% <##00908D>Momentarily!"
 		set {Commence::HNS::%{_tg}%::Counter} to 1
 		set {Commence::HNS::%{_tg}%::Timer} to 61
 		set the generic scale attribute of player to 0.2
@@ -400,18 +400,18 @@ on inventory click:
 				set the walk speed of {Commence::HNS::%{Commence::%player%::%index of event-slot%::Name}%::Players::*} to 0.05
 				set the fly speed of {Commence::HNS::%{Commence::%player%::%index of event-slot%::Name}%::Players::*} to 0.01
 			else if amount of {Commence::HNS::Games::*} is less than 1:
-				set metadata tag "hnsmap" of player to chest inventory with {_tr} rows named "&8-==&k|&9       {@commencemgl}       &8&k|&8==-"
+				set metadata tag "hnsmap" of player to chest inventory with {_tr} rows named "&8-==&k|<##3988A3>       {@commencemgl}       &8&k|&8==-"
 				set slot 0 of metadata tag "hnsmap" of player to dark gray stained glass pane named "&7"
 				loop 53 times:
 					set slot loop-value of metadata tag "hnsmap" of player to dark gray stained glass pane named "&7"
-				set slot 4 of metadata tag "hnsmap" of player to book named "&8-&k|<##00908D>  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E> Minigame Lobby Map Chooser  &8&k|&8-" with lore "&8 Choose a Map to Play in for Hide&Seek" and "&c Hover Over Maps for Info" and "&4 Click a Map to Start a Game"
-				set slot 10 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::1}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::1::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
-				set slot 11 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::2}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::2::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
-				set slot 12 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::3}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::3::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
-				set slot 13 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::4}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::4::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
-				set slot 14 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::5}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::5::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
-				set slot 15 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::6}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::6::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
-				set slot 16 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::7}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::7::Description}%" and "&c " and "<##00C889> Click HERE to Choose This Map"
+				set slot 4 of metadata tag "hnsmap" of player to book named "&8-&k|<##00908D>  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E> Minigame Lobby Map Chooser  &8&k|&8-" with lore "&8 Choose a Map to Play in for Hide&Seek" and "<##CB625F> Hover Over Maps for Info" and "&4 Click a Map to Start a Game"
+				set slot 10 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::1}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::1::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
+				set slot 11 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::2}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::2::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
+				set slot 12 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::3}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::3::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
+				set slot 13 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::4}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::4::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
+				set slot 14 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::5}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::5::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
+				set slot 15 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::6}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::6::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
+				set slot 16 of metadata tag "hnsmap" of player to glowing paper named "&8-&k|<##00908D> Choose Map %{Commence::HNS::Map::7}% &8&k|&8-" with lore "&8 Map Info: %{Commence::HNS::Map::7::Description}%" and "<##CB625F> " and "<##00C889> Click HERE to Choose This Map"
 				open (metadata tag "hnsmap" of player) to player
 				stop
 	if event-inventory is (metadata tag "minigamepanel" of player):
@@ -424,7 +424,7 @@ on inventory click:
 				set {Commence::HNS} to false
 			else:
 				set {Commence::HNS} to true
-			send "&c{@info}  <##00908D>{@commencehns} Hide&Seek is now %{Commence::HNS}%"
+			send "<##CB625F>{@info}  <##00908D>{@commencehns} Hide&Seek is now %{Commence::HNS}%"
 			execute player command "/mgpanel"
 		else if index of event-slot is 12:
 			close inventory of player
@@ -432,7 +432,7 @@ on inventory click:
 				set {Commence::Spleef} to false
 			else:
 				set {Commence::Spleef} to true
-			send "&c{@info}  <##00908D>{@commencespleef} Spleef is now %{Commence::Spleef}%"
+			send "<##CB625F>{@info}  <##00908D>{@commencespleef} Spleef is now %{Commence::Spleef}%"
 			execute player command "/mgpanel"
 		else if index of event-slot is 14:
 			close inventory of player
@@ -440,5 +440,5 @@ on inventory click:
 				set {Commence::PropHunt} to false
 			else:
 				set {Commence::PropHunt} to true
-			send "&c{@info}  <##00908D>{@commenceprophunt} Prop Hunt is now %{Commence::PropHunt}%"
+			send "<##CB625F>{@info}  <##00908D>{@commenceprophunt} Prop Hunt is now %{Commence::PropHunt}%"
 			execute player command "/mgpanel"
