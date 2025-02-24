@@ -3,19 +3,20 @@
 options:
 	commencesmp:<##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P
 	commence:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P  <##70797C>|-<##CB625F>&l!<##70797C>-|
-	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command in %player's world%&c!
-	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cYou are not permitted to use this command!
-	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cWait before trying this command again!
+	worldpermissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command in %player's world%<##CB625F>!
+	permissionmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>You are not permitted to use this command!
+	cooldownmessage:&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>Wait before trying this command again!
 	inspector:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##C15755> Inspector  <##70797C>|-<##CB625F>&l!<##70797C>-|
 	presider:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##C15755> Presider  <##70797C>|-<##CB625F>&l!<##70797C>-|
 	legate:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##C15755> Legate  <##70797C>|-<##CB625F>&l!<##70797C>-|
 	owner:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##8B969B> Owner  <##70797C>|-<##CB625F>&l!<##70797C>-|
 	pvp:&8  <##70797C>|-<##CB625F>&l!<##70797C>-|  <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P<##8B969B> KitPvP  <##70797C>|-<##CB625F>&l!<##70797C>-|
 	lifer:<##00C889>L<##00C08D>i<##00BA8D>f<##00B48D>e<##00AE8D>r<##00A88D> 60 Minute Survival
-	kitpvp:&cKitPvP &8Levels
+	kitpvp:<##CB625F>KitPvP &8Levels
 	mythicalrealms:<##D0944D>M<##D39650>y<##D89A52>t<##DD9D54>h<##E2A156>i<##E8A458>c<##EDA85A>a<##F2AC5C>l <##F7AF5D>R<##FCB35F>e<##FFB766>a<##FFB96B>l<##FFBC70>m<##FFBE75>s
-	nochat:&c   You are not permitted to chat!
-	nochat2:&c   You are not permitted to chat in this world!
+	nochat:<##CB625F>   You are not permitted to chat!
+	nochat2:<##CB625F>   You are not permitted to chat in this world!
+	info:<##70797C>(<##CC3B3B>&l!<##70797C>)<##CB625F>
 
 
 on skript load:
@@ -40,15 +41,15 @@ on chat:
 		cancel event
 		if length of message is more than 26:
 			send ""
-			send "&c   Sorry, %message%&c is too long"
+			send "<##CB625F>   Sorry, %message%<##CB625F> is too long"
 			stop
 		else if length of message is less than 4:
 			send ""
-			send "&c   Sorry, %message%&c is too short"
+			send "<##CB625F>   Sorry, %message%<##CB625F> is too short"
 			stop
 		else if message contains " ":
 			send ""
-			send "&c   Sorry, %message%&c can't contain spaces"
+			send "<##CB625F>   Sorry, %message%<##CB625F> can't contain spaces"
 			stop
 		clear {Commence::%player%::Story::QuestCreator::NameChange}
 		set {Commence::%player%::Story::QuestCreator::Name} to message
@@ -64,11 +65,12 @@ on chat:
 		send "&8&l%{Commence::%player's world%::Short}% &r%{Commence::%player%::Story::Rank}%%player's display name%: <##855EC9>%message%"
 		runCodex(player, message)
 		stop
-	message contains "nigg" or "nlgg" or "n!gg" or "niger" or "nige":
+	message contains "nigg" or "nlgg" or "n!gg" or "nige" or "hitler" or "h!tler" or "nazi" or "naz!":
 		cancel event
 		send ""
 		send "{@commence}"
-		send "&c   You are not permitted to use that language!"
+		send " {@info} '%message%' Breaks Minecraft's Terms of Service!"
+		send " {@info} You'll Be Muted if You Keep it Up!"
 		send "%player% is using bad language in %player's world%: %message%" to console
 		stop
 	else if message contains ":skull:" or ":skeleton:":
@@ -79,6 +81,12 @@ on chat:
 		replace all ":pray:" in message with "🙏"
 	else if message contains ":peace:":
 		replace all ":peace:" in message with "✌"
+	else:
+		loop all players:
+			message contains "%loop-player%":
+				loop 2 times:
+					play sound "entity.dragon_fireball.explode" or "block.anvil.land" or "block.bell.use" or "block.bell.resonate" or "block.conduit.activate" at volume 100 at pitch 17 to loop-player
+				stop loop 
 	if {Commence::%player%::Chat} is false:
 		send ""
 		send "{@commence}"
@@ -96,23 +104,23 @@ on chat:
 		cancel event
 		loop all players:
 			{Commence::%loop-value%::Inspector} is true:
-				send "&c INSPECTORCHAT %player's display name%: <##DCEDF4>%message%" to loop-player
+				send "<##CB625F> INSPECTORCHAT %player's display name%: <##DCEDF4>%message%" to loop-player
 		send "INSPECTORCHAT %player%: %message%" to console
 		stop
 	{Commence::%player%::AdminChat} is true:
 		cancel event
 		loop all players:
 			{Commence::%loop-value%::Admin} is true:
-				send "&c ADMINCHAT %player's display name%: <##DCEDF4>%message%" to loop-player
+				send "<##CB625F> ADMINCHAT %player's display name%: <##DCEDF4>%message%" to loop-player
 		send "ADMINCHAT %player%: %message%" to console
 		stop
 	player's world is "Survival" or "SpawnHub":
 		set chat format to "&8&l%{Commence::%player's world%::Short}% &r%{Commence::%player%::Displayname}%: <##DCEDF4>%message%"
 	else if player's world is "Survival2":
 		{Lifer::%player%::Age} is less than 5:
-			set chat format to "&8&lL &9%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%: &a%random element of {BabyTalk::*}%"
+			set chat format to "&8&lL <##3988A3>%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%: <##00C889>%random element of {BabyTalk::*}%"
 			stop
-		set chat format to "&8&lL &9%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%: <##DCEDF4>%message%"
+		set chat format to "&8&lL <##3988A3>%{Lifer::%player%::First}% &8%{Lifer::%player%::Last}%: <##DCEDF4>%message%"
 	else if player's world is "Survival3" or "Survival3_nether" or "Survival3_the_end":
 		{Commence::%player%::Story::Form} and {Commence::%player%::Story::Rank} is set:
 			{Commence::Story::Bloodmoon} is true:
@@ -132,7 +140,7 @@ on chat:
 
 command /ic:
 	aliases: /inspectorchat
-	usage: &c /inspectorchat
+	usage: <##CB625F> /inspectorchat
 	description: &7 Toggles inspector chat
 	cooldown: 1 second
 	cooldown message: {@cooldownmessage}
@@ -143,24 +151,24 @@ command /ic:
 		else if {Commence::%player%::InspectorChat} is true:
 			send ""
 			send "{@inspector}"
-			send "&7   You disabled &cInspector Chat&7"
-			send "&7   To re-enable, type &c/ic&7"
+			send "&7   You disabled <##CB625F>Inspector Chat&7"
+			send "&7   To re-enable, type <##CB625F>/ic&7"
 			set {Commence::%player%::InspectorChat} to false
 		else if {Commence::%player%::InspectorChat} is false:
 			send ""
 			send "{@inspector}"
-			send "&7   You enabled &cInspector Chat&7"
-			send "&7   To disable, type &c/ic&7"
+			send "&7   You enabled <##CB625F>Inspector Chat&7"
+			send "&7   To disable, type <##CB625F>/ic&7"
 			set {Commence::%player%::InspectorChat} to true
 		else:
 			send ""
 			send "{@inspector}"
-			send "&7   You enabled &cInspector Chat&7"
-			send "&7   To disable, type &c/ic&7"
+			send "&7   You enabled <##CB625F>Inspector Chat&7"
+			send "&7   To disable, type <##CB625F>/ic&7"
 			set {Commence::%player%::InspectorChat} to true
 
 command /tp [<player>] [<player>]:
-	usage: &c /teleport [ PLAYER ] ~ TO PLAYER ~
+	usage: <##CB625F> /teleport [ PLAYER ] ~ TO PLAYER ~
 	aliases: /teleport, /tphere, /tpa, /tpahere, /tpaccept, /tpdeny
 	description: &7 Teleports player to another player
 	cooldown: 5 seconds
@@ -183,7 +191,7 @@ command /tp [<player>] [<player>]:
 					arg-1 is player:
 						send ""
 						send "{@inspector}"
-						send "&c   You're Already at Yourself..."
+						send "<##CB625F>   You're Already at Yourself..."
 						stop
 					send ""
 					send "{@inspector}"
@@ -223,7 +231,7 @@ command /tp [<player>] [<player>]:
 			arg-1 is player:
 				send ""
 				send "{@inspector}"
-				send "&c   You're Already at Yourself..."
+				send "<##CB625F>   You're Already at Yourself..."
 				stop
 			send ""
 			send "{@inspector}"
@@ -231,14 +239,14 @@ command /tp [<player>] [<player>]:
 			teleport player to arg-1
 
 command /tpc <integer> <integer> <integer>:
-	usage: &c /teleport [ PLAYER ] ~ TO PLAYER ~
+	usage: <##CB625F> /teleport [ PLAYER ] ~ TO PLAYER ~
 	aliases: /teleport, /tphere
 	description: &7 Teleports player to another player
 	cooldown: 5 seconds
 	cooldown message: {@cooldownmessage}
 	trigger:
 		if {Commence::%player%::Inspector} is not true:
-			send "&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P &cUse /tp to teleport to players!"
+			send "&7 <##3988A4>C<##3C91AD>o<##4099B7>m<##43A2C1>m<##49AFD1>e<##4EBBE0>n<##52C4EA>c<##55CDF4>e<##545B5E>S<##545B5E>M<##545B5E>P <##CB625F>Use /tp to teleport to players!"
 			stop
 		arg-3 is set:
 			send ""
@@ -247,7 +255,7 @@ command /tpc <integer> <integer> <integer>:
 			teleport player to location arg-1, arg-2, arg-3 in player's world
 
 command /fly [<player>]:
-	usage: &c /fly [ PLAYER ]
+	usage: <##CB625F> /fly [ PLAYER ]
 	description: &7 Toggles fly mode
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -255,7 +263,7 @@ command /fly [<player>]:
 	cooldown message: {@cooldownmessage}
 	trigger:
 		player's world is not "Survival" or "Survival3" or "CommenceCity":
-			send "&c   You can't fly in this game mode"
+			send "<##CB625F>   You can't fly in this game mode"
 			stop
 		arg-1 is set:
 			arg-1's flight mode is true:
@@ -287,7 +295,7 @@ command /fly [<player>]:
 				set player's flight mode to true
 
 command /kick <player> [<text>]:
-	usage: &c /kick [ PLAYER ] [ REASON ]
+	usage: <##CB625F> /kick [ PLAYER ] [ REASON ]
 	description: &7 Kicks a player
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -299,20 +307,20 @@ command /kick <player> [<text>]:
 		arg-2 is set:
 			send ""
 			send "{@inspector}"
-			send "&c   You kicked %arg-1's display name%&c for %arg-2%&7"
+			send "<##CB625F>   You kicked %arg-1's display name%<##CB625F> for %arg-2%&7"
 			send "" to arg-1
 			send "{@inspector}" to arg-1
-			send "&c   %player's display name% &ckicked you for %arg-2%&7" to arg-1
+			send "<##CB625F>   %player's display name% <##CB625F>kicked you for %arg-2%&7" to arg-1
 			kick arg-1 because arg-2
 		else:
 			send ""
 			send "{@inspector}"
-			send "&c   You kicked %arg-1's display name%&c"
+			send "<##CB625F>   You kicked %arg-1's display name%<##CB625F>"
 			kick arg-1
 
 command /ban <offline player> [<text>]:
 	aliases: /banip
-	usage: &c /ban [ PLAYER ] [ REASON ] ~ TIME IN MINUTES ~
+	usage: <##CB625F> /ban [ PLAYER ] [ REASON ] ~ TIME IN MINUTES ~
 	description: &7 Bans a player
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -322,29 +330,29 @@ command /ban <offline player> [<text>]:
 		arg-1 is banned:
 			send ""
 			send "{@inspector}"
-			send "&c   %arg-1's display name ? arg-1%&c is already banned"
+			send "<##CB625F>   %arg-1's display name ? arg-1%<##CB625F> is already banned"
 		{Commence::%arg-1%::Rank::Value} is more than {Commence::%player%::Rank::Value}:
 			stop
 		arg-2 is set:
 			send ""
 			send "{@inspector}"
-			send "&c   You banned %arg-1's display name ? arg-1%&c for %arg-2%&7"
-			send "&c   To unban, type &c/unban %arg-1's display name ? arg-1%"
+			send "<##CB625F>   You banned %arg-1's display name ? arg-1%<##CB625F> for %arg-2%&7"
+			send "<##CB625F>   To unban, type <##CB625F>/unban %arg-1's display name ? arg-1%"
 			send "" to arg-1
 			send "{@inspector}" to arg-1
-			send "&c   You have been banned for %arg-2%&7" to arg-1
+			send "<##CB625F>   You have been banned for %arg-2%&7" to arg-1
 			ban arg-1 because arg-2
 			wait 1 second
 			kick arg-1 because arg-2
 		else:
 			send ""
 			send "{@inspector}"
-			send "&c   You banned %arg-1's display name ? arg-1%&c&7"
-			send "&c   To unban, type &c/unban %arg-1's display name ? arg-1%"
+			send "<##CB625F>   You banned %arg-1's display name ? arg-1%<##CB625F>&7"
+			send "<##CB625F>   To unban, type <##CB625F>/unban %arg-1's display name ? arg-1%"
 			ban arg-1 because "You Are Not Permitted to Join CommenceSMP"
 
 command /banip <offline player> [<text>]:
-	usage: &c /banip [ PLAYER ] [ REASON ]
+	usage: <##CB625F> /banip [ PLAYER ] [ REASON ]
 	description: &7 Bans a player
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -354,31 +362,31 @@ command /banip <offline player> [<text>]:
 		arg-1 is banned:
 			send ""
 			send "{@inspector}"
-			send "&c   %arg-1's display name ? arg-1%&c is already banned"
+			send "<##CB625F>   %arg-1's display name ? arg-1%<##CB625F> is already banned"
 		{Commence::%arg-1%::Rank::Value} is more than {Commence::%player%::Rank::Value}:
 			stop
 		arg-2 is set:
 			send ""
 			send "{@inspector}"
-			send "&c   You banned %arg-1's display name ? arg-1%&c for %arg-2%&7"
-			send "&c   To unban, type &c/unban %arg-1's display name ? arg-1%"
+			send "<##CB625F>   You banned %arg-1's display name ? arg-1%<##CB625F> for %arg-2%&7"
+			send "<##CB625F>   To unban, type <##CB625F>/unban %arg-1's display name ? arg-1%"
 			send "" to arg-1
 			send "{@inspector}" to arg-1
-			send "&c   You have been banned for %arg-2%&7" to arg-1
+			send "<##CB625F>   You have been banned for %arg-2%&7" to arg-1
 			ban arg-1's ip because arg-2
 			wait 1 second
 			kick arg-1 because arg-2
 		else:
 			send ""
 			send "{@inspector}"
-			send "&c   You banned %arg-1's display name ? arg-1%&c&7"
-			send "&c   To unban, type &c/unban %arg-1's display name ? arg-1%"
+			send "<##CB625F>   You banned %arg-1's display name ? arg-1%<##CB625F>&7"
+			send "<##CB625F>   To unban, type <##CB625F>/unban %arg-1's display name ? arg-1%"
 			ban arg-1's ip because "You are banned from CommenceSMP by an Operator"
 			kick arg-1 because "You are banned from CommenceSMP by an Operator"
 
 command /unban <text>:
 	aliases: /pardon
-	usage: &c /unban [ PLAYER ]
+	usage: <##CB625F> /unban [ PLAYER ]
 	description: &7 Unbans a player
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -388,12 +396,12 @@ command /unban <text>:
 #		arg-1 is banned:
 		send ""
 		send "{@inspector}"
-		send "&c   You unbanned %arg-1%&c"
+		send "<##CB625F>   You unbanned %arg-1%<##CB625F>"
 		unban arg-1
 
 command /mute <player> [<integer>]:
 	aliases: /unmute
-	usage: &c /mute [ PLAYER ] [ TIME IN SECONDS ]
+	usage: <##CB625F> /mute [ PLAYER ] [ TIME IN SECONDS ]
 	description: &7 Toggles mute for a player
 	permission: commencer.inspector
 	cooldown: 10 seconds
@@ -405,10 +413,10 @@ command /mute <player> [<integer>]:
 		arg-2 is set:
 			send ""
 			send "{@inspector}"
-			send "&c   %arg-1's display name% &cis now muted for %arg-2% seconds"
+			send "<##CB625F>   %arg-1's display name% <##CB625F>is now muted for %arg-2% seconds"
 			send "" to arg-1
 			send "{@inspector}" to arg-1
-			send "&c   You are now now muted for %arg-2% seconds" to arg-1
+			send "<##CB625F>   You are now now muted for %arg-2% seconds" to arg-1
 			set {Commence::%arg-1%::Chat} to false
 			loop arg-2 times:
 				wait 1 second
@@ -417,19 +425,19 @@ command /mute <player> [<integer>]:
 			{Commence::%arg-1%::Chat} is false:
 				send ""
 				send "{@inspector}"
-				send "&c   &7MUTED %arg-1's display name% &cis now unmuted"
+				send "<##CB625F>   &7MUTED %arg-1's display name% <##CB625F>is now unmuted"
 				send "" to arg-1
 				send "{@inspector}" to arg-1
-				send "&c   You are now now unmuted" to arg-1
+				send "<##CB625F>   You are now now unmuted" to arg-1
 				set {Commence::%arg-1%::Chat} to true
 				stop
 			else:
 				send ""
 				send "{@inspector}"
-				send "&c   %arg-1's display name% &cis now muted"
+				send "<##CB625F>   %arg-1's display name% <##CB625F>is now muted"
 				send "" to arg-1
 				send "{@inspector}" to arg-1
-				send "&c   You are now now muted" to arg-1
+				send "<##CB625F>   You are now now muted" to arg-1
 				set {Commence::%arg-1%::Chat} to false
 
 #-=-=-=-=-=-=-=-=-=-
@@ -437,7 +445,7 @@ command /mute <player> [<integer>]:
 
 command /ac:
 	aliases: /adminchat, /presiderchat, /pc, /legatechat, /lc
-	usage: &c /adminchat
+	usage: <##CB625F> /adminchat
 	description: &7 Toggles admin chat
 	cooldown: 1 second
 	cooldown message: {@cooldownmessage}
@@ -448,20 +456,20 @@ command /ac:
 		else if {Commence::%player%::AdminChat} is true:
 			send ""
 			send "{@presider}"
-			send "&7   You disabled &cAdmin Chat&7"
-			send "&7   To re-enable, type &c/ac&7"
+			send "&7   You disabled <##CB625F>Admin Chat&7"
+			send "&7   To re-enable, type <##CB625F>/ac&7"
 			set {Commence::%player%::AdminChat} to false
 		else if {Commence::%player%::AdminChat} is false:
 			send ""
 			send "{@presider}"
-			send "&7   You enabled &cAdmin Chat&7"
-			send "&7   To disable, type &c/ac&7"
+			send "&7   You enabled <##CB625F>Admin Chat&7"
+			send "&7   To disable, type <##CB625F>/ac&7"
 			set {Commence::%player%::AdminChat} to true
 		else:
 			send ""
 			send "{@presider}"
-			send "&7   You enabled &cAdmin Chat&7"
-			send "&7   To disable, type &c/ac&7"
+			send "&7   You enabled <##CB625F>Admin Chat&7"
+			send "&7   To disable, type <##CB625F>/ac&7"
 			set {Commence::%player%::AdminChat} to true
 
 #-=-=-=-=-=-=-=-=-=-
@@ -472,7 +480,7 @@ command /ac:
 
 command /sogsurvival <player>:
 	aliases: /sogs
-	usage: &c /sogs [ PLAYER ]
+	usage: <##CB625F> /sogs [ PLAYER ]
 	description: &7 Sends a player to Survival
 	permission: commencer.admin
 	cooldown: 10 seconds
@@ -483,8 +491,8 @@ command /sogsurvival <player>:
 		{Survival::Enabled} is not true:
 			send ""
 			send "{@commence}"
-			send "&c   Sorry, this game mode is currently disabled"
-			send "&7   To try other game modes, use &9/c"
+			send "<##CB625F>   Sorry, this game mode is currently disabled"
+			send "&7   To try other game modes, use <##3988A3>/c"
 			stop
 		send "" to arg-1
 		send "{@commence}" to arg-1
@@ -505,7 +513,7 @@ command /sogsurvival <player>:
 			send "&7   Run far away and don't die." to arg-1
 			send "&7   Griefing, Raiding, etc are allowed here!" to arg-1
 			wait 22 ticks
-			send "&7   To check out another mode, type &a/c" to arg-1
+			send "&7   To check out another mode, type <##00C889>/c" to arg-1
 			set slot 0 of arg-1 to stone pickaxe
 			set slot 1 of arg-1 to stone shovel
 			set slot 2 of arg-1 to stone axe
@@ -516,7 +524,7 @@ command /sogsurvival <player>:
 
 command /bc <text>:
 	aliases: /broadcast, /bcs, /broadcasts
-	usage: &c /broadcast [ MESSAGE ]
+	usage: <##CB625F> /broadcast [ MESSAGE ]
 	description: &7 Broadcasts a message to the server
 	permission: commencer.admin
 	cooldown: 1 second
@@ -526,7 +534,7 @@ command /bc <text>:
 		broadcast "&7 {@commencesmp}&fGODS<##3988A3>: %argument%"
 
 command /updatestop:
-	usage: &c /updatestop
+	usage: <##CB625F> /updatestop
 	description: &7 Restarts the server automatically
 	permission: commencer.admin
 	cooldown: 2 minutes
@@ -559,7 +567,7 @@ command /updatestop:
 			execute console command "/restart"
 			
 command /setworldshort <world> <text>:
-	usage: &c /sws [ SHORT WORLD NAME ]
+	usage: <##CB625F> /sws [ SHORT WORLD NAME ]
 	aliases: /sws
 	permission: commencer.admin
 	cooldown: 1 second
@@ -567,7 +575,7 @@ command /setworldshort <world> <text>:
 	cooldown message: {@cooldownmessage}
 	trigger:
 		if {Commence::%arg-1%::Short} is set:
-			send "&c Bruh, you've already done %arg-1%! (%{Commence::%arg-1%::Short}%)"
+			send "<##CB625F> Bruh, you've already done %arg-1%! (%{Commence::%arg-1%::Short}%)"
 			stop
 		else:
 			set {Commence::%arg-1%::Short} to arg-2
@@ -575,7 +583,7 @@ command /setworldshort <world> <text>:
 
 command /setspawn [<world>]:
 	aliases: /ss
-	usage: &c /setspawn
+	usage: <##CB625F> /setspawn
 	description: &7 Sets the spawn for that world
 	permission: commencer.admin
 	cooldown: 1 second
@@ -590,12 +598,12 @@ command /setspawn [<world>]:
 		set world "%{_tw}%"'s spawn to player's location
 		send "{@owner}"
 		send ""
-		send "&7   You set the spawn point of world &a&l%{_tw}%&7 to &a&l%{Spawn::%{_tw}%}%&7!"
+		send "&7   You set the spawn point of world <##00C889>&l%{_tw}%&7 to <##00C889>&l%{Spawn::%{_tw}%}%&7!"
 		send ""
 
 command /setparkour <integer>:
 	aliases: /setp
-	usage: &c /setparkour
+	usage: <##CB625F> /setparkour
 	permission: commencer.admin
 	cooldown: 10 minutes
 	permission message: {@permissionmessage}
@@ -605,8 +613,8 @@ command /setparkour <integer>:
 		send "Doneeeeeeeee!"
 
 command /fakeop <player>:
-    usage: &c /fakeop [ PLAYER ]
-    description: &7 Sends a fakeop message to the argument, by &9Foxkid
+    usage: <##CB625F> /fakeop [ PLAYER ]
+    description: &7 Sends a fakeop message to the argument, by <##3988A3>Foxkid
     permission: skript.fakeop
     cooldown: 1 second
     permission message: {@permissionmessage}
@@ -614,7 +622,7 @@ command /fakeop <player>:
     trigger:
         set {_target} to arg 1
         send "&7&o[Made %{_target}% a server operator]" to {_target}
-        send "&c&l(FAKE) &7&o[Made %{_target}% a server operator]" to player
+        send "<##CB625F>&l(FAKE) &7&o[Made %{_target}% a server operator]" to player
         stop
 
 #-=-=-=-=-=-=-=-=-=-
@@ -716,19 +724,19 @@ on inventory click:
 			execute player command "/sp commissionmanager"
 		else if index of event-slot is 10:
 			close inventory of player
-			add "&aBuild Commission %(amount of {Commence::Commissions::*}) + 1%" to {Commence::Commissions::*}
+			add "<##00C889>Build Commission %(amount of {Commence::Commissions::*}) + 1%" to {Commence::Commissions::*}
 			execute player command "/sp commissionmanager"
-			send "&a   You added &a1 Build Commission&a to Active Commissions"
+			send "<##00C889>   You added <##00C889>1 Build Commission<##00C889> to Active Commissions"
 		else if index of event-slot is 11:
 			close inventory of player
-			add "&aFeature Creation Commission %(amount of {Commence::Commissions::*}) + 1%" to {Commence::Commissions::*}
+			add "<##00C889>Feature Creation Commission %(amount of {Commence::Commissions::*}) + 1%" to {Commence::Commissions::*}
 			execute player command "/sp commissionmanager"
-			send "&a   You added &a1 Feature Creation Commission&a to Active Commissions"
+			send "<##00C889>   You added <##00C889>1 Feature Creation Commission<##00C889> to Active Commissions"
 		else if index of event-slot is 12:
 			close inventory of player
-			add "&aFeature Request Commission %(amount of {Commence::Commissions::*}) + 1%" to {Commence::Commissions::*}
+			add "<##00C889>Feature Request Commission %(amount of {Commence::Commissions::*}) + 1%" to {Commence::Commissions::*}
 			execute player command "/sp commissionmanager"
-			send "&a   You added &a1 Feature Request Commission&a to Active Commissions"
+			send "<##00C889>   You added <##00C889>1 Feature Request Commission<##00C889> to Active Commissions"
 	if event-inventory is (metadata tag "commissionmanager3" of player):
 		cancel event
 		index of event-slot is 8:
@@ -746,8 +754,8 @@ on inventory click:
 			execute player command "/sp commissionmanager"
 			stop
 		else if index of event-slot is 10:
-			add "&c1 Coin Fragment" to {Commence::%{Commence::%player%::TempOwner}%::CommissionCoins::*}
-			send "&c   You gave &a1 Coin Fragment&c to %{Commence::%player%::TempOwner}%&c's Active Commissions"
+			add "<##CB625F>1 Coin Fragment" to {Commence::%{Commence::%player%::TempOwner}%::CommissionCoins::*}
+			send "<##CB625F>   You gave <##00C889>1 Coin Fragment<##CB625F> to %{Commence::%player%::TempOwner}%<##CB625F>'s Active Commissions"
 			clear {Commence::%player%::TempOwner}
 			stop
 		{Commence::%player%::TempOwner} is set:
@@ -756,7 +764,7 @@ on inventory click:
 			loop {Commence::Commissions::*}:
 				remove loop-value from {Commence::Commissions::*} if loop-value is {Commence::%player%::%index of event-slot%::Name}
 				stop loop if loop-value is {Commence::%player%::%index of event-slot%::Name}
-			send "&c   You gave %{Commence::%player%::%index of event-slot%::Name}%&c to %{Commence::%player%::TempOwner}%&c's Completed Commissions"
+			send "<##CB625F>   You gave %{Commence::%player%::%index of event-slot%::Name}%<##CB625F> to %{Commence::%player%::TempOwner}%<##CB625F>'s Completed Commissions"
 			clear {Commence::%player%::TempOwner}
 	if event-inventory is (metadata tag "commissionmanager5" of player):
 		cancel event
@@ -769,7 +777,7 @@ on inventory click:
 			loop {Commence::Commissions::*}:
 				remove loop-value from {Commence::Commissions::*} if loop-value is {Commence::%player%::%index of event-slot%::Name}
 				stop loop if loop-value is {Commence::%player%::%index of event-slot%::Name}
-			send "&c   You removed %{Commence::%player%::%index of event-slot%::Name}%&c from Active Commissions"
+			send "<##CB625F>   You removed %{Commence::%player%::%index of event-slot%::Name}%<##CB625F> from Active Commissions"
 			execute player command "/sp commissionmanager"
 	if event-inventory is (metadata tag "updatestopmanager" of player):
 		cancel event
@@ -872,43 +880,43 @@ on inventory click:
 			loop {Commence::%player%::CommissionCoins::*}:
 				remove loop-value from {Commence::%player%::CommissionCoins::*} if loop-value is {Commence::%player%::TempName}
 				stop loop if loop-value is {Commence::%player%::TempName}
-			broadcast "&c   %player's display name%&a Spent %{Commence::%player%::TempName}%a for %{Commence::%player%::%index of event-slot%::Name}%&a!"
+			broadcast "<##CB625F>   %player's display name%<##00C889> Spent %{Commence::%player%::TempName}%a for %{Commence::%player%::%index of event-slot%::Name}%<##00C889>!"
 			clear {Commence::%player%::TempName}
 
 command /sp [<text>]:
 	aliases: /staffpanel, /commissions
-	usage: &c/staffpanel
+	usage: <##CB625F>/staffpanel
 	description: &7 Views the staff panel
 	trigger:
 		close inventory of player
 		arg-1 is "mythicalmanager":
-			set metadata tag "mythicalmanager" of player to chest inventory with 3 rows named "&8-==&k|&9   {@mythicalrealms} Manager   &8&k|&8==-"
+			set metadata tag "mythicalmanager" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>   {@mythicalrealms} Manager   &8&k|&8==-"
 			set slot 0 of metadata tag "mythicalmanager" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "mythicalmanager" of player to dark gray stained glass pane named "&7"
 			set slot 4 of metadata tag "mythicalmanager" of player to skull of player named "&8-&k|<##CB625F> {@mythicalrealms} Manager &8&k|&8-" with lore "&7 Manage aspects of {@mythicalrealms}" and "&8 Hover over the options below" and "&8  to view available settings" and "&7 Click a option below" and "&7  to change that setting"
 			set slot 10 of metadata tag "mythicalmanager" of player to green stained glass pane named "&3-&k|<##CB625F> Set Sidebars &3&k|&3-" with lore "&8 Click here to set your sidebars"
-			set slot 8 of metadata tag "mythicalmanager" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "mythicalmanager" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "mythicalmanager" of player) to player
 			stop
 		if arg-1 is "lifermanager":
-			set metadata tag "lifermanager" of player to chest inventory with 3 rows named "&8-==&k|&9   {@lifer} Manager   &8&k|&8==-"
+			set metadata tag "lifermanager" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>   {@lifer} Manager   &8&k|&8==-"
 			set slot 0 of metadata tag "lifermanager" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "lifermanager" of player to dark gray stained glass pane named "&7"
 			set slot 4 of metadata tag "lifermanager" of player to skull of player named "&8-&k|<##CB625F> {@mythicalrealms} Manager &8&k|&8-" with lore "&7 Manage aspects of {@mythicalrealms}" and "&8 Hover over the options below" and "&8  to view available settings" and "&7 Click a option below" and "&7  to change that setting"
 			set slot 10 of metadata tag "lifermanager" of player to green stained glass pane named "&3-&k|<##CB625F> Set Sidebars &3&k|&3-" with lore "&8 Click here to set your sidebars"
-			set slot 8 of metadata tag "lifermanager" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "lifermanager" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "lifermanager" of player) to player
 			stop
 		if arg-1 is "kitpvpmanager":
-			set metadata tag "kitpvpmanager" of player to chest inventory with 3 rows named "&8-==&k|&9   {@kitpvp} Manager   &8&k|&8==-"
+			set metadata tag "kitpvpmanager" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>   {@kitpvp} Manager   &8&k|&8==-"
 			set slot 0 of metadata tag "kitpvpmanager" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "kitpvpmanager" of player to dark gray stained glass pane named "&7"
 			set slot 4 of metadata tag "kitpvpmanager" of player to skull of player named "&8-&k|<##CB625F> {@mythicalrealms} Manager &8&k|&8-" with lore "&7 Manage aspects of {@mythicalrealms}" and "&8 Hover over the options below" and "&8  to view available settings" and "&7 Click a option below" and "&7  to change that setting"
 			set slot 10 of metadata tag "kitpvpmanager" of player to green stained glass pane named "&3-&k|<##CB625F> Set Sidebars &3&k|&3-" with lore "&8 Click here to set your sidebars"
-			set slot 8 of metadata tag "kitpvpmanager" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "kitpvpmanager" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "kitpvpmanager" of player) to player
 			stop
 		if arg-1 is "reportsmanager":
@@ -940,7 +948,7 @@ command /sp [<text>]:
 				if {Commence::List} is 35:
 					add 2 to {Commence::List}
 				set slot {Commence::List} of metadata tag "commissionmanager" of player to glowing sunflower named "%loop-value%<##CB625F>"
-			set slot 8 of metadata tag "commissionmanager" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "commissionmanager" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "commissionmanager" of player) to player
 			stop
 		if arg-1 is "commissionmanager2":
@@ -958,7 +966,7 @@ command /sp [<text>]:
 			set slot 10 of metadata tag "commissionmanager2" of player to glowing sunflower named "&3-&k|<##CB625F> Official Build Commission &3&k|&3-" with lore "&7 Includes Rules and Deadline" and "&8 Click here to create a new commission coin"
 			set slot 11 of metadata tag "commissionmanager2" of player to glowing sunflower named "&3-&k|<##CB625F> Feature Creation Commission &3&k|&3-" with lore "&7 Includes Rules and Deadline" and "&8 Click here to create a new commission coin"
 			set slot 12 of metadata tag "commissionmanager2" of player to glowing sunflower named "&3-&k|<##CB625F> Feature Request Commission &3&k|&3-" with lore "&7 Includes Rules" and "&8 Click here to create a new commission coin"
-			set slot 8 of metadata tag "commissionmanager2" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "commissionmanager2" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "commissionmanager2" of player) to player
 			stop
 		if arg-1 is "commissionmanager3":
@@ -985,7 +993,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Owner} to loop-value if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				set slot {Commence::List} of metadata tag "commissionmanager3" of player to skull of loop-value named "<##CB625F>Give %{Commence::%loop-value%::Rank}%%loop-value's display name%<##CB625F> Commission" with lore "&8 Click here to give commission" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "commissionmanager3" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "commissionmanager3" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "commissionmanager3" of player) to player
 			stop
 		if arg-1 is "commissionmanager4":
@@ -1012,7 +1020,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
 				set slot {Commence::List} of metadata tag "commissionmanager4" of player to glowing sunflower named "<##CB625F>Give <##CB625F>%loop-value%<##CB625F> to %{Commence::%player%::TempOwner}'s display name%"
-			set slot 8 of metadata tag "commissionmanager4" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "commissionmanager4" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "commissionmanager4" of player) to player
 			stop
 		if arg-1 is "commissionmanager5":
@@ -1038,21 +1046,21 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
 				set slot {Commence::List} of metadata tag "commissionmanager5" of player to glowing sunflower named "Remove <##CB625F>%loop-value%<##CB625F> Commission"
-			set slot 8 of metadata tag "commissionmanager5" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "commissionmanager5" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "commissionmanager5" of player) to player
 			stop
 		if arg-1 is "updatestopmanager":
 			{Commence::%player%::Rank::Value} is less than 7:
 				send "{@permissionmessage}"
 				stop
-			set metadata tag "updatestopmanager" of player to chest inventory with 3 rows named "&8-==&k|&9   {@commencesmp}<##CB625F> Staff   &8&k|&8==-"
+			set metadata tag "updatestopmanager" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>   {@commencesmp}<##CB625F> Staff   &8&k|&8==-"
 			set slot 0 of metadata tag "updatestopmanager" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "updatestopmanager" of player to dark gray stained glass pane named "&7"
 			set slot 4 of metadata tag "updatestopmanager" of player to skull of player named "&8-&k|<##CB625F> Update-Stop Manager &8&k|&8-" with lore "&7 Manage the Server's Uptime" and "&8 Hover over the options below" and "&8  to view available options" and "&7 Click a option below" and "&7  to execute that command"
 			set slot 10 of metadata tag "updatestopmanager" of player to green stained glass pane named "&3-&k|<##CB625F> Update and Restart the Server &3&k|&3-" with lore "&8 Click here to update and restart the server"
 			set slot 11 of metadata tag "updatestopmanager" of player to green stained glass pane named "&3-&k|<##CB625F> Quick Restart the Server &3&k|&3-" with lore "&8 Click here to quick restart the server"
-			set slot 8 of metadata tag "updatestopmanager" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "updatestopmanager" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "updatestopmanager" of player) to player
 			stop
 		if arg-1 is "automute":
@@ -1079,7 +1087,7 @@ command /sp [<text>]:
 					set slot {Commence::List} of metadata tag "automute" of player to skull of loop-value named "<##CB625F>MUTED %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to unmute" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				else:
 					set slot {Commence::List} of metadata tag "automute" of player to skull of loop-value named "<##CB625F>Mute %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to mute" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "automute" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "automute" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "automute" of player) to player
 			stop
 		if arg-1 is "warn":
@@ -1103,7 +1111,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				set slot {Commence::List} of metadata tag "warn" of player to skull of loop-value named "<##CB625F>Warn %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to warn" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "warn" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "warn" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "warn" of player) to player
 			stop
 		if arg-1 is "autoban":
@@ -1127,7 +1135,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				set slot {Commence::List} of metadata tag "autoban" of player to skull of loop-value named "<##CB625F>Ban %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to mute" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "autoban" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "autoban" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "autoban" of player) to player
 			stop
 		if arg-1 is "promote":
@@ -1151,7 +1159,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				set slot {Commence::List} of metadata tag "promote" of player to skull of loop-value named "<##CB625F>Promote %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to promote" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "promote" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "promote" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "promote" of player) to player
 			stop
 		if arg-1 is "demote":
@@ -1175,7 +1183,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				set slot {Commence::List} of metadata tag "demote" of player to skull of loop-value named "<##CB625F>Demote %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to demote" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "demote" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "demote" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "demote" of player) to player
 			stop
 		if arg-1 is "kick":
@@ -1199,7 +1207,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
 				set slot {Commence::List} of metadata tag "kick" of player to skull of loop-value named "<##CB625F>Kick %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to kick" if {Commence::%loop-player%::Rank::Value} <  {Commence::%player%::Rank::Value}
-			set slot 8 of metadata tag "kick" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "kick" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "kick" of player) to player
 			stop
 		if arg-1 is "selfteleport":
@@ -1223,7 +1231,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value if loop-player is not player
 				set slot {Commence::List} of metadata tag "selfteleport" of player to skull of loop-value named "<##CB625F>Teleport to %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to teleport" if loop-player is not player
-			set slot 8 of metadata tag "selfteleport" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "selfteleport" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "selfteleport" of player) to player
 			stop
 		if arg-1 is "selfvanish":
@@ -1233,13 +1241,13 @@ command /sp [<text>]:
 			execute player command "/fly"
 			stop
 		if arg-1 is "selfsettings":
-			set metadata tag "updatestopmanager" of player to chest inventory with 3 rows named "&8-==&k|&9   {@commencesmp}<##CB625F> Staff   &8&k|&8==-"
+			set metadata tag "updatestopmanager" of player to chest inventory with 3 rows named "&8-==&k|<##3988A3>   {@commencesmp}<##CB625F> Staff   &8&k|&8==-"
 			set slot 0 of metadata tag "updatestopmanager" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "updatestopmanager" of player to dark gray stained glass pane named "&7"
 			set slot 4 of metadata tag "updatestopmanager" of player to skull of player named "&8-&k|<##CB625F> %player's display name%s <##CB625F>Manager &8&k|&8-" with lore "&7 Manage yourself" and "&8 Hover over the options below" and "&8  to view available options" and "&7 Click a option below" and "&7  to change that setting"
 			set slot 10 of metadata tag "updatestopmanager" of player to green stained glass pane named "&3-&k|<##CB625F> Set Sidebars &3&k|&3-" with lore "&8 Click here to set your sidebars"
-			set slot 8 of metadata tag "updatestopmanager" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "updatestopmanager" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "updatestopmanager" of player) to player
 			stop
 		if arg-1 is "staffview":
@@ -1273,12 +1281,12 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-player if loop-player is not player
 				set slot {Commence::List} of metadata tag "staffview" of player to skull of loop-value named "<##CB625F>Watch %{Commence::%loop-value%::Rank}%%loop-value's display name%" with lore "&8 Click here to watch" if loop-player is not player
-			set slot 8 of metadata tag "staffview" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "staffview" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "staffview" of player) to player
 			stop
 		if arg-1 or command is "commissions":
 			amount of {Commence::%player%::CommissionCoins::*} is less than 1:
-				send "&c   Earn a Commission Coin and Try Again!"
+				send "<##CB625F>   Earn a Commission Coin and Try Again!"
 				stop
 			set {_t} to 6 if amount of {Commence::%player%::CommissionCoins::*} is more than 21
 			set {_t} to 5 if {Commence::%player%::CommissionCoins::*} is more than 14
@@ -1301,12 +1309,12 @@ command /sp [<text>]:
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
 				set slot {Commence::List} of metadata tag "commissions" of player to glowing gold nugget named "%loop-value% Active" if uncolored loop-value contains "Fragment"
 				set slot {Commence::List} of metadata tag "commissions" of player to glowing sunflower named "%loop-value% Completed" if uncolored loop-value does not contain "Fragment"
-			set slot 8 of metadata tag "commissions" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "commissions" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "commissions" of player) to player
 			stop
 		if arg-1 or command is "spendcommissions":
 			amount of {Commence::%player%::CommissionCoins::*} is less than 1:
-				send "&c   Earn a Commission Coin and Try Again!"
+				send "<##CB625F>   Earn a Commission Coin and Try Again!"
 				stop
 			set {_t} to 6 if {Commence::%player%::CommissionCoins::*} is more than 14
 			set {_t} to 5 if {Commence::%player%::CommissionCoins::*} is more than 7
@@ -1328,7 +1336,7 @@ command /sp [<text>]:
 					add 2 to {Commence::List}
 				set {Commence::%player%::%{Commence::List}%::Name} to loop-value
 				set slot {Commence::List} of metadata tag "spendcommissions" of player to glowing book named "%loop-value%"
-			set slot 8 of metadata tag "spendcommissions" of player to structure void named "&4-&k|&c &lClick to Go Back &4&k|&4-"
+			set slot 8 of metadata tag "spendcommissions" of player to structure void named "&4-&k|<##CB625F> &lClick to Go Back &4&k|&4-"
 			open (metadata tag "spendcommissions" of player) to player
 			stop
 		else:
@@ -1336,7 +1344,7 @@ command /sp [<text>]:
 				clear {Commence::%player%::%loop-value%::Name}
 				clear {Commence::%player%::%loop-value%::Owner}
 				clear {Commence::%player%::%loop-value%::Price}
-			set metadata tag "staffpanel" of player to chest inventory with 5 rows named "&8-==&k|&9   {@commencesmp}<##CB625F> Staff   &8&k|&8==-"
+			set metadata tag "staffpanel" of player to chest inventory with 5 rows named "&8-==&k|<##3988A3>   {@commencesmp}<##CB625F> Staff   &8&k|&8==-"
 			set slot 0 of metadata tag "staffpanel" of player to dark gray stained glass pane named "&7"
 			loop 53 times:
 				set slot loop-value of metadata tag "staffpanel" of player to dark gray stained glass pane named "&7"
@@ -1362,5 +1370,5 @@ command /sp [<text>]:
 			set slot 32 of metadata tag "staffpanel" of player to red stained glass pane named "&3-&k|<##CB625F> Self Settings &3&k|&3-" with lore "&8 Click here view your settings"
 			set slot 33 of metadata tag "staffpanel" of player to red stained glass pane named "&3-&k|<##CB625F> Staff View &3&k|&3-" with lore "&8 Click here to watch another player"
 			set slot 34 of metadata tag "staffpanel" of player to red stained glass pane named "&3-&k|<##CB625F> Commissions &3&k|&3-" with lore "&8 Click here to manage your commissions"
-			set slot 8 of metadata tag "staffpanel" of player to structure void named "&4-&k|&c &lClick to Close &4&k|&4-"
+			set slot 8 of metadata tag "staffpanel" of player to structure void named "&4-&k|<##CB625F> &lClick to Close &4&k|&4-"
 			open (metadata tag "staffpanel" of player) to player
